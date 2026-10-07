@@ -27,25 +27,25 @@
   ],
   "themeConsumers": [
     {
-      "file": "tools/themes/beauty-01/groups/pdp/js.ts",
+      "file": "tools/themes/veil/groups/pdp/js.ts",
       "uses": [{ "endpoint": "reviews.list", "sends": ["product_id="], "reads": ["data.summary", "summary.count", "summary.avg", "summary.histogram", "data.items", "item.rating", "item.verified", "item.title", "item.body", "item.created_at", "item.author"] }]
     },
     {
-      "file": "tools/themes/beauty-01/groups/beauty-extras.ts",
+      "file": "tools/themes/veil/groups/beauty-extras.ts",
       "uses": [
         { "endpoint": "reviews.list", "sends": ["product_id="], "reads": ["data?.items", "data?.summary", "summary.avg", "summary.count", "summary.histogram", "r.rating", "r.title", "r.verified", "r.author"] },
         { "endpoint": "stockists.list", "reads": ["data?.items", "s.name", "s.address", "s.city", "s.country", "s.lat", "s.lng"] }
       ]
     },
     {
-      "file": "tools/themes/beauty-01/groups/global/js.ts",
+      "file": "tools/themes/veil/groups/global/js.ts",
       "uses": [
         { "endpoint": "wishlist.list", "reads": ["data.items"] },
         { "endpoint": "wishlist.remove", "sends": ["method:'DELETE'", "'/wishlist?item='"], "reads": [] }
       ]
     },
     {
-      "file": "tools/themes/beauty-01/groups/cart-checkout.ts",
+      "file": "tools/themes/veil/groups/cart-checkout.ts",
       "uses": [{ "endpoint": "order-tracking.get", "sends": ["order:", "email:"], "reads": ["data.step"], "handles": [501] }]
     }
   ],

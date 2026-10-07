@@ -26,7 +26,7 @@ export function createServer() {
     inputSchema: {
       query: z.string().optional().describe('Free text, e.g. "hair care product" or "faq accordion"'),
       kind: kind.optional().describe("Restrict to pages, sections or blocks"),
-      theme: z.string().optional().describe("Theme id, e.g. beauty-01"),
+      theme: z.string().optional().describe("Theme id, e.g. veil"),
       industry: z.string().optional().describe("Industry name, exact match, e.g. beauty"),
       category: z.string().optional().describe("Category, exact match, e.g. customer-account"),
       shopify_ready: z.boolean().optional().describe("true = only items that have Shopify Liquid output; false = only HTML-only items"),

@@ -17,7 +17,7 @@ Ask the user where the item should go: which project/theme, platform (Shopify th
 
 ## Items without a Shopify bundle
 
-If `targets.shopify` is a gap, port the HTML demo (`demo/<theme>/...`) into a Liquid section with a `{% schema %}` (mirror a bundle in `sections/beauty-01/`), or copy the HTML for a plain site.
+If `targets.shopify` is a gap, port the HTML demo (`demo/<theme>/...`) into a Liquid section with a `{% schema %}` (mirror a bundle in `sections/veil/`), or copy the HTML for a plain site.
 
 ## Rules for any change you make to a merchant theme
 

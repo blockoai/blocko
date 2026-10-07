@@ -27,7 +27,7 @@ claude plugin uninstall blocko-sections@blocko && claude plugin marketplace remo
 | --- | --- | --- |
 | `blocko-catalog` | Finds sections, blocks and pages in `catalog.json` and shows their settings | "Does Blocko have a cart drawer?" |
 | `blocko-install-section` | Asks where it should go (project, platform, page, position), then installs one section or block; ports HTML-only items | "Add the Blocko account sign in after the header of my login page" |
-| `blocko-install-theme` | Pushes a full theme as an unpublished Shopify theme | "Push the beauty-01 theme to my dev store" |
+| `blocko-install-theme` | Pushes a full theme as an unpublished Shopify theme | "Push the veil theme to my dev store" |
 | `blocko-deploy-worker` | Deploys the optional API Worker (D1, App Proxy) | "Set up the Blocko API worker for reviews" |
 
 ## Without the plugin

@@ -1,0 +1,307 @@
+[
+  {
+    "page": "account-login",
+    "title": "Sign in",
+    "sectionIds": [
+      "account-login"
+    ]
+  },
+  {
+    "page": "account-register",
+    "title": "Create account",
+    "sectionIds": [
+      "account-register"
+    ]
+  },
+  {
+    "page": "account-reset-password",
+    "title": "Reset password",
+    "sectionIds": [
+      "account-reset-password"
+    ]
+  },
+  {
+    "page": "account-activate",
+    "title": "Activate account",
+    "sectionIds": [
+      "account-activate"
+    ]
+  },
+  {
+    "page": "account",
+    "title": "Your account",
+    "sectionIds": [
+      "account-overview",
+      "account-order-history",
+      "account-subscription-card"
+    ]
+  },
+  {
+    "page": "account-order",
+    "title": "Order details",
+    "sectionIds": [
+      "account-order-detail",
+      "account-order-help"
+    ]
+  },
+  {
+    "page": "account-addresses",
+    "title": "Addresses",
+    "sectionIds": [
+      "account-address-list",
+      "account-address-form"
+    ]
+  },
+  {
+    "page": "cart",
+    "title": "Cart",
+    "sectionIds": [
+      "cart-checkout-cart-main",
+      "cart-checkout-services"
+    ]
+  },
+  {
+    "page": "cart-empty",
+    "title": "Cart",
+    "sectionIds": [
+      "cart-checkout-cart-empty"
+    ]
+  },
+  {
+    "page": "thank-you",
+    "title": "Order confirmed",
+    "sectionIds": [
+      "cart-checkout-thank-you",
+      "cart-checkout-services"
+    ]
+  },
+  {
+    "page": "order-tracking",
+    "title": "Track your order",
+    "sectionIds": [
+      "cart-checkout-tracking",
+      "cart-checkout-services"
+    ]
+  },
+  {
+    "page": "404",
+    "title": "Page not found",
+    "sectionIds": [
+      "cart-checkout-not-found"
+    ]
+  },
+  {
+    "page": "about",
+    "title": "About",
+    "sectionIds": [
+      "content-about-hero",
+      "content-about-definition",
+      "content-about-intro",
+      "content-about-founder",
+      "content-about-belief",
+      "content-about-scent"
+    ]
+  },
+  {
+    "page": "contact",
+    "title": "Contact",
+    "sectionIds": [
+      "content-contact-hero",
+      "content-contact-form",
+      "content-contact-options"
+    ]
+  },
+  {
+    "page": "faq",
+    "title": "FAQs",
+    "sectionIds": [
+      "content-faq-hero",
+      "content-faq-browser"
+    ]
+  },
+  {
+    "page": "policy",
+    "title": "Privacy notice",
+    "sectionIds": [
+      "content-policy-hero",
+      "content-policy-document"
+    ]
+  },
+  {
+    "page": "landing",
+    "title": "The seasonal edit",
+    "sectionIds": [
+      "content-landing-hero",
+      "content-landing-kit",
+      "content-landing-message",
+      "content-landing-detail"
+    ]
+  },
+  {
+    "page": "subscribe-success",
+    "title": "Subscription confirmed",
+    "sectionIds": [
+      "global-subscribe-success"
+    ]
+  },
+  {
+    "page": "password",
+    "title": "Coming soon",
+    "sectionIds": [
+      "global-password-page"
+    ]
+  },
+  {
+    "page": "gift-card",
+    "title": "Gift card",
+    "sectionIds": [
+      "global-gift-card-page"
+    ]
+  },
+  {
+    "page": "wishlist",
+    "title": "Saved items",
+    "sectionIds": [
+      "global-wishlist-page"
+    ]
+  },
+  {
+    "page": "compare",
+    "title": "Compare products",
+    "sectionIds": [
+      "global-compare-page"
+    ]
+  },
+  {
+    "page": "components",
+    "title": "Global components",
+    "sectionIds": [
+      "global-components-page"
+    ]
+  },
+  {
+    "page": "hair-quiz",
+    "title": "Hair routine quiz",
+    "sectionIds": [
+      "haircare-extras-quiz",
+      "haircare-extras-quiz-result"
+    ]
+  },
+  {
+    "page": "subscriptions",
+    "title": "Subscriptions",
+    "sectionIds": [
+      "haircare-extras-subscription"
+    ]
+  },
+  {
+    "page": "fragrance-finder",
+    "title": "Fragrance finder",
+    "sectionIds": [
+      "haircare-extras-fragrance"
+    ]
+  },
+  {
+    "page": "routine",
+    "title": "Routine builder",
+    "sectionIds": [
+      "haircare-extras-routine"
+    ]
+  },
+  {
+    "page": "gift-guide",
+    "title": "Gift guide",
+    "sectionIds": [
+      "haircare-extras-gifts"
+    ]
+  },
+  {
+    "page": "rewards",
+    "title": "Rewards",
+    "sectionIds": [
+      "haircare-extras-rewards"
+    ]
+  },
+  {
+    "page": "home",
+    "title": "Tress — Home",
+    "sectionIds": [
+      "home-collection-mega-menu",
+      "home-collection-hero",
+      "home-collection-new-arrivals",
+      "home-collection-routine-hero",
+      "home-collection-categories",
+      "home-collection-benefits",
+      "home-collection-quick-view"
+    ]
+  },
+  {
+    "page": "collection",
+    "title": "Tress — Hair care",
+    "sectionIds": [
+      "home-collection-mega-menu",
+      "home-collection-collection-toolbar",
+      "home-collection-collection-grid",
+      "home-collection-quick-view"
+    ]
+  },
+  {
+    "page": "collections",
+    "title": "Tress — Collections",
+    "sectionIds": [
+      "home-collection-mega-menu",
+      "home-collection-collections-directory",
+      "home-collection-quick-view"
+    ]
+  },
+  {
+    "page": "pdp",
+    "title": "Leave-In Conditioner",
+    "sectionIds": [
+      "pdp-main-product",
+      "pdp-scent-story",
+      "pdp-hair-benefits",
+      "pdp-recommendations",
+      "pdp-reviews"
+    ]
+  },
+  {
+    "page": "pdp-kit",
+    "title": "Essential Hair Ritual",
+    "sectionIds": [
+      "pdp-kit-main",
+      "pdp-recommendations",
+      "pdp-reviews"
+    ]
+  },
+  {
+    "page": "search",
+    "title": "Search",
+    "sectionIds": [
+      "search-blog-search-results"
+    ]
+  },
+  {
+    "page": "search-empty",
+    "title": "Search",
+    "sectionIds": [
+      "search-blog-search-empty"
+    ]
+  },
+  {
+    "page": "blog",
+    "title": "Journal",
+    "sectionIds": [
+      "search-blog-journal-grid"
+    ]
+  },
+  {
+    "page": "article",
+    "title": "A little more care for every wash day",
+    "sectionIds": [
+      "search-blog-article-hero",
+      "search-blog-article-content",
+      "search-blog-related"
+    ]
+  }
+]

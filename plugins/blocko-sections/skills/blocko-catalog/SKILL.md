@@ -28,7 +28,7 @@ A short table: id, name, category, shopify target. Then 3 to 6 lines for the rec
 - Never edit `catalog.json` or any generated file.
 
 ## Examples
-Good: "Two installable matches in beauty-01: `content-values` (4 text settings, up to 6 blocks, 0 KB JS) and ... The FAQ accordion variant is a gap (not migrated yet)."
+Good: "Two installable matches in veil: `content-values` (4 text settings, up to 6 blocks, 0 KB JS) and ... The FAQ accordion variant is a gap (not migrated yet)."
 Bad: "Blocko has a mega menu section, install it." (not checked against the catalog)
 
 ## When unsure

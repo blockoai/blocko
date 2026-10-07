@@ -28,15 +28,15 @@ Then just ask. The plugin has four skills:
 | --- | --- | --- |
 | `blocko-catalog` | Finds sections, blocks and pages in `catalog.json` | "Which Blocko section fits an FAQ?" |
 | `blocko-install-section` | Asks where it should go, then copies one section or block into your project | "Add the Blocko account sign in to my theme" |
-| `blocko-install-theme` | Pushes a full theme to your store as an unpublished theme | "Push beauty-01 to my dev store" |
+| `blocko-install-theme` | Pushes a full theme to your store as an unpublished theme | "Push veil to my dev store" |
 | `blocko-deploy-worker` | Deploys the optional API Worker | "Set up the Blocko API worker" |
 
 Without the plugin: every item in the live catalog (https://blocko.avada.net/html/#/guide) and in `catalog.json` has a one-line `prompt`. Paste it into any coding agent (Claude Code, Codex, Cursor); the agent reads `AGENTS.md`, asks where the item should go, and installs it.
 
 ## Themes
 
-- `beauty-01`: 186 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/beauty-01/`.
-- `beauty-02`: HTML demo only (119 sections/blocks, 38 pages; port to Liquid with the agent prompts in `catalog.json`) (see `catalog.json`). Demo: `demo/beauty-02/`.
+- `tress`: HTML demo only (119 sections/blocks, 38 pages; port to Liquid with the agent prompts in `catalog.json`) (see `catalog.json`). Demo: `demo/tress/`.
+- `veil`: 186 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/veil/`.
 
 Each theme lives in `themes/<theme>/` and is a complete OS2 theme folder (layout, templates, sections, blocks, snippets,
 assets, config, locales). Sections that are not yet available as Liquid are listed as gaps in `catalog.json`
