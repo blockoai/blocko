@@ -7,7 +7,7 @@ This repository is generated, merchant-facing output of Blocko. Use it; do not r
 - `catalog.json`: machine-readable index of every theme, section and block (id, name, category, targets, files, deps, gaps, demo path, one-line agent `prompt`) for sections, blocks and pages, and the Worker endpoints. Start here. HTML-only themes (no `themes/<theme>/`) list every item as a gap with its `demo` path.
 - `themes/<theme>/`: complete Shopify OS2 theme.
 - `sections/<theme>/<id>/`: one standalone bundle per section or block (mirrors theme folders: `sections/`, `blocks/`, `snippets/`, `assets/`, `locales/`) plus a README with its settings table.
-- `demo/`: static HTML demo (same content as https://blocko.avada.net/html/).
+- `demo/`: static HTML demo (same content as https://demo.blocko.ai/html/).
 - `workers/blocko-api/`: optional Cloudflare Worker (`client/blko-api.js` is the storefront client).
 - `plugins/blocko-sections/`: Claude Code plugin with skills to find, install and deploy sections.
 

@@ -124,4 +124,4 @@ How to use an item:
   3. get_item_source returns the Liquid bundle (format "liquid") or demo HTML (format "html") to copy.
   4. Ask the user which project/theme, page and position before editing; keep the blko- class prefix and CSS tokens, keep custom elements idempotent, run \`shopify theme check\` for Shopify targets.
 
-Browse visually: https://blocko.avada.net/html/`;
+Browse visually: https://blocko.ai/browse/`;

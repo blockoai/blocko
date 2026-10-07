@@ -6,7 +6,7 @@ const item = (o: Record<string, unknown>) => ({ targets: { html: "ok", shopify: 
 const catalog = {
   themes: [
     { id: "t1", path: "themes/t1", shopify: true, demo: "demo/t1", industry: "beauty", sections: [
-      item({ id: "hero", name: "Hero banner", kind: "section", category: "hero", demo: "demo/t1/sections/hero.html", demoUrl: "https://blocko.avada.net/hero", prompt: "P", bundle: "sections/t1/hero", files: ["sections/t1/hero/sections/hero.liquid"] }),
+      item({ id: "hero", name: "Hero banner", kind: "section", category: "hero", demo: "demo/t1/sections/hero.html", demoUrl: "https://blocko.ai/hero", prompt: "P", bundle: "sections/t1/hero", files: ["sections/t1/hero/sections/hero.liquid"] }),
       item({ id: "faq", name: "FAQ", kind: "block", category: "faq", targets: { html: "ok", shopify: "gap" }, demo: "demo/t1/blocks/faq.html" }),
     ], pages: [item({ id: "home", name: "Home", kind: "page", sections: ["hero"], demo: "demo/t1/templates/home.html" })] },
   ],
@@ -24,7 +24,7 @@ const mockFetch = () => vi.stubGlobal("fetch", vi.fn(async (url: string) => {
 afterEach(() => vi.unstubAllGlobals());
 
 const rpc = async (method: string, params: unknown = {}, id = 1) => {
-  const res = await worker.fetch(new Request("https://blocko.avada.net/mcp", {
+  const res = await worker.fetch(new Request("https://blocko.ai/mcp", {
     method: "POST",
     headers: { "content-type": "application/json", accept: "application/json, text/event-stream" },
     body: JSON.stringify({ jsonrpc: "2.0", id, method, params }),

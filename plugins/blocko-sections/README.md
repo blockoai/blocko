@@ -1,6 +1,6 @@
 # blocko-sections
 
-Claude Code plugin for the Blocko library (https://github.com/blockoai/blocko). Live catalog: https://blocko.avada.net/html/#/guide
+Claude Code plugin for the Blocko library (https://github.com/blockoai/blocko). Live catalog: https://blocko.ai/browse/
 
 ## Install (one line)
 
@@ -12,7 +12,7 @@ Inside a Claude Code session: `/plugin marketplace add blockoai/blocko`, then `/
 
 ## Connect via MCP
 
-Any agent can read the catalog over MCP (read-only, no sign-in): `claude mcp add --transport http blocko https://blocko.avada.net/mcp`. Other clients: https://blocko.avada.net/html/#/agents
+Any agent can read the catalog over MCP (read-only, no sign-in): `claude mcp add --transport http blocko https://blocko.ai/mcp`. Other clients: https://blocko.ai/agents/
 
 ## Update and uninstall
 

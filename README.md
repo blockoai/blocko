@@ -4,7 +4,8 @@ Blocko is a library of Shopify Online Store 2.0 sections and complete themes, ge
 and rendered twice: as production Liquid and as a plain static HTML demo. This repository is generated output. It is
 published one-way; do not edit files here, open an issue instead.
 
-- Live demo: https://blocko.avada.net/html/
+- Website and library browser: https://blocko.ai (browse at https://blocko.ai/browse/, agents guide at https://blocko.ai/agents/, `llms.txt` at https://blocko.ai/llms.txt)
+- Live demos: https://demo.blocko.ai/html/
 - License: MIT (see [LICENSE](LICENSE)). Open source and free.
 
 ## Quick start (Claude Code)
@@ -20,7 +21,7 @@ Or inside a Claude Code session: `/plugin marketplace add blockoai/blocko`, then
 Update: `claude plugin marketplace update blocko && claude plugin update blocko-sections@blocko`
 Uninstall: `claude plugin uninstall blocko-sections@blocko && claude plugin marketplace remove blocko`
 
-Connect via MCP (any agent, read-only, no sign-in): `claude mcp add --transport http blocko https://blocko.avada.net/mcp`. Setup for other clients: https://blocko.avada.net/html/#/agents. The server source is in `workers/blocko-mcp/`.
+Connect via MCP (any agent, read-only, no sign-in): `claude mcp add --transport http blocko https://blocko.ai/mcp`. Setup for other clients: https://blocko.ai/agents/. The server source is in `workers/blocko-mcp/`.
 
 Then just ask. The plugin has four skills:
 
@@ -31,7 +32,7 @@ Then just ask. The plugin has four skills:
 | `blocko-install-theme` | Pushes a full theme to your store as an unpublished theme | "Push veil to my dev store" |
 | `blocko-deploy-worker` | Deploys the optional API Worker | "Set up the Blocko API worker" |
 
-Without the plugin: every item in the live catalog (https://blocko.avada.net/html/#/guide) and in `catalog.json` has a one-line `prompt`. Paste it into any coding agent (Claude Code, Codex, Cursor); the agent reads `AGENTS.md`, asks where the item should go, and installs it.
+Without the plugin: every item in the live catalog (https://blocko.ai/browse/) and in `catalog.json` has a one-line `prompt`. Paste it into any coding agent (Claude Code, Codex, Cursor); the agent reads `AGENTS.md`, asks where the item should go, and installs it.
 
 ## Themes
 

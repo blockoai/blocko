@@ -6,12 +6,12 @@ Selectable routine-builder product step.
 - Kind: block
 - Shopify target: ok
 - HTML target: ok
-- Live demo: https://blocko.avada.net/html/veil/blocks/routine-builder--beauty-extras-routine-step.html
+- Live demo: https://demo.blocko.ai/html/veil/blocks/routine-builder--beauty-extras-routine-step.html
 
 ## Paste this into your coding agent
 
 ```text
-Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the block "Routine step" (id `beauty-extras-routine-step`, theme `veil`; live demo: https://blocko.avada.net/html/veil/blocks/routine-builder--beauty-extras-routine-step.html; Shopify bundle: sections/veil/beauty-extras-routine-step/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
+Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the block "Routine step" (id `beauty-extras-routine-step`, theme `veil`; live demo: https://demo.blocko.ai/html/veil/blocks/routine-builder--beauty-extras-routine-step.html; Shopify bundle: sections/veil/beauty-extras-routine-step/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
 ```
 
 ## Install

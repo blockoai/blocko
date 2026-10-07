@@ -16,7 +16,7 @@ export function createServer() {
   }, async () => {
     const catalog = await loadCatalog();
     return text(catalog.themes.map((t) => ({
-      id: t.id, industry: t.industry, shopify: t.shopify, demo: `https://blocko.avada.net/html/${t.id}/`,
+      id: t.id, industry: t.industry, shopify: t.shopify, demo: `https://demo.blocko.ai/html/${t.id}/`,
       pages: t.pages.length, sections: t.sections.filter((s) => s.kind === "section").length, blocks: t.sections.filter((s) => s.kind === "block").length,
     })));
   });
