@@ -1,0 +1,6 @@
+{
+  "name": "blocko-sections",
+  "description": "Skills for using Blocko Shopify OS2 sections and themes: catalog search, section install, theme install, API Worker deploy.",
+  "version": "0.1.0",
+  "author": { "name": "Blocko" }
+}

@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "content-about-hero": {
+      "type": "blko-content-about-hero",
+      "settings": {}
+    },
+    "content-mission": {
+      "type": "blko-content-mission",
+      "settings": {}
+    },
+    "content-values": {
+      "type": "blko-content-values",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Keep learning",
+            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Say it plainly",
+            "text": "Clear guidance and useful information help you choose what belongs in your routine."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "content-founder-note": {
+      "type": "blko-content-founder-note",
+      "settings": {}
+    },
+    "content-story-timeline": {
+      "type": "blko-content-story-timeline",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "milestone",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "milestone",
+          "settings": {
+            "label": "2020",
+            "datetime": "2020",
+            "title": "Room to grow",
+            "text": "A community helps shape a more useful selection of care and color essentials."
+          }
+        },
+        "block-3": {
+          "type": "milestone",
+          "settings": {
+            "label": "2023",
+            "datetime": "2023",
+            "title": "More ways to wear it",
+            "text": "New textures make it easier to build a routine that moves with your day."
+          }
+        },
+        "block-4": {
+          "type": "milestone",
+          "settings": {
+            "label": "Today",
+            "datetime": "2026",
+            "title": "Still listening",
+            "text": "The work continues with clearer choices, better information, and a lighter touch."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "content-press-quotes": {
+      "type": "blko-content-press-quotes",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "quote",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "quote",
+          "settings": {
+            "quote": "“A practical answer to the overcomplicated routine.”",
+            "source": "— The Daily Edit"
+          }
+        },
+        "block-3": {
+          "type": "quote",
+          "settings": {
+            "quote": "“The textures have a distinctly lived-in ease.”",
+            "source": "— Studio Notes"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "content-about-hero",
+    "content-mission",
+    "content-values",
+    "content-founder-note",
+    "content-story-timeline",
+    "content-press-quotes",
+    "newsletter"
+  ]
+}

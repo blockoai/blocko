@@ -1,0 +1,21 @@
+{
+  "name": "blocko-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --persist-to .wrangler/state",
+    "db:migrate:local": "wrangler d1 migrations apply blocko-api --local --persist-to .wrangler/state",
+    "db:seed:local": "wrangler d1 execute blocko-api --local --persist-to .wrangler/state --file=migrations/seed.sql",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "latest",
+    "@cloudflare/workers-types": "latest",
+    "typescript": "^5.6.0",
+    "@vitest/runner": "^4.1.0",
+    "@vitest/snapshot": "^4.1.0",
+    "vitest": "^4.1.0",
+    "wrangler": "^4.0.0"
+  }
+}

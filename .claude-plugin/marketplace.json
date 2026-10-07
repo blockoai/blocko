@@ -1,0 +1,12 @@
+{
+  "name": "blocko",
+  "description": "Blocko Shopify OS2 sections and themes: skills to find, install and deploy them.",
+  "owner": { "name": "Blocko" },
+  "plugins": [
+    {
+      "name": "blocko-sections",
+      "source": "./plugins/blocko-sections",
+      "description": "Find, install and deploy Blocko Shopify sections, themes and the optional API Worker."
+    }
+  ]
+}

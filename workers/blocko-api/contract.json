@@ -1,0 +1,53 @@
+{
+  "$comment": "Single machine-readable data contract between the Blocko Worker and the Shopify theme JS. README.md is the prose version. Worker tests (test/contract.test.ts) and tools/shopify/api-contract.test.ts both read this file; changing a field means changing it here first.",
+  "endpoints": [
+    {
+      "id": "reviews.list", "method": "GET", "path": "/reviews",
+      "query": ["product_id", "page", "sort"],
+      "response": { "summary": ["avg", "count", "histogram"], "items": ["id", "rating", "title", "body", "author", "verified", "created_at"] }
+    },
+    { "id": "reviews.create", "method": "POST", "path": "/reviews", "body": ["product_id", "rating", "title", "body", "author", "email", "website"] },
+    {
+      "id": "wishlist.list", "method": "GET", "path": "/wishlist", "auth": "logged_in_customer_id",
+      "response": { "items": "string[]" }
+    },
+    { "id": "wishlist.add", "method": "POST", "path": "/wishlist", "auth": "logged_in_customer_id", "body": ["item"] },
+    { "id": "wishlist.remove", "method": "DELETE", "path": "/wishlist", "auth": "logged_in_customer_id", "query": ["item"] },
+    {
+      "id": "stockists.list", "method": "GET", "path": "/stockists",
+      "query": ["lat", "lng", "q", "radius"],
+      "response": { "items": ["id", "name", "address", "city", "country", "lat", "lng", "phone", "distance_km"] }
+    },
+    {
+      "id": "order-tracking.get", "method": "GET", "path": "/order-tracking",
+      "query": ["order", "email"],
+      "response": { "": ["step", "status", "fulfillment", "tracking"] },
+      "notConfigured": { "status": 501, "error": "order_tracking_not_configured" }
+    }
+  ],
+  "themeConsumers": [
+    {
+      "file": "tools/themes/beauty-01/groups/pdp/js.ts",
+      "uses": [{ "endpoint": "reviews.list", "sends": ["product_id="], "reads": ["data.summary", "summary.count", "summary.avg", "summary.histogram", "data.items", "item.rating", "item.verified", "item.title", "item.body", "item.created_at", "item.author"] }]
+    },
+    {
+      "file": "tools/themes/beauty-01/groups/beauty-extras.ts",
+      "uses": [
+        { "endpoint": "reviews.list", "sends": ["product_id="], "reads": ["data?.items", "data?.summary", "summary.avg", "summary.count", "summary.histogram", "r.rating", "r.title", "r.verified", "r.author"] },
+        { "endpoint": "stockists.list", "reads": ["data?.items", "s.name", "s.address", "s.city", "s.country", "s.lat", "s.lng"] }
+      ]
+    },
+    {
+      "file": "tools/themes/beauty-01/groups/global/js.ts",
+      "uses": [
+        { "endpoint": "wishlist.list", "reads": ["data.items"] },
+        { "endpoint": "wishlist.remove", "sends": ["method:'DELETE'", "'/wishlist?item='"], "reads": [] }
+      ]
+    },
+    {
+      "file": "tools/themes/beauty-01/groups/cart-checkout.ts",
+      "uses": [{ "endpoint": "order-tracking.get", "sends": ["order:", "email:"], "reads": ["data.step"], "handles": [501] }]
+    }
+  ],
+  "forbiddenInTheme": ["data?.reviews", "data.distribution", "data?.stockists", "JSON.stringify({handle", "s.url", "r.photo", "r.category"]
+}
