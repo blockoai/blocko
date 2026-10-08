@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "cart-checkout-tracking-lookup": {
+      "type": "blko-cart-checkout-tracking-lookup",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "title": "Preparing your items",
+            "text": "Your order is being carefully packed."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "title": "On its way",
+            "text": "Tracking will appear after handoff."
+          }
+        },
+        "block-4": {
+          "type": "step",
+          "settings": {
+            "title": "Delivered",
+            "text": "Enjoy your new color-care system."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "cart-checkout-service-strip": {
+      "type": "blko-cart-checkout-service-strip",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "note",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "note",
+          "settings": {
+            "title": "Easy returns",
+            "text": "within 30 days"
+          }
+        },
+        "block-3": {
+          "type": "note",
+          "settings": {
+            "title": "Need help?",
+            "text": "We’re here for you"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "cart-checkout-tracking-lookup",
+    "cart-checkout-service-strip"
+  ]
+}

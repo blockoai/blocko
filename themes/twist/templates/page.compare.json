@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "global-compare-page": {
+      "type": "blko-global-compare-page",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "column",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "column",
+          "settings": {
+            "name": "Claw clip",
+            "finish": "Soft sheen",
+            "coverage": "Buildable",
+            "best_for": "Updos and ponytails",
+            "price": "$28"
+          }
+        },
+        "block-3": {
+          "type": "column",
+          "settings": {
+            "name": "Curl cream",
+            "finish": "Comfortable hold",
+            "coverage": "None",
+            "best_for": "Daily moisture",
+            "price": "$42"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "global-compare-page"
+  ]
+}

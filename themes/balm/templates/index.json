@@ -1,0 +1,297 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Cheeks",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Sculpt",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Sculpt ritual",
+            "label": "Sculpt"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "balm-ritual-steps": {
+      "type": "blko-balm-ritual-steps",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "title": "Nourish",
+            "text": "Press in radiance serum and velvet day cream."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "title": "Sculpt",
+            "text": "Define cheekbones and lids with creamy organic sticks."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SMALL-BATCH FORMULAS"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "THREE STEPS, ONE GLOW"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "balm-claim-panel": {
+      "type": "blko-balm-claim-panel",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "stat",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "stat",
+          "settings": {
+            "value": "5,000+",
+            "label": "five-star reviews"
+          }
+        },
+        "block-3": {
+          "type": "stat",
+          "settings": {
+            "value": "100%",
+            "label": "certified organic"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "balm-quiz-cards": {
+      "type": "blko-balm-quiz-cards",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "card",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "card",
+          "settings": {
+            "title": "Dull or tired skin"
+          }
+        },
+        "block-3": {
+          "type": "card",
+          "settings": {
+            "title": "Sensitive skin"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Cheeks",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Sculpt",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {}
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "balm-press-quote": {
+      "type": "blko-balm-press-quote",
+      "settings": {}
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "HAUTE GLOW"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "SKIN JOURNAL"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "balm-ritual-steps",
+    "message-band",
+    "tabbed-product-grid",
+    "balm-claim-panel",
+    "balm-quiz-cards",
+    "category-slider",
+    "feature-driver",
+    "commitments",
+    "testimonial-slider",
+    "balm-press-quote",
+    "press-slider",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "sections": {
+    "content-landing-hero": {
+      "type": "blko-content-landing-hero",
+      "settings": {}
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SULFATE-FREE"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "SALON-TESTED"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "content-landing-routine": {
+      "type": "blko-content-landing-routine",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Color-care product",
+            "label": "Step two",
+            "title": "Add a color boost",
+            "text": "Top up color only where it has faded."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Hair care products on a table",
+            "label": "Step three",
+            "title": "Seal it with shine",
+            "text": "A drop of serum is enough to make it glow."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New drops",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "content-landing-proof": {
+      "type": "blko-content-landing-proof",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Easy to explore",
+            "text": "Find guidance when you need it"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Made for your day",
+            "text": "Color first, always"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Treatments",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Styling",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Repair",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "content-landing-hero",
+    "message-band",
+    "content-landing-routine",
+    "tabbed-product-grid",
+    "content-landing-proof",
+    "category-slider",
+    "newsletter"
+  ]
+}

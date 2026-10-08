@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "account-dashboard": {
+      "type": "blko-account-dashboard",
+      "settings": {}
+    },
+    "account-order-list": {
+      "type": "blko-account-order-list",
+      "settings": {}
+    },
+    "account-empty-orders": {
+      "type": "blko-account-empty-orders",
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "blko-product-recommendations",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    }
+  },
+  "order": [
+    "account-dashboard",
+    "account-order-list",
+    "account-empty-orders",
+    "product-recommendations"
+  ]
+}

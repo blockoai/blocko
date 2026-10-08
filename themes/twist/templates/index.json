@@ -1,0 +1,269 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Clips",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Headbands",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Hair care",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Satin sleep",
+            "label": "Hair care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "twist-promo-hero": {
+      "type": "blko-twist-promo-hero",
+      "settings": {}
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SOFT ON HAIR"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "MADE TO GIFT"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "what's new",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Clips",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Gifts",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Hair care",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "twist-box-builder": {
+      "type": "blko-twist-box-builder",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "slot",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "slot",
+          "settings": {
+            "label": "scrunchie trio"
+          }
+        },
+        "block-3": {
+          "type": "slot",
+          "settings": {
+            "label": "claw clip set"
+          }
+        },
+        "block-4": {
+          "type": "slot",
+          "settings": {
+            "label": "hair oil"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "twist-reviews": {
+      "type": "blko-twist-reviews",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "review",
+          "settings": {
+            "quote": "I wash my hair half as often now and my curls are bouncier than ever. Hooked!"
+          }
+        },
+        "block-2": {
+          "type": "review",
+          "settings": {
+            "quote": "The satin pillowcase stayed cool all night and my hair looks brand new in the morning.",
+            "name": "Tasha"
+          }
+        },
+        "block-3": {
+          "type": "review",
+          "settings": {
+            "quote": "I have owned this heatless curler for over a year and I am obsessed. Best thing I have bought.",
+            "name": "Clara W."
+          }
+        },
+        "block-4": {
+          "type": "review",
+          "settings": {
+            "quote": "These claw clips hold my thick hair all day without a headache. Bought three more.",
+            "name": "Jennifer"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "twist-story": {
+      "type": "blko-twist-story",
+      "settings": {}
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "HAIR TODAY"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "THE EDIT"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "twist-promo-hero",
+    "message-band",
+    "tabbed-product-grid",
+    "category-slider",
+    "twist-box-builder",
+    "twist-reviews",
+    "twist-story",
+    "press-slider",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

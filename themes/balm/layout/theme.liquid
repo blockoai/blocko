@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <title>{{ page_title | escape }}{% if current_tags %} &ndash; {{ 'general.tagged' | t: tags: current_tags | join: ', ' }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name | escape }}{% endunless %}</title>
+  {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+  {% render 'blko-theme-styles' %}
+  {{ 'blko-theme.css' | asset_url | stylesheet_tag }}
+  {{ content_for_header }}
+</head>
+<body class="blko-theme">
+  <a class="blko-skip-link" href="#content">{{ 'blko.general.skip_to_content' | t }}</a>
+  <blko-cart-drawer>
+  {% sections 'header-group' %}
+  <main id="content">{{ content_for_layout }}</main>
+  {% sections 'footer-group' %}
+  </blko-cart-drawer>
+  <script type="module" src="{{ 'blko-cart-drawer.js' | asset_url }}"></script>
+</body>
+</html>

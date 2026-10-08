@@ -1,0 +1,365 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Lips",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Skin prep",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Skin prep edit",
+            "label": "Skin prep"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "NOTHING TO MASTER"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "FREE SHADE MATCHING"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "bare-press-quote": {
+      "type": "blko-bare-press-quote",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "outlet",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "outlet",
+          "settings": {
+            "name": "Weekly"
+          }
+        },
+        "block-3": {
+          "type": "outlet",
+          "settings": {
+            "name": "Daily"
+          }
+        },
+        "block-4": {
+          "type": "outlet",
+          "settings": {
+            "name": "Review"
+          }
+        },
+        "block-5": {
+          "type": "outlet",
+          "settings": {
+            "name": "Journal"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "bare-get-the-look": {
+      "type": "blko-bare-get-the-look",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "look",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "look",
+          "settings": {
+            "title": "Desk to dinner"
+          }
+        },
+        "block-3": {
+          "type": "look",
+          "settings": {
+            "title": "Weekend"
+          }
+        },
+        "block-4": {
+          "type": "look",
+          "settings": {
+            "title": "Evening"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Lips",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Skin prep",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "bare-shade-grid": {
+      "type": "blko-bare-shade-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "swatch",
+          "settings": {
+            "tone": "fair"
+          }
+        },
+        "block-2": {
+          "type": "swatch",
+          "settings": {
+            "label": "02"
+          }
+        },
+        "block-3": {
+          "type": "swatch",
+          "settings": {
+            "tone": "sand",
+            "label": "03"
+          }
+        },
+        "block-4": {
+          "type": "swatch",
+          "settings": {
+            "tone": "tan",
+            "label": "04"
+          }
+        },
+        "block-5": {
+          "type": "swatch",
+          "settings": {
+            "tone": "honey",
+            "label": "05"
+          }
+        },
+        "block-6": {
+          "type": "swatch",
+          "settings": {
+            "tone": "rose",
+            "label": "06"
+          }
+        },
+        "block-7": {
+          "type": "swatch",
+          "settings": {
+            "tone": "medium",
+            "label": "07"
+          }
+        },
+        "block-8": {
+          "type": "swatch",
+          "settings": {
+            "tone": "deep",
+            "label": "08"
+          }
+        },
+        "block-9": {
+          "type": "swatch",
+          "settings": {
+            "tone": "cocoa",
+            "label": "09"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {}
+    },
+    "bare-founder-note": {
+      "type": "blko-bare-founder-note",
+      "settings": {}
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "WEEKLY"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "DAILY"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "message-band",
+    "bare-press-quote",
+    "tabbed-product-grid",
+    "bare-get-the-look",
+    "category-slider",
+    "bare-shade-grid",
+    "feature-driver",
+    "bare-founder-note",
+    "commitments",
+    "testimonial-slider",
+    "press-slider",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

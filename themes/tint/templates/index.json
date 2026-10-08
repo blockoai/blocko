@@ -1,0 +1,302 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Eye",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Lip + Cheek",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Skin",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Skin",
+            "label": "Skin"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "tint-categories": {
+      "type": "blko-tint-categories",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tile",
+          "settings": {
+            "label": "Skin"
+          }
+        },
+        "block-3": {
+          "type": "tile",
+          "settings": {
+            "label": "Eye"
+          }
+        },
+        "block-4": {
+          "type": "tile",
+          "settings": {
+            "label": "Lip"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {
+            "label": "Cheek"
+          }
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "label": "Brow"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "100% SKINCARE-FRIENDLY"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "ALL-DAY WEAR"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "tint-shades": {
+      "type": "blko-tint-shades",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "shade",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "shade",
+          "settings": {
+            "name": "Honey Sand",
+            "tone": "honey-sand"
+          }
+        },
+        "block-3": {
+          "type": "shade",
+          "settings": {
+            "name": "Soft Caramel",
+            "tone": "soft-caramel"
+          }
+        },
+        "block-4": {
+          "type": "shade",
+          "settings": {
+            "name": "Golden Tan",
+            "tone": "golden-tan"
+          }
+        },
+        "block-5": {
+          "type": "shade",
+          "settings": {
+            "name": "Cocoa Deep",
+            "tone": "cocoa-deep"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "tint-statement": {
+      "type": "blko-tint-statement",
+      "settings": {}
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "tint-reels": {
+      "type": "blko-tint-reels",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "reel",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "reel",
+          "settings": {
+            "quote": "My new everyday cheek.",
+            "shade": "Honey Sand",
+            "name": "Jo"
+          }
+        },
+        "block-3": {
+          "type": "reel",
+          "settings": {
+            "quote": "So juicy, so easy.",
+            "shade": "Soft Caramel",
+            "name": "Ines"
+          }
+        },
+        "block-4": {
+          "type": "reel",
+          "settings": {
+            "quote": "Matches perfectly.",
+            "shade": "Cocoa Deep",
+            "name": "Ade"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "DAILY GLOW"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "BEAUTY WEEKLY"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "tint-categories",
+    "message-band",
+    "tabbed-product-grid",
+    "tint-shades",
+    "tint-statement",
+    "commitments",
+    "testimonial-slider",
+    "tint-reels",
+    "press-slider",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "page-header": {
+      "type": "blko-page-header",
+      "settings": {}
+    },
+    "beauty-extras-shade-quiz": {
+      "type": "blko-beauty-extras-shade-quiz",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tone",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tone",
+          "settings": {
+            "label": "Medium density",
+            "tone": "tone-1",
+            "selected": true
+          }
+        },
+        "block-3": {
+          "type": "tone",
+          "settings": {
+            "label": "Thick density",
+            "tone": "tone-2"
+          }
+        },
+        "block-4": {
+          "type": "tone",
+          "settings": {
+            "label": "Coily and dense",
+            "tone": "tone-3"
+          }
+        },
+        "block-5": {
+          "type": "undertone",
+          "settings": {
+            "selected": true
+          }
+        },
+        "block-6": {
+          "type": "undertone",
+          "settings": {
+            "label": "Wavy",
+            "hint": "A soft S shape"
+          }
+        },
+        "block-7": {
+          "type": "undertone",
+          "settings": {
+            "label": "Curly",
+            "hint": "Defined ringlets"
+          }
+        },
+        "block-8": {
+          "type": "coverage",
+          "settings": {
+            "label": "Color lock",
+            "hint": "Keep it vivid for longer",
+            "selected": true
+          }
+        },
+        "block-9": {
+          "type": "coverage",
+          "settings": {
+            "label": "Fine",
+            "hint": "Repair and shine"
+          }
+        },
+        "block-10": {
+          "type": "coverage",
+          "settings": {
+            "label": "Medium",
+            "hint": "Frizz-free volume"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10"
+      ]
+    },
+    "beauty-extras-shade-result": {
+      "type": "blko-beauty-extras-shade-result",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "swatch",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "swatch",
+          "settings": {
+            "label": "Medium + wavy formula",
+            "tone": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "faq": {
+      "type": "blko-faq",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "When will my order ship?"
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Can I update my order?"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "page-header",
+    "beauty-extras-shade-quiz",
+    "beauty-extras-shade-result",
+    "faq",
+    "newsletter"
+  ]
+}

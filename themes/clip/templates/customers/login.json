@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "account-login": {
+      "type": "blko-account-login",
+      "settings": {}
+    }
+  },
+  "order": [
+    "account-login"
+  ]
+}

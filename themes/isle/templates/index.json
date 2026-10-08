@@ -1,0 +1,273 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Sun",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Lips + glow",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Sets",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Gift ritual",
+            "label": "Sets"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "isle-ticker": {
+      "type": "blko-isle-ticker",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "claim",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "claim",
+          "settings": {
+            "text": "Powered by actives"
+          }
+        },
+        "block-3": {
+          "type": "claim",
+          "settings": {
+            "text": "Feels like paradise"
+          }
+        },
+        "block-4": {
+          "type": "claim",
+          "settings": {
+            "text": "High-performance body care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "isle-claims": {
+      "type": "blko-isle-claims",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "claim",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "claim",
+          "settings": {
+            "label": "Vegan"
+          }
+        },
+        "block-3": {
+          "type": "claim",
+          "settings": {
+            "label": "Cruelty-free"
+          }
+        },
+        "block-4": {
+          "type": "claim",
+          "settings": {
+            "label": "Sulfate-free"
+          }
+        },
+        "block-5": {
+          "type": "claim",
+          "settings": {
+            "label": "Paraben-free"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "Just landed",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Sun",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Gifts",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Sets",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "isle-actives": {
+      "type": "blko-isle-actives",
+      "settings": {}
+    },
+    "isle-results": {
+      "type": "blko-isle-results",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "stat",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "stat",
+          "settings": {
+            "value": "89%",
+            "label": "said it smelled like vacation"
+          }
+        },
+        "block-3": {
+          "type": "stat",
+          "settings": {
+            "value": "96%",
+            "label": "would repurchase"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "COAST & CO"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "SUN JOURNAL"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "isle-ticker",
+    "isle-claims",
+    "tabbed-product-grid",
+    "category-slider",
+    "isle-actives",
+    "isle-results",
+    "press-slider",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "blko": {
+    "pdp": {
+      "after": "After",
+      "before": "Before",
+      "reveal_comparison": "Reveal before and after image"
+    }
+  }
+}

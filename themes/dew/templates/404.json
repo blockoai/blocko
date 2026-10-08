@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "cart-checkout-not-found": {
+      "type": "blko-cart-checkout-not-found",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Face",
+            "url": "#complexion"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Body",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "cart-checkout-not-found"
+  ]
+}

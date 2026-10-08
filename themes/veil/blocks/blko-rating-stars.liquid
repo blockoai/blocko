@@ -4,7 +4,7 @@
 -%}
 <div class="blko-theme" {{ block.shopify_attributes }}><p class="blko-rating">{% assign blko_rating = product.metafields.reviews.rating.value.rating | round %}{% for blko_star in (1..5) %}{% if blko_star <= blko_rating %}★{% else %}☆{% endif %}{% endfor %} <span>{{ product.metafields.reviews.rating.value.rating | escape }} from {{ product.metafields.reviews.rating_count | escape }} reviews</span></p></div>
 {% stylesheet %}
-:where(.blko-theme){--font-body:"DM Sans",Arial,sans-serif;--color-ink:var(--color-text);--color-text:#5e5047;--color-paper:var(--color-bg-alt);--color-bg-alt:#f7f4f0}
+:where(.blko-theme){--font-body:"DM Sans",Arial,sans-serif;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-rating{margin:.5rem 0}
 {% endstylesheet %}

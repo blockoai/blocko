@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "page-header": {
+      "type": "blko-page-header",
+      "settings": {}
+    },
+    "beauty-extras-shade-quiz": {
+      "type": "blko-beauty-extras-shade-quiz",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tone",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tone",
+          "settings": {
+            "label": "Light to medium",
+            "tone": "tone-1",
+            "selected": true
+          }
+        },
+        "block-3": {
+          "type": "tone",
+          "settings": {
+            "label": "Medium to deep",
+            "tone": "tone-2"
+          }
+        },
+        "block-4": {
+          "type": "tone",
+          "settings": {
+            "label": "Deep to rich",
+            "tone": "tone-3"
+          }
+        },
+        "block-5": {
+          "type": "undertone",
+          "settings": {
+            "selected": true
+          }
+        },
+        "block-6": {
+          "type": "undertone",
+          "settings": {
+            "label": "Neutral",
+            "hint": "A balanced mix"
+          }
+        },
+        "block-7": {
+          "type": "undertone",
+          "settings": {
+            "label": "Warm",
+            "hint": "Golden or peach tones"
+          }
+        },
+        "block-8": {
+          "type": "coverage",
+          "settings": {
+            "label": "Sheer",
+            "hint": "Skin, but brighter",
+            "selected": true
+          }
+        },
+        "block-9": {
+          "type": "coverage",
+          "settings": {
+            "label": "Light",
+            "hint": "Easy everyday polish"
+          }
+        },
+        "block-10": {
+          "type": "coverage",
+          "settings": {
+            "label": "Medium",
+            "hint": "Buildable confidence"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10"
+      ]
+    },
+    "beauty-extras-shade-result": {
+      "type": "blko-beauty-extras-shade-result",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "swatch",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "swatch",
+          "settings": {
+            "label": "Clay shade",
+            "tone": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "faq": {
+      "type": "blko-faq",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "When will my order ship?"
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Can I update my order?"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "page-header",
+    "beauty-extras-shade-quiz",
+    "beauty-extras-shade-result",
+    "faq",
+    "newsletter"
+  ]
+}

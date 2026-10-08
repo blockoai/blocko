@@ -1,0 +1,355 @@
+[
+  {
+    "page": "account-login",
+    "title": "Sign in",
+    "sectionIds": [
+      "account-login"
+    ]
+  },
+  {
+    "page": "account-register",
+    "title": "Create account",
+    "sectionIds": [
+      "account-register"
+    ]
+  },
+  {
+    "page": "account-reset-password",
+    "title": "Reset password",
+    "sectionIds": [
+      "account-reset-password"
+    ]
+  },
+  {
+    "page": "account-activate",
+    "title": "Activate account",
+    "sectionIds": [
+      "account-activate"
+    ]
+  },
+  {
+    "page": "account",
+    "title": "Your account",
+    "sectionIds": [
+      "account-dashboard",
+      "account-order-list",
+      "account-empty-orders",
+      "product-recommendations"
+    ]
+  },
+  {
+    "page": "account-order",
+    "title": "Order details",
+    "sectionIds": [
+      "account-order-detail",
+      "account-help-note"
+    ]
+  },
+  {
+    "page": "account-addresses",
+    "title": "Addresses",
+    "sectionIds": [
+      "account-addresses",
+      "account-address-form"
+    ]
+  },
+  {
+    "page": "shade-quiz",
+    "title": "Shade finder",
+    "sectionIds": [
+      "page-header",
+      "beauty-extras-shade-quiz",
+      "beauty-extras-shade-result",
+      "faq",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "ingredients",
+    "title": "Ingredient glossary",
+    "sectionIds": [
+      "beauty-extras-ingredient-glossary",
+      "ingredients-callout",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "routine-builder",
+    "title": "Routine builder",
+    "sectionIds": [
+      "beauty-extras-routine-builder",
+      "product-recommendations",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "reviews",
+    "title": "Reviews",
+    "sectionIds": [
+      "beauty-extras-reviews-hub",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "stockists",
+    "title": "Stockists",
+    "sectionIds": [
+      "beauty-extras-stockist-locator",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "rewards",
+    "title": "Rewards",
+    "sectionIds": [
+      "beauty-extras-rewards-overview",
+      "faq",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "subscriptions",
+    "title": "Subscriptions",
+    "sectionIds": [
+      "beauty-extras-subscription-manager",
+      "product-recommendations",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "cart",
+    "title": "Your bag",
+    "sectionIds": [
+      "cart-checkout-cart-main",
+      "cart-checkout-service-strip"
+    ]
+  },
+  {
+    "page": "cart-empty",
+    "title": "Your bag",
+    "sectionIds": [
+      "cart-checkout-cart-empty",
+      "cart-checkout-service-strip"
+    ]
+  },
+  {
+    "page": "thank-you",
+    "title": "Order confirmed",
+    "sectionIds": [
+      "cart-checkout-confirmed",
+      "cart-checkout-order-status",
+      "cart-checkout-order-actions"
+    ]
+  },
+  {
+    "page": "order-tracking",
+    "title": "Track your order",
+    "sectionIds": [
+      "cart-checkout-tracking-lookup",
+      "cart-checkout-service-strip"
+    ]
+  },
+  {
+    "page": "404",
+    "title": "Page not found",
+    "sectionIds": [
+      "cart-checkout-not-found"
+    ]
+  },
+  {
+    "page": "about",
+    "title": "Our idea",
+    "sectionIds": [
+      "content-about-hero",
+      "content-mission",
+      "content-values",
+      "content-founder-note",
+      "content-story-timeline",
+      "content-press-quotes",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "contact",
+    "title": "Contact",
+    "sectionIds": [
+      "content-contact-hero",
+      "content-contact-channels",
+      "content-contact-form",
+      "content-contact-hours",
+      "content-contact-map"
+    ]
+  },
+  {
+    "page": "faq",
+    "title": "Help center",
+    "sectionIds": [
+      "content-faq-hero",
+      "content-faq-browser",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "policy",
+    "title": "Privacy policy",
+    "sectionIds": [
+      "content-policy-hero",
+      "content-policy-document"
+    ]
+  },
+  {
+    "page": "landing",
+    "title": "The everyday edit",
+    "sectionIds": [
+      "content-landing-hero",
+      "message-band",
+      "content-landing-routine",
+      "tabbed-product-grid",
+      "content-landing-proof",
+      "category-slider",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "subscribe-success",
+    "title": "Subscription confirmed",
+    "sectionIds": [
+      "global-subscribe-success"
+    ]
+  },
+  {
+    "page": "password",
+    "title": "Coming soon",
+    "sectionIds": [
+      "global-password-page"
+    ]
+  },
+  {
+    "page": "gift-card",
+    "title": "Gift card",
+    "sectionIds": [
+      "global-gift-card-page"
+    ]
+  },
+  {
+    "page": "wishlist",
+    "title": "Saved items",
+    "sectionIds": [
+      "global-wishlist-page"
+    ]
+  },
+  {
+    "page": "compare",
+    "title": "Compare products",
+    "sectionIds": [
+      "global-compare-page"
+    ]
+  },
+  {
+    "page": "components",
+    "title": "Utility components",
+    "sectionIds": [
+      "global-components-page"
+    ]
+  },
+  {
+    "page": "home",
+    "title": "Dew — Home",
+    "sectionIds": [
+      "home-collection-mega-menu",
+      "hero-campaign",
+      "dew-shade-row",
+      "message-band",
+      "tabbed-product-grid",
+      "dew-philosophy",
+      "category-slider",
+      "feature-driver",
+      "commitments",
+      "testimonial-slider",
+      "press-slider",
+      "dew-social-strip",
+      "newsletter",
+      "home-collection-quick-view-modal"
+    ]
+  },
+  {
+    "page": "collection",
+    "title": "Dew — Shop",
+    "sectionIds": [
+      "home-collection-mega-menu",
+      "home-collection-collection-toolbar",
+      "home-collection-collection-grid",
+      "home-collection-quick-view-modal",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "collections",
+    "title": "Dew — Collections",
+    "sectionIds": [
+      "home-collection-mega-menu",
+      "home-collection-collections-directory",
+      "home-collection-quick-view-modal",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "pdp",
+    "title": "Dew Glow Serum",
+    "sectionIds": [
+      "pdp-product-main",
+      "dew-facts",
+      "pdp-before-after",
+      "pdp-complete-routine",
+      "product-recommendations",
+      "pdp-reviews",
+      "pdp-recently-viewed",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "pdp-bundle",
+    "title": "Build Your Routine",
+    "sectionIds": [
+      "pdp-bundle-builder",
+      "pdp-bundle-explainer",
+      "product-recommendations",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "search",
+    "title": "Search",
+    "sectionIds": [
+      "search-blog-search-results"
+    ]
+  },
+  {
+    "page": "search-empty",
+    "title": "Search",
+    "sectionIds": [
+      "search-blog-search-empty"
+    ]
+  },
+  {
+    "page": "blog",
+    "title": "Journal",
+    "sectionIds": [
+      "search-blog-journal-hero",
+      "search-blog-featured-post",
+      "search-blog-article-grid",
+      "search-blog-pagination",
+      "newsletter"
+    ]
+  },
+  {
+    "page": "article",
+    "title": "A five-minute routine",
+    "sectionIds": [
+      "search-blog-article-hero",
+      "search-blog-article-content",
+      "search-blog-related-articles",
+      "newsletter"
+    ]
+  }
+]

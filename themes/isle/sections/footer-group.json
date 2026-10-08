@@ -1,0 +1,35 @@
+{
+  "name": "Footer",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "blko-chrome-footer",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "column",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "column",
+          "settings": {
+            "title": "Our story",
+            "menu": "footer-about"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "cart-drawer": {
+      "type": "blko-chrome-cart-drawer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "footer",
+    "cart-drawer"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "sections": {
+    "content-policy-hero": {
+      "type": "blko-content-policy-hero",
+      "settings": {}
+    },
+    "content-policy-document": {
+      "type": "blko-content-policy-document",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "section",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "section",
+          "settings": {
+            "anchor": "content-policy-data",
+            "toc": "Information we collect",
+            "heading": "2. Information we collect",
+            "body": "<p>Describe the categories of information collected when someone visits, purchases, contacts support, or subscribes. Be specific about information provided directly and information collected automatically.</p><ul><li>Account, contact, and order details</li><li>Device, browser, and usage information</li><li>Support communications and voluntary feedback</li></ul>"
+          }
+        },
+        "block-3": {
+          "type": "section",
+          "settings": {
+            "anchor": "content-policy-use",
+            "toc": "How we use information",
+            "heading": "3. How we use information",
+            "body": "<p>Explain the purposes for processing, such as providing services, improving the experience, communicating about an order, preventing misuse, and meeting legal obligations.</p>"
+          }
+        },
+        "block-4": {
+          "type": "section",
+          "settings": {
+            "anchor": "content-policy-sharing",
+            "toc": "When we share information",
+            "heading": "4. When we share information",
+            "body": "<p>Identify the limited circumstances in which information is shared with service providers, professional advisers, authorities, or another party at a person’s direction.</p>"
+          }
+        },
+        "block-5": {
+          "type": "section",
+          "settings": {
+            "anchor": "content-policy-choices",
+            "toc": "Your choices",
+            "heading": "5. Your choices",
+            "body": "<p>Explain available access, correction, deletion, marketing preference, cookie, and region-specific privacy choices. Include a workable method to submit a request.</p>"
+          }
+        },
+        "block-6": {
+          "type": "section",
+          "settings": {
+            "anchor": "content-policy-security",
+            "toc": "Security and retention",
+            "heading": "6. Security and retention",
+            "body": "<p>Describe reasonable safeguards and the factors used to determine how long information is retained. Avoid absolute claims about security.</p>"
+          }
+        },
+        "block-7": {
+          "type": "section",
+          "settings": {
+            "anchor": "content-policy-contact",
+            "toc": "Contact",
+            "heading": "7. Contact",
+            "body": "<p>For privacy questions, write to <a href=\"mailto:privacy@example.com\">privacy@example.com</a>. Replace this placeholder and all policy text with approved legal copy before use.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7"
+      ]
+    }
+  },
+  "order": [
+    "content-policy-hero",
+    "content-policy-document"
+  ]
+}

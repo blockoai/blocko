@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "search-blog-article-hero": {
+      "type": "blko-search-blog-article-hero",
+      "settings": {}
+    },
+    "search-blog-article-content": {
+      "type": "blko-search-blog-article-content",
+      "settings": {}
+    },
+    "search-blog-related-articles": {
+      "type": "blko-search-blog-related-articles",
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "search-blog-article-hero",
+    "search-blog-article-content",
+    "search-blog-related-articles",
+    "newsletter"
+  ]
+}

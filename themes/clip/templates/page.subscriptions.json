@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "beauty-extras-subscription-manager": {
+      "type": "blko-beauty-extras-subscription-manager",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "frequency",
+          "settings": {
+            "selected": true
+          }
+        },
+        "block-2": {
+          "type": "frequency",
+          "settings": {
+            "label": "6 weeks"
+          }
+        },
+        "block-3": {
+          "type": "frequency",
+          "settings": {
+            "label": "8 weeks"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "product-recommendations": {
+      "type": "blko-product-recommendations",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "beauty-extras-subscription-manager",
+    "product-recommendations",
+    "newsletter"
+  ]
+}

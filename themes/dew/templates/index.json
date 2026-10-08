@@ -1,0 +1,297 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Lips + cheeks",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Body",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "body routine",
+            "label": "Body"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "dew-shade-row": {
+      "type": "blko-dew-shade-row",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tint",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tint",
+          "settings": {
+            "tone": "rose",
+            "label": "rose"
+          }
+        },
+        "block-3": {
+          "type": "tint",
+          "settings": {
+            "tone": "berry",
+            "label": "berry"
+          }
+        },
+        "block-4": {
+          "type": "tint",
+          "settings": {
+            "tone": "clay",
+            "label": "clay"
+          }
+        },
+        "block-5": {
+          "type": "tint",
+          "settings": {
+            "tone": "mocha",
+            "label": "mocha"
+          }
+        },
+        "block-6": {
+          "type": "tint",
+          "settings": {
+            "tone": "cocoa",
+            "label": "cocoa"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SHORT INGREDIENT LISTS"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "MADE FOR EVERY DAY"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "dew-philosophy": {
+      "type": "blko-dew-philosophy",
+      "settings": {}
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Lips",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Body",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {}
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "SKIN JOURNAL"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "QUIET REVIEW"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "dew-social-strip": {
+      "type": "blko-dew-social-strip",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "post",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "post",
+          "settings": {}
+        },
+        "block-3": {
+          "type": "post",
+          "settings": {}
+        },
+        "block-4": {
+          "type": "post",
+          "settings": {}
+        },
+        "block-5": {
+          "type": "post",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "dew-shade-row",
+    "message-band",
+    "tabbed-product-grid",
+    "dew-philosophy",
+    "category-slider",
+    "feature-driver",
+    "commitments",
+    "testimonial-slider",
+    "press-slider",
+    "dew-social-strip",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

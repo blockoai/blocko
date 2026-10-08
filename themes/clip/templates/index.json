@@ -1,0 +1,313 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Scrunchies",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Bows + pins",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Brushes + tools",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Brushes + tools",
+            "label": "Brushes + tools"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "clip-trio": {
+      "type": "blko-clip-trio",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "story",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "story",
+          "settings": {
+            "image_alt": "Satin scrunchies in soft pastel shades",
+            "caption": "Satin scrunchies, six shades",
+            "label": "Shop scrunchies",
+            "url": "#scrunchies"
+          }
+        },
+        "block-3": {
+          "type": "story",
+          "settings": {
+            "image_alt": "Pearl clips pinned along a side part",
+            "caption": "Pearl pins for tiny moments",
+            "label": "Shop pins",
+            "url": "#pins"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SOFT MATERIALS"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "ALL-DAY WEAR"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "clip-category-tiles": {
+      "type": "blko-clip-category-tiles",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tile",
+          "settings": {
+            "label": "Brushes + combs"
+          }
+        },
+        "block-2": {
+          "type": "tile",
+          "settings": {
+            "image_alt": "Velvet scrunchies in a stack",
+            "label": "Scrunchies",
+            "url": "#scrunchies"
+          }
+        },
+        "block-3": {
+          "type": "tile",
+          "settings": {
+            "image_alt": "Pink spa headband and bottles",
+            "label": "Headbands",
+            "url": "#headbands"
+          }
+        },
+        "block-4": {
+          "type": "tile",
+          "settings": {
+            "image_alt": "Hair clip worn on a half-up style",
+            "label": "Clips + pins",
+            "url": "#pins"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {}
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "clip-story-split": {
+      "type": "blko-clip-story-split",
+      "settings": {}
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "clip-mosaic": {
+      "type": "blko-clip-mosaic",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 1"
+          }
+        },
+        "block-2": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 2"
+          }
+        },
+        "block-3": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 3"
+          }
+        },
+        "block-4": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 4"
+          }
+        },
+        "block-5": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 5"
+          }
+        },
+        "block-6": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 6"
+          }
+        },
+        "block-7": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 7"
+          }
+        },
+        "block-8": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 8"
+          }
+        },
+        "block-9": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 9"
+          }
+        },
+        "block-10": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 10"
+          }
+        },
+        "block-11": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 11"
+          }
+        },
+        "block-12": {
+          "type": "photo",
+          "settings": {
+            "image_alt": "Community style 12"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10",
+        "block-11",
+        "block-12"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "clip-trio",
+    "message-band",
+    "clip-category-tiles",
+    "tabbed-product-grid",
+    "feature-driver",
+    "commitments",
+    "clip-story-split",
+    "testimonial-slider",
+    "clip-mosaic",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

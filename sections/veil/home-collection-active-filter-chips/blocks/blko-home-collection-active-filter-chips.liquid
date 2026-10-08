@@ -5,7 +5,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-home-collection><div class="blko-home-collection-active-filters">{% for filter in collection.filters %}{% for active_value in filter.active_values %}<a href="{{ active_value.url_to_remove | escape }}">{{ active_value.label | escape }} <span aria-hidden="true">×</span></a>{% endfor %}{% endfor %}</div></blko-home-collection></div>
 <script type="module" src="{{ 'blko-home-collection.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-line:var(--color-border);--color-border:#d6d0c7;--font-mono:var(--font-accent);--font-accent:var(--font-body);--font-body:"DM Sans",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--color-ink:var(--color-text);--color-text:#5e5047;--color-paper:var(--color-bg-alt);--color-bg-alt:#f7f4f0}
+:where(.blko-theme){--color-line:var(--color-border);--color-border:ButtonFace;--font-mono:var(--font-accent);--font-accent:var(--font-body);--font-body:"DM Sans",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-home-collection-active-filters{display:flex;flex-wrap:wrap;gap:.5rem}
 .blko-theme .blko-home-collection-active-filters{min-height:1.2rem;margin-top:1rem}

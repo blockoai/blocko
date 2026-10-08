@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "search-blog-journal-hero": {
+      "type": "blko-search-blog-journal-hero",
+      "settings": {}
+    },
+    "search-blog-featured-post": {
+      "type": "blko-search-blog-featured-post",
+      "settings": {}
+    },
+    "search-blog-article-grid": {
+      "type": "blko-search-blog-article-grid",
+      "settings": {}
+    },
+    "search-blog-pagination": {
+      "type": "blko-search-blog-pagination",
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "search-blog-journal-hero",
+    "search-blog-featured-post",
+    "search-blog-article-grid",
+    "search-blog-pagination",
+    "newsletter"
+  ]
+}

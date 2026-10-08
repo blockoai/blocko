@@ -1,0 +1,289 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Face",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Hair",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Body",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Body",
+            "label": "Body"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "DESIGNED FOR QUALITY"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "SHIPS TO YOUR DOOR"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "stubble-tool-chooser": {
+      "type": "blko-stubble-tool-chooser",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tool",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tool",
+          "settings": {
+            "image_alt": "Safety razor on a tray",
+            "badge": "Classic",
+            "name": "Safety Razor",
+            "note": "A single-blade classic for a slower, closer shave and the lowest cost per blade.",
+            "price": "From $12",
+            "url": "#safety",
+            "label": "Shop the classic"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "stubble-trial-banner": {
+      "type": "blko-stubble-trial-banner",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "cadence",
+          "settings": {
+            "label": "4 weeks",
+            "note": "Fresh blades"
+          }
+        },
+        "block-2": {
+          "type": "cadence",
+          "settings": {}
+        },
+        "block-3": {
+          "type": "cadence",
+          "settings": {
+            "label": "12 weeks",
+            "note": "Light shavers"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Face",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Hair",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Body",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {}
+    },
+    "stubble-color-story": {
+      "type": "blko-stubble-color-story",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "text": "Formulas free of parabens and dyes"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "text": "Easy returns within 30 days"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "MEN'S EDIT"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "THE LOADOUT"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "message-band",
+    "stubble-tool-chooser",
+    "tabbed-product-grid",
+    "stubble-trial-banner",
+    "category-slider",
+    "feature-driver",
+    "stubble-color-story",
+    "commitments",
+    "testimonial-slider",
+    "press-slider",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

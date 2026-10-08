@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "content-landing-hero": {
+      "type": "blko-content-landing-hero",
+      "settings": {}
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "100% SKINCARE-FRIENDLY"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "ALL-DAY WEAR"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "content-landing-routine": {
+      "type": "blko-content-landing-routine",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Tinted beauty product",
+            "label": "Step two",
+            "title": "Add a sheer tint",
+            "text": "Build coverage only where you want a little more."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Makeup products on a table",
+            "label": "Step three",
+            "title": "Choose a finishing touch",
+            "text": "A wash of color is enough to make it yours."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "content-landing-proof": {
+      "type": "blko-content-landing-proof",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Easy to explore",
+            "text": "Find guidance when you need it"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Made for your day",
+            "text": "Comfort first, always"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "content-landing-hero",
+    "message-band",
+    "content-landing-routine",
+    "tabbed-product-grid",
+    "content-landing-proof",
+    "newsletter"
+  ]
+}

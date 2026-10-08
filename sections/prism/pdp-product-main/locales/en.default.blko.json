@@ -1,0 +1,12 @@
+{
+  "blko": {
+    "pdp": {
+      "decrease_quantity": "Decrease quantity",
+      "increase_quantity": "Increase quantity",
+      "product_images": "Product images",
+      "sold_out": "Sold out",
+      "zoom": "Zoom",
+      "zoom_image": "Zoom product image"
+    }
+  }
+}

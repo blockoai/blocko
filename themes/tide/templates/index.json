@@ -1,0 +1,335 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Body",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Lips",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Sun care",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Body ritual",
+            "label": "Sun care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SEA BOTANICALS"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "EVERYDAY CALM"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tide-standards": {
+      "type": "blko-tide-standards",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "standard",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "standard",
+          "settings": {
+            "number": "02",
+            "title": "Reef-safe sun care",
+            "text": "Non-nano zinc oxide, free from filters that harm coral."
+          }
+        },
+        "block-3": {
+          "type": "standard",
+          "settings": {
+            "number": "03",
+            "title": "Recyclable packaging",
+            "text": "Glass, aluminium and post-consumer plastic you can recycle."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "tide-ritual": {
+      "type": "blko-tide-ritual",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "time": "Midday",
+            "title": "Mist and refresh",
+            "text": "A cooling face mist wherever the sun and salt air reach."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "time": "Low tide",
+            "title": "Restore and rest",
+            "text": "Sea mineral cream and a little body butter to end the day."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Body",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Lips",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Sun care",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {}
+    },
+    "tide-botanical": {
+      "type": "blko-tide-botanical",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "benefit",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "benefit",
+          "settings": {
+            "label": "Hydrates"
+          }
+        },
+        "block-3": {
+          "type": "benefit",
+          "settings": {
+            "label": "Mineral-rich"
+          }
+        },
+        "block-4": {
+          "type": "benefit",
+          "settings": {
+            "label": "Balances"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "WELLNESS"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "SURF DAILY"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tide-subscribe": {
+      "type": "blko-tide-subscribe",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "title": "Choose your rhythm",
+            "text": "Every 4, 6, or 8 weeks, whatever suits you."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "title": "Pause or cancel anytime",
+            "text": "No minimums, no fees, no fuss."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "message-band",
+    "tide-standards",
+    "tabbed-product-grid",
+    "tide-ritual",
+    "category-slider",
+    "feature-driver",
+    "tide-botanical",
+    "commitments",
+    "testimonial-slider",
+    "press-slider",
+    "tide-subscribe",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "blko": {
+    "general": {
+      "close": "close"
+    },
+    "header": {
+      "bag": "bag",
+      "menu": "menu"
+    }
+  }
+}

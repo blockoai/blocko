@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "search-blog-search-empty": {
+      "type": "blko-search-blog-search-empty",
+      "settings": {}
+    }
+  },
+  "order": [
+    "search-blog-search-empty"
+  ]
+}

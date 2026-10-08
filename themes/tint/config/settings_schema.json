@@ -1,0 +1,239 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Tint",
+    "theme_version": "1.0.0",
+    "theme_author": "Blocko",
+    "theme_documentation_url": "https://shopify.dev/docs/storefronts/themes",
+    "theme_support_url": "https://shopify.dev/docs/storefronts/themes"
+  },
+  {
+    "name": "Color schemes",
+    "settings": [
+      {
+        "type": "color_scheme_group",
+        "id": "color_schemes",
+        "definition": [
+          {
+            "type": "color",
+            "id": "background",
+            "label": "Background",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "text",
+            "label": "Text",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "button",
+            "label": "Button",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "button_label",
+            "label": "Button label",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "button_hover",
+            "label": "Button hover",
+            "default": "#35303e"
+          }
+        ],
+        "role": {
+          "background": "background",
+          "text": "text",
+          "primary_button": "button",
+          "on_primary_button": "button_label",
+          "primary_button_border": "button",
+          "secondary_button": "background",
+          "on_secondary_button": "text",
+          "secondary_button_border": "text",
+          "links": "text",
+          "icons": "text"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Design tokens",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Bg",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_bg_alt",
+        "label": "Bg Alt",
+        "default": "#e0ebe5"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_text_muted",
+        "label": "Text Muted",
+        "default": "#6f6f6f"
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Border",
+        "default": "#cecbce"
+      },
+      {
+        "type": "color",
+        "id": "color_button",
+        "label": "Button",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_button_text",
+        "label": "Button Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_button_hover",
+        "label": "Button Hover",
+        "default": "#35303e"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Accent",
+        "default": "#f0b8cb"
+      },
+      {
+        "type": "color",
+        "id": "color_sale",
+        "label": "Sale",
+        "default": "#d33167"
+      },
+      {
+        "type": "color",
+        "id": "color_announcement_bg",
+        "label": "Announcement Bg",
+        "default": "#fdefb6"
+      },
+      {
+        "type": "color",
+        "id": "color_announcement_text",
+        "label": "Announcement Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_bg",
+        "label": "Footer Bg",
+        "default": "#35303e"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_text",
+        "label": "Footer Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_success",
+        "label": "Success",
+        "default": "#2f6b4f"
+      },
+      {
+        "type": "color",
+        "id": "color_error",
+        "label": "Error",
+        "default": "#b3261e"
+      },
+      {
+        "type": "color",
+        "id": "color_input_bg",
+        "label": "Input Bg",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_input_text",
+        "label": "Input Text",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_light",
+        "label": "Swatch light",
+        "default": "#f3d7c3"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_medium",
+        "label": "Swatch medium",
+        "default": "#d4a57f"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_deep",
+        "label": "Swatch deep",
+        "default": "#7c4a30"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_rose_beige",
+        "label": "Swatch rose beige",
+        "default": "#ecc9b8"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_honey_sand",
+        "label": "Swatch honey sand",
+        "default": "#e2b98e"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_soft_caramel",
+        "label": "Swatch soft caramel",
+        "default": "#c8946a"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_golden_tan",
+        "label": "Swatch golden tan",
+        "default": "#a8704a"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_cocoa_deep",
+        "label": "Swatch cocoa deep",
+        "default": "#6b3f2a"
+      }
+    ]
+  },
+  {
+    "name": "Blocko app",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Reviews, wishlist and stockist features call a Cloudflare Worker through a Shopify App Proxy."
+      },
+      {
+        "type": "text",
+        "id": "blocko_api_base",
+        "label": "App proxy base path",
+        "default": "/apps/blocko"
+      }
+    ]
+  }
+]

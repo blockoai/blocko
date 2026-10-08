@@ -1,0 +1,61 @@
+{
+  "blko": {
+    "account": {
+      "address": "Address",
+      "order_prefix": "No.",
+      "quantity": "Quantity"
+    },
+    "cart": {
+      "decrease": "Decrease quantity",
+      "empty": "Your bag is empty (for now)",
+      "increase": "Increase quantity",
+      "line_total": "Line total",
+      "remove": "Remove",
+      "subtotal": "Subtotal"
+    },
+    "collection": {
+      "of": "of",
+      "page": "Page",
+      "products": "products",
+      "products_shown": "products shown",
+      "showing": "Showing",
+      "sort": "Sort"
+    },
+    "general": {
+      "close": "Close",
+      "home": "Home",
+      "read_more": "Read more",
+      "skip_to_content": "Skip to content"
+    },
+    "header": {
+      "bag": "Bag",
+      "menu": "Menu"
+    },
+    "password": {
+      "enter": "Enter using password",
+      "error": "Wrong password",
+      "label": "Password",
+      "submit": "Enter"
+    },
+    "pdp": {
+      "add": "Add",
+      "after": "After",
+      "before": "Before",
+      "decrease_quantity": "Decrease quantity",
+      "increase_quantity": "Increase quantity",
+      "product_images": "Product images",
+      "rating_breakdown": "Rating breakdown",
+      "remove": "Remove",
+      "reveal_comparison": "Reveal before and after image",
+      "sold_out": "Sold out",
+      "zoom": "Zoom",
+      "zoom_image": "Zoom product image"
+    },
+    "reviews": {
+      "count_template": "From {count} verified reviews"
+    }
+  },
+  "general": {
+    "tagged": "Tagged \"{{ tags }}\""
+  }
+}

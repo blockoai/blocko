@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "account-addresses": {
+      "type": "blko-account-addresses",
+      "settings": {}
+    },
+    "account-address-form": {
+      "type": "blko-account-address-form",
+      "settings": {}
+    }
+  },
+  "order": [
+    "account-addresses",
+    "account-address-form"
+  ]
+}

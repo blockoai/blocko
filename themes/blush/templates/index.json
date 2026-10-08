@@ -1,0 +1,352 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Lips and cheeks",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Balm",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Balm edit",
+            "label": "Balm"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "EASY FORMULAS"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "MADE FOR EVERY DAY"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "blush-visual-links": {
+      "type": "blko-blush-visual-links",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {
+            "title": "Rose",
+            "caption": "The everyday lip",
+            "url": "#rose"
+          }
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "title": "Honey",
+            "caption": "Warm glow, any hour",
+            "url": "#honey"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "title": "Peach",
+            "caption": "Velvety, blurred finish",
+            "url": "#peach"
+          }
+        },
+        "block-5": {
+          "type": "link",
+          "settings": {
+            "title": "Fuchsia",
+            "caption": "A bolder pop",
+            "url": "#fuchsia"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New in",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "blush-duo": {
+      "type": "blko-blush-duo",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tile",
+          "settings": {
+            "label": "Skin",
+            "url": "#skin"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Lips",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Balm",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "blush-shades": {
+      "type": "blko-blush-shades",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "chip",
+          "settings": {
+            "selected": true
+          }
+        },
+        "block-2": {
+          "type": "chip",
+          "settings": {
+            "label": "Honey",
+            "tone": "honey"
+          }
+        },
+        "block-3": {
+          "type": "chip",
+          "settings": {
+            "label": "Coral",
+            "tone": "coral"
+          }
+        },
+        "block-4": {
+          "type": "chip",
+          "settings": {
+            "label": "Rose",
+            "tone": "rose"
+          }
+        },
+        "block-5": {
+          "type": "chip",
+          "settings": {
+            "label": "Orchid",
+            "tone": "orchid"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {}
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "blush-ugc": {
+      "type": "blko-blush-ugc",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "photo",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "photo",
+          "settings": {
+            "caption": "Cheeks first, always"
+          }
+        },
+        "block-3": {
+          "type": "photo",
+          "settings": {
+            "caption": "Just a little gloss"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "DAILY GLOW"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "PINK PAGES"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "message-band",
+    "blush-visual-links",
+    "tabbed-product-grid",
+    "blush-duo",
+    "category-slider",
+    "blush-shades",
+    "feature-driver",
+    "commitments",
+    "blush-ugc",
+    "testimonial-slider",
+    "press-slider",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

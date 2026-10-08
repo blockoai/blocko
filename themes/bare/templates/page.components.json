@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "global-components-page": {
+      "type": "blko-global-components-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "global-components-page"
+  ]
+}

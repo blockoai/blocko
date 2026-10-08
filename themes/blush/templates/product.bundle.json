@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "pdp-bundle-builder": {
+      "type": "blko-pdp-bundle-builder",
+      "settings": {}
+    },
+    "pdp-bundle-explainer": {
+      "type": "blko-pdp-bundle-explainer",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Save 15%",
+            "text": "Your set price updates as you select."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Use at your pace",
+            "text": "A flexible routine you can return to every day."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "product-recommendations": {
+      "type": "blko-product-recommendations",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New in",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "pdp-bundle-builder",
+    "pdp-bundle-explainer",
+    "product-recommendations",
+    "newsletter"
+  ]
+}

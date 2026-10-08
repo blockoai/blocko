@@ -36,7 +36,20 @@ Without the plugin: every item in the live catalog (https://blocko.ai/browse/) a
 
 ## Themes
 
+- `balm`: 190 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/balm/`.
+- `bare`: 190 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/bare/`.
+- `blush`: 190 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/blush/`.
+- `clip`: 188 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/clip/`.
+- `dew`: 190 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/dew/`.
+- `isle`: 186 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/isle/`.
+- `lather`: 190 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/lather/`.
+- `prism`: 190 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/prism/`.
+- `shelf`: 189 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/shelf/`.
+- `stubble`: 187 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/stubble/`.
+- `tide`: 190 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/tide/`.
+- `tint`: 188 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/tint/`.
 - `tress`: HTML demo only (119 sections/blocks, 38 pages; port to Liquid with the agent prompts in `catalog.json`) (see `catalog.json`). Demo: `demo/tress/`.
+- `twist`: 187 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/twist/`.
 - `veil`: 186 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/veil/`.
 
 Each theme lives in `themes/<theme>/` and is a complete OS2 theme folder (layout, templates, sections, blocks, snippets,

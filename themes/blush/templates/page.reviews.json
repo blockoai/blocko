@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "beauty-extras-reviews-hub": {
+      "type": "blko-beauty-extras-reviews-hub",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "bar",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "bar",
+          "settings": {
+            "label": "4 stars",
+            "percent": 75
+          }
+        },
+        "block-3": {
+          "type": "bar",
+          "settings": {
+            "label": "3 stars",
+            "percent": 58
+          }
+        },
+        "block-4": {
+          "type": "bar",
+          "settings": {
+            "label": "2 stars",
+            "percent": 41
+          }
+        },
+        "block-5": {
+          "type": "bar",
+          "settings": {
+            "label": "1 stars",
+            "percent": 24
+          }
+        },
+        "block-6": {
+          "type": "filter",
+          "settings": {
+            "active": true
+          }
+        },
+        "block-7": {
+          "type": "filter",
+          "settings": {
+            "label": "Skin",
+            "key": "complexion"
+          }
+        },
+        "block-8": {
+          "type": "filter",
+          "settings": {
+            "label": "Balm",
+            "key": "care"
+          }
+        },
+        "block-9": {
+          "type": "filter",
+          "settings": {
+            "label": "With photos",
+            "key": "photos"
+          }
+        },
+        "block-10": {
+          "type": "photo",
+          "settings": {}
+        },
+        "block-11": {
+          "type": "photo",
+          "settings": {
+            "tags": "care photos"
+          }
+        },
+        "block-12": {
+          "type": "photo",
+          "settings": {}
+        },
+        "block-13": {
+          "type": "photo",
+          "settings": {
+            "tags": "care photos"
+          }
+        },
+        "block-14": {
+          "type": "review",
+          "settings": {}
+        },
+        "block-15": {
+          "type": "review",
+          "settings": {
+            "title": "Comfortable through a long day.",
+            "tags": "care",
+            "meta": "Verified customer · Balm"
+          }
+        },
+        "block-16": {
+          "type": "review",
+          "settings": {
+            "title": "The shade range made matching easy."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13",
+        "block-14",
+        "block-15",
+        "block-16"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "beauty-extras-reviews-hub",
+    "newsletter"
+  ]
+}

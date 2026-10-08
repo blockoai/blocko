@@ -1,0 +1,94 @@
+{
+  "sections": {
+    "beauty-extras-rewards-overview": {
+      "type": "blko-beauty-extras-rewards-overview",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "earn",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "earn",
+          "settings": {
+            "number": "02",
+            "title": "Earn",
+            "text": "Collect points when you shop, review, and share."
+          }
+        },
+        "block-3": {
+          "type": "earn",
+          "settings": {
+            "number": "03",
+            "title": "Enjoy",
+            "text": "Redeem a little something at checkout."
+          }
+        },
+        "block-4": {
+          "type": "tier",
+          "settings": {}
+        },
+        "block-5": {
+          "type": "tier",
+          "settings": {
+            "title": "Pearl",
+            "points": "500 points",
+            "perks": "Free shipping · double-point days"
+          }
+        },
+        "block-6": {
+          "type": "tier",
+          "settings": {
+            "title": "Lustre",
+            "points": "1,200 points",
+            "perks": "Private previews · priority help"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "faq": {
+      "type": "blko-faq",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "When will my order ship?"
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Can I update my order?"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "beauty-extras-rewards-overview",
+    "faq",
+    "newsletter"
+  ]
+}

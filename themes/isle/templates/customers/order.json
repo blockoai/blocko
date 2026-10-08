@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "account-order-detail": {
+      "type": "blko-account-order-detail",
+      "settings": {}
+    },
+    "account-help-note": {
+      "type": "blko-account-help-note",
+      "settings": {}
+    }
+  },
+  "order": [
+    "account-order-detail",
+    "account-help-note"
+  ]
+}

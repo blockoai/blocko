@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "content-faq-hero": {
+      "type": "blko-content-faq-hero",
+      "settings": {}
+    },
+    "content-faq-browser": {
+      "type": "blko-content-faq-browser",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "orders",
+            "label": "Orders"
+          }
+        },
+        "block-3": {
+          "type": "tab",
+          "settings": {
+            "key": "products",
+            "label": "Products"
+          }
+        },
+        "block-4": {
+          "type": "tab",
+          "settings": {
+            "key": "returns",
+            "label": "Returns"
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "question",
+          "settings": {
+            "question": "Can I change my order?",
+            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+          }
+        },
+        "block-7": {
+          "type": "question",
+          "settings": {
+            "category": "products",
+            "question": "How do I find my hair type?",
+            "answer": "Start with the hair-type finder, then compare density and texture. Our team can offer general guidance."
+          }
+        },
+        "block-8": {
+          "type": "question",
+          "settings": {
+            "category": "products",
+            "question": "Where can I find ingredient information?",
+            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+          }
+        },
+        "block-9": {
+          "type": "question",
+          "settings": {
+            "category": "returns",
+            "question": "What is the return window?",
+            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+          }
+        },
+        "block-10": {
+          "type": "question",
+          "settings": {
+            "category": "returns",
+            "question": "What if something arrived damaged?",
+            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "content-faq-hero",
+    "content-faq-browser",
+    "newsletter"
+  ]
+}

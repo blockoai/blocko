@@ -1,0 +1,214 @@
+{
+  "current": {
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#ffffff",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#d7ceba",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#00b9c5",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "#c0d7dd",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#c0d7dd",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#d7ceba",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-6": {
+        "settings": {
+          "background": "#ffffff",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-7": {
+        "settings": {
+          "background": "#00b9c5",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-8": {
+        "settings": {
+          "background": "#00b9c5",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-9": {
+        "settings": {
+          "background": "#d7ceba",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-10": {
+        "settings": {
+          "background": "#d7ceba",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-11": {
+        "settings": {
+          "background": "#024257",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#024257",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-12": {
+        "settings": {
+          "background": "#024257",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#024257",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-13": {
+        "settings": {
+          "background": "#ffffff",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-14": {
+        "settings": {
+          "background": "#d7ceba",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-15": {
+        "settings": {
+          "background": "#d7ceba",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-16": {
+        "settings": {
+          "background": "#ffffff",
+          "text": "#024257",
+          "button": "#024257",
+          "button_label": "#ffffff",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-17": {
+        "settings": {
+          "background": "#024257",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#024257",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-18": {
+        "settings": {
+          "background": "#024257",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#024257",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-19": {
+        "settings": {
+          "background": "#024257",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#024257",
+          "button_hover": "#00b9c5"
+        }
+      },
+      "scheme-20": {
+        "settings": {
+          "background": "#024257",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#024257",
+          "button_hover": "#00b9c5"
+        }
+      }
+    },
+    "color_bg": "#ffffff",
+    "color_bg_alt": "#d7ceba",
+    "color_text": "#024257",
+    "color_text_muted": "#5d5672",
+    "color_border": "#e9d7d7",
+    "color_button": "#024257",
+    "color_button_text": "#ffffff",
+    "color_button_hover": "#00b9c5",
+    "color_accent": "#00b9c5",
+    "color_sale": "#e6946c",
+    "color_announcement_bg": "#c0d7dd",
+    "color_announcement_text": "#024257",
+    "color_footer_bg": "#024257",
+    "color_footer_text": "#ffffff",
+    "color_success": "#024257",
+    "color_error": "#ad4c1a",
+    "color_input_bg": "#ffffff",
+    "color_input_text": "#024257",
+    "color_swatch_lagoon": "#8fe2ea",
+    "color_swatch_coconut": "#d7ceba",
+    "color_swatch_mango": "#e3bf5c",
+    "color_swatch_sandalwood": "#d6bb95",
+    "color_swatch_guava": "#e6946c",
+    "color_swatch_vanilla": "#c6beb5",
+    "color_swatch_sand": "#c6beb5",
+    "color_swatch_aqua": "#a1cecf",
+    "color_swatch_teal": "#024257",
+    "blocko_api_base": "/apps/blocko"
+  }
+}

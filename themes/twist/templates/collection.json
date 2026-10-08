@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Clips",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Headbands",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Hair care",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Satin sleep",
+            "label": "Hair care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "twist-quiz-cta": {
+      "type": "blko-twist-quiz-cta",
+      "settings": {}
+    },
+    "home-collection-collection-toolbar": {
+      "type": "blko-home-collection-collection-toolbar",
+      "settings": {}
+    },
+    "home-collection-collection-grid": {
+      "type": "blko-home-collection-collection-grid",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "twist-quiz-cta",
+    "home-collection-collection-toolbar",
+    "home-collection-collection-grid",
+    "home-collection-quick-view-modal",
+    "newsletter"
+  ]
+}

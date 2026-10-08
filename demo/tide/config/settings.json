@@ -1,0 +1,30 @@
+{
+  "current": {
+    "color_schemes": [
+      "default"
+    ],
+    "typography": {
+      "body": "DM Sans",
+      "heading": "Fraunces"
+    },
+    "spacing": "responsive"
+  },
+  "settings_schema": [
+    {
+      "name": "Theme",
+      "settings": [
+        {
+          "id": "color_scheme",
+          "type": "color_scheme",
+          "label": "Color scheme"
+        },
+        {
+          "id": "spacing",
+          "type": "range",
+          "label": "Spacing",
+          "default": 4
+        }
+      ]
+    }
+  ]
+}

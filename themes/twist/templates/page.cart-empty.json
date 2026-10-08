@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "cart-checkout-cart-empty": {
+      "type": "blko-cart-checkout-cart-empty",
+      "settings": {}
+    },
+    "cart-checkout-service-strip": {
+      "type": "blko-cart-checkout-service-strip",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "note",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "note",
+          "settings": {
+            "title": "Easy returns",
+            "text": "within 30 days"
+          }
+        },
+        "block-3": {
+          "type": "note",
+          "settings": {
+            "title": "Need help?",
+            "text": "We’re here for you"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "cart-checkout-cart-empty",
+    "cart-checkout-service-strip"
+  ]
+}

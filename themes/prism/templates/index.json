@@ -1,0 +1,334 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Treatments",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Styling",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Repair",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Repair system",
+            "label": "Repair"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {}
+    },
+    "prism-system": {
+      "type": "blko-prism-system",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "title": "rebuild it",
+            "text": "Bond-building mask that repairs the damage color leaves behind.",
+            "link_label": "Shop masks"
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "title": "seal the shine",
+            "text": "A weightless serum for glass-like gloss and heat protection.",
+            "link_label": "Shop serums"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "message-band": {
+      "type": "blko-message-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SULFATE-FREE"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "SALON-TESTED"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New drops",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "prism-finder": {
+      "type": "blko-prism-finder",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tile",
+          "settings": {
+            "title": "medium + wavy",
+            "text": "Frizz-free definition"
+          }
+        },
+        "block-3": {
+          "type": "tile",
+          "settings": {
+            "title": "thick + curly",
+            "text": "Bounce and moisture"
+          }
+        },
+        "block-4": {
+          "type": "tile",
+          "settings": {
+            "title": "coily + coarse",
+            "text": "Deep repair and shine"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Treatments",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Styling",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Repair",
+            "url": "#care"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {}
+    },
+    "prism-effect": {
+      "type": "blko-prism-effect",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "stat",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "stat",
+          "settings": {
+            "value": "3x",
+            "label": "less fade after six washes"
+          }
+        },
+        "block-3": {
+          "type": "stat",
+          "settings": {
+            "value": "88%",
+            "label": "said hair felt softer and shinier"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "commitments": {
+      "type": "blko-commitments",
+      "settings": {}
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {}
+    },
+    "prism-subscribe": {
+      "type": "blko-prism-subscribe",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "perk",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "perk",
+          "settings": {
+            "label": "Free shipping"
+          }
+        },
+        "block-3": {
+          "type": "perk",
+          "settings": {
+            "label": "Skip or cancel anytime"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "SALON WEEKLY"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "BRIGHT MAG"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "hero-campaign",
+    "prism-system",
+    "message-band",
+    "tabbed-product-grid",
+    "prism-finder",
+    "category-slider",
+    "feature-driver",
+    "prism-effect",
+    "commitments",
+    "testimonial-slider",
+    "prism-subscribe",
+    "press-slider",
+    "newsletter",
+    "home-collection-quick-view-modal"
+  ]
+}

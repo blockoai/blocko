@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "beauty-extras-ingredient-glossary": {
+      "type": "blko-beauty-extras-ingredient-glossary",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "filter",
+          "settings": {
+            "active": true
+          }
+        },
+        "block-2": {
+          "type": "filter",
+          "settings": {
+            "label": "Lather",
+            "key": "hydration"
+          }
+        },
+        "block-3": {
+          "type": "filter",
+          "settings": {
+            "label": "Soothing",
+            "key": "barrier"
+          }
+        },
+        "block-4": {
+          "type": "filter",
+          "settings": {
+            "label": "Cooling",
+            "key": "sun"
+          }
+        },
+        "block-5": {
+          "type": "ingredient",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "C",
+            "name": "Glycerin",
+            "detail": "Helps the gel glide",
+            "tags": "soothing glide"
+          }
+        },
+        "block-7": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "H",
+            "name": "Shea butter",
+            "detail": "Adds lightweight moisture",
+            "tags": "hydration"
+          }
+        },
+        "block-8": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "N",
+            "name": "Menthol",
+            "detail": "Gives a cool, fresh feel",
+            "tags": "brightening"
+          }
+        },
+        "block-9": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "S",
+            "name": "Coconut-derived cleanser",
+            "detail": "Builds a rich, easy lather",
+            "tags": "nourishing"
+          }
+        },
+        "block-10": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "Z",
+            "name": "Witch hazel",
+            "detail": "A calming plant extract",
+            "tags": "cooling"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10"
+      ]
+    },
+    "ingredients-callout": {
+      "type": "blko-ingredients-callout",
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "beauty-extras-ingredient-glossary",
+    "ingredients-callout",
+    "newsletter"
+  ]
+}

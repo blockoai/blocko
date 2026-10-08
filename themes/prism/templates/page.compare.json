@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "global-compare-page": {
+      "type": "blko-global-compare-page",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "column",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "column",
+          "settings": {
+            "name": "Color mask",
+            "finish": "High shine",
+            "coverage": "Refreshes fade",
+            "best_for": "Faded ends",
+            "price": "$28"
+          }
+        },
+        "block-3": {
+          "type": "column",
+          "settings": {
+            "name": "Repair mask",
+            "finish": "Silky softness",
+            "coverage": "None",
+            "best_for": "Deep repair",
+            "price": "$42"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "global-compare-page"
+  ]
+}

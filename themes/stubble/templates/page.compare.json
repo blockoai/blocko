@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "global-compare-page": {
+      "type": "blko-global-compare-page",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "column",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "column",
+          "settings": {
+            "name": "Bar soap",
+            "finish": "Fresh scent",
+            "coverage": "Long-lasting",
+            "best_for": "Body and hands",
+            "price": "$28"
+          }
+        },
+        "block-3": {
+          "type": "column",
+          "settings": {
+            "name": "Face wash",
+            "finish": "Clean feel",
+            "coverage": "None",
+            "best_for": "Daily face care",
+            "price": "$42"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "global-compare-page"
+  ]
+}

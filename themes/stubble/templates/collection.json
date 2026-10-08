@@ -1,0 +1,108 @@
+{
+  "sections": {
+    "home-collection-mega-menu": {
+      "type": "blko-home-collection-mega-menu",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "link",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "link",
+          "settings": {
+            "label": "Face",
+            "url": "#eyes"
+          }
+        },
+        "block-3": {
+          "type": "link",
+          "settings": {
+            "label": "Hair",
+            "url": "#lips"
+          }
+        },
+        "block-4": {
+          "type": "link",
+          "settings": {
+            "label": "Body",
+            "url": "#care"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {}
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "url": "#care",
+            "image_alt": "Body",
+            "label": "Body"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "home-collection-collection-toolbar": {
+      "type": "blko-home-collection-collection-toolbar",
+      "settings": {}
+    },
+    "home-collection-collection-grid": {
+      "type": "blko-home-collection-collection-grid",
+      "settings": {}
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    },
+    "stubble-trial-banner": {
+      "type": "blko-stubble-trial-banner",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "cadence",
+          "settings": {
+            "label": "4 weeks",
+            "note": "Fresh blades"
+          }
+        },
+        "block-2": {
+          "type": "cadence",
+          "settings": {}
+        },
+        "block-3": {
+          "type": "cadence",
+          "settings": {
+            "label": "12 weeks",
+            "note": "Light shavers"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "home-collection-mega-menu",
+    "home-collection-collection-toolbar",
+    "home-collection-collection-grid",
+    "home-collection-quick-view-modal",
+    "stubble-trial-banner",
+    "newsletter"
+  ]
+}

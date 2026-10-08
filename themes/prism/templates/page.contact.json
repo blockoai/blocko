@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "content-contact-hero": {
+      "type": "blko-content-contact-hero",
+      "settings": {}
+    },
+    "content-contact-channels": {
+      "type": "blko-content-contact-channels",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "channel",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "channel",
+          "settings": {
+            "icon": "○",
+            "title": "Text",
+            "text": "For quick color-care guidance.",
+            "url": "tel:+10000000000",
+            "link_label": "+1 (000) 000-0000"
+          }
+        },
+        "block-3": {
+          "type": "channel",
+          "settings": {
+            "icon": "↗",
+            "title": "Social",
+            "text": "For daily inspiration and news.",
+            "url": "#social",
+            "link_label": "@brandplaceholder"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "content-contact-form": {
+      "type": "blko-content-contact-form",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "topic",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "topic",
+          "settings": {
+            "label": "Formula guidance"
+          }
+        },
+        "block-3": {
+          "type": "topic",
+          "settings": {
+            "label": "Press or partnerships"
+          }
+        },
+        "block-4": {
+          "type": "topic",
+          "settings": {
+            "label": "Something else"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "content-contact-hours": {
+      "type": "blko-content-contact-hours",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "hours",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "hours",
+          "settings": {
+            "label": "Weekends",
+            "value": "Closed, with replies on the next business day"
+          }
+        },
+        "block-3": {
+          "type": "hours",
+          "settings": {
+            "label": "Response time",
+            "value": "Usually within two business days"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "content-contact-map": {
+      "type": "blko-content-contact-map",
+      "settings": {}
+    }
+  },
+  "order": [
+    "content-contact-hero",
+    "content-contact-channels",
+    "content-contact-form",
+    "content-contact-hours",
+    "content-contact-map"
+  ]
+}

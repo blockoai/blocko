@@ -1,0 +1,16 @@
+{%- layout none -%}
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>{{ shop.name | escape }}</title>
+  {% render 'blko-theme-styles' %}
+  {{ 'blko-theme.css' | asset_url | stylesheet_tag }}
+  {{ content_for_header }}
+</head>
+<body class="blko-theme">
+  <main id="content">{% section 'blko-global-gift-card-page' %}</main>
+</body>
+</html>

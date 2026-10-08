@@ -1,0 +1,206 @@
+{
+  "sections": {
+    "pdp-product-main": {
+      "type": "blko-pdp-product-main",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "accordion",
+          "settings": {
+            "text": "Lightweight, water-resistant protection with a soft natural finish. Wear alone or layer over your favorite moisturiser."
+          }
+        },
+        "block-2": {
+          "type": "accordion",
+          "settings": {
+            "label": "Ingredients",
+            "text": "Non-nano zinc oxide, kelp extract, sea fennel, and skin-conditioning botanicals in a comfortable daily formula."
+          }
+        },
+        "block-3": {
+          "type": "accordion",
+          "settings": {
+            "label": "How to use",
+            "text": "Shake well. Apply generously 15 minutes before sun exposure and blend outward. Reapply after swimming or every two hours."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-before-after": {
+      "type": "blko-pdp-before-after",
+      "settings": {}
+    },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {}
+    },
+    "tide-subscribe": {
+      "type": "blko-tide-subscribe",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "title": "Choose your rhythm",
+            "text": "Every 4, 6, or 8 weeks, whatever suits you."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "title": "Pause or cancel anytime",
+            "text": "No minimums, no fees, no fuss."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "product-recommendations": {
+      "type": "blko-product-recommendations",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "pdp-reviews": {
+      "type": "blko-pdp-reviews",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "bar",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "bar",
+          "settings": {
+            "label": "4 stars",
+            "percent": 12
+          }
+        },
+        "block-3": {
+          "type": "bar",
+          "settings": {
+            "label": "3 stars",
+            "percent": 4
+          }
+        },
+        "block-4": {
+          "type": "bar",
+          "settings": {
+            "label": "2 stars",
+            "percent": 1
+          }
+        },
+        "block-5": {
+          "type": "bar",
+          "settings": {
+            "label": "1 star",
+            "percent": 1
+          }
+        },
+        "block-6": {
+          "type": "filter",
+          "settings": {}
+        },
+        "block-7": {
+          "type": "filter",
+          "settings": {
+            "label": "With photos",
+            "key": "photos"
+          }
+        },
+        "block-8": {
+          "type": "filter",
+          "settings": {
+            "label": "Finish",
+            "key": "coverage"
+          }
+        },
+        "block-9": {
+          "type": "review",
+          "settings": {
+            "text": "It protects my skin while still feeling completely natural. I love the light, hydrated finish."
+          }
+        },
+        "block-10": {
+          "type": "review",
+          "settings": {
+            "title": "My everyday sun lotion",
+            "text": "Easy to spread and it stays comfortable through a long day by the water. The scent is subtle and fresh.",
+            "footer": "Sam T. · 1 month ago",
+            "tags": "coverage"
+          }
+        },
+        "block-11": {
+          "type": "review",
+          "settings": {
+            "title": "Fresh, not greasy",
+            "text": "This gives me the dewy finish I want without feeling heavy or sticky.",
+            "footer": "Alex M. · 2 months ago",
+            "tags": "photos"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10",
+        "block-11"
+      ]
+    },
+    "pdp-recently-viewed": {
+      "type": "blko-pdp-recently-viewed",
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "pdp-product-main",
+    "pdp-before-after",
+    "pdp-complete-routine",
+    "tide-subscribe",
+    "product-recommendations",
+    "pdp-reviews",
+    "pdp-recently-viewed",
+    "newsletter"
+  ]
+}
