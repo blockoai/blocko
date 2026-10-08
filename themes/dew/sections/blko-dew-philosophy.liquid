@@ -2,7 +2,7 @@
 <div class="blko-theme"><blko-signature><section class="blko-dew-philosophy">{% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 1800 | image_tag: loading: 'lazy', widths: '450, 900, 1350, 1800', alt: section.settings.image_alt }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<div class="blko-dew-philosophy-copy"><p class="blko-eyebrow">{{ section.settings.eyebrow | escape }}</p><h2>{{ section.settings.heading | escape }}</h2><p>{{ section.settings.text | escape | newline_to_br }}</p><a class="blko-dew-ghost" href="{{ section.settings.button_url | default: '#shop' }}">{{ section.settings.button_label | escape }}</a></div></section></blko-signature></div>
 <script type="module" src="{{ 'blko-signature.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--kit-heading-tracking:-0.02em;--kit-label-transform:uppercase;--kit-heading-transform:none;--kit-heading-weight:500;--font-heading:"Manrope",Arial,sans-serif;--text-h2:1.75rem;--kit-radius-card:12px;--color-bg:Canvas;--color-text:CanvasText;--tracking-label:.075rem;--font-body:"DM Sans",Arial,sans-serif;--text-label:.75rem;--weight-medium:500;--color-overlay:rgb(0 0 0 / .4);--font-accent:"DM Sans",Arial,sans-serif;--leading-label:1.5;--tracking-h2:-.08rem;--leading-display:.9;--weight-light:300;--color-border:ButtonFace;--color-accent:GrayText;--color-ink:var(--color-text);--color-paper:var(--color-bg)}
+:where(.blko-theme){--kit-heading-tracking:-0.02em;--kit-label-transform:uppercase;--kit-heading-transform:none;--kit-heading-weight:500;--font-heading:"Manrope",Arial,sans-serif;--kit-radius-image:12px;--color-text-muted:CanvasText;--text-small:0.6875rem;--leading-display:.9;--text-h2:1.75rem;--weight-light:300;--kit-radius-card:12px;--color-bg:Canvas;--color-text:CanvasText;--tracking-label:.075rem;--font-body:"DM Sans",Arial,sans-serif;--text-label:.75rem;--weight-medium:500;--color-overlay:rgb(0 0 0 / .4);--font-accent:"DM Sans",Arial,sans-serif;--leading-label:1.5;--tracking-h2:-.08rem;--color-border:ButtonFace;--color-accent:GrayText;--color-ink:var(--color-text);--color-paper:var(--color-bg)}
 @media (min-width:1024px){:where(.blko-theme){--text-h2:1.875rem;--tracking-h2:-.1rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 :where(.blko-theme) img[height]{height:auto}
@@ -22,6 +22,11 @@
 .blko-theme .blko-dew-social-item img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--kit-radius-card)}
 .blko-theme .blko-dew-facts h2{margin:.25rem 0 0;font-size:var(--text-h2)}
 @media (max-width:760px){.blko-theme .blko-dew-philosophy{margin:0 1rem}}
+.blko-theme .blko-brand-logo img{display:block;width:100%;height:auto}
+.blko-theme .blko-brand-head h2{margin:0;font:var(--kit-heading-weight,var(--weight-light)) var(--text-h2)/var(--leading-display) var(--font-heading)}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
+.blko-theme .blko-brand-mood img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--kit-radius-image,0)}
 .blko-theme.blko-theme h2{font-family:var(--font-heading);font-weight:var(--kit-heading-weight);text-transform:var(--kit-heading-transform);overflow-wrap:anywhere}
 .blko-theme.blko-theme .blko-eyebrow{text-transform:var(--kit-label-transform)}
 .blko-theme.blko-theme h2{letter-spacing:var(--kit-heading-tracking)}

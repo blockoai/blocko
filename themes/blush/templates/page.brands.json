@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Fresh"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Playful"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Minimal"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Optimistic"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Candid"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the dot in the accent pink or in the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm, even areas of a photograph."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, outline or add effects to the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not capitalise the letters or move the dot away from the word."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not recolour the mark disc outside the palette."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Light and plain-spoken",
+            "text": "Short, friendly sentences in everyday words. Say what it is and what it does, then stop."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "A wink, not a shout",
+            "text": "Humour is dry and small: one smile per page. Never sarcasm, never exclamation-mark energy."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Colour first",
+            "text": "Lead with the shade, the finish and the feeling. Keep claims modest and the tone upbeat."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "One swipe of pink and you are done."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Sheer, buildable colour for cheeks and lips."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Wear it bare, or layer it up if you feel like it."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "The ULTIMATE flawless-face formula!!!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "Fix your skin with our miracle blush"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Sophisticated luxury for the discerning woman"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Bare and bright",
+            "text": "Even daylight, clean backgrounds, skin with real texture. Colour does the talking."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "One flush of pink",
+            "text": "Product shots on flat grey-white or pink, with one bold shade at a time."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Candid and close",
+            "text": "Friends laughing, cheeks and lips up close. Unposed, never retouched into plastic."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

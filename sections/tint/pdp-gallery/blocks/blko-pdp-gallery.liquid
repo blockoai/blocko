@@ -5,7 +5,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-pdp><div class="blko-pdp-gallery" data-pdp-gallery><div class="blko-pdp-gallery__thumbs">{% for image in product.images limit: 2 %}<button type="button" data-pdp-thumb data-src="{{ image | image_url: width: 1000 | escape }}">{% if image != blank %}{{ image | image_url: width: 200 | image_tag: loading: 'lazy', widths: '200', alt: '' }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}</button>{% endfor %}</div><figure class="blko-pdp-gallery__stage" data-pdp-zoom tabindex="0">{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '250, 500, 750, 1000', alt: product.featured_image.alt }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<button type="button" class="blko-pdp-gallery__zoom" data-pdp-zoom-trigger>{{ 'blko.pdp.zoom' | t }}</button></figure></div></blko-pdp></div>
 <script type="module" src="{{ 'blko-pdp.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--kit-radius:0;--color-bg-alt:Canvas;--color-button-text:Canvas;--color-ink:var(--color-text);--color-text:CanvasText;--color-bg:Canvas;--color-line:var(--color-border);--color-border:ButtonFace;--text-small:.75rem;--color-paper:var(--color-bg);--tracking-label:.075rem;--font-mono:var(--font-accent);--font-accent:"DM Mono",ui-monospace,Menlo,monospace;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--color-accent:GrayText;--font-body:"Familjen Grotesk",Helvetica Neue,Arial,sans-serif}
+:where(.blko-theme){--kit-radius:0;--kit-radius-image:0;--color-bg-alt:Canvas;--color-button-text:Canvas;--color-ink:var(--color-text);--color-text:CanvasText;--color-bg:Canvas;--color-line:var(--color-border);--color-border:ButtonFace;--text-small:.75rem;--color-paper:var(--color-bg);--tracking-label:.075rem;--font-mono:var(--font-accent);--font-accent:"DM Mono",ui-monospace,Menlo,monospace;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--color-accent:GrayText;--font-body:"Familjen Grotesk",Helvetica Neue,Arial,sans-serif}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 :where(.blko-theme) img[height]{height:auto}
 :where(.blko-theme) .blko-placeholder{display:block;width:100%;height:100%;min-height:10rem;background:var(--color-accent);fill:none;color:var(--color-border)}
@@ -56,6 +56,8 @@
 .blko-theme .blko-search-blog-article-hero img{min-height:0;aspect-ratio:1}}
 .blko-theme .blko-tint-tile img{width:100%;aspect-ratio:1;object-fit:cover;background:var(--color-bg-alt)}
 .blko-theme .blko-tint-reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.blko-theme .blko-brand-logo img{display:block;width:100%;height:auto}
+.blko-theme .blko-brand-mood img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--kit-radius-image,0)}
 .blko-theme.blko-theme .blko-tabs button{border-radius:var(--kit-radius)}
 .blko-theme.blko-theme .blko-home-collection-filter-chips button{border-radius:var(--kit-radius)}
 {% endstylesheet %}

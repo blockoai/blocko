@@ -211,6 +211,7 @@
     "color_swatch_blush_pink": "#f4a9a0",
     "color_swatch_dusty_rose": "#c98a8a",
     "color_swatch_cocoa": "#795d46",
-    "blocko_api_base": "/apps/blocko"
+    "blocko_api_base": "/apps/blocko",
+    "logo_width": 120
   }
 }

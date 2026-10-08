@@ -2,7 +2,7 @@
 <div class="blko-theme"><blko-cart-checkout><section class="blko-cart-checkout-service-strip">{% for block in section.blocks %}<p {{ block.shopify_attributes }}><strong>{{ block.settings.title | escape }}</strong><span>{{ block.settings.text | escape }}</span></p>{% endfor %}</section></blko-cart-checkout></div>
 <script type="module" src="{{ 'blko-cart-checkout.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--text-small:.7rem;--color-bg:Canvas;--font-mono:var(--font-accent);--font-accent:"Hanken Grotesk",Arial,sans-serif;--leading-label:1.5;--text-label:.6875rem;--weight-medium:500;--leading-body:1.5;--color-text-muted:CanvasText;--color-accent:GrayText;--tracking-label:.075rem;--font-display:var(--font-heading);--font-heading:"Familjen Grotesk",Arial,sans-serif;--leading-display:.9;--text-h2:1.1875rem;--color-footer-bg:CanvasText;--color-button-text:Canvas;--text-display:1.75rem;--color-overlay:rgb(0 0 0 / .4);--tracking-footer:-.0175rem;--font-body:"Hanken Grotesk",Arial,sans-serif;--leading-footer:1.5;--text-footer:.78rem;--weight-body:400;--text-body:.8625rem;--font-sans:var(--font-body);--color-border:ButtonFace;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg)}
+:where(.blko-theme){--color-text-muted:CanvasText;--text-small:.7rem;--color-bg:Canvas;--font-mono:var(--font-accent);--font-accent:"Hanken Grotesk",Arial,sans-serif;--leading-label:1.5;--text-label:.6875rem;--weight-medium:500;--leading-body:1.5;--color-accent:GrayText;--tracking-label:.075rem;--font-display:var(--font-heading);--font-heading:"Familjen Grotesk",Arial,sans-serif;--leading-display:.9;--text-h2:1.1875rem;--color-footer-bg:CanvasText;--color-button-text:Canvas;--text-display:1.75rem;--color-overlay:rgb(0 0 0 / .4);--tracking-footer:-.0175rem;--font-body:"Hanken Grotesk",Arial,sans-serif;--leading-footer:1.5;--text-footer:.78rem;--weight-body:400;--text-body:.8625rem;--font-sans:var(--font-body);--color-border:ButtonFace;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg)}
 @media (min-width:1024px){:where(.blko-theme){--text-label:.6875rem;--text-h2:1.1875rem;--text-display:2.25rem;--text-footer:.78rem;--text-body:.8625rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-cart-checkout-service-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1.5rem 5vw;border-block:1px solid var(--color-border)}
@@ -54,6 +54,8 @@
 @media(max-width:760px){.blko-theme .blko-search-blog-filters p{display:none}}
 .blko-theme .blko-clip-tiles span{position:absolute;inset:auto 0 0 0;margin:0 .6rem .6rem;padding:.85rem .5rem;background:var(--color-bg);text-align:center;font-size:var(--text-small,.78rem);letter-spacing:.16em;text-transform:uppercase}
 .blko-theme .blko-clip-story__copy p{max-width:44ch;margin:0}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}

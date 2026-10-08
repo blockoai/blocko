@@ -4918,5 +4918,160 @@
     },
     "jsBytes": 0,
     "industry": "beauty"
+  },
+  {
+    "id": "brand-hero",
+    "kind": "section",
+    "category": "brand-guidelines",
+    "name": "Brand guideline hero",
+    "description": "The logo on the brand colour with tagline and intro.",
+    "file": "isle/sections/brand-guidelines--brand-hero.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "brand-archetype",
+    "kind": "section",
+    "category": "brand-guidelines",
+    "name": "Brand archetype",
+    "description": "Archetype, traits and the promise the brand makes.",
+    "file": "isle/sections/brand-guidelines--brand-archetype.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "brand-palette",
+    "kind": "section",
+    "category": "brand-guidelines",
+    "name": "Brand palette",
+    "description": "Swatches read live from the theme colour settings.",
+    "file": "isle/sections/brand-guidelines--brand-palette.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "brand-typography",
+    "kind": "section",
+    "category": "brand-guidelines",
+    "name": "Brand typography",
+    "description": "Type scale specimen set in the theme fonts.",
+    "file": "isle/sections/brand-guidelines--brand-typography.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "brand-logo-usage",
+    "kind": "section",
+    "category": "brand-guidelines",
+    "name": "Brand logo usage",
+    "description": "Logo variants, clear space, minimum size, downloads, dos and don'ts.",
+    "file": "isle/sections/brand-guidelines--brand-logo-usage.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "brand-voice",
+    "kind": "section",
+    "category": "brand-guidelines",
+    "name": "Brand voice",
+    "description": "Voice principles with what to write and what to avoid.",
+    "file": "isle/sections/brand-guidelines--brand-voice.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "brand-imagery",
+    "kind": "section",
+    "category": "brand-guidelines",
+    "name": "Brand imagery",
+    "description": "Photography direction with a three-image moodboard.",
+    "file": "isle/sections/brand-guidelines--brand-imagery.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1476254592636-2a8e23b256fe",
+        "page_url": "https://unsplash.com/photos/photo-1476254592636-2a8e23b256fe"
+      },
+      {
+        "photo_id": "photo-1710220181974-e97a793c7004",
+        "page_url": "https://unsplash.com/photos/photo-1710220181974-e97a793c7004"
+      },
+      {
+        "photo_id": "photo-1700822475017-a3c2224763e6",
+        "page_url": "https://unsplash.com/photos/photo-1700822475017-a3c2224763e6"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
   }
 ]

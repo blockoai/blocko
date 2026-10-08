@@ -203,6 +203,7 @@
     "color_swatch_light": "#e8c6a8",
     "color_swatch_medium": "#d28f7b",
     "color_swatch_deep": "#9a5947",
-    "blocko_api_base": "/apps/blocko"
+    "blocko_api_base": "/apps/blocko",
+    "logo_width": 144
   }
 }

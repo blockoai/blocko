@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-global><aside class="blko-global-announce blko-global-announce--rotate" data-global-rotate data-global-messages="{{ block.settings.message_1 | escape }}||{{ block.settings.message_2 | escape }}||{{ block.settings.message_3 | escape }}" aria-live="polite"><span data-global-rotate-message>{{ block.settings.message_1 | escape }}</span><div><button type="button" data-global-rotate-prev aria-label="Previous announcement">←</button><button type="button" data-global-rotate-next aria-label="Next announcement">→</button></div></aside></blko-global></div>
 <script type="module" src="{{ 'blko-global.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--font-accent:"DM Mono",ui-monospace,Menlo,monospace;--color-bg:Canvas;--color-text:CanvasText;--kit-radius:0;--kit-radius-image:0;--kit-radius-button:0;--color-button-text:Canvas;--color-ink:var(--color-text);--color-line:var(--color-border);--color-border:ButtonFace;--text-small:.75rem;--color-paper:var(--color-bg);--text-title:2rem;--font-mono:var(--font-accent);--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--color-accent:GrayText;--text-body:0.9375rem;--font-body:"Hanken Grotesk",Arial,sans-serif}
+:where(.blko-theme){--font-accent:"DM Mono",ui-monospace,Menlo,monospace;--color-bg:Canvas;--color-text:CanvasText;--kit-radius:0;--kit-radius-image:0;--kit-radius-button:0;--color-accent:GrayText;--color-button-text:Canvas;--color-ink:var(--color-text);--color-line:var(--color-border);--color-border:ButtonFace;--text-small:.75rem;--color-paper:var(--color-bg);--text-title:2rem;--font-mono:var(--font-accent);--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--text-body:0.9375rem;--font-body:"Hanken Grotesk",Arial,sans-serif}
 @media (min-width:1024px){:where(.blko-theme){--text-title:2.5rem;--text-body:0.9375rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme :where(.blko-theme) button{color:inherit}
@@ -33,6 +33,7 @@
 .blko-theme .blko-search-blog-pagination .is-active{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-button-text)}
 .blko-theme .blko-search-blog-filters button{text-align:left}
 .blko-theme .blko-global-announce--rotate{color:inherit}
+.blko-theme .blko-brand-download:hover{border-color:var(--color-accent);color:var(--color-accent)}
 .blko-theme.blko-theme .blko-button{max-width:100%;white-space:normal;text-align:center;border-radius:var(--kit-radius-button)}
 .blko-theme.blko-theme .blko-category-card{border-radius:var(--kit-radius-image)}
 .blko-theme.blko-theme .blko-filter-chip{border-radius:var(--kit-radius)}

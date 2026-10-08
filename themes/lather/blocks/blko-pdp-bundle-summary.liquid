@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-pdp><aside class="blko-pdp-bundle__summary"><p><span data-pdp-bundle-count>0</span> of 3 selected</p><p class="blko-pdp-price"><strong>$0</strong><span>{{ block.settings.price_note | escape }}</span></p><button class="blko-button" type="button" disabled data-pdp-bundle-add>{{ block.settings.add_label | escape }}</button></aside></blko-pdp></div>
 <script type="module" src="{{ 'blko-pdp.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-button-hover:CanvasText;--font-heading:"Archivo",Arial Black,Arial,sans-serif;--color-text:CanvasText;--color-bg:Canvas;--kit-shadow:0 6px 0 var(--color-border);--color-border:ButtonFace;--kit-radius-card:14px;--kit-border:2px;--kit-radius:8px;--kit-radius-image:12px;--kit-radius-button:10px;--kit-label-transform:uppercase;--color-accent:GrayText;--color-footer-bg:CanvasText;--text-card-title:1.125rem;--color-button-text:Canvas;--color-ink:var(--color-text);--font-mono:var(--font-accent);--font-accent:"Figtree",Arial,sans-serif;--leading-label:1.5;--text-label:0.75rem;--weight-medium:500;--text-small:.75rem;--color-bg-alt:Canvas;--leading-body:1.5;--color-text-muted:CanvasText;--text-body:1rem;--leading-display:.9;--text-title:2rem;--color-button:CanvasText;--tracking-button:.075rem;--leading-button:1.5;--text-button:0.9375rem;--color-paper:var(--color-bg);--tracking-label:.075rem;--font-body:"Figtree",Arial,sans-serif}
+:where(.blko-theme){--color-button-hover:CanvasText;--font-heading:"Archivo",Arial Black,Arial,sans-serif;--color-text:CanvasText;--color-bg:Canvas;--kit-shadow:0 6px 0 var(--color-border);--color-border:ButtonFace;--kit-radius-card:14px;--kit-border:2px;--kit-radius:8px;--kit-radius-image:12px;--kit-radius-button:10px;--kit-label-transform:uppercase;--color-accent:GrayText;--font-accent:"Figtree",Arial,sans-serif;--font-body:"Figtree",Arial,sans-serif;--weight-light:300;--kit-heading-weight:800;--color-footer-bg:CanvasText;--text-card-title:1.125rem;--color-button-text:Canvas;--color-ink:var(--color-text);--font-mono:var(--font-accent);--leading-label:1.5;--text-label:0.75rem;--weight-medium:500;--text-small:.75rem;--color-bg-alt:Canvas;--leading-body:1.5;--color-text-muted:CanvasText;--text-body:1rem;--leading-display:.9;--text-title:2rem;--color-button:CanvasText;--tracking-button:.075rem;--leading-button:1.5;--text-button:0.9375rem;--color-paper:var(--color-bg);--tracking-label:.075rem}
 @media (min-width:1024px){:where(.blko-theme){--text-card-title:1.25rem;--text-label:0.8125rem;--text-body:1.25rem;--text-title:2.5rem;--text-button:1rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme :where(.blko-theme) button{color:inherit}
@@ -57,6 +57,14 @@
 .blko-theme .blko-lather-card strong{font-family:var(--font-heading);font-size:var(--text-card-title);font-weight:800;text-transform:uppercase;color:var(--color-footer-bg);line-height:1.1}
 .blko-theme .blko-lather-trio>*{position:relative}
 .blko-theme .blko-lather-quiz .blko-eyebrow{color:var(--color-accent)}
+.blko-theme .blko-brand-type__face--heading .blko-brand-type__aa{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--heading strong{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--body .blko-brand-type__aa{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--body strong{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--accent .blko-brand-type__aa{font-family:var(--font-accent)}
+.blko-theme .blko-brand-type__face--accent strong{font-family:var(--font-accent)}
+.blko-theme .blko-brand-rule strong{color:var(--color-text)}
+.blko-theme .blko-brand-download:hover{border-color:var(--color-accent);color:var(--color-accent)}
 .blko-theme.blko-theme .blko-button{text-transform:var(--kit-label-transform)}
 .blko-theme.blko-theme .blko-button{max-width:100%;white-space:normal;text-align:center;border-radius:var(--kit-radius-button)}
 .blko-theme.blko-theme .blko-category-card{border-radius:var(--kit-radius-image)}

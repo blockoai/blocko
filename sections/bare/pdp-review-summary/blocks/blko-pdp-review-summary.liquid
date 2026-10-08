@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-pdp><div class="blko-pdp-rating-bars"><p><span>{{ block.settings.label_5 | escape }}</span><i style="--pdp-rating:{{ block.settings.percent_5 | escape }}%"></i><b>{{ block.settings.percent_5 | escape }}%</b></p><p><span>{{ block.settings.label_4 | escape }}</span><i style="--pdp-rating:{{ block.settings.percent_4 | escape }}%"></i><b>{{ block.settings.percent_4 | escape }}%</b></p></div></blko-pdp></div>
 <script type="module" src="{{ 'blko-pdp.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-text:CanvasText;--text-small:.75rem;--font-accent:"DM Mono",ui-monospace,Menlo,monospace;--color-line:var(--color-border);--color-border:ButtonFace;--color-ink:var(--color-text);--font-body:"Hanken Grotesk",Arial,sans-serif;--color-paper:var(--color-bg);--color-bg:Canvas}
+:where(.blko-theme){--color-text-muted:CanvasText;--text-small:.75rem;--color-text:CanvasText;--font-accent:"DM Mono",ui-monospace,Menlo,monospace;--color-line:var(--color-border);--color-border:ButtonFace;--color-ink:var(--color-text);--font-body:"Hanken Grotesk",Arial,sans-serif;--color-paper:var(--color-bg);--color-bg:Canvas}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-pdp-rating-bars{display:grid;gap:.4rem;margin-top:2rem}
 .blko-theme .blko-pdp-rating-bars p{display:grid;grid-template-columns:50px 1fr 34px;gap:.6rem;align-items:center;margin:0;font-size:var(--text-small)}
@@ -16,6 +16,8 @@
 .blko-theme .blko-bare-shades-copy p{max-width:44ch}
 .blko-theme .blko-bare-swatch i{position:absolute;left:.5rem;bottom:.4rem;font-style:normal;font-family:var(--font-accent);font-size:var(--text-small);color:var(--color-text)}
 .blko-theme .blko-bare-look b{font-family:var(--font-accent);font-size:var(--text-small);font-weight:400;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(--color-text);width:fit-content}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}

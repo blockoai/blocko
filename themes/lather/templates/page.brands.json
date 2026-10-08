@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Bold"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Playful"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Outdoorsy"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Straight-talking"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Generous"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the shadow and bubbles in the accent colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm areas of a photograph with enough contrast."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not remove the shadow, recolour the bubbles or change the offset direction."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Loud, never loud-mouthed",
+            "text": "Big headlines, short lines, the odd exclamation mark. Energy comes from rhythm and confidence, not from shouting at people."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Joke, then the facts",
+            "text": "Land the grin first, then say what is in it and how to use it. Never let a gag hide a scent note or a price."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Friend, not guru",
+            "text": "Talk like the mate who always smells good and tells you where he got it. No lectures, no ranking people's habits."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Wood, musk and a splash of cedar. Lathers in ten seconds."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Your shower called. It wants better soap."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Subscribe and save. Skip or cancel whenever."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "Be the alpha everyone envies"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "Revolutionary formula, unbeatable results"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Real men don't skip the routine"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Outdoors, in motion",
+            "text": "Trails, water, wood and weather. People mid-action, a little windswept, never posed in a mirror."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Hard light, rich colour",
+            "text": "Strong daylight and saturated greens and oranges. Shadows stay crisp, like the offset shadow in the logo."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Product in the mess",
+            "text": "Bars and bottles on wet stone, towels and wood, with real water and foam. Close, tactile, slightly imperfect."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

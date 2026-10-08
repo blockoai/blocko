@@ -3,7 +3,7 @@
 <script type="module" src="{{ 'blko-cart-drawer.js' | asset_url }}"></script>
 <script type="module" src="{{ 'blko-cart-checkout.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--weight-medium:500;--color-border:ButtonFace;--font-mono:var(--font-accent);--font-accent:"Figtree",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--text-small:.75rem;--color-line:var(--color-border);--color-ink:var(--color-text);--color-text:CanvasText;--leading-body:1.5;--color-text-muted:CanvasText;--color-accent:GrayText;--tracking-label:.075rem;--font-display:var(--font-heading);--font-heading:"Fraunces",Georgia,serif;--leading-display:.9;--text-h2:2rem;--color-footer-bg:CanvasText;--color-button-text:Canvas;--text-display:2.5rem;--color-overlay:rgb(0 0 0 / .4);--tracking-footer:-.0175rem;--font-body:"Figtree",Arial,sans-serif;--leading-footer:1.5;--text-footer:.875rem;--weight-body:400;--text-body:1rem;--color-bg-alt:Canvas;--color-paper:var(--color-bg);--color-bg:Canvas}
+:where(.blko-theme){--color-text-muted:CanvasText;--text-small:.75rem;--weight-medium:500;--color-border:ButtonFace;--font-mono:var(--font-accent);--font-accent:"Figtree",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--color-line:var(--color-border);--color-ink:var(--color-text);--color-text:CanvasText;--leading-body:1.5;--color-accent:GrayText;--tracking-label:.075rem;--font-display:var(--font-heading);--font-heading:"Fraunces",Georgia,serif;--leading-display:.9;--text-h2:2rem;--color-footer-bg:CanvasText;--color-button-text:Canvas;--text-display:2.5rem;--color-overlay:rgb(0 0 0 / .4);--tracking-footer:-.0175rem;--font-body:"Figtree",Arial,sans-serif;--leading-footer:1.5;--text-footer:.875rem;--weight-body:400;--text-body:1rem;--color-bg-alt:Canvas;--color-paper:var(--color-bg);--color-bg:Canvas}
 @media (min-width:1024px){:where(.blko-theme){--text-h2:2.5rem;--text-display:5rem;--text-body:1.25rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-cart-checkout-progress{max-width:1200px;margin-inline:auto}
@@ -78,6 +78,8 @@
 .blko-theme .blko-fbt-item span{font-weight:var(--weight-medium)}
 .blko-theme .blko-fbt-total p{margin:0;font-size:1.125rem}
 .blko-theme .blko-quiz p{margin:0}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}

@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Pure"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Rich"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Crafted"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Assured"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Tactile"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the leaf and glide in the accent colour or in the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Use the round leaf mark for favicons, seals and packaging lids."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not move the leaf or straighten the glide."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Plain-spoken luxury",
+            "text": "Refined, never precious. Say what it is and how it feels, in few words."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Ingredients first",
+            "text": "Lead with the botanical, the oil, the origin. Proof comes from the formula, not from volume."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Unhurried and tactile",
+            "text": "Write about touch, scent and ritual. Let sentences breathe and end on a full stop."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Cold-pressed oils and organic shea in a cream that melts on contact."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Warm between your fingers, then press into skin."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Made slowly in small batches."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "Revolutionary anti-ageing breakthrough!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "Erase wrinkles overnight"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Chemical-free miracle formula"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Studio softness",
+            "text": "Diffuse light, gentle shadow, skin that keeps its texture and a healthy glow."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Botanical and tactile",
+            "text": "Close crops of cream, oil and leaf. Warm neutrals, stone and glass."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Calm confidence",
+            "text": "Unposed portraits with a relaxed gaze. Space around the subject."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

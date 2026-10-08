@@ -61,6 +61,41 @@
     ]
   },
   {
+    "name": "Brand",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Pick your logo files here. Empty fields use the logo bundled with the theme (an SVG that follows your colours)."
+      },
+      {
+        "type": "image_picker",
+        "id": "brand_logo",
+        "label": "Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "brand_logo_inverse",
+        "label": "Inverse logo (dark backgrounds)",
+        "info": "Used in the footer and on dark bands. Falls back to Logo."
+      },
+      {
+        "type": "image_picker",
+        "id": "brand_favicon",
+        "label": "Favicon"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "label": "Logo width",
+        "min": 60,
+        "max": 320,
+        "step": 4,
+        "unit": "px",
+        "default": 136
+      }
+    ]
+  },
+  {
     "name": "Design tokens",
     "settings": [
       {

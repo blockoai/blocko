@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Clear"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Calm"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Fresh"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Trustworthy"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Nourishing"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the waves in the accent colour or in the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm areas of a photograph with enough contrast."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not remove or reshape the waves or the droplet."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Clear as water",
+            "text": "Plain words and short sentences. Say what is inside and what it does, then stop."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Steady, not urgent",
+            "text": "Rituals and rhythm, never countdowns. The page should feel like a slow incoming wave."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Fresh and grounded",
+            "text": "Sensory, concrete detail: salt, seaweed, mineral, mist. Skip hype and clinical jargon."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Sea minerals and kelp, nothing you cannot pronounce."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Rinse, pat dry, then smooth on. Morning and night."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Light on skin, calm for sensitive days."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "Blast away wrinkles in 24 hours!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "Revolutionary clinical-grade anti-ageing complex"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Hurry, only 2 left at this price"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Water and light",
+            "text": "Sea, surf and wet stone in clear daylight. Cool, bright and unfiltered, with generous empty horizon."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Mineral stillness",
+            "text": "Single products on sand, glass and rock with soft shadow. One subject, lots of space."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Skin after the sea",
+            "text": "Fresh, natural faces and bodies, relaxed and candid, never retouched smooth."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

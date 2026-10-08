@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-pdp><aside class="blko-pdp-bundle__summary"><p><span data-pdp-bundle-count>0</span> of 3 selected</p><p class="blko-pdp-price"><strong>$0</strong><span>{{ block.settings.price_note | escape }}</span></p><button class="blko-button" type="button" disabled data-pdp-bundle-add>{{ block.settings.add_label | escape }}</button></aside></blko-pdp></div>
 <script type="module" src="{{ 'blko-pdp.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-bg:Canvas;--color-text:CanvasText;--kit-shadow:none;--kit-radius-card:4px;--color-border:ButtonFace;--kit-border:1px;--color-bg-alt:Canvas;--kit-radius:2px;--kit-radius-image:2px;--kit-radius-button:4px;--kit-label-transform:uppercase;--color-footer-text:Canvas;--color-button-text:Canvas;--color-ink:var(--color-text);--font-mono:var(--font-accent);--font-accent:"Inter",Arial,sans-serif;--leading-label:1.5;--text-label:.6875rem;--weight-medium:500;--text-small:.75rem;--color-footer-bg:CanvasText;--leading-body:1.5;--text-card-title:1.125rem;--color-text-muted:CanvasText;--text-body:.9375rem;--leading-display:.9;--text-title:1.625rem;--color-button:CanvasText;--tracking-button:.075rem;--leading-button:1.5;--text-button:.6875rem;--color-paper:var(--color-bg);--color-accent:GrayText;--color-button-hover:CanvasText;--tracking-label:.075rem;--font-body:"Inter",Arial,sans-serif}
+:where(.blko-theme){--color-bg:Canvas;--color-text:CanvasText;--kit-shadow:none;--kit-radius-card:4px;--color-border:ButtonFace;--kit-border:1px;--color-bg-alt:Canvas;--kit-radius:2px;--kit-radius-image:2px;--kit-radius-button:4px;--kit-label-transform:uppercase;--color-accent:GrayText;--font-accent:"Inter",Arial,sans-serif;--font-body:"Inter",Arial,sans-serif;--weight-light:300;--kit-heading-weight:600;--font-heading:"Archivo",Arial,sans-serif;--color-footer-text:Canvas;--color-button-text:Canvas;--color-ink:var(--color-text);--font-mono:var(--font-accent);--leading-label:1.5;--text-label:.6875rem;--weight-medium:500;--text-small:.75rem;--color-footer-bg:CanvasText;--leading-body:1.5;--text-card-title:1.125rem;--color-text-muted:CanvasText;--text-body:.9375rem;--leading-display:.9;--text-title:1.625rem;--color-button:CanvasText;--tracking-button:.075rem;--leading-button:1.5;--text-button:.6875rem;--color-paper:var(--color-bg);--color-button-hover:CanvasText;--tracking-label:.075rem}
 @media (min-width:1024px){:where(.blko-theme){--text-card-title:1.125rem;--text-body:.9375rem;--text-title:1.75rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme :where(.blko-theme) button{color:inherit}
@@ -56,6 +56,13 @@
 .blko-theme .blko-stubble-trial .blko-eyebrow{color:inherit}
 .blko-theme .blko-stubble-trial__option span{display:grid;gap:.25rem;padding:1rem .75rem;border:1px solid var(--color-footer-text);border-radius:var(--kit-radius-card);text-align:center}
 .blko-theme .blko-stubble-story__copy .blko-eyebrow{margin:0;color:inherit}
+.blko-theme .blko-brand-type__face--heading .blko-brand-type__aa{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--heading strong{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--body .blko-brand-type__aa{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--body strong{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--accent .blko-brand-type__aa{font-family:var(--font-accent)}
+.blko-theme .blko-brand-type__face--accent strong{font-family:var(--font-accent)}
+.blko-theme .blko-brand-download:hover{border-color:var(--color-accent);color:var(--color-accent)}
 .blko-theme.blko-theme .blko-button{text-transform:var(--kit-label-transform)}
 .blko-theme.blko-theme .blko-button{max-width:100%;white-space:normal;text-align:center;border-radius:var(--kit-radius-button)}
 .blko-theme.blko-theme .blko-category-card{border-radius:var(--kit-radius-image)}

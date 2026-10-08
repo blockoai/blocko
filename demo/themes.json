@@ -46,8 +46,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "balm/assets/brand-mark.svg"
   },
   {
     "id": "bare",
@@ -96,8 +98,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "bare/assets/brand-mark.svg"
   },
   {
     "id": "blush",
@@ -146,8 +150,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "blush/assets/brand-mark.svg"
   },
   {
     "id": "clip",
@@ -194,8 +200,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "clip/assets/brand-mark.svg"
   },
   {
     "id": "dew",
@@ -244,8 +252,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "dew/assets/brand-mark.svg"
   },
   {
     "id": "isle",
@@ -293,8 +303,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "isle/assets/brand-mark.svg"
   },
   {
     "id": "lather",
@@ -342,8 +354,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "lather/assets/brand-mark.svg"
   },
   {
     "id": "prism",
@@ -392,8 +406,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "prism/assets/brand-mark.svg"
   },
   {
     "id": "shelf",
@@ -443,8 +459,10 @@
       "search-empty": 6631,
       "blog": 6631,
       "article": 6631,
-      "brands": 1342
-    }
+      "brand-directory": 1342,
+      "brands": 914
+    },
+    "logo": "shelf/assets/brand-mark.svg"
   },
   {
     "id": "stubble",
@@ -492,8 +510,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "stubble/assets/brand-mark.svg"
   },
   {
     "id": "tide",
@@ -542,8 +562,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "tide/assets/brand-mark.svg"
   },
   {
     "id": "tint",
@@ -592,8 +614,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "tint/assets/brand-mark.svg"
   },
   {
     "id": "tress",
@@ -641,8 +665,10 @@
       "search": 4483,
       "search-empty": 4483,
       "blog": 4483,
-      "article": 4483
-    }
+      "article": 4483,
+      "brands": 914
+    },
+    "logo": "tress/assets/brand-mark.svg"
   },
   {
     "id": "twist",
@@ -691,8 +717,10 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "twist/assets/brand-mark.svg"
   },
   {
     "id": "veil",
@@ -741,7 +769,9 @@
       "search": 6631,
       "search-empty": 6631,
       "blog": 6631,
-      "article": 6631
-    }
+      "article": 6631,
+      "brands": 914
+    },
+    "logo": "veil/assets/brand-mark.svg"
   }
 ]

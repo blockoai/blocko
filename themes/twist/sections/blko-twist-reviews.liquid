@@ -2,8 +2,8 @@
 <div class="blko-theme"><blko-twist-signature><section class="blko-reviews"><p class="blko-reviews-kicker">{{ section.settings.kicker | escape }}</p><h2>{{ section.settings.heading | escape }}</h2><div class="blko-reviews-row">{% for block in section.blocks %}<blockquote {{ block.shopify_attributes }}><p class="blko-reviews-stars">{{ block.settings.stars | escape }}</p><p>{{ block.settings.quote | escape }}</p><cite>{{ block.settings.name | escape }}</cite></blockquote>{% endfor %}</div></section></blko-twist-signature></div>
 <script type="module" src="{{ 'blko-twist-signature.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--kit-heading-tracking:-0.01em;--kit-heading-transform:none;--kit-heading-weight:700;--font-heading:"Fraunces",Georgia,serif;--weight-bold:700;--color-accent:GrayText;--font-body:"Figtree",Arial,sans-serif;--tracking-title:-.08rem;--leading-body:1.5;--text-title:2rem;--weight-light:300;--tracking-h2:-.08rem;--leading-display:.9;--text-h2:2rem;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg);--color-bg:Canvas}
-@media (min-width:1024px){:where(.blko-theme){--tracking-title:-.1rem;--text-title:2.5rem;--tracking-h2:-.1rem;--text-h2:2.5rem}}
+:where(.blko-theme){--kit-heading-tracking:-0.01em;--kit-heading-transform:none;--kit-heading-weight:700;--font-heading:"Fraunces",Georgia,serif;--color-text-muted:CanvasText;--text-small:.75rem;--leading-display:.9;--text-h2:2rem;--weight-light:300;--weight-bold:700;--color-accent:GrayText;--font-body:"Figtree",Arial,sans-serif;--tracking-title:-.08rem;--leading-body:1.5;--text-title:2rem;--tracking-h2:-.08rem;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg);--color-bg:Canvas}
+@media (min-width:1024px){:where(.blko-theme){--text-h2:2.5rem;--tracking-title:-.1rem;--text-title:2.5rem;--tracking-h2:-.1rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme h2{font-family:var(--font-body);font-size:var(--text-h2);font-weight:var(--weight-light);line-height:var(--leading-display);letter-spacing:var(--tracking-h2)}
 .blko-theme blockquote{margin:1rem 0;font:var(--weight-light) var(--text-title)/var(--leading-body) var(--font-heading);letter-spacing:var(--tracking-title)}
@@ -22,6 +22,9 @@
 .blko-theme .blko-quiz p{margin:0}
 @media(max-width:900px){.blko-theme .blko-reviews-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.blko-theme .blko-reviews-row{grid-template-columns:1fr}}
+.blko-theme .blko-brand-head h2{margin:0;font:var(--kit-heading-weight,var(--weight-light)) var(--text-h2)/var(--leading-display) var(--font-heading)}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
 .blko-theme.blko-theme h2{font-family:var(--font-heading);font-weight:var(--kit-heading-weight);text-transform:var(--kit-heading-transform);overflow-wrap:anywhere}
 .blko-theme.blko-theme blockquote{font-family:var(--font-heading);font-weight:var(--kit-heading-weight);text-transform:var(--kit-heading-transform);overflow-wrap:anywhere}
 .blko-theme.blko-theme h2{letter-spacing:var(--kit-heading-tracking)}

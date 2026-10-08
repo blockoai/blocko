@@ -6,8 +6,8 @@
 <script type="module" src="{{ 'blko-cart-drawer.js' | asset_url }}"></script>
 <script type="module" src="{{ 'blko-cart-checkout.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-line:var(--color-border);--color-border:ButtonFace;--font-mono:var(--font-accent);--font-accent:var(--font-body);--font-body:"DM Sans",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--text-title:2rem;--text-display:2.5rem;--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas;--color-ink:var(--color-text);--color-text:CanvasText;--font-display:var(--font-heading);--font-heading:"Cormorant Garamond",Georgia,serif;--leading-h3:1.5;--text-h4:1.25rem;--color-button-text:Canvas;--color-bg:var(--color-paper);--text-small:.75rem;--tracking-body:-.02rem;--leading-card-title:1.125;--text-card-title:1.5rem;--leading-display:.9;--leading-body:1.5;--color-text-muted:CanvasText;--text-body:1rem;--color-accent:GrayText;--tracking-label:.075rem;--text-h2:2rem;--color-footer-bg:CanvasText;--color-button:CanvasText;--color-overlay:rgb(0 0 0 / .4);--tracking-footer:-.0175rem;--leading-footer:1.5;--text-footer:.875rem;--weight-body:400;--tracking-price:-.02rem;--text-price:1rem;--weight-bold:700;--tracking-button:.075rem;--leading-button:1.5;--text-button:.75rem;--tracking-card-title:-.06rem;--weight-light:300;--tracking-h3:.0875rem;--text-h3:.875rem;--tracking-h2:-.08rem;--font-sans:var(--font-body);--color-footer-text:Canvas;--color-button-hover:CanvasText}
-@media (min-width:1024px){:where(.blko-theme){--text-title:2.5rem;--text-display:5rem;--text-h4:1.5rem;--tracking-body:-.025rem;--text-card-title:2rem;--text-body:1.25rem;--text-h2:2.5rem;--tracking-card-title:-.08rem;--tracking-h3:.1rem;--text-h3:1rem;--tracking-h2:-.1rem}}
+:where(.blko-theme){--color-line:var(--color-border);--color-border:ButtonFace;--font-mono:var(--font-accent);--font-accent:var(--font-body);--font-body:"DM Sans",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--color-text-muted:CanvasText;--font-heading:"Cormorant Garamond",Georgia,serif;--leading-card-title:1.125;--text-card-title:1.5rem;--weight-light:300;--tracking-label:.075rem;--color-accent:GrayText;--text-small:.75rem;--leading-display:.9;--text-h2:2rem;--text-title:2rem;--text-display:2.5rem;--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas;--color-ink:var(--color-text);--color-text:CanvasText;--font-display:var(--font-heading);--leading-h3:1.5;--text-h4:1.25rem;--color-button-text:Canvas;--color-bg:var(--color-paper);--tracking-body:-.02rem;--leading-body:1.5;--text-body:1rem;--color-footer-bg:CanvasText;--color-button:CanvasText;--color-overlay:rgb(0 0 0 / .4);--tracking-footer:-.0175rem;--leading-footer:1.5;--text-footer:.875rem;--weight-body:400;--tracking-price:-.02rem;--text-price:1rem;--weight-bold:700;--tracking-button:.075rem;--leading-button:1.5;--text-button:.75rem;--tracking-card-title:-.06rem;--tracking-h3:.0875rem;--text-h3:.875rem;--tracking-h2:-.08rem;--font-sans:var(--font-body);--color-footer-text:Canvas;--color-button-hover:CanvasText}
+@media (min-width:1024px){:where(.blko-theme){--text-card-title:2rem;--text-h2:2.5rem;--text-title:2.5rem;--text-display:5rem;--text-h4:1.5rem;--tracking-body:-.025rem;--text-body:1.25rem;--tracking-card-title:-.08rem;--tracking-h3:.1rem;--text-h3:1rem;--tracking-h2:-.1rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 :where(.blko-theme) img[height]{height:auto}
 :where(.blko-theme) .blko-placeholder{display:block;width:100%;height:100%;min-height:10rem;background:var(--color-accent);fill:none;color:var(--color-border)}
@@ -301,6 +301,21 @@
 .blko-theme .blko-search-blog-article-hero img{min-height:0;aspect-ratio:1}
 .blko-theme .blko-search-blog-inline-products>div{grid-template-columns:1fr}}
 .blko-theme .blko-home-collection-filter-drawer[aria-hidden=true]{display:none}
+.blko-theme .blko-brand-logo img{display:block;width:100%;height:auto}
+.blko-theme .blko-brand-head h2{margin:0;font:var(--kit-heading-weight,var(--weight-light)) var(--text-h2)/var(--leading-display) var(--font-heading)}
+.blko-theme .blko-brand-type__face--heading .blko-brand-type__aa{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--heading strong{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--body .blko-brand-type__aa{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--body strong{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--accent .blko-brand-type__aa{font-family:var(--font-accent)}
+.blko-theme .blko-brand-type__face--accent strong{font-family:var(--font-accent)}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-download:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.blko-theme .blko-brand-do h3{margin:0 0 .75rem;font:var(--weight-medium) var(--text-label)/var(--leading-label) var(--font-accent);letter-spacing:var(--tracking-label);text-transform:var(--kit-label-transform,uppercase)}
+.blko-theme .blko-brand-dont h3{margin:0 0 .75rem;font:var(--weight-medium) var(--text-label)/var(--leading-label) var(--font-accent);letter-spacing:var(--tracking-label);text-transform:var(--kit-label-transform,uppercase)}
+.blko-theme .blko-brand-card h3{margin:0 0 .5rem;font:var(--kit-heading-weight,var(--weight-light)) var(--text-card-title)/var(--leading-card-title) var(--font-heading)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
+.blko-theme .blko-brand-mood img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--kit-radius-image,0)}
 .blko-theme a.blko-cart-checkout-text-button{display:inline-block;text-decoration:none}
 .blko-theme .blko-cart-checkout-line-item h2 a{color:inherit;text-decoration:none}
 .blko-theme a.blko-cart-checkout-text-button{display:inline-block;text-decoration:none}

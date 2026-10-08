@@ -1,0 +1,9 @@
+<svg width="512" height="153" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 218 65">
+  <g fill="none" stroke-width="8">
+    <path transform="translate(2.5 3.5)" d="M6 20V50H28M42 50V30Q42 20 53 20Q64 20 64 30V50M42 38H64M78 20H100M89 20V50M114 20V50M136 20V50M114 35H136M172 20H150V50H172M150 35H168M186 50V20H199Q208 20 208 28Q208 36 199 36H186M198 36L208 50" stroke="#d7593b"/>
+    <path d="M6 20V50H28M42 50V30Q42 20 53 20Q64 20 64 30V50M42 38H64M78 20H100M89 20V50M114 20V50M136 20V50M114 35H136M172 20H150V50H172M150 35H168M186 50V20H199Q208 20 208 28Q208 36 199 36H186M198 36L208 50" stroke="#322a26"/>
+    <g stroke="#d7593b" stroke-width="2">
+      <circle cx="89" cy="7" r="4.5"/><circle cx="100" cy="3.5" r="2.5"/><circle cx="112" cy="9" r="3.2"/>
+    </g>
+  </g>
+</svg>

@@ -42,6 +42,6 @@ Never overwrite an existing file with the same name without comparing it first.
 
 - Assets: none (0 KB JavaScript)
 - Locale keys: none
-- Theme settings read (optional, with fallbacks): none
+- Theme settings read (optional, with fallbacks): `settings.brand_logo`, `settings.brand_logo_inverse`
 
 Generated file: do not edit; open an issue instead.

@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-accordion><blko-accordion><article class="blko-accordion" data-accordion><button type="button" data-accordion-trigger aria-expanded="false">{{ block.settings.label | escape }}<span>+</span></button><div data-accordion-panel hidden><p>{{ block.settings.text | escape | newline_to_br }}</p></div></article></blko-accordion></blko-accordion></div>
 <script type="module" src="{{ 'blko-accordion.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-button-text:Canvas;--color-ink:var(--color-text);--color-text:CanvasText;--color-bg:var(--color-paper);--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas;--color-line:var(--color-border);--color-border:ButtonFace;--text-small:.75rem;--text-title:2rem;--leading-display:.9;--font-mono:var(--font-accent);--font-accent:var(--font-body);--font-body:"DM Sans",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--text-body:1rem;--color-button:CanvasText;--tracking-button:.075rem;--leading-button:1.5;--text-button:.75rem;--font-sans:var(--font-body);--leading-body:1.5;--tracking-label:.075rem}
+:where(.blko-theme){--color-accent:GrayText;--font-accent:var(--font-body);--font-body:"DM Sans",Arial,sans-serif;--weight-light:300;--font-heading:"Cormorant Garamond",Georgia,serif;--color-button-text:Canvas;--color-ink:var(--color-text);--color-text:CanvasText;--color-bg:var(--color-paper);--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas;--color-line:var(--color-border);--color-border:ButtonFace;--text-small:.75rem;--text-title:2rem;--leading-display:.9;--font-mono:var(--font-accent);--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--text-body:1rem;--color-button:CanvasText;--tracking-button:.075rem;--leading-button:1.5;--text-button:.75rem;--font-sans:var(--font-body);--leading-body:1.5;--tracking-label:.075rem}
 @media (min-width:1024px){:where(.blko-theme){--text-title:2.5rem;--text-body:1.25rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme :where(.blko-theme) button{color:inherit}
@@ -75,6 +75,10 @@
 .blko-theme .blko-search-blog-filters button{text-align:left}
 .blko-theme .blko-search-blog-section-heading .blko-search-blog-tag-filter{justify-content:center;margin-top:1.25rem}
 .blko-theme .blko-home-collection-filter-drawer[aria-hidden=true]{display:none}
+.blko-theme .blko-brand-type__face--heading .blko-brand-type__aa{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--body .blko-brand-type__aa{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--accent .blko-brand-type__aa{font-family:var(--font-accent)}
+.blko-theme .blko-brand-download:hover{border-color:var(--color-accent);color:var(--color-accent)}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}

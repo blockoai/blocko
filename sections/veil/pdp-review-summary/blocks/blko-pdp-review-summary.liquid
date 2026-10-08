@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-pdp><div class="blko-pdp-rating-bars"><p><span>{{ block.settings.label_5 | escape }}</span><i style="--pdp-rating:{{ block.settings.percent_5 | escape }}%"></i><b>{{ block.settings.percent_5 | escape }}%</b></p><p><span>{{ block.settings.label_4 | escape }}</span><i style="--pdp-rating:{{ block.settings.percent_4 | escape }}%"></i><b>{{ block.settings.percent_4 | escape }}%</b></p></div></blko-pdp></div>
 <script type="module" src="{{ 'blko-pdp.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--text-small:.75rem;--color-line:var(--color-border);--color-border:ButtonFace;--color-ink:var(--color-text);--color-text:CanvasText;--font-body:"DM Sans",Arial,sans-serif;--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas}
+:where(.blko-theme){--color-text-muted:CanvasText;--text-small:.75rem;--color-line:var(--color-border);--color-border:ButtonFace;--color-ink:var(--color-text);--color-text:CanvasText;--font-body:"DM Sans",Arial,sans-serif;--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-pdp-rating-bars{display:grid;gap:.4rem;margin-top:2rem}
 .blko-theme .blko-pdp-rating-bars p{display:grid;grid-template-columns:50px 1fr 34px;gap:.6rem;align-items:center;margin:0;font-size:var(--text-small)}
@@ -13,6 +13,8 @@
 .blko-theme .blko-pdp-bundle-item p{margin:.35rem 0;font-size:var(--text-small)}
 .blko-theme .blko-pdp-bundle-explainer p{font-size:var(--text-small)}
 @media(max-width:760px){.blko-theme .blko-search-blog-filters p{display:none}}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}

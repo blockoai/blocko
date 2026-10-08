@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Honest"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Clear"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Minimal"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {}
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Direct"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the square in the accent colour or in the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm, even areas of a photograph with enough contrast."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not round the corners, outline or add a shadow to the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not add a crossbar to the A or move the square."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Plain words first",
+            "text": "Say what it is and what it does. Skip the jargon, the hype and the adjectives that do no work."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Founder-to-friend",
+            "text": "Write in the first person plural, one person to another. Opinions are fine; lectures are not."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "One idea per line",
+            "text": "Short lines with room around them. If a sentence needs a second breath, split it."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "A sheer tint that evens out, never covers up."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Two minutes, three products, out the door."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Made for skin that already looks like skin."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "Flawless, full-glam transformation!!!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "Unlock your ultimate radiant potential"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Fix every imperfection in seconds"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Bare skin, true colour",
+            "text": "Natural light, visible texture, no heavy retouching. Skin should look like skin."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Sharp and uncluttered",
+            "text": "Single products on flat colour, straight edges and generous empty space."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Real faces, mid-moment",
+            "text": "Close, calm portraits. Eyes off camera, nothing staged, makeup that is barely there."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

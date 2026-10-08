@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Playful"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Bold"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Clean"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Curious"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Inclusive"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the I and the ladder in the accent colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm, flat areas of a photograph with enough contrast."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not round, slant or outline the letters."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not reorder, recolour or remove the steps in the ladder."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Bright and brief",
+            "text": "Short lines, active verbs, one idea at a time. A headline should feel like a swatch: quick to read, hard to forget."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Shade first",
+            "text": "Lead with the colour, finish and wear, in plain words. Name the shade before the benefit."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Friendly, never silly",
+            "text": "Wink at the reader, not at the product. Humour is light, inclusive and never at anyone's expense."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Swipe it, blend it, wear it out."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Ten shades, one easy-going lip tint."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Fragrance-free. Smudges a little. Looks great anyway."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "The only lip colour you will ever need!!!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "Flawless, perfect, camera-ready skin"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Fix your face in 60 seconds"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Colour you can see",
+            "text": "Flat, bright backgrounds in butter, powder blue and blush. The product or shade is always the loudest thing on the page."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Swatches, close up",
+            "text": "Real skin, real swatches, visible texture. Show the shade on a range of skin tones."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Candid and playful",
+            "text": "People mid-laugh, mid-swipe, looking away from the lens. Natural light, no heavy retouching."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

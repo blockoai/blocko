@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Gentle"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Considered"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {}
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Honest"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Unhurried"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the arc in the accent colour or in the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm areas of a photograph with enough contrast."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not separate the arc from the letters or change its curve."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Calm, never loud",
+            "text": "Short sentences, full stops, no exclamation marks. The page should feel like lowering your voice."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Specific over superlative",
+            "text": "Name the ingredient, the texture, the time of day. Skip best, ultimate and miracle."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Warm and grown-up",
+            "text": "Speak to one person as an equal. Reassure without babying, advise without judging."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Smooths without a sheen. Use morning and night."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Fragrance-free and kind to sensitive skin."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Start with one product. Add the next when you are ready."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "Shocking results in 3 days!!!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "The ultimate anti-ageing miracle"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "You need to fix your skin"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Soft daylight",
+            "text": "Window light, long shadows, no flash. Skin keeps its texture and a little shine."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Still and quiet",
+            "text": "Single products on linen, glass and stone. Plenty of empty space around the subject."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Real people, unposed",
+            "text": "Candid, close and warm. Caught mid-ritual rather than looking at the lens."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

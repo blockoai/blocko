@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Bold"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Playful"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Direct"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Inventive"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Generous"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the triangle in the accent colour or in the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on flat colour or calm areas of a photograph."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not replace the triangle with a round dot or change its angle."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Say it straight",
+            "text": "Short, lowercase-friendly lines. Name the step, the result and the time it takes."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Bright, never silly",
+            "text": "Wit and colour are welcome. Jokes never replace the answer."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Invite, do not instruct",
+            "text": "Offer a hair type, a shade, a next move. The customer picks."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Three steps. Wash, treat, glow."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Find your hair type in two minutes."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Subscribe, save, skip any time."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "The ultimate miracle transformation!!!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "Fix your damaged, dull hair"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Terms and conditions apply to all offers"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Colour first",
+            "text": "Saturated hair, flat colour backdrops and hard light. Let one vivid shade lead each frame."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Big and close",
+            "text": "Tight crops on texture, shine and movement. Fill the frame."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Real people, mid-motion",
+            "text": "Hair swung, tousled or tied. Candid energy over studio poses."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

@@ -209,6 +209,7 @@
     "color_swatch_sand": "#c6beb5",
     "color_swatch_aqua": "#a1cecf",
     "color_swatch_teal": "#024257",
-    "blocko_api_base": "/apps/blocko"
+    "blocko_api_base": "/apps/blocko",
+    "logo_width": 132
   }
 }

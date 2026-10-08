@@ -3,7 +3,7 @@
 <script type="module" src="{{ 'blko-cart-drawer.js' | asset_url }}"></script>
 <script type="module" src="{{ 'blko-cart-checkout.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-button:CanvasText;--color-bg:Canvas;--color-border:ButtonFace;--color-text:CanvasText;--color-swatch-blush:ButtonFace;--font-mono:var(--font-accent);--font-accent:"Inter",Helvetica Neue,Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--text-small:.75rem;--color-line:var(--color-border);--color-ink:var(--color-text);--leading-body:1.5;--color-text-muted:CanvasText;--color-accent:GrayText;--tracking-label:.075rem;--font-display:var(--font-heading);--font-heading:"Playfair Display",Georgia,serif;--leading-display:.9;--text-h2:2rem;--color-footer-bg:CanvasText;--color-button-text:Canvas;--text-display:2.5rem;--color-overlay:rgb(0 0 0 / .4);--tracking-footer:-.0175rem;--font-body:"Inter",Helvetica Neue,Arial,sans-serif;--leading-footer:1.5;--text-footer:.875rem;--weight-body:400;--text-body:1rem;--color-bg-alt:Canvas;--color-paper:var(--color-bg)}
+:where(.blko-theme){--color-text-muted:CanvasText;--text-small:.75rem;--color-button:CanvasText;--color-bg:Canvas;--color-border:ButtonFace;--color-text:CanvasText;--color-swatch-blush:ButtonFace;--font-mono:var(--font-accent);--font-accent:"Inter",Helvetica Neue,Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--color-line:var(--color-border);--color-ink:var(--color-text);--leading-body:1.5;--color-accent:GrayText;--tracking-label:.075rem;--font-display:var(--font-heading);--font-heading:"Playfair Display",Georgia,serif;--leading-display:.9;--text-h2:2rem;--color-footer-bg:CanvasText;--color-button-text:Canvas;--text-display:2.5rem;--color-overlay:rgb(0 0 0 / .4);--tracking-footer:-.0175rem;--font-body:"Inter",Helvetica Neue,Arial,sans-serif;--leading-footer:1.5;--text-footer:.875rem;--weight-body:400;--text-body:1rem;--color-bg-alt:Canvas;--color-paper:var(--color-bg)}
 @media (min-width:1024px){:where(.blko-theme){--text-h2:2.5rem;--text-display:5rem;--text-body:1.25rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-cart-checkout-progress{max-width:1200px;margin-inline:auto}
@@ -73,6 +73,8 @@
 .blko-theme .blko-balm-quiz-card div{position:absolute;z-index:1;left:1.25rem;right:1.25rem;bottom:1.25rem}
 .blko-theme .blko-balm-quiz-card span{display:inline-block;background:var(--color-bg);color:var(--color-button);padding:.8rem 1.2rem;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
 @media(max-width:860px){.blko-theme .blko-balm-claim>div{margin:-3rem 5vw 3rem;padding:1.75rem}}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}

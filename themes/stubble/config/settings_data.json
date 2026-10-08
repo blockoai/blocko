@@ -208,6 +208,7 @@
     "color_swatch_mint": "#6db093",
     "color_swatch_citrus": "#cdb033",
     "color_swatch_unscented": "#e4e4f9",
-    "blocko_api_base": "/apps/blocko"
+    "blocko_api_base": "/apps/blocko",
+    "logo_width": 144
   }
 }

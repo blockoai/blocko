@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Playful"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Friendly"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Bright"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Easygoing"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Cheeky"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the heart in the accent colour or in the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm areas of a photograph with enough contrast."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not swap the heart for another shape or move it off the i."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Light and cheerful",
+            "text": "Short, upbeat lines with a smile in them. One playful idea per sentence, never a pile of jokes."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Say it simply",
+            "text": "Name the shape, size and finish: big claw clip, satin scrunchie, pearl snap. Skip jargon and hype."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Friend, not salesperson",
+            "text": "Talk like someone sharing a find. Invite, never pressure."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Meet the claw clip that holds on all day."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Pearl snaps, two in a pack. Mix them up."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Pick a colour, pin it, go."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "THE BEST CLIPS EVER!!! BUY NOW!!!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "Revolutionary hair-hold technology"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Your hair is a mess. We fix it."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Bright and soft",
+            "text": "Clean daylight, pastel grounds, no heavy shadows. Colours stay true and cheerful."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Accessories up close",
+            "text": "Clips, scrunchies and ribbons shown big, on hair or flat on a plain surface, with room to breathe."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Real and unposed",
+            "text": "Everyday people mid-laugh, mid-twist, mid-style. Candid beats perfect."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

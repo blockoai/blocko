@@ -354,7 +354,7 @@
     ]
   },
   {
-    "page": "brands",
+    "page": "brand-directory",
     "title": "Brands",
     "sectionIds": [
       "shelf-brand-directory",
@@ -362,5 +362,20 @@
       "shelf-rewards",
       "newsletter"
     ]
+  },
+  {
+    "page": "brands",
+    "title": "Brand guidelines",
+    "sectionIds": [
+      "brand-hero",
+      "brand-archetype",
+      "brand-palette",
+      "brand-typography",
+      "brand-logo-usage",
+      "brand-voice",
+      "brand-imagery"
+    ],
+    "type": "brand-guidelines",
+    "route": "brands"
   }
 ]

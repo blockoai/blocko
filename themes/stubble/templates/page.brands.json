@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Straightforward"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Practical"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Dry-witted"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Dependable"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Unfussy"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the bristles and rule in the action colour or the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm areas of a photograph with enough contrast."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not remove the rule or straighten the bristles into a pattern."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Plain first",
+            "text": "Say what it does in the first sentence. Short words, active verbs, no jargon unless it helps."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Dry, not loud",
+            "text": "A light joke is welcome; a shout is not. Humour never sits on top of a price, a warning or a how-to."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Show the proof",
+            "text": "Give the blade count, the weeks it lasts, the trial length. A fact beats an adjective."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Five blades, one pass. Replacement heads arrive before you need them."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Try it for 30 days. Not for you? Send it back."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Apply, wait a minute, shave with the grain."
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "Unleash your inner alpha!"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "The most extreme shave known to man"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Real men don't get razor burn"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Bathroom light, real mornings",
+            "text": "Mirror, sink and tile in plain daylight. Steam and water are fine; staging is not."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "The tool, in hand",
+            "text": "Show the razor being used or sitting on the shelf, close and sharp, with the blade side clear."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Ordinary men, mid-task",
+            "text": "A range of ages and skin tones, caught shaving rather than posing. Stubble stays visible."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

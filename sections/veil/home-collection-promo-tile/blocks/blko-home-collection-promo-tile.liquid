@@ -2,8 +2,8 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-home-collection><aside class="blko-home-collection-promo-tile">{% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 760 | image_tag: loading: 'lazy', widths: '380, 570, 760', alt: block.settings.image_alt }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<div><p class="blko-eyebrow">{{ block.settings.eyebrow | escape }}</p><h2>{{ block.settings.heading | escape }}</h2><a href="{{ block.settings.url | default: '#care' }}">{{ block.settings.link_label | escape }}</a></div></aside></blko-home-collection></div>
 <script type="module" src="{{ 'blko-home-collection.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-line:var(--color-border);--color-border:ButtonFace;--font-mono:var(--font-accent);--font-accent:var(--font-body);--font-body:"DM Sans",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--text-title:2rem;--text-display:2.5rem;--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas;--color-ink:var(--color-text);--color-text:CanvasText;--tracking-label:.075rem;--font-display:var(--font-heading);--font-heading:"Cormorant Garamond",Georgia,serif;--leading-card-title:1.125;--text-card-title:1.5rem;--text-small:.75rem;--leading-display:.9;--color-button-text:Canvas;--text-h2:2rem;--color-footer-bg:CanvasText;--tracking-h2:-.08rem;--weight-light:300;--color-accent:GrayText}
-@media (min-width:1024px){:where(.blko-theme){--text-title:2.5rem;--text-display:5rem;--text-card-title:2rem;--text-h2:2.5rem;--tracking-h2:-.1rem}}
+:where(.blko-theme){--color-line:var(--color-border);--color-border:ButtonFace;--font-mono:var(--font-accent);--font-accent:var(--font-body);--font-body:"DM Sans",Arial,sans-serif;--leading-label:1.5;--text-label:.75rem;--weight-medium:500;--font-heading:"Cormorant Garamond",Georgia,serif;--leading-display:.9;--text-h2:2rem;--weight-light:300;--text-title:2rem;--text-display:2.5rem;--color-paper:var(--color-bg-alt);--color-bg-alt:Canvas;--color-ink:var(--color-text);--color-text:CanvasText;--tracking-label:.075rem;--font-display:var(--font-heading);--leading-card-title:1.125;--text-card-title:1.5rem;--text-small:.75rem;--color-button-text:Canvas;--color-footer-bg:CanvasText;--tracking-h2:-.08rem;--color-accent:GrayText}
+@media (min-width:1024px){:where(.blko-theme){--text-h2:2.5rem;--text-title:2.5rem;--text-display:5rem;--text-card-title:2rem;--tracking-h2:-.1rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 :where(.blko-theme) img[height]{height:auto}
 :where(.blko-theme) .blko-placeholder{display:block;width:100%;height:100%;min-height:10rem;background:var(--color-accent);fill:none;color:var(--color-border)}
@@ -59,6 +59,9 @@
 .blko-theme .blko-search-blog-journal-hero img{min-height:0;aspect-ratio:1}
 .blko-theme .blko-search-blog-article-hero img{min-height:0;aspect-ratio:1}
 .blko-theme .blko-search-blog-inline-products>div{grid-template-columns:1fr}}
+.blko-theme .blko-brand-logo img{display:block;width:100%;height:auto}
+.blko-theme .blko-brand-head h2{margin:0;font:var(--kit-heading-weight,var(--weight-light)) var(--text-h2)/var(--leading-display) var(--font-heading)}
+.blko-theme .blko-brand-mood img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--kit-radius-image,0)}
 .blko-theme .blko-beauty-extras-store-list a{color:inherit;text-decoration:underline}
 .blko-theme .blko-beauty-extras-store-card a{color:inherit;text-decoration:underline}
 .blko-theme a.blko-cart-checkout-text-button{display:inline-block;text-decoration:none}

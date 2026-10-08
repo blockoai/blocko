@@ -208,6 +208,7 @@
     "color_swatch_soft_caramel": "#c8946a",
     "color_swatch_golden_tan": "#a8704a",
     "color_swatch_cocoa_deep": "#6b3f2a",
-    "blocko_api_base": "/apps/blocko"
+    "blocko_api_base": "/apps/blocko",
+    "logo_width": 128
   }
 }

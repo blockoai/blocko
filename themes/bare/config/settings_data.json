@@ -210,6 +210,7 @@
     "color_swatch_sand": "#d0b689",
     "color_swatch_honey": "#b3883d",
     "color_swatch_cocoa": "#7f4d50",
-    "blocko_api_base": "/apps/blocko"
+    "blocko_api_base": "/apps/blocko",
+    "logo_width": 128
   }
 }

@@ -5,7 +5,7 @@
 </aside></blko-global></div>
 <script type="module" src="{{ 'blko-global.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-text:CanvasText;--color-accent:GrayText;--color-swatch-aqua:ButtonFace;--color-bg:Canvas;--kit-shadow:none;--kit-radius-card:0;--color-border:ButtonFace;--kit-border:1px;--color-bg-alt:Canvas;--kit-radius:0;--kit-radius-image:0;--kit-radius-button:0;--kit-label-transform:uppercase;--text-small:.75rem;--color-button-text:Canvas;--color-ink:var(--color-text);--tracking-label:.075rem;--font-mono:var(--font-accent);--font-accent:"Jost",'Trebuchet MS',Arial,sans-serif;--leading-label:1.5;--text-label:.8125rem;--weight-medium:500;--color-text-muted:CanvasText;--leading-display:.9;--text-title:2rem;--color-footer-bg:CanvasText;--color-button:CanvasText;--tracking-button:.075rem;--leading-button:1.5;--text-button:.9375rem;--color-paper:var(--color-bg);--color-button-hover:CanvasText;--font-body:"Jost",'Trebuchet MS',Arial,sans-serif}
+:where(.blko-theme){--color-text:CanvasText;--color-accent:GrayText;--color-swatch-aqua:ButtonFace;--color-bg:Canvas;--kit-shadow:none;--kit-radius-card:0;--color-border:ButtonFace;--kit-border:1px;--color-bg-alt:Canvas;--kit-radius:0;--kit-radius-image:0;--kit-radius-button:0;--kit-label-transform:uppercase;--color-text-muted:CanvasText;--text-small:.75rem;--font-accent:"Jost",'Trebuchet MS',Arial,sans-serif;--font-body:"Jost",'Trebuchet MS',Arial,sans-serif;--weight-light:300;--kit-heading-weight:700;--font-heading:"Jost",'Trebuchet MS',Arial,sans-serif;--color-button-text:Canvas;--color-ink:var(--color-text);--tracking-label:.075rem;--font-mono:var(--font-accent);--leading-label:1.5;--text-label:.8125rem;--weight-medium:500;--leading-display:.9;--text-title:2rem;--color-footer-bg:CanvasText;--color-button:CanvasText;--tracking-button:.075rem;--leading-button:1.5;--text-button:.9375rem;--color-paper:var(--color-bg);--color-button-hover:CanvasText}
 @media (min-width:1024px){:where(.blko-theme){--text-title:2.5rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme :where(.blko-theme) button{color:inherit}
@@ -64,6 +64,12 @@
 @keyframes isle-scroll{to{transform:translateX(-50%)}}
 .blko-theme .blko-isle-actives p{max-width:34rem;margin:0 0 1.75rem}
 .blko-theme .blko-isle-results>p{margin:2.5rem 0 0;font-size:var(--text-small)}
+.blko-theme .blko-brand-type__face--heading .blko-brand-type__aa{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--body .blko-brand-type__aa{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--accent .blko-brand-type__aa{font-family:var(--font-accent)}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-download:hover{border-color:var(--color-accent);color:var(--color-accent)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
 .blko-theme.blko-theme .blko-button{text-transform:var(--kit-label-transform)}
 .blko-theme.blko-theme .blko-button{max-width:100%;white-space:normal;text-align:center;border-radius:var(--kit-radius-button)}
 .blko-theme.blko-theme .blko-category-card{border-radius:var(--kit-radius-image)}

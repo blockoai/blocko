@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-beauty-extras><figure class="blko-beauty-extras-ugc-tile">{% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 560 | image_tag: loading: 'lazy', widths: '280, 420, 560', alt: block.settings.image_alt }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<figcaption>{% assign blko_rating = block.settings.rating | round %}{% for blko_star in (1..5) %}{% if blko_star <= blko_rating %}★{% else %}☆{% endif %}{% endfor %} {{ block.settings.caption | escape }}</figcaption></figure></blko-beauty-extras></div>
 <script type="module" src="{{ 'blko-beauty-extras.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--kit-radius-image:12px;--color-sand:var(--color-bg-alt);--color-bg-alt:Canvas;--color-border:ButtonFace;--color-accent:GrayText;--font-body:"Figtree",Arial,sans-serif;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg);--color-bg:Canvas}
+:where(.blko-theme){--kit-radius-image:12px;--color-text-muted:CanvasText;--color-bg:Canvas;--text-small:.75rem;--color-sand:var(--color-bg-alt);--color-bg-alt:Canvas;--color-border:ButtonFace;--color-accent:GrayText;--font-body:"Figtree",Arial,sans-serif;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg)}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 :where(.blko-theme) img[height]{height:auto}
 :where(.blko-theme) .blko-placeholder{display:block;width:100%;height:100%;min-height:10rem;background:var(--color-accent);fill:none;color:var(--color-border)}
@@ -58,6 +58,9 @@
 .blko-theme .blko-search-blog-journal-hero img{min-height:0;aspect-ratio:1}
 .blko-theme .blko-search-blog-article-hero img{min-height:0;aspect-ratio:1}}
 .blko-theme .blko-lather-card img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--kit-radius-image);margin-bottom:.5rem}
+.blko-theme .blko-brand-logo img{display:block;width:100%;height:auto}
+.blko-theme .blko-brand-tile figcaption{padding:.9rem 1rem;font-size:var(--text-small);background:var(--color-bg);color:var(--color-text-muted)}
+.blko-theme .blko-brand-mood img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--kit-radius-image,0)}
 {% endstylesheet %}
 {% schema %}
 {

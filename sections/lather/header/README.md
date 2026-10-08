@@ -39,6 +39,6 @@ _No blocks._
 
 - Assets: none (0 KB JavaScript)
 - Locale keys: `blko.general.close`, `blko.header.bag`, `blko.header.menu` (merge `locales/en.default.blko.json` into your `locales/en.default.json`)
-- Theme settings read (optional, with fallbacks): none
+- Theme settings read (optional, with fallbacks): `settings.brand_logo`
 
 Generated file: do not edit; open an issue instead.

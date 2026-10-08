@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-pdp><article class="blko-pdp-review"><div><strong>{% assign blko_rating = block.settings.rating | round %}{% for blko_star in (1..5) %}{% if blko_star <= blko_rating %}★{% else %}☆{% endif %}{% endfor %}</strong><span>{{ block.settings.badge | escape }}</span></div><h3>{{ block.settings.title | escape }}</h3><p>{{ block.settings.text | escape | newline_to_br }}</p><figure>{% if block.settings.photo != blank %}{{ block.settings.photo | image_url: width: 620 | image_tag: loading: 'lazy', widths: '310, 465, 620', alt: block.settings.photo_alt }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<figcaption>{{ block.settings.caption | escape }}</figcaption></figure></article></blko-pdp></div>
 <script type="module" src="{{ 'blko-pdp.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--font-body:"Jost",Futura,'Trebuchet MS',Arial,sans-serif;--color-bg:Canvas;--color-text:CanvasText;--font-heading:"Jost",Futura,'Trebuchet MS',Arial,sans-serif;--text-card-title:1.125rem;--color-text-muted:CanvasText;--font-display:var(--font-heading);--leading-h3:1.5;--text-h4:1.25rem;--weight-medium:500;--text-small:.75rem;--tracking-body:-.02rem;--color-line:var(--color-border);--color-border:ButtonFace;--color-accent:GrayText;--tracking-label:.075rem;--tracking-h3:.0875rem;--text-h3:.875rem;--color-ink:var(--color-text);--color-paper:var(--color-bg)}
+:where(.blko-theme){--color-text-muted:CanvasText;--font-heading:"Jost",Futura,'Trebuchet MS',Arial,sans-serif;--leading-card-title:1.125;--text-card-title:1.125rem;--weight-light:300;--kit-heading-weight:700;--kit-label-transform:uppercase;--tracking-label:.075rem;--font-accent:"Jost",Futura,'Trebuchet MS',Arial,sans-serif;--leading-label:1.5;--text-label:0.75rem;--weight-medium:500;--text-small:.75rem;--color-text:CanvasText;--color-bg:Canvas;--font-body:"Jost",Futura,'Trebuchet MS',Arial,sans-serif;--font-display:var(--font-heading);--leading-h3:1.5;--text-h4:1.25rem;--tracking-body:-.02rem;--color-line:var(--color-border);--color-border:ButtonFace;--color-accent:GrayText;--tracking-h3:.0875rem;--text-h3:.875rem;--color-ink:var(--color-text);--color-paper:var(--color-bg)}
 @media (min-width:1024px){:where(.blko-theme){--text-card-title:1.25rem;--text-h4:1.5rem;--tracking-body:-.025rem;--tracking-h3:.1rem;--text-h3:1rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 :where(.blko-theme) img[height]{height:auto}
@@ -30,6 +30,13 @@
 .blko-theme .blko-prism-finder__head p{color:inherit;opacity:.8}
 .blko-theme .blko-prism-effect__pair figure{position:relative;margin:0}
 .blko-theme .blko-prism-effect__pair figcaption{position:absolute;left:.5rem;top:.5rem;padding:.2rem .5rem;background:var(--color-text);color:var(--color-bg);font:700 .6875rem/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase}
+.blko-theme .blko-brand-tile figcaption{padding:.9rem 1rem;font-size:var(--text-small);background:var(--color-bg);color:var(--color-text-muted)}
+.blko-theme .blko-brand-tile figcaption strong{color:var(--color-text)}
+.blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
+.blko-theme .blko-brand-do h3{margin:0 0 .75rem;font:var(--weight-medium) var(--text-label)/var(--leading-label) var(--font-accent);letter-spacing:var(--tracking-label);text-transform:var(--kit-label-transform,uppercase)}
+.blko-theme .blko-brand-dont h3{margin:0 0 .75rem;font:var(--weight-medium) var(--text-label)/var(--leading-label) var(--font-accent);letter-spacing:var(--tracking-label);text-transform:var(--kit-label-transform,uppercase)}
+.blko-theme .blko-brand-card h3{margin:0 0 .5rem;font:var(--kit-heading-weight,var(--weight-light)) var(--text-card-title)/var(--leading-card-title) var(--font-heading)}
+.blko-theme .blko-brand-card p{margin:0;color:var(--color-text-muted)}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}

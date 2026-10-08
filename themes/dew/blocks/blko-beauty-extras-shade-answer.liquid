@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-beauty-extras><button class="blko-beauty-extras-answer" type="button" data-beauty-extras-choice{% if block.settings.selected %} aria-pressed="true"{% else %} aria-pressed="false"{% endif %}>{{ block.settings.label | escape }} <small>{{ block.settings.hint | escape }}</small></button></blko-beauty-extras></div>
 <script type="module" src="{{ 'blko-beauty-extras.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--color-text:CanvasText;--color-bg:Canvas;--color-bg-alt:Canvas;--color-footer-bg:CanvasText;--color-accent:GrayText;--color-sale:GrayText;--color-border:ButtonFace;--kit-radius:8px;--kit-radius-image:12px;--kit-radius-button:999px;--color-button-text:Canvas;--color-ink:var(--color-text);--text-small:0.6875rem;--leading-display:.9;--text-title:1.75rem;--color-button:CanvasText;--color-paper:var(--color-bg);--color-line:var(--color-border);--font-body:"DM Sans",Arial,sans-serif}
+:where(.blko-theme){--color-text:CanvasText;--color-bg:Canvas;--color-bg-alt:Canvas;--color-footer-bg:CanvasText;--color-accent:GrayText;--color-sale:GrayText;--color-border:ButtonFace;--kit-radius:8px;--kit-radius-image:12px;--kit-radius-button:999px;--font-accent:"DM Sans",Arial,sans-serif;--font-body:"DM Sans",Arial,sans-serif;--weight-light:300;--kit-heading-weight:500;--font-heading:"Manrope",Arial,sans-serif;--color-button-text:Canvas;--color-ink:var(--color-text);--text-small:0.6875rem;--leading-display:.9;--text-title:1.75rem;--color-button:CanvasText;--color-paper:var(--color-bg);--color-line:var(--color-border)}
 @media (min-width:1024px){:where(.blko-theme){--text-title:1.875rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme :where(.blko-theme) button{color:inherit}
@@ -39,6 +39,10 @@
 .blko-theme .blko-dew-chip[aria-pressed=true]{color:var(--color-text)}
 .blko-theme .blko-dew-chip:focus-visible{outline:2px solid var(--color-text);outline-offset:3px;border-radius:999px}
 .blko-theme .blko-dew-ghost:hover{background:var(--color-text);color:var(--color-bg);border-color:var(--color-text)}
+.blko-theme .blko-brand-type__face--heading .blko-brand-type__aa{font-family:var(--font-heading);font-weight:var(--kit-heading-weight,var(--weight-light))}
+.blko-theme .blko-brand-type__face--body .blko-brand-type__aa{font-family:var(--font-body)}
+.blko-theme .blko-brand-type__face--accent .blko-brand-type__aa{font-family:var(--font-accent)}
+.blko-theme .blko-brand-download:hover{border-color:var(--color-accent);color:var(--color-accent)}
 .blko-theme.blko-theme .blko-button{max-width:100%;white-space:normal;text-align:center;border-radius:var(--kit-radius-button)}
 .blko-theme.blko-theme .blko-category-card{border-radius:var(--kit-radius-image)}
 .blko-theme.blko-theme .blko-filter-chip{border-radius:var(--kit-radius)}

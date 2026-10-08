@@ -1,145 +1,169 @@
 {
   "sections": {
-    "shelf-brand-directory": {
-      "type": "blko-shelf-brand-directory",
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
       "settings": {},
       "blocks": {
         "block-1": {
-          "type": "brand",
+          "type": "trait",
           "settings": {
-            "name": "Aloe & Oat"
+            "trait": "Informed"
           }
         },
         "block-2": {
-          "type": "brand",
+          "type": "trait",
           "settings": {
-            "name": "Atlas Botanics"
+            "trait": "Orderly"
           }
         },
         "block-3": {
-          "type": "brand",
+          "type": "trait",
           "settings": {
-            "letter": "B",
-            "name": "Birch Lab"
+            "trait": "Straightforward"
           }
         },
         "block-4": {
-          "type": "brand",
+          "type": "trait",
           "settings": {
-            "letter": "B",
-            "name": "Brightleaf"
+            "trait": "Fair"
           }
         },
         "block-5": {
-          "type": "brand",
+          "type": "trait",
           "settings": {
-            "letter": "C",
-            "name": "Calm Cove"
+            "trait": "Approachable"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep the shelf line and cap in the accent colour or the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Place the logo on calm areas of a photograph with enough contrast."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not remove the shelf line or move the cap off the l."
           }
         },
         "block-6": {
-          "type": "brand",
+          "type": "dont",
           "settings": {
-            "letter": "C",
-            "name": "Clover Skin"
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Plain and precise",
+            "text": "Say what is in it and what it does. Short words, concrete claims, no jargon without a reason."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Fair to every brand",
+            "text": "Compare on facts such as ingredients, size and price. Never run another brand down to lift one up."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Helpful, not pushy",
+            "text": "Offer a clear next step and let the shopper decide. Sales language stays quiet."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "Fragrance-free, vegan and tested on no one. See the full ingredient list."
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "Three cleansers for dry skin, side by side."
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "Not sure where to start? Take the two-minute quiz."
           }
         },
         "block-7": {
-          "type": "brand",
+          "type": "avoid",
           "settings": {
-            "letter": "D",
-            "name": "Dune Studio"
+            "text": "The only moisturiser you will ever need!!!"
           }
         },
         "block-8": {
-          "type": "brand",
+          "type": "avoid",
           "settings": {
-            "letter": "F",
-            "name": "Field & Fern"
+            "text": "Toxic ingredients are hiding in your bathroom"
           }
         },
         "block-9": {
-          "type": "brand",
+          "type": "avoid",
           "settings": {
-            "letter": "G",
-            "name": "Gentle Roots"
-          }
-        },
-        "block-10": {
-          "type": "brand",
-          "settings": {
-            "letter": "H",
-            "name": "Harbor Hair"
-          }
-        },
-        "block-11": {
-          "type": "brand",
-          "settings": {
-            "letter": "J",
-            "name": "Juniper Co"
-          }
-        },
-        "block-12": {
-          "type": "brand",
-          "settings": {
-            "letter": "L",
-            "name": "Linen Beauty"
-          }
-        },
-        "block-13": {
-          "type": "brand",
-          "settings": {
-            "letter": "M",
-            "name": "Meadow Pure"
-          }
-        },
-        "block-14": {
-          "type": "brand",
-          "settings": {
-            "letter": "N",
-            "name": "North Shore"
-          }
-        },
-        "block-15": {
-          "type": "brand",
-          "settings": {
-            "letter": "O",
-            "name": "Olive Grove"
-          }
-        },
-        "block-16": {
-          "type": "brand",
-          "settings": {
-            "letter": "P",
-            "name": "Plain Daily"
-          }
-        },
-        "block-17": {
-          "type": "brand",
-          "settings": {
-            "letter": "R",
-            "name": "Riverstone"
-          }
-        },
-        "block-18": {
-          "type": "brand",
-          "settings": {
-            "letter": "S",
-            "name": "Sage & Salt"
-          }
-        },
-        "block-19": {
-          "type": "brand",
-          "settings": {
-            "letter": "T",
-            "name": "Tidepool"
-          }
-        },
-        "block-20": {
-          "type": "brand",
-          "settings": {
-            "letter": "W",
-            "name": "Willow Lane"
+            "text": "Hurry, going fast, buy now"
           }
         }
       },
@@ -152,73 +176,49 @@
         "block-6",
         "block-7",
         "block-8",
-        "block-9",
-        "block-10",
-        "block-11",
-        "block-12",
-        "block-13",
-        "block-14",
-        "block-15",
-        "block-16",
-        "block-17",
-        "block-18",
-        "block-19",
-        "block-20"
+        "block-9"
       ]
     },
-    "shelf-standards": {
-      "type": "blko-shelf-standards",
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
       "settings": {},
       "blocks": {
         "block-1": {
-          "type": "pillar",
+          "type": "direction",
           "settings": {
-            "title": "Ingredient transparency",
-            "body": "Every formula is listed in full, with a plain-language note on what each ingredient does."
+            "title": "Lined up and lit clean",
+            "text": "Products in neat rows on pale surfaces, even daylight, labels readable."
           }
         },
         "block-2": {
-          "type": "pillar",
+          "type": "direction",
           "settings": {
-            "title": "Safety tested",
-            "body": "We screen each product against a published list of ingredients we leave out."
+            "title": "Variety on show",
+            "text": "Many brands, shapes and sizes together so the range feels generous and well chosen."
           }
         },
         "block-3": {
-          "type": "pillar",
+          "type": "direction",
           "settings": {
-            "title": "Responsibly made",
-            "body": "Brands share how they source, package and treat the people who make their products."
-          }
-        },
-        "block-4": {
-          "type": "pillar",
-          "settings": {
-            "title": "Cruelty-free, always",
-            "body": "No animal testing at any stage, and we verify it with every brand."
+            "title": "Real people, real routines",
+            "text": "Everyday skin and everyday bathrooms, candid and unretouched."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "block-4"
+        "block-3"
       ]
-    },
-    "shelf-rewards": {
-      "type": "blko-shelf-rewards",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
     }
   },
   "order": [
-    "shelf-brand-directory",
-    "shelf-standards",
-    "shelf-rewards",
-    "newsletter"
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
   ]
 }

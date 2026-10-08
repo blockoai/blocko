@@ -6,6 +6,7 @@
   <link rel="canonical" href="{{ canonical_url }}">
   <title>{{ page_title | escape }}{% if current_tags %} &ndash; {{ 'general.tagged' | t: tags: current_tags | join: ', ' }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name | escape }}{% endunless %}</title>
   {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+  {%- if settings.brand_favicon != blank -%}<link rel="icon" href="{{ settings.brand_favicon | image_url: width: 64 }}">{%- else -%}<link rel="icon" type="image/svg+xml" href="{{ 'brand-mark.svg' | asset_url }}">{%- endif -%}
   {% render 'blko-theme-styles' %}
   {{ 'blko-theme.css' | asset_url | stylesheet_tag }}
   {{ content_for_header }}

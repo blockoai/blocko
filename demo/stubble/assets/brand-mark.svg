@@ -1,0 +1,8 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g fill="none" stroke-linejoin="miter">
+    <rect x="4" y="4" width="56" height="56" rx="4" stroke="#19172d" stroke-width="4"/>
+    <path d="M44 14H20V26H44V38H20" stroke="#19172d" stroke-width="5"/>
+    <path d="M18 50H46" stroke="#d8420f" stroke-width="3"/>
+    <path d="M18 50V45M23 50V47M28 50V46" stroke="#d8420f" stroke-width="1.6"/>
+  </g>
+</svg>

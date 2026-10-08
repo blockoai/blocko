@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "brand-hero": {
+      "type": "blko-brand-hero",
+      "settings": {}
+    },
+    "brand-archetype": {
+      "type": "blko-brand-archetype",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "trait",
+          "settings": {
+            "trait": "Playful"
+          }
+        },
+        "block-2": {
+          "type": "trait",
+          "settings": {
+            "trait": "Generous"
+          }
+        },
+        "block-3": {
+          "type": "trait",
+          "settings": {
+            "trait": "Quick"
+          }
+        },
+        "block-4": {
+          "type": "trait",
+          "settings": {
+            "trait": "Friendly"
+          }
+        },
+        "block-5": {
+          "type": "trait",
+          "settings": {
+            "trait": "Bold"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "brand-palette": {
+      "type": "blko-brand-palette",
+      "settings": {}
+    },
+    "brand-typography": {
+      "type": "blko-brand-typography",
+      "settings": {}
+    },
+    "brand-logo-usage": {
+      "type": "blko-brand-logo-usage",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "do",
+          "settings": {
+            "text": "Use the primary wordmark on light surfaces and the inverse on dark ones."
+          }
+        },
+        "block-2": {
+          "type": "do",
+          "settings": {
+            "text": "Keep waves and dot in the accent colour or the text colour, never a third colour."
+          }
+        },
+        "block-3": {
+          "type": "do",
+          "settings": {
+            "text": "Use the twist mark for favicons, social avatars and packaging seals."
+          }
+        },
+        "block-4": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not stretch, rotate or outline the wordmark."
+          }
+        },
+        "block-5": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not straighten the t crossbars or swap the lowercase for capitals."
+          }
+        },
+        "block-6": {
+          "type": "dont",
+          "settings": {
+            "text": "Do not set the logo on a busy pattern or low-contrast photograph."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "brand-voice": {
+      "type": "blko-brand-voice",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "principle",
+          "settings": {
+            "title": "Lowercase and light",
+            "text": "Headlines are lowercase and conversational, like a note passed across a table. Keep jokes small and kind."
+          }
+        },
+        "block-2": {
+          "type": "principle",
+          "settings": {
+            "title": "Price and gift up front",
+            "text": "Say what it costs, what is free, and who it is perfect for. Value is part of the fun."
+          }
+        },
+        "block-3": {
+          "type": "principle",
+          "settings": {
+            "title": "Show, then tell",
+            "text": "Name the colour, the grip, the number in the set. One concrete detail beats three adjectives."
+          }
+        },
+        "block-4": {
+          "type": "write",
+          "settings": {
+            "text": "a scrunchie set for everyone on your list"
+          }
+        },
+        "block-5": {
+          "type": "write",
+          "settings": {
+            "text": "free gift at $60, no code needed"
+          }
+        },
+        "block-6": {
+          "type": "write",
+          "settings": {
+            "text": "sleeps soft, stays put, comes in 6 colours"
+          }
+        },
+        "block-7": {
+          "type": "avoid",
+          "settings": {
+            "text": "Premium luxury haircare experience"
+          }
+        },
+        "block-8": {
+          "type": "avoid",
+          "settings": {
+            "text": "LIMITED TIME!!! BUY NOW OR REGRET IT"
+          }
+        },
+        "block-9": {
+          "type": "avoid",
+          "settings": {
+            "text": "Fix your damaged, boring hair"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
+    "brand-imagery": {
+      "type": "blko-brand-imagery",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "direction",
+          "settings": {
+            "title": "Bright and close",
+            "text": "Clean daylight, saturated colour, crops tight on the accessory and the hair it holds."
+          }
+        },
+        "block-2": {
+          "type": "direction",
+          "settings": {
+            "title": "Flat lays with a wink",
+            "text": "Sets arranged in bold colour blocks on plain grounds, a small surprise in each frame."
+          }
+        },
+        "block-3": {
+          "type": "direction",
+          "settings": {
+            "title": "Real hair days",
+            "text": "Candid, mid-laugh, every texture and length. Never retouched into sameness."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "brand-hero",
+    "brand-archetype",
+    "brand-palette",
+    "brand-typography",
+    "brand-logo-usage",
+    "brand-voice",
+    "brand-imagery"
+  ]
+}

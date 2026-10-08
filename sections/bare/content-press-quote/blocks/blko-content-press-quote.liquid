@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-content><figure class="blko-content-press-quote"><blockquote>{{ block.settings.quote | escape }}</blockquote><figcaption>{{ block.settings.source | escape }}</figcaption></figure></blko-content></div>
 <script type="module" src="{{ 'blko-content.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--kit-heading-transform:none;--kit-heading-weight:400;--font-heading:"Cormorant Garamond",Georgia,serif;--color-text-muted:CanvasText;--text-small:.75rem;--tracking-title:-.08rem;--leading-body:1.5;--text-title:2rem;--weight-light:300;--color-button-text:Canvas;--color-footer-bg:CanvasText;--leading-display:.9;--text-display:2.5rem;--font-display:var(--font-heading);--leading-card-title:1.125;--text-card-title:0.9375rem;--weight-medium:500;--font-body:"Hanken Grotesk",Arial,sans-serif;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg);--color-bg:Canvas}
+:where(.blko-theme){--kit-heading-transform:none;--kit-heading-weight:400;--font-heading:"Cormorant Garamond",Georgia,serif;--color-text-muted:CanvasText;--color-bg:Canvas;--text-small:.75rem;--tracking-title:-.08rem;--leading-body:1.5;--text-title:2rem;--weight-light:300;--color-button-text:Canvas;--color-footer-bg:CanvasText;--leading-display:.9;--text-display:2.5rem;--font-display:var(--font-heading);--leading-card-title:1.125;--text-card-title:0.9375rem;--weight-medium:500;--font-body:"Hanken Grotesk",Arial,sans-serif;--color-ink:var(--color-text);--color-text:CanvasText;--color-paper:var(--color-bg)}
 @media (min-width:1024px){:where(.blko-theme){--tracking-title:-.1rem;--text-title:2.5rem;--text-display:5rem;--text-card-title:1rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-content-press-quote blockquote{font:var(--weight-medium) var(--text-card-title)/var(--leading-card-title) var(--font-display);margin:0 0:1rem}
@@ -13,6 +13,7 @@
 .blko-theme .blko-pdp-review figcaption{font-size:var(--text-small);color:var(--color-text-muted)}
 .blko-theme .blko-bare-press blockquote{max-width:34ch;margin:0 auto;font-family:var(--font-heading);font-size:clamp(1.7rem,3.4vw,2.8rem);line-height:1.2;font-weight:400}
 .blko-theme .blko-bare-founder blockquote{max-width:26ch;margin:1rem auto 1.75rem;font-family:var(--font-heading);font-size:clamp(1.9rem,4.2vw,3.4rem);line-height:1.15;font-weight:400;letter-spacing:-.01em}
+.blko-theme .blko-brand-tile figcaption{padding:.9rem 1rem;font-size:var(--text-small);background:var(--color-bg);color:var(--color-text-muted)}
 .blko-theme.blko-theme blockquote{font-family:var(--font-heading);font-weight:var(--kit-heading-weight);text-transform:var(--kit-heading-transform);overflow-wrap:anywhere}
 {% endstylesheet %}
 {% schema %}
