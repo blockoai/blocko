@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search products and shave notes.",
+        "text": "Look up razors, refills, scents and guides.",
+        "placeholder": "Try “razor” or “body wash”",
+        "search_label": "Search products and blog",
+        "view_all_label": "See every result"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

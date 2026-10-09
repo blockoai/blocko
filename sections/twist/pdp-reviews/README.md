@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
-| `eyebrow` | text | Eyebrow | customer reviews |
+| `eyebrow` | text | Eyebrow | reviews and questions |
 | `average` | text | Average | 4.8 |
 | `stars` | text | Stars | ★★★★★ |
-| `summary` | text | Summary | Based on 1,248 verified reviews |
-| `list_heading` | text | List heading | Featured reviews |
+| `summary` | text | Summary | 10,400+ reviews · 96% would recommend |
+| `list_heading` | text | List heading | What shoppers say about their hair |
 | `empty` | text | Empty | No reviews match this filter yet. |
 
 ## Blocks

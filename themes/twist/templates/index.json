@@ -2,43 +2,53 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "shop by hair goal",
+        "heading": "Where does your hair want to go?"
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Stronger roots",
+            "url": "#hair-care"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Clips",
-            "url": "#eyes"
+            "label": "Bouncier curls",
+            "url": "#style"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Headbands",
-            "url": "#lips"
+            "label": "Frizz-free sleep",
+            "url": "#sleep"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Hair care",
-            "url": "#care"
+            "label": "Cleaner showers",
+            "url": "#shower"
           }
         },
         "block-5": {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#style",
+            "image_alt": "Heatless curlers in a person's hair",
+            "label": "Heatless curls"
+          }
         },
         "block-6": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Satin sleep",
-            "label": "Hair care"
+            "url": "#sleep",
+            "image_alt": "Pink satin fabric",
+            "label": "Satin sleep"
           }
         }
       },
@@ -53,48 +63,32 @@
     },
     "twist-promo-hero": {
       "type": "blko-twist-promo-hero",
-      "settings": {}
-    },
-    "message-band": {
-      "type": "blko-message-band",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "message",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "message",
-          "settings": {
-            "text": "SOFT ON HAIR"
-          }
-        },
-        "block-3": {
-          "type": "message",
-          "settings": {
-            "text": "MADE TO GIFT"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
+      "settings": {
+        "burst": "35% off",
+        "tag": "just in",
+        "heading": "the winter gift drop is live",
+        "text": "Scrunchie packs, scented mists and cozy sleep sets, wrapped up in sets you can hand over as they are. A free gift lands in your bag at $60.",
+        "button_label": "shop the drop"
+      }
     },
     "tabbed-product-grid": {
       "type": "blko-tabbed-product-grid",
-      "settings": {},
+      "settings": {
+        "eyebrow": "what everyone's adding first",
+        "heading": "best sellers"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "top sellers"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "what's new",
-            "key": "new"
+            "key": "new",
+            "label": "bundles"
           }
         }
       },
@@ -105,31 +99,43 @@
     },
     "category-slider": {
       "type": "blko-category-slider",
-      "settings": {},
+      "settings": {
+        "heading": "top collections"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "title": "best sellers",
+            "url": "#best-sellers"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Clips",
-            "url": "#eyes"
+            "title": "what's new",
+            "url": "#new"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Gifts",
-            "url": "#lips"
+            "title": "hair perfumes",
+            "url": "#perfume"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Hair care",
-            "url": "#care"
+            "title": "heatless curlers",
+            "url": "#style"
+          }
+        },
+        "block-5": {
+          "type": "category",
+          "settings": {
+            "title": "satin sleep",
+            "url": "#sleep"
           }
         }
       },
@@ -137,33 +143,40 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4"
+        "block-4",
+        "block-5"
       ]
     },
     "twist-box-builder": {
       "type": "blko-twist-box-builder",
-      "settings": {},
+      "settings": {
+        "kicker": "bundle everything",
+        "heading": "build your own box",
+        "text": "Choose any four items, from bars to clips to sleep gear, and the price drops by a quarter. We wrap it, you give it."
+      },
       "blocks": {
         "block-1": {
           "type": "slot",
-          "settings": {}
+          "settings": {
+            "label": "shampoo bar"
+          }
         },
         "block-2": {
           "type": "slot",
           "settings": {
-            "label": "scrunchie trio"
+            "label": "satin scrunchies"
           }
         },
         "block-3": {
           "type": "slot",
           "settings": {
-            "label": "claw clip set"
+            "label": "claw clip"
           }
         },
         "block-4": {
           "type": "slot",
           "settings": {
-            "label": "hair oil"
+            "label": "scalp oil"
           }
         }
       },
@@ -174,35 +187,147 @@
         "block-4"
       ]
     },
+    "twist-quiz-cta": {
+      "type": "blko-twist-quiz-cta",
+      "settings": {
+        "heading": "which bar suits your hair?",
+        "text": "Four questions about your hair type and goals, then a routine picked for you.",
+        "button_label": "take the quiz"
+      }
+    },
+    "home-whats-new": {
+      "type": "blko-home-whats-new",
+      "settings": {
+        "eyebrow": "fresh off the line",
+        "heading": "what's new"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "new scents"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "collabs"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "home-gift-edits": {
+      "type": "blko-home-gift-edits",
+      "settings": {
+        "heading": "gifts and seasonal edits"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {
+            "title": "gift guide",
+            "url": "#gifts"
+          }
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "stocking stuffers",
+            "url": "#stuffers"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "mystery box",
+            "url": "#box"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "clips and ties",
+            "url": "#clips"
+          }
+        },
+        "block-5": {
+          "type": "category",
+          "settings": {
+            "title": "shower extras",
+            "url": "#shower"
+          }
+        },
+        "block-6": {
+          "type": "category",
+          "settings": {
+            "title": "sleep sets",
+            "url": "#sleep"
+          }
+        },
+        "block-7": {
+          "type": "category",
+          "settings": {
+            "title": "all bars",
+            "url": "#bars"
+          }
+        },
+        "block-8": {
+          "type": "category",
+          "settings": {
+            "title": "sale",
+            "url": "#sale"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8"
+      ]
+    },
     "twist-reviews": {
       "type": "blko-twist-reviews",
-      "settings": {},
+      "settings": {
+        "kicker": "our customers talk, we listen",
+        "heading": "loved by 150,000 verified reviewers"
+      },
       "blocks": {
         "block-1": {
           "type": "review",
           "settings": {
-            "quote": "I wash my hair half as often now and my curls are bouncier than ever. Hooked!"
+            "quote": "Washing less often hasn't made my curls any less bouncy, and the bar is still going after months.",
+            "name": "Dana"
           }
         },
         "block-2": {
           "type": "review",
           "settings": {
-            "quote": "The satin pillowcase stayed cool all night and my hair looks brand new in the morning.",
-            "name": "Tasha"
+            "quote": "My satin case is still smooth after dozens of washes, and my braids survive the night.",
+            "name": "Monique"
           }
         },
         "block-3": {
           "type": "review",
           "settings": {
-            "quote": "I have owned this heatless curler for over a year and I am obsessed. Best thing I have bought.",
-            "name": "Clara W."
+            "quote": "I roll my hair into the curler before bed and wake up to soft waves. No heat, no stress.",
+            "name": "Aisha K."
           }
         },
         "block-4": {
           "type": "review",
           "settings": {
-            "quote": "These claw clips hold my thick hair all day without a headache. Bought three more.",
-            "name": "Jennifer"
+            "quote": "The filter made my water feel gentler within a week. My scalp has been calmer ever since.",
+            "name": "Ruth"
           }
         }
       },
@@ -215,38 +340,56 @@
     },
     "twist-story": {
       "type": "blko-twist-story",
-      "settings": {}
+      "settings": {
+        "heading": "from one hair tie to your whole routine",
+        "text": "It began with a single hair tie and a stubborn founder who sold it door to door. Today the line sits on shelves in thousands of stores across dozens of countries, built around small everyday resets that make a rough morning feel better.",
+        "button_label": "read our story"
+      }
     },
-    "press-slider": {
-      "type": "blko-press-slider",
+    "home-trust": {
+      "type": "blko-home-trust",
       "settings": {},
       "blocks": {
         "block-1": {
-          "type": "publication",
-          "settings": {}
+          "type": "message",
+          "settings": {
+            "text": "WOMAN-OWNED"
+          }
         },
         "block-2": {
-          "type": "publication",
+          "type": "message",
           "settings": {
-            "name": "HAIR TODAY"
+            "text": "CRUELTY-FREE"
           }
         },
         "block-3": {
-          "type": "publication",
+          "type": "message",
           "settings": {
-            "name": "THE EDIT"
+            "text": "VEGAN BARS"
+          }
+        },
+        "block-4": {
+          "type": "message",
+          "settings": {
+            "text": "150K+ VERIFIED REVIEWS"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -256,13 +399,15 @@
   "order": [
     "home-collection-mega-menu",
     "twist-promo-hero",
-    "message-band",
     "tabbed-product-grid",
     "category-slider",
     "twist-box-builder",
+    "twist-quiz-cta",
+    "home-whats-new",
+    "home-gift-edits",
     "twist-reviews",
     "twist-story",
-    "press-slider",
+    "home-trust",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

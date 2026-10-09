@@ -2,20 +2,76 @@
   "sections": {
     "page-header": {
       "type": "blko-page-header",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Find your shade",
+        "heading": "Skip the guesswork, get matched.",
+        "text": "Take a short quiz, or send a bare-faced selfie to one of our artists. Matching is always free, and one swap per item is on us."
+      }
+    },
+    "quiz-how": {
+      "type": "blko-quiz-how",
+      "settings": {
+        "kicker": "How it works",
+        "heading": "Three steps to your shade"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Quiz options laid out on a table",
+            "label": "Choose",
+            "title": "Pick your quiz",
+            "text": "Select complexion or balm, depending on what you want to match first."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Person answering questions on a phone",
+            "label": "Answer",
+            "title": "Tell us about your skin",
+            "text": "A few questions on skin type, depth, undertone and the finish you like."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Matched shade worn on the face",
+            "label": "Wear",
+            "title": "Get your shade and how to wear it",
+            "text": "You receive a product, a shade name and a short application note."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "Question one",
+        "heading_1": "How deep is your skin right now?",
+        "text_1": "Stand by a window with a clean face and choose the closest depth.",
+        "eyebrow_2": "Question two",
+        "heading_2": "Which undertone reads true?",
+        "eyebrow_3": "Question three",
+        "heading_3": "Which finish do you want?",
+        "finish_label": "See my shade"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Fair"
+          }
         },
         "block-2": {
           "type": "tone",
           "settings": {
-            "label": "Light to medium",
+            "label": "Light",
             "tone": "tone-1",
             "selected": true
           }
@@ -23,20 +79,22 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Medium",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Deep",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "label": "Pink or red",
+            "hint": "You flush easily; silver looks best",
             "selected": true
           }
         },
@@ -44,36 +102,36 @@
           "type": "undertone",
           "settings": {
             "label": "Neutral",
-            "hint": "A balanced mix"
+            "hint": "You tan and burn in equal measure"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
-            "label": "Warm",
-            "hint": "Golden or peach tones"
+            "label": "Yellow or olive",
+            "hint": "Gold looks best; skin tans quickly"
           }
         },
         "block-8": {
           "type": "coverage",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
+            "label": "Barely there",
+            "hint": "Just a hint of evenness",
             "selected": true
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "Soft cover",
+            "hint": "Smooths redness and shadows"
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Full cover",
+            "hint": "Hides spots and lasts all day"
           }
         }
       },
@@ -92,7 +150,14 @@
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Your match",
+        "heading": "Start with these two.",
+        "text": "Swipe both along the jaw in daylight and keep the one that disappears. Not quite right? An artist will help you swap.",
+        "button_label": "Add to bag",
+        "card_eyebrow": "Skin tint jar",
+        "card_detail": "Sheer to medium · natural finish"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +176,68 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "quiz-proof": {
+      "type": "blko-quiz-proof",
+      "settings": {
+        "kicker": "Real matches",
+        "quote": "“The first shade I tried was the only one I needed.”",
+        "author": "— Verified buyer"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Artist-built",
+            "text": "Decades of matching faces"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Selfie option",
+            "text": "A person replies by email"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Free swaps",
+            "text": "One per item in 45 days"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "shade-faq": {
+      "type": "blko-shade-faq",
+      "settings": {
+        "eyebrow": "Matching help",
+        "heading": "Common shade questions"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "What if my shade changes in summer?",
+            "text": "Many people use two tones, one for winter and one for sun-kissed months, and blend them in between."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "How does the selfie match work?",
+            "text": "Email a bare-faced photo taken in daylight and an artist suggests a product and shade."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "Can I exchange a shade I ordered in a kit?",
+            "text": "Kits are final sale, but sets let you swap single items once for free."
           }
         }
       },
@@ -140,14 +249,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [
     "page-header",
+    "quiz-how",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
+    "quiz-proof",
+    "shade-faq",
     "newsletter"
   ]
 }

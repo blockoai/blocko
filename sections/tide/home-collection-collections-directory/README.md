@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by collection |
-| `heading` | text | Heading | Find your tide. |
-| `text` | textarea | Text | Discover rituals, sea botanicals, and sets made to fit into real life. |
+| `eyebrow` | text | Eyebrow | Browse the range |
+| `heading` | text | Heading | Face, body and everything between |
+| `text` | textarea | Text | Browse by product type, skin concern, scent or gift budget. Every collection is  |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

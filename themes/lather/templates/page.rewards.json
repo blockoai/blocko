@@ -2,46 +2,62 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Free to join",
+        "heading": "Wash up. Cash in.",
+        "text": "Collect points on orders, reviews and birthdays, then swap them for dollars off your next box. Spend a little more over time and you level up.",
+        "button_label": "Join the program",
+        "image_alt": "Bars of soap arranged next to a points card",
+        "earn_eyebrow": "Three steps",
+        "earn_heading": "Join, earn, redeem",
+        "tiers_eyebrow": "Lifetime spend tiers",
+        "tiers_heading": "The more you lather, the more you unlock"
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Make a free account and pick up 30 points right away."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
             "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "Get a point for every dollar, plus bonuses for reviews, follows and milestone orders."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Redeem",
+            "text": "Pick a reward from the dropdown at checkout and the discount applies instantly."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "Rookie",
+            "points": "$20 spent",
+            "perks": "1 point per dollar · birthday reward"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Regular",
+            "points": "$75 spent",
+            "perks": "Double-point events · early access to drops"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Legend",
+            "points": "$150 spent",
+            "perks": "2 points per dollar · triple-point events · early access"
           }
         }
       },
@@ -54,41 +70,188 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-ways": {
+      "type": "blko-rewards-ways",
+      "settings": {
+        "kicker": "Ways to earn",
+        "heading": "Six easy point grabs"
+      },
       "blocks": {
         "block-1": {
-          "type": "question",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "number": "30",
+            "title": "Sign up",
+            "text": "Thirty points the moment you create an account."
+          }
         },
         "block-2": {
-          "type": "question",
+          "type": "value",
           "settings": {
-            "label": "When will my order ship?"
+            "number": "1x",
+            "title": "Shop",
+            "text": "One point for every dollar you spend."
           }
         },
         "block-3": {
-          "type": "question",
+          "type": "value",
           "settings": {
-            "label": "Can I update my order?"
+            "number": "70",
+            "title": "Birthday",
+            "text": "Seventy points land in your account on your big day."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "15",
+            "title": "Follow us",
+            "text": "Fifteen points for following on social."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "60",
+            "title": "Fourth order",
+            "text": "A fat bonus on the fourth purchase, with thirty more on the third."
+          }
+        },
+        "block-6": {
+          "type": "value",
+          "settings": {
+            "number": "10",
+            "title": "Read up",
+            "text": "Ten points each time you finish a story in the journal."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "rewards-redeem": {
+      "type": "blko-rewards-redeem",
+      "settings": {
+        "kicker": "Redeem",
+        "heading": "Points turn into dollars"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "milestone",
+          "settings": {
+            "label": "50 pts",
+            "datetime": "50",
+            "title": "$5 off",
+            "text": "On any order of $15 or more."
+          }
+        },
+        "block-2": {
+          "type": "milestone",
+          "settings": {
+            "label": "100 pts",
+            "datetime": "100",
+            "title": "$10 off",
+            "text": "On any order of $30 or more."
+          }
+        },
+        "block-3": {
+          "type": "milestone",
+          "settings": {
+            "label": "200 pts",
+            "datetime": "200",
+            "title": "$20 off",
+            "text": "On any order of $60 or more."
+          }
+        },
+        "block-4": {
+          "type": "milestone",
+          "settings": {
+            "label": "300 pts",
+            "datetime": "300",
+            "title": "$30 off",
+            "text": "On any order of $90 or more."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Program questions",
+        "heading": "How points really work"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "How do I join?",
+            "text": "Create an account and the program opens automatically. There is nothing extra to buy or install."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Where do I spend points?",
+            "text": "At checkout there is a rewards dropdown. Choose an amount and the discount applies to your cart."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Do points expire?",
+            "text": "They hang around until you go six months without placing an order."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "What if I return something?",
+            "text": "Points earned on the returned item are removed from your balance."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "Why has my birthday gift not shown up?",
+            "text": "Birthday points arrive thirty days after you add your date, to keep the program fair."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-ways",
+    "rewards-redeem",
+    "rewards-faq",
     "newsletter"
   ]
 }

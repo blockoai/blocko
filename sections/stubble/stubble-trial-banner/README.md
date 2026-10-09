@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Subscribe and save |
-| `heading` | text | Heading | Save 15% on every refill. |
-| `text` | textarea | Text | Pick how often blades and gel show up. Skip, pause or cancel any time. |
-| `button_label` | text | Button label | Start a subscription |
+| `heading` | text | Heading | Refills before the old blade dulls. |
+| `text` | textarea | Text | Every subscription order takes 5% off, and three or more items take 15% off each |
+| `button_label` | text | Button label | Set up refills |
 | `button_url` | url | Button url |  |
 | `legend` | text | Legend | Ship every |
 

@@ -2,30 +2,44 @@
   "sections": {
     "pdp-bundle-builder": {
       "type": "blko-pdp-bundle-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build your set",
+        "heading": "Make your own mini trio.",
+        "text": "Choose any three deluxe minis and take 15% off the set. Perfect for a carry-on or to test new scents.",
+        "saving_text": "You save 15% when three minis are in your set.",
+        "price_note": "Set price",
+        "summary_eyebrow": "Your minis",
+        "summary_empty": "Pick 3 minis to unlock your price"
+      }
     },
     "pdp-bundle-explainer": {
       "type": "blko-pdp-bundle-explainer",
-      "settings": {},
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "Three picks, a pouch-ready price."
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Pick three minis",
+            "text": "Mix sun mists, washes, deodorants and scents."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your set price updates as you select."
+            "heading": "Watch the price drop",
+            "text": "The savings appear the moment the third mini lands."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible ritual you can return to every day."
+            "heading": "Pack and go",
+            "text": "Minis fit carry-on rules, so they are ready for any trip."
           }
         }
       },
@@ -35,9 +49,12 @@
         "block-3"
       ]
     },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "bundle-picks": {
+      "type": "blko-bundle-picks",
+      "settings": {
+        "eyebrow": "Full-size favorites",
+        "heading": "Love a mini? Go big."
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -58,13 +75,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [
     "pdp-bundle-builder",
     "pdp-bundle-explainer",
-    "product-recommendations",
+    "bundle-picks",
     "newsletter"
   ]
 }

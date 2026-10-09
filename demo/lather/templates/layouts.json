@@ -57,8 +57,10 @@
     "page": "ingredients",
     "title": "Ingredient glossary",
     "sectionIds": [
-      "beauty-extras-ingredient-glossary",
       "ingredients-callout",
+      "ingredients-why",
+      "beauty-extras-ingredient-glossary",
+      "ingredients-faq",
       "newsletter"
     ]
   },
@@ -84,6 +86,7 @@
     "title": "Stockists",
     "sectionIds": [
       "beauty-extras-stockist-locator",
+      "product-recommendations",
       "newsletter"
     ]
   },
@@ -92,7 +95,9 @@
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-ways",
+      "rewards-redeem",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -101,6 +106,9 @@
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
+      "subscription-sizes",
+      "subscription-how",
+      "subscription-faq",
       "product-recommendations",
       "newsletter"
     ]
@@ -151,10 +159,12 @@
     "sectionIds": [
       "content-about-hero",
       "content-mission",
-      "content-values",
       "content-founder-note",
       "content-story-timeline",
-      "content-press-quotes",
+      "about-causes",
+      "about-impact",
+      "about-certified",
+      "about-careers",
       "newsletter"
     ]
   },
@@ -191,11 +201,11 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
+      "landing-promises",
       "content-landing-routine",
-      "tabbed-product-grid",
+      "landing-picks",
       "content-landing-proof",
-      "category-slider",
+      "landing-hero-discount",
       "newsletter"
     ]
   },
@@ -247,17 +257,15 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "hero-campaign",
-      "lather-scent-lineup",
-      "message-band",
       "tabbed-product-grid",
-      "lather-benefit-trio",
-      "category-slider",
       "feature-driver",
-      "commitments",
-      "lather-subscribe-explainer",
-      "testimonial-slider",
-      "press-slider",
+      "lather-scent-lineup",
       "lather-quiz-banner",
+      "lather-benefit-trio",
+      "home-clips",
+      "lather-subscribe-explainer",
+      "home-reviews",
+      "commitments",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -269,6 +277,8 @@
       "home-collection-mega-menu",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
+      "collection-about",
+      "collection-faq",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -279,6 +289,7 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "home-collection-collections-directory",
+      "collections-scent-hubs",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -288,12 +299,14 @@
     "title": "Pine Bar Soap 6-Pack",
     "sectionIds": [
       "pdp-product-main",
-      "pdp-before-after",
-      "pdp-complete-routine",
-      "product-recommendations",
+      "pdp-ticker",
+      "pdp-claims",
+      "pdp-usage",
+      "pdp-pillars",
+      "pdp-faq",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-complete-routine",
+      "pdp-recently-viewed"
     ]
   },
   {
@@ -302,6 +315,8 @@
     "sectionIds": [
       "pdp-bundle-builder",
       "pdp-bundle-explainer",
+      "bundle-families",
+      "bundle-promises",
       "product-recommendations",
       "newsletter"
     ]

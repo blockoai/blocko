@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Wrapped gift box with a ribbon",
+        "kicker": "limited edition collab",
+        "heading": "The collab drop everyone is asking about.",
+        "text": "Printed satin, scented mists and collector boxes made with a licensed partner. When it's gone, it's gone.",
+        "button_label": "shop the drop"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-promises": {
+      "type": "blko-landing-promises",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "LIMITED RUN"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SOFT ON HAIR"
+            "text": "GIFT READY"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "MADE TO GIFT"
+            "text": "25% OFF SETS"
           }
         }
       },
@@ -31,52 +39,24 @@
         "block-3"
       ]
     },
-    "content-landing-routine": {
-      "type": "blko-content-landing-routine",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "step",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "step",
-          "settings": {
-            "image_alt": "Hair accessory product",
-            "label": "Step two",
-            "title": "Add a clip",
-            "text": "Build coverage only where you want a little more."
-          }
-        },
-        "block-3": {
-          "type": "step",
-          "settings": {
-            "image_alt": "Hair products on a table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A pop of color is enough to make it yours."
-          }
-        }
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "the drop",
+        "heading": "Every piece in the collab"
       },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "sleep and style"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "what's new",
-            "key": "new"
+            "key": "new",
+            "label": "scents and sets"
           }
         }
       },
@@ -85,62 +65,82 @@
         "block-2"
       ]
     },
-    "content-landing-proof": {
-      "type": "blko-content-landing-proof",
-      "settings": {},
+    "landing-reasons": {
+      "type": "blko-landing-reasons",
+      "settings": {
+        "kicker": "4 reasons you need it",
+        "quote": "“I bought one for me and three for gifts.”",
+        "author": "— Early shopper"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "Collectible prints",
+            "text": "Exclusive to this run"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "Same care quality",
+            "text": "Satin that lasts through washes"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "Gift boxed",
+            "text": "Ready to hand over"
+          }
+        },
+        "block-4": {
+          "type": "point",
+          "settings": {
+            "title": "Fair price",
+            "text": "Sets save up to 35%"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "landing-pieces": {
+      "type": "blko-landing-pieces",
+      "settings": {
+        "heading": "shop by piece"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "title": "pillowcases",
+            "url": "#sleep"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Clips",
-            "url": "#eyes"
+            "title": "scrunchies",
+            "url": "#scrunchies"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Gifts",
-            "url": "#lips"
+            "title": "mists",
+            "url": "#perfume"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Hair care",
-            "url": "#care"
+            "title": "collector boxes",
+            "url": "#box"
           }
         }
       },
@@ -153,16 +153,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
-    "content-landing-routine",
-    "tabbed-product-grid",
-    "content-landing-proof",
-    "category-slider",
+    "landing-promises",
+    "landing-picks",
+    "landing-reasons",
+    "landing-pieces",
     "newsletter"
   ]
 }

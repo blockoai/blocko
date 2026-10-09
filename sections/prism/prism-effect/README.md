@@ -27,8 +27,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | The effect |
-| `heading` | text | Heading | color that holds on |
+| `eyebrow` | text | Eyebrow | The proof |
+| `heading` | text | Heading | colour that stays put |
 | `before_image` | image_picker | Before image |  |
 | `before_image_alt` | text | Before image alt text | Faded hair color before treatment |
 | `before_label` | text | Before label | Week 0 |

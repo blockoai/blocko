@@ -11,14 +11,14 @@
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Hair tools",
+            "label": "Hair care",
             "url": "#complexion"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Hair care",
+            "label": "Shower",
             "url": "#care"
           }
         }

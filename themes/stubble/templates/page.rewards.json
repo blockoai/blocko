@@ -2,46 +2,63 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscriber benefits",
+        "heading": "No points to count. Just lower prices.",
+        "text": "We skip tiers and balances. Subscribe to what you already buy and the discount shows up in your cart, with more off as you add items.",
+        "button_label": "Browse subscribable items",
+        "image_alt": "Stack of rolled white towels",
+        "earn_eyebrow": "How the savings stack",
+        "earn_heading": "Subscribe. Add. Unlock.",
+        "tiers_eyebrow": "What you get",
+        "tiers_heading": "More items, bigger saving."
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Subscribe to one item",
+            "text": "Choose refills, gel or a face cleanser and take 5% off every order, not only the first."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Add a third item",
+            "text": "Three or more subscribed items takes 15% off each of them."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Claim the extras",
+            "text": "Subscribers get free engraving on razor stands, a $15 value."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "One or two items",
+            "points": "5% off",
+            "perks": "Every subscription order · skip or cancel any time"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Silver",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Three or more items",
+            "points": "15% off",
+            "perks": "On every subscribed item · access to the benefits shop"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Gold",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Service discount",
+            "points": "15% off",
+            "perks": "Veterans and active military · verified once a year"
           }
         }
       },
@@ -54,24 +71,32 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Benefit questions",
+        "heading": "Savings, answered"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "Is there a points program?",
+            "text": "No. Savings come from subscribing and from bundle pricing, not from earning and spending points."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Does the service discount stack with subscriptions?",
+            "text": "No. It applies once per year after verification and does not cover starter sets or the premium razor."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "What happens if I drop below three items?",
+            "text": "The 15% rate falls back to the standard 5% until you add another item."
           }
         }
       },
@@ -83,12 +108,16 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-faq",
     "newsletter"
   ]
 }

@@ -2,46 +2,63 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Membership",
+        "heading": "Join the club. It costs nothing.",
+        "text": "No points to track and no tiers to climb: a free account that unlocks a thank-you gift, early looks and the occasional surprise.",
+        "button_label": "Create an account",
+        "image_alt": "Member holding a small pink keychain",
+        "earn_eyebrow": "How it works",
+        "earn_heading": "Three steps, then it runs itself",
+        "tiers_eyebrow": "What you get",
+        "tiers_heading": "Perks that arrive by email and in person"
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Make an account",
+            "text": "Use the same email you shop with and you are already in."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Claim your gift",
+            "text": "A code for a free keychain lands in your inbox. Use it on your next order."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Wait for the good news",
+            "text": "Member-only notes tell you when something is on sale or about to launch."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "Early access",
+            "points": "Sales + launches",
+            "perks": "Shop new shades and scents a day before everyone else."
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Birthday gift",
+            "points": "Once a year",
+            "perks": "A small something arrives in the month you were born."
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Store events",
+            "points": "By invitation",
+            "perks": "Pop-in evenings, shade-matching sessions and launch parties."
           }
         }
       },
@@ -54,41 +71,77 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Membership questions",
+        "heading": "The small print, plainly"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "What exactly is the club?",
+            "text": "A free programme for account holders. There are no points: you get a first-order gift, a yearly birthday gift, early access and event invitations."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "How do I sign up?",
+            "text": "Create an account on the sign-in page, or add your email at checkout and choose to join."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "Where is my keychain code?",
+            "text": "It is emailed after you register. Paste it at checkout on your next order, and check spam if it has not appeared in an hour."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "I already have an account. Am I a member?",
+            "text": "Yes. Sign in once and the club perks attach themselves to your existing account."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "I never got my birthday gift.",
+            "text": "Add your birthday to the account page, then write to us and we will check it manually."
+          }
+        },
+        "block-6": {
+          "type": "question",
+          "settings": {
+            "label": "Who can join?",
+            "text": "Anyone aged 18 or over who lives in the United States. You can leave at any time by emailing support."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-faq",
     "newsletter"
   ]
 }

@@ -34,9 +34,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | `note_summary` | text | Note summary | Add a gift note |
 | `note_label` | text | Note label | Your message |
 | `note_placeholder` | text | Note placeholder | Write a short note for your recipient. |
-| `upsell_kicker` | text | Upsell kicker | Build the ritual |
-| `upsell_heading` | text | Upsell heading | A little extra care |
-| `upsell_eyebrow` | text | Upsell eyebrow | Pairs well with |
+| `upsell_kicker` | text | Upsell kicker | Complete the beach bag |
+| `upsell_heading` | text | Upsell heading | Quick add-ons |
+| `upsell_eyebrow` | text | Upsell eyebrow | You may also like |
 | `upsell_button` | text | Upsell button | Add |
 | `summary_heading` | text | Summary heading | Order summary |
 | `subtotal_label` | text | Subtotal label | Subtotal |
@@ -45,19 +45,19 @@ Never overwrite an existing file with the same name without comparing it first.
 | `total_label` | text | Total label | Total |
 | `checkout_label` | text | Checkout label | Secure checkout |
 | `summary_note` | textarea | Summary note | Taxes and shipping are calculated at checkout. |
-| `eyebrow` | text | Eyebrow | Your shopping bag |
-| `heading` | text | Heading | Bag |
-| `threshold` | range | Free-shipping threshold | 50 |
-| `progress_label` | text | Progress label | Shipping progress |
-| `before` | text | Before | Only |
-| `after` | text | After | away from complimentary shipping. |
-| `unlocked` | text | Unlocked | You have unlocked complimentary shipping. |
+| `eyebrow` | text | Eyebrow | My bag |
+| `heading` | text | Heading | Your bag |
+| `threshold` | range | Free-shipping threshold | 39 |
+| `progress_label` | text | Progress label | Free shipping progress |
+| `before` | text | Before | You are only |
+| `after` | text | After | away from free shipping. |
+| `unlocked` | text | Unlocked | Free shipping unlocked. |
 | `empty_eyebrow` | text | Empty eyebrow | Your bag |
-| `empty_heading` | text | Empty heading | Your bag is waiting. |
-| `empty_text` | textarea | Empty text | Sunny, clean body care is ready whenever you are. |
-| `empty_button_label` | text | Empty button label | Continue shopping |
+| `empty_heading` | text | Empty heading | Your bag is empty. |
+| `empty_text` | textarea | Empty text | Sunscreen, butters and scent mists are waiting. |
+| `empty_button_label` | text | Empty button label | Start shopping |
 | `empty_image` | image_picker | Empty image |  |
-| `empty_image_alt` | text | Empty image alt text | Body care products on a sandy table |
+| `empty_image_alt` | text | Empty image alt text | Beach tote with body care products |
 
 ## Blocks
 

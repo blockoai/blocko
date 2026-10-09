@@ -27,11 +27,11 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `line_1` | text | Line 1 | 100% makeup. |
-| `line_2` | text | Line 2 | 100% good for skin. |
-| `text` | textarea | Text | Cream blush, glossy balm and skin tints in juicy colors that feel like nothing a |
+| `line_1` | text | Line 1 | Color that cares. |
+| `line_2` | text | Line 2 | Skincare that colors. |
+| `text` | textarea | Text | Light, clean formulas with real actives, so one product does the work of two on  |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Shop the colors |
+| `button_label` | text | Button label | Shop all |
 
 ## Blocks
 

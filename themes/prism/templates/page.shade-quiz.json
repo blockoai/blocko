@@ -2,20 +2,35 @@
   "sections": {
     "page-header": {
       "type": "blko-page-header",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Hair type finder",
+        "heading": "Find formulas for your exact hair.",
+        "text": "Four quick questions about texture, feel and goals, then a short list of products worth trying first."
+      }
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "Question one of three",
+        "heading_1": "What is your hair type?",
+        "text_1": "Choose the pattern that looks most like your hair when it air-dries.",
+        "eyebrow_2": "Question two of three",
+        "heading_2": "How does your hair feel?",
+        "eyebrow_3": "Question three of three",
+        "heading_3": "What is your main goal?",
+        "finish_label": "Show my formulas"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Straight"
+          }
         },
         "block-2": {
           "type": "tone",
           "settings": {
-            "label": "Medium density",
+            "label": "Wavy",
             "tone": "tone-1",
             "selected": true
           }
@@ -23,57 +38,66 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Thick density",
+            "label": "Curly",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Coily and dense",
+            "label": "Coily",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "label": "Dry",
+            "hint": "Rough, absorbs product fast",
             "selected": true
           }
         },
         "block-6": {
           "type": "undertone",
           "settings": {
-            "label": "Wavy",
-            "hint": "A soft S shape"
+            "label": "Balanced",
+            "hint": "Soft, holds style fine"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
-            "label": "Curly",
-            "hint": "Defined ringlets"
+            "label": "Oily",
+            "hint": "Roots get slick within a day"
           }
         },
         "block-8": {
           "type": "coverage",
           "settings": {
-            "label": "Color lock",
-            "hint": "Keep it vivid for longer",
+            "label": "Hydrate",
+            "hint": "Moisture for thirsty lengths",
             "selected": true
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Fine",
-            "hint": "Repair and shine"
+            "label": "Repair",
+            "hint": "Strengthen weak, snapping strands"
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Frizz-free volume"
+            "label": "Tame frizz",
+            "hint": "Smooth, humidity-proof finish"
+          }
+        },
+        "block-11": {
+          "type": "coverage",
+          "settings": {
+            "label": "Protect colour",
+            "hint": "Stop shades fading"
           }
         }
       },
@@ -87,12 +111,20 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
       ]
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Your formulas",
+        "heading": "Start with these two.",
+        "text": "Picked for your pattern and goal. Add them to your cart, or retake the quiz for a different focus.",
+        "button_label": "Add both to cart",
+        "card_eyebrow": "Dry shampoo",
+        "card_detail": "Suits every pattern · Lifts roots"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +143,69 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "quiz-hair-101": {
+      "type": "blko-quiz-hair-101",
+      "settings": {
+        "kicker": "Hair 101",
+        "heading": "Three ideas worth knowing"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Porosity",
+            "text": "How readily strands absorb water decides whether you need a rich mask or a light one."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Masking",
+            "text": "A weekly treatment adds back what styling and colour take out."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Shampoo choice",
+            "text": "Match the cleanser to your scalp, not to the length of your hair."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "shade-faq": {
+      "type": "blko-shade-faq",
+      "settings": {
+        "eyebrow": "Finder FAQ",
+        "heading": "Matching, explained"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "What do 1a to 4c mean?",
+            "text": "A scale of hair pattern from pin-straight (1a) to tight zig-zag coils (4c). Higher numbers mean tighter curl."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "My hair is two types. Which do I choose?",
+            "text": "Pick the pattern that covers most of your head; use the finder again for the section that differs."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "Does the quiz change my account?",
+            "text": "No. Your answers only shape the list you see."
           }
         }
       },
@@ -140,14 +217,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [
     "page-header",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
+    "quiz-hair-101",
+    "shade-faq",
     "newsletter"
   ]
 }

@@ -212,7 +212,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [

@@ -29,9 +29,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Portrait with glowing skin |
-| `eyebrow` | text | Eyebrow | Proven by skin |
-| `heading` | text | Heading | Organic botanicals, visible radiance from the first week. |
-| `note` | text | Note | Independent consumer study, 8 weeks of daily use. |
+| `eyebrow` | text | Eyebrow | New: liquid lid color |
+| `heading` | text | Heading | An eye color that treats the lid while it colors. |
+| `note` | text | Note | Wear and crease results come from a four-week in-use panel of thirty adults. Org |
 
 ## Blocks
 

@@ -110,13 +110,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Reviews"
+      "default": "Ratings"
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.7"
     },
     {
       "type": "text",
@@ -128,13 +128,13 @@
       "type": "text",
       "id": "summary",
       "label": "Summary",
-      "default": "Based on 1,248 verified reviews"
+      "default": "11,206 ratings"
     },
     {
       "type": "text",
       "id": "list_heading",
       "label": "List heading",
-      "default": "Featured reviews"
+      "default": "A line from a customer"
     },
     {
       "type": "text",
@@ -249,13 +249,15 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 78
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 15
           }
         },
         {
@@ -269,7 +271,7 @@
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 2
           }
         },
         {
@@ -286,40 +288,46 @@
         {
           "type": "filter",
           "settings": {
-            "label": "With photos",
+            "label": "Photos",
             "key": "photos"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Coverage",
-            "key": "coverage"
+            "label": "Sheer wear",
+            "key": "sheer"
           }
         },
         {
           "type": "review",
           "settings": {
-            "text": "It evens things out and still looks like me. I love the light, fresh finish."
+            "title": "Blends in seconds",
+            "text": "I dab it on with my ring finger and it is done. It never goes patchy by lunchtime.",
+            "footer": "Nadia R. · 2 weeks ago",
+            "tags": "sheer",
+            "caption": ""
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "My five-minute face",
-            "text": "Easy to blend with fingers and it stays put through a long day. Picking my colour was simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        {
-          "type": "review",
-          "settings": {
-            "title": "Fresh, not shiny",
-            "text": "This gives me the glow I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
+            "title": "The only one that suits my skin tone",
+            "text": "Deeper shades often turn ashy on me. This one stayed rich and warm all day.",
+            "footer": "Tamsin O. · 1 month ago",
             "tags": "photos",
-            "caption": "Orchid · photo review"
+            "caption": "Cocoa · photo review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "title": "Wish the pot was bigger",
+            "text": "I love the flush it gives. Mine is nearly gone after two months of daily use.",
+            "footer": "Ines V. · 3 months ago",
+            "tags": "sheer",
+            "caption": "",
+            "rating": 4
           }
         }
       ]

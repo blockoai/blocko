@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "help",
+        "heading": "Answers on bars, sleep gear and shipping.",
+        "text": "The store has no single FAQ page, so we gathered the questions people ask most, by topic."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “transition” or “return”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,65 +21,68 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "bars",
+            "label": "Bars"
           }
         },
         "block-3": {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "sleep",
+            "label": "Sleep and style"
           }
         },
         "block-4": {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "orders",
+            "label": "Orders and returns"
           }
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "category": "bars",
+            "question": "How long does a shampoo bar last?",
+            "answer": "About a hundred washes, or roughly three months for most people."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "bars",
+            "question": "Will my hair feel waxy at first?",
+            "answer": "A short adjustment is normal, especially with hard water. A diluted vinegar rinse can help."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my clip size?",
-            "answer": "Begin with the hair quiz, then compare hold strength and clip size for your hair thickness. Our team can offer general guidance."
+            "category": "sleep",
+            "question": "Can I machine-wash satin?",
+            "answer": "Yes, on a gentle cycle in a laundry bag, then air-dry or tumble low."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find material information?",
-            "answer": "Each product page includes a clear materials list and straightforward care notes."
+            "category": "sleep",
+            "question": "Is satin the same as silk?",
+            "answer": "No. Satin is a weave, often polyester, while silk is a natural fiber that costs more."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "What does shipping cost?",
+            "answer": "Standard is a few dollars and free over $35. International standard shipping is free."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "How do returns work?",
+            "answer": "Return within 90 days for a prepaid label in the US. Gifts are refunded as store credit."
           }
         }
       },
@@ -92,7 +101,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [

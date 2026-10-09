@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Loved by thousands |
-| `quote` | text | Quote | “Over 5,000 five-star reviews and a ritual I never skip.” |
-| `author` | text | Author | — Community member |
+| `kicker` | text | Kicker | Why they get used |
+| `quote` | text | Quote | “I gave the contour set to my sister and she texts me every week about it.” |
+| `author` | text | Author | — Gift buyer |
 
 ## Blocks
 

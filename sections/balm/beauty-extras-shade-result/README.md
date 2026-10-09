@@ -30,12 +30,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Recommended tints |  |
 | `add_label` | text | Add label | Add to bag |
-| `eyebrow` | text | Eyebrow | Your starting point |
-| `heading` | text | Heading | Two products to try first. |
-| `text` | textarea | Text | Based on your selections, these flexible shades are a beautiful place to start.  |
-| `button_label` | text | Button label | Add suggested stick |
-| `card_eyebrow` | text | Card eyebrow | Sculpt stick |
-| `card_detail` | text | Card detail | Organic · cream finish |
+| `eyebrow` | text | Eyebrow | Your match |
+| `heading` | text | Heading | Start with these two codes. |
+| `text` | textarea | Text | Swatch both on your jawline in daylight. The right one disappears into your skin |
+| `button_label` | text | Button label | Add my match |
+| `card_eyebrow` | text | Card eyebrow | Multi-use stick |
+| `card_detail` | text | Card detail | Creamy · certified organic |
 
 ## Blocks
 

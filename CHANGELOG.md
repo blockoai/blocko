@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-10-09 (191cb4d6e)
+
+- balm: 210 Liquid sections/blocks, 10 gaps
+- bare: 210 Liquid sections/blocks, 10 gaps
+- blush: 208 Liquid sections/blocks, 10 gaps
+- clip: 213 Liquid sections/blocks, 10 gaps
+- dew: 211 Liquid sections/blocks, 10 gaps
+- isle: 219 Liquid sections/blocks, 10 gaps
+- lather: 224 Liquid sections/blocks, 10 gaps
+- prism: 228 Liquid sections/blocks, 10 gaps
+- shelf: 248 Liquid sections/blocks, 10 gaps
+- stubble: 210 Liquid sections/blocks, 10 gaps
+- tide: 221 Liquid sections/blocks, 10 gaps
+- tint: 213 Liquid sections/blocks, 10 gaps
+- tress: 7 Liquid sections/blocks, 119 gaps
+- twist: 215 Liquid sections/blocks, 10 gaps
+- veil: 205 Liquid sections/blocks, 10 gaps
+
 ## 2026-10-09 (e6d4f4df7)
 
 - balm: 197 Liquid sections/blocks, 10 gaps

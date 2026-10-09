@@ -283,49 +283,49 @@
       "type": "text",
       "id": "eyebrow_1",
       "label": "Eyebrow 1",
-      "default": "Match in minutes"
+      "default": "question 1 of 3"
     },
     {
       "type": "text",
       "id": "heading_1",
       "label": "Heading 1",
-      "default": "Let’s find your hair type."
+      "default": "What is your natural hair type?"
     },
     {
       "type": "textarea",
       "id": "text_1",
       "label": "Text 1",
-      "default": "Start with the hair texture that feels most like you on a normal day."
+      "default": "Think about how your hair dries when you leave it alone."
     },
     {
       "type": "text",
       "id": "eyebrow_2",
       "label": "Eyebrow 2",
-      "default": "Your undertone"
+      "default": "question 2 of 3"
     },
     {
       "type": "text",
       "id": "heading_2",
       "label": "Heading 2",
-      "default": "Which description is closest?"
+      "default": "What bothers you most?"
     },
     {
       "type": "text",
       "id": "eyebrow_3",
       "label": "Eyebrow 3",
-      "default": "Your hair goal"
+      "default": "question 3 of 3"
     },
     {
       "type": "text",
       "id": "heading_3",
       "label": "Heading 3",
-      "default": "How much coverage feels right?"
+      "default": "What would you like hair to do?"
     },
     {
       "type": "text",
       "id": "finish_label",
       "label": "Finish label",
-      "default": "See my matches"
+      "default": "show my routine"
     }
   ],
   "blocks": [
@@ -429,12 +429,14 @@
       "blocks": [
         {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Straight"
+          }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Blush to medium",
+            "label": "Wavy",
             "tone": "tone-1",
             "selected": true
           }
@@ -442,57 +444,73 @@
         {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Curly",
             "tone": "tone-2"
           }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Cocoa to rich",
+            "label": "Coily",
             "tone": "tone-3"
           }
         },
         {
           "type": "undertone",
           "settings": {
+            "label": "Frizz",
+            "hint": "Flyaways and puffiness",
             "selected": true
           }
         },
         {
           "type": "undertone",
           "settings": {
-            "label": "Neutral",
-            "hint": "A balanced mix"
+            "label": "Dryness",
+            "hint": "Straw-like ends"
           }
         },
         {
           "type": "undertone",
           "settings": {
-            "label": "Warm",
-            "hint": "Golden or peach tones"
+            "label": "Oily roots",
+            "hint": "Flat within a day"
+          }
+        },
+        {
+          "type": "undertone",
+          "settings": {
+            "label": "Thinning",
+            "hint": "Less fullness than before"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Sheer",
-            "hint": "Hair, but happier",
+            "label": "Stronger",
+            "hint": "Less snapping",
             "selected": true
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Blush",
-            "hint": "Easy everyday polish"
+            "label": "Fuller",
+            "hint": "Volume that lasts"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Softer",
+            "hint": "Moisture and shine"
+          }
+        },
+        {
+          "type": "coverage",
+          "settings": {
+            "label": "Cleaner",
+            "hint": "Reset after buildup"
           }
         }
       ]

@@ -2,71 +2,55 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "our story",
+        "heading": "Small resets for big hair days.",
+        "lede": "We started with hair ties and a lot of door knocking, and we still build everything around the five minutes when you fix your hair and feel ready again.",
+        "button_label": "meet the founder",
+        "image_alt": "Person with a long braid"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
-    },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "value",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "value",
-          "settings": {
-            "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about materials, feedback, and better ways to make everyday essentials."
-          }
-        },
-        "block-3": {
-          "type": "value",
-          "settings": {
-            "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your hair routine."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
+      "settings": {
+        "image_alt": "Laughing person with curly red hair",
+        "kicker": "reset moments",
+        "heading": "Hair care should be fun, fair and easy to give.",
+        "text": "A good day often starts with a small ritual: a bar that lathers well, a clip that stays put, a pillowcase that is kind to your hair. We keep prices friendly and wrap everything for gifting."
+      }
     },
     "content-story-timeline": {
       "type": "blko-content-story-timeline",
-      "settings": {},
+      "settings": {
+        "kicker": "milestones",
+        "heading": "From a hair tie to 20,000 shelves."
+      },
       "blocks": {
         "block-1": {
           "type": "milestone",
-          "settings": {}
+          "settings": {
+            "label": "2010",
+            "datetime": "2010",
+            "title": "One product",
+            "text": "A founder sells hair ties out of her car."
+          }
         },
         "block-2": {
+          "type": "milestone",
+          "settings": {
+            "label": "2015",
+            "datetime": "2015",
+            "title": "Bigger shelves",
+            "text": "The line reaches national chains."
+          }
+        },
+        "block-3": {
           "type": "milestone",
           "settings": {
             "label": "2020",
             "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of tools and accessories."
-          }
-        },
-        "block-3": {
-          "type": "milestone",
-          "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New fabrics and shapes make it easier to build a routine that moves with your day."
+            "title": "Bars arrive",
+            "text": "Bottle-free shampoo and conditioner join the accessories."
           }
         },
         "block-4": {
@@ -74,8 +58,8 @@
           "settings": {
             "label": "Today",
             "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
+            "title": "27 countries",
+            "text": "More than 20,000 stores carry the range."
           }
         }
       },
@@ -86,26 +70,97 @@
         "block-4"
       ]
     },
+    "content-founder-note": {
+      "type": "blko-content-founder-note",
+      "settings": {
+        "kicker": "from the founder",
+        "quote": "“I started at 25 with no money and a big stubborn streak. You can too, one honest sale at a time.”",
+        "note": "Self-funded, woman-founded and still independent.",
+        "name": "Our founder",
+        "role": "Founder and CEO",
+        "image_alt": "Founder portrait"
+      }
+    },
+    "about-planet": {
+      "type": "blko-about-planet",
+      "settings": {
+        "kicker": "sustainability",
+        "heading": "Five ways we lighten the load"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Ocean plastic",
+            "text": "A partner pulls plastic from waterways for each bar sold."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Vegan and cruelty-free",
+            "text": "Certified, with no animal testing."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Recycled materials",
+            "text": "Clips and packaging use reclaimed content."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Reusable swaps",
+            "text": "Satin and towel gear replace single-use habits."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Giving back",
+            "text": "A yearly donation funds clean water projects."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
     "content-press-quotes": {
       "type": "blko-content-press-quotes",
-      "settings": {},
+      "settings": {
+        "kicker": "in the media"
+      },
       "blocks": {
         "block-1": {
           "type": "quote",
-          "settings": {}
+          "settings": {
+            "quote": "“The founder who turned a car-trunk business into a household name.”",
+            "source": "— Business podcast"
+          }
         },
         "block-2": {
           "type": "quote",
           "settings": {
-            "quote": "“A practical, playful answer to the overcomplicated hair routine.”",
-            "source": "— The Daily Edit"
+            "quote": "“A rare brand that makes saving money feel like fun.”",
+            "source": "— Morning TV segment"
           }
         },
         "block-3": {
           "type": "quote",
           "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
-            "source": "— Studio Notes"
+            "quote": "“Entrepreneur of the year, for taking shelf space one store at a time.”",
+            "source": "— Small business award"
           }
         }
       },
@@ -117,15 +172,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [
     "content-about-hero",
     "content-mission",
-    "content-values",
-    "content-founder-note",
     "content-story-timeline",
+    "content-founder-note",
+    "about-planet",
     "content-press-quotes",
     "newsletter"
   ]

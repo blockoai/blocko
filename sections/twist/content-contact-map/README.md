@@ -29,11 +29,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `map_label` | text | Map label | Abstract map placeholder |
-| `kicker` | text | Kicker | Visit |
-| `heading` | text | Heading | Studio location |
-| `text` | textarea | Text | Location details are a placeholder for your retail studio, office, or event spac |
-| `city` | text | City | City, Region |
-| `country` | text | Country | Country |
+| `kicker` | text | Kicker | head office |
+| `heading` | text | Heading | Where we pack |
+| `text` | textarea | Text | Orders are packed and shipped from our warehouse. Visits are not open to the pub |
+| `city` | text | City | Denver, CO |
+| `country` | text | Country | United States |
 | `link` | url | Link |  |
 | `link_label` | text | Link label | Get directions |
 

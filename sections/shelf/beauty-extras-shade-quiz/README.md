@@ -30,14 +30,14 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `back_label` | text | Back label | Back |
 | `continue_label` | text | Continue label | Continue |
-| `eyebrow_1` | text | Eyebrow 1 | Match in minutes |
-| `heading_1` | text | Heading 1 | Let’s find your shade. |
-| `text_1` | textarea | Text 1 | Start with the complexion that feels most like you in daylight. |
-| `eyebrow_2` | text | Eyebrow 2 | Your undertone |
-| `heading_2` | text | Heading 2 | Which description is closest? |
-| `eyebrow_3` | text | Eyebrow 3 | Your finish |
-| `heading_3` | text | Heading 3 | How much coverage feels right? |
-| `finish_label` | text | Finish label | See my matches |
+| `eyebrow_1` | text | Eyebrow 1 | Question 1 of 3 |
+| `heading_1` | text | Heading 1 | How deep is your skin? |
+| `text_1` | textarea | Text 1 | Check your bare face by a window and choose the closest depth. |
+| `eyebrow_2` | text | Eyebrow 2 | Question 2 of 3 |
+| `heading_2` | text | Heading 2 | What undertone shows through? |
+| `eyebrow_3` | text | Eyebrow 3 | Question 3 of 3 |
+| `heading_3` | text | Heading 3 | Which finish do you want? |
+| `finish_label` | text | Finish label | Show my shades |
 
 ## Blocks
 

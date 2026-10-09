@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Find us nearby |
-| `heading` | text | Heading | See it in person. |
-| `text` | textarea | Text | Choose a country to see a selection of participating stockists. |
+| `eyebrow` | text | Eyebrow | Find a store |
+| `heading` | text | Heading | Swatch before you buy. |
+| `text` | textarea | Text | Search by city or region to see shops that carry the full shade range. No match  |
 | `country_label` | text | Country label | Country |
 | `map_label` | text | Map label | Illustrative store map |
 | `map_text` | text | Map text | Store map |
-| `directions_label` | text | Directions label | Directions |
+| `directions_label` | text | Directions label | Get directions |
 
 ## Blocks
 

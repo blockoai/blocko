@@ -2,103 +2,115 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Scent stories",
+        "heading": "Little stories from people who wear it.",
+        "average": "4.7",
+        "count_text": "6,120 stories shared",
+        "stars_label": "Four and a half stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 76
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 16
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 5
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 2
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 1
           }
         },
         "block-6": {
           "type": "filter",
           "settings": {
+            "label": "All",
             "active": true
           }
         },
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "Skin",
-            "key": "complexion"
+            "label": "Amber skin",
+            "key": "amber"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Balm",
-            "key": "care"
+            "label": "Cedar milk",
+            "key": "cedar"
           }
         },
         "block-9": {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "label": "Layered",
+            "key": "layered"
           }
         },
         "block-10": {
           "type": "photo",
-          "settings": {}
+          "settings": {
+            "tags": "amber",
+            "image_alt": "Smiling woman at a train station",
+            "caption": "Worn on a first date"
+          }
         },
         "block-11": {
           "type": "photo",
           "settings": {
-            "tags": "care photos"
+            "tags": "layered",
+            "image_alt": "Two perfume bottles on a windowsill",
+            "caption": "Two scents, one sleeve"
           }
         },
         "block-12": {
-          "type": "photo",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "tags": "amber",
+            "title": "My coworker asked what I was wearing three days running.",
+            "meta": "Amber skin · Priya"
+          }
         },
         "block-13": {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
+            "tags": "cedar",
+            "title": "Smells like the inside of a good bookshop.",
+            "meta": "Cedar milk · Theo"
           }
         },
         "block-14": {
           "type": "review",
-          "settings": {}
-        },
-        "block-15": {
-          "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Balm"
-          }
-        },
-        "block-16": {
-          "type": "review",
-          "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "layered",
+            "rating": 4,
+            "title": "Citrus on top of musk is now my signature.",
+            "meta": "Layered · Maren"
           }
         }
       },
@@ -116,14 +128,16 @@
         "block-11",
         "block-12",
         "block-13",
-        "block-14",
-        "block-15",
-        "block-16"
+        "block-14"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [

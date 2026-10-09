@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Get in touch |
-| `heading` | text | Heading | We’re here to help you find your way. |
-| `text` | textarea | Text | Questions about an order, a product, or your routine? Leave a note and our care  |
+| `heading` | text | Heading | Reach the care team |
+| `text` | textarea | Text | Use the chat in the corner for the fastest reply, or email us below. |
 | `link` | url | Link |  |
-| `link_label` | text | Link label | Write to us |
+| `link_label` | text | Link label | Open chat |
 
 ## Blocks
 

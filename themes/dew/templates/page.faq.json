@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "In case you wondered",
+        "heading": "Quick answers, sorted by topic.",
+        "text": "Browse products, shipping, orders and returns, or write to the care team."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “vegan” or “shipping to Canada”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,15 +21,15 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "products",
+            "label": "Products"
           }
         },
         "block-3": {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "shipping",
+            "label": "Shipping"
           }
         },
         "block-4": {
@@ -35,45 +41,58 @@
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "category": "products",
+            "question": "Which skin types are these formulas made for?",
+            "answer": "All of them. Each skin product is fragrance-free and tested on sensitive, dry and oily skin."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "products",
+            "question": "Are the products vegan and cruelty-free?",
+            "answer": "Yes. Nothing contains animal-derived ingredients and nothing is tested on animals."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
             "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "question": "Can I use them while pregnant?",
+            "answer": "Our formulas avoid retinoids and strong acids, but check with your doctor about anything you apply daily."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "category": "shipping",
+            "question": "How fast will my order arrive?",
+            "answer": "Orders leave within one to three business days. Domestic delivery takes about three to four more."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "shipping",
+            "question": "Do you ship to Canada and Europe?",
+            "answer": "Yes. Canadian orders include duties at checkout. Delivery windows for each region show before you pay."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "What is the return window?",
+            "answer": "Contact us within thirty days of delivery and we will start a return or exchange."
+          }
+        },
+        "block-11": {
+          "type": "question",
+          "settings": {
+            "category": "returns",
+            "question": "Where is it safe to buy?",
+            "answer": "Only on our site, our official social shops and a few named retail partners. Anywhere else may sell fakes."
           }
         }
       },
@@ -87,12 +106,17 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [

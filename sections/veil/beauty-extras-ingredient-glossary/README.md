@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Formula dictionary |
-| `heading` | text | Heading | Ingredients, explained. |
-| `text` | textarea | Text | Search the ingredients behind a comfortable, considered routine. |
+| `eyebrow` | text | Eyebrow | Ingredient index |
+| `heading` | text | Heading | What goes in, and why. |
+| `text` | textarea | Text | Look up the actives and gentle extras in every formula, from the SPF filter to t |
 | `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “hydration” |
+| `search_placeholder` | text | Search placeholder | Try “niacinamide” |
 | `note_label` | text | Note label | Read note ↗ |
 | `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Aloe leaf juice |
-| `detail_text` | textarea | Detail text | A botanical humectant that gives formulas a cool, soothing feel. It is especiall |
+| `detail_heading` | text | Detail heading | Niacinamide |
+| `detail_text` | textarea | Detail text | A form of vitamin B3 that helps skin look smoother and more even. It is well tol |
 | `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Comfort and hydration |
+| `best_for` | text | Best for | Uneven tone and visible pores |
 | `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Complexion and care |
+| `found_in` | text | Found in | Tinted serum, face milk |
 
 ## Blocks
 

@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Our ingredients |
-| `heading` | text | Heading | Skincare, grown not engineered. |
-| `lede` | textarea | Lede | We blend organic botanicals into skincare and sculpting color for a visibly calm |
+| `kicker` | text | Kicker | Our story |
+| `heading` | text | Heading | A higher standard for color. |
+| `lede` | textarea | Lede | Makeup sits on skin for hours. We believed it should be as considered as anythin |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Read our standards |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with glowing skin |
+| `image_alt` | text | Image alt text | Founder holding a stick in a daylight studio |
 
 ## Blocks
 

@@ -2,7 +2,16 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ingredient index",
+        "heading": "Every formula, every ingredient.",
+        "text": "Choose a product, read its full ingredient list and see what each active does. Lists change by shade where pigments differ.",
+        "search_placeholder": "Try “vitamin C”",
+        "detail_heading": "Stabilised vitamin C",
+        "detail_text": "A brightening ingredient in a gentle, stable form. It helps shadows and dullness look lighter over a few weeks of wear.",
+        "best_for": "Dark circles and dullness",
+        "found_in": "Concealer, serum mist"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -13,71 +22,67 @@
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Face",
+            "key": "face"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Lip + cheek",
+            "key": "lip"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Skin + sun",
+            "key": "skin"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "letter": "H",
+            "name": "Hyaluronic acid",
+            "detail": "Binds water at the surface for a plump, supple look",
+            "tags": "face lip"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "P",
+            "name": "Peptide complex",
+            "detail": "Supports a smoother, bouncier look around eyes and lips",
+            "tags": "face skin"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "letter": "V",
+            "name": "Stabilised vitamin C",
+            "detail": "Brightens the look of shadows and uneven tone",
+            "tags": "face"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "Z",
+            "name": "Non-nano zinc oxide",
+            "detail": "A mineral filter that sits on skin and reflects UV",
+            "tags": "skin"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
-          }
-        },
-        "block-10": {
-          "type": "ingredient",
-          "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "C",
+            "name": "Ceramides",
+            "detail": "Help the barrier hold moisture in",
+            "tags": "skin lip"
           }
         }
       },
@@ -90,17 +95,26 @@
         "block-6",
         "block-7",
         "block-8",
-        "block-9",
-        "block-10"
+        "block-9"
       ]
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Pigment swatches next to a bowl of plant oil",
+        "eyebrow": "Beyond the banned list",
+        "heading": "We keep out more than 2,000 ingredients.",
+        "text": "Parabens, talc, synthetic fragrance and cyclic silicones are only the start. The safety FAQ explains how we decide, and how we test.",
+        "button_label": "Read the safety FAQ"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [

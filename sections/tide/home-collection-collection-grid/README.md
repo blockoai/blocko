@@ -35,11 +35,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Person applying sun lotion on the beach |
-| `promo_eyebrow` | text | Promo eyebrow | Build your ritual |
-| `promo_heading` | text | Promo heading | Sea meets skin. |
+| `promo_image_alt` | text | Promo image alt text | Woman with calm, hydrated skin |
+| `promo_eyebrow` | text | Promo eyebrow | Not sure what you need? |
+| `promo_heading` | text | Promo heading | Take the routine quiz. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Explore body care |
+| `promo_label` | text | Promo label | Build your routine |
 | `load_more_label` | text | Load more label | Load more |
 | `previous_label` | text | Previous label | Previous page |
 

@@ -159,7 +159,7 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Shop by category"
+      "default": "Shop by collection"
     }
   ],
   "blocks": [
@@ -193,7 +193,23 @@
       "blocks": [
         {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "title": "Shop all",
+            "url": "#shop"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "Kits",
+            "url": "#kits"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "url": "#face"
+          }
         },
         {
           "type": "category",
@@ -212,8 +228,8 @@
         {
           "type": "category",
           "settings": {
-            "title": "Skin prep",
-            "url": "#care"
+            "title": "Skin",
+            "url": "#skin"
           }
         }
       ]

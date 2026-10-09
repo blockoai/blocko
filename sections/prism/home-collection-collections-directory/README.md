@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | shop by collection |
-| `heading` | text | Heading | find your formula. |
-| `text` | textarea | Text | Explore systems, color stories and tools made for hair that works hard. |
+| `eyebrow` | text | Eyebrow | Shop by collection |
+| `heading` | text | Heading | Everything for the wash, the treat and the style |
+| `text` | textarea | Text | Dry shampoo to heated tools, in travel, regular and liter sizes plus value sets. |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

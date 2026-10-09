@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Formula dictionary |
-| `heading` | text | Heading | Ingredients, explained. |
-| `text` | textarea | Text | Search the ingredients behind a comfortable, considered routine. |
-| `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “hydration” |
-| `note_label` | text | Note label | Read note ↗ |
-| `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Aloe leaf juice |
-| `detail_text` | textarea | Detail text | A botanical humectant that gives formulas a cool, soothing feel. It is especiall |
-| `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Comfort and hydration |
-| `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Skin and care |
+| `eyebrow` | text | Eyebrow | Ingredient library |
+| `heading` | text | Heading | What we won't stock, and why. |
+| `text` | textarea | Text | A growing list of ingredients we prohibit or restrict, with plain explanations o |
+| `search_label` | text | Search label | Search the library |
+| `search_placeholder` | text | Search placeholder | Try “formaldehyde” |
+| `note_label` | text | Note label | Open entry ↗ |
+| `detail_eyebrow` | text | Detail eyebrow | Entry |
+| `detail_heading` | text | Detail heading | Hydroquinone |
+| `detail_text` | textarea | Detail text | A skin-lightening agent. In many regions it is prescription-only because of irri |
+| `best_for_label` | text | Best for label | Reason listed |
+| `best_for` | text | Best for | Human health |
+| `found_in_label` | text | Found in label | Status |
+| `found_in` | text | Found in | Prohibited |
 
 ## Blocks
 

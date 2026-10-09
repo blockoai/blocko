@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help center",
+        "heading": "Shipping, shades and returns.",
+        "text": "Browse by topic or search for a question about your order, a formula or your rewards points."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “shipping” or “undertone”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -16,64 +22,67 @@
           "type": "tab",
           "settings": {
             "key": "orders",
-            "label": "Orders"
+            "label": "Shipping + returns"
           }
         },
         "block-3": {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "shades",
+            "label": "Shades"
           }
         },
         "block-4": {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "rewards",
+            "label": "Rewards"
           }
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "question": "When is shipping free?",
+            "answer": "US orders over $75 ship free. A free gift joins orders over $100."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "question": "What is the guarantee?",
+            "answer": "If something is not right, contact us within thirty days for a refund or exchange."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "category": "shades",
+            "question": "How do I read a shade code?",
+            "answer": "A number for depth and a letter for undertone: C cool, N neutral, W warm."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "category": "shades",
+            "question": "Which stick suits sensitive skin?",
+            "answer": "All are dermatologist tested and fragrance-free, so start with the one you need."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "rewards",
+            "question": "How many points do I get for joining?",
+            "answer": "500, added when you confirm your email."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "rewards",
+            "question": "Do I need to be a member to see launches early?",
+            "answer": "Yes, early access is a member perk."
           }
         }
       },
@@ -92,7 +101,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [

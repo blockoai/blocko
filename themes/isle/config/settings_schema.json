@@ -232,6 +232,12 @@
       },
       {
         "type": "color",
+        "id": "color_swatch_santal",
+        "label": "Swatch santal",
+        "default": "#d6bb95"
+      },
+      {
+        "type": "color",
         "id": "color_swatch_guava",
         "label": "Swatch guava",
         "default": "#e6946c"

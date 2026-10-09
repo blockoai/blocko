@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Our approach |
-| `heading` | text | Heading | Beauty belongs in real life. |
-| `lede` | textarea | Lede | We make everyday color and care for the rituals that help you feel like yourself |
+| `kicker` | text | Kicker | Our story |
+| `heading` | text | Heading | Makeup that treats your skin well. |
+| `lede` | textarea | Lede | We started with one question: why should color cosmetics ask skin to put up with |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Read the founding story |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with natural makeup |
+| `image_alt` | text | Image alt text | Founder applying tinted serum in studio light |
 
 ## Blocks
 

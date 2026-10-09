@@ -29,15 +29,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Routine products (one per step) |  |
-| `pick_label` | text | Pick label | Daily pick |
-| `alternate_label` | text | Alternate label | Alternate |
-| `eyebrow` | text | Eyebrow | Build your ritual |
-| `heading` | text | Heading | A ritual, your way. |
-| `text` | textarea | Text | Pick one essential for each step. Your total updates as you go. |
-| `step_text` | text | Step text | A reliable daily essential. |
-| `summary_eyebrow` | text | Summary eyebrow | Your three steps |
-| `total_label` | text | Total label | Total |
-| `add_label` | text | Add label | Add ritual to bag |
+| `pick_label` | text | Pick label | Best for most |
+| `alternate_label` | text | Alternate label | Richer option |
+| `eyebrow` | text | Eyebrow | Your plan |
+| `heading` | text | Heading | Choose a product for each step. |
+| `text` | textarea | Text | Pick your cleanser, treatment and moisturizer. We will total it and add everythi |
+| `step_text` | text | Step text | A balanced choice for this step. |
+| `summary_eyebrow` | text | Summary eyebrow | Your morning routine |
+| `total_label` | text | Total label | Routine total |
+| `add_label` | text | Add label | Add the routine to bag |
 
 ## Blocks
 

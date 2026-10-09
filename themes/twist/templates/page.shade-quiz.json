@@ -2,20 +2,35 @@
   "sections": {
     "page-header": {
       "type": "blko-page-header",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "hair quiz",
+        "heading": "Find your hair match.",
+        "text": "Four quick questions about your hair and goals, then a routine of bars and styling picks built around them."
+      }
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "question 1 of 3",
+        "heading_1": "What is your natural hair type?",
+        "text_1": "Think about how your hair dries when you leave it alone.",
+        "eyebrow_2": "question 2 of 3",
+        "heading_2": "What bothers you most?",
+        "eyebrow_3": "question 3 of 3",
+        "heading_3": "What would you like hair to do?",
+        "finish_label": "show my routine"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Straight"
+          }
         },
         "block-2": {
           "type": "tone",
           "settings": {
-            "label": "Blush to medium",
+            "label": "Wavy",
             "tone": "tone-1",
             "selected": true
           }
@@ -23,57 +38,73 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Curly",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Cocoa to rich",
+            "label": "Coily",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "label": "Frizz",
+            "hint": "Flyaways and puffiness",
             "selected": true
           }
         },
         "block-6": {
           "type": "undertone",
           "settings": {
-            "label": "Neutral",
-            "hint": "A balanced mix"
+            "label": "Dryness",
+            "hint": "Straw-like ends"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
-            "label": "Warm",
-            "hint": "Golden or peach tones"
+            "label": "Oily roots",
+            "hint": "Flat within a day"
           }
         },
         "block-8": {
-          "type": "coverage",
+          "type": "undertone",
           "settings": {
-            "label": "Sheer",
-            "hint": "Hair, but happier",
-            "selected": true
+            "label": "Thinning",
+            "hint": "Less fullness than before"
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Blush",
-            "hint": "Easy everyday polish"
+            "label": "Stronger",
+            "hint": "Less snapping",
+            "selected": true
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Fuller",
+            "hint": "Volume that lasts"
+          }
+        },
+        "block-11": {
+          "type": "coverage",
+          "settings": {
+            "label": "Softer",
+            "hint": "Moisture and shine"
+          }
+        },
+        "block-12": {
+          "type": "coverage",
+          "settings": {
+            "label": "Cleaner",
+            "hint": "Reset after buildup"
           }
         }
       },
@@ -87,12 +118,21 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11",
+        "block-12"
       ]
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "your routine",
+        "heading": "Start with this duo.",
+        "text": "These two bars suit wavy hair that wants less frizz. Add the cream if you air-dry.",
+        "button_label": "add the duo",
+        "card_eyebrow": "recommended bar",
+        "card_detail": "Strengthening · about 100 washes"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +151,32 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "quiz-faq": {
+      "type": "blko-quiz-faq",
+      "settings": {
+        "eyebrow": "about the quiz",
+        "heading": "Quick answers"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "How long does it take?",
+            "text": "About a minute."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Can I retake it?",
+            "text": "Anytime, as your hair or routine changes."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "Do you save my answers?",
+            "text": "Only if you are signed in, so we can suggest add-ons later."
           }
         }
       },
@@ -140,14 +188,19 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [
     "page-header",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
+    "quiz-faq",
     "newsletter"
   ]
 }

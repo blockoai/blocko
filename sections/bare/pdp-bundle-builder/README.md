@@ -30,13 +30,13 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
-| `add_label` | text | Add label | Add 3 items to bag |
-| `eyebrow` | text | Eyebrow | Build your set |
-| `heading` | text | Heading | Make your everyday routine. |
-| `text` | text | Text | Choose any three essentials and save 15%. Your set, your pace, your skin. |
+| `add_label` | text | Add label | Add set to bag |
+| `eyebrow` | text | Eyebrow | Build your own set |
+| `heading` | text | Heading | Pick two concealers, one balm and a free mascara. |
+| `text` | text | Text | Choose shades for each slot; the set price updates as you go and saves you about |
 | `summary_eyebrow` | text | Summary eyebrow | Your set |
 | `summary_empty` | text | Summary empty | Choose 3 items to unlock your set |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
+| `saving_text` | text | Saving text | You save about 14% versus buying each separately. |
 | `price_note` | text | Price note | Bundle price |
 
 ## Blocks

@@ -32,15 +32,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
 | `products_per_page` | range | Products per page | 4 |
-| `empty_text` | text | Empty text | No products match these filters. |
+| `empty_text` | text | Empty text | Nothing matches those picks. Try a different grit or scent family. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Man with a full beard |
-| `promo_eyebrow` | text | Promo eyebrow | Build your bundle |
-| `promo_heading` | text | Promo heading | Scent meets muscle. |
+| `promo_image_alt` | text | Promo image alt text | Pine branches and smoke in a forest |
+| `promo_eyebrow` | text | Promo eyebrow | No clue where to start? |
+| `promo_heading` | text | Promo heading | Let your weekend pick the scent. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Explore body care |
-| `load_more_label` | text | Load more label | Load more |
+| `promo_label` | text | Promo label | Take the quiz |
+| `load_more_label` | text | Load more label | Show more products |
 | `previous_label` | text | Previous label | Previous page |
 
 ## Blocks

@@ -2,20 +2,35 @@
   "sections": {
     "page-header": {
       "type": "blko-page-header",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shade finder",
+        "heading": "Find the shade that fits.",
+        "text": "Match by skin tone, a selfie or a short quiz, and get the right formula first time. Free exchanges if it is not perfect."
+      }
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "Step one of three",
+        "heading_1": "Choose the closest skin tone.",
+        "text_1": "Look at your bare face in daylight and pick the depth that feels right.",
+        "eyebrow_2": "Step two of three",
+        "heading_2": "What is your undertone?",
+        "eyebrow_3": "Step three of three",
+        "heading_3": "How much coverage do you want?",
+        "finish_label": "Show my matches"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Fair"
+          }
         },
         "block-2": {
           "type": "tone",
           "settings": {
-            "label": "Light to medium",
+            "label": "Light",
             "tone": "tone-1",
             "selected": true
           }
@@ -23,20 +38,21 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Medium",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Deep",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "hint": "Veins look blue, silver jewelry flatters",
             "selected": true
           }
         },
@@ -44,36 +60,36 @@
           "type": "undertone",
           "settings": {
             "label": "Neutral",
-            "hint": "A balanced mix"
+            "hint": "A mix of blue and green veins"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
             "label": "Warm",
-            "hint": "Golden or peach tones"
+            "hint": "Veins look green, gold jewelry flatters"
           }
         },
         "block-8": {
           "type": "coverage",
           "settings": {
             "label": "Sheer",
-            "hint": "Skin, but brighter",
+            "hint": "A fresh veil of tint",
             "selected": true
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "Light to medium",
+            "hint": "Evens tone, skin shows through"
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Full",
+            "hint": "Spot-covering and long wearing"
           }
         }
       },
@@ -92,7 +108,14 @@
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Your matches",
+        "heading": "Try these two shades first.",
+        "text": "Compare them on your jawline in daylight. If neither is quite right, exchanges are free.",
+        "button_label": "Add my match to bag",
+        "card_eyebrow": "Tinted serum",
+        "card_detail": "Light to medium · SPF 40"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +134,32 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "shade-faq": {
+      "type": "blko-shade-faq",
+      "settings": {
+        "eyebrow": "Shade questions",
+        "heading": "Matching, explained"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "How do I find my undertone?",
+            "text": "Check the veins on your wrist in daylight. Blue or purple suggests cool, green suggests warm, a mix suggests neutral."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Can I match from a photo?",
+            "text": "Yes. Send a makeup-free selfie in natural light and a specialist will reply with a pick."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "What if the shade is off?",
+            "text": "Exchange it for free within thirty days, even if the bottle is open."
           }
         }
       },
@@ -140,14 +171,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [
     "page-header",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
+    "shade-faq",
     "newsletter"
   ]
 }

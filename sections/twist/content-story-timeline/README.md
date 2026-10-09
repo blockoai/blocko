@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Along the way |
-| `heading` | text | Heading | Built one hair day at a time. |
+| `kicker` | text | Kicker | milestones |
+| `heading` | text | Heading | From a hair tie to 20,000 shelves. |
 
 ## Blocks
 

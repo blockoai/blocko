@@ -2,26 +2,77 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Sunscreen",
+        "price_note": "4 fl oz / 118 ml",
+        "shade_help_label": "Unsure which finish? Take the SPF finder.",
+        "ship_note": "Free US shipping from $39 · Free samples in every bag · 60-day returns",
+        "one_time_label": "Buy once"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "A lightweight oil with a sun-kissed shimmer. Smooth over damp skin after the shower for a soft, glowing finish."
+            "label": "Description",
+            "text": "A fast-drying mist that lays down broad-spectrum protection and a veil of shimmer. It sprays in any direction, so shoulders, backs and legs are covered in seconds. Net weight 4 fl oz."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Ingredients",
-            "text": "Coconut oil, squalane, shea butter and vitamin E in a clean, vegan formula. Free of sulfates and parabens."
+            "label": "How to use",
+            "text": "Shake well and hold the bottle about six inches from skin. Spray until the area glistens, then smooth it over if it is windy. Reapply at least every two hours and after swimming or sweating."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
-            "label": "How to use",
-            "text": "Warm a few drops between your palms and smooth over damp skin from shoulders to toes. Pat dry and go."
+            "label": "Ingredients",
+            "text": "Built on modern sun filters with vitamin E for antioxidant support, hyaluronic acid for a hydrated feel and coconut-derived emollients for slip. Gold glow adds soft mica shimmer. The full list is printed on the bottle and in our standard."
+          }
+        },
+        "block-4": {
+          "type": "accordion",
+          "settings": {
+            "label": "Benefits",
+            "text": "Broad spectrum against UVA and UVB. No white cast on any skin tone. Water resistant for 80 minutes. Compliant with reef-protection laws in Hawaii and Key West."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-sun-facts": {
+      "type": "blko-pdp-sun-facts",
+      "settings": {
+        "kicker": "Know before you spray",
+        "quote": "“Finally, a sunscreen I reach for before I think about it.”",
+        "author": "— Verified reviewer"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Broad spectrum",
+            "text": "Guards against UVA and UVB"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Reapply every two hours",
+            "text": "And right after a swim"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Reef-law friendly",
+            "text": "Free of banned filters"
           }
         }
       },
@@ -33,67 +84,194 @@
     },
     "pdp-before-after": {
       "type": "blko-pdp-before-after",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Proven results",
+        "heading": "Protection that looks like nothing.",
+        "text": "In a consumer study of 60 adults after one use, the mist rated as invisible on every skin tone tested.",
+        "stat_1_value": "98%",
+        "stat_1_label": "saw no white cast",
+        "stat_2_value": "94%",
+        "stat_2_label": "said skin felt hydrated, not sticky"
+      }
     },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "pdp-actives": {
+      "type": "blko-pdp-actives",
+      "settings": {
+        "kicker": "What is inside",
+        "heading": "Actives that earn a spot"
+      },
       "blocks": {
         "block-1": {
-          "type": "tab",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Modern sun filters",
+            "text": "Lightweight filters that absorb UV so you can skip the thick, pasty feel."
+          }
         },
         "block-2": {
-          "type": "tab",
+          "type": "value",
           "settings": {
-            "label": "Just landed",
-            "key": "new"
+            "number": "02",
+            "title": "Vitamin E",
+            "text": "An antioxidant that helps skin cope with everyday sun stress."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Hyaluronic acid",
+            "text": "Draws water to the surface so skin feels plump, not parched."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Coconut-derived emollient",
+            "text": "Adds slip, so the mist spreads easily and smells like a beach."
           }
         }
       },
       "block_order": [
         "block-1",
-        "block-2"
+        "block-2",
+        "block-3",
+        "block-4"
       ]
+    },
+    "pdp-how-to": {
+      "type": "blko-pdp-how-to",
+      "settings": {
+        "kicker": "Application guide",
+        "heading": "Spray, smooth, repeat"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Shaking the mist bottle",
+            "title": "Shake it",
+            "text": "A few firm shakes mix the shimmer into the formula."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Spraying the mist onto an arm",
+            "label": "Step two",
+            "title": "Spray until it glistens",
+            "text": "Hold six inches away and coat each area evenly; a sheen means enough product."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Smoothing mist over a shoulder",
+            "label": "Step three",
+            "title": "Smooth and set a timer",
+            "text": "Spread it with your palm, avoid the face, and reapply when two hours pass."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you stock up"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Can I spray it on my face?",
+            "text": "Spray it into your hands first, then pat it onto your face and keep it away from eyes. Our face-friendly fluid is built for daily facial wear."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "How is the Gold glow different from Rose glow?",
+            "text": "Gold glow carries SPF 50 with a warmer shimmer, while Rose glow is SPF 42 with a cool pink-champagne tint."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "How long does a bottle last?",
+            "text": "Unopened it keeps for about two years, and for twelve months once opened. Store it out of a hot car."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "Is it safe while pregnant or on acne-prone skin?",
+            "text": "It is made without common irritants, but anyone pregnant or with a skin condition should check the label with their doctor first."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {
+        "eyebrow": "Pairs well with",
+        "heading": "Protect, top up, recover",
+        "text": "Add a setting mist for touch-ups and a rich butter for the evening."
+      }
     },
     "pdp-reviews": {
       "type": "blko-pdp-reviews",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Reviews",
+        "average": "4.7",
+        "summary": "Based on 5,806 reviews. Shoppers most often mention scent, texture and glow.",
+        "list_heading": "Customers talked about"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 76
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 15
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 5
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 2
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
             "label": "1 star",
-            "percent": 1
+            "percent": 2
           }
         },
         "block-6": {
@@ -103,40 +281,59 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "label": "Fragrance",
+            "key": "fragrance"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Scent",
-            "key": "coverage"
+            "label": "Texture",
+            "key": "texture"
           }
         },
         "block-9": {
-          "type": "review",
+          "type": "filter",
           "settings": {
-            "text": "Smells like a beach trip and leaves my skin so soft. I love the light, hydrated finish."
+            "label": "Glow",
+            "key": "photos"
           }
         },
         "block-10": {
-          "type": "review",
+          "type": "filter",
           "settings": {
-            "title": "My shower staple",
-            "text": "Easy to massage in and it rinses clean. The scent range made picking a favorite simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "label": "Protection",
+            "key": "protection"
           }
         },
         "block-11": {
           "type": "review",
           "settings": {
-            "title": "Glowy, not greasy",
-            "text": "This gives me the glow I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Vanilla · photo review"
+            "text": "I spray this on and the whole patio asks what I am wearing. No stickiness either.",
+            "footer": "Jess R. · 2 weeks ago · Ages 25-34",
+            "tags": "fragrance",
+            "caption": ""
+          }
+        },
+        "block-12": {
+          "type": "review",
+          "settings": {
+            "title": "Easy for the kids too",
+            "text": "Four of us got covered in a minute at the lake. I rub it in on the little ones.",
+            "footer": "Marco T. · 1 month ago · Ages 35-44",
+            "tags": "texture protection",
+            "caption": ""
+          }
+        },
+        "block-13": {
+          "type": "review",
+          "settings": {
+            "title": "Gold glow is gorgeous",
+            "text": "A subtle gold sheen that photographs beautifully. I did not burn all weekend.",
+            "footer": "Amira K. · 3 weeks ago · Ages 18-24",
+            "tags": "photos protection",
+            "caption": "Gold glow · photo review",
+            "rating": 4
           }
         }
       },
@@ -151,25 +348,28 @@
         "block-8",
         "block-9",
         "block-10",
-        "block-11"
+        "block-11",
+        "block-12",
+        "block-13"
       ]
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Keep browsing",
+        "heading": "Recently viewed"
+      }
     }
   },
   "order": [
     "pdp-product-main",
+    "pdp-sun-facts",
     "pdp-before-after",
+    "pdp-actives",
+    "pdp-how-to",
+    "pdp-faq",
     "pdp-complete-routine",
-    "product-recommendations",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-recently-viewed"
   ]
 }

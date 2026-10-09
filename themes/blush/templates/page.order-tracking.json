@@ -2,31 +2,39 @@
   "sections": {
     "cart-checkout-tracking-lookup": {
       "type": "blko-cart-checkout-tracking-lookup",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Track",
+        "heading": "Where is my parcel?",
+        "text": "Enter the order number and email from your confirmation. Tracking can take up to two days to start moving.",
+        "button_label": "Find my parcel"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "title": "Order placed",
+            "text": "We have your order."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "title": "Preparing your items",
-            "text": "Your order is being carefully packed."
+            "title": "Packed",
+            "text": "One to three business days."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "title": "On its way",
-            "text": "Tracking will appear after handoff."
+            "title": "In transit",
+            "text": "Tracking email on its way."
           }
         },
         "block-4": {
           "type": "step",
           "settings": {
             "title": "Delivered",
-            "text": "Enjoy your new routine."
+            "text": "Open it and smile."
           }
         }
       },
@@ -43,20 +51,23 @@
       "blocks": {
         "block-1": {
           "type": "note",
-          "settings": {}
+          "settings": {
+            "title": "Free standard shipping",
+            "text": "from $40"
+          }
         },
         "block-2": {
           "type": "note",
           "settings": {
-            "title": "Easy returns",
-            "text": "within 30 days"
+            "title": "Free scent sample",
+            "text": "with every order"
           }
         },
         "block-3": {
           "type": "note",
           "settings": {
-            "title": "Need help?",
-            "text": "We’re here for you"
+            "title": "Pick up in store",
+            "text": "at any of our shops"
           }
         }
       },

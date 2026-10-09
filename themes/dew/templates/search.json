@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search the shelf and the vlog.",
+        "text": "Look up products, shades, routines and films.",
+        "placeholder": "Try “cleanser” or “blush”",
+        "search_label": "Search products and vlog",
+        "view_all_label": "See every result"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

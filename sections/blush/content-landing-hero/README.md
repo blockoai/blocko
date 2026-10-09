@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with a fresh natural makeup finish |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Color that keeps up. |
-| `text` | textarea | Text | Comfortable, buildable essentials made for a face that moves through a full day. |
+| `image_alt` | text | Image alt text | Bare face with an even, skin-like base |
+| `kicker` | text | Kicker | New base |
+| `heading` | text | Heading | Thirty-two shades. Zero mask. |
+| `text` | textarea | Text | A fluid foundation that lets freckles through, built for the way real faces move |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your set |
+| `button_label` | text | Button label | Find your shade |
 
 ## Blocks
 

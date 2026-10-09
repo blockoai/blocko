@@ -387,19 +387,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Ingredient dictionary"
+      "default": "Ingredient glossary"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Ingredients, explained."
+      "default": "Every ingredient, in plain words."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Search the sea botanicals and minerals behind a calm, considered routine."
+      "default": "Look up the common and scientific name of each ingredient, and learn what role it plays in the formula."
     },
     {
       "type": "text",
@@ -411,7 +411,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “kelp”"
+      "default": "Try “glycerin”"
     },
     {
       "type": "text",
@@ -429,13 +429,13 @@
       "type": "text",
       "id": "detail_heading",
       "label": "Detail heading",
-      "default": "Kelp extract"
+      "default": "Wakame extract"
     },
     {
       "type": "textarea",
       "id": "detail_text",
       "label": "Detail text",
-      "default": "A sea botanical rich in minerals that gives formulas a cool, soothing feel. It is especially welcome in a routine when skin needs a little ease."
+      "default": "A sea vegetable rich in minerals and sugars that bind water. It helps skin stay hydrated and smooth, especially in drier weather."
     },
     {
       "type": "text",
@@ -447,7 +447,7 @@
       "type": "text",
       "id": "best_for",
       "label": "Best for",
-      "default": "Comfort and hydration"
+      "default": "Dry, tight or dull skin"
     },
     {
       "type": "text",
@@ -459,7 +459,7 @@
       "type": "text",
       "id": "found_in",
       "label": "Found in",
-      "default": "Face and body care"
+      "default": "Serums, creams and body oils"
     }
   ],
   "blocks": [
@@ -532,35 +532,38 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Humectant",
+            "key": "humectant"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Emollient",
+            "key": "emollient"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Exfoliant",
+            "key": "exfoliant"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Botanical",
+            "key": "botanical"
           }
         },
         {
           "type": "ingredient",
-          "settings": {}
-        },
-        {
-          "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "G",
+            "name": "Glycerin",
+            "detail": "A humectant that draws water into the skin",
+            "tags": "humectant"
           }
         },
         {
@@ -568,17 +571,26 @@
           "settings": {
             "letter": "H",
             "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "detail": "Holds many times its weight in water",
+            "tags": "humectant"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "J",
+            "name": "Jojoba esters",
+            "detail": "A silky emollient that smooths and softens",
+            "tags": "emollient"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "L",
+            "name": "Lactic acid",
+            "detail": "A gentle exfoliant that lifts dull surface cells",
+            "tags": "exfoliant"
           }
         },
         {
@@ -586,17 +598,17 @@
           "settings": {
             "letter": "S",
             "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "detail": "A plant oil that cushions without clogging pores",
+            "tags": "emollient"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "U",
+            "name": "Undaria extract",
+            "detail": "The botanical name for wakame, used for barrier support",
+            "tags": "botanical"
           }
         }
       ]

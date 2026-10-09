@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Get in touch |
-| `heading` | text | Heading | We’re here to help you find your way. |
-| `text` | textarea | Text | Questions about an order, a product, or your routine? Leave a note and our care  |
+| `kicker` | text | Kicker | Customer care |
+| `heading` | text | Heading | We read every message. |
+| `text` | textarea | Text | Questions about an order, your skin or a subscription? Write to us and expect a  |
 | `link` | url | Link |  |
-| `link_label` | text | Link label | Write to us |
+| `link_label` | text | Link label | Send a message |
 
 ## Blocks
 

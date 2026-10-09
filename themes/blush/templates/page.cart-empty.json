@@ -2,7 +2,13 @@
   "sections": {
     "cart-checkout-cart-empty": {
       "type": "blko-cart-checkout-cart-empty",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Bag",
+        "heading": "Nothing in here yet.",
+        "text": "Every order also gets a free scent sample while stocks last.",
+        "button_label": "Shop all",
+        "image_alt": "Pink flat lay with a smiley sticker"
+      }
     },
     "cart-checkout-service-strip": {
       "type": "blko-cart-checkout-service-strip",
@@ -10,20 +16,23 @@
       "blocks": {
         "block-1": {
           "type": "note",
-          "settings": {}
+          "settings": {
+            "title": "Free standard shipping",
+            "text": "from $40"
+          }
         },
         "block-2": {
           "type": "note",
           "settings": {
-            "title": "Easy returns",
-            "text": "within 30 days"
+            "title": "Free scent sample",
+            "text": "with every order"
           }
         },
         "block-3": {
           "type": "note",
           "settings": {
-            "title": "Need help?",
-            "text": "We’re here for you"
+            "title": "Pick up in store",
+            "text": "at any of our shops"
           }
         }
       },

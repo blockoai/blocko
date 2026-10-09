@@ -2,7 +2,16 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ingredient index",
+        "heading": "Plants, oils and what they do.",
+        "text": "Every name in our sticks and skincare, with a plain explanation of its job.",
+        "search_placeholder": "Try “jojoba”",
+        "detail_heading": "Jojoba oil",
+        "detail_text": "A liquid wax pressed from desert seeds. It resembles the oil skin makes, so it softens without clogging.",
+        "best_for": "Dry, tight or sensitive skin",
+        "found_in": "Lip oil, complexion stick, face oil"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -13,71 +22,67 @@
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Oils",
+            "key": "oils"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Botanical extracts",
+            "key": "extracts"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Actives",
+            "key": "actives"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "letter": "C",
+            "name": "Calendula",
+            "detail": "A flower extract that calms the look of redness",
+            "tags": "extracts"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "H",
+            "name": "Hyaluronic acid",
+            "detail": "Draws water into the skin's surface",
+            "tags": "actives"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "letter": "J",
+            "name": "Jojoba oil",
+            "detail": "Softens and seals without a greasy feel",
+            "tags": "oils"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "R",
+            "name": "Rosehip oil",
+            "detail": "Rich in fatty acids for a smoother-looking surface",
+            "tags": "oils"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
             "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
-          }
-        },
-        "block-10": {
-          "type": "ingredient",
-          "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "name": "Shea butter",
+            "detail": "A dense butter that cushions dry patches",
+            "tags": "oils"
           }
         }
       },
@@ -90,22 +95,69 @@
         "block-6",
         "block-7",
         "block-8",
-        "block-9",
-        "block-10"
+        "block-9"
       ]
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Cream smeared across a ceramic dish",
+        "eyebrow": "Organic, in numbers",
+        "heading": "Every claim comes with a footnote.",
+        "text": "We state organic content as a percentage, name each plant active and say which test backs each result, whether on lab-grown cells or on people.",
+        "button_label": "See how we test"
+      }
+    },
+    "ingredients-organic": {
+      "type": "blko-ingredients-organic",
+      "settings": {
+        "kicker": "What organic means here",
+        "heading": "Three promises on the label"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Audited plant content",
+            "text": "A third party checks the organic percentage on each formula."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Named actives",
+            "text": "We list the plant behind every benefit instead of saying botanicals."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Two kinds of proof",
+            "text": "Cell-based lab tests and human wear panels are labeled differently."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [
     "beauty-extras-ingredient-glossary",
     "ingredients-callout",
+    "ingredients-organic",
     "newsletter"
   ]
 }

@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Gift set with a ribbon",
+        "kicker": "The gift guide",
+        "heading": "Sets that look as good as they work.",
+        "text": "Pick by budget, by person or by routine and every box arrives ready to give.",
+        "button_label": "Browse the gifts"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-promises": {
+      "type": "blko-landing-promises",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "FREE GIFT OVER $100"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SMALL-BATCH FORMULAS"
+            "text": "SAVE UP TO 26% ON SETS"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "THREE STEPS, ONE GLOW"
+            "text": "30-DAY GUARANTEE"
           }
         }
       },
@@ -33,28 +41,36 @@
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "Three kinds of giver",
+        "heading": "Who is it for?"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Person with a glowing flush",
+            "label": "For the minimalist",
+            "title": "One multi-use stick",
+            "text": "A single face stick that replaces blush, bronzer and highlighter."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Organic skincare product",
-            "label": "Step two",
-            "title": "Nourish",
-            "text": "Press in radiance serum and velvet day cream."
+            "image_alt": "Skincare bottles on a shelf",
+            "label": "For the skincare fan",
+            "title": "The trio",
+            "text": "Cleanser, serum and cream that support the skin barrier."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Skincare products on a marble table",
-            "label": "Step three",
-            "title": "Sculpt",
-            "text": "A sweep of contour and blush defines the face."
+            "image_alt": "Lips with glossy color",
+            "label": "For the lip lover",
+            "title": "Four lip oils",
+            "text": "A gift set of the most-loved shades, each with a jojoba base."
           }
         }
       },
@@ -64,19 +80,24 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "Gift shelf",
+        "heading": "Sets to give"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Most gifted"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "makeup",
+            "label": "Makeup sets"
           }
         }
       },
@@ -87,24 +108,31 @@
     },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
+      "settings": {
+        "kicker": "Why they get used",
+        "quote": "“I gave the contour set to my sister and she texts me every week about it.”",
+        "author": "— Gift buyer"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "Gift-ready",
+            "text": "Arrives boxed with a card"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "Shade-safe",
+            "text": "Exchange within 30 days"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "Organic",
+            "text": "Certified plant content"
           }
         }
       },
@@ -114,33 +142,38 @@
         "block-3"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "landing-budgets": {
+      "type": "blko-landing-budgets",
+      "settings": {
+        "heading": "Shop by price ceiling"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "title": "Under $50",
+            "url": "#gift-50"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Eyes",
-            "url": "#eyes"
+            "title": "Under $100",
+            "url": "#gift-100"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Cheeks",
-            "url": "#lips"
+            "title": "Under $200",
+            "url": "#gift-200"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Sculpt",
-            "url": "#care"
+            "title": "Splurge sets",
+            "url": "#gift-big"
           }
         }
       },
@@ -153,16 +186,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
+    "landing-promises",
     "content-landing-routine",
-    "tabbed-product-grid",
+    "landing-picks",
     "content-landing-proof",
-    "category-slider",
+    "landing-budgets",
     "newsletter"
   ]
 }

@@ -29,11 +29,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `map_label` | text | Map label | Abstract map placeholder |
-| `kicker` | text | Kicker | Visit |
-| `heading` | text | Heading | Studio location |
-| `text` | textarea | Text | Location details are a placeholder for your retail studio, office, or event spac |
-| `city` | text | City | City, Region |
-| `country` | text | Country | Country |
+| `kicker` | text | Kicker | Head office |
+| `heading` | text | Heading | Where we work |
+| `text` | textarea | Text | Our team sits above the flagship shop. Visits are welcome by appointment only. |
+| `city` | text | City | New York, NY |
+| `country` | text | Country | United States |
 | `link` | url | Link |  |
 | `link_label` | text | Link label | Get directions |
 

@@ -27,7 +27,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | As seen in |
+| `eyebrow` | text | Eyebrow | Praise from the press |
 
 ## Blocks
 

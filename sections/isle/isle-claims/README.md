@@ -27,7 +27,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `heading` | text | Heading | Clean & effective. To us, that's paradise. |
+| `heading` | text | Heading | Gentle on skin and just as gentle on the planet. |
 
 ## Blocks
 

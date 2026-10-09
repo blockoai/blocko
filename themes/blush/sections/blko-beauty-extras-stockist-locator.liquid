@@ -299,19 +299,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Find us nearby"
+      "default": "Our stores"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "See it in person."
+      "default": "Eleven shops, one full range."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Choose a country to see a selection of participating stockists."
+      "default": "Every store carries the complete line, offers pickup for online orders and can match your shade in person."
     },
     {
       "type": "text",
@@ -335,7 +335,7 @@
       "type": "text",
       "id": "directions_label",
       "label": "Directions label",
-      "default": "Directions"
+      "default": "Open in maps"
     }
   ],
   "blocks": [
@@ -395,7 +395,9 @@
       "blocks": [
         {
           "type": "country",
-          "settings": {}
+          "settings": {
+            "label": "All"
+          }
         },
         {
           "type": "country",
@@ -407,42 +409,51 @@
         {
           "type": "country",
           "settings": {
-            "value": "ca",
-            "label": "Canada"
-          }
-        },
-        {
-          "type": "country",
-          "settings": {
             "value": "uk",
             "label": "United Kingdom"
           }
         },
         {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Blush SoHo",
+            "place": "New York"
+          }
         },
         {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Blush Silver Lake",
+            "place": "Los Angeles"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Blush Wicker Park",
+            "place": "Chicago"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Blush Back Bay",
+            "place": "Boston"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Blush South Congress",
+            "place": "Austin"
           }
         },
         {
           "type": "store",
           "settings": {
             "country": "uk",
-            "name": "Field & Form",
+            "name": "Blush Covent Garden",
             "place": "London"
-          }
-        },
-        {
-          "type": "store",
-          "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
           }
         }
       ]

@@ -2,21 +2,35 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Custom skincare set",
+        "heading": "Choose a step, get a set.",
+        "text": "Pick a wash, a cream and a sun step. Add a serum and the price drops by a fifth.",
+        "step_text": "A staple for this step.",
+        "summary_eyebrow": "Your set",
+        "add_label": "Add the set to bag",
+        "pick_label": "Staple",
+        "alternate_label": "Swap in"
+      }
     },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "builder-picks": {
+      "type": "blko-builder-picks",
+      "settings": {
+        "eyebrow": "More to add",
+        "heading": "Skin-first favourites"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Skincare"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New in",
-            "key": "new"
+            "key": "new",
+            "label": "Sets"
           }
         }
       },
@@ -27,12 +41,16 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [
     "beauty-extras-routine-builder",
-    "product-recommendations",
+    "builder-picks",
     "newsletter"
   ]
 }

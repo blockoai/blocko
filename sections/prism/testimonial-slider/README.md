@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Hair care routine |
-| `eyebrow` | text | Eyebrow | Pro-loved formulas |
-| `heading` | text | Heading | wow-worthy color care, made simple. |
-| `text` | textarea | Text | Pick your hair type, pick your goal, and build a system that works from root to  |
-| `button_label` | text | Button label | Find my formula |
+| `image_alt` | text | Image alt text | Stylist smiling in a bright salon |
+| `eyebrow` | text | Eyebrow | Stylist-approved |
+| `heading` | text | Heading | “My clients ask what I used before they ask about the colour.” |
+| `text` | textarea | Text | Working colourists and cutters tell us why they put these formulas in their kits |
+| `button_label` | text | Button label | Meet the stylists |
 | `button_url` | url | Button url |  |
 
 ## Blocks

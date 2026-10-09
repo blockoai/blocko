@@ -359,13 +359,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "From the community"
+      "default": "reviews"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Real hair days, real notes."
+      "default": "What shoppers say after a few washes."
     },
     {
       "type": "text",
@@ -377,13 +377,13 @@
       "type": "text",
       "id": "stars_label",
       "label": "Stars label",
-      "default": "Five out of five stars"
+      "default": "Four point eight out of five stars"
     },
     {
       "type": "text",
       "id": "count_text",
       "label": "Count text",
-      "default": "From 2,483 verified reviews"
+      "default": "From 150,000+ verified reviews · 96% recommend"
     }
   ],
   "blocks": [
@@ -515,34 +515,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 82
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 12
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 4
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 1
           }
         },
         {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 1
           }
         },
         {
@@ -554,15 +556,22 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Hair tools",
-            "key": "tools"
+            "label": "Frizz",
+            "key": "frizz"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Hair care",
-            "key": "care"
+            "label": "Curls",
+            "key": "curls"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Scalp",
+            "key": "scalp"
           }
         },
         {
@@ -574,40 +583,43 @@
         },
         {
           "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
           "settings": {
-            "tags": "care photos"
+            "tags": "curls photos",
+            "image_alt": "Defined curls",
+            "caption": "Wash day result"
           }
         },
         {
           "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
           "settings": {
-            "tags": "care photos"
-          }
-        },
-        {
-          "type": "review",
-          "settings": {}
-        },
-        {
-          "type": "review",
-          "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Hair care"
+            "tags": "frizz photos",
+            "image_alt": "Smooth hair",
+            "caption": "After a week of satin"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "The color range made picking easy."
+            "tags": "curls",
+            "title": "My curls finally clump",
+            "meta": "Curly routine bundle · Verified buyer · curls"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "tags": "frizz",
+            "title": "Mornings are easier",
+            "meta": "Satin pillowcase · Verified buyer · frizz"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "tags": "scalp",
+            "rating": 4,
+            "title": "Scalp feels calmer",
+            "meta": "Gentle shampoo bar · Verified buyer · scalp"
           }
         }
       ]

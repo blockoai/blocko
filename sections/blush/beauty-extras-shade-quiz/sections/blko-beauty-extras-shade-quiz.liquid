@@ -300,49 +300,49 @@
       "type": "text",
       "id": "eyebrow_1",
       "label": "Eyebrow 1",
-      "default": "Match in minutes"
+      "default": "Step 1 of 3"
     },
     {
       "type": "text",
       "id": "heading_1",
       "label": "Heading 1",
-      "default": "Let’s find your shade."
+      "default": "Which shade family?"
     },
     {
       "type": "textarea",
       "id": "text_1",
       "label": "Text 1",
-      "default": "Start with the complexion that feels most like you in daylight."
+      "default": "Stand by a window with a clean face and pick the group that feels closest."
     },
     {
       "type": "text",
       "id": "eyebrow_2",
       "label": "Eyebrow 2",
-      "default": "Your undertone"
+      "default": "Step 2 of 3"
     },
     {
       "type": "text",
       "id": "heading_2",
       "label": "Heading 2",
-      "default": "Which description is closest?"
+      "default": "Which undertone?"
     },
     {
       "type": "text",
       "id": "eyebrow_3",
       "label": "Eyebrow 3",
-      "default": "Your finish"
+      "default": "Step 3 of 3"
     },
     {
       "type": "text",
       "id": "heading_3",
       "label": "Heading 3",
-      "default": "How much coverage feels right?"
+      "default": "Which swatch is nearest?"
     },
     {
       "type": "text",
       "id": "finish_label",
       "label": "Finish label",
-      "default": "See my matches"
+      "default": "Show my shade"
     }
   ],
   "blocks": [
@@ -446,12 +446,14 @@
       "blocks": [
         {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Family 1-2"
+          }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Light to medium",
+            "label": "Family 3-4",
             "tone": "tone-1",
             "selected": true
           }
@@ -459,20 +461,21 @@
         {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Family 5",
             "tone": "tone-2"
           }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Family 6-7",
             "tone": "tone-3"
           }
         },
         {
           "type": "undertone",
           "settings": {
+            "hint": "Pink or rosy underneath",
             "selected": true
           }
         },
@@ -480,36 +483,43 @@
           "type": "undertone",
           "settings": {
             "label": "Neutral",
-            "hint": "A balanced mix"
+            "hint": "No clear lean either way"
           }
         },
         {
           "type": "undertone",
           "settings": {
             "label": "Warm",
-            "hint": "Golden or peach tones"
+            "hint": "Peachy or yellow underneath"
+          }
+        },
+        {
+          "type": "undertone",
+          "settings": {
+            "label": "Olive",
+            "hint": "A green-gold cast"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
+            "label": "A touch lighter",
+            "hint": "Shade just above your tone",
             "selected": true
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "Right on",
+            "hint": "Disappears when blended"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "A touch deeper",
+            "hint": "For summer skin"
           }
         }
       ]

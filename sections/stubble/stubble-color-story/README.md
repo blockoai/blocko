@@ -28,12 +28,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Why Stubble |
-| `heading` | text | Heading | No middlemen. No markup. |
-| `text` | textarea | Text | We sell direct, so you pay for the product and not the packaging. Shave and body |
+| `heading` | text | Heading | Good grooming should not cost extra. |
+| `text` | textarea | Text | Two friends were tired of paying a premium for razors that felt over-designed. W |
 | `button_label` | text | Button label | Read our story |
 | `button_url` | url | Button url |  |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Man trimming his beard |
+| `image_alt` | text | Image alt text | Man trimming his beard with scissors |
 
 ## Blocks
 

@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with a fresh natural makeup finish |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Color that keeps up. |
-| `text` | textarea | Text | Comfortable, buildable essentials made for a face that moves through a full day. |
+| `image_alt` | text | Image alt text | A warm cafe table set with lip balms and cups |
+| `kicker` | text | Kicker | Pop-up season |
+| `heading` | text | Heading | A winter cafe, open for sipping and sampling. |
+| `text` | textarea | Text | Step inside our limited-run pop-up for a lip balm bar, mini facials and first ac |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your routine |
+| `button_label` | text | Button label | Reserve a table |
 
 ## Blocks
 

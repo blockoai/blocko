@@ -2,43 +2,79 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by aisle",
+        "heading": "Pick a lane and go."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "url": "#bar-soap"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Shave",
-            "url": "#eyes"
+            "label": "Body wash",
+            "url": "#body-wash"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Beard",
-            "url": "#lips"
+            "label": "Deodorant",
+            "url": "#deodorant"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Body care",
-            "url": "#care"
+            "label": "Hair care",
+            "url": "#hair"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Shave",
+            "url": "#shave"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Cologne",
+            "url": "#cologne"
+          }
+        },
+        "block-7": {
+          "type": "link",
+          "settings": {
+            "label": "Bundles",
+            "url": "#bundles"
+          }
+        },
+        "block-8": {
+          "type": "link",
+          "settings": {
+            "label": "Accessories",
+            "url": "#accessories"
+          }
+        },
+        "block-9": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Fresh & Clean",
-            "label": "Body care"
+            "url": "#bundles",
+            "image_alt": "Six bars of soap lined up on a wooden shelf",
+            "label": "Bundles"
+          }
+        },
+        "block-10": {
+          "type": "tile",
+          "settings": {
+            "url": "#bar-soap",
+            "image_alt": "A stack of plain bar soaps"
           }
         }
       },
@@ -48,16 +84,93 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10"
       ]
     },
     "home-collection-collection-toolbar": {
       "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "All grooming",
+        "filter_eyebrow": "Narrow it down",
+        "filter_heading": "Sort by what you need",
+        "filters_label": "Scent, grit, format",
+        "sort_label": "Sort by"
+      }
     },
     "home-collection-collection-grid": {
       "type": "blko-home-collection-collection-grid",
-      "settings": {}
+      "settings": {
+        "promo_image_alt": "Pine branches and smoke in a forest",
+        "promo_eyebrow": "No clue where to start?",
+        "promo_heading": "Let your weekend pick the scent.",
+        "promo_label": "Take the quiz",
+        "load_more_label": "Show more products",
+        "empty_text": "Nothing matches those picks. Try a different grit or scent family."
+      }
+    },
+    "collection-about": {
+      "type": "blko-collection-about",
+      "settings": {
+        "image_alt": "Bars of soap stacked in rows by scent family",
+        "kicker": "About bar soap",
+        "heading": "A proper bar, not a pink rectangle.",
+        "text": "Our bars are made in small batches with plant oils, shea butter and real botanicals, then cured until they are hard enough to last. Choose a grit level for your hands, a scent family for your nose and a pack size that fits your shower schedule."
+      }
+    },
+    "collection-faq": {
+      "type": "blko-collection-faq",
+      "settings": {
+        "eyebrow": "Bar soap questions",
+        "heading": "Quick answers before you buy"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Can I use a bar on my face?",
+            "text": "Zero-grit bars are gentle enough for most faces. Skip the gritty ones above the neck unless you like being sanded."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Are the bars free of sulfates and parabens?",
+            "text": "Yes. The ingredient list stays short, and neither group is in it."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "What do the grit levels mean?",
+            "text": "Zero is smooth and creamy. Light has a hint of texture, medium scrubs like a washcloth and heavy is for mechanics and weekend warriors."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "How should I store a bar?",
+            "text": "Let it dry between showers on a draining dish or magnetic saver. A dry bar can last more than twice as long as a soggy one."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "Where are the bars made?",
+            "text": "Everything is mixed, poured and cut in our own facility, so we can check each batch ourselves."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -65,13 +178,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
     "home-collection-collection-toolbar",
     "home-collection-collection-grid",
+    "collection-about",
+    "collection-faq",
     "home-collection-quick-view-modal",
     "newsletter"
   ]

@@ -2,15 +2,27 @@
   "sections": {
     "search-blog-journal-hero": {
       "type": "blko-search-blog-journal-hero",
-      "settings": {}
+      "settings": {
+        "crumb": "Journal",
+        "eyebrow": "Looks and tips",
+        "heading": "Shade, skin and how-to notes.",
+        "text": "Short guides for choosing shades, layering products and keeping skin happy under makeup.",
+        "image_alt": "Hands blending cream blush onto a cheekbone"
+      }
     },
     "search-blog-featured-post": {
       "type": "blko-search-blog-featured-post",
-      "settings": {}
+      "settings": {
+        "eyebrow_prefix": "Featured",
+        "reading_time": "3 minutes"
+      }
     },
     "search-blog-article-grid": {
       "type": "blko-search-blog-article-grid",
-      "settings": {}
+      "settings": {
+        "eyebrow": "More looks",
+        "heading": "Latest from the journal"
+      }
     },
     "search-blog-pagination": {
       "type": "blko-search-blog-pagination",
@@ -18,7 +30,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [

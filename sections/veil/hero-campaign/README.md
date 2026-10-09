@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model wearing natural makeup |
-| `eyebrow` | text | Eyebrow | Everyday color |
-| `heading` | text | Heading | Beauty that feels like you. |
-| `text` | textarea | Text | Build a simple routine with comfortable color and considered care. |
-| `button_label` | text | Button label | Shop complexion |
+| `image_alt` | text | Image alt text | Close-up of a face with glossy lids and a soft flush |
+| `eyebrow` | text | Eyebrow | Seasonal gift edit |
+| `heading` | text | Heading | Winter, in full bloom. |
+| `text` | textarea | Text | Seasonal makeup edits wrapped in hand-drawn botanical sleeves, ready to give or  |
+| `button_label` | text | Button label | Shop the sets |
 | `button_url` | url | Button url |  |
 
 ## Blocks

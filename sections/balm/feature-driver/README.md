@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Skincare ritual |
-| `eyebrow` | text | Eyebrow | Our promise |
-| `heading` | text | Heading | Pure ingredients. Visible radiance. |
-| `text` | textarea | Text | Every formula is made with organic botanicals and nothing you cannot pronounce. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Hand blending a cream stick into the cheek |
+| `eyebrow` | text | Eyebrow | Skincare inside the color |
+| `heading` | text | Heading | Nearly nine in ten ingredients come from skincare. |
+| `text` | textarea | Text | Each stick melts in with the warmth of your fingers, cushions skin with botanica |
+| `button_label` | text | Button label | Shop the sticks |
 | `button_url` | url | Button url |  |
 
 ## Blocks

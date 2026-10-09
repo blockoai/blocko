@@ -35,11 +35,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | Nothing matches these filters yet. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Person with soft pink cheeks |
-| `promo_eyebrow` | text | Promo eyebrow | Pair it up |
-| `promo_heading` | text | Promo heading | Colour, meet skin. |
+| `promo_image_alt` | text | Promo image alt text | Close-up of defined brows and a soft flush |
+| `promo_eyebrow` | text | Promo eyebrow | Brows, but make it easy |
+| `promo_heading` | text | Promo heading | The pomade people reorder in every shade. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Shop balms |
+| `promo_label` | text | Promo label | Shop brows |
 | `load_more_label` | text | Load more label | Load more |
 | `previous_label` | text | Previous label | Previous page |
 

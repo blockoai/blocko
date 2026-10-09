@@ -32,10 +32,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | `collection` | collection | Collection |  |
 | `close_filters` | text | Close filters | close filters |
 | `filter_eyebrow` | text | Filter eyebrow | narrow it down |
-| `filter_heading` | text | Filter heading | filters |
+| `filter_heading` | text | Filter heading | Filter by department |
 | `apply_label` | text | Apply label | view results |
 | `home_label` | text | Home label | Home |
-| `breadcrumb` | text | Breadcrumb | shop |
+| `breadcrumb` | text | Breadcrumb | shop all |
 | `filters_label` | text | Filters label | filters |
 | `sort_label` | text | Sort label | sort |
 | `sort_aria` | text | Sort aria | sort products |

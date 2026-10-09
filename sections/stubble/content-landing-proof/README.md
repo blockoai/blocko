@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Made for repeat use |
-| `quote` | text | Quote | “The kind of routine you can do before the coffee is ready.” |
-| `author` | text | Author | — Community member |
+| `kicker` | text | Kicker | Why people switch |
+| `quote` | text | Quote | “Cheaper than my old cartridges and noticeably closer.” |
+| `author` | text | Author | — Customer review |
 
 ## Blocks
 

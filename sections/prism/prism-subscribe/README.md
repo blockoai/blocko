@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Subscribe + save |
-| `heading` | text | Heading | never run out of color care |
-| `button_label` | text | Button label | Start my system |
+| `heading` | text | Heading | 10% off, every refill |
+| `button_label` | text | Button label | See how it works |
 | `button_url` | url | Button url |  |
 
 ## Blocks

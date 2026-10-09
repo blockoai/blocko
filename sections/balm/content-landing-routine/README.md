@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Three easy steps |
-| `heading` | text | Heading | Three simple steps to glowing skin. |
+| `kicker` | text | Kicker | Three kinds of giver |
+| `heading` | text | Heading | Who is it for? |
 
 ## Blocks
 

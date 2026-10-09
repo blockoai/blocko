@@ -11,14 +11,14 @@
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Skincare",
+            "label": "Face",
             "url": "#complexion"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Sculpt",
+            "label": "Skincare",
             "url": "#care"
           }
         }

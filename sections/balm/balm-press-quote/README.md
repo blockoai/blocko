@@ -29,9 +29,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Featured product |
-| `eyebrow` | text | Eyebrow | Featured in |
-| `quote` | text | Quote | “The most luxurious thing you can do for your skin is keep it simple and keep it |
-| `source` | text | Source | The Edit |
+| `eyebrow` | text | Eyebrow | In the press |
+| `quote` | text | Quote | “One stick does the job of three, and it leaves cheeks looking like skin.” |
+| `source` | text | Source | The Beauty Review |
 
 ## Blocks
 

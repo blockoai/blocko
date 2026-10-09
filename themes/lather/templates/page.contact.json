@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Contact",
+        "heading": "Talk to a human who likes soap.",
+        "text": "Questions about an order, a subscription or which bar to try? Send a note and our crew will get back to you.",
+        "link_label": "Write to us"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,31 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "title": "Help desk",
+            "text": "Orders, returns and product questions.",
+            "url": "mailto:help@example.com",
+            "link_label": "help@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Wholesale",
+            "text": "Stock our line in your store or gym.",
+            "url": "mailto:wholesale@example.com",
+            "link_label": "wholesale@example.com"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Creators",
+            "text": "Collabs, samples and challenges.",
+            "url": "mailto:creators@example.com",
+            "link_label": "creators@example.com"
           }
         }
       },
@@ -41,28 +51,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Drop us a line",
+        "heading": "What is going on?",
+        "text": "Add your order number if you have one. You can attach photos, too, up to ten files.",
+        "button_label": "Send it"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "An order"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product guidance"
+            "label": "A subscription"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "My account"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "A return"
           }
         }
       },
@@ -75,24 +92,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "When we answer",
+        "heading": "Support hours"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Weekdays",
+            "value": "7 AM to 7 PM Pacific"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
-            "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "label": "Saturday",
+            "value": "9 AM to 3 PM Pacific"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Typical reply",
+            "value": "Same business day"
           }
         }
       },
@@ -104,7 +127,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Headquarters",
+        "heading": "Where the bars are cut",
+        "text": "Our workshop and warehouse sit at the edge of town. Visitors are welcome for tours on Fridays, by appointment.",
+        "city": "Portland, OR",
+        "country": "United States"
+      }
     }
   },
   "order": [

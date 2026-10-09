@@ -2,7 +2,22 @@
   "sections": {
     "cart-checkout-cart-main": {
       "type": "blko-cart-checkout-cart-main",
-      "settings": {}
+      "settings": {
+        "eyebrow": "My bag",
+        "heading": "Your bag",
+        "threshold": 39,
+        "upsell_kicker": "Complete the beach bag",
+        "upsell_heading": "Quick add-ons",
+        "upsell_eyebrow": "You may also like",
+        "progress_label": "Free shipping progress",
+        "before": "You are only",
+        "after": "away from free shipping.",
+        "unlocked": "Free shipping unlocked.",
+        "empty_heading": "Your bag is empty.",
+        "empty_text": "Sunscreen, butters and scent mists are waiting.",
+        "empty_button_label": "Start shopping",
+        "empty_image_alt": "Beach tote with body care products"
+      }
     },
     "cart-checkout-service-strip": {
       "type": "blko-cart-checkout-service-strip",
@@ -10,20 +25,22 @@
       "blocks": {
         "block-1": {
           "type": "note",
-          "settings": {}
+          "settings": {
+            "text": "on orders from $39"
+          }
         },
         "block-2": {
           "type": "note",
           "settings": {
-            "title": "Easy returns",
-            "text": "within 30 days"
+            "title": "Free samples",
+            "text": "tucked into every bag"
           }
         },
         "block-3": {
           "type": "note",
           "settings": {
-            "title": "Need help?",
-            "text": "We’re here for you"
+            "title": "60-day returns",
+            "text": "with a prepaid label"
           }
         }
       },

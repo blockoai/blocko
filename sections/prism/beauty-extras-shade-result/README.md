@@ -30,12 +30,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Recommended tints |  |
 | `add_label` | text | Add label | Add to cart |
-| `eyebrow` | text | Eyebrow | Your matches |
-| `heading` | text | Heading | two formulas to try first. |
-| `text` | textarea | Text | Based on your answers, these formulas are the best place to start. Compare them  |
-| `button_label` | text | Button label | Add suggested formula |
-| `card_eyebrow` | text | Card eyebrow | Color lock formula |
-| `card_detail` | text | Card detail | Sulfate-free · Color-safe |
+| `eyebrow` | text | Eyebrow | Your formulas |
+| `heading` | text | Heading | Start with these two. |
+| `text` | textarea | Text | Picked for your pattern and goal. Add them to your cart, or retake the quiz for  |
+| `button_label` | text | Button label | Add both to cart |
+| `card_eyebrow` | text | Card eyebrow | Dry shampoo |
+| `card_detail` | text | Card detail | Suits every pattern · Lifts roots |
 
 ## Blocks
 

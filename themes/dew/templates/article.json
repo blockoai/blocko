@@ -2,7 +2,9 @@
   "sections": {
     "search-blog-article-hero": {
       "type": "blko-search-blog-article-hero",
-      "settings": {}
+      "settings": {
+        "reading_time": "3 minutes"
+      }
     },
     "search-blog-article-content": {
       "type": "blko-search-blog-article-content",
@@ -10,11 +12,19 @@
     },
     "search-blog-related-articles": {
       "type": "blko-search-blog-related-articles",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Keep watching",
+        "heading": "More from the vlog",
+        "link_label": "Read the note"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [

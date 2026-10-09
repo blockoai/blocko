@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | The Locker Room |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a more considered routine. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for skin-first color and care. |
+| `eyebrow` | text | Eyebrow | The Locker Room |
+| `heading` | text | Heading | Grooming advice without the smoke and mirrors. |
+| `text` | text | Text | Question-style guides on skin, hair, scent and the outdoors, written by the crew |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Two men talking in a gym locker room |
 
 ## Blocks
 

@@ -2,20 +2,35 @@
   "sections": {
     "page-header": {
       "type": "blko-page-header",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shade finder",
+        "heading": "Find your shade in two minutes.",
+        "text": "Thirty-two shades in seven families. Tell us your family and undertone, then choose the swatch closest to your skin."
+      }
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "Step 1 of 3",
+        "heading_1": "Which shade family?",
+        "text_1": "Stand by a window with a clean face and pick the group that feels closest.",
+        "eyebrow_2": "Step 2 of 3",
+        "heading_2": "Which undertone?",
+        "eyebrow_3": "Step 3 of 3",
+        "heading_3": "Which swatch is nearest?",
+        "finish_label": "Show my shade"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Family 1-2"
+          }
         },
         "block-2": {
           "type": "tone",
           "settings": {
-            "label": "Light to medium",
+            "label": "Family 3-4",
             "tone": "tone-1",
             "selected": true
           }
@@ -23,20 +38,21 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Family 5",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Family 6-7",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "hint": "Pink or rosy underneath",
             "selected": true
           }
         },
@@ -44,36 +60,43 @@
           "type": "undertone",
           "settings": {
             "label": "Neutral",
-            "hint": "A balanced mix"
+            "hint": "No clear lean either way"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
             "label": "Warm",
-            "hint": "Golden or peach tones"
+            "hint": "Peachy or yellow underneath"
           }
         },
         "block-8": {
-          "type": "coverage",
+          "type": "undertone",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
-            "selected": true
+            "label": "Olive",
+            "hint": "A green-gold cast"
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "A touch lighter",
+            "hint": "Shade just above your tone",
+            "selected": true
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Right on",
+            "hint": "Disappears when blended"
+          }
+        },
+        "block-11": {
+          "type": "coverage",
+          "settings": {
+            "label": "A touch deeper",
+            "hint": "For summer skin"
           }
         }
       },
@@ -87,12 +110,20 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
       ]
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Your shade",
+        "heading": "Family 4, golden undertone.",
+        "text": "Swipe a stripe along your jaw. If the line vanishes, that is the one. Not quite? Email us for a hand.",
+        "button_label": "Add to bag",
+        "card_eyebrow": "Fluid skin foundation",
+        "card_detail": "Light to medium cover · 30 ml"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +142,32 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "shade-faq": {
+      "type": "blko-shade-faq",
+      "settings": {
+        "eyebrow": "Shade questions",
+        "heading": "Matching, explained"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "How do the families work?",
+            "text": "Each of the seven families groups shades by depth. Within a family, numbers move from cool to warm."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Can I match to the shade I already use?",
+            "text": "Yes. Type your current foundation into the product page search and we show the closest tone."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "Can someone help me by email?",
+            "text": "Send a photo in daylight to our care address and a team member replies with a pick."
           }
         }
       },
@@ -140,14 +179,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [
     "page-header",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
+    "shade-faq",
     "newsletter"
   ]
 }

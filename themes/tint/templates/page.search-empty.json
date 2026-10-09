@@ -2,7 +2,17 @@
   "sections": {
     "search-blog-search-empty": {
       "type": "blko-search-blog-search-empty",
-      "settings": {}
+      "settings": {
+        "heading": "No results for that.",
+        "text": "Check the spelling, try a product type, or jump to a department.",
+        "placeholder": "Search shades, products and tips",
+        "tip_1": "Try a category like “lip”, “brow” or “sunscreen”.",
+        "tip_2_prefix": "Browse the",
+        "tip_2_link": "new shades",
+        "tip_3_prefix": "Read the",
+        "tip_3_link": "latest looks",
+        "image_alt": "Pastel makeup scattered on a table"
+      }
     }
   },
   "order": [

@@ -2,7 +2,11 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "In stores",
+        "heading": "Find us on a shelf near you.",
+        "text": "Find us in department stores, boutiques and a national beauty chain."
+      },
       "blocks": {
         "block-1": {
           "type": "country",
@@ -31,29 +35,32 @@
         },
         "block-5": {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Larkspur Department Store",
+            "place": "Los Angeles, CA"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Marigold Beauty Counter",
+            "place": "Dallas, TX"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "country": "ca",
+            "name": "Birch & Bow",
+            "place": "Toronto, ON"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "uk",
+            "name": "Primrose Hair Hall",
+            "place": "Leeds"
           }
         }
       },
@@ -70,7 +77,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [

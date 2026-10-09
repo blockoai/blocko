@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `collection` | collection | Fallback collection |  |
-| `eyebrow` | text | Eyebrow | Complete the ritual |
-| `heading` | text | Heading | Complete the routine |
-| `text` | text | Text | Three organic essentials that work beautifully together. |
+| `eyebrow` | text | Eyebrow | Complete the look |
+| `heading` | text | Heading | Cleanse, base, sculpt |
+| `text` | text | Text | Three steps that work with this stick. |
 
 ## Blocks
 

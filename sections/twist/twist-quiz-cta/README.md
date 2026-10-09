@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `heading` | text | Heading | not sure where to start? |
-| `text` | text | Text | Take the one-minute hair quiz and get picks made for you. |
+| `heading` | text | Heading | which bar suits your hair? |
+| `text` | text | Text | Four questions about your hair type and goals, then a routine picked for you. |
 | `button_url` | url | Button url |  |
 | `button_label` | text | Button label | take the quiz |
 

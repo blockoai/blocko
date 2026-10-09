@@ -1,44 +1,55 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
+    "collections-banner": {
+      "type": "blko-collections-banner",
+      "settings": {
+        "breadcrumb": "All collections",
+        "heading": "Every collection, A to Z",
+        "text": "Brand pages come with a founder note; concern and ingredient pages explain the term before listing what fits."
+      }
+    },
+    "home-collection-collections-directory": {
+      "type": "blko-home-collection-collections-directory",
+      "settings": {
+        "eyebrow": "All collections",
+        "heading": "Browse by department, concern or brand",
+        "text": "Departments, skin concerns, key ingredients and over two hundred brands, all filed in one place."
+      }
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    },
+    "collections-trust": {
+      "type": "blko-collections-trust",
       "settings": {},
       "blocks": {
         "block-1": {
-          "type": "link",
-          "settings": {}
+          "type": "pillar",
+          "settings": {
+            "title": "Ingredient transparency",
+            "body": "Every formula is listed in full, with a plain-language note on what each ingredient does."
+          }
         },
         "block-2": {
-          "type": "link",
+          "type": "pillar",
           "settings": {
-            "label": "Makeup",
-            "url": "#eyes"
+            "title": "Safety tested",
+            "body": "We screen each product against a published list of ingredients we leave out."
           }
         },
         "block-3": {
-          "type": "link",
+          "type": "pillar",
           "settings": {
-            "label": "Hair",
-            "url": "#lips"
+            "title": "Responsibly made",
+            "body": "Brands share how they source, package and treat the people who make their products."
           }
         },
         "block-4": {
-          "type": "link",
+          "type": "pillar",
           "settings": {
-            "label": "Body",
-            "url": "#care"
-          }
-        },
-        "block-5": {
-          "type": "tile",
-          "settings": {}
-        },
-        "block-6": {
-          "type": "tile",
-          "settings": {
-            "url": "#care",
-            "image_alt": "Body care",
-            "label": "Body"
+            "title": "Cruelty-free, always",
+            "body": "No animal testing at any stage, and we verify it with every brand."
           }
         }
       },
@@ -46,28 +57,23 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6"
+        "block-4"
       ]
-    },
-    "home-collection-collections-directory": {
-      "type": "blko-home-collection-collections-directory",
-      "settings": {}
-    },
-    "home-collection-quick-view-modal": {
-      "type": "blko-home-collection-quick-view-modal",
-      "settings": {}
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
-    "home-collection-mega-menu",
+    "collections-banner",
     "home-collection-collections-directory",
     "home-collection-quick-view-modal",
+    "collections-trust",
     "newsletter"
   ]
 }

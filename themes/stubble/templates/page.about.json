@@ -2,34 +2,51 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Why Stubble",
+        "heading": "Shaving gear built differently.",
+        "lede": "We wanted a razor that works as well as the expensive ones and costs far less. Over a decade later, that is still the brief.",
+        "button_label": "Start a shave trial",
+        "image_alt": "Man shaving at a bathroom mirror"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Combs, scissors and tins laid out on a table",
+        "kicker": "What we make",
+        "heading": "Thoughtful products for all men.",
+        "text": "Hundreds of engineers, designers, chemists and craftspeople work on razors, body care, skin and hair. The goal is the same across the shelf: do the job well and keep the price honest."
+      }
     },
     "content-values": {
       "type": "blko-content-values",
-      "settings": {},
+      "settings": {
+        "kicker": "How we decide",
+        "heading": "Three rules for every product"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "Performance first",
+            "text": "If it does not shave closer or feel better, it does not ship."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep improving",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "title": "A fair price",
+            "text": "We sell direct and show the price on every card."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and honest information help you choose what belongs in your routine."
+            "title": "Plain talk",
+            "text": "Claims are specific, ingredients are public and the guarantee is simple."
           }
         }
       },
@@ -41,32 +58,47 @@
     },
     "content-founder-note": {
       "type": "blko-content-founder-note",
-      "settings": {}
+      "settings": {
+        "kicker": "From the founders",
+        "quote": "“We were tired of paying for packaging and brand. So we asked around, learned how razors are made and built one that was simply good.”",
+        "note": "Two friends, one stubborn question about overpriced razors.",
+        "name": "The founders",
+        "role": "Co-founders",
+        "image_alt": "Smiling man in a white shirt"
+      }
     },
     "content-story-timeline": {
       "type": "blko-content-story-timeline",
-      "settings": {},
+      "settings": {
+        "kicker": "Milestones",
+        "heading": "From one razor to a full shelf."
+      },
       "blocks": {
         "block-1": {
           "type": "milestone",
-          "settings": {}
+          "settings": {
+            "label": "2013",
+            "datetime": "2013",
+            "title": "The first handle",
+            "text": "A single weighted razor and a short run of cartridges."
+          }
         },
         "block-2": {
           "type": "milestone",
           "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "Customers help shape a more useful selection of shave and body essentials."
+            "label": "2016",
+            "datetime": "2016",
+            "title": "Our own factory",
+            "text": "Making the blades in-house gave us control of quality and cost."
           }
         },
         "block-3": {
           "type": "milestone",
           "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to use it",
-            "text": "New products make it easier to build a routine that moves with your day."
+            "label": "2019",
+            "datetime": "2019",
+            "title": "Body, hair and skin",
+            "text": "Gel, wash and face care joined the razors."
           }
         },
         "block-4": {
@@ -74,8 +106,8 @@
           "settings": {
             "label": "Today",
             "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and fair prices."
+            "title": "Scents and drops",
+            "text": "Limited-edition body wash scents and fragrance round out the lineup."
           }
         }
       },
@@ -86,38 +118,59 @@
         "block-4"
       ]
     },
-    "content-press-quotes": {
-      "type": "blko-content-press-quotes",
-      "settings": {},
+    "about-partners": {
+      "type": "blko-about-partners",
+      "settings": {
+        "kicker": "Social mission",
+        "heading": "Funding support for men's mental health"
+      },
       "blocks": {
         "block-1": {
-          "type": "quote",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Crisis support",
+            "text": "Partners that answer calls and texts from young men in distress."
+          }
         },
         "block-2": {
-          "type": "quote",
+          "type": "value",
           "settings": {
-            "quote": "“A practical answer to the overpriced routine.”",
-            "source": "— The Loadout"
+            "number": "02",
+            "title": "Trades and veterans",
+            "text": "Prevention and peer programs for high-risk jobs and for people leaving service."
           }
         },
         "block-3": {
-          "type": "quote",
+          "type": "value",
           "settings": {
-            "quote": "“The lather has a distinctly easy feel.”",
-            "source": "— Field Notes"
+            "number": "03",
+            "title": "Community care",
+            "text": "Culturally grounded counselling and campus programs for communities that are often overlooked."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Time off to help",
+            "text": "Every employee gets five paid days a year to volunteer."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [
@@ -126,7 +179,7 @@
     "content-values",
     "content-founder-note",
     "content-story-timeline",
-    "content-press-quotes",
+    "about-partners",
     "newsletter"
   ]
 }

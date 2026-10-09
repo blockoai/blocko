@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | A note from our founder |
-| `quote` | text | Quote | “The best hair routine is one you can return to, on a busy morning, a slow eveni |
-| `note` | textarea | Note | Founder name is a placeholder for the person shaping your brand’s point of view. |
-| `name` | text | Name | Founder name |
-| `role` | text | Role | Founder |
+| `kicker` | text | Kicker | from the founder |
+| `quote` | text | Quote | “I started at 25 with no money and a big stubborn streak. You can too, one hones |
+| `note` | textarea | Note | Self-funded, woman-founded and still independent. |
+| `name` | text | Name | Our founder |
+| `role` | text | Role | Founder and CEO |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Founder portrait placeholder |
+| `image_alt` | text | Image alt text | Founder portrait |
 
 ## Blocks
 

@@ -2,38 +2,46 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "reviews",
+        "heading": "What shoppers say after a few washes.",
+        "average": "4.8",
+        "count_text": "From 150,000+ verified reviews · 96% recommend",
+        "stars_label": "Four point eight out of five stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 82
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 12
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 4
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 1
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 1
           }
         },
         "block-6": {
@@ -45,60 +53,70 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "Hair tools",
-            "key": "tools"
+            "label": "Frizz",
+            "key": "frizz"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Hair care",
-            "key": "care"
+            "label": "Curls",
+            "key": "curls"
           }
         },
         "block-9": {
+          "type": "filter",
+          "settings": {
+            "label": "Scalp",
+            "key": "scalp"
+          }
+        },
+        "block-10": {
           "type": "filter",
           "settings": {
             "label": "With photos",
             "key": "photos"
           }
         },
-        "block-10": {
-          "type": "photo",
-          "settings": {}
-        },
         "block-11": {
           "type": "photo",
           "settings": {
-            "tags": "care photos"
+            "tags": "curls photos",
+            "image_alt": "Defined curls",
+            "caption": "Wash day result"
           }
         },
         "block-12": {
           "type": "photo",
-          "settings": {}
+          "settings": {
+            "tags": "frizz photos",
+            "image_alt": "Smooth hair",
+            "caption": "After a week of satin"
+          }
         },
         "block-13": {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
+            "tags": "curls",
+            "title": "My curls finally clump",
+            "meta": "Curly routine bundle · Verified buyer · curls"
           }
         },
         "block-14": {
           "type": "review",
-          "settings": {}
+          "settings": {
+            "tags": "frizz",
+            "title": "Mornings are easier",
+            "meta": "Satin pillowcase · Verified buyer · frizz"
+          }
         },
         "block-15": {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Hair care"
-          }
-        },
-        "block-16": {
-          "type": "review",
-          "settings": {
-            "title": "The color range made picking easy."
+            "tags": "scalp",
+            "rating": 4,
+            "title": "Scalp feels calmer",
+            "meta": "Gentle shampoo bar · Verified buyer · scalp"
           }
         }
       },
@@ -117,13 +135,17 @@
         "block-12",
         "block-13",
         "block-14",
-        "block-15",
-        "block-16"
+        "block-15"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [

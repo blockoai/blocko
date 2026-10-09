@@ -369,19 +369,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Formula dictionary"
+      "default": "Ingredient index"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Ingredients, explained."
+      "default": "Every formula, every ingredient."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Search the ingredients behind a comfortable, considered routine."
+      "default": "Choose a product, read its full ingredient list and see what each active does. Lists change by shade where pigments differ."
     },
     {
       "type": "text",
@@ -393,7 +393,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “hydration”"
+      "default": "Try “vitamin C”"
     },
     {
       "type": "text",
@@ -411,13 +411,13 @@
       "type": "text",
       "id": "detail_heading",
       "label": "Detail heading",
-      "default": "Aloe leaf juice"
+      "default": "Stabilised vitamin C"
     },
     {
       "type": "textarea",
       "id": "detail_text",
       "label": "Detail text",
-      "default": "A botanical humectant that gives formulas a cool, soothing feel. It is especially welcome in a routine when skin needs a little ease."
+      "default": "A brightening ingredient in a gentle, stable form. It helps shadows and dullness look lighter over a few weeks of wear."
     },
     {
       "type": "text",
@@ -429,7 +429,7 @@
       "type": "text",
       "id": "best_for",
       "label": "Best for",
-      "default": "Comfort and hydration"
+      "default": "Dark circles and dullness"
     },
     {
       "type": "text",
@@ -441,7 +441,7 @@
       "type": "text",
       "id": "found_in",
       "label": "Found in",
-      "default": "Face and care"
+      "default": "Concealer, serum mist"
     }
   ],
   "blocks": [
@@ -514,35 +514,22 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Face",
+            "key": "face"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Lip + cheek",
+            "key": "lip"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {}
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "label": "Skin + sun",
+            "key": "skin"
           }
         },
         {
@@ -550,35 +537,44 @@
           "settings": {
             "letter": "H",
             "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "detail": "Binds water at the surface for a plump, supple look",
+            "tags": "face lip"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "P",
+            "name": "Peptide complex",
+            "detail": "Supports a smoother, bouncier look around eyes and lips",
+            "tags": "face skin"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "letter": "V",
+            "name": "Stabilised vitamin C",
+            "detail": "Brightens the look of shadows and uneven tone",
+            "tags": "face"
           }
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "name": "Non-nano zinc oxide",
+            "detail": "A mineral filter that sits on skin and reflects UV",
+            "tags": "skin"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "C",
+            "name": "Ceramides",
+            "detail": "Help the barrier hold moisture in",
+            "tags": "skin lip"
           }
         }
       ]

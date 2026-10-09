@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by category",
+        "heading": "Start with what your skin needs."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Cleansers",
+            "url": "#cleanse"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#eyes"
+            "label": "Serums + masks",
+            "url": "#treat"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips",
-            "url": "#lips"
+            "label": "Moisturizers",
+            "url": "#moisturize"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Sun care",
-            "url": "#care"
+            "label": "Body care",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Wellness",
+            "url": "#wellness"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Gift sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Body ritual",
-            "label": "Sun care"
+            "url": "#body",
+            "image_alt": "Body oil bottle on a sandy ledge",
+            "label": "Body care"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#treat",
+            "image_alt": "Droplet of clear serum",
+            "label": "Serums"
           }
         }
       },
@@ -48,12 +72,54 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "home-collection-collections-directory": {
       "type": "blko-home-collection-collections-directory",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Browse the range",
+        "heading": "Face, body and everything between",
+        "text": "Browse by product type, skin concern, scent or gift budget. Every collection is formulated without parabens, phthalates or synthetic dyes."
+      }
+    },
+    "collections-promises": {
+      "type": "blko-collections-promises",
+      "settings": {
+        "kicker": "Across every collection",
+        "quote": "“It is the only brand my whole family can share.”",
+        "author": "— Customer review"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Vegan",
+            "text": "No animal-derived ingredients"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Cruelty-free",
+            "text": "Never tested on animals"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Fragrance-free options",
+            "text": "For sensitive skin"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,12 +127,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
     "home-collection-collections-directory",
+    "collections-promises",
     "home-collection-quick-view-modal",
     "newsletter"
   ]

@@ -32,10 +32,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | `page_size` | range | Results per page | 12 |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | Search |
-| `heading` | text | Heading | Find your next ritual. |
-| `text` | text | Text | Search products, journal notes, and helpful pages. |
-| `search_label` | text | Search label | Search the journal and shop |
-| `placeholder` | text | Placeholder | Search products, routines, and journal notes |
+| `heading` | text | Heading | Search products and guides. |
+| `text` | text | Text | Try a product, a shade code or an ingredient. |
+| `search_label` | text | Search label | Search products and journal |
+| `placeholder` | text | Placeholder | Try “contour” or “retinol” |
 | `submit_label` | text | Submit label | Search |
 | `dropdown_heading` | text | Dropdown heading | Suggested results |
 | `view_all_label` | text | View all label | View all results |

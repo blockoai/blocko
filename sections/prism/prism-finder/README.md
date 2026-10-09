@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Hair-type finder |
-| `heading` | text | Heading | let’s find your formulas |
-| `text` | textarea | Text | Pick the texture that matches your hair and we will point you to the system that |
-| `button_label` | text | Button label | Take the full quiz |
+| `heading` | text | Heading | start with your strand |
+| `text` | textarea | Text | Straight to coily, fine to thick: pick the closest match and see formulas picked |
+| `button_label` | text | Button label | Take the quiz |
 | `button_url` | url | Button url |  |
 
 ## Blocks

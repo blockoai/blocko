@@ -29,9 +29,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `article` | article | Featured article |  |
-| `eyebrow_prefix` | text | Eyebrow prefix | Featured |
-| `reading_time` | text | Reading time | 5 minutes |
-| `button_label` | text | Button label | Read the story |
+| `eyebrow_prefix` | text | Eyebrow prefix | Latest |
+| `reading_time` | text | Reading time | 3 minutes |
+| `button_label` | text | Button label | See the look |
 
 ## Blocks
 

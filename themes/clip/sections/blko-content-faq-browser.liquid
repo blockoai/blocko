@@ -178,7 +178,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “shipping” or “size”"
+      "default": "Try “return” or “scent”"
     },
     {
       "type": "text",
@@ -249,8 +249,15 @@
         {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "shipping",
+            "label": "Shipping"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "key": "returns",
+            "label": "Returns"
           }
         },
         {
@@ -263,51 +270,64 @@
         {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
-          }
-        },
-        {
-          "type": "question",
-          "settings": {}
-        },
-        {
-          "type": "question",
-          "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "key": "rewards",
+            "label": "Rewards"
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my size?",
-            "answer": "Check the size guide, then compare sizes and colors in natural light. Our team can offer general guidance."
+            "category": "shipping",
+            "question": "How long will my order take?",
+            "answer": "Most orders arrive within three to six business days; launch weeks can run a couple of days longer. Custom clips take four to eight weeks."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find material information?",
-            "answer": "Each product page includes a clear materials list and straightforward care notes."
+            "category": "shipping",
+            "question": "What if my package arrives damaged?",
+            "answer": "Tell us within thirty days and we will replace it or issue store credit."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "Can I return an opened item?",
+            "answer": "For hygiene, opened hair care and worn accessories are final sale. Unopened items can be returned within fourteen days."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "Can I return a custom clip?",
+            "answer": "No. Custom pieces are made just for you, so they are not eligible for returns."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "products",
+            "question": "Are your hair-care products vegan and cruelty-free?",
+            "answer": "Yes. Every formula is vegan, certified cruelty-free and made without sulfates, parabens or silicones."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "products",
+            "question": "Can I wear a claw clip in wet hair?",
+            "answer": "Yes, but wipe it dry afterward and avoid soaking it in the shower."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "rewards",
+            "question": "How do I access my rewards?",
+            "answer": "Sign in at checkout with your account email and your gems appear automatically."
           }
         }
       ]

@@ -10,20 +10,23 @@
       "blocks": {
         "block-1": {
           "type": "note",
-          "settings": {}
+          "settings": {
+            "title": "Free shipping",
+            "text": "from $50"
+          }
         },
         "block-2": {
           "type": "note",
           "settings": {
-            "title": "Easy returns",
-            "text": "within 30 days"
+            "title": "Free returns",
+            "text": "and swaps in 30 days"
           }
         },
         "block-3": {
           "type": "note",
           "settings": {
-            "title": "Need help?",
-            "text": "We’re here for you"
+            "title": "Free mini",
+            "text": "on orders of $80+"
           }
         }
       },

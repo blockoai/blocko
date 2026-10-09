@@ -180,7 +180,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “shipping” or “scent”"
+      "default": "Try “returns” or “reef”"
     },
     {
       "type": "text",
@@ -251,6 +251,13 @@
         {
           "type": "tab",
           "settings": {
+            "key": "product",
+            "label": "Product"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
             "key": "orders",
             "label": "Orders"
           }
@@ -258,8 +265,8 @@
         {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "shipping",
+            "label": "Shipping + billing"
           }
         },
         {
@@ -271,45 +278,80 @@
         },
         {
           "type": "question",
-          "settings": {}
-        },
-        {
-          "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "product",
+            "question": "Are your sunscreens reef-friendly?",
+            "answer": "They avoid the filters banned in Hawaii and Key West. Always follow local rules where you swim."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my scent?",
-            "answer": "Begin with our best sellers, then compare notes from coconut to vanilla. Our team can offer general guidance."
+            "category": "product",
+            "question": "How long do products last?",
+            "answer": "About a year after opening and up to two years unopened. Check the jar for a small open-lid symbol."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "category": "product",
+            "question": "My butter went hard. Is it spoiled?",
+            "answer": "No. Coconut oil firms up when it is cool. Warm the jar in your hands or leave it in a sunny spot for a few minutes."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Can I use two promo codes?",
+            "answer": "Only one code applies to each order. Gift cards can be used on top of a code."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Can I change or cancel an order?",
+            "answer": "Write to us quickly; once an order is packed it cannot be edited."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "How much is shipping?",
+            "answer": "US orders over $39 ship free. Standard delivery takes three to seven business days and expedited takes about three."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "Where do you ship?",
+            "answer": "We ship across the United States and Canada. Shoppers elsewhere can find us at selected retailers."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "Do you sell gift cards?",
+            "answer": "Yes, digital gift cards from $20 to $100 arrive by email within minutes."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "What is your return window?",
+            "answer": "You have 60 days. Use the prepaid label in your confirmation email and expect a refund within four business days of arrival."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "What can I not return?",
+            "answer": "Swag, digital gift cards and final-sale items cannot be returned. Damaged items are replaced."
           }
         }
       ]

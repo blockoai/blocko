@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person wearing a bow clip |
-| `eyebrow` | text | Eyebrow | Seasonal drop |
-| `heading` | text | Heading | Cozy + new for you. |
-| `text` | textarea | Text | Soft pastels, snug grips and sweet little details for every hair day. |
-| `button_label` | text | Button label | Shop clips |
+| `image_alt` | text | Image alt text | Creamy hair mask tub beside a vanilla-colored claw clip |
+| `eyebrow` | text | Eyebrow | Out now · limited scent |
+| `heading` | text | Heading | The dessert drop is here. |
+| `text` | textarea | Text | A new hair mask in a warm vanilla scent, in a shower-friendly tub with a flip li |
+| `button_label` | text | Button label | Shop the drop |
 | `button_url` | url | Button url |  |
 
 ## Blocks

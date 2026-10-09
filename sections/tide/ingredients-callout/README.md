@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Skin ritual |
-| `eyebrow` | text | Eyebrow | Our standards |
-| `heading` | text | Heading | Simple rituals, drawn from the sea. |
-| `text` | textarea | Text | Build your routine with gentle essentials that work together naturally. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Dried seaweed laid out on stone |
+| `eyebrow` | text | Eyebrow | Sustainable harvest |
+| `heading` | text | Heading | Cut by hand, never uprooted. |
+| `text` | textarea | Text | Our harvesters trim only the top of each plant and leave the holdfast on the roc |
+| `button_label` | text | Button label | Watch the harvest film |
 | `button_url` | url | Button url |  |
 
 ## Blocks

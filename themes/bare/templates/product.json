@@ -2,26 +2,32 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Face",
+        "price_note": "0.3 oz jar",
+        "shade_help_label": "Need help? Match your shade",
+        "ship_note": "Qualifies for free shipping · Free, easy returns for 30 days"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Sheer, buildable coverage with a natural skin finish. Wear alone or layer it where you want more."
+            "label": "About this product",
+            "text": "A cushiony concealer that lifts the look of dark circles without settling into fine lines. Light-to-medium cover that you can build with a tap."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Ingredients",
-            "text": "Mineral SPF, lightweight hydration and skin-conditioning ingredients. Free of fragrance."
+            "label": "How to use",
+            "text": "Pat a small amount along the inner corner and under the eye with a ring finger. Press, do not rub, then add a second layer only where you need more."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
-            "label": "How to use",
-            "text": "Shake well. Dot onto the center of the face, then blend outward with your fingers. Add more where you want it."
+            "label": "Pair with",
+            "text": "The color-correcting neutralizer cancels blue and purple tones first, so the concealer can be a lighter touch."
           }
         }
       },
@@ -31,17 +37,290 @@
         "block-3"
       ]
     },
-    "pdp-before-after": {
-      "type": "blko-pdp-before-after",
-      "settings": {}
+    "pdp-founder-quote": {
+      "type": "blko-pdp-founder-quote",
+      "settings": {
+        "kicker": "From our founder",
+        "quote": "“The balm gives you the flush. This is what brightens the eyes.”",
+        "author": "— Our founder, makeup artist"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "25 shades",
+            "text": "Matched by undertone"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Fragrance-free",
+            "text": "Gentle around the eye"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Multi-use",
+            "text": "Also a highlighter"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-how-to": {
+      "type": "blko-pdp-how-to",
+      "settings": {
+        "kicker": "How to wear it",
+        "heading": "Build cover, not weight"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Tiny dot of concealer on a fingertip",
+            "label": "1",
+            "title": "Start small",
+            "text": "A rice-grain amount per eye is plenty; more can always go on top."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Finger tapping concealer under the eye",
+            "label": "2",
+            "title": "Tap and press",
+            "text": "Use the pad of your ring finger so the product warms and melts in."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Blended concealer along the cheekbone",
+            "label": "3",
+            "title": "Blend and build",
+            "text": "Sweep outward toward the temple, then layer on any spot that needs it."
+          }
+        },
+        "block-4": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Neutralizer and concealer jars side by side",
+            "label": "4",
+            "title": "Add the neutralizer first",
+            "text": "Deeper shadows? Tap the corrector on before the concealer next time."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-benefits": {
+      "type": "blko-pdp-benefits",
+      "settings": {
+        "kicker": "Why it works",
+        "heading": "Pigment cancels the shadow"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Peach neutralizes blue",
+            "text": "A sheer apricot tone cancels the cool cast under the eyes before any cover goes on."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Concealer brightens",
+            "text": "A shade near your skin lifts the area so it reads as rested."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Less product overall",
+            "text": "Correcting first means one thin layer of concealer does the job."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "pdp-complete-routine": {
       "type": "blko-pdp-complete-routine",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Pair with",
+        "heading": "Build the two-step routine",
+        "text": "Choose a neutralizer and concealer in matching depths; both go to your bag together."
+      }
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {
+        "image_alt": "Our founder with a client in the studio",
+        "eyebrow": "Founder's note",
+        "heading": "“I have spent decades matching faces. This pair finally does the work in two taps.”",
+        "text": "Why a corrector plus concealer beats a single heavy layer, from the artist who designed them.",
+        "button_label": "Read the founder's letter"
+      }
+    },
+    "pdp-formula": {
+      "type": "blko-pdp-formula",
+      "settings": {
+        "kicker": "The formula behind the feel",
+        "heading": "Four ingredients, plainly explained"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Marshmallow root, rice bran and licorice root",
+            "text": "A plant trio that calms the area and gives it a smoother look."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Shea butter",
+            "text": "Creamy slip that keeps the concealer from drying out."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Squalane",
+            "text": "A light, plant-derived oil that helps it glide."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Vitamin E",
+            "text": "An antioxidant that also keeps the formula fresh."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "Quick answers",
+        "heading": "Before you add to bag"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Will it look heavy or cakey under my eyes?",
+            "text": "No. The cream is thin enough to stretch and moves with the skin; use less than you think."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Is it gentle on sensitive skin?",
+            "text": "It is fragrance-free and formulated without common irritants, and it is safe for the delicate eye area."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "What exactly does a neutralizer do?",
+            "text": "It counteracts blue or purple tones with an opposite color, so your concealer can stay light."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "Do I still need concealer afterward?",
+            "text": "For many people, yes, but a thin layer is enough because the corrector has already done the heavy lifting."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-reviews": {
+      "type": "blko-pdp-reviews",
+      "settings": {
+        "eyebrow": "Customer reviews",
+        "average": "4.6",
+        "summary": "Based on 59 reviews",
+        "list_heading": "Recent reviews"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "review",
+          "settings": {
+            "title": "My dark circles are gone",
+            "text": "The peach corrector plus this concealer is a game changer. I only need a dot.",
+            "footer": "Carla M. · 2 weeks ago",
+            "tags": "photos",
+            "caption": "Shade 16 · photo review"
+          }
+        },
+        "block-2": {
+          "type": "review",
+          "settings": {
+            "title": "Does not crease",
+            "text": "I tested it through a long workday and nothing settled into lines.",
+            "footer": "Jess R. · 1 month ago",
+            "tags": "coverage",
+            "caption": ""
+          }
+        },
+        "block-3": {
+          "type": "review",
+          "settings": {
+            "title": "Shade match was easy",
+            "text": "The quiz sent me one shade up from what I expected. It was right.",
+            "footer": "Aisha T. · 2 months ago",
+            "tags": "photos",
+            "caption": "Shade 28 · photo review",
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "You may also like",
+        "heading": "More to try with it"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -60,116 +339,54 @@
         "block-2"
       ]
     },
-    "pdp-reviews": {
-      "type": "blko-pdp-reviews",
-      "settings": {},
+    "pdp-reassurance": {
+      "type": "blko-pdp-reassurance",
+      "settings": {
+        "kicker": "Shop with confidence",
+        "quote": "“Wrong shade? An artist will help you swap it.”",
+        "author": "— Care team"
+      },
       "blocks": {
         "block-1": {
-          "type": "bar",
-          "settings": {}
+          "type": "point",
+          "settings": {
+            "title": "30-day returns",
+            "text": "On single items"
+          }
         },
         "block-2": {
-          "type": "bar",
+          "type": "point",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
+            "title": "Free shade matching",
+            "text": "Quiz or selfie"
           }
         },
         "block-3": {
-          "type": "bar",
+          "type": "point",
           "settings": {
-            "label": "3 stars",
-            "percent": 4
-          }
-        },
-        "block-4": {
-          "type": "bar",
-          "settings": {
-            "label": "2 stars",
-            "percent": 1
-          }
-        },
-        "block-5": {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {}
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Coverage",
-            "key": "coverage"
-          }
-        },
-        "block-9": {
-          "type": "review",
-          "settings": {
-            "text": "It evens out my complexion while still looking completely natural. I love the light, hydrated finish."
-          }
-        },
-        "block-10": {
-          "type": "review",
-          "settings": {
-            "title": "My everyday base",
-            "text": "Easy to blend with fingers and it stays comfortable through a long day. The shade range made matching simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Fresh, not shiny",
-            "text": "This gives me the glowy finish I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Deep rich · photo review"
+            "title": "45-day exchanges",
+            "text": "One free swap per item"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-3"
       ]
-    },
-    "pdp-recently-viewed": {
-      "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
     }
   },
   "order": [
     "pdp-product-main",
-    "pdp-before-after",
+    "pdp-founder-quote",
+    "pdp-how-to",
+    "pdp-benefits",
     "pdp-complete-routine",
-    "product-recommendations",
+    "testimonial-slider",
+    "pdp-formula",
+    "pdp-faq",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "product-recommendations",
+    "pdp-reassurance"
   ]
 }

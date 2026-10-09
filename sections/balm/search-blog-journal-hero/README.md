@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | Journal |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a more considered routine. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for skin-first color and care. |
+| `eyebrow` | text | Eyebrow | News and guides |
+| `heading` | text | Heading | Application maps, ingredient notes and launches. |
+| `text` | text | Text | How to use each stick, what is in the formulas and what is coming next. |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Hands applying a stick to the cheek |
 
 ## Blocks
 

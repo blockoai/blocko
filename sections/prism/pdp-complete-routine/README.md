@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `collection` | collection | Fallback collection |  |
-| `eyebrow` | text | Eyebrow | Pair it up |
-| `heading` | text | Heading | Complete the system |
-| `text` | text | Text | Three formulas that lock in color together. |
+| `eyebrow` | text | Eyebrow | Works well with |
+| `heading` | text | Heading | Build the full wash-day set |
+| `text` | text | Text | Three formulas that cover cleanse, treat and style. |
 
 ## Blocks
 

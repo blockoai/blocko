@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Find us nearby |
-| `heading` | text | Heading | See it in person. |
-| `text` | textarea | Text | Choose a country to see a selection of participating stockists. |
-| `country_label` | text | Country label | Country |
-| `map_label` | text | Map label | Illustrative store map |
-| `map_text` | text | Map text | Store map |
-| `directions_label` | text | Directions label | Directions |
+| `eyebrow` | text | Eyebrow | Boutiques by state |
+| `heading` | text | Heading | Browse the list. |
+| `text` | textarea | Text | Every shop carries the full shelf and offers the same services. Hours and events |
+| `country_label` | text | Country label | State |
+| `map_label` | text | Map label | Illustrative boutique map |
+| `map_text` | text | Map text | Boutique map |
+| `directions_label` | text | Directions label | Get directions |
 
 ## Blocks
 

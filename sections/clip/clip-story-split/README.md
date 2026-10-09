@@ -28,12 +28,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Our story |
-| `heading` | text | Heading | Effortless self-expression |
-| `text` | textarea | Text | We make little things that do a big job: hold your hair, finish your look, and m |
+| `heading` | text | Heading | Made by a family, for every hair day |
+| `text` | textarea | Text | Two relatives started with a handful of hand-finished accessories and grew into  |
 | `button_label` | text | Button label | Read our story |
 | `button_url` | url | Button url |  |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person with a dried-flower clip in their hair |
+| `image_alt` | text | Image alt text | Person wearing an oversized pastel clip |
 
 ## Blocks
 

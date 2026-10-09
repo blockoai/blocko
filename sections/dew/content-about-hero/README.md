@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Our idea |
-| `heading` | text | Heading | skin first, always. |
-| `lede` | textarea | Lede | We make a short list of soft skincare essentials for the rituals that help you f |
+| `kicker` | text | Kicker | Welcome to the shelf |
+| `heading` | text | Heading | Edited, effective, deliberate. |
+| `lede` | textarea | Lede | A small line of skincare and hybrid color, built so that you reach for every sin |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Read our idea |
+| `button_label` | text | Button label | Read the founder note |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with bare, glowing skin |
+| `image_alt` | text | Image alt text | Founder holding a serum bottle in a bright room |
 
 ## Blocks
 

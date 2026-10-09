@@ -30,12 +30,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Proven results |
-| `heading` | text | Heading | Your skin, softly glowing. |
-| `text` | textarea | Text | Smoother, softer skin after the very first use, backed by real feedback. |
-| `stat_1_value` | text | Stat 1 value | 94% |
-| `stat_1_label` | text | Stat 1 label | said skin felt softer |
-| `stat_2_value` | text | Stat 2 value | 91% |
-| `stat_2_label` | text | Stat 2 label | said it rinsed clean |
+| `heading` | text | Heading | Protection that looks like nothing. |
+| `text` | textarea | Text | In a consumer study of 60 adults after one use, the mist rated as invisible on e |
+| `stat_1_value` | text | Stat 1 value | 98% |
+| `stat_1_label` | text | Stat 1 label | saw no white cast |
+| `stat_2_value` | text | Stat 2 value | 94% |
+| `stat_2_label` | text | Stat 2 label | said skin felt hydrated, not sticky |
 | `after_image` | image_picker | After image |  |
 | `after_image_alt` | text | After image alt text | Glowing skin after body oil |
 | `before_image` | image_picker | Before image |  |

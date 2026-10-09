@@ -181,7 +181,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “shipping” or “shade”"
+      "default": "Try “shade”, “returns” or “vegan”"
     },
     {
       "type": "text",
@@ -252,6 +252,13 @@
         {
           "type": "tab",
           "settings": {
+            "key": "formulas",
+            "label": "Products"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
             "key": "orders",
             "label": "Orders"
           }
@@ -259,58 +266,62 @@
         {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
-          }
-        },
-        {
-          "type": "tab",
-          "settings": {
-            "key": "returns",
-            "label": "Returns"
-          }
-        },
-        {
-          "type": "question",
-          "settings": {}
-        },
-        {
-          "type": "question",
-          "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "key": "club",
+            "label": "Shipping"
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "category": "formulas",
+            "question": "What does clean mean here?",
+            "answer": "We leave out about fifty ingredient families, including parabens, phthalates, talc, PFAS, mineral oil and PEGs."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "category": "formulas",
+            "question": "Are your products vegan and cruelty-free?",
+            "answer": "Yes, and the cruelty-free status is certified. They are also free of gluten ingredients."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "formulas",
+            "question": "How long does a product last once opened?",
+            "answer": "Look for the open-jar symbol on the pack; most formulas last twelve to twenty-four months."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "How do I change or cancel an order?",
+            "answer": "Message us within a few hours of ordering. Once it has shipped, use the returns portal."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "What is package protection?",
+            "answer": "An optional add-on that covers lost or damaged parcels; claim within seven days of delivery."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "club",
+            "question": "What is the free shipping threshold?",
+            "answer": "Orders over $55 in the US ship free. Other regions have their own threshold in local currency."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "club",
+            "question": "Why is fragrance excluded from free shipping in some countries?",
+            "answer": "Aerosols and scented items count as hazardous cargo, so they follow a flat rate."
           }
         }
       ]

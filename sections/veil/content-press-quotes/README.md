@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | In conversation |
+| `kicker` | text | Kicker | What editors say |
 
 ## Blocks
 

@@ -27,9 +27,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Start here |
-| `heading` | text | Heading | Choose your tool. |
-| `text` | textarea | Text | Two razors, one goal: a close, comfortable shave. Pick the handle that suits you |
+| `eyebrow` | text | Eyebrow | The first decision |
+| `heading` | text | Heading | Choose your razor. |
+| `text` | textarea | Text | Every cartridge fits one handle line only, so pick the line first and the refill |
 
 ## Blocks
 

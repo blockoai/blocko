@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Why Bare |
-| `heading` | text | Heading | Beauty belongs in real life. |
-| `lede` | textarea | Lede | We make everyday color and care for the rituals that help you feel like yourself |
+| `kicker` | text | Kicker | Our story |
+| `heading` | text | Heading | The world needs better makeup, not more of it. |
+| `lede` | textarea | Lede | A working artist's answer to cluttered drawers and complicated routines. |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Read the founder's letter |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with natural makeup |
+| `image_alt` | text | Image alt text | Our founder blending balm on a client |
 
 ## Blocks
 

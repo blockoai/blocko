@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by category",
+        "heading": "Start with what your skin needs."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Cleansers",
+            "url": "#cleanse"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#eyes"
+            "label": "Serums + masks",
+            "url": "#treat"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips",
-            "url": "#lips"
+            "label": "Moisturizers",
+            "url": "#moisturize"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Sun care",
-            "url": "#care"
+            "label": "Body care",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Wellness",
+            "url": "#wellness"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Gift sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Body ritual",
-            "label": "Sun care"
+            "url": "#body",
+            "image_alt": "Body oil bottle on a sandy ledge",
+            "label": "Body care"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#treat",
+            "image_alt": "Droplet of clear serum",
+            "label": "Serums"
           }
         }
       },
@@ -48,12 +72,20 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
+      "settings": {
+        "image_alt": "Woman carrying a woven beach bag along the shore",
+        "eyebrow": "Limited-edition gift sets",
+        "heading": "Pack the shoreline.",
+        "text": "Three seasonal sets pair our best face and body favorites in one box, each priced well below the products bought one by one.",
+        "button_label": "Shop the gift sets"
+      }
     },
     "message-band": {
       "type": "blko-message-band",
@@ -66,66 +98,47 @@
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SEA BOTANICALS"
+            "text": "FAMILY-FOUNDED IN CALIFORNIA"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "EVERYDAY CALM"
+            "text": "OCEAN-RESPONSIBLE SOURCING"
+          }
+        },
+        "block-4": {
+          "type": "message",
+          "settings": {
+            "text": "FRAGRANCE-FREE OPTIONS"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
-      ]
-    },
-    "tide-standards": {
-      "type": "blko-tide-standards",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "standard",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "standard",
-          "settings": {
-            "number": "02",
-            "title": "Reef-safe sun care",
-            "text": "Non-nano zinc oxide, free from filters that harm coral."
-          }
-        },
-        "block-3": {
-          "type": "standard",
-          "settings": {
-            "number": "03",
-            "title": "Recyclable packaging",
-            "text": "Glass, aluminium and post-consumer plastic you can recycle."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
+        "block-3",
+        "block-4"
       ]
     },
     "tabbed-product-grid": {
       "type": "blko-tabbed-product-grid",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Loved by thousands",
+        "heading": "Bestsellers and new arrivals"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Bestsellers"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New + limited"
           }
         }
       },
@@ -134,64 +147,44 @@
         "block-2"
       ]
     },
-    "tide-ritual": {
-      "type": "blko-tide-ritual",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "step",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "step",
-          "settings": {
-            "time": "Midday",
-            "title": "Mist and refresh",
-            "text": "A cooling face mist wherever the sun and salt air reach."
-          }
-        },
-        "block-3": {
-          "type": "step",
-          "settings": {
-            "time": "Low tide",
-            "title": "Restore and rest",
-            "text": "Sea mineral cream and a little body butter to end the day."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
     "category-slider": {
       "type": "blko-category-slider",
-      "settings": {},
+      "settings": {
+        "heading": "Shop face, body and wellness"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "url": "#face"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
             "title": "Body",
-            "url": "#eyes"
+            "url": "#body"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Lips",
-            "url": "#lips"
+            "title": "Wellness",
+            "url": "#wellness"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Sun care",
-            "url": "#care"
+            "title": "Sets",
+            "url": "#sets"
+          }
+        },
+        "block-5": {
+          "type": "category",
+          "settings": {
+            "title": "Tools",
+            "url": "#tools"
           }
         }
       },
@@ -199,73 +192,51 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4"
+        "block-4",
+        "block-5"
       ]
     },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {}
+    "home-family": {
+      "type": "blko-home-family",
+      "settings": {
+        "image_alt": "Mother and daughter smiling beside the water",
+        "eyebrow": "A family business",
+        "heading": "Three generations, one love of the sea.",
+        "text": "What began with a grandmother's daily swim became a mother's kitchen experiments with seaweed and a daughter's mission to grow it into a brand. Everything we make is still shaped by that shoreline.",
+        "button_label": "Read our story"
+      }
     },
-    "tide-botanical": {
-      "type": "blko-tide-botanical",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "benefit",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "benefit",
-          "settings": {
-            "label": "Hydrates"
-          }
-        },
-        "block-3": {
-          "type": "benefit",
-          "settings": {
-            "label": "Mineral-rich"
-          }
-        },
-        "block-4": {
-          "type": "benefit",
-          "settings": {
-            "label": "Balances"
-          }
-        }
+    "home-routine-quiz": {
+      "type": "blko-home-routine-quiz",
+      "settings": {
+        "kicker": "Build your routine",
+        "heading": "A personal routine in about a minute"
       },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
-    },
-    "testimonial-slider": {
-      "type": "blko-testimonial-slider",
-      "settings": {}
-    },
-    "press-slider": {
-      "type": "blko-press-slider",
-      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "publication",
-          "settings": {}
+          "type": "step",
+          "settings": {
+            "image_alt": "Woman checking her skin in a mirror",
+            "title": "Tell us about your skin",
+            "text": "Share your age range, skin type, main concerns and how much sun and stress you face."
+          }
         },
         "block-2": {
-          "type": "publication",
+          "type": "step",
           "settings": {
-            "name": "WELLNESS"
+            "image_alt": "Serum drop on the back of a hand",
+            "label": "Step two",
+            "title": "Get a morning and evening plan",
+            "text": "We order your picks by step: cleanse, treat, moisturize, protect."
           }
         },
         "block-3": {
-          "type": "publication",
+          "type": "step",
           "settings": {
-            "name": "SURF DAILY"
+            "image_alt": "Skincare bottles lined up on a shelf",
+            "label": "Step three",
+            "title": "Add it all to your bag",
+            "text": "Send the whole morning or evening routine to checkout in one click."
           }
         }
       },
@@ -277,26 +248,151 @@
     },
     "tide-subscribe": {
       "type": "blko-tide-subscribe",
-      "settings": {},
+      "settings": {
+        "pill": "Save 10%",
+        "heading": "Subscribe, save and never run out",
+        "text": "Pick a favorite, choose delivery every one to four months and enjoy a lower price on every refill, plus free shipping.",
+        "button_label": "Browse subscription picks"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "title": "Choose a product",
+            "text": "Look for the subscribe option on any face or body favorite."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "2",
-            "title": "Choose your rhythm",
-            "text": "Every 4, 6, or 8 weeks, whatever suits you."
+            "title": "Set your cadence",
+            "text": "Every month, every two, three or four months."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "3",
-            "title": "Pause or cancel anytime",
-            "text": "No minimums, no fees, no fuss."
+            "title": "Stay in control",
+            "text": "Skip a delivery, swap a product or cancel in a click."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tide-botanical": {
+      "type": "blko-tide-botanical",
+      "settings": {
+        "eyebrow": "Ingredient spotlight",
+        "heading": "Wakame, the moisture-barrier seaweed.",
+        "text": "Hand-harvested sea greens are packed with minerals and humectants. This one helps skin hold on to water, so dry patches feel calmer and skin looks plumper.",
+        "link_label": "Meet the seaweeds"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "benefit",
+          "settings": {
+            "label": "Locks in moisture"
+          }
+        },
+        "block-2": {
+          "type": "benefit",
+          "settings": {
+            "label": "Mineral-rich"
+          }
+        },
+        "block-3": {
+          "type": "benefit",
+          "settings": {
+            "label": "Supports the barrier"
+          }
+        },
+        "block-4": {
+          "type": "benefit",
+          "settings": {
+            "label": "Sustainably harvested"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "home-guarantee": {
+      "type": "blko-home-guarantee",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {
+            "text": "RESULTS YOU CAN SEE"
+          }
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "30-DAY MONEY-BACK PROMISE"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "REFUND OR GIFT CARD"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {
+        "image_alt": "Customer applying body oil at the beach",
+        "eyebrow": "Real customers",
+        "heading": "“My shoulders have never felt this soft.”",
+        "text": "Thousands of five-star reviews mention the same thing: skin that looks healthier after a week and a scent they actually enjoy.",
+        "button_label": "Read customer reviews"
+      }
+    },
+    "home-programs": {
+      "type": "blko-home-programs",
+      "settings": {
+        "kicker": "Ways to save, earn and enjoy",
+        "heading": "More for every order"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Subscribe and save",
+            "text": "Ten percent off every refill, free shipping and early access to launches."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Rewards",
+            "text": "Points on every dollar, bonus points for reviews and referrals, and perks that grow with your spend."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "A 30-day promise",
+            "text": "If a product is not for you, send it back within thirty days for a refund or gift card."
           }
         }
       },
@@ -308,7 +404,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -319,16 +419,15 @@
     "home-collection-mega-menu",
     "hero-campaign",
     "message-band",
-    "tide-standards",
     "tabbed-product-grid",
-    "tide-ritual",
     "category-slider",
-    "feature-driver",
-    "tide-botanical",
-    "commitments",
-    "testimonial-slider",
-    "press-slider",
+    "home-family",
+    "home-routine-quiz",
     "tide-subscribe",
+    "tide-botanical",
+    "home-guarantee",
+    "testimonial-slider",
+    "home-programs",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

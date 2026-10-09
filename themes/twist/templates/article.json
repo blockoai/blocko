@@ -2,19 +2,35 @@
   "sections": {
     "search-blog-article-hero": {
       "type": "blko-search-blog-article-hero",
-      "settings": {}
+      "settings": {
+        "reading_time": "6 minutes"
+      }
     },
     "search-blog-article-content": {
       "type": "blko-search-blog-article-content",
-      "settings": {}
+      "settings": {
+        "products_heading": "Shop what we mention",
+        "share_label": "Share this post",
+        "copy_label": "Copy link",
+        "comments_heading": "Comments"
+      }
     },
     "search-blog-related-articles": {
       "type": "blko-search-blog-related-articles",
-      "settings": {}
+      "settings": {
+        "eyebrow": "more to read",
+        "heading": "More from the blog",
+        "link_label": "read more"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [

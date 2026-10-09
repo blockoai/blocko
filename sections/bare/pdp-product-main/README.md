@@ -37,11 +37,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `breadcrumb_shop` | text | Breadcrumb shop | Shop |
 | `breadcrumb_category_url` | url | Breadcrumb category url |  |
 | `breadcrumb_category` | text | Breadcrumb category | Face |
-| `price_note` | text | Price note | 1 fl oz / 30 ml |
+| `price_note` | text | Price note | 0.3 oz jar |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure? Find your shade, free. |
+| `shade_help_label` | text | Shade help label | Need help? Match your shade |
 | `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Free shipping over $55 · 30-day returns · Free shade matching |
+| `ship_note` | text | Ship note | Qualifies for free shipping · Free, easy returns for 30 days |
 
 ## Blocks
 

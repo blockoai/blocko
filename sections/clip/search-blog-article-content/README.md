@@ -32,7 +32,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `article` | article | Article |  |
 | `product_a` | product | First product |  |
 | `product_b` | product | Second product |  |
-| `products_heading` | text | Products heading | Try these together |
+| `products_heading` | text | Products heading | Shop the look |
 | `share_label` | text | Share label | Share this note |
 | `copy_label` | text | Copy label | Copy link |
 | `email_label` | text | Email label | Email |

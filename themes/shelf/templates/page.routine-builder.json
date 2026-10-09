@@ -1,12 +1,78 @@
 {
   "sections": {
+    "analysis-header": {
+      "type": "blko-analysis-header",
+      "settings": {
+        "breadcrumb": "Skin analysis",
+        "heading": "Find a routine that fits your skin.",
+        "text": "A two-minute questionnaire on skin type, sensitivities and goals, ending in a short routine of products that meet our standard."
+      }
+    },
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Your routine",
+        "heading": "Cleanse, treat, moisturize.",
+        "text": "These three are a starting point for balanced skin that wants more hydration. Swap any for the alternate and the total updates.",
+        "step_text": "Chosen for sensitive, slightly dry skin.",
+        "summary_eyebrow": "Your routine",
+        "add_label": "Add the routine to my bag",
+        "pick_label": "Main pick",
+        "alternate_label": "Travel size"
+      }
+    },
+    "analysis-method": {
+      "type": "blko-analysis-method",
+      "settings": {
+        "kicker": "How we choose",
+        "heading": "What the analysis looks at"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Skin type",
+            "text": "Dry, oily, combination or reactive decides which textures suit you."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Concerns",
+            "text": "Breakouts, dullness, dark marks or redness steer the treatment step."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Routine size",
+            "text": "Tell us whether you want three steps or seven, and the list adjusts."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Budget",
+            "text": "Set a price ceiling and we favor minis and sets when needed."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shopper favorites",
+        "heading": "More bestsellers"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,8 +81,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New arrivals"
           }
         }
       },
@@ -27,11 +93,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
+    "analysis-header",
     "beauty-extras-routine-builder",
+    "analysis-method",
     "product-recommendations",
     "newsletter"
   ]

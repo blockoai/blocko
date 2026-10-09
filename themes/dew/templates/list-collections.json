@@ -2,43 +2,58 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by family",
+        "heading": "five families, one short shelf."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "url": "#skin"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Lip + cheek",
+            "url": "#lip-cheek"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips + cheeks",
-            "url": "#lips"
+            "label": "Sets",
+            "url": "#sets"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#care"
+            "label": "On the go",
+            "url": "#on-the-go"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Award winners",
+            "url": "#awards"
+          }
         },
         "block-6": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "body routine",
-            "label": "Body"
+            "url": "#skin",
+            "image_alt": "Glow serum bottle on a pale surface"
+          }
+        },
+        "block-7": {
+          "type": "tile",
+          "settings": {
+            "url": "#lip-cheek",
+            "image_alt": "Lip tints and a blush stick laid out together",
+            "label": "Lip + cheek"
           }
         }
       },
@@ -48,12 +63,17 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7"
       ]
     },
     "home-collection-collections-directory": {
       "type": "blko-home-collection-collections-directory",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Browse the families",
+        "heading": "Everything on the shelf",
+        "text": "Skin, lip + cheek, sets and little sizes for travel. Award winners are gathered in one place."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,7 +81,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [

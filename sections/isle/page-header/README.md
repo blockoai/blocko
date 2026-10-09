@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `breadcrumb` | text | Breadcrumb | Our story |
-| `heading` | text | Heading | Made for real life. |
-| `text` | textarea | Text | Clean, vegan formulas that make every day feel like paradise. |
+| `breadcrumb` | text | Breadcrumb | SPF finder |
+| `heading` | text | Heading | Find your sun routine. |
+| `text` | textarea | Text | Three quick questions about your skin, your plans and your favorite texture, and |
 
 ## Blocks
 

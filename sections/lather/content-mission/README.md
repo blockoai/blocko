@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Man hiking a ridge above the clouds |
-| `kicker` | text | Kicker | A useful kind of loud |
-| `heading` | text | Heading | Good grooming should be easy, loud and a little bit fun. |
-| `text` | textarea | Text | Our work starts with the small, practical moments: a bar that lathers fast, a de |
+| `image_alt` | text | Image alt text | A man washing his face at a mountain stream |
+| `kicker` | text | Kicker | The problem |
+| `heading` | text | Heading | Personal care got complicated for no good reason. |
+| `text` | textarea | Text | Walk down any aisle and half the labels read like a chemistry exam. We think a d |
 
 ## Blocks
 

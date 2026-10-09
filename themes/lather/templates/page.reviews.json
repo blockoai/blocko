@@ -2,38 +2,46 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Real reviews",
+        "heading": "100,000+ guys have weighed in.",
+        "average": "4.5",
+        "count_text": "Based on 100,000+ verified reviews",
+        "stars_label": "Four and a half out of five stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 71
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 17
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 7
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 3
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         "block-6": {
@@ -46,13 +54,13 @@
           "type": "filter",
           "settings": {
             "label": "Bar soap",
-            "key": "soap"
+            "key": "complexion"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Body care",
+            "label": "Deodorant",
             "key": "care"
           }
         },
@@ -64,41 +72,28 @@
           }
         },
         "block-10": {
-          "type": "photo",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "tags": "complexion",
+            "title": "My whole family steals the bar",
+            "meta": "Everyday bar soap · Cabin Cedar · Verified buyer"
+          }
         },
         "block-11": {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
+            "tags": "care",
+            "title": "No more shirt stains",
+            "meta": "Clear-glide deodorant · Verified buyer"
           }
         },
         "block-12": {
-          "type": "photo",
-          "settings": {}
-        },
-        "block-13": {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        "block-14": {
-          "type": "review",
-          "settings": {}
-        },
-        "block-15": {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Body care"
-          }
-        },
-        "block-16": {
-          "type": "review",
-          "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "complexion",
+            "rating": 4,
+            "title": "Scent fades by evening",
+            "meta": "Aloe moisture bar · Verified buyer"
           }
         }
       },
@@ -114,16 +109,17 @@
         "block-9",
         "block-10",
         "block-11",
-        "block-12",
-        "block-13",
-        "block-14",
-        "block-15",
-        "block-16"
+        "block-12"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [

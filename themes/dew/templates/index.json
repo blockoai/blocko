@@ -2,43 +2,58 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by family",
+        "heading": "five families, one short shelf."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "url": "#skin"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Lip + cheek",
+            "url": "#lip-cheek"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips + cheeks",
-            "url": "#lips"
+            "label": "Sets",
+            "url": "#sets"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#care"
+            "label": "On the go",
+            "url": "#on-the-go"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Award winners",
+            "url": "#awards"
+          }
         },
         "block-6": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "body routine",
-            "label": "Body"
+            "url": "#skin",
+            "image_alt": "Glow serum bottle on a pale surface"
+          }
+        },
+        "block-7": {
+          "type": "tile",
+          "settings": {
+            "url": "#lip-cheek",
+            "image_alt": "Lip tints and a blush stick laid out together",
+            "label": "Lip + cheek"
           }
         }
       },
@@ -48,65 +63,19 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7"
       ]
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
-    },
-    "dew-shade-row": {
-      "type": "blko-dew-shade-row",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tint",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tint",
-          "settings": {
-            "tone": "rose",
-            "label": "rose"
-          }
-        },
-        "block-3": {
-          "type": "tint",
-          "settings": {
-            "tone": "berry",
-            "label": "berry"
-          }
-        },
-        "block-4": {
-          "type": "tint",
-          "settings": {
-            "tone": "clay",
-            "label": "clay"
-          }
-        },
-        "block-5": {
-          "type": "tint",
-          "settings": {
-            "tone": "mocha",
-            "label": "mocha"
-          }
-        },
-        "block-6": {
-          "type": "tint",
-          "settings": {
-            "tone": "cocoa",
-            "label": "cocoa"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6"
-      ]
+      "settings": {
+        "image_alt": "Close-up of cheeks with a soft, rosy flush",
+        "eyebrow": "Limited shade, back again",
+        "heading": "warm, glossy and back for the season.",
+        "text": "The fan-favorite lip tint returns in its seasonal shade, along with the matching cream blush. Both are made in small batches, so they do not hang around.",
+        "button_label": "Shop the shade"
+      }
     },
     "message-band": {
       "type": "blko-message-band",
@@ -114,18 +83,20 @@
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "PEPTIDES IN THE LIP AND THE SERUM"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SHORT INGREDIENT LISTS"
+            "text": "FRAGRANCE-FREE OPTIONS"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "MADE FOR EVERY DAY"
+            "text": "FREE SHIPPING OVER $45"
           }
         }
       },
@@ -137,96 +108,29 @@
     },
     "tabbed-product-grid": {
       "type": "blko-tabbed-product-grid",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Swipe the shelf",
+        "heading": "the ones people reorder."
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Skin"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "dew-philosophy": {
-      "type": "blko-dew-philosophy",
-      "settings": {}
-    },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "category",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "category",
-          "settings": {
-            "title": "Eyes",
-            "url": "#eyes"
+            "key": "new",
+            "label": "Lip + cheek"
           }
         },
         "block-3": {
-          "type": "category",
+          "type": "tab",
           "settings": {
-            "title": "Lips",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Body",
-            "url": "#care"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {}
-    },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
-    },
-    "testimonial-slider": {
-      "type": "blko-testimonial-slider",
-      "settings": {}
-    },
-    "press-slider": {
-      "type": "blko-press-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "publication",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "publication",
-          "settings": {
-            "name": "SKIN JOURNAL"
-          }
-        },
-        "block-3": {
-          "type": "publication",
-          "settings": {
-            "name": "QUIET REVIEW"
+            "key": "sets",
+            "label": "Sets"
           }
         }
       },
@@ -236,9 +140,91 @@
         "block-3"
       ]
     },
+    "dew-philosophy": {
+      "type": "blko-dew-philosophy",
+      "settings": {
+        "eyebrow": "why the shelf is small",
+        "heading": "a short list, every item pulling its weight.",
+        "text": "We would rather make one cleanser we love than five we shrug at. Each formula nourishes the skin barrier, adds a little glow or tint, and slots into a routine in seconds.",
+        "button_label": "see the shelf"
+      }
+    },
+    "home-seasonal-edit": {
+      "type": "blko-home-seasonal-edit",
+      "settings": {
+        "image_alt": "Cheeks and lips in matching warm tones",
+        "eyebrow": "The cozy edit",
+        "heading": "blush, shaper and tint in one warm family.",
+        "text": "A cream blush, a lip pencil and a glossy tint chosen to sit together, from a soft rose to deep cocoa. Wear all three or borrow one.",
+        "button_label": "Shop the edit"
+      }
+    },
+    "dew-shade-row": {
+      "type": "blko-dew-shade-row",
+      "settings": {
+        "eyebrow": "Cream blush, six ways",
+        "heading": "from baby pink to plum.",
+        "default_label": "tap a shade to see its name",
+        "button_label": "Shop blush"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tint",
+          "settings": {
+            "label": "baby pink"
+          }
+        },
+        "block-2": {
+          "type": "tint",
+          "settings": {
+            "tone": "rose",
+            "label": "peach rose"
+          }
+        },
+        "block-3": {
+          "type": "tint",
+          "settings": {
+            "tone": "berry",
+            "label": "raspberry"
+          }
+        },
+        "block-4": {
+          "type": "tint",
+          "settings": {
+            "tone": "clay",
+            "label": "terracotta"
+          }
+        },
+        "block-5": {
+          "type": "tint",
+          "settings": {
+            "tone": "mocha",
+            "label": "burnt cocoa"
+          }
+        },
+        "block-6": {
+          "type": "tint",
+          "settings": {
+            "tone": "cocoa",
+            "label": "deep plum"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
     "dew-social-strip": {
       "type": "blko-dew-social-strip",
-      "settings": {},
+      "settings": {
+        "heading": "you + dew",
+        "social_label": "find us on social"
+      },
       "blocks": {
         "block-1": {
           "type": "post",
@@ -269,9 +255,88 @@
         "block-5"
       ]
     },
+    "home-pillars": {
+      "type": "blko-home-pillars",
+      "settings": {
+        "kicker": "What we are about",
+        "heading": "three promises behind the shelf"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Look after the skin you have",
+            "text": "Restore, protect and feed your barrier first. Color comes second and never undoes the care."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Give back",
+            "text": "One percent of every sale goes to groups that support women, mothers and small businesses."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Tread lightly",
+            "text": "Formulas are vegan and cruelty-free, bottles use recycled material, and empties can come back to us."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "press-slider": {
+      "type": "blko-press-slider",
+      "settings": {
+        "eyebrow": "Award winners"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {
+            "name": "BEST GLOW PREP"
+          }
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "BEST RICH MOISTURIZER"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "BEST CREAM CLEANSER"
+          }
+        },
+        "block-4": {
+          "type": "publication",
+          "settings": {
+            "name": "BEST VIRAL BEAUTY MOMENT"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -281,16 +346,14 @@
   "order": [
     "home-collection-mega-menu",
     "hero-campaign",
-    "dew-shade-row",
     "message-band",
     "tabbed-product-grid",
     "dew-philosophy",
-    "category-slider",
-    "feature-driver",
-    "commitments",
-    "testimonial-slider",
-    "press-slider",
+    "home-seasonal-edit",
+    "dew-shade-row",
     "dew-social-strip",
+    "home-pillars",
+    "press-slider",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

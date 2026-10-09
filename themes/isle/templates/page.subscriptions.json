@@ -2,24 +2,36 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe & save",
+        "heading": "Your favorites, on repeat.",
+        "text": "Save 10% on products you use up fast, like deodorant, body wash and butter. Change the product, timing or address whenever you need.",
+        "shipment_eyebrow": "Coming up next",
+        "shipment_heading": "Arrives around the 12th",
+        "image_alt": "Whipped coconut body butter jar",
+        "variant_label": "Coconut · Original",
+        "shipment_note": "Ships free to your saved address.",
+        "frequency_eyebrow": "Deliver every",
+        "frequency_copy": "You are currently set to every 8 weeks.",
+        "skip_label": "Skip this box",
+        "swap_label": "Swap in another scent"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
-          "settings": {
-            "selected": true
-          }
+          "settings": {}
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "8 weeks",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "12 weeks"
           }
         }
       },
@@ -29,19 +41,61 @@
         "block-3"
       ]
     },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "Why subscribe",
+        "heading": "Small savings that stack up"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "10% off every box",
+            "text": "The discount shows up in the buy box as a single click on eligible products."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Never run empty",
+            "text": "Deodorant and body wash vanish fast; a schedule keeps your shower stocked."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Edit any time",
+            "text": "Skip, swap a scent or cancel from your account. Promo codes are not combined with subscriptions."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "top-subscribed": {
+      "type": "blko-top-subscribed",
+      "settings": {
+        "eyebrow": "Most subscribed",
+        "heading": "What people restock"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Top subscribed"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "Just landed",
-            "key": "new"
+            "key": "new",
+            "label": "New on repeat"
           }
         }
       },
@@ -50,14 +104,55 @@
         "block-2"
       ]
     },
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Subscription questions",
+        "heading": "Good to know"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Which products can I subscribe to?",
+            "text": "Look for the Subscribe & save choice in the buy box. Most washes, butters, deodorants and sunscreens are included."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Can I use a promo code on a subscription?",
+            "text": "No. Codes work on one-time orders, and subscription pricing already includes your 10% saving."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "How do I change the delivery date?",
+            "text": "Open the subscriptions tab in your account, pick the box and move the date forward or back."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
-    "product-recommendations",
+    "subscription-perks",
+    "top-subscribed",
+    "subscription-faq",
     "newsletter"
   ]
 }

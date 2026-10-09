@@ -12,7 +12,7 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#f0d2c4",
+          "background": "#e9c3b3",
           "text": "#56615a",
           "button": "#56615a",
           "button_label": "#ffffff",
@@ -39,7 +39,7 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#f0d2c4",
+          "background": "#e9c3b3",
           "text": "#56615a",
           "button": "#56615a",
           "button_label": "#ffffff",
@@ -75,7 +75,7 @@
       },
       "scheme-9": {
         "settings": {
-          "background": "#f0d2c4",
+          "background": "#e9c3b3",
           "text": "#56615a",
           "button": "#56615a",
           "button_label": "#ffffff",
@@ -84,7 +84,7 @@
       },
       "scheme-10": {
         "settings": {
-          "background": "#f0d2c4",
+          "background": "#e9c3b3",
           "text": "#56615a",
           "button": "#56615a",
           "button_label": "#ffffff",
@@ -120,7 +120,7 @@
       },
       "scheme-14": {
         "settings": {
-          "background": "#f0d2c4",
+          "background": "#e9c3b3",
           "text": "#56615a",
           "button": "#56615a",
           "button_label": "#ffffff",
@@ -129,7 +129,7 @@
       },
       "scheme-15": {
         "settings": {
-          "background": "#f0d2c4",
+          "background": "#e9c3b3",
           "text": "#56615a",
           "button": "#56615a",
           "button_label": "#ffffff",
@@ -183,7 +183,7 @@
       }
     },
     "color_bg": "#fefeed",
-    "color_bg_alt": "#f0d2c4",
+    "color_bg_alt": "#e9c3b3",
     "color_text": "#56615a",
     "color_text_muted": "#636e67",
     "color_border": "#c1c1ba",
@@ -202,10 +202,10 @@
     "color_input_text": "#56615a",
     "color_swatch_cream": "#fdf9de",
     "color_swatch_sky": "#d8edfb",
-    "color_swatch_blush": "#f0d2c4",
+    "color_swatch_blush": "#e9c3b3",
     "color_swatch_rose": "#c788a7",
     "color_swatch_cocoa": "#7f5b4f",
-    "color_swatch_light": "#f0d2c4",
+    "color_swatch_light": "#e9c3b3",
     "color_swatch_medium": "#c788a7",
     "color_swatch_deep": "#7f5b4f",
     "blocko_api_base": "/apps/blocko",

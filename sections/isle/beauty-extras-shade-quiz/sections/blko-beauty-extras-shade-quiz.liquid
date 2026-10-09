@@ -287,49 +287,49 @@
       "type": "text",
       "id": "eyebrow_1",
       "label": "Eyebrow 1",
-      "default": "Match in minutes"
+      "default": "Question one of three"
     },
     {
       "type": "text",
       "id": "heading_1",
       "label": "Heading 1",
-      "default": "Let’s find your shade."
+      "default": "How does your skin react to sun?"
     },
     {
       "type": "textarea",
       "id": "text_1",
       "label": "Text 1",
-      "default": "Start with the body that feels most like you in daylight."
+      "default": "Think about a day outside with no protection and choose the closest match."
     },
     {
       "type": "text",
       "id": "eyebrow_2",
       "label": "Eyebrow 2",
-      "default": "Your undertone"
+      "default": "Question two of three"
     },
     {
       "type": "text",
       "id": "heading_2",
       "label": "Heading 2",
-      "default": "Which description is closest?"
+      "default": "Where are you heading?"
     },
     {
       "type": "text",
       "id": "eyebrow_3",
       "label": "Eyebrow 3",
-      "default": "Your finish"
+      "default": "Question three of three"
     },
     {
       "type": "text",
       "id": "heading_3",
       "label": "Heading 3",
-      "default": "How much coverage feels right?"
+      "default": "Which texture do you reach for?"
     },
     {
       "type": "text",
       "id": "finish_label",
       "label": "Finish label",
-      "default": "See my matches"
+      "default": "Show my picks"
     }
   ],
   "blocks": [
@@ -433,12 +433,14 @@
       "blocks": [
         {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Burns fast"
+          }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Sand to medium",
+            "label": "Burns, then tans",
             "tone": "tone-1",
             "selected": true
           }
@@ -446,57 +448,59 @@
         {
           "type": "tone",
           "settings": {
-            "label": "Aqua to deep",
+            "label": "Tans easily",
             "tone": "tone-2"
           }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Teal to rich",
+            "label": "Rarely burns",
             "tone": "tone-3"
           }
         },
         {
           "type": "undertone",
           "settings": {
+            "label": "Beach or pool",
+            "hint": "Long days that include swimming",
             "selected": true
           }
         },
         {
           "type": "undertone",
           "settings": {
-            "label": "Neutral",
-            "hint": "A balanced mix"
+            "label": "Trail or court",
+            "hint": "Sweaty, active hours outdoors"
           }
         },
         {
           "type": "undertone",
           "settings": {
-            "label": "Warm",
-            "hint": "Golden or peach tones"
+            "label": "Daily errands",
+            "hint": "Short stretches in the daylight"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
+            "label": "Mist",
+            "hint": "Fast and easy to spray on",
             "selected": true
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Sand",
-            "hint": "Easy everyday polish"
+            "label": "Gel cream",
+            "hint": "Cushiony and moisturizing"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Aqua",
-            "hint": "Buildable confidence"
+            "label": "Stick",
+            "hint": "Mess-free for faces and tops of feet"
           }
         }
       ]

@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Shower routine |
-| `eyebrow` | text | Eyebrow | Our promise |
-| `heading` | text | Heading | Big scents, small ingredient lists. |
-| `text` | textarea | Text | Stack the bundle: soap, deodorant and cologne that work together. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Pine branches and moss on a stone |
+| `eyebrow` | text | Eyebrow | Natural, measured |
+| `heading` | text | Heading | 98% natural origin, and we show our math. |
+| `text` | textarea | Text | Natural is a word anyone can print on a label. We back it with an international  |
+| `button_label` | text | Button label | See what stays out |
 | `button_url` | url | Button url |  |
 
 ## Blocks

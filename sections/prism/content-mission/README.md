@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person enjoying a wash-day routine |
-| `kicker` | text | Kicker | a useful kind of loud |
-| `heading` | text | Heading | Good formulas should make bold color easier to keep. |
-| `text` | textarea | Text | Our work starts with the small, practical moments: a shampoo that lets pigment s |
+| `image_alt` | text | Image alt text | Person with vivid pink-orange hair |
+| `kicker` | text | Kicker | What we believe |
+| `heading` | text | Heading | Self-expression starts with healthy hair. |
+| `text` | textarea | Text | Colour, cuts and tools are how people say who they are. We make the care that ke |
 
 ## Blocks
 

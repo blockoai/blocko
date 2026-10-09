@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
-| `eyebrow` | text | Eyebrow | Community reviews |
-| `average` | text | Average | 4.8 |
+| `eyebrow` | text | Eyebrow | Reviews + Q&A |
+| `average` | text | Average | 4.7 |
 | `stars` | text | Stars | ★★★★★ |
-| `summary` | text | Summary | Based on 1,248 verified reviews |
-| `list_heading` | text | List heading | Featured reviews |
+| `summary` | text | Summary | Based on 2,184 verified reviews |
+| `list_heading` | text | List heading | What shoppers report |
 | `empty` | text | Empty | No reviews match this filter yet. |
 
 ## Blocks

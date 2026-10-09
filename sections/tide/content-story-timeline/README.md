@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Along the way |
-| `heading` | text | Heading | Built one useful ritual at a time. |
+| `kicker` | text | Kicker | Timeline |
+| `heading` | text | Heading | Four generations of ocean swimmers. |
 
 ## Blocks
 

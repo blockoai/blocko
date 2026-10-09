@@ -29,11 +29,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `button_label` | text | Button label | Sign up |
 | `placeholder` | text | Placeholder | you@example.com |
-| `eyebrow` | text | Eyebrow | Stay in touch |
-| `heading` | text | Heading | A little sea air, delivered. |
+| `eyebrow` | text | Eyebrow | 10% off your first order |
+| `heading` | text | Heading | Join for early looks and offers |
 | `email_label` | text | Email label | Email address |
 | `success_message` | text | Success message | Thanks for subscribing. |
-| `message` | text | Message | Occasional notes on ocean care, rituals, and new releases. |
+| `message` | text | Message | Email and text sign-ups get a welcome discount, new launch alerts and the occasi |
 
 ## Blocks
 

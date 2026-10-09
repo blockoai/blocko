@@ -277,6 +277,8 @@
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -291,73 +293,73 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "your refill"
+      "default": "Subscribe + save"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "keeps up with your color."
+      "default": "Keep your shelf full, spend 10% less."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Adjust your next shipment whenever your color changes."
+      "default": "Choose the products you reorder, set how often they arrive and save on every shipment. Change or stop anytime."
     },
     {
       "type": "text",
       "id": "shipment_eyebrow",
       "label": "Shipment eyebrow",
-      "default": "Next shipment"
+      "default": "Your next delivery"
     },
     {
       "type": "text",
       "id": "shipment_heading",
       "label": "Shipment heading",
-      "default": "Arrives around the 18th"
+      "default": "Arrives in three weeks"
     },
     {
       "type": "text",
       "id": "image_alt",
       "label": "Image alt",
-      "default": "Color Lock Shampoo"
+      "default": "Dry shampoo can"
     },
     {
       "type": "text",
       "id": "variant_label",
       "label": "Variant label",
-      "default": "Medium + wavy"
+      "default": "Clean linen · Standard"
     },
     {
       "type": "text",
       "id": "shipment_note",
       "label": "Shipment note",
-      "default": "Ships to your saved address."
+      "default": "A reminder email goes out seven days before it ships."
     },
     {
       "type": "text",
       "id": "frequency_eyebrow",
       "label": "Frequency eyebrow",
-      "default": "Delivery every"
+      "default": "Deliver every"
     },
     {
       "type": "text",
       "id": "frequency_copy",
       "label": "Frequency copy",
-      "default": "Currently every 4 weeks."
+      "default": "Currently set to every 3 months."
     },
     {
       "type": "text",
       "id": "skip_label",
       "label": "Skip label",
-      "default": "Skip this shipment"
+      "default": "Skip this delivery"
     },
     {
       "type": "text",
       "id": "swap_label",
       "label": "Swap label",
-      "default": "Swap product"
+      "default": "Swap a product"
     }
   ],
   "blocks": [
@@ -388,19 +390,26 @@
         {
           "type": "frequency",
           "settings": {
+            "label": "2 months"
+          }
+        },
+        {
+          "type": "frequency",
+          "settings": {
+            "label": "3 months",
             "selected": true
           }
         },
         {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "4 months"
           }
         },
         {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "6 months"
           }
         }
       ]

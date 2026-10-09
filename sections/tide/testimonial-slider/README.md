@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Skin ritual |
-| `eyebrow` | text | Eyebrow | Our standards |
-| `heading` | text | Heading | Simple rituals, drawn from the sea. |
-| `text` | textarea | Text | Build your routine with gentle essentials that work together naturally. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Customer applying body oil at the beach |
+| `eyebrow` | text | Eyebrow | Real customers |
+| `heading` | text | Heading | “My shoulders have never felt this soft.” |
+| `text` | textarea | Text | Thousands of five-star reviews mention the same thing: skin that looks healthier |
+| `button_label` | text | Button label | Read customer reviews |
 | `button_url` | url | Button url |  |
 
 ## Blocks

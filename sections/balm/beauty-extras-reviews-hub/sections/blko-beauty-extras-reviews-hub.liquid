@@ -353,13 +353,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "From the community"
+      "default": "Customer reviews"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Real routines, real notes."
+      "default": "5,000 five-star ratings and counting."
     },
     {
       "type": "text",
@@ -371,13 +371,13 @@
       "type": "text",
       "id": "stars_label",
       "label": "Stars label",
-      "default": "Five out of five stars"
+      "default": "Four point eight out of five stars"
     },
     {
       "type": "text",
       "id": "count_text",
       "label": "Count text",
-      "default": "From 2,483 verified reviews"
+      "default": "From thousands of verified reviews"
     }
   ],
   "blocks": [
@@ -498,7 +498,7 @@
           "type": "text",
           "id": "meta",
           "label": "Meta",
-          "default": "Verified customer · Skincare"
+          "default": "Verified customer · Face"
         }
       ]
     }
@@ -509,34 +509,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 84
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 11
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 3
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 1
           }
         },
         {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 1
           }
         },
         {
@@ -548,15 +550,15 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Skincare",
-            "key": "complexion"
+            "label": "Makeup",
+            "key": "makeup"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Sculpt",
-            "key": "care"
+            "label": "Skincare",
+            "key": "skincare"
           }
         },
         {
@@ -567,41 +569,28 @@
           }
         },
         {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        {
-          "type": "review",
-          "settings": {}
-        },
-        {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Sculpt"
+            "tags": "makeup",
+            "title": "My whole face in three sticks",
+            "meta": "Contour set · Verified buyer"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "skincare",
+            "title": "Cleansing cream that does not sting",
+            "meta": "Cleansing cream · Verified buyer"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "tags": "makeup",
+            "rating": 4,
+            "title": "Gorgeous lip oil, wish it lasted longer",
+            "meta": "Lip oil · Verified buyer"
           }
         }
       ]

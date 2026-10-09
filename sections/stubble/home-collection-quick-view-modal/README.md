@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `close_label` | text | Close label | Close quick view |
-| `eyebrow` | text | Eyebrow | Quick view |
-| `add_label` | text | Add label | Add to bag |
-| `details_label` | text | Details label | View full details |
+| `eyebrow` | text | Eyebrow | What is good about it |
+| `add_label` | text | Add label | Add to cart |
+| `details_label` | text | Details label | See the full product |
 
 ## Blocks
 

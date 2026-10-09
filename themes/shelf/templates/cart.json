@@ -2,7 +2,18 @@
   "sections": {
     "cart-checkout-cart-main": {
       "type": "blko-cart-checkout-cart-main",
-      "settings": {}
+      "settings": {
+        "upsell_kicker": "Before you go",
+        "upsell_heading": "Pairs well with your bag",
+        "threshold": 35,
+        "before": "Add",
+        "after": "more for free shipping.",
+        "unlocked": "Free shipping unlocked.",
+        "summary_note": "Orders over $500 need a signature on delivery. Log in to earn points on this order.",
+        "empty_heading": "Your bag is empty.",
+        "empty_text": "Start with a bestseller or take the skin analysis.",
+        "empty_image_alt": "Gift sets on a shelf"
+      }
     },
     "cart-checkout-service-strip": {
       "type": "blko-cart-checkout-service-strip",
@@ -10,20 +21,23 @@
       "blocks": {
         "block-1": {
           "type": "note",
-          "settings": {}
+          "settings": {
+            "title": "Free shipping",
+            "text": "over $35"
+          }
         },
         "block-2": {
           "type": "note",
           "settings": {
-            "title": "Easy returns",
-            "text": "within 30 days"
+            "title": "30-day returns",
+            "text": "free in a boutique"
           }
         },
         "block-3": {
           "type": "note",
           "settings": {
-            "title": "Need help?",
-            "text": "We’re here for you"
+            "title": "Earn points",
+            "text": "on every order"
           }
         }
       },

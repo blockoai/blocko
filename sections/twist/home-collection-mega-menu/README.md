@@ -30,7 +30,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `trigger_href` | text | Header link URL that opens this menu | #shop |
 | `eyebrow` | text | Eyebrow | shop by hair goal |
-| `heading` | text | Heading | Find your hair happy place. |
+| `heading` | text | Heading | Where does your hair want to go? |
 
 ## Blocks
 
@@ -39,7 +39,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `url` | url | Url |  |
-| `label` | text | Label | Hair tools |
+| `label` | text | Label | Hair care |
 
 ### Image tile (`tile`, max 4)
 
@@ -48,7 +48,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `url` | url | Url |  |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Heatless curls |
-| `label` | text | Label | Hair tools |
+| `label` | text | Label | Hair care |
 
 ## Dependencies
 

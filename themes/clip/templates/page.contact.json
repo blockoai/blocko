@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Contact",
+        "heading": "Questions about a drop or an order?",
+        "text": "Chat with us during support hours or write a note. We usually reply within three business days.",
+        "link_label": "Open the form"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,31 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "title": "Support",
+            "text": "Orders, returns and product questions.",
+            "url": "mailto:help@example.com",
+            "link_label": "help@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick styling guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Wholesale",
+            "text": "Stock our line in your shop or salon.",
+            "url": "mailto:wholesale@example.com",
+            "link_label": "wholesale@example.com"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Press",
+            "text": "Samples, features and collaborations.",
+            "url": "mailto:press@example.com",
+            "link_label": "press@example.com"
           }
         }
       },
@@ -41,28 +51,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Send a note",
+        "heading": "How can we help?",
+        "text": "Add your order number, if you have one, so we can look it up fast.",
+        "button_label": "Send message"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "An order"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Care guidance"
+            "label": "A returned or damaged item"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "A scent or ingredient"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Wholesale or press"
           }
         }
       },
@@ -75,24 +92,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Live chat",
+        "heading": "When we are online"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Weekdays",
+            "value": "8 AM to 4 PM Pacific"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
             "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "value": "Messages only"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Reply time",
+            "value": "Two to three business days"
           }
         }
       },
@@ -104,7 +127,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Where we are",
+        "heading": "The studio",
+        "text": "Our design and fulfillment team works from a hybrid studio. It is closed to walk-ins, but we host pop-ups through the year.",
+        "city": "Los Angeles, CA",
+        "country": "United States"
+      }
     }
   },
   "order": [

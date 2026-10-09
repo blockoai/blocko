@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `breadcrumb` | text | Breadcrumb | about |
-| `heading` | text | Heading | Made for real life. |
-| `text` | textarea | Text | Little upgrades for the way you wear your hair. |
+| `breadcrumb` | text | Breadcrumb | hair quiz |
+| `heading` | text | Heading | Find your hair match. |
+| `text` | textarea | Text | Four quick questions about your hair and goals, then a routine of bars and styli |
 
 ## Blocks
 

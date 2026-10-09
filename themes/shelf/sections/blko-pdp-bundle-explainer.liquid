@@ -20,6 +20,8 @@
 .blko-theme .blko-search-blog-result h3{font:var(--weight-medium) var(--text-h4)/var(--leading-h3) var(--font-display);margin:.1rem 0}
 .blko-theme .blko-search-blog-article-card h3{font:var(--weight-medium) var(--text-h4)/var(--leading-h3) var(--font-display);margin:.1rem 0}
 .blko-theme .blko-shelf-standards__item h3{margin:.75rem 0 .4rem;color:inherit}
+.blko-theme .blko-shelf-pillars__item h3{margin:0 0 .75rem}
+.blko-theme .blko-shelf-services__item h3{margin:0}
 .blko-theme .blko-brand-traits li{padding:.5rem 1rem;border:1px solid var(--color-border);border-radius:var(--kit-radius-button,999px);background:var(--color-bg-alt);font:var(--weight-medium) var(--text-label)/1 var(--font-accent);letter-spacing:var(--tracking-label);text-transform:var(--kit-label-transform,uppercase)}
 .blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
 .blko-theme .blko-brand-do h3{margin:0 0 .75rem;font:var(--weight-medium) var(--text-label)/var(--leading-label) var(--font-accent);letter-spacing:var(--tracking-label);text-transform:var(--kit-label-transform,uppercase)}
@@ -42,6 +44,9 @@
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 {% endstylesheet %}
 {% schema %}
 {
@@ -51,13 +56,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Simple by design"
+      "default": "How sets work"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Pick your three."
+      "default": "Small sizes, one price."
     }
   ],
   "blocks": [
@@ -93,22 +98,25 @@
       "blocks": [
         {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Pick three minis",
+            "text": "Choose any from the travel and trial sizes on our shelves."
+          }
         },
         {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your set price updates as you select."
+            "heading": "Watch the value line",
+            "text": "We show what the same items would cost bought one by one."
           }
         },
         {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible routine you can return to every day."
+            "heading": "Gift it or keep it",
+            "text": "Add a note at checkout and we ship it ready to hand over."
           }
         }
       ]

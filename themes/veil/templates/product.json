@@ -2,26 +2,67 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Complexion",
+        "price_note": "1 fl oz / 30 ml",
+        "shade_help_label": "Unsure of your shade? Take the finder.",
+        "ship_note": "Free shipping on orders over $50 · Free returns and exchanges"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Sheer, buildable coverage with a dewy natural finish. Wear alone or layer over your favorite care."
+            "text": "Sheer-to-medium cover with a fresh, luminous finish. Fine reflective pigments let your own tone come through while mineral SPF 40 guards against sun and blue light."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
             "label": "Ingredients",
-            "text": "Mineral SPF, lightweight hydration, and skin-conditioning ingredients in a comfortable daily formula."
+            "text": "A silicone-free base of niacinamide, hyaluronic acid, allantoin and squalane from plants, with non-nano zinc oxide as the SPF filter. No fragrance, no gluten."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
             "label": "How to use",
-            "text": "Shake well. Apply a few drops with fingertips, then blend outward. Build where you want a little more coverage."
+            "text": "Shake well, press a half-pipette into your palm and smooth over clean skin. Buff in with a brush for more coverage. Your shade looks lighter at first and settles to true tone in a minute."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-promises": {
+      "type": "blko-pdp-promises",
+      "settings": {
+        "kicker": "Made gently for reactive skin",
+        "quote": "“Makeup that behaves like skincare.”",
+        "author": "— From the formulators"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Safe for sensitive skin",
+            "text": "Dermatologist-tested, non-comedogenic"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Fragrance-free",
+            "text": "No gluten or silicones either"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Vegan and cruelty-free",
+            "text": "No animal ingredients, no animal testing"
           }
         }
       },
@@ -33,110 +74,52 @@
     },
     "pdp-before-after": {
       "type": "blko-pdp-before-after",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Clinical results",
+        "heading": "Visible in a single use.",
+        "text": "In a perception study of 50 wearers, skin looked more comfortable and more even straight away and after four weeks.",
+        "stat_1_value": "100%",
+        "stat_1_label": "said skin felt more moisturized",
+        "stat_2_value": "92%",
+        "stat_2_label": "of sensitive-skin wearers saw no reaction"
+      }
     },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
+    "pdp-ingredients": {
+      "type": "blko-pdp-ingredients",
+      "settings": {
+        "kicker": "Inside the bottle",
+        "heading": "Four actives doing the work"
       },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "pdp-reviews": {
-      "type": "blko-pdp-reviews",
-      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "bar",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Niacinamide",
+            "text": "Helps pores and uneven tone look more refined over time."
+          }
         },
         "block-2": {
-          "type": "bar",
+          "type": "value",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
+            "number": "02",
+            "title": "Hyaluronic acid",
+            "text": "Pulls water into skin so it looks plumper and fresher."
           }
         },
         "block-3": {
-          "type": "bar",
+          "type": "value",
           "settings": {
-            "label": "3 stars",
-            "percent": 4
+            "number": "03",
+            "title": "Allantoin",
+            "text": "Comforts reactive skin and supports a healthy barrier."
           }
         },
         "block-4": {
-          "type": "bar",
+          "type": "value",
           "settings": {
-            "label": "2 stars",
-            "percent": 1
-          }
-        },
-        "block-5": {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {}
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Coverage",
-            "key": "coverage"
-          }
-        },
-        "block-9": {
-          "type": "review",
-          "settings": {
-            "text": "It evens out my complexion while still looking completely natural. I love the light, hydrated finish."
-          }
-        },
-        "block-10": {
-          "type": "review",
-          "settings": {
-            "title": "My everyday base",
-            "text": "Easy to blend with fingers and it stays comfortable through a long day. The shade range made matching simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Fresh, not shiny",
-            "text": "This gives me the glowy finish I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Deep rich · photo review"
+            "number": "04",
+            "title": "Plant squalane",
+            "text": "Seals in moisture and adds slip without clogging pores."
           }
         }
       },
@@ -144,32 +127,160 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-4"
+      ]
+    },
+    "pdp-how-to": {
+      "type": "blko-pdp-how-to",
+      "settings": {
+        "kicker": "How to use it",
+        "heading": "Three moves, one minute"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Pipette dispensing tinted serum",
+            "title": "Shake and dispense",
+            "text": "The formula has no silicones, so it settles; a good shake mixes the pigment back in."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Fingertips smoothing tint onto the cheek",
+            "label": "Step two",
+            "title": "Smooth on like a serum",
+            "text": "Use fingertips for sheer cover, or a dense brush to build toward medium."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Finished complexion in daylight",
+            "label": "Step three",
+            "title": "Let the shade settle",
+            "text": "Color shifts from lighter to true tone within sixty seconds, a cue to apply enough SPF."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you buy"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "What makes this different from a tinted moisturizer?",
+            "text": "Most tinted moisturizers stop at hydration and color. This one adds serum-strength actives and a mineral SPF 40, so it works as skincare, sunscreen and base."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "How much coverage does it give?",
+            "text": "Light to medium with a dewy finish. Apply with fingers for sheer wear or a brush for more."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Can I wear it over skincare?",
+            "text": "Yes, but try it on clean skin first: the SPF is designed to be applied as the final skincare step."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "How do I pick a shade?",
+            "text": "Use the finder for a recommendation, or compare undertone and depth against the shade guide in natural light."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {
+        "eyebrow": "Wear it with",
+        "heading": "Prep, tint, define",
+        "text": "A three-step face built around the tinted serum."
+      }
+    },
+    "pdp-reviews": {
+      "type": "blko-pdp-reviews",
+      "settings": {
+        "eyebrow": "Customer reviews",
+        "average": "4.5",
+        "summary": "Based on 15,988 reviews",
+        "list_heading": "What wearers say"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "review",
+          "settings": {
+            "title": "Lightweight but covers",
+            "text": "It evens me out and still looks like my own skin. No cakiness at midday.",
+            "footer": "Maya L. · 3 weeks ago",
+            "caption": "Light warm · photo review"
+          }
+        },
+        "block-2": {
+          "type": "review",
+          "settings": {
+            "title": "Finally a tint that does not sting",
+            "text": "I react to nearly everything and this was fine from day one. The SPF is a bonus.",
+            "footer": "Priya S. · 1 month ago",
+            "tags": "coverage",
+            "caption": ""
+          }
+        },
+        "block-3": {
+          "type": "review",
+          "settings": {
+            "title": "Shade finder nailed it",
+            "text": "Matched on the first try. I blend a little extra along the jaw in summer.",
+            "footer": "Dana K. · 2 months ago",
+            "tags": "photos",
+            "caption": "Medium neutral · photo review",
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
       ]
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
       "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
     }
   },
   "order": [
     "pdp-product-main",
+    "pdp-promises",
     "pdp-before-after",
+    "pdp-ingredients",
+    "pdp-how-to",
+    "pdp-faq",
     "pdp-complete-routine",
-    "product-recommendations",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-recently-viewed"
   ]
 }

@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Formula guide |
-| `heading` | text | Heading | Ingredients, explained. |
-| `text` | textarea | Text | Search the ingredients behind a comfortable, honest shave. |
+| `eyebrow` | text | Eyebrow | Formula index |
+| `heading` | text | Heading | What is in the bottle, and why. |
+| `text` | textarea | Text | Look up the ingredients behind the gel, cleanser, body wash and balm, and see wh |
 | `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “lather” |
+| `search_placeholder` | text | Search placeholder | Try “aloe” or “cedar” |
 | `note_label` | text | Note label | Read note ↗ |
 | `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Aloe leaf juice |
-| `detail_text` | textarea | Detail text | A botanical humectant that gives formulas a cool, soothing feel. It is especiall |
+| `detail_heading` | text | Detail heading | Volcanic rock |
+| `detail_text` | textarea | Detail text | Finely ground stone that lifts dead skin and loosens trapped hair before shaving |
 | `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Comfort and lather |
+| `best_for` | text | Best for | Ingrown hairs and dull-looking skin |
 | `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Shave and body |
+| `found_in` | text | Found in | Exfoliating face cleanser |
 
 ## Blocks
 

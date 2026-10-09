@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Made for repeat wear |
-| `quote` | text | Quote | “The kind of routine you can do without looking in the mirror twice.” |
-| `author` | text | Author | — Community member |
+| `kicker` | text | Kicker | Reasons four and five |
+| `quote` | text | Quote | “I stopped carrying three products; this tin goes everywhere.” |
+| `author` | text | Author | — Verified buyer |
 
 ## Blocks
 

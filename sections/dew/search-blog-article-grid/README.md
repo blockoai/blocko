@@ -32,8 +32,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | `blog` | blog | Blog |  |
 | `page_size` | range | Stories per page | 6 |
 | `all_label` | text | All label | All |
-| `eyebrow` | text | Eyebrow | More to explore |
-| `heading` | text | Heading | From the journal |
+| `eyebrow` | text | Eyebrow | More films |
+| `heading` | text | Heading | Browse by product or tutorial |
 | `filter_label` | text | Filter label | Filter journal stories |
 | `link_label` | text | Link label | Read the story |
 

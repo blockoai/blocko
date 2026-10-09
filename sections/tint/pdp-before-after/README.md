@@ -29,17 +29,17 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Real shades |
-| `heading` | text | Heading | Your skin, just brighter. |
-| `text` | textarea | Text | A natural-looking wash of color that lets your skin show through. |
-| `stat_1_value` | text | Stat 1 value | 94% |
-| `stat_1_label` | text | Stat 1 label | said it felt weightless |
-| `stat_2_value` | text | Stat 2 value | 91% |
-| `stat_2_label` | text | Stat 2 label | said it blended easily |
+| `eyebrow` | text | Eyebrow | Clinical results |
+| `heading` | text | Heading | Brighter after four weeks. |
+| `text` | textarea | Text | Measured in a study of 100 volunteers over 28 days. Results come from self-asses |
+| `stat_1_value` | text | Stat 1 value | 89% |
+| `stat_1_label` | text | Stat 1 label | agreed the under-eye looked brighter |
+| `stat_2_value` | text | Stat 2 value | 93% |
+| `stat_2_label` | text | Stat 2 label | agreed it felt hydrating all day |
 | `after_image` | image_picker | After image |  |
-| `after_image_alt` | text | After image alt text | Natural complexion after tint |
+| `after_image_alt` | text | After image alt text | Under-eye area after four weeks of use |
 | `before_image` | image_picker | Before image |  |
-| `before_image_alt` | text | Before image alt text | Natural complexion before tint |
+| `before_image_alt` | text | Before image alt text | Under-eye area before use |
 
 ## Blocks
 

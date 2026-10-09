@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
-| `crumb` | text | Crumb | Island Journal |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a sunnier ritual. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for sun, sea and skin. |
+| `crumb` | text | Crumb | Journal |
+| `eyebrow` | text | Eyebrow | The island journal |
+| `heading` | text | Heading | Sun safety, rituals and ingredient stories. |
+| `text` | text | Text | Short reads on staying comfortable outdoors and building a spa evening at home. |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Open magazine and body butter on a beach towel |
 
 ## Blocks
 

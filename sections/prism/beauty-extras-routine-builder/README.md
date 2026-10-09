@@ -29,13 +29,13 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Routine products (one per step) |  |
-| `pick_label` | text | Pick label | Daily pick |
-| `alternate_label` | text | Alternate label | Alternate |
+| `pick_label` | text | Pick label | Go-to pick |
+| `alternate_label` | text | Alternate label | Bigger size |
 | `eyebrow` | text | Eyebrow | Build your system |
-| `heading` | text | Heading | a system, your way. |
-| `text` | textarea | Text | Pick one formula for each step. Your total updates as you go. |
-| `step_text` | text | Step text | A reliable wash-day essential. |
-| `summary_eyebrow` | text | Summary eyebrow | Your three steps |
+| `heading` | text | Heading | Pick a product for each step. |
+| `text` | textarea | Text | Choose a wash, a treatment and a styler, and see your set price update. |
+| `step_text` | text | Step text | A dependable pick for this step. |
+| `summary_eyebrow` | text | Summary eyebrow | Your system |
 | `total_label` | text | Total label | Total |
 | `add_label` | text | Add label | Add system to cart |
 

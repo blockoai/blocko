@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Our standards |
-| `heading` | text | Heading | Good skin begins with the sea. |
-| `lede` | textarea | Lede | We make everyday skin and body care for the rituals that help you feel calm and  |
+| `kicker` | text | Kicker | Our story |
+| `heading` | text | Heading | A family, a coastline and a lot of seaweed. |
+| `lede` | textarea | Lede | Our founder grew up swimming in the Pacific. Decades later, her daughter helped  |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Meet the family |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person on the beach |
+| `image_alt` | text | Image alt text | Founder and daughter on a rocky shore |
 
 ## Blocks
 

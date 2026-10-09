@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Man enjoying a simple shave routine |
-| `kicker` | text | Kicker | A useful kind of grooming |
-| `heading` | text | Heading | Good gear should make getting ready feel easier. |
-| `text` | textarea | Text | Our work starts with the small, practical moments: a razor that feels balanced,  |
+| `image_alt` | text | Image alt text | Combs, scissors and tins laid out on a table |
+| `kicker` | text | Kicker | What we make |
+| `heading` | text | Heading | Thoughtful products for all men. |
+| `text` | textarea | Text | Hundreds of engineers, designers, chemists and craftspeople work on razors, body |
 
 ## Blocks
 

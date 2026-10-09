@@ -2,11 +2,23 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Skincare routine finder",
+        "heading": "Build your routine in three steps.",
+        "text": "Choose a cleanser, a treatment and a moisturizer, and see the total with your set saving.",
+        "step_text": "A core step for this stage.",
+        "summary_eyebrow": "Your routine",
+        "add_label": "Add routine to bag",
+        "pick_label": "Core pick",
+        "alternate_label": "Upgrade"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Often paired",
+        "heading": "Add a finishing touch"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -27,7 +39,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [

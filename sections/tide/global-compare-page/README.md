@@ -47,7 +47,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `name` | text | Name | Sun lotion |
+| `name` | text | Name | Body oil |
 | `finish` | text | Finish | Natural |
 | `coverage` | text | Coverage | Hydration |
 | `best_for` | text | Best for | Everyday protection |

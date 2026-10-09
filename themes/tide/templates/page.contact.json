@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Customer care",
+        "heading": "We read every message.",
+        "text": "Questions about an order, your skin or a subscription? Write to us and expect a reply within one to three business days.",
+        "link_label": "Send a message"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,30 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "text": "Orders, returns and product questions.",
+            "url": "mailto:care@example.com",
+            "link_label": "care@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Live chat",
+            "text": "Chat with a skin care guide during support hours.",
+            "url": "#chat",
+            "link_label": "Start a chat"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Wholesale + partnerships",
+            "text": "Spa partners, creators and referral partners.",
+            "url": "mailto:partners@example.com",
+            "link_label": "partners@example.com"
           }
         }
       },
@@ -41,28 +50,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Write to us",
+        "heading": "How can we help?",
+        "text": "Share your order number if you have one so we can answer faster.",
+        "button_label": "Send message"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "My order or shipping"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product guidance"
+            "label": "Choosing a product"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Subscription or rewards"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Wholesale"
           }
         }
       },
@@ -75,24 +91,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Availability",
+        "heading": "Support hours"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Weekdays",
+            "value": "8 AM to 5 PM Pacific"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
             "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "value": "Email only"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Reply time",
+            "value": "One to three business days"
           }
         }
       },
@@ -104,7 +126,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Visit the studio",
+        "heading": "Our treatment studio",
+        "text": "Book a facial or pick up a gift card at our coastal studio. It also runs our recycling program for empty bottles.",
+        "city": "Venice, CA",
+        "country": "United States"
+      }
     }
   },
   "order": [

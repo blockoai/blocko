@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Get in touch |
-| `heading` | text | Heading | We’re here to help you find your way. |
-| `text` | textarea | Text | Questions about an order, a product, or your routine? Leave a note and our care  |
+| `kicker` | text | Kicker | Contact |
+| `heading` | text | Heading | Talk to a human who likes soap. |
+| `text` | textarea | Text | Questions about an order, a subscription or which bar to try? Send a note and ou |
 | `link` | url | Link |  |
 | `link_label` | text | Link label | Write to us |
 

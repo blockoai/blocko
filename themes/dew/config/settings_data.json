@@ -203,12 +203,12 @@
     "color_swatch_blush": "#f2d2d6",
     "color_swatch_rose": "#e9b3c0",
     "color_swatch_berry": "#b4506a",
-    "color_swatch_clay": "#bb856c",
-    "color_swatch_mocha": "#8a5a40",
-    "color_swatch_cocoa": "#4e3328",
+    "color_swatch_clay": "#d29a7c",
+    "color_swatch_mocha": "#7a5638",
+    "color_swatch_cocoa": "#42292a",
     "color_swatch_light": "#f0d8c8",
-    "color_swatch_medium": "#bb856c",
-    "color_swatch_deep": "#91584b",
+    "color_swatch_medium": "#d29a7c",
+    "color_swatch_deep": "#9c5a4b",
     "blocko_api_base": "/apps/blocko",
     "logo_width": 128
   }

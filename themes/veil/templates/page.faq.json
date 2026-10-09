@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help center",
+        "heading": "Answers to the things people ask first.",
+        "text": "Search by topic or browse orders, products and the members club."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “exchange” or “undertone”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -22,58 +28,61 @@
         "block-3": {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "formulas",
+            "label": "Formulas"
           }
         },
         "block-4": {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "club",
+            "label": "Members club"
           }
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "question": "How long does delivery take?",
+            "answer": "Standard shipping arrives in three to five business days. Subscription refills ship on the date you chose."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "question": "Can I return an opened product?",
+            "answer": "Yes, shade and formula exchanges are free within thirty days, opened or not."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "category": "formulas",
+            "question": "Are the formulas safe for sensitive skin?",
+            "answer": "Each formula is tested on sensitive skin and free of fragrance, gluten and silicones."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "category": "formulas",
+            "question": "Is the tinted serum a sunscreen?",
+            "answer": "It contains SPF 40 with a non-nano mineral filter. Apply the recommended amount for the stated protection."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "club",
+            "question": "How do I redeem points?",
+            "answer": "Choose a reward at checkout and your balance updates immediately."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "club",
+            "question": "Do points transfer between accounts?",
+            "answer": "No, points belong to the account that earned them."
           }
         }
       },
@@ -92,7 +101,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [

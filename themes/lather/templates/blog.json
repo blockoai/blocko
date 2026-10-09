@@ -2,15 +2,29 @@
   "sections": {
     "search-blog-journal-hero": {
       "type": "blko-search-blog-journal-hero",
-      "settings": {}
+      "settings": {
+        "crumb": "The Locker Room",
+        "eyebrow": "The Locker Room",
+        "heading": "Grooming advice without the smoke and mirrors.",
+        "text": "Question-style guides on skin, hair, scent and the outdoors, written by the crew.",
+        "image_alt": "Two men talking in a gym locker room"
+      }
     },
     "search-blog-featured-post": {
       "type": "blko-search-blog-featured-post",
-      "settings": {}
+      "settings": {
+        "eyebrow_prefix": "Pick of the week",
+        "reading_time": "6 minutes",
+        "button_label": "Read it"
+      }
     },
     "search-blog-article-grid": {
       "type": "blko-search-blog-article-grid",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Browse by topic",
+        "heading": "More from the locker room",
+        "link_label": "Read it"
+      }
     },
     "search-blog-pagination": {
       "type": "blko-search-blog-pagination",
@@ -18,7 +32,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [

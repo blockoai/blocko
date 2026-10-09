@@ -14,7 +14,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Sets that save",
+        "heading": "Ready-made sets"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

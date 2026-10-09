@@ -2,7 +2,16 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Formula index",
+        "heading": "What is in the bottle, and why.",
+        "text": "Look up the ingredients behind the gel, cleanser, body wash and balm, and see where each one is used.",
+        "search_placeholder": "Try “aloe” or “cedar”",
+        "detail_heading": "Volcanic rock",
+        "detail_text": "Finely ground stone that lifts dead skin and loosens trapped hair before shaving. It sits in the cleanser, never in products that stay on skin.",
+        "best_for": "Ingrown hairs and dull-looking skin",
+        "found_in": "Exfoliating face cleanser"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -13,71 +22,75 @@
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Lather",
-            "key": "hydration"
+            "label": "Shave",
+            "key": "shave"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Soothing",
-            "key": "barrier"
+            "label": "Face",
+            "key": "face"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Cooling",
-            "key": "sun"
+            "label": "Body",
+            "key": "body"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "name": "Aloe",
+            "detail": "Cools skin and eases the sting after a close shave",
+            "tags": "shave"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
+            "letter": "G",
             "name": "Glycerin",
-            "detail": "Helps the gel glide",
-            "tags": "soothing glide"
+            "detail": "A humectant that keeps skin soft and holds a lather together",
+            "tags": "shave face"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Shea butter",
-            "detail": "Adds lightweight moisture",
-            "tags": "hydration"
+            "letter": "N",
+            "name": "Niacinamide",
+            "detail": "Calms redness and smooths the look of tone",
+            "tags": "face"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Menthol",
-            "detail": "Gives a cool, fresh feel",
-            "tags": "brightening"
+            "letter": "S",
+            "name": "Shea butter",
+            "detail": "A rich plant fat that cushions dry patches",
+            "tags": "body"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Coconut-derived cleanser",
-            "detail": "Builds a rich, easy lather",
-            "tags": "nourishing"
+            "letter": "V",
+            "name": "Volcanic rock",
+            "detail": "A gentle physical exfoliant for prep before the blade",
+            "tags": "face"
           }
         },
         "block-10": {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Witch hazel",
-            "detail": "A calming plant extract",
-            "tags": "cooling"
+            "letter": "E",
+            "name": "Eucalyptus",
+            "detail": "A cooling, clean scent note in the face cleanser",
+            "tags": "face body"
           }
         }
       },
@@ -96,11 +109,21 @@
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Shave foam being applied",
+        "eyebrow": "Our standard",
+        "heading": "No parabens. No sulfates. No guessing.",
+        "text": "Each formula is dermatologist tested and listed in full here. Scents come from a family-run fragrance house and are shared across body wash, soap and deodorant.",
+        "button_label": "Browse scents"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [

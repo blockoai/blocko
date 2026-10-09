@@ -27,10 +27,10 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `pill` | text | Pill | Save 15% |
-| `heading` | text | Heading | Subscribe once. Stay topped up. |
-| `text` | textarea | Text | Choose your favourites, pick how often they arrive, and change or pause whenever |
-| `button_label` | text | Button label | Start a subscription |
+| `pill` | text | Pill | Save 10% |
+| `heading` | text | Heading | Subscribe, save and never run out |
+| `text` | textarea | Text | Pick a favorite, choose delivery every one to four months and enjoy a lower pric |
+| `button_label` | text | Button label | Browse subscription picks |
 | `button_url` | url | Button url |  |
 
 ## Blocks

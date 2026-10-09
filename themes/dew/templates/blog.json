@@ -2,15 +2,28 @@
   "sections": {
     "search-blog-journal-hero": {
       "type": "blko-search-blog-journal-hero",
-      "settings": {}
+      "settings": {
+        "crumb": "Vlog",
+        "eyebrow": "Films and how-tos",
+        "heading": "Get to know every product on the shelf.",
+        "text": "Short videos on each formula, routine edits, tutorials and recaps from our events.",
+        "image_alt": "Person applying lip tint in a bright studio"
+      }
     },
     "search-blog-featured-post": {
       "type": "blko-search-blog-featured-post",
-      "settings": {}
+      "settings": {
+        "eyebrow_prefix": "Newest film",
+        "reading_time": "3 minutes",
+        "button_label": "Watch and read"
+      }
     },
     "search-blog-article-grid": {
       "type": "blko-search-blog-article-grid",
-      "settings": {}
+      "settings": {
+        "eyebrow": "More films",
+        "heading": "Browse by product or tutorial"
+      }
     },
     "search-blog-pagination": {
       "type": "blko-search-blog-pagination",
@@ -18,7 +31,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [

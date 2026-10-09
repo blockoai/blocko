@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Face with a bright flush and soft lids",
+        "kicker": "Five reasons",
+        "heading": "Why one cream balm replaces your whole blush drawer.",
+        "text": "A short guide for anyone who wants a quick routine and a lighter bag.",
+        "button_label": "See the reasons"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-promises": {
+      "type": "blko-landing-promises",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "ONE TIN"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "NOTHING TO MASTER"
+            "text": "CHEEKS, LIDS, LIPS"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "FREE SHADE MATCHING"
+            "text": "FIFTEEN SHADES"
           }
         }
       },
@@ -33,28 +41,36 @@
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "Reasons one to three",
+        "heading": "It does more than you expect"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Balm tin open beside a brush",
+            "label": "Reason one",
+            "title": "One product, three jobs",
+            "text": "Dab it on cheeks, lids and lips for a matching, effortless face."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Tinted beauty product",
-            "label": "Step two",
-            "title": "Add a sheer tint",
-            "text": "Build coverage only where you want a little more."
+            "image_alt": "Finger swirling balm in a tin",
+            "label": "Reason two",
+            "title": "It blends with fingers",
+            "text": "No tools, no mirror drama; the cream warms and melts in seconds."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Makeup products on a table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A wash of color is enough to make it yours."
+            "image_alt": "Dewy cheek with pink flush",
+            "label": "Reason three",
+            "title": "It looks like skin",
+            "text": "A sheer, glowing finish that flatters every age and tone."
           }
         }
       },
@@ -64,19 +80,24 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "Shop the guide",
+        "heading": "Pair it with"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Pairs well"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New",
-            "key": "new"
+            "key": "new",
+            "label": "Kits"
           }
         }
       },
@@ -87,24 +108,31 @@
     },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
+      "settings": {
+        "kicker": "Reasons four and five",
+        "quote": "“I stopped carrying three products; this tin goes everywhere.”",
+        "author": "— Verified buyer"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "Travel friendly",
+            "text": "Fits a pocket or a pouch"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "Fifteen shades",
+            "text": "From fair to deep"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "Quiz-matched",
+            "text": "Free help choosing"
           }
         }
       },
@@ -114,55 +142,21 @@
         "block-3"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "category",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "category",
-          "settings": {
-            "title": "Eyes",
-            "url": "#eyes"
-          }
-        },
-        "block-3": {
-          "type": "category",
-          "settings": {
-            "title": "Lips",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Skin prep",
-            "url": "#care"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
+    "landing-promises",
     "content-landing-routine",
-    "tabbed-product-grid",
+    "landing-picks",
     "content-landing-proof",
-    "category-slider",
     "newsletter"
   ]
 }

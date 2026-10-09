@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Beauty routine |
-| `eyebrow` | text | Eyebrow | Our philosophy |
-| `heading` | text | Heading | soft essentials, made well. |
-| `text` | textarea | Text | Soft, high-performance essentials you reach for every day, with barrier-friendly |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Cream smeared on a stone dish |
+| `eyebrow` | text | Eyebrow | Our rule |
+| `heading` | text | Heading | Fewer, better-chosen ingredients. |
+| `text` | textarea | Text | Each formula is built around a few actives with clinical backing. Full lists and |
+| `button_label` | text | Button label | Meet the advisors |
 | `button_url` | url | Button url |  |
 
 ## Blocks

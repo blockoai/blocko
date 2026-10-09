@@ -291,19 +291,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Find us nearby"
+      "default": "Find a store"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "See it in person."
+      "default": "Swatch before you buy."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Choose a country to see a selection of participating stockists."
+      "default": "Search by city or region to see shops that carry the full shade range. No match nearby shows the closest regional stockists."
     },
     {
       "type": "text",
@@ -327,7 +327,7 @@
       "type": "text",
       "id": "directions_label",
       "label": "Directions label",
-      "default": "Directions"
+      "default": "Get directions"
     }
   ],
   "blocks": [
@@ -387,7 +387,9 @@
       "blocks": [
         {
           "type": "country",
-          "settings": {}
+          "settings": {
+            "label": "All regions"
+          }
         },
         {
           "type": "country",
@@ -399,8 +401,8 @@
         {
           "type": "country",
           "settings": {
-            "value": "ca",
-            "label": "Canada"
+            "value": "au",
+            "label": "Australia"
           }
         },
         {
@@ -412,29 +414,32 @@
         },
         {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Pastel Beauty Hall",
+            "place": "Los Angeles, CA"
+          }
         },
         {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "The Blend Bar",
+            "place": "Chicago, IL"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "country": "au",
+            "name": "Colorbox Beauty",
+            "place": "Sydney, NSW"
           }
         },
         {
           "type": "store",
           "settings": {
             "country": "uk",
-            "name": "Field & Form",
+            "name": "Rosewater Counter",
             "place": "London"
-          }
-        },
-        {
-          "type": "store",
-          "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
           }
         }
       ]

@@ -29,13 +29,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Real results |
-| `heading` | text | Heading | Skin that looks rested. |
-| `text` | textarea | Text | Visible radiance from the first week, with organic ingredients you can trust. |
+| `eyebrow` | text | Eyebrow | What testing showed |
+| `heading` | text | Heading | Makeup with measurable skin benefits. |
+| `text` | textarea | Text | Results come from a consumer panel after four weeks of daily wear, with lab test |
 | `stat_1_value` | text | Stat 1 value | 94% |
-| `stat_1_label` | text | Stat 1 label | saw a visible glow |
-| `stat_2_value` | text | Stat 2 value | 91% |
-| `stat_2_label` | text | Stat 2 label | said skin felt softer |
+| `stat_1_label` | text | Stat 1 label | felt skin was more hydrated |
+| `stat_2_value` | text | Stat 2 value | 89% |
+| `stat_2_label` | text | Stat 2 label | saw a brighter-looking complexion |
 | `after_image` | image_picker | After image |  |
 | `after_image_alt` | text | After image alt text | Radiant complexion after |
 | `before_image` | image_picker | Before image |  |

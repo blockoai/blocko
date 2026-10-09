@@ -2,7 +2,11 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Find it in a store",
+        "heading": "Smell it before you buy it.",
+        "text": "Search by country to see shelves that carry our bars, wash and deodorant. Nothing near you? We will tell you when that changes."
+      },
       "blocks": {
         "block-1": {
           "type": "country",
@@ -25,35 +29,38 @@
         "block-4": {
           "type": "country",
           "settings": {
-            "value": "uk",
-            "label": "United Kingdom"
+            "value": "au",
+            "label": "Australia"
           }
         },
         "block-5": {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Northwoods Outfitters",
+            "place": "Denver, CO"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Corner Pharmacy",
+            "place": "Columbus, OH"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "country": "ca",
+            "name": "Cedar Supply Co.",
+            "place": "Calgary, AB"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "au",
+            "name": "Bondi General Store",
+            "place": "Sydney, NSW"
           }
         }
       },
@@ -68,13 +75,43 @@
         "block-8"
       ]
     },
+    "product-recommendations": {
+      "type": "blko-product-recommendations",
+      "settings": {
+        "eyebrow": "Add to your box",
+        "heading": "Guys also grab these"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [
     "beauty-extras-stockist-locator",
+    "product-recommendations",
     "newsletter"
   ]
 }

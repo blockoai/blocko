@@ -29,17 +29,17 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Real reviews |
-| `heading` | text | Heading | Your hair, happily smoother. |
-| `text` | textarea | Text | A soft, shiny finish with less frizz and way fewer tangles. |
-| `stat_1_value` | text | Stat 1 value | 94% |
-| `stat_1_label` | text | Stat 1 label | said it cut frizz |
-| `stat_2_value` | text | Stat 2 value | 91% |
-| `stat_2_label` | text | Stat 2 label | said they woke up with smoother hair |
+| `eyebrow` | text | Eyebrow | tested on real hair |
+| `heading` | text | Heading | Thicker-looking hair in five washes. |
+| `text` | textarea | Text | In a 90-day consumer study of 40 volunteers, hair looked fuller after five washe |
+| `stat_1_value` | text | Stat 1 value | 20% |
+| `stat_1_label` | text | Stat 1 label | more visible volume after five washes |
+| `stat_2_value` | text | Stat 2 value | 100 |
+| `stat_2_label` | text | Stat 2 label | washes in a single bar |
 | `after_image` | image_picker | After image |  |
-| `after_image_alt` | text | After image alt text | Smooth hair after a night on satin |
+| `after_image_alt` | text | After image alt text | Fuller-looking hair after five washes |
 | `before_image` | image_picker | Before image |  |
-| `before_image_alt` | text | Before image alt text | Frizzy hair after a night on cotton |
+| `before_image_alt` | text | Before image alt text | Hair before five washes |
 
 ## Blocks
 

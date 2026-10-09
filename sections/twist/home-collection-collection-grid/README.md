@@ -32,16 +32,16 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
 | `products_per_page` | range | Products per page | 4 |
-| `empty_text` | text | Empty text | No products match these filters. |
+| `empty_text` | text | Empty text | Nothing matches those filters yet. |
 | `quick_label` | text | Quick label | quick shop |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Person showing off a heatless curl set |
-| `promo_eyebrow` | text | Promo eyebrow | build a box |
-| `promo_heading` | text | Promo heading | Pick any 4 and save 25%. |
+| `promo_image_alt` | text | Promo image alt text | Smiling person with defined curls |
+| `promo_eyebrow` | text | Promo eyebrow | not sure what to grab? |
+| `promo_heading` | text | Promo heading | Let the quiz pick a routine. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | start building |
+| `promo_label` | text | Promo label | take the hair quiz |
 | `load_more_label` | text | Load more label | load more |
-| `previous_label` | text | Previous label | previous page |
+| `previous_label` | text | Previous label | load previous |
 
 ## Blocks
 

@@ -2,15 +2,30 @@
   "sections": {
     "page-header": {
       "type": "blko-page-header",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shade quiz",
+        "heading": "Find your stick shade.",
+        "text": "Three short questions about depth, undertone and finish point you to a number and letter code, free to retake any time."
+      }
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "Question one",
+        "heading_1": "How deep is your skin?",
+        "text_1": "Check your jawline in daylight without any makeup on.",
+        "eyebrow_2": "Question two",
+        "heading_2": "Which undertone sounds like you?",
+        "eyebrow_3": "Question three",
+        "heading_3": "What finish do you want?",
+        "finish_label": "Show my shade"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Fair"
+          }
         },
         "block-2": {
           "type": "tone",
@@ -23,57 +38,59 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Tan",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Deep",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "label": "Cool (C)",
+            "hint": "Pink or red flush, silver suits you",
             "selected": true
           }
         },
         "block-6": {
           "type": "undertone",
           "settings": {
-            "label": "Neutral",
-            "hint": "A balanced mix"
+            "label": "Neutral (N)",
+            "hint": "Neither gold nor silver stands out"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
-            "label": "Warm",
-            "hint": "Golden or peach tones"
+            "label": "Warm (W)",
+            "hint": "Golden or olive glow, gold suits you"
           }
         },
         "block-8": {
           "type": "coverage",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
+            "label": "Dewy glow",
+            "hint": "Fresh skin that catches light",
             "selected": true
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "Soft satin",
+            "hint": "Smooth with a gentle sheen"
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Natural matte",
+            "hint": "Calm, even and shine-free"
           }
         }
       },
@@ -92,7 +109,14 @@
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Your match",
+        "heading": "Start with these two codes.",
+        "text": "Swatch both on your jawline in daylight. The right one disappears into your skin.",
+        "button_label": "Add my match",
+        "card_eyebrow": "Multi-use stick",
+        "card_detail": "Creamy · certified organic"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +135,32 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "shade-faq": {
+      "type": "blko-shade-faq",
+      "settings": {
+        "eyebrow": "Shade help",
+        "heading": "Reading the codes"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "What do the number and letter mean?",
+            "text": "The number is depth from 01 (fairest) to 10 (deepest). The letter is undertone: cool, neutral or warm."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Can I mix two shades?",
+            "text": "Yes. Blend a lighter and a deeper stick on the back of your hand to fine-tune."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "What if my shade changes in summer?",
+            "text": "Retake the quiz or add a deeper stick to shape. Exchanges are open for thirty days."
           }
         }
       },
@@ -140,14 +172,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [
     "page-header",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
+    "shade-faq",
     "newsletter"
   ]
 }

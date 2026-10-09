@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help center",
+        "heading": "Answers before you need to ask.",
+        "text": "Browse orders, razors, subscriptions and skin care, or search for a word."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “cartridge” or “cancel”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -22,58 +28,61 @@
         "block-3": {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "razors",
+            "label": "Razors"
           }
         },
         "block-4": {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "subs",
+            "label": "Subscriptions"
           }
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "question": "When does an order ship?",
+            "answer": "Most orders leave within two business days, and shipping is free once you pass $30."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "question": "What is the money-back guarantee?",
+            "answer": "Return anything within 30 days for a full refund, used or unused."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I choose a scent?",
-            "answer": "Start with the starter set, then compare scents. Our team can offer general guidance."
+            "category": "razors",
+            "question": "Which refills fit my handle?",
+            "answer": "Count the blades. Five means Razor Pro, four means Razor Classic. Lines do not mix."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "category": "razors",
+            "question": "How do I make a cartridge last longer?",
+            "answer": "Rinse after each pass, shake it dry, and store the handle upright on a stand."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "subs",
+            "question": "Can I skip a shipment?",
+            "answer": "Yes, from your account before the ship date."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "subs",
+            "question": "Do I have to subscribe to try a razor?",
+            "answer": "No. The starter set is a one-time purchase, and subscribing only adds savings."
           }
         }
       },
@@ -92,7 +101,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [

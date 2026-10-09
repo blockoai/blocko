@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Wrapped soap bar with scattered petals",
+        "kicker": "Current offers",
+        "heading": "Every promotion running right now.",
+        "text": "Double points, gifts with purchase, refill savings and service credits, all in one list. One discount code per order.",
+        "button_label": "Shop the offers"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "offers-rules": {
+      "type": "blko-offers-rules",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "ONE CODE PER ORDER"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SAFETY TESTED"
+            "text": "MARKDOWNS ARE FINAL SALE"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "RESPONSIBLY SOURCED"
+            "text": "GIFT CARDS EXCLUDED"
           }
         }
       },
@@ -31,30 +39,38 @@
         "block-3"
       ]
     },
-    "content-landing-routine": {
-      "type": "blko-content-landing-routine",
-      "settings": {},
+    "offers-deals": {
+      "type": "blko-offers-deals",
+      "settings": {
+        "kicker": "Running now",
+        "heading": "Three ways to get more"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Smiling woman in a yellow dress on a salt flat",
+            "label": "Limited time",
+            "title": "Double points",
+            "text": "Earn points at twice your usual rate on every eligible order until the window closes."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Tinted beauty product",
-            "label": "Step two",
-            "title": "Add a sheer tint",
-            "text": "Build coverage only where you want a little more."
+            "image_alt": "Open powder compact with a hexagonal case",
+            "label": "Online only",
+            "title": "Gift with purchase",
+            "text": "Spend $50 on a participating brand and a free extra arrives in the box while supplies last."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Clean beauty products on a table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A wash of color is enough to make it yours."
+            "image_alt": "Amber jar of cream beside a diffuser",
+            "label": "Always on",
+            "title": "Auto-replenish",
+            "text": "10% off your first refill, 5% on repeats and 10% when you set up three or more items."
           }
         }
       },
@@ -64,19 +80,24 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "offers-picks": {
+      "type": "blko-offers-picks",
+      "settings": {
+        "eyebrow": "Deals this week",
+        "heading": "Markdowns and gift picks"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Up to 50% off"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "Gifts with purchase"
           }
         }
       },
@@ -85,26 +106,33 @@
         "block-2"
       ]
     },
-    "content-landing-proof": {
-      "type": "blko-content-landing-proof",
-      "settings": {},
+    "offers-points": {
+      "type": "blko-offers-points",
+      "settings": {
+        "kicker": "Club offers",
+        "quote": "“I stack double-points weeks with my refill orders.”",
+        "author": "— Club member"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "Pay with points",
+            "text": "$10 off for 500, $20 off for 1,000"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "Service credit",
+            "text": "Facials and lessons come back as store credit"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "Final sale",
+            "text": "Markdowns of up to half off"
           }
         }
       },
@@ -114,33 +142,38 @@
         "block-3"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "offers-more": {
+      "type": "blko-offers-more",
+      "settings": {
+        "heading": "More ways to save"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "title": "Gifts under $30",
+            "url": "#under-30"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Makeup",
-            "url": "#eyes"
+            "title": "Gifts under $50",
+            "url": "#under-50"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Body",
-            "url": "#lips"
+            "title": "Travel + trial",
+            "url": "#minis"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Body",
-            "url": "#care"
+            "title": "Gift sets",
+            "url": "#gifts"
           }
         }
       },
@@ -153,16 +186,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
-    "content-landing-routine",
-    "tabbed-product-grid",
-    "content-landing-proof",
-    "category-slider",
+    "offers-rules",
+    "offers-deals",
+    "offers-picks",
+    "offers-points",
+    "offers-more",
     "newsletter"
   ]
 }

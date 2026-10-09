@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Get in touch",
+        "heading": "Reach the care team",
+        "text": "Use the chat in the corner for the fastest reply, or email us below.",
+        "link_label": "Open chat"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,31 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "title": "General",
+            "text": "Orders, shades and product questions. Answers usually arrive the next working day.",
+            "url": "mailto:artistdesk@example.com",
+            "link_label": "artistdesk@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
-            "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "icon": "↗",
+            "title": "Press and partnerships",
+            "text": "Samples, features and collaborations.",
+            "url": "mailto:mediadesk@example.com",
+            "link_label": "mediadesk@example.com"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
-            "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "icon": "○",
+            "title": "Events and stores",
+            "text": "Private events and store appointments.",
+            "url": "mailto:storeevents@example.com",
+            "link_label": "storeevents@example.com"
           }
         }
       },
@@ -39,60 +49,32 @@
         "block-3"
       ]
     },
-    "content-contact-form": {
-      "type": "blko-content-contact-form",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "topic",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "topic",
-          "settings": {
-            "label": "Product guidance"
-          }
-        },
-        "block-3": {
-          "type": "topic",
-          "settings": {
-            "label": "Press or partnerships"
-          }
-        },
-        "block-4": {
-          "type": "topic",
-          "settings": {
-            "label": "Something else"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Reply window",
+        "heading": "Support hours"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Weekdays",
+            "value": "9 AM to 6 PM Eastern"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
             "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "value": "Chat only, until 4 PM"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Typical reply",
+            "value": "By the next working day"
           }
         }
       },
@@ -101,17 +83,11 @@
         "block-2",
         "block-3"
       ]
-    },
-    "content-contact-map": {
-      "type": "blko-content-contact-map",
-      "settings": {}
     }
   },
   "order": [
     "content-contact-hero",
     "content-contact-channels",
-    "content-contact-form",
-    "content-contact-hours",
-    "content-contact-map"
+    "content-contact-hours"
   ]
 }

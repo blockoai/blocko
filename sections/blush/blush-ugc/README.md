@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Make it yours |
-| `heading` | text | Heading | Bare skin, your colour. |
+| `heading` | text | Heading | Layer it, engrave it, wear it your way. |
 
 ## Blocks
 

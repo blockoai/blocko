@@ -261,6 +261,13 @@
 .blko-theme .blko-shelf-clean h2{margin:0 0 .5rem}
 .blko-theme .blko-shelf-visit__body h2{margin:0 0 .5rem}
 .blko-theme .blko-shelf-visit__body p{margin:0 0 1.25rem}
+.blko-theme .blko-shelf-pillars h2{margin:0 0 .5rem}
+.blko-theme .blko-shelf-pillars__item h3{margin:0 0 .75rem}
+.blko-theme .blko-shelf-pillars__item p{margin:0 0 .6rem}
+.blko-theme .blko-shelf-services h2{margin:0 0 .5rem}
+.blko-theme .blko-shelf-services__item h3{margin:0}
+.blko-theme .blko-shelf-services__item p{margin:0}
+.blko-theme .blko-shelf-services__item .blko-button{margin-top:.75rem;justify-self:start}
 .blko-theme .blko-shelf-rewards .blko-shelf-eyebrow{color:var(--color-bg);opacity:.85}
 .blko-theme .blko-shelf-rewards h2{margin:0 0 .4rem;color:var(--color-bg)}
 .blko-theme .blko-shelf-rewards p{margin:0;color:var(--color-bg)}
@@ -372,6 +379,18 @@
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-pagination span.is-active{display:inline-block;border-width:1px;border-style:solid;padding:.55rem .75rem}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-pagination span.is-active{display:inline-block;border-width:1px;border-style:solid;padding:.55rem .75rem}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-pagination span.is-active{display:inline-block;border-width:1px;border-style:solid;padding:.55rem .75rem}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -381,79 +400,79 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Formula dictionary"
+      "default": "Ingredient library"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Ingredients, explained."
+      "default": "What we won't stock, and why."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Search the ingredients behind a comfortable, considered routine."
+      "default": "A growing list of ingredients we prohibit or restrict, with plain explanations of the science and the reasoning. Jump by letter or search by name."
     },
     {
       "type": "text",
       "id": "search_label",
       "label": "Search label",
-      "default": "Search ingredients"
+      "default": "Search the library"
     },
     {
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “hydration”"
+      "default": "Try “formaldehyde”"
     },
     {
       "type": "text",
       "id": "note_label",
       "label": "Note label",
-      "default": "Read note ↗"
+      "default": "Open entry ↗"
     },
     {
       "type": "text",
       "id": "detail_eyebrow",
       "label": "Detail eyebrow",
-      "default": "Ingredient detail"
+      "default": "Entry"
     },
     {
       "type": "text",
       "id": "detail_heading",
       "label": "Detail heading",
-      "default": "Aloe leaf juice"
+      "default": "Hydroquinone"
     },
     {
       "type": "textarea",
       "id": "detail_text",
       "label": "Detail text",
-      "default": "A botanical humectant that gives formulas a cool, soothing feel. It is especially welcome in a routine when skin needs a little ease."
+      "default": "A skin-lightening agent. In many regions it is prescription-only because of irritation and long-term safety concerns, so we keep it out of over-the-counter formulas entirely."
     },
     {
       "type": "text",
       "id": "best_for_label",
       "label": "Best for label",
-      "default": "Best for"
+      "default": "Reason listed"
     },
     {
       "type": "text",
       "id": "best_for",
       "label": "Best for",
-      "default": "Comfort and hydration"
+      "default": "Human health"
     },
     {
       "type": "text",
       "id": "found_in_label",
       "label": "Found in label",
-      "default": "Found in"
+      "default": "Status"
     },
     {
       "type": "text",
       "id": "found_in",
       "label": "Found in",
-      "default": "Skin and care"
+      "default": "Prohibited"
     }
   ],
   "blocks": [
@@ -526,71 +545,68 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Prohibited",
+            "key": "prohibited"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
-          }
-        },
-        {
-          "type": "filter",
-          "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Restricted",
+            "key": "restricted"
           }
         },
         {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "name": "Aluminum powder",
+            "detail": "Metallic pigment; restricted by purity and inhalation concerns",
+            "tags": "restricted"
+          }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "F",
+            "name": "Formaldehyde",
+            "detail": "Preservative and releasers; prohibited for irritation and cancer risk",
+            "tags": "prohibited"
           }
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "name": "Hydroquinone",
+            "detail": "Skin-lightening agent; prescription-only in many places",
+            "tags": "prohibited"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "M",
+            "name": "Methylene chloride",
+            "detail": "Industrial solvent; prohibited for toxicity",
+            "tags": "prohibited"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "letter": "P",
+            "name": "Parabens",
+            "detail": "Preservatives; limited to short-chain types at low levels",
+            "tags": "restricted"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "T",
+            "name": "Talc",
+            "detail": "Mineral powder; allowed only with proof of asbestos-free testing",
+            "tags": "restricted"
           }
         }
       ]

@@ -2,71 +2,66 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "Cleaning up the shower shelf.",
+        "lede": "Most grooming products are a list of things you cannot pronounce. We wanted a bar of soap you could explain to your grandfather.",
+        "button_label": "Meet the founder",
+        "image_alt": "A bearded man holding a stack of soap bars"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
-    },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "value",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "value",
-          "settings": {
-            "number": "02",
-            "title": "Keep sniffing",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
-          }
-        },
-        "block-3": {
-          "type": "value",
-          "settings": {
-            "number": "03",
-            "title": "Say it loudly",
-            "text": "Straight talk and clear labels help you choose what belongs in your shower."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
+      "settings": {
+        "image_alt": "A man washing his face at a mountain stream",
+        "kicker": "The problem",
+        "heading": "Personal care got complicated for no good reason.",
+        "text": "Walk down any aisle and half the labels read like a chemistry exam. We think a daily wash should use ingredients you trust, smell like somewhere you would rather be and cost about the same as a coffee."
+      }
     },
     "content-founder-note": {
       "type": "blko-content-founder-note",
-      "settings": {}
+      "settings": {
+        "kicker": "From the garage",
+        "quote": "“I started with a stockpot, a few oils and a stubborn idea that soap could smell like the outdoors.”",
+        "note": "Founder placeholder text: the person who began with a garage batch and grew it into a nationwide line.",
+        "name": "Founder name",
+        "role": "Founder",
+        "image_alt": "Founder pouring soap into a wooden mold"
+      }
     },
     "content-story-timeline": {
       "type": "blko-content-story-timeline",
-      "settings": {},
+      "settings": {
+        "kicker": "How we got here",
+        "heading": "From one pot to a whole aisle."
+      },
       "blocks": {
         "block-1": {
           "type": "milestone",
-          "settings": {}
+          "settings": {
+            "label": "Year one",
+            "datetime": "2012",
+            "title": "Garage batches",
+            "text": "The first bars are cut by hand and sold at local fairs."
+          }
         },
         "block-2": {
           "type": "milestone",
           "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "The community helps shape a bigger lineup of soap, deodorant and cologne."
+            "label": "Year four",
+            "datetime": "2015",
+            "title": "Online orders",
+            "text": "A simple website brings the bars to every state."
           }
         },
         "block-3": {
           "type": "milestone",
           "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to smell great",
-            "text": "New formats make it easier to build a routine that moves with your day."
+            "label": "Year eight",
+            "datetime": "2019",
+            "title": "Deodorant and wash",
+            "text": "Sticks, shower gels and hair care join the lineup."
           }
         },
         "block-4": {
@@ -74,8 +69,8 @@
           "settings": {
             "label": "Today",
             "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with bolder scents, better information, and zero junk."
+            "title": "Shelves everywhere",
+            "text": "Millions of bars later, the recipe is still short."
           }
         }
       },
@@ -86,26 +81,116 @@
         "block-4"
       ]
     },
-    "content-press-quotes": {
-      "type": "blko-content-press-quotes",
-      "settings": {},
+    "about-causes": {
+      "type": "blko-about-causes",
+      "settings": {
+        "kicker": "Giveback",
+        "heading": "Three causes we put real money behind"
+      },
       "blocks": {
         "block-1": {
-          "type": "quote",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Mental health and community",
+            "text": "Funding programs that help guys talk to each other before things get heavy."
+          }
         },
         "block-2": {
-          "type": "quote",
+          "type": "value",
           "settings": {
-            "quote": "“A practical answer to the overcomplicated shower.”",
-            "source": "— The Shave"
+            "number": "02",
+            "title": "Opportunity and skills",
+            "text": "Backing training and job support for people starting over."
           }
         },
         "block-3": {
-          "type": "quote",
+          "type": "value",
           "settings": {
-            "quote": "“The scents have a distinctly outdoorsy ease.”",
-            "source": "— Beard Weekly"
+            "number": "03",
+            "title": "Hygiene access",
+            "text": "Getting soap and hygiene lessons to people who cannot count on either."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "about-impact": {
+      "type": "blko-about-impact",
+      "settings": {
+        "kicker": "By the numbers",
+        "quote": "“We count what we give the same way we count what we sell.”",
+        "author": "— From the impact report"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Millions of bars",
+            "text": "Donated to shelters and relief groups"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Four partners",
+            "text": "Working on hygiene, housing, trails and youth"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "One percent pledge",
+            "text": "Of sales go to causes every year"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "about-certified": {
+      "type": "blko-about-certified",
+      "settings": {
+        "image_alt": "A shelf of certified products with a badge",
+        "kicker": "Certified",
+        "heading": "Held to a higher standard.",
+        "text": "An outside group audits how we treat workers, communities and the planet. Our score sits well above the median company, and we publish the report so you can check."
+      }
+    },
+    "about-careers": {
+      "type": "blko-about-careers",
+      "settings": {
+        "kicker": "Join the crew",
+        "heading": "What it is like to work here"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Bold ideas welcome",
+            "text": "If it would make a guy laugh in the shower, pitch it."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Play to win",
+            "text": "We set big goals and celebrate when we hit them."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "One team",
+            "text": "Warehouse, studio and support share the same Slack channel."
           }
         }
       },
@@ -117,16 +202,23 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [
     "content-about-hero",
     "content-mission",
-    "content-values",
     "content-founder-note",
     "content-story-timeline",
-    "content-press-quotes",
+    "about-causes",
+    "about-impact",
+    "about-certified",
+    "about-careers",
     "newsletter"
   ]
 }

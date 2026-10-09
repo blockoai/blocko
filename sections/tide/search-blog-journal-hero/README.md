@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | Journal |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a calmer routine. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for calm skin and ocean-minded care. |
+| `eyebrow` | text | Eyebrow | The Tide Journal |
+| `heading` | text | Heading | Routines, ingredients and a little wellness. |
+| `text` | text | Text | Step-by-step guides, plant science and stories from the shoreline. |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person at the shoreline in soft natural light |
+| `image_alt` | text | Image alt text | Serum drops beside a seashell |
 
 ## Blocks
 

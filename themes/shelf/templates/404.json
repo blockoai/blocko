@@ -2,24 +2,32 @@
   "sections": {
     "cart-checkout-not-found": {
       "type": "blko-cart-checkout-not-found",
-      "settings": {},
+      "settings": {
+        "eyebrow": "404 / Not on the shelf",
+        "heading": "We can't find that page.",
+        "text": "Search for a brand or product, or head back to a department.",
+        "image_alt": "Products on cream pedestals in a bright showroom"
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Bestsellers",
+            "url": "#bestsellers"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
             "label": "Skin",
-            "url": "#complexion"
+            "url": "#skin"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#care"
+            "label": "Makeup",
+            "url": "#makeup"
           }
         }
       },

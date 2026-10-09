@@ -27,13 +27,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `button_label` | text | Button label | Sign up |
+| `button_label` | text | Button label | Count me in |
 | `placeholder` | text | Placeholder | you@example.com |
-| `eyebrow` | text | Eyebrow | Keep in touch |
-| `heading` | text | Heading | A little sparkle, delivered. |
+| `eyebrow` | text | Eyebrow | Be the first to know |
+| `heading` | text | Heading | Drops, restocks and pop-up news |
 | `email_label` | text | Email label | Email address |
 | `success_message` | text | Success message | Thanks for subscribing. |
-| `message` | text | Message | Occasional notes on new drops, restocks and hair ideas. |
+| `message` | text | Message | Early looks at new colours and scents, plus the occasional members-only sale. |
 
 ## Blocks
 

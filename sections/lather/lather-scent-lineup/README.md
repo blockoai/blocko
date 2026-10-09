@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Five families. One right answer. |
-| `heading` | text | Heading | Find your scent |
-| `all_label` | text | All label | All scents |
+| `eyebrow` | text | Eyebrow | Five families, one for every nose |
+| `heading` | text | Heading | Find your vibe |
+| `all_label` | text | All label | Every scent |
 
 ## Blocks
 

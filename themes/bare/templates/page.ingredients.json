@@ -2,7 +2,15 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Clean standards",
+        "heading": "What we leave out, and what goes in.",
+        "text": "A short index of the plant and mineral ingredients we use most, plus the families we keep out of every formula.",
+        "search_placeholder": "Try “squalane”",
+        "detail_heading": "Squalane",
+        "detail_text": "A light, plant-derived oil that cushions skin and helps pigment glide. It does not feel greasy and suits most skin types.",
+        "best_for_label": "Best for"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -13,71 +21,67 @@
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
+            "label": "Emollients",
             "key": "hydration"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
+            "label": "Botanicals",
             "key": "barrier"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
+            "label": "Minerals",
             "key": "sun"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "letter": "J",
+            "name": "Jojoba oil",
+            "detail": "A wax-like oil that mimics skin's own and keeps cream smooth",
+            "tags": "hydration"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "M",
+            "name": "Marshmallow root",
+            "detail": "A soothing plant extract used in eye-area formulas",
+            "tags": "barrier"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
+            "letter": "S",
+            "name": "Shea butter",
+            "detail": "A rich butter that gives balm its cushioned feel",
             "tags": "hydration"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "T",
+            "name": "Titanium dioxide",
+            "detail": "A mineral pigment that brightens and opacifies",
+            "tags": "sun"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
-          }
-        },
-        "block-10": {
-          "type": "ingredient",
-          "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "V",
+            "name": "Vitamin E",
+            "detail": "An antioxidant that protects the oils from turning",
+            "tags": "barrier"
           }
         }
       },
@@ -90,17 +94,26 @@
         "block-6",
         "block-7",
         "block-8",
-        "block-9",
-        "block-10"
+        "block-9"
       ]
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Cream balm swirled on a white dish",
+        "eyebrow": "The short list",
+        "heading": "Fifty things we keep out.",
+        "text": "Parabens, phthalates, talc, PFAS, mineral oil and PEGs are not in anything we make. The full list sits in our help centre.",
+        "button_label": "See the full list"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [

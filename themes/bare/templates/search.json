@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search products and notes.",
+        "text": "Look up a shade, a product or a look.",
+        "placeholder": "Try “neutralizer” or “soft glam”",
+        "search_label": "Search the store",
+        "view_all_label": "See all results"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

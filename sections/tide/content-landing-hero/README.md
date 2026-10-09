@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person with fresh, dewy skin by the sea |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Care that keeps up with the tide. |
-| `text` | textarea | Text | Comfortable, mineral-rich essentials made for skin that moves through a full day |
+| `image_alt` | text | Image alt text | Citrus peel and lavender beside a bottle of body oil |
+| `kicker` | text | Kicker | Shop by scent |
+| `heading` | text | Heading | Find the scent that feels like you. |
+| `text` | textarea | Text | Citrus, herbal, floral or none at all: every scent family comes in oils, butters |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your routine |
+| `button_label` | text | Button label | Pick a scent |
 
 ## Blocks
 

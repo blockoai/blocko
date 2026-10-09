@@ -34,8 +34,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | `note_summary` | text | Note summary | Add a gift note |
 | `note_label` | text | Note label | Your message |
 | `note_placeholder` | text | Note placeholder | Write a short note for your recipient. |
-| `upsell_kicker` | text | Upsell kicker | Build the ritual |
-| `upsell_heading` | text | Upsell heading | A little extra care |
+| `upsell_kicker` | text | Upsell kicker | Before you go |
+| `upsell_heading` | text | Upsell heading | Pairs well with your bag |
 | `upsell_eyebrow` | text | Upsell eyebrow | Pairs well with |
 | `upsell_button` | text | Upsell button | Add |
 | `summary_heading` | text | Summary heading | Order summary |
@@ -44,20 +44,20 @@ Never overwrite an existing file with the same name without comparing it first.
 | `shipping_text` | text | Shipping text | Calculated at checkout |
 | `total_label` | text | Total label | Total |
 | `checkout_label` | text | Checkout label | Secure checkout |
-| `summary_note` | textarea | Summary note | Taxes and shipping are calculated at checkout. |
+| `summary_note` | textarea | Summary note | Orders over $500 need a signature on delivery. Log in to earn points on this ord |
 | `eyebrow` | text | Eyebrow | Your shopping bag |
 | `heading` | text | Heading | Bag |
-| `threshold` | range | Free-shipping threshold | 50 |
+| `threshold` | range | Free-shipping threshold | 35 |
 | `progress_label` | text | Progress label | Shipping progress |
-| `before` | text | Before | Only |
-| `after` | text | After | away from complimentary shipping. |
-| `unlocked` | text | Unlocked | You have unlocked complimentary shipping. |
+| `before` | text | Before | Add |
+| `after` | text | After | more for free shipping. |
+| `unlocked` | text | Unlocked | Free shipping unlocked. |
 | `empty_eyebrow` | text | Empty eyebrow | Your bag |
-| `empty_heading` | text | Empty heading | Your bag is waiting. |
-| `empty_text` | textarea | Empty text | Thoughtful color and care are ready whenever you are. |
+| `empty_heading` | text | Empty heading | Your bag is empty. |
+| `empty_text` | textarea | Empty text | Start with a bestseller or take the skin analysis. |
 | `empty_button_label` | text | Empty button label | Continue shopping |
 | `empty_image` | image_picker | Empty image |  |
-| `empty_image_alt` | text | Empty image alt text | Clean beauty products on a table |
+| `empty_image_alt` | text | Empty image alt text | Gift sets on a shelf |
 
 ## Blocks
 

@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "need help?",
+        "heading": "Chat with a real human.",
+        "text": "Questions on orders, returns or which bar to try? Start a chat or send a note.",
+        "link_label": "start a chat"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,31 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "title": "Customer care",
+            "text": "Orders, shipping and returns.",
+            "url": "mailto:care@example.com",
+            "link_label": "care@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick hair tips.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Wholesale",
+            "text": "Boutiques and retailers: apply to stock us.",
+            "url": "mailto:wholesale@example.com",
+            "link_label": "wholesale@example.com"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Press",
+            "text": "Samples and interview requests.",
+            "url": "mailto:press@example.com",
+            "link_label": "press@example.com"
           }
         }
       },
@@ -41,28 +51,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "send a note",
+        "heading": "How can we help?",
+        "text": "Add your order number if you have one. Replies take about a day.",
+        "button_label": "send"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "Order status or changes"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product tips"
+            "label": "Shipping and returns"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Account and rewards"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Payments and gift cards"
           }
         }
       },
@@ -75,24 +92,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "support times",
+        "heading": "When we're around"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Weekdays",
+            "value": "9 AM to 6 PM Mountain"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
             "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "value": "Chat only, 10 AM to 3 PM"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Typical reply",
+            "value": "Within one day"
           }
         }
       },
@@ -104,7 +127,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "head office",
+        "heading": "Where we pack",
+        "text": "Orders are packed and shipped from our warehouse. Visits are not open to the public.",
+        "city": "Denver, CO",
+        "country": "United States"
+      }
     }
   },
   "order": [

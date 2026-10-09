@@ -31,12 +31,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
 | `add_label` | text | Add label | Add 3 items to cart |
-| `eyebrow` | text | Eyebrow | Build your system |
-| `heading` | text | Heading | make your own system. |
-| `text` | text | Text | Choose any three formulas and save 15%. Your system, your pace, your color. |
+| `eyebrow` | text | Eyebrow | Custom bundle |
+| `heading` | text | Heading | Pick three and unlock a set price. |
+| `text` | text | Text | Choose from wash, treat and style. The more you add, the more you save, and trav |
 | `summary_eyebrow` | text | Summary eyebrow | Your system |
 | `summary_empty` | text | Summary empty | Choose 3 items to unlock your system |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
+| `saving_text` | text | Saving text | Add three items to unlock 15% off the set. |
 | `price_note` | text | Price note | Bundle price |
 
 ## Blocks

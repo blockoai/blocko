@@ -2,7 +2,12 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Retail locations",
+        "heading": "Try the shades in person.",
+        "text": "Pick a country to see stores that carry the full complexion range and the shade-matching tools.",
+        "directions_label": "Get directions"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
@@ -31,29 +36,31 @@
         },
         "block-5": {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Greenhouse Beauty",
+            "place": "Austin, TX"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Mercer Apothecary"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "country": "ca",
+            "name": "Maple & Fern",
+            "place": "Vancouver, BC"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "uk",
+            "name": "Clover Beauty Hall",
+            "place": "Manchester"
           }
         }
       },
@@ -70,7 +77,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [

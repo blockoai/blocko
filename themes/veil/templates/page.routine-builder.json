@@ -2,11 +2,23 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Your five-minute face",
+        "heading": "Choose a product for each step.",
+        "text": "Pick prep, tint and eye products, and watch the total update.",
+        "step_text": "A reliable essential for this step.",
+        "summary_eyebrow": "Your routine",
+        "add_label": "Add all three to bag",
+        "pick_label": "Everyday choice",
+        "alternate_label": "Upgrade"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add a finishing touch"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -27,7 +39,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [

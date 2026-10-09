@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Support",
+        "heading": "Tell us what is going on.",
+        "text": "Order questions, tool registration, returns or a formula you cannot decide on: pick a topic and we will point you to the quickest route.",
+        "link_label": "Contact us"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,31 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "title": "Orders + returns",
+            "text": "Track a parcel or start a return.",
+            "url": "mailto:care@example.com",
+            "link_label": "care@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick color-care guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Tool support",
+            "text": "Register a heated tool or claim the warranty.",
+            "url": "mailto:tools@example.com",
+            "link_label": "tools@example.com"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Safety reports",
+            "text": "Share a product reaction with our team.",
+            "url": "mailto:safety@example.com",
+            "link_label": "safety@example.com"
           }
         }
       },
@@ -41,28 +51,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Send a message",
+        "heading": "How can we help?",
+        "text": "Add your order number if you have one. Our team replies in one to two business days.",
+        "button_label": "Submit"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "Track my order"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Formula guidance"
+            "label": "Register a tool"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Subscriptions"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Rewards points"
           }
         }
       },
@@ -75,24 +92,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Hours",
+        "heading": "When we are in"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Monday to Friday",
+            "value": "9 AM to 5 PM Eastern, chat open"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
             "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "value": "Team off; email still works"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Typical reply",
+            "value": "One to two business days"
           }
         }
       },
@@ -104,7 +127,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Head office",
+        "heading": "Where we are",
+        "text": "Our product studio and lab sit in the same building. Visits are by appointment.",
+        "city": "Brooklyn, NY",
+        "country": "United States"
+      }
     }
   },
   "order": [

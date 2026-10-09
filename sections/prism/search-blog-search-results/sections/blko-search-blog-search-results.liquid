@@ -300,6 +300,24 @@
 .blko-theme .blko-search-blog-filters a[aria-current=page]{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-button-text)}
 .blko-theme .blko-search-blog-pagination span.is-active{display:inline-block;border-width:1px;border-style:solid;padding:.55rem .75rem}
 .blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination__edge{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tabs a[aria-current=page]{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-button-text)}
+.blko-theme .blko-search-blog-filters a[aria-current=page]{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-button-text)}
+.blko-theme .blko-search-blog-pagination span.is-active{display:inline-block;border-width:1px;border-style:solid;padding:.55rem .75rem}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination__edge{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tabs a[aria-current=page]{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-button-text)}
+.blko-theme .blko-search-blog-filters a[aria-current=page]{background:var(--color-ink);border-color:var(--color-ink);color:var(--color-button-text)}
+.blko-theme .blko-search-blog-pagination span.is-active{display:inline-block;border-width:1px;border-style:solid;padding:.55rem .75rem}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 {% endstylesheet %}
 {% schema %}
 {
@@ -330,25 +348,25 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Find your next ritual."
+      "default": "Search products and guides."
     },
     {
       "type": "text",
       "id": "text",
       "label": "Text",
-      "default": "Search products, journal notes, and helpful pages."
+      "default": "Look up a product, a hair type or a how-to."
     },
     {
       "type": "text",
       "id": "search_label",
       "label": "Search label",
-      "default": "Search the journal and shop"
+      "default": "Search the shop and the Hair Log"
     },
     {
       "type": "text",
       "id": "placeholder",
       "label": "Placeholder",
-      "default": "Search products, routines, and journal notes"
+      "default": "Try “dry shampoo” or “porosity”"
     },
     {
       "type": "text",
@@ -366,7 +384,7 @@
       "type": "text",
       "id": "view_all_label",
       "label": "View all label",
-      "default": "View all results"
+      "default": "See all results"
     },
     {
       "type": "text",

@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `label` | text | Label | Hair tools |
+| `label` | text | Label | Hair care |
 
 ## Blocks
 

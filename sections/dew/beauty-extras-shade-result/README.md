@@ -30,12 +30,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Recommended tints |  |
 | `add_label` | text | Add label | Add to bag |
-| `eyebrow` | text | Eyebrow | Your starting point |
-| `heading` | text | Heading | Two shades to try first. |
-| `text` | textarea | Text | Based on your selections, these flexible shades are a beautiful place to start.  |
-| `button_label` | text | Button label | Add suggested tint |
-| `card_eyebrow` | text | Card eyebrow | Flexible tint |
-| `card_detail` | text | Card detail | Natural finish · SPF 40 |
+| `eyebrow` | text | Eyebrow | Your pick |
+| `heading` | text | Heading | Try this stick first. |
+| `text` | textarea | Text | Swipe it on the back of your hand, then a little on the cheekbone. A shade up or |
+| `button_label` | text | Button label | Add to bag |
+| `card_eyebrow` | text | Card eyebrow | Cream bronzer stick |
+| `card_detail` | text | Card detail | Buildable warmth · Skin-depth match |
 
 ## Blocks
 

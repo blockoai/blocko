@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person with fresh, natural skin |
-| `eyebrow` | text | Eyebrow | New: skin tint |
-| `heading` | text | Heading | Skin first. Makeup second. |
-| `text` | textarea | Text | Easy, lightweight makeup. Nothing to master, nothing to hide behind. |
-| `button_label` | text | Button label | Shop face |
+| `image_alt` | text | Image alt text | Close-up of a face with a soft flush and bare lids |
+| `eyebrow` | text | Eyebrow | Limited edition, sixth year |
+| `heading` | text | Heading | The kit that sells out every season is back. |
+| `text` | textarea | Text | Eight favorites in one zip pouch, chosen by our founder and priced well under th |
+| `button_label` | text | Button label | Shop the kit |
 | `button_url` | url | Button url |  |
 
 ## Blocks

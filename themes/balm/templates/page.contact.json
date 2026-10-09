@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Contact",
+        "heading": "Questions about an order or a shade?",
+        "text": "Support, press and wholesale teams each have their own inbox, so you reach the right person first.",
+        "link_label": "Email support"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,31 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "title": "Support",
+            "text": "Orders, shades and skincare advice.",
+            "url": "mailto:support@example.com",
+            "link_label": "support@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
-            "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "icon": "↗",
+            "title": "Media",
+            "text": "Review samples, interviews and features.",
+            "url": "mailto:media@example.com",
+            "link_label": "media@example.com"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
-            "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "icon": "○",
+            "title": "Wholesale",
+            "text": "Stock the range in your store or spa.",
+            "url": "mailto:wholesale@example.com",
+            "link_label": "wholesale@example.com"
           }
         }
       },
@@ -41,28 +51,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Write to us",
+        "heading": "How can we help?",
+        "text": "Add your order number if it is about an order. We answer within one business day.",
+        "button_label": "Send message"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "Order or shipping"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product guidance"
+            "label": "Shade help"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Skincare question"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Rewards"
           }
         }
       },
@@ -75,24 +92,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "When we answer",
+        "heading": "Support hours"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Weekdays",
+            "value": "9 AM to 5 PM Eastern"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
             "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "value": "Email only"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Reply time",
+            "value": "Within one business day"
           }
         }
       },
@@ -104,7 +127,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Where we make it",
+        "heading": "Small-batch studio",
+        "text": "Every stick is poured and finished by hand in our US studio. Visits are by appointment.",
+        "city": "Los Angeles, CA",
+        "country": "United States"
+      }
     }
   },
   "order": [

@@ -2,7 +2,11 @@
   "sections": {
     "cart-checkout-not-found": {
       "type": "blko-cart-checkout-not-found",
-      "settings": {},
+      "settings": {
+        "heading": "This page took a powder break.",
+        "text": "Search the shop or head to a bestseller.",
+        "image_alt": "Person with blush on one cheek looking surprised"
+      },
       "blocks": {
         "block-1": {
           "type": "link",
@@ -11,15 +15,15 @@
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Face",
-            "url": "#complexion"
+            "label": "Bestsellers",
+            "url": "#best"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Skin",
-            "url": "#care"
+            "label": "Shade finder",
+            "url": "#shade-quiz"
           }
         }
       },

@@ -2,46 +2,134 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Rewards",
+        "heading": "Shop. Collect. Redeem.",
+        "text": "Earn points on purchases and plenty of small actions, then turn them into dollars off. Your tier is based on what you spend in a year, so loyalty speeds up your points.",
+        "button_label": "Join and get 50 points",
+        "image_alt": "Gift box of skin and body care products",
+        "earn_eyebrow": "The basics",
+        "earn_heading": "How points work",
+        "tiers_eyebrow": "Spend tiers",
+        "tiers_heading": "Spend more, earn faster."
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Create a free account and get 50 points as a welcome gift."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
             "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "One point for every dollar, plus extra points for reviews, referrals and social follows."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Redeem",
+            "text": "Swap 500 points for $5 off, 1,000 for $10 and 1,500 for $15 at checkout."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "points": "$0 to $199 a year",
+            "perks": "1 point per $1 · birthday treat"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Tide",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Reef",
+            "points": "$200 to $399 a year",
+            "perks": "2 points per $1 · early access"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Ocean",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Open water",
+            "points": "$400+ a year",
+            "perks": "3 points per $1 · private launches"
+          }
+        },
+        "block-7": {
+          "type": "tier",
+          "settings": {
+            "title": "Subscriber",
+            "points": "With any active plan",
+            "perks": "2 points per $1 · extra bonus actions"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7"
+      ]
+    },
+    "rewards-earn-more": {
+      "type": "blko-rewards-earn-more",
+      "settings": {
+        "kicker": "More ways to earn",
+        "heading": "Small actions, real points"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Refer a friend",
+            "text": "Earn 1,000 points when a friend makes a first purchase, and they get $10 off."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Place three orders in a year",
+            "text": "A bonus lands once you hit your third order."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Sign up for email and texts",
+            "text": "Fifty points for each channel you join."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Celebrate your birthday",
+            "text": "A points gift and a discount code arrive in your birthday month."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Write a review",
+            "text": "Text reviews earn points and photo reviews earn more."
+          }
+        },
+        "block-6": {
+          "type": "value",
+          "settings": {
+            "number": "06",
+            "title": "Follow and read",
+            "text": "Ten points per social follow and per journal article you finish."
           }
         }
       },
@@ -54,41 +142,70 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Rewards questions",
+        "heading": "Points, explained"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "Do points expire?",
+            "text": "Yes. Points expire after three months with no activity, so any order or review resets the clock."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Is there a minimum to redeem?",
+            "text": "Your cart needs to be at least $30, and you can use up to 1,500 points per order."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "Can I stack points with a promo code?",
+            "text": "No. Points and promo codes cannot be combined on the same order."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "What happens to points if I return something?",
+            "text": "Points earned on the returned item are removed from your balance."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "How long does my tier last?",
+            "text": "Once you reach a tier you keep it for the full year."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4",
+        "block-5"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-earn-more",
+    "rewards-faq",
     "newsletter"
   ]
 }

@@ -178,13 +178,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Shop by ritual"
+      "default": "Shop by step"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Start where the sand is."
+      "default": "Where does your day begin?"
     }
   ],
   "blocks": [
@@ -202,7 +202,7 @@
           "type": "text",
           "id": "label",
           "label": "Label",
-          "default": "Body"
+          "default": "Body care"
         }
       ]
     },
@@ -231,7 +231,7 @@
           "type": "text",
           "id": "label",
           "label": "Label",
-          "default": "Body"
+          "default": "Body care"
         }
       ]
     }
@@ -242,39 +242,74 @@
       "blocks": [
         {
           "type": "link",
-          "settings": {}
-        },
-        {
-          "type": "link",
           "settings": {
-            "label": "Sun",
-            "url": "#eyes"
+            "label": "Mist sunscreen",
+            "url": "#sun"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Lips + glow",
-            "url": "#lips"
+            "label": "Gel + cream SPF",
+            "url": "#sun"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Sets",
-            "url": "#care"
+            "label": "Sticks + compacts",
+            "url": "#sun"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Wash + polish",
+            "url": "#body"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Butters + oils",
+            "url": "#body"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Deodorant",
+            "url": "#deodorant"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Scent mists",
+            "url": "#scent"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Savings sets",
+            "url": "#sets"
           }
         },
         {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#sun",
+            "image_alt": "Sunscreen mist bottle on warm sand",
+            "label": "Sunscreen"
+          }
         },
         {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Gift ritual",
-            "label": "Sets"
+            "url": "#sets",
+            "image_alt": "Body care products laid out on a towel",
+            "label": "Savings sets"
           }
         }
       ]

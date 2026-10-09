@@ -2,26 +2,92 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Hair care",
+        "price_note": "bar, about 100 washes",
+        "shade_help_label": "Not sure which formula? Take the quiz.",
+        "ship_note": "Free shipping over $35 · Free gift at $60 · 90-day money-back guarantee",
+        "one_time_label": "one-time purchase",
+        "button_label": "add to bag"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Silky satin with a cool, smooth feel. Sleep on it, travel with it, gift it to someone you love."
+            "label": "How to use",
+            "text": "Wet the bar and your hair, then glide it over your scalp and lengths until you see lather. Work it in, rinse well and follow with a conditioner bar. Pro tip: keep the bar in a mesh bag so it dries between showers."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Materials",
-            "text": "100% polyester satin, hidden envelope closure, machine washable. Zero harsh dyes."
+            "label": "Hero ingredients",
+            "text": "Rice protein reinforces each strand, panthenol draws in water for softness, and a mild coconut-derived cleanser lifts oil without stripping."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
-            "label": "How to use",
-            "text": "Slip it over your pillow, rest your head and wake up to smoother hair. Machine wash cold and tumble dry low."
+            "label": "Full ingredient list",
+            "text": "Sodium cocoyl isethionate, rice protein, panthenol, shea butter, cetyl alcohol, plant glycerin, fragrance from essential oils, vitamin E. Full INCI list is printed on the wrapper."
+          }
+        },
+        "block-4": {
+          "type": "accordion",
+          "settings": {
+            "label": "Certifications",
+            "text": "Vegan and cruelty-free certified. Made in the USA. Plastic-free wrapper."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-before-after": {
+      "type": "blko-pdp-before-after",
+      "settings": {
+        "before_image_alt": "Hair before five washes",
+        "after_image_alt": "Fuller-looking hair after five washes",
+        "eyebrow": "tested on real hair",
+        "heading": "Thicker-looking hair in five washes.",
+        "text": "In a 90-day consumer study of 40 volunteers, hair looked fuller after five washes. Results vary with hair type.",
+        "stat_1_value": "20%",
+        "stat_1_label": "more visible volume after five washes",
+        "stat_2_value": "100",
+        "stat_2_label": "washes in a single bar"
+      }
+    },
+    "pdp-free-from": {
+      "type": "blko-pdp-free-from",
+      "settings": {
+        "kicker": "why you'll like it",
+        "quote": "“One bar, no plastic bottle, no residue.”",
+        "author": "— Product team"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Free from",
+            "text": "Sulfates, silicones and parabens"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "pH-balanced",
+            "text": "Safe for color-treated hair"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Planet partner",
+            "text": "Ocean plastic removed with every bar"
           }
         }
       },
@@ -33,110 +99,145 @@
     },
     "twist-fbt": {
       "type": "blko-twist-fbt",
-      "settings": {}
+      "settings": {
+        "heading": "frequently bought together",
+        "total_label": "total",
+        "button_label": "add selected to bag"
+      }
     },
-    "pdp-before-after": {
-      "type": "blko-pdp-before-after",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "pdp-reasons": {
+      "type": "blko-pdp-reasons",
+      "settings": {
+        "kicker": "4 reasons to switch",
+        "heading": "A bar that earns its spot"
+      },
       "blocks": {
         "block-1": {
-          "type": "tab",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Strengthening",
+            "text": "Rice protein coats the strand so it resists snapping."
+          }
         },
         "block-2": {
-          "type": "tab",
+          "type": "value",
           "settings": {
-            "label": "what's new",
-            "key": "new"
+            "number": "02",
+            "title": "Targeted",
+            "text": "Pick a formula for volume, color care, dryness or a sensitive scalp."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Shiny",
+            "text": "A smoother cuticle reflects more light, so hair looks shinier."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Balanced",
+            "text": "A scalp-friendly pH keeps oil and dryness in check."
           }
         }
       },
       "block_order": [
         "block-1",
-        "block-2"
+        "block-2",
+        "block-3",
+        "block-4"
       ]
     },
     "pdp-reviews": {
       "type": "blko-pdp-reviews",
-      "settings": {},
+      "settings": {
+        "eyebrow": "reviews and questions",
+        "average": "4.8",
+        "summary": "10,400+ reviews · 96% would recommend",
+        "list_heading": "What shoppers say about their hair"
+      },
       "blocks": {
         "block-1": {
-          "type": "bar",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "title": "Fuller by the third week",
+            "text": "My hair used to flatten by lunch. Now it holds shape and feels clean without squeaking.",
+            "footer": "Lena R. · fine hair",
+            "tags": "photos",
+            "caption": "Wavy hair · photo review"
+          }
         },
         "block-2": {
-          "type": "bar",
+          "type": "review",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
+            "title": "Travels well",
+            "text": "No leaks in my carry-on and enough lather for a long trip. Pair it with the bar bag.",
+            "footer": "Omar T. · oily scalp",
+            "tags": "",
+            "caption": ""
           }
         },
         "block-3": {
-          "type": "bar",
+          "type": "review",
           "settings": {
-            "label": "3 stars",
-            "percent": 4
+            "title": "Needed a transition week",
+            "text": "Hair felt waxy at first, then it settled. A vinegar rinse helped a lot.",
+            "footer": "Priya N. · hard water",
+            "tags": "",
+            "caption": "",
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "good to know",
+        "heading": "Questions about the bar"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "How soon will I see results?",
+            "text": "Most people notice cleaner roots in the first wash and fuller-looking hair after a few weeks."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Is it right for every hair type?",
+            "text": "Yes for most. If your hair is very porous or protein-sensitive, alternate it with a protein-free formula."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "How much should I use?",
+            "text": "Three or four passes over wet hair is plenty. Longer hair may need a couple more."
           }
         },
         "block-4": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "2 stars",
-            "percent": 1
+            "label": "How does auto-ship billing work?",
+            "text": "You are charged each time a shipment is prepared, at the discounted price, and can stop any time."
           }
         },
         "block-5": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {}
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Fit",
-            "key": "coverage"
-          }
-        },
-        "block-9": {
-          "type": "review",
-          "settings": {
-            "text": "I woke up with way less frizz and zero tangles. I love how cool and soft it feels."
-          }
-        },
-        "block-10": {
-          "type": "review",
-          "settings": {
-            "title": "My new favorite",
-            "text": "Easy to use and stays put all night. The color range made picking one simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Soft, not slippery",
-            "text": "This gives me the smooth hair I want without ever feeling hot or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Coily hair · photo review"
+            "label": "Can I use it on colored hair?",
+            "text": "The colour care formula is made for it, and every formula is pH-balanced."
           }
         }
       },
@@ -145,31 +246,52 @@
         "block-2",
         "block-3",
         "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-5"
+      ]
+    },
+    "product-recommendations": {
+      "type": "blko-product-recommendations",
+      "settings": {
+        "eyebrow": "pair it up",
+        "heading": "best-selling bundles"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "label": "top bundles"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "just launched"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
       ]
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "pick up where you left off",
+        "heading": "recently viewed"
+      }
     }
   },
   "order": [
     "pdp-product-main",
-    "twist-fbt",
     "pdp-before-after",
-    "product-recommendations",
+    "pdp-free-from",
+    "twist-fbt",
+    "pdp-reasons",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-faq",
+    "product-recommendations",
+    "pdp-recently-viewed"
   ]
 }

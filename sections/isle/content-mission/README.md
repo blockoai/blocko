@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person enjoying a simple body care ritual |
-| `kicker` | text | Kicker | A sunnier kind of care |
-| `heading` | text | Heading | Good formulas should make getting ready feel easier. |
-| `text` | textarea | Text | Our work starts with the small, practical moments: a lotion that sinks in, a but |
+| `image_alt` | text | Image alt text | Raw coconut oil in a glass jar |
+| `kicker` | text | Kicker | Our ingredients |
+| `heading` | text | Heading | A list of what stays out. |
+| `text` | textarea | Text | Our standard bars more than two hundred substances, including phthalates, sulfat |
 
 ## Blocks
 

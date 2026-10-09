@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
-| `crumb` | text | Crumb | Journal |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for easier, cuter hair days. |
-| `text` | text | Text | Ideas, styles and useful how-tos for easy, cute hair days. |
+| `crumb` | text | Crumb | Lookbooks |
+| `eyebrow` | text | Eyebrow | Lookbooks + community |
+| `heading` | text | Heading | Style stories, ambassador chats and pop-up recaps. |
+| `text` | text | Text | Seasonal lookbooks with a shop-the-look strip, short interviews with the people  |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Friends in matching pastel clips on a sofa |
 
 ## Blocks
 

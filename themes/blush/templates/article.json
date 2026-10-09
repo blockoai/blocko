@@ -2,7 +2,9 @@
   "sections": {
     "search-blog-article-hero": {
       "type": "blko-search-blog-article-hero",
-      "settings": {}
+      "settings": {
+        "reading_time": "3 minutes"
+      }
     },
     "search-blog-article-content": {
       "type": "blko-search-blog-article-content",
@@ -10,11 +12,19 @@
     },
     "search-blog-related-articles": {
       "type": "blko-search-blog-related-articles",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Keep reading",
+        "heading": "More from the team",
+        "link_label": "Read the post"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [

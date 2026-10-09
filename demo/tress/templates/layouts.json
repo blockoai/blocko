@@ -121,7 +121,7 @@
   },
   {
     "page": "policy",
-    "title": "Privacy notice",
+    "title": "Authorised seller policy",
     "sectionIds": [
       "content-policy-hero",
       "content-policy-document"
@@ -129,7 +129,7 @@
   },
   {
     "page": "landing",
-    "title": "The seasonal edit",
+    "title": "The holiday kit",
     "sectionIds": [
       "content-landing-hero",
       "content-landing-kit",
@@ -181,7 +181,7 @@
   },
   {
     "page": "hair-quiz",
-    "title": "Hair routine quiz",
+    "title": "Hair finder",
     "sectionIds": [
       "haircare-extras-quiz",
       "haircare-extras-quiz-result"
@@ -189,28 +189,28 @@
   },
   {
     "page": "subscriptions",
-    "title": "Subscriptions",
+    "title": "Subscribe and save",
     "sectionIds": [
       "haircare-extras-subscription"
     ]
   },
   {
     "page": "fragrance-finder",
-    "title": "Fragrance finder",
+    "title": "Scent shop",
     "sectionIds": [
       "haircare-extras-fragrance"
     ]
   },
   {
     "page": "routine",
-    "title": "Routine builder",
+    "title": "Wash-day builder",
     "sectionIds": [
       "haircare-extras-routine"
     ]
   },
   {
     "page": "gift-guide",
-    "title": "Gift guide",
+    "title": "Kits and gift sets",
     "sectionIds": [
       "haircare-extras-gifts"
     ]
@@ -237,7 +237,7 @@
   },
   {
     "page": "collection",
-    "title": "Tress — Hair care",
+    "title": "Tress — Thinning & mature hair",
     "sectionIds": [
       "home-collection-mega-menu",
       "home-collection-collection-toolbar",
@@ -256,7 +256,7 @@
   },
   {
     "page": "pdp",
-    "title": "Leave-In Conditioner",
+    "title": "Detangling Leave-In",
     "sectionIds": [
       "pdp-main-product",
       "pdp-scent-story",
@@ -267,7 +267,7 @@
   },
   {
     "page": "pdp-kit",
-    "title": "Essential Hair Ritual",
+    "title": "Strand Rescue Kit",
     "sectionIds": [
       "pdp-kit-main",
       "pdp-recommendations",
@@ -297,7 +297,7 @@
   },
   {
     "page": "article",
-    "title": "A little more care for every wash day",
+    "title": "Cocktailing your wash: mixing a treatment into your shampoo",
     "sectionIds": [
       "search-blog-article-hero",
       "search-blog-article-content",

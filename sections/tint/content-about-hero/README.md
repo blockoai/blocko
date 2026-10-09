@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Our story |
-| `heading` | text | Heading | Beauty belongs in real life. |
-| `lede` | textarea | Lede | We make everyday color and care for the rituals that help you feel like yourself |
+| `heading` | text | Heading | Makeup that is half skincare. |
+| `lede` | textarea | Lede | We set out to make color you can wear all day and still feel good about when you |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Meet the founder |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with natural makeup |
+| `image_alt` | text | Image alt text | Person with a flushed cheek and glossy lip in warm light |
 
 ## Blocks
 

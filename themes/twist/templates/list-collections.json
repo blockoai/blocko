@@ -1,44 +1,46 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
-      "settings": {},
+    "home-collection-collections-directory": {
+      "type": "blko-home-collection-collections-directory",
+      "settings": {
+        "eyebrow": "every aisle",
+        "heading": "Shop by type, season or gift",
+        "text": "From bottle-free bars to sleep sets and mystery boxes, each collection groups one kind of hair-day helper.",
+        "link_label": "shop it"
+      }
+    },
+    "collections-by-person": {
+      "type": "blko-collections-by-person",
+      "settings": {
+        "heading": "creator picks and edits"
+      },
       "blocks": {
         "block-1": {
-          "type": "link",
-          "settings": {}
+          "type": "category",
+          "settings": {
+            "title": "curl day favorites",
+            "url": "#curls"
+          }
         },
         "block-2": {
-          "type": "link",
+          "type": "category",
           "settings": {
-            "label": "Clips",
-            "url": "#eyes"
+            "title": "fine hair finds",
+            "url": "#fine"
           }
         },
         "block-3": {
-          "type": "link",
+          "type": "category",
           "settings": {
-            "label": "Headbands",
-            "url": "#lips"
+            "title": "scalp care picks",
+            "url": "#scalp"
           }
         },
         "block-4": {
-          "type": "link",
+          "type": "category",
           "settings": {
-            "label": "Hair care",
-            "url": "#care"
-          }
-        },
-        "block-5": {
-          "type": "tile",
-          "settings": {}
-        },
-        "block-6": {
-          "type": "tile",
-          "settings": {
-            "url": "#care",
-            "image_alt": "Satin sleep",
-            "label": "Hair care"
+            "title": "travel kit",
+            "url": "#travel"
           }
         }
       },
@@ -46,14 +48,8 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6"
+        "block-4"
       ]
-    },
-    "home-collection-collections-directory": {
-      "type": "blko-home-collection-collections-directory",
-      "settings": {}
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,12 +57,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [
-    "home-collection-mega-menu",
     "home-collection-collections-directory",
+    "collections-by-person",
     "home-collection-quick-view-modal",
     "newsletter"
   ]

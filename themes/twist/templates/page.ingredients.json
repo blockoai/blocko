@@ -2,7 +2,16 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "hair science",
+        "heading": "What's in the bar, and why.",
+        "text": "A short guide to the ingredients we use and how to tell whether your hair likes protein.",
+        "search_placeholder": "Try “panthenol”",
+        "detail_heading": "Rice protein",
+        "detail_text": "Small protein fragments that sit on the strand and help it resist breakage. Hair that is already very stiff may prefer a lighter formula.",
+        "best_for": "Fine, limp or damaged hair",
+        "found_in": "Strengthening bar"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -13,71 +22,67 @@
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Softness",
-            "key": "hydration"
+            "label": "Strength",
+            "key": "strength"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Moisture",
+            "key": "moisture"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Scalp",
+            "key": "scalp"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "letter": "B",
+            "name": "Biotin",
+            "detail": "A B vitamin often linked to hair upkeep",
+            "tags": "strength"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "P",
+            "name": "Panthenol",
+            "detail": "Pulls water into the strand for softness",
+            "tags": "moisture"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Glides through hair with less pulling",
-            "tags": "hydration"
+            "letter": "R",
+            "name": "Rice protein",
+            "detail": "Coats strands so they snap less",
+            "tags": "strength"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps hair stay smooth and balanced",
-            "tags": "brightening"
+            "letter": "R",
+            "name": "Rosemary extract",
+            "detail": "A botanical for a fresh-feeling scalp",
+            "tags": "scalp"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
             "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
-          }
-        },
-        "block-10": {
-          "type": "ingredient",
-          "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "name": "Shea butter",
+            "detail": "Rich lipid that smooths and softens",
+            "tags": "moisture"
           }
         }
       },
@@ -90,17 +95,27 @@
         "block-6",
         "block-7",
         "block-8",
-        "block-9",
-        "block-10"
+        "block-9"
       ]
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Person running fingers through curls",
+        "eyebrow": "protein check",
+        "heading": "Not sure if your hair likes protein?",
+        "text": "Try the stretch test, the feel test and the reaction test. Each takes a few minutes and tells you whether to reach for protein or moisture.",
+        "button_label": "read the guide"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [

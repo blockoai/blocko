@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | A note from the founder |
-| `quote` | text | Quote | “The best routine is the one you actually stick to: a busy morning, a muddy week |
-| `note` | textarea | Note | Founder name is a placeholder for the person shaping your brand’s point of view. |
+| `kicker` | text | Kicker | From the garage |
+| `quote` | text | Quote | “I started with a stockpot, a few oils and a stubborn idea that soap could smell |
+| `note` | textarea | Note | Founder placeholder text: the person who began with a garage batch and grew it i |
 | `name` | text | Name | Founder name |
 | `role` | text | Role | Founder |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Founder portrait placeholder |
+| `image_alt` | text | Image alt text | Founder pouring soap into a wooden mold |
 
 ## Blocks
 

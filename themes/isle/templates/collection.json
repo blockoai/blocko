@@ -1,44 +1,100 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
-      "settings": {},
+    "home-collection-collection-toolbar": {
+      "type": "blko-home-collection-collection-toolbar",
+      "settings": {
+        "breadcrumb": "Shop all",
+        "filter_eyebrow": "Narrow it down",
+        "filter_heading": "Stock and price"
+      }
+    },
+    "collection-trust": {
+      "type": "blko-collection-trust",
+      "settings": {
+        "label": "What every product shares"
+      },
       "blocks": {
         "block-1": {
-          "type": "link",
-          "settings": {}
+          "type": "claim",
+          "settings": {
+            "text": "Clean"
+          }
         },
         "block-2": {
-          "type": "link",
+          "type": "claim",
           "settings": {
-            "label": "Sun",
-            "url": "#eyes"
+            "text": "Vegan"
           }
         },
         "block-3": {
-          "type": "link",
+          "type": "claim",
           "settings": {
-            "label": "Lips + glow",
-            "url": "#lips"
+            "text": "Cruelty-free"
           }
         },
         "block-4": {
-          "type": "link",
+          "type": "claim",
           "settings": {
-            "label": "Sets",
-            "url": "#care"
+            "text": "Restock alerts on sold-out items"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "home-collection-collection-grid": {
+      "type": "blko-home-collection-collection-grid",
+      "settings": {
+        "promo_image_alt": "Sun-kissed shoulders on a beach towel",
+        "promo_eyebrow": "Heading outside?",
+        "promo_heading": "Match your SPF to your day.",
+        "promo_label": "Try the SPF finder",
+        "load_more_label": "Show more products"
+      }
+    },
+    "collection-concerns": {
+      "type": "blko-collection-concerns",
+      "settings": {
+        "heading": "Shop by concern"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {
+            "title": "Dry skin rescue",
+            "url": "#body"
+          }
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Silky smooth skin",
+            "url": "#body"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Brighter complexion",
+            "url": "#face"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Hydration heroes",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
-        },
-        "block-6": {
-          "type": "tile",
+          "type": "category",
           "settings": {
-            "url": "#care",
-            "image_alt": "Gift ritual",
-            "label": "Sets"
+            "title": "Sensitive-skin routine",
+            "url": "#face"
           }
         }
       },
@@ -47,17 +103,8 @@
         "block-2",
         "block-3",
         "block-4",
-        "block-5",
-        "block-6"
+        "block-5"
       ]
-    },
-    "home-collection-collection-toolbar": {
-      "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
-    },
-    "home-collection-collection-grid": {
-      "type": "blko-home-collection-collection-grid",
-      "settings": {}
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -65,13 +112,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [
-    "home-collection-mega-menu",
     "home-collection-collection-toolbar",
+    "collection-trust",
     "home-collection-collection-grid",
+    "collection-concerns",
     "home-collection-quick-view-modal",
     "newsletter"
   ]

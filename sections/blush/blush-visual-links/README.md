@@ -27,9 +27,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `heading` | text | Heading | Shop by colour |
+| `heading` | text | Heading | A wardrobe of five scents |
 | `all_url` | url | All url |  |
-| `all_label` | text | All label | View all |
+| `all_label` | text | All label | See every scent |
 
 ## Blocks
 

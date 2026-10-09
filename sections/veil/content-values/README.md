@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | How we work |
-| `heading` | text | Heading | Less noise. More care. |
+| `kicker` | text | Kicker | How we decide |
+| `heading` | text | Heading | Three rules for every formula |
 
 ## Blocks
 

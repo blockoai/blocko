@@ -28,10 +28,10 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Never run out mid-shower |
-| `heading` | text | Heading | Subscribe and save 20% |
+| `eyebrow` | text | Eyebrow | A habit, not a discount |
+| `heading` | text | Heading | Subscribe, save and stop thinking about it |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Start a subscription |
+| `button_label` | text | Button label | Build my box |
 
 ## Blocks
 

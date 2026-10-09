@@ -42,7 +42,6 @@
 .blko-theme .blko-beauty-extras-rating-bars p{display:grid;grid-template-columns:52px 1fr;gap:.5rem;margin:.45rem 0;font-size:var(--text-small)}
 .blko-theme .blko-beauty-extras-review-list article[hidden]{display:none}
 .blko-theme .blko-beauty-extras-review-list article{padding:1.5rem;background:var(--color-paper)}
-.blko-theme .blko-beauty-extras-map:before{content:"";position:absolute;width:150%;height:25%;background:var(--color-accent);transform:rotate(-35deg)}
 .blko-theme .blko-beauty-extras-store-list article{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.5rem;border-bottom:1px solid var(--color-line)}
 .blko-theme .blko-beauty-extras-store-list h2{margin:.2rem 0;font:var(--weight-medium) var(--text-h4)/var(--leading-h3) var(--font-display);letter-spacing:var(--tracking-body)}
 .blko-theme .blko-beauty-extras-store-card h3{margin:.2rem 0;font:var(--weight-medium) var(--text-h4)/var(--leading-h3) var(--font-display);letter-spacing:var(--tracking-body)}
@@ -379,19 +378,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Formula guide"
+      "default": "Formula index"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Ingredients, explained."
+      "default": "What is in the bottle, and why."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Search the ingredients behind a comfortable, honest shave."
+      "default": "Look up the ingredients behind the gel, cleanser, body wash and balm, and see where each one is used."
     },
     {
       "type": "text",
@@ -403,7 +402,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “lather”"
+      "default": "Try “aloe” or “cedar”"
     },
     {
       "type": "text",
@@ -421,13 +420,13 @@
       "type": "text",
       "id": "detail_heading",
       "label": "Detail heading",
-      "default": "Aloe leaf juice"
+      "default": "Volcanic rock"
     },
     {
       "type": "textarea",
       "id": "detail_text",
       "label": "Detail text",
-      "default": "A botanical humectant that gives formulas a cool, soothing feel. It is especially welcome after a shave, when skin needs a little ease."
+      "default": "Finely ground stone that lifts dead skin and loosens trapped hair before shaving. It sits in the cleanser, never in products that stay on skin."
     },
     {
       "type": "text",
@@ -439,7 +438,7 @@
       "type": "text",
       "id": "best_for",
       "label": "Best for",
-      "default": "Comfort and lather"
+      "default": "Ingrown hairs and dull-looking skin"
     },
     {
       "type": "text",
@@ -451,7 +450,7 @@
       "type": "text",
       "id": "found_in",
       "label": "Found in",
-      "default": "Shave and body"
+      "default": "Exfoliating face cleanser"
     }
   ],
   "blocks": [
@@ -524,71 +523,75 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Lather",
-            "key": "hydration"
+            "label": "Shave",
+            "key": "shave"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Soothing",
-            "key": "barrier"
+            "label": "Face",
+            "key": "face"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Cooling",
-            "key": "sun"
+            "label": "Body",
+            "key": "body"
           }
         },
         {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "name": "Aloe",
+            "detail": "Cools skin and eases the sting after a close shave",
+            "tags": "shave"
+          }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
+            "letter": "G",
             "name": "Glycerin",
-            "detail": "Helps the gel glide",
-            "tags": "soothing glide"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "letter": "H",
-            "name": "Shea butter",
-            "detail": "Adds lightweight moisture",
-            "tags": "hydration"
+            "detail": "A humectant that keeps skin soft and holds a lather together",
+            "tags": "shave face"
           }
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "N",
-            "name": "Menthol",
-            "detail": "Gives a cool, fresh feel",
-            "tags": "brightening"
+            "name": "Niacinamide",
+            "detail": "Calms redness and smooths the look of tone",
+            "tags": "face"
           }
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "S",
-            "name": "Coconut-derived cleanser",
-            "detail": "Builds a rich, easy lather",
-            "tags": "nourishing"
+            "name": "Shea butter",
+            "detail": "A rich plant fat that cushions dry patches",
+            "tags": "body"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Witch hazel",
-            "detail": "A calming plant extract",
-            "tags": "cooling"
+            "letter": "V",
+            "name": "Volcanic rock",
+            "detail": "A gentle physical exfoliant for prep before the blade",
+            "tags": "face"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "E",
+            "name": "Eucalyptus",
+            "detail": "A cooling, clean scent note in the face cleanser",
+            "tags": "face body"
           }
         }
       ]

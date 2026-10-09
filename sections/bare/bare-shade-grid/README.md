@@ -27,10 +27,10 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Shade matching |
-| `heading` | text | Heading | Skin tone, not a shade number. |
-| `text` | textarea | Text | Fifteen shades, each tuned to undertone as well as depth. Take the two-minute qu |
-| `button_label` | text | Button label | Find your shade |
+| `eyebrow` | text | Eyebrow | New concealer range |
+| `heading` | text | Heading | Cover that feels like nothing at all. |
+| `text` | textarea | Text | Twenty-five shades, each matched by depth and undertone. Answer six quick questi |
+| `button_label` | text | Button label | Take the quiz |
 | `button_url` | url | Button url |  |
 
 ## Blocks

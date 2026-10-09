@@ -2,46 +2,63 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Members club",
+        "heading": "Every order earns something back.",
+        "text": "Join free, collect points on purchases and reviews, and trade them for products, early looks and shipping perks.",
+        "button_label": "Join the club",
+        "image_alt": "Member opening a points reward box",
+        "earn_eyebrow": "How points work",
+        "earn_heading": "Sign up. Shop. Redeem.",
+        "tiers_eyebrow": "Membership levels",
+        "tiers_heading": "The more you shop, the more you unlock."
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Sign up",
+            "text": "Create a free account and get 100 points just for joining."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Collect",
+            "text": "One point per dollar, plus bonus points for reviews, referrals and your birthday month."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Redeem",
+            "text": "Spend points on full-size products or a mini of your choice at checkout."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "Member",
+            "points": "0+ points",
+            "perks": "Points on every order · birthday gift"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Insider",
+            "points": "500+ points",
+            "perks": "Early access to launches · free shipping"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "VIP",
+            "points": "1,500+ points",
+            "perks": "Double-point events · private samples"
           }
         }
       },
@@ -54,24 +71,32 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Club questions",
+        "heading": "Points, answered"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "Do points expire?",
+            "text": "Points stay active for twelve months after your last purchase or review."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Can I combine points with a promo code?",
+            "text": "Yes. Redeem points first, then apply any code to the remaining total."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "How do I check my balance?",
+            "text": "Sign in and open the rewards tab in your account, or see the banner in your bag."
           }
         }
       },
@@ -83,12 +108,16 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-faq",
     "newsletter"
   ]
 }

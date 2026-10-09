@@ -2,7 +2,11 @@
   "sections": {
     "account-login": {
       "type": "blko-account-login",
-      "settings": {}
+      "settings": {
+        "heading": "Sign in or create an account.",
+        "lede": "Enter your email and we will find your account or set one up in one step.",
+        "submit_label": "Continue"
+      }
     }
   },
   "order": [

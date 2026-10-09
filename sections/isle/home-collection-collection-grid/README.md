@@ -35,12 +35,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Woman with glowing sun-kissed shoulders |
-| `promo_eyebrow` | text | Promo eyebrow | Build your ritual |
-| `promo_heading` | text | Promo heading | Coconut meets care. |
+| `promo_image_alt` | text | Promo image alt text | Sun-kissed shoulders on a beach towel |
+| `promo_eyebrow` | text | Promo eyebrow | Heading outside? |
+| `promo_heading` | text | Promo heading | Match your SPF to your day. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Explore sets |
-| `load_more_label` | text | Load more label | Load more |
+| `promo_label` | text | Promo label | Try the SPF finder |
+| `load_more_label` | text | Load more label | Show more products |
 | `previous_label` | text | Previous label | Previous page |
 
 ## Blocks

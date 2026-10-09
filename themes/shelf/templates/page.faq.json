@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Customer care",
+        "heading": "How can we help today?",
+        "text": "Look up an order, start a return or browse answers on shipping, discounts, Shelf Club, gift cards and recycling."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “return window” or “points”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -16,64 +22,105 @@
           "type": "tab",
           "settings": {
             "key": "orders",
-            "label": "Orders"
+            "label": "Orders + shipping"
           }
         },
         "block-3": {
-          "type": "tab",
-          "settings": {
-            "key": "products",
-            "label": "Products"
-          }
-        },
-        "block-4": {
           "type": "tab",
           "settings": {
             "key": "returns",
             "label": "Returns"
           }
         },
+        "block-4": {
+          "type": "tab",
+          "settings": {
+            "key": "discounts",
+            "label": "Discounts"
+          }
+        },
         "block-5": {
-          "type": "question",
-          "settings": {}
+          "type": "tab",
+          "settings": {
+            "key": "club",
+            "label": "Shelf Club"
+          }
         },
         "block-6": {
-          "type": "question",
+          "type": "tab",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "key": "recycling",
+            "label": "Recycling"
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "question": "How soon does an order leave?",
+            "answer": "Orders are packed within 48 hours. Anything placed after one on Friday afternoon goes out the following Monday."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "question": "Can I change an order after paying?",
+            "answer": "No. Once placed, an order can't be edited or cancelled, but you can return it later."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "How long do I have to return something?",
+            "answer": "Thirty days from delivery. Items must be unused or lightly used. Online returns cost $5; boutique returns are free."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "What can't be sent back?",
+            "answer": "Final-sale items, gifts with purchase, gift cards and anything bought with club rewards."
+          }
+        },
+        "block-11": {
+          "type": "question",
+          "settings": {
+            "category": "discounts",
+            "question": "Can I use two promo codes?",
+            "answer": "One code per order. Welcome codes and sale markdowns can't be applied after the fact."
+          }
+        },
+        "block-12": {
+          "type": "question",
+          "settings": {
+            "category": "club",
+            "question": "Do points expire?",
+            "answer": "Never. They stay put whatever your level does."
+          }
+        },
+        "block-13": {
+          "type": "question",
+          "settings": {
+            "category": "club",
+            "question": "How do I claim a reward?",
+            "answer": "At a boutique register, on the club page, or at the bottom of your online bag."
+          }
+        },
+        "block-14": {
+          "type": "question",
+          "settings": {
+            "category": "recycling",
+            "question": "What can go in the empties bins?",
+            "answer": "Small caps, pumps, tubes and wands. Aerosols, perfume bottles, nail products, toothpaste tubes and pouches can't be accepted."
+          }
+        },
+        "block-15": {
+          "type": "question",
+          "settings": {
+            "category": "recycling",
+            "question": "How many items earn points?",
+            "answer": "Ten points each, with a limit of twelve per boutique visit."
           }
         }
       },
@@ -87,17 +134,54 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13",
+        "block-14",
+        "block-15"
       ]
     },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+    "faq-trust": {
+      "type": "blko-faq-trust",
+      "settings": {
+        "eyebrow": "Still stuck?",
+        "heading": "Reach a person",
+        "link_label": "Contact us"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "pillar",
+          "settings": {
+            "title": "Chat",
+            "body": "Every day, early morning to early evening Pacific time."
+          }
+        },
+        "block-2": {
+          "type": "pillar",
+          "settings": {
+            "title": "Email",
+            "body": "Send a note with your order number for a reply the next business day."
+          }
+        },
+        "block-3": {
+          "type": "pillar",
+          "settings": {
+            "title": "Boutique",
+            "body": "Walk in and ask an advisor, or book a free consultation."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     }
   },
   "order": [
     "content-faq-hero",
     "content-faq-browser",
-    "newsletter"
+    "faq-trust"
   ]
 }

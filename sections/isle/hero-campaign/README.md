@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Woman walking along the shore at golden hour |
-| `eyebrow` | text | Eyebrow | Welcome to the island |
-| `heading` | text | Heading | Feels like paradise. |
-| `text` | textarea | Text | Clean, vegan body care that turns every shower into a mini vacation. Jumbo sized |
-| `button_label` | text | Button label | Shop body care |
+| `image_alt` | text | Image alt text | Glowing shoulders in warm light next to a jumbo body butter |
+| `eyebrow` | text | Eyebrow | Limited edition scent |
+| `heading` | text | Heading | Wrap yourself in toasted-sugar warmth. |
+| `text` | textarea | Text | A seasonal body collection in a cozy new scent, with jumbo sizes that make shari |
+| `button_label` | text | Button label | Shop the collection |
 | `button_url` | url | Button url |  |
 | `image_2` | image_picker | Collage image 2 |  |
 | `image_2_alt` | text | Collage image 2 alt text |  |

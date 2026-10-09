@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Color routine |
-| `eyebrow` | text | Eyebrow | Our shades |
-| `heading` | text | Heading | Makeup that’s fun and good for skin. |
-| `text` | textarea | Text | Mix cream blush, glossy balm and tints that work together in every shade. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Pigment swatches next to a bowl of plant oil |
+| `eyebrow` | text | Eyebrow | Beyond the banned list |
+| `heading` | text | Heading | We keep out more than 2,000 ingredients. |
+| `text` | textarea | Text | Parabens, talc, synthetic fragrance and cyclic silicones are only the start. The |
+| `button_label` | text | Button label | Read the safety FAQ |
 | `button_url` | url | Button url |  |
 
 ## Blocks

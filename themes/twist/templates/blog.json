@@ -2,15 +2,29 @@
   "sections": {
     "search-blog-journal-hero": {
       "type": "blko-search-blog-journal-hero",
-      "settings": {}
+      "settings": {
+        "crumb": "blog",
+        "eyebrow": "hair blog",
+        "heading": "Hair science, wash-day guides and gift ideas.",
+        "text": "Explainers on ingredients, curl techniques and how to get the most from your bars.",
+        "image_alt": "Person with defined curls"
+      }
     },
     "search-blog-featured-post": {
       "type": "blko-search-blog-featured-post",
-      "settings": {}
+      "settings": {
+        "eyebrow_prefix": "top read",
+        "reading_time": "6 minutes",
+        "button_label": "read it"
+      }
     },
     "search-blog-article-grid": {
       "type": "blko-search-blog-article-grid",
-      "settings": {}
+      "settings": {
+        "eyebrow": "keep reading",
+        "heading": "Latest from the blog",
+        "link_label": "read more"
+      }
     },
     "search-blog-pagination": {
       "type": "blko-search-blog-pagination",
@@ -18,7 +32,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [

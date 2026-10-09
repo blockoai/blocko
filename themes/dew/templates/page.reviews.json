@@ -2,38 +2,46 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Reviews",
+        "heading": "100,000 reviews, one honest average.",
+        "average": "4.6",
+        "count_text": "From 103,000 verified reviews",
+        "stars_label": "Four and a half out of five stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 74
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 16
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 6
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 2
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         "block-6": {
@@ -45,60 +53,47 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "Face",
-            "key": "complexion"
+            "label": "Skin",
+            "key": "skin"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Body",
-            "key": "care"
+            "label": "Lip + cheek",
+            "key": "lip"
           }
         },
         "block-9": {
           "type": "filter",
           "settings": {
-            "label": "With photos",
+            "label": "With photos or video",
             "key": "photos"
           }
         },
         "block-10": {
-          "type": "photo",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "tags": "skin photos",
+            "title": "Cleanser that removes everything",
+            "meta": "Balm-to-lather cleanser · Verified buyer · would recommend"
+          }
         },
         "block-11": {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
+            "tags": "lip",
+            "title": "I bought three more lip balms",
+            "meta": "Overnight lip balm · Vanilla bean · Verified buyer"
           }
         },
         "block-12": {
-          "type": "photo",
-          "settings": {}
-        },
-        "block-13": {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        "block-14": {
-          "type": "review",
-          "settings": {}
-        },
-        "block-15": {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Body"
-          }
-        },
-        "block-16": {
-          "type": "review",
-          "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "lip photos",
+            "rating": 4,
+            "title": "Shade runs a touch deeper on me",
+            "meta": "Cream blush stick · Raspberry · Verified buyer"
           }
         }
       },
@@ -114,20 +109,47 @@
         "block-9",
         "block-10",
         "block-11",
-        "block-12",
-        "block-13",
-        "block-14",
-        "block-15",
-        "block-16"
+        "block-12"
+      ]
+    },
+    "reviews-picks": {
+      "type": "blko-reviews-picks",
+      "settings": {
+        "eyebrow": "Most reviewed",
+        "heading": "Shelf favorites by rating"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "label": "Skin"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "Lip + cheek"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [
     "beauty-extras-reviews-hub",
+    "reviews-picks",
     "newsletter"
   ]
 }

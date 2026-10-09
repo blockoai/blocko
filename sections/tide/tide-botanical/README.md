@@ -31,10 +31,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Fresh kelp close-up on a pale surface |
 | `eyebrow` | text | Eyebrow | Ingredient spotlight |
-| `heading` | text | Heading | Kelp, harvested at the turn of the tide. |
-| `text` | textarea | Text | Slow-growing sea kelp is rich in minerals and amino acids. We use a gentle extra |
+| `heading` | text | Heading | Wakame, the moisture-barrier seaweed. |
+| `text` | textarea | Text | Hand-harvested sea greens are packed with minerals and humectants. This one help |
 | `link_url` | url | Link url |  |
-| `link_label` | text | Link label | Explore all ingredients |
+| `link_label` | text | Link label | Meet the seaweeds |
 
 ## Blocks
 

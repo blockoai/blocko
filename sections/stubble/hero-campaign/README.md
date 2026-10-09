@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Man shaving in front of a mirror |
-| `eyebrow` | text | Eyebrow | Fair-priced essentials |
-| `heading` | text | Heading | A better shave, at a fair price. |
-| `text` | textarea | Text | Quality gear for your face and body, designed with care and sold with no nonsens |
-| `button_label` | text | Button label | Shop shave |
+| `image_alt` | text | Image alt text | Glass fragrance bottle with water droplets |
+| `eyebrow` | text | Eyebrow | New this season |
+| `heading` | text | Heading | A scent that lasts the whole day. |
+| `text` | textarea | Text | Smoked wood, warm spice and a soft vanilla finish in a bottle small enough for a |
+| `button_label` | text | Button label | Shop the fragrance |
 | `button_url` | url | Button url |  |
 
 ## Blocks

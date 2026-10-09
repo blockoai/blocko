@@ -35,11 +35,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Person with a natural glow |
-| `promo_eyebrow` | text | Promo eyebrow | Build your routine |
-| `promo_heading` | text | Promo heading | Glow meets care. |
+| `promo_image_alt` | text | Promo image alt text | Bronzer swatches from light to deep on a forearm |
+| `promo_eyebrow` | text | Promo eyebrow | Bronzer unsure? |
+| `promo_heading` | text | Promo heading | Match your depth in four taps. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Explore care |
+| `promo_label` | text | Promo label | Try the shade finder |
 | `load_more_label` | text | Load more label | Load more |
 | `previous_label` | text | Previous label | Previous page |
 

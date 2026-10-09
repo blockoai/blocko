@@ -12,7 +12,7 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#efe5d2",
+          "background": "#eadec3",
           "text": "#74625c",
           "button": "#a89a85",
           "button_label": "#ffffff",
@@ -48,7 +48,7 @@
       },
       "scheme-6": {
         "settings": {
-          "background": "#efe5d2",
+          "background": "#eadec3",
           "text": "#413030",
           "button": "#74625c",
           "button_label": "#ffffff",
@@ -84,7 +84,7 @@
       },
       "scheme-10": {
         "settings": {
-          "background": "#efe5d2",
+          "background": "#eadec3",
           "text": "#a02d47",
           "button": "#74625c",
           "button_label": "#ffffff",
@@ -120,16 +120,16 @@
       },
       "scheme-14": {
         "settings": {
-          "background": "#efe5d2",
+          "background": "#eadec3",
           "text": "#74625c",
           "button": "#74625c",
-          "button_label": "#efe5d2",
+          "button_label": "#eadec3",
           "button_hover": "#413030"
         }
       },
       "scheme-15": {
         "settings": {
-          "background": "#efe5d2",
+          "background": "#eadec3",
           "text": "#ba0042",
           "button": "#ba0042",
           "button_label": "#ffffff",
@@ -147,7 +147,7 @@
       },
       "scheme-17": {
         "settings": {
-          "background": "#efe5d2",
+          "background": "#eadec3",
           "text": "#413030",
           "button": "#413030",
           "button_label": "#ffffff",
@@ -183,7 +183,7 @@
       }
     },
     "color_bg": "#ffffff",
-    "color_bg_alt": "#efe5d2",
+    "color_bg_alt": "#eadec3",
     "color_text": "#74625c",
     "color_text_muted": "#605b52",
     "color_border": "#bcb8a7",
@@ -200,7 +200,7 @@
     "color_error": "#e01844",
     "color_input_bg": "#ffffff",
     "color_input_text": "#74625c",
-    "color_swatch_light": "#e8c6a8",
+    "color_swatch_light": "#e9bfb4",
     "color_swatch_medium": "#d28f7b",
     "color_swatch_deep": "#9a5947",
     "blocko_api_base": "/apps/blocko",

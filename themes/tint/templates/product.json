@@ -2,26 +2,69 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Face",
+        "price_note": "Full 0.2 oz · Mini 0.1 oz",
+        "shade_help_label": "Find your shade in a two-minute quiz",
+        "ship_note": "Free shipping from $50 · Free returns and exchanges · Need shade help? Chat with the team"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Sheer, buildable coverage with a juicy natural finish. Wear alone or layer over your favorite skincare."
+            "label": "Benefits",
+            "text": "Brightens and hydrates the delicate eye area as it covers. Hides shadows, redness and spots with a flexible, crease-resistant finish that does not dry out."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
             "label": "Ingredients",
-            "text": "Mineral SPF, lightweight emollients and skin-conditioning ingredients in a comfortable daily formula."
+            "text": "Stabilised vitamin C, peptides, hyaluronic acid and a plant-derived emollient. Made without silicones, fragrance or the ingredients on our banned list."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
+            "label": "Clinical results",
+            "text": "In a four-week consumer study, most wearers agreed skin looked brighter and felt more hydrated. Dermatologist-tested, non-comedogenic and hypoallergenic."
+          }
+        },
+        "block-4": {
+          "type": "accordion",
+          "settings": {
             "label": "How to use",
-            "text": "Shake well. Dab a few dots with fingertips, then blend outward. Build where you want a little more color."
+            "text": "Dot beneath the eye and along any area you want to even out. Tap in with a fingertip or a damp sponge, then set with a little loose powder if you like."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-trust": {
+      "type": "blko-pdp-trust",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {
+            "text": "FREE SHIPPING FROM $50"
+          }
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "FREE RETURNS AND SWAPS"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "SHADE HELP FROM A REAL PERSON"
           }
         }
       },
@@ -31,17 +74,310 @@
         "block-3"
       ]
     },
+    "pdp-sets": {
+      "type": "blko-pdp-sets",
+      "settings": {
+        "eyebrow": "Save with sets",
+        "heading": "Pair it and pay less"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New arrivals",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "pdp-actives": {
+      "type": "blko-pdp-actives",
+      "settings": {
+        "kicker": "Benefits and ingredients",
+        "heading": "Four actives behind the brightness"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Stabilised vitamin C",
+            "text": "Helps shadows and dullness look lighter over weeks of wear."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Peptide complex",
+            "text": "Gives the under-eye a plumper, smoother look."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Hyaluronic acid",
+            "text": "Holds water at the surface so the formula never settles into lines."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Plant emollient",
+            "text": "Cushions the skin and keeps the cream blendable."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
     "pdp-before-after": {
       "type": "blko-pdp-before-after",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Clinical results",
+        "heading": "Brighter after four weeks.",
+        "text": "Measured in a study of 100 volunteers over 28 days. Results come from self-assessment and are shown as the share who agreed.",
+        "stat_1_value": "89%",
+        "stat_1_label": "agreed the under-eye looked brighter",
+        "stat_2_value": "93%",
+        "stat_2_label": "agreed it felt hydrating all day",
+        "after_image_alt": "Under-eye area after four weeks of use",
+        "before_image_alt": "Under-eye area before use"
+      }
+    },
+    "pdp-awards": {
+      "type": "blko-pdp-awards",
+      "settings": {
+        "eyebrow": "Awards and mentions"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {
+            "name": "BEST OF BEAUTY"
+          }
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "EDITOR'S CHOICE"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "READERS' PICK"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-shade-compare": {
+      "type": "blko-pdp-shade-compare",
+      "settings": {
+        "eyebrow": "Compare by skin tone",
+        "heading": "Find your depth",
+        "pill_label": "Take the shade quiz"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "shade",
+          "settings": {
+            "name": "Fair 10C",
+            "count": "Cool undertone",
+            "tone": "light"
+          }
+        },
+        "block-2": {
+          "type": "shade",
+          "settings": {
+            "name": "Light 25N",
+            "count": "Neutral undertone"
+          }
+        },
+        "block-3": {
+          "type": "shade",
+          "settings": {
+            "name": "Medium 40W",
+            "count": "Warm undertone",
+            "tone": "honey-sand"
+          }
+        },
+        "block-4": {
+          "type": "shade",
+          "settings": {
+            "name": "Tan 60O",
+            "count": "Olive undertone",
+            "tone": "golden-tan"
+          }
+        },
+        "block-5": {
+          "type": "shade",
+          "settings": {
+            "name": "Rich 90C",
+            "count": "Cool undertone",
+            "tone": "cocoa-deep"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "pdp-claims": {
+      "type": "blko-pdp-claims",
+      "settings": {
+        "line_1": "Conceals like makeup.",
+        "line_2": "Treats like an eye cream.",
+        "text": "Brightening, hydrating, silicone-free and gentle enough for sensitive skin.",
+        "button_label": "See the ingredients"
+      }
+    },
+    "pdp-how-to": {
+      "type": "blko-pdp-how-to",
+      "settings": {
+        "kicker": "How to use it",
+        "heading": "Cover, blend, set"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Concealer dotted on the back of a hand",
+            "title": "Dot where you need it",
+            "text": "Place two small dots at the inner corner and one on any blemish."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Fingertip blending under the eye",
+            "label": "Step two",
+            "title": "Tap, do not rub",
+            "text": "Press with a ring finger or a damp sponge so the cream melts into skin."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Loose powder and a small brush",
+            "label": "Step three",
+            "title": "Set only if you crease",
+            "text": "A light dusting of powder locks it in for oily lids or a long day."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "pdp-complete-routine": {
       "type": "blko-pdp-complete-routine",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build your look",
+        "heading": "Two steps: correct, then conceal",
+        "text": "Cancel the shadow first, then brighten on top. Both pieces in one bag."
+      }
+    },
+    "pdp-founder": {
+      "type": "blko-pdp-founder",
+      "settings": {
+        "kicker": "Why we made it",
+        "quote": "Healthy skin is something you build up, not something you hide behind a layer.",
+        "note": "The founder, a working makeup artist, wanted a concealer she could trust on the most sensitive skin in the room.",
+        "name": "Our founder",
+        "role": "Makeup artist and creator",
+        "image_alt": "Founder holding a concealer tube"
+      }
+    },
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "Product FAQ",
+        "heading": "Quick answers about this concealer"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Where does it go in my routine?",
+            "text": "After moisturizer and sunscreen, before powder. If you also use a corrector, apply that first."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "How long does it last?",
+            "text": "Most people get a full workday. Set with powder for extra staying power in heat."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Is it right for dry or oily skin?",
+            "text": "Yes to both. The hydrating base suits dry skin, and the soft-focus pigments stay put on oilier skin."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "Can I use it on blemishes?",
+            "text": "Absolutely. Use a small brush for pinpoint cover and tap the edges to blend."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "Will it change color on my skin?",
+            "text": "A little oxidation is normal on some tones. Check your match in daylight and size down a shade if it deepens."
+          }
+        },
+        "block-6": {
+          "type": "question",
+          "settings": {
+            "label": "Why is the cap color different?",
+            "text": "Each cap matches its shade family so you can find your tube fast in a crowded bag."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add a finishing touch"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -62,114 +398,71 @@
     },
     "pdp-reviews": {
       "type": "blko-pdp-reviews",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Customer reviews",
+        "average": "4.5",
+        "summary": "From 2,259 reviews · 91% would recommend",
+        "list_heading": "What wearers say"
+      },
       "blocks": {
         "block-1": {
-          "type": "bar",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "title": "Brightens without caking",
+            "text": "I have heavy shadows and it hides them without settling. Shade 45N was a perfect match.",
+            "footer": "Nia R. · 25 to 34 · medium skin · combination",
+            "tags": "photos coverage",
+            "caption": "Medium 45N · photo review"
+          }
         },
         "block-2": {
-          "type": "bar",
+          "type": "review",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
+            "title": "Great for my sensitive eyes",
+            "text": "No stinging, no puffiness. I now wear it every day and skip the heavy foundation.",
+            "footer": "Ola B. · 35 to 44 · light skin · dry",
+            "tags": "coverage",
+            "caption": ""
           }
         },
         "block-3": {
-          "type": "bar",
-          "settings": {
-            "label": "3 stars",
-            "percent": 4
-          }
-        },
-        "block-4": {
-          "type": "bar",
-          "settings": {
-            "label": "2 stars",
-            "percent": 1
-          }
-        },
-        "block-5": {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {}
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Coverage",
-            "key": "coverage"
-          }
-        },
-        "block-9": {
           "type": "review",
           "settings": {
-            "text": "It evens out my complexion while still looking completely natural. I love the light, hydrated finish."
-          }
-        },
-        "block-10": {
-          "type": "review",
-          "settings": {
-            "title": "My everyday base",
-            "text": "Easy to blend with fingers and it stays comfortable through a long day. The shade range made matching simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Fresh, not shiny",
-            "text": "This gives me the glowy finish I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
+            "title": "Wish it lasted longer on my lids",
+            "text": "Lovely finish but I needed powder to stop creasing in summer.",
+            "footer": "Tam P. · 18 to 24 · tan skin · oily",
             "tags": "photos",
-            "caption": "Cocoa Deep · photo review"
+            "caption": "Tan 55W · photo review",
+            "rating": 3
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-3"
       ]
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
       "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
     }
   },
   "order": [
     "pdp-product-main",
+    "pdp-trust",
+    "pdp-sets",
+    "pdp-actives",
     "pdp-before-after",
+    "pdp-awards",
+    "pdp-shade-compare",
+    "pdp-claims",
+    "pdp-how-to",
     "pdp-complete-routine",
+    "pdp-founder",
+    "pdp-faq",
     "product-recommendations",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-recently-viewed"
   ]
 }

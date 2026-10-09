@@ -1,4 +1,4 @@
-# Big claw clip product detail
+# Jumbo claw clip product detail
 
 Gallery, shade and size choices, flexible purchase option, quantity, and sticky purchase bar.
 
@@ -11,7 +11,7 @@ Gallery, shade and size choices, flexible purchase option, quantity, and sticky 
 ## Paste this into your coding agent
 
 ```text
-Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section "Big claw clip product detail" (id `pdp-product-main`, theme `clip`; live demo: https://demo.blocko.ai/html/clip/sections/main-product--pdp-product-main.html; Shopify bundle: sections/clip/pdp-product-main/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
+Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section "Jumbo claw clip product detail" (id `pdp-product-main`, theme `clip`; live demo: https://demo.blocko.ai/html/clip/sections/main-product--pdp-product-main.html; Shopify bundle: sections/clip/pdp-product-main/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
 ```
 
 ## Install
@@ -33,15 +33,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `button_label` | text | Button label | Add to bag |
-| `one_time_label` | text | One time label | One-time purchase |
+| `one_time_label` | text | One time label | Add to bag |
 | `breadcrumb_shop` | text | Breadcrumb shop | Shop |
 | `breadcrumb_category_url` | url | Breadcrumb category url |  |
-| `breadcrumb_category` | text | Breadcrumb category | Clips |
-| `price_note` | text | Price note | Large, 3.5 in |
+| `breadcrumb_category` | text | Breadcrumb category | Claw clips |
+| `price_note` | text | Price note | Strong-grip acetate · 4 in |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure which size? See the size guide. |
+| `shade_help_label` | text | Shade help label | Sold out in your colour? Join the waitlist. |
 | `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Free delivery on orders over $50 · Easy returns within 30 days |
+| `ship_note` | text | Ship note | Free shipping over $75 · Slight swirl variation is part of the charm |
 
 ## Blocks
 

@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Get the look |
-| `heading` | text | Heading | Five minutes, four ways. |
+| `heading` | text | Heading | Four faces, step by step. |
 
 ## Blocks
 

@@ -1,25 +1,119 @@
 {
   "sections": {
+    "replenish-header": {
+      "type": "blko-replenish-header",
+      "settings": {
+        "breadcrumb": "Auto-replenish",
+        "heading": "Refill the staples before they run out.",
+        "text": "Choose how often a favorite should arrive and save on each shipment. No commitment, no minimum."
+      }
+    },
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Auto-replenish",
+        "heading": "Your must-haves, on a schedule.",
+        "text": "Take 10% off the first refill and 5% off every one after that. Add three or more items to one schedule and the saving is 10% again.",
+        "shipment_eyebrow": "Next shipment",
+        "shipment_heading": "Leaves on the 5th",
+        "image_alt": "Barrier serum bottle ready to ship",
+        "variant_label": "Full size",
+        "shipment_note": "Sent to your saved address.",
+        "frequency_eyebrow": "Refill every",
+        "frequency_copy": "This refill repeats every two months.",
+        "skip_label": "Skip this shipment",
+        "swap_label": "Switch the size"
+      },
       "blocks": {
         "block-1": {
-          "type": "frequency",
-          "settings": {
-            "selected": true
-          }
-        },
-        "block-2": {
           "type": "frequency",
           "settings": {
             "label": "6 weeks"
           }
         },
+        "block-2": {
+          "type": "frequency",
+          "settings": {
+            "label": "2 months",
+            "selected": true
+          }
+        },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "3 months"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "What you get",
+        "heading": "A small perk, clearly priced"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "10% on the first refill",
+            "text": "Applies to your opening replenishment order."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "5% on repeats",
+            "text": "Every recurring shipment after that stays discounted."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "10% for three or more",
+            "text": "Group three products on one schedule for the larger rate."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "replenish-faq": {
+      "type": "blko-replenish-faq",
+      "settings": {
+        "eyebrow": "Refill questions",
+        "heading": "Before you set it up"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Do points still count?",
+            "text": "Yes. Refill orders earn points at your level like any other order."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Can I stack it with a promo code?",
+            "text": "Only one discount code applies per order, so choose the better of the two."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Is it available on sets and sale items?",
+            "text": "Sets are eligible. Final-sale and gift card items are not."
           }
         }
       },
@@ -31,7 +125,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shopper favorites",
+        "heading": "More bestsellers"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -40,8 +137,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New arrivals"
           }
         }
       },
@@ -52,11 +149,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
+    "replenish-header",
     "beauty-extras-subscription-manager",
+    "subscription-perks",
+    "replenish-faq",
     "product-recommendations",
     "newsletter"
   ]

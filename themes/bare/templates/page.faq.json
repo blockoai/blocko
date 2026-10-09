@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help centre",
+        "heading": "Everything about orders, formulas and shipping.",
+        "text": "Browse by topic, or message the care team using the chat in the corner."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “shade”, “returns” or “vegan”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,65 +21,76 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "formulas",
+            "label": "Products"
           }
         },
         "block-3": {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "orders",
+            "label": "Orders"
           }
         },
         "block-4": {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "club",
+            "label": "Shipping"
           }
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "category": "formulas",
+            "question": "What does clean mean here?",
+            "answer": "We leave out about fifty ingredient families, including parabens, phthalates, talc, PFAS, mineral oil and PEGs."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "formulas",
+            "question": "Are your products vegan and cruelty-free?",
+            "answer": "Yes, and the cruelty-free status is certified. They are also free of gluten ingredients."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "category": "formulas",
+            "question": "How long does a product last once opened?",
+            "answer": "Look for the open-jar symbol on the pack; most formulas last twelve to twenty-four months."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "question": "How do I change or cancel an order?",
+            "answer": "Message us within a few hours of ordering. Once it has shipped, use the returns portal."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "What is package protection?",
+            "answer": "An optional add-on that covers lost or damaged parcels; claim within seven days of delivery."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "club",
+            "question": "What is the free shipping threshold?",
+            "answer": "Orders over $55 in the US ship free. Other regions have their own threshold in local currency."
+          }
+        },
+        "block-11": {
+          "type": "question",
+          "settings": {
+            "category": "club",
+            "question": "Why is fragrance excluded from free shipping in some countries?",
+            "answer": "Aerosols and scented items count as hazardous cargo, so they follow a flat rate."
           }
         }
       },
@@ -87,12 +104,17 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [

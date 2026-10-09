@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help center",
+        "heading": "Quick answers, sorted by topic.",
+        "text": "Pick a topic or search for shipping, returns, subscriptions, rewards and product questions."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “shipping” or “subscription”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,8 +21,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "shipping",
+            "label": "Shipping + returns"
           }
         },
         "block-3": {
@@ -29,51 +35,64 @@
         "block-4": {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "programs",
+            "label": "Subscriptions + rewards"
           }
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "category": "shipping",
+            "question": "What does shipping cost?",
+            "answer": "Standard shipping is free over $50 within the United States and a flat $7.95 below that. Two-day delivery is available if you order before 10 AM Pacific."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "shipping",
+            "question": "How long does a return window last?",
+            "answer": "Thirty days from the date your order ships. Send it back for a refund or a gift card through our returns portal."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my ritual?",
-            "answer": "Begin with the skin-type quiz, then compare formulas for your routine. Our team can offer general guidance."
+            "category": "shipping",
+            "question": "Do you ship outside the US?",
+            "answer": "Yes, to Canada and many other countries, with duties and taxes either paid at checkout or on delivery."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
             "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "question": "Are your products safe in pregnancy?",
+            "answer": "Our formulas contain no retinoids and our maternity routine guide lists gentle picks, but please check with your doctor."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "products",
+            "question": "How do I patch test?",
+            "answer": "Apply a small amount behind your ear or on your inner arm and wait 24 hours before using a new product."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "programs",
+            "question": "How do I manage my subscription?",
+            "answer": "Sign in to your account, open subscriptions and change the product, date or cadence."
+          }
+        },
+        "block-11": {
+          "type": "question",
+          "settings": {
+            "category": "programs",
+            "question": "How do I see my rewards balance?",
+            "answer": "Open the rewards tab after you sign in, or look at the banner in your bag."
           }
         }
       },
@@ -87,12 +106,17 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [

@@ -2,15 +2,27 @@
   "sections": {
     "search-blog-journal-hero": {
       "type": "blko-search-blog-journal-hero",
-      "settings": {}
+      "settings": {
+        "crumb": "News",
+        "eyebrow": "Company news",
+        "heading": "What is happening at the shop.",
+        "text": "People, stores and grants, written by the team.",
+        "image_alt": "Staff arranging products in a shop window"
+      }
     },
     "search-blog-featured-post": {
       "type": "blko-search-blog-featured-post",
-      "settings": {}
+      "settings": {
+        "eyebrow_prefix": "Latest",
+        "reading_time": "3 minutes"
+      }
     },
     "search-blog-article-grid": {
       "type": "blko-search-blog-article-grid",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Earlier posts",
+        "heading": "Recent updates"
+      }
     },
     "search-blog-pagination": {
       "type": "blko-search-blog-pagination",
@@ -18,7 +30,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [

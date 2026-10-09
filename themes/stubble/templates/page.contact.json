@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help",
+        "heading": "Reach a real person.",
+        "text": "Questions about an order, a refill or a subscription? Email or text and we will answer.",
+        "link_label": "Email support"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,30 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "text": "Orders, returns and subscriptions.",
+            "url": "mailto:help@example.com",
+            "link_label": "help@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick shave guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Text us",
+            "text": "Quick answers by message, 7 days a week.",
+            "url": "mailto:text@example.com",
+            "link_label": "Text line in your account"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Partnerships",
+            "text": "Collaborations and brand projects.",
+            "url": "mailto:partners@example.com",
+            "link_label": "partners@example.com"
           }
         }
       },
@@ -41,28 +50,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Send a message",
+        "heading": "What do you need?",
+        "text": "Include your order number and the razor line you own. Expect a reply by the next working day.",
+        "button_label": "Send"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "My order"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product guidance"
+            "label": "Which refill fits"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Change or cancel a subscription"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Veteran discount"
           }
         }
       },
@@ -75,24 +91,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Availability",
+        "heading": "Support hours"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Monday to Friday",
+            "value": "8 AM to 8 PM Eastern"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
-            "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "label": "Weekend",
+            "value": "9 AM to 5 PM Eastern"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Reply time",
+            "value": "By the next working day"
           }
         }
       },
@@ -104,7 +126,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Where it is made",
+        "heading": "The factory",
+        "text": "Blades are ground and assembled in our own plant. Tours are not open to the public.",
+        "city": "Eisfeld",
+        "country": "Germany"
+      }
     }
   },
   "order": [

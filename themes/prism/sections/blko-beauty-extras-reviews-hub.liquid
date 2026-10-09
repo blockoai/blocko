@@ -359,6 +359,10 @@
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -373,31 +377,31 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "from the color club"
+      "default": "Reviews"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "real hair, real color."
+      "default": "Twenty thousand reviews, sorted by line."
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.6"
     },
     {
       "type": "text",
       "id": "stars_label",
       "label": "Stars label",
-      "default": "Five out of five stars"
+      "default": "Four and a half out of five stars"
     },
     {
       "type": "text",
       "id": "count_text",
       "label": "Count text",
-      "default": "From 2,483 verified reviews"
+      "default": "From 20,414 verified reviews"
     }
   ],
   "blocks": [
@@ -529,34 +533,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 71
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 18
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 6
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 3
           }
         },
         {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         {
@@ -568,14 +574,14 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Color care",
-            "key": "color care"
+            "label": "Cleanse",
+            "key": "complexion"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Repair",
+            "label": "Treat + style",
             "key": "care"
           }
         },
@@ -587,41 +593,28 @@
           }
         },
         {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "repair photos"
-          }
-        },
-        {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "repair photos"
+            "tags": "complexion",
+            "title": "My scalp stopped itching",
+            "meta": "Daily Cleanse Shampoo · Type 2c · Verified buyer"
           }
         },
         {
           "type": "review",
-          "settings": {}
-        },
-        {
-          "type": "review",
           "settings": {
-            "title": "Soft and bouncy all week.",
             "tags": "care",
-            "meta": "Verified customer · Repair"
+            "title": "Mask rescued bleached ends",
+            "meta": "Strength Repair Mask · Type 1b · Verified buyer"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "The hair-type guide made choosing easy."
+            "tags": "care",
+            "rating": 4,
+            "title": "Great serum, wish the bottle were bigger",
+            "meta": "Heat Protect Serum · Type 3a · Verified buyer"
           }
         }
       ]

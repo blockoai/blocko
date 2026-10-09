@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search shades, products and tips.",
+        "text": "Look up a shade code, a formula or a how-to.",
+        "placeholder": "Try “concealer” or “blush”",
+        "search_label": "Search products and journal",
+        "view_all_label": "See all results"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

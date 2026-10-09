@@ -2,7 +2,12 @@
   "sections": {
     "global-subscribe-success": {
       "type": "blko-global-subscribe-success",
-      "settings": {}
+      "settings": {
+        "kicker": "You are in",
+        "heading": "Thanks for joining.",
+        "text": "Watch your inbox for launches and offers. While you wait, see what shavers add first.",
+        "button_label": "Shop best sellers"
+      }
     }
   },
   "order": [

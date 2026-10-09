@@ -2,34 +2,51 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "Makeup that treats your skin well.",
+        "lede": "We started with one question: why should color cosmetics ask skin to put up with anything?",
+        "button_label": "Read the founding story",
+        "image_alt": "Founder applying tinted serum in studio light"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Face with a natural, dewy complexion",
+        "kicker": "What we set out to do",
+        "heading": "Prove that clean can also perform.",
+        "text": "Our formulas pair cosmetic payoff with real skincare actives, so a base that wears all day also leaves skin calmer than it found it."
+      }
     },
     "content-values": {
       "type": "blko-content-values",
-      "settings": {},
+      "settings": {
+        "kicker": "How we decide",
+        "heading": "Three rules for every formula"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "Safe for sensitive skin",
+            "text": "Every product is tested on reactive skin before it ships."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "title": "Only what earns its place",
+            "text": "We leave out fragrance, gluten and silicones unless there is a clear reason."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
+            "title": "Show our work",
+            "text": "Ingredient lists, study results and sourcing notes stay public."
           }
         }
       },
@@ -39,34 +56,38 @@
         "block-3"
       ]
     },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
-    },
     "content-story-timeline": {
       "type": "blko-content-story-timeline",
-      "settings": {},
+      "settings": {
+        "kicker": "Milestones",
+        "heading": "From a kitchen-table batch to a full shelf."
+      },
       "blocks": {
         "block-1": {
           "type": "milestone",
-          "settings": {}
+          "settings": {
+            "label": "2011",
+            "datetime": "2011",
+            "title": "The first tint",
+            "text": "A founder mixes pigment into a serum base to ease her own sensitive skin."
+          }
         },
         "block-2": {
           "type": "milestone",
           "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of care and color essentials."
+            "label": "2016",
+            "datetime": "2016",
+            "title": "Eye and lip join in",
+            "text": "The range grows to cover a whole face in under five minutes."
           }
         },
         "block-3": {
           "type": "milestone",
           "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a routine that moves with your day."
+            "label": "2021",
+            "datetime": "2021",
+            "title": "A recycling loop",
+            "text": "Customers can mail back empties for reuse."
           }
         },
         "block-4": {
@@ -74,8 +95,8 @@
           "settings": {
             "label": "Today",
             "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
+            "title": "A million trees",
+            "text": "Reforestation partners pass a seven-figure planting milestone."
           }
         }
       },
@@ -88,23 +109,27 @@
     },
     "content-press-quotes": {
       "type": "blko-content-press-quotes",
-      "settings": {},
+      "settings": {
+        "kicker": "What editors say"
+      },
       "blocks": {
         "block-1": {
           "type": "quote",
-          "settings": {}
+          "settings": {
+            "quote": "“Makeup that quietly improves how your skin behaves.”",
+            "source": "— The Daily Edit"
+          }
         },
         "block-2": {
           "type": "quote",
           "settings": {
-            "quote": "“A practical answer to the overcomplicated routine.”",
-            "source": "— The Daily Edit"
+            "quote": "“A rare base that sensitive faces can actually wear.”"
           }
         },
         "block-3": {
           "type": "quote",
           "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
+            "quote": "“The brush that comes with the mascara is the real hero.”",
             "source": "— Studio Notes"
           }
         }
@@ -117,14 +142,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [
     "content-about-hero",
     "content-mission",
     "content-values",
-    "content-founder-note",
     "content-story-timeline",
     "content-press-quotes",
     "newsletter"

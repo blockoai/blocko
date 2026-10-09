@@ -2,7 +2,16 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ingredient index",
+        "heading": "What goes in, and why.",
+        "text": "Look up the actives and gentle extras in every formula, from the SPF filter to the humectants.",
+        "search_placeholder": "Try “niacinamide”",
+        "detail_heading": "Niacinamide",
+        "detail_text": "A form of vitamin B3 that helps skin look smoother and more even. It is well tolerated and works with the other actives in the tinted serum.",
+        "best_for": "Uneven tone and visible pores",
+        "found_in": "Tinted serum, face milk"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -20,64 +29,59 @@
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Sun protection",
+            "key": "sun"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Barrier",
+            "key": "barrier"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "name": "Allantoin",
+            "detail": "Comforts reactive, easily irritated skin",
+            "tags": "barrier"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "H",
+            "name": "Hyaluronic acid",
+            "detail": "Holds many times its weight in water for plump-looking skin",
+            "tags": "hydration"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "letter": "N",
+            "name": "Niacinamide",
+            "detail": "Smooths the look of pores and uneven tone",
+            "tags": "barrier"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "S",
+            "name": "Squalane",
+            "detail": "A plant-based oil that seals in moisture without clogging",
+            "tags": "hydration"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
-          }
-        },
-        "block-10": {
-          "type": "ingredient",
-          "settings": {
             "letter": "Z",
             "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "detail": "A non-nano mineral filter that sits on skin and reflects UV",
+            "tags": "sun"
           }
         }
       },
@@ -90,17 +94,26 @@
         "block-6",
         "block-7",
         "block-8",
-        "block-9",
-        "block-10"
+        "block-9"
       ]
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Smear of cream on a ceramic dish",
+        "eyebrow": "Our standard",
+        "heading": "If we cannot explain it, it stays out.",
+        "text": "Every ingredient has a job we can describe in one line. The full list sits on each product page and in this index.",
+        "button_label": "Read our standards"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [

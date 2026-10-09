@@ -115,13 +115,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "The crew says"
+      "default": "What guys say"
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.5"
     },
     {
       "type": "text",
@@ -133,13 +133,13 @@
       "type": "text",
       "id": "summary",
       "label": "Summary",
-      "default": "Based on 100,000+ verified reviews"
+      "default": "28,412 reviews · 88% would buy again"
     },
     {
       "type": "text",
       "id": "list_heading",
       "label": "List heading",
-      "default": "Featured reviews"
+      "default": "Recent reviews"
     },
     {
       "type": "text",
@@ -254,39 +254,55 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 71
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 17
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 7
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 3
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "1 star",
-            "percent": 1
+            "percent": 2
           }
         },
         {
           "type": "filter",
           "settings": {}
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Scent",
+            "key": "scent"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Lather",
+            "key": "lather"
+          }
         },
         {
           "type": "filter",
@@ -298,33 +314,39 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Scent",
-            "key": "coverage"
+            "label": "Value",
+            "key": "value"
           }
         },
         {
           "type": "review",
           "settings": {
-            "text": "It smells like a cabin in the woods and the lather is unreal. My wife keeps stealing the bar."
+            "title": "Smells like a lodge in the hills",
+            "text": "The scent is warm without being sweet. A week in, my towel still smells like it.",
+            "footer": "Aaron K. · 1 week ago",
+            "tags": "scent photos",
+            "caption": "Cabin Cedar · photo review"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "My daily bar",
-            "text": "Lasts for weeks, lathers fast and the scent actually sticks around. The scent families made picking simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "title": "Lathers like crazy",
+            "text": "A thick, creamy lather in about ten seconds. I stopped using body wash entirely.",
+            "footer": "Nate B. · 3 weeks ago",
+            "tags": "lather",
+            "caption": ""
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "Fresh, not fake",
-            "text": "Smells strong without feeling like a gas station air freshener.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Green & Aromatic · photo review"
+            "title": "A bit gritty on my back",
+            "text": "Great bar, but the medium grit is a lot for sensitive spots. I switched to the aloe bar for my chest.",
+            "footer": "Omar S. · 2 months ago",
+            "tags": "value",
+            "caption": "",
+            "rating": 4
           }
         }
       ]

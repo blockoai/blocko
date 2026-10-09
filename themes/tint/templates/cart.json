@@ -2,7 +2,21 @@
   "sections": {
     "cart-checkout-cart-main": {
       "type": "blko-cart-checkout-cart-main",
-      "settings": {}
+      "settings": {
+        "threshold": 50,
+        "eyebrow": "Your bag",
+        "heading": "Bag",
+        "upsell_kicker": "Before you go",
+        "upsell_heading": "Fill the gaps in your bag",
+        "note_summary": "Add a gift message",
+        "before": "Only",
+        "after": "left for free shipping.",
+        "unlocked": "Free shipping unlocked.",
+        "empty_heading": "Your bag is empty.",
+        "empty_text": "Start with new shades, bestsellers or a set.",
+        "empty_image_alt": "Pastel pouches and tubes on a table",
+        "summary_note": "Discounts, shipping and taxes are worked out at checkout. Store credit applies automatically."
+      }
     },
     "cart-checkout-service-strip": {
       "type": "blko-cart-checkout-service-strip",
@@ -10,20 +24,23 @@
       "blocks": {
         "block-1": {
           "type": "note",
-          "settings": {}
+          "settings": {
+            "title": "Free shipping",
+            "text": "from $50"
+          }
         },
         "block-2": {
           "type": "note",
           "settings": {
-            "title": "Easy returns",
-            "text": "within 30 days"
+            "title": "Free returns",
+            "text": "and swaps in 30 days"
           }
         },
         "block-3": {
           "type": "note",
           "settings": {
-            "title": "Need help?",
-            "text": "We’re here for you"
+            "title": "Free mini",
+            "text": "on orders of $80+"
           }
         }
       },

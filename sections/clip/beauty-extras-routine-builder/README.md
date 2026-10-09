@@ -29,15 +29,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Routine products (one per step) |  |
-| `pick_label` | text | Pick label | Daily pick |
-| `alternate_label` | text | Alternate label | Alternate |
-| `eyebrow` | text | Eyebrow | Build your edit |
-| `heading` | text | Heading | A style, your way. |
-| `text` | textarea | Text | Pick one essential for each step. Your total updates as you go. |
-| `step_text` | text | Step text | A reliable daily essential. |
-| `summary_eyebrow` | text | Summary eyebrow | Your three steps |
+| `pick_label` | text | Pick label | Everyday pick |
+| `alternate_label` | text | Alternate label | Swap in |
+| `eyebrow` | text | Eyebrow | Build your routine |
+| `heading` | text | Heading | Pick one for each step. |
+| `text` | textarea | Text | Choose a brush, a clip and a scent and the set price updates as you go. Save fif |
+| `step_text` | text | Step text | Our top pick for this slot. |
+| `summary_eyebrow` | text | Summary eyebrow | Your set |
 | `total_label` | text | Total label | Total |
-| `add_label` | text | Add label | Add set to bag |
+| `add_label` | text | Add label | Add the set to bag |
 
 ## Blocks
 

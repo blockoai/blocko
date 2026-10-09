@@ -31,8 +31,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | `product` | product | Product |  |
 | `collection` | collection | Fallback collection |  |
 | `eyebrow` | text | Eyebrow | Pairs well with |
-| `heading` | text | Heading | Pairs well with |
-| `text` | text | Text | Three vetted essentials that play well together. |
+| `heading` | text | Heading | Build around the serum |
+| `text` | text | Text | Cleanse, treat, moisturize: three vetted steps from our shelves. |
 
 ## Blocks
 

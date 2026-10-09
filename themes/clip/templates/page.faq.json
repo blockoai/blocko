@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help",
+        "heading": "Shipping, returns and everything else.",
+        "text": "Search a topic or browse orders, products, rewards and your account."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “return” or “scent”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,65 +21,85 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "shipping",
+            "label": "Shipping"
           }
         },
         "block-3": {
-          "type": "tab",
-          "settings": {
-            "key": "products",
-            "label": "Products"
-          }
-        },
-        "block-4": {
           "type": "tab",
           "settings": {
             "key": "returns",
             "label": "Returns"
           }
         },
+        "block-4": {
+          "type": "tab",
+          "settings": {
+            "key": "products",
+            "label": "Products"
+          }
+        },
         "block-5": {
-          "type": "question",
-          "settings": {}
+          "type": "tab",
+          "settings": {
+            "key": "rewards",
+            "label": "Rewards"
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "shipping",
+            "question": "How long will my order take?",
+            "answer": "Most orders arrive within three to six business days; launch weeks can run a couple of days longer. Custom clips take four to eight weeks."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my size?",
-            "answer": "Check the size guide, then compare sizes and colors in natural light. Our team can offer general guidance."
+            "category": "shipping",
+            "question": "What if my package arrives damaged?",
+            "answer": "Tell us within thirty days and we will replace it or issue store credit."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find material information?",
-            "answer": "Each product page includes a clear materials list and straightforward care notes."
+            "category": "returns",
+            "question": "Can I return an opened item?",
+            "answer": "For hygiene, opened hair care and worn accessories are final sale. Unopened items can be returned within fourteen days."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "Can I return a custom clip?",
+            "answer": "No. Custom pieces are made just for you, so they are not eligible for returns."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "products",
+            "question": "Are your hair-care products vegan and cruelty-free?",
+            "answer": "Yes. Every formula is vegan, certified cruelty-free and made without sulfates, parabens or silicones."
+          }
+        },
+        "block-11": {
+          "type": "question",
+          "settings": {
+            "category": "products",
+            "question": "Can I wear a claw clip in wet hair?",
+            "answer": "Yes, but wipe it dry afterward and avoid soaking it in the shower."
+          }
+        },
+        "block-12": {
+          "type": "question",
+          "settings": {
+            "category": "rewards",
+            "question": "How do I access my rewards?",
+            "answer": "Sign in at checkout with your account email and your gems appear automatically."
           }
         }
       },
@@ -87,12 +113,19 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11",
+        "block-12"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [

@@ -2,7 +2,16 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "The clean standard",
+        "heading": "What is in the bottle, and why.",
+        "text": "Look up the actives, oils and gentle extras behind our formulas, from the sun filters to the hydrators.",
+        "search_placeholder": "Try “coconut”",
+        "detail_heading": "Coconut oil",
+        "detail_text": "A plant oil that softens dry patches and gives body products their silky slip. We use organic coconut oil and pair it with water-binding ingredients so skin does not feel greasy.",
+        "best_for": "Dry skin and rough elbows",
+        "found_in": "Coconut oil melt, body butter"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -20,28 +29,33 @@
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Sun filters",
+            "key": "sun"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Brightening",
+            "key": "bright"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "letter": "C",
+            "name": "Ceramides",
+            "detail": "Lipids that help the skin barrier hold in moisture",
+            "tags": "hydration"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
             "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "name": "Coconut oil",
+            "detail": "A silky plant oil for softness and slip",
+            "tags": "hydration"
           }
         },
         "block-7": {
@@ -49,35 +63,35 @@
           "settings": {
             "letter": "H",
             "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
+            "detail": "A humectant that pulls water into the top layer of skin",
             "tags": "hydration"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin feel smooth and balanced",
-            "tags": "brightening"
+            "letter": "M",
+            "name": "Mica",
+            "detail": "Mineral shimmer for a golden, lit look",
+            "tags": "bright"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
             "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "name": "Sun filters",
+            "detail": "Absorb UV and are chosen to meet reef-protection rules",
+            "tags": "sun"
           }
         },
         "block-10": {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "V",
+            "name": "Vitamin C",
+            "detail": "An antioxidant that supports a brighter, more even look",
+            "tags": "bright"
           }
         }
       },
@@ -94,17 +108,63 @@
         "block-10"
       ]
     },
+    "free-from-list": {
+      "type": "blko-free-from-list",
+      "settings": {
+        "eyebrow": "The free-from list",
+        "heading": "More than 200 ingredients stay out"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Which families are excluded?",
+            "text": "Phthalates, sulfates, parabens, formaldehyde donors, synthetic dyes and aluminum salts are among the groups we avoid across the range."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Is the full list public?",
+            "text": "Yes. The complete alphabetical list sits on this page and updates when our standard changes."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Are your formulas vegan?",
+            "text": "Every formula is free of animal-derived ingredients and is never tested on animals."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Coconut oil melting on a spoon",
+        "eyebrow": "Our promise",
+        "heading": "If it is on the label, you can look it up.",
+        "text": "Each hero ingredient has a plain-language entry with what it does and which products use it.",
+        "button_label": "Browse the glossary"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [
     "beauty-extras-ingredient-glossary",
+    "free-from-list",
     "ingredients-callout",
     "newsletter"
   ]

@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person enjoying a simple skincare routine |
-| `kicker` | text | Kicker | A quieter kind of beauty |
-| `heading` | text | Heading | Good formulas should make mornings feel easier. |
-| `text` | textarea | Text | Our work starts with small, practical moments: a serum that sinks in, a cream th |
+| `image_alt` | text | Image alt text | Cheeks with a soft glow and a rosy flush |
+| `kicker` | text | Kicker | Three lanes |
+| `heading` | text | Heading | Skincare, hybrid makeup, and things for the bag. |
+| `text` | textarea | Text | Barrier-first skin formulas do the heavy lifting. Hybrid lip and cheek colors ca |
 
 ## Blocks
 

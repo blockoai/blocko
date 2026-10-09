@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person enjoying a quiet skincare ritual |
-| `kicker` | text | Kicker | A slower kind of luxury |
-| `heading` | text | Heading | Good skincare should feel like a pause in the day. |
-| `text` | textarea | Text | We start with the garden: certified organic botanicals, cold-pressed oils and no |
+| `image_alt` | text | Image alt text | Face with a glowing, even complexion |
+| `kicker` | text | Kicker | Why we make sticks |
+| `heading` | text | Heading | Treat the skin while you color it. |
+| `text` | textarea | Text | A cream stick needs few steps and no tools. Built on certified organic oils and  |
 
 ## Blocks
 

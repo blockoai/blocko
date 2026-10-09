@@ -28,14 +28,14 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Send a note |
-| `heading` | text | Heading | Tell us what you need. |
-| `text` | textarea | Text | We’ll respond during the support hours below. Fields marked with an asterisk are |
+| `kicker` | text | Kicker | send a note |
+| `heading` | text | Heading | How can we help? |
+| `text` | textarea | Text | Add your order number if you have one. Replies take about a day. |
 | `name_label` | text | Name label | Name |
 | `email_label` | text | Email label | Email |
 | `topic_label` | text | Topic label | Topic |
 | `message_label` | text | Message label | Message |
-| `button_label` | text | Button label | Send message |
+| `button_label` | text | Button label | send |
 | `success_message` | text | Success message | Thanks — your message is on its way. |
 | `error_message` | text | Error message | Please complete the required fields before sending your message. |
 

@@ -2,26 +2,166 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Face",
+        "price_note": "0.3 oz / 9 g stick",
+        "shade_help_label": "Not sure of your shade? Take the finder.",
+        "ship_note": "Free US shipping from $75 · 30-day guarantee"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "A rich, silky formula with organic botanicals that absorbs in seconds. Use morning and evening for lasting radiance."
+            "label": "Overview",
+            "text": "A multi-use stick for base, spot cover and contour. It glides on, melts in and finishes with a soft, natural glow that keeps skin comfortable all day."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Ingredients",
-            "text": "Organic shea butter, rosehip oil, aloe leaf juice, vitamin E and rose geranium. Free from synthetic fragrance."
+            "label": "Key benefits",
+            "text": "Mostly organic, with oils and butters that hydrate, plant extracts that calm and zero fragrance. Dermatologist tested and suitable for sensitive skin."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
-            "label": "How to use",
-            "text": "Warm a small amount between fingertips, then press onto cleansed skin. Follow with day cream."
+            "label": "How to apply",
+            "text": "Swipe a few strokes on the center of the face, then press out with fingertips or a dome brush. Use a lighter shade to brighten and a deeper one to shape."
+          }
+        },
+        "block-4": {
+          "type": "accordion",
+          "settings": {
+            "label": "Shade guide",
+            "text": "Each name carries a depth number from 01 to 10 and a letter for undertone: C for cool, N for neutral, W for warm. Match on the jaw in daylight."
+          }
+        },
+        "block-5": {
+          "type": "accordion",
+          "settings": {
+            "label": "Certifications",
+            "text": "Certified organic, cruelty-free and made in small batches in the USA."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "pdp-certifications": {
+      "type": "blko-pdp-certifications",
+      "settings": {
+        "kicker": "Held to a higher bar",
+        "quote": "“It blends like a balm and wears like a base.”",
+        "author": "— Verified buyer"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Certified organic",
+            "text": "Independently audited plant content"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Cruelty-free",
+            "text": "Never tested on animals"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Dermatologist tested",
+            "text": "Hypoallergenic, for sensitive skin"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-botanicals": {
+      "type": "blko-pdp-botanicals",
+      "settings": {
+        "kicker": "Botanicals at work",
+        "heading": "Four plant actives, each with a job"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Jojoba oil",
+            "text": "Mimics skin's own oils so the stick glides without feeling greasy."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Shea butter",
+            "text": "Cushions and softens, which keeps dry patches from catching."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Calendula extract",
+            "text": "Soothes redness and helps skin look calmer through the day."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Rosehip oil",
+            "text": "Brings a gentle glow and supports a smoother-looking surface."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-how-to-apply": {
+      "type": "blko-pdp-how-to-apply",
+      "settings": {
+        "eyebrow": "Application map",
+        "heading": "Base, correct, set",
+        "button_label": "Take the shade quiz"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "title": "Base",
+            "text": "Stroke across forehead, cheeks and chin, then press out for an even layer."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "title": "Correct",
+            "text": "Dab a deeper or lighter shade over dark circles and blemishes and tap to blend."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "title": "Set",
+            "text": "Skip powder where you want glow, or dust a little on the center of the face."
           }
         }
       },
@@ -33,110 +173,49 @@
     },
     "pdp-before-after": {
       "type": "blko-pdp-before-after",
-      "settings": {}
+      "settings": {
+        "eyebrow": "What testing showed",
+        "heading": "Makeup with measurable skin benefits.",
+        "text": "Results come from a consumer panel after four weeks of daily wear, with lab tests on skin cells supporting the ingredient claims.",
+        "stat_1_value": "94%",
+        "stat_1_label": "felt skin was more hydrated",
+        "stat_2_value": "89%",
+        "stat_2_label": "saw a brighter-looking complexion"
+      }
     },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "Before you buy",
+        "heading": "Shade, coverage and skin questions"
       },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "pdp-reviews": {
-      "type": "blko-pdp-reviews",
-      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "bar",
-          "settings": {}
+          "type": "question",
+          "settings": {
+            "label": "How much coverage will I get?",
+            "text": "Light to medium and buildable. A single pass evens tone, a second pass hides blemishes."
+          }
         },
         "block-2": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
+            "label": "How do I choose between neighbouring shades?",
+            "text": "Choose by undertone first. If you are between depths, take the lighter one and shape with a deeper stick."
           }
         },
         "block-3": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "3 stars",
-            "percent": 4
+            "label": "Does it suit dry or mature skin?",
+            "text": "Yes. The butter base cushions dryness and avoids settling into lines."
           }
         },
         "block-4": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "2 stars",
-            "percent": 1
-          }
-        },
-        "block-5": {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {}
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Texture",
-            "key": "coverage"
-          }
-        },
-        "block-9": {
-          "type": "review",
-          "settings": {
-            "text": "My skin looks rested and luminous. I love the rich texture and the subtle botanical scent."
-          }
-        },
-        "block-10": {
-          "type": "review",
-          "settings": {
-            "title": "My nightly ritual",
-            "text": "Melts in with fingertips and leaves skin soft all day. The best cream I have used.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Soft, not greasy",
-            "text": "A luminous finish without any heaviness.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Dry skin · photo review"
+            "label": "Can I wear it over serum or oil?",
+            "text": "Let your skincare absorb for a minute first, so the stick glides instead of sliding."
           }
         }
       },
@@ -144,32 +223,77 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-4"
+      ]
+    },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {
+        "eyebrow": "Complete the look",
+        "heading": "Cleanse, base, sculpt",
+        "text": "Three steps that work with this stick."
+      }
+    },
+    "pdp-reviews": {
+      "type": "blko-pdp-reviews",
+      "settings": {
+        "eyebrow": "Reviews",
+        "average": "4.8",
+        "summary": "Based on 2,140 verified reviews",
+        "list_heading": "Recent reviews"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "review",
+          "settings": {
+            "title": "Replaced my foundation and concealer",
+            "text": "One stick, five minutes, and my skin looks like skin. Shade 05N matched on the first order.",
+            "footer": "Naomi R. · 2 weeks ago",
+            "caption": "05N · photo review"
+          }
+        },
+        "block-2": {
+          "type": "review",
+          "settings": {
+            "title": "Feels like moisturizer",
+            "text": "My dry cheeks never flake with it. I buff it in with the dome brush for a more airbrushed finish.",
+            "footer": "Camille D. · 1 month ago",
+            "tags": "coverage",
+            "caption": ""
+          }
+        },
+        "block-3": {
+          "type": "review",
+          "settings": {
+            "title": "Wish there were more deep shades",
+            "text": "Love the formula. The deepest shades sold out fast, so I went with a warm one and shaped it.",
+            "footer": "Tasha B. · 2 months ago",
+            "tags": "photos",
+            "caption": "17W · photo review",
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
       ]
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
       "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
     }
   },
   "order": [
     "pdp-product-main",
+    "pdp-certifications",
+    "pdp-botanicals",
+    "pdp-how-to-apply",
     "pdp-before-after",
+    "pdp-faq",
     "pdp-complete-routine",
-    "product-recommendations",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-recently-viewed"
   ]
 }

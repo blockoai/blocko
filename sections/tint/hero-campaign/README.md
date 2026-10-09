@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model wearing bright cream blush |
-| `eyebrow` | text | Eyebrow | New color |
-| `heading` | text | Heading | Color that feels like you. |
-| `text` | textarea | Text | Cream blush, glossy balm and skin tints in shades made to match. |
-| `button_label` | text | Button label | Shop face |
+| `image_alt` | text | Image alt text | Close-up of a face with peach cheeks and glossy lips |
+| `eyebrow` | text | Eyebrow | Holiday shop |
+| `heading` | text | Heading | Wrap it in color. |
+| `text` | textarea | Text | Limited sets in pastel pouches, packed with minis and full sizes that are easy t |
+| `button_label` | text | Button label | Shop gift sets |
 | `button_url` | url | Button url |  |
 
 ## Blocks

@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Made for repeat wear |
-| `quote` | text | Quote | “The kind of routine you can do half-asleep and still feel looked after.” |
-| `author` | text | Author | — Community member |
+| `kicker` | text | Kicker | Layering tip |
+| `quote` | text | Quote | “I wear the oil, the butter and the wash and the scent lasts all day.” |
+| `author` | text | Author | — Customer review |
 
 ## Blocks
 

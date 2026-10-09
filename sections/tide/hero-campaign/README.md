@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person walking along the shoreline at sunrise |
-| `eyebrow` | text | Eyebrow | Everyday tide |
-| `heading` | text | Heading | Skin that moves with the tide. |
-| `text` | textarea | Text | Build a calm routine with sea botanicals and mineral-rich formulas. |
-| `button_label` | text | Button label | Shop face care |
+| `image_alt` | text | Image alt text | Woman carrying a woven beach bag along the shore |
+| `eyebrow` | text | Eyebrow | Limited-edition gift sets |
+| `heading` | text | Heading | Pack the shoreline. |
+| `text` | textarea | Text | Three seasonal sets pair our best face and body favorites in one box, each price |
+| `button_label` | text | Button label | Shop the gift sets |
 | `button_url` | url | Button url |  |
 
 ## Blocks

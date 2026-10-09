@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with vivid blue hair |
-| `kicker` | text | Kicker | The color-lock edit |
-| `heading` | text | Heading | color that keeps up. |
-| `text` | textarea | Text | Color-safe, salon-tested formulas made for hair that moves through a full week. |
+| `image_alt` | text | Image alt text | Hair mid-flip against a bright backdrop |
+| `kicker` | text | Kicker | Limited edition drop |
+| `heading` | text | Heading | A summer scent in a can. |
+| `text` | textarea | Text | Our dry shampoo wears a juicy fruit scent for six weeks only. Stack it with a fi |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your system |
+| `button_label` | text | Button label | Shop the scent stack |
 
 ## Blocks
 

@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Hair routine |
-| `eyebrow` | text | Eyebrow | Heaven-sent favorites |
-| `heading` | text | Heading | Simple pieces, sweetly made. |
-| `text` | textarea | Text | Mix and match clips, scrunchies and pins that look adorable together. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Hands holding a fragrance mist and a hair mask |
+| `eyebrow` | text | Eyebrow | The scent story |
+| `heading` | text | Heading | One fragrance, three ways to wear it. |
+| `text` | textarea | Text | The mask borrows its warm notes of sugar, vanilla, tonka and amber from our sign |
+| `button_label` | text | Button label | Explore the scent family |
 | `button_url` | url | Button url |  |
 
 ## Blocks

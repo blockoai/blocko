@@ -55,12 +55,13 @@
   },
   {
     "page": "shade-quiz",
-    "title": "Shade finder",
+    "title": "Prism — Hair type finder",
     "sectionIds": [
       "page-header",
       "beauty-extras-shade-quiz",
       "beauty-extras-shade-result",
-      "faq",
+      "quiz-hair-101",
+      "shade-faq",
       "newsletter"
     ]
   },
@@ -103,7 +104,10 @@
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-ways",
+      "rewards-vouchers",
+      "rewards-referral",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -112,7 +116,9 @@
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
-      "product-recommendations",
+      "subscription-perks",
+      "subscription-picks",
+      "subscription-faq",
       "newsletter"
     ]
   },
@@ -163,9 +169,10 @@
       "content-about-hero",
       "content-mission",
       "content-values",
-      "content-founder-note",
-      "content-story-timeline",
-      "content-press-quotes",
+      "about-results",
+      "about-icons",
+      "about-body-care",
+      "about-badges",
       "newsletter"
     ]
   },
@@ -202,11 +209,11 @@
     "title": "The color-lock edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
+      "landing-promises",
       "content-landing-routine",
-      "tabbed-product-grid",
+      "landing-picks",
       "content-landing-proof",
-      "category-slider",
+      "landing-departments",
       "newsletter"
     ]
   },
@@ -259,16 +266,17 @@
       "home-collection-mega-menu",
       "hero-campaign",
       "prism-system",
+      "home-heat-launch",
       "message-band",
-      "tabbed-product-grid",
+      "home-holiday",
       "prism-finder",
-      "category-slider",
-      "feature-driver",
+      "home-bundle-promo",
+      "tabbed-product-grid",
       "prism-effect",
-      "commitments",
-      "testimonial-slider",
+      "category-slider",
       "prism-subscribe",
-      "press-slider",
+      "testimonial-slider",
+      "home-journal-strip",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -280,6 +288,7 @@
       "home-collection-mega-menu",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
+      "collection-size-guide",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -288,8 +297,10 @@
     "page": "collections",
     "title": "Prism — Collections",
     "sectionIds": [
-      "home-collection-mega-menu",
+      "collections-quiz-banner",
       "home-collection-collections-directory",
+      "collections-hair-types",
+      "collections-concerns",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -299,12 +310,17 @@
     "title": "Color Lock Shampoo",
     "sectionIds": [
       "pdp-product-main",
+      "pdp-badges",
       "pdp-before-after",
+      "pdp-ingredients",
+      "pdp-how-to",
+      "pdp-pro-tip",
+      "pdp-faq",
       "pdp-complete-routine",
-      "product-recommendations",
+      "pdp-recycle",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-articles",
+      "pdp-recently-viewed"
     ]
   },
   {
@@ -313,6 +329,7 @@
     "sectionIds": [
       "pdp-bundle-builder",
       "pdp-bundle-explainer",
+      "bundle-value-sets",
       "product-recommendations",
       "newsletter"
     ]

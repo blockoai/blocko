@@ -47,7 +47,7 @@
 @keyframes isle-scroll{to{transform:translateX(-50%)}}
 .blko-theme .blko-isle-actives>div{align-self:center;padding:clamp(2.5rem,7vw,6rem) clamp(1.25rem,6vw,6rem)}
 .blko-theme .blko-isle-actives p{max-width:34rem;margin:0 0 1.75rem}
-.blko-theme .blko-isle-results>div{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.blko-theme .blko-isle-results>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:2rem}
 .blko-theme .blko-isle-results strong{font:700 clamp(3rem,8vw,5.5rem)/1 var(--font-heading)}
 .blko-theme .blko-isle-results>p{margin:2.5rem 0 0;font-size:var(--text-small)}
 @media (max-width:760px){.blko-theme .blko-isle-results>div{grid-template-columns:1fr}}
@@ -79,7 +79,7 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Featured in"
+      "default": "As featured in"
     }
   ],
   "blocks": [
@@ -103,18 +103,32 @@
       "blocks": [
         {
           "type": "publication",
-          "settings": {}
-        },
-        {
-          "type": "publication",
           "settings": {
-            "name": "COAST & CO"
+            "name": "THE GLOW LEDGER"
           }
         },
         {
           "type": "publication",
           "settings": {
-            "name": "SUN JOURNAL"
+            "name": "SUNDAY GLOSS"
+          }
+        },
+        {
+          "type": "publication",
+          "settings": {
+            "name": "WELLNESS WEEKLY"
+          }
+        },
+        {
+          "type": "publication",
+          "settings": {
+            "name": "SHORELINE"
+          }
+        },
+        {
+          "type": "publication",
+          "settings": {
+            "name": "THE SKIN DESK"
           }
         }
       ]

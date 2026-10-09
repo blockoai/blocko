@@ -1,63 +1,21 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "link",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "link",
-          "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
-          }
-        },
-        "block-3": {
-          "type": "link",
-          "settings": {
-            "label": "Lips",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "link",
-          "settings": {
-            "label": "Skin prep",
-            "url": "#care"
-          }
-        },
-        "block-5": {
-          "type": "tile",
-          "settings": {}
-        },
-        "block-6": {
-          "type": "tile",
-          "settings": {
-            "url": "#care",
-            "image_alt": "Skin prep edit",
-            "label": "Skin prep"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6"
-      ]
-    },
     "home-collection-collection-toolbar": {
       "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shop all",
+        "filter_eyebrow": "Filter by",
+        "filter_heading": "Coverage, finish and feel"
+      }
     },
     "home-collection-collection-grid": {
       "type": "blko-home-collection-collection-grid",
-      "settings": {}
+      "settings": {
+        "promo_image_alt": "Face with an even, natural complexion",
+        "promo_eyebrow": "Shade help is free",
+        "promo_heading": "Not sure which tone is yours?",
+        "promo_label": "Find your shade"
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -65,11 +23,14 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [
-    "home-collection-mega-menu",
     "home-collection-collection-toolbar",
     "home-collection-collection-grid",
     "home-collection-quick-view-modal",

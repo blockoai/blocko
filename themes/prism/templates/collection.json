@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by",
+        "heading": "Start with your hair."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Hair type",
+            "url": "#hair-type"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Treatments",
-            "url": "#eyes"
+            "label": "Concern",
+            "url": "#concern"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Styling",
-            "url": "#lips"
+            "label": "Product type",
+            "url": "#product-type"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Repair",
-            "url": "#care"
+            "label": "Collections",
+            "url": "#collections"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Tools",
+            "url": "#tools"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Value sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Repair system",
-            "label": "Repair"
+            "url": "#hair-quiz",
+            "image_alt": "Person with wavy hair smiling",
+            "label": "Find my hair type"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#sets",
+            "image_alt": "Travel bottles lined up on a counter",
+            "label": "Trial sets"
           }
         }
       },
@@ -48,16 +72,74 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "home-collection-collection-toolbar": {
       "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shop all",
+        "filter_eyebrow": "Narrow it down",
+        "filter_heading": "Filter by product type"
+      }
     },
     "home-collection-collection-grid": {
       "type": "blko-home-collection-collection-grid",
-      "settings": {}
+      "settings": {
+        "promo_image_alt": "Person with natural curls in daylight",
+        "promo_eyebrow": "Not sure what you need?",
+        "promo_heading": "Answer a few questions and get a short list.",
+        "promo_label": "Take the hair quiz"
+      }
+    },
+    "collection-size-guide": {
+      "type": "blko-collection-size-guide",
+      "settings": {
+        "kicker": "Choosing a size",
+        "heading": "From carry-on to liter"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "number": "60 ml",
+            "title": "Travel",
+            "text": "Try a formula for a week, or keep one in the gym bag and carry-on."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "275 ml",
+            "title": "Regular",
+            "text": "The everyday bottle. Most people finish one in about two months."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "1 L",
+            "title": "Liter",
+            "text": "Best price per ounce, built for big households and stylists."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "Refill",
+            "title": "Pouch",
+            "text": "Top up a bottle you already own with far less plastic."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -65,13 +147,19 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
     "home-collection-collection-toolbar",
     "home-collection-collection-grid",
+    "collection-size-guide",
     "home-collection-quick-view-modal",
     "newsletter"
   ]

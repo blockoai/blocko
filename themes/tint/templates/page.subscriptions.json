@@ -2,24 +2,110 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe & save",
+        "heading": "Refill your staples on a slow schedule.",
+        "text": "Concealer, sunscreen and mascara run out on their own timetable. Choose a gap of two, three or four months, take 10% off and ship free.",
+        "shipment_eyebrow": "Next delivery",
+        "shipment_heading": "Arrives in 3 weeks",
+        "image_alt": "Concealer tube set up for the next refill",
+        "variant_label": "Medium 45N · Full size",
+        "shipment_note": "Shipping to your saved address, no minimum.",
+        "frequency_eyebrow": "Deliver every",
+        "frequency_copy": "Your plan repeats every 3 months until you pause it.",
+        "skip_label": "Skip the next one",
+        "swap_label": "Change shade"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
           "settings": {
-            "selected": true
+            "label": "2 months"
           }
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "3 months",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "4 months"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "What you get",
+        "heading": "A plan without strings"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "10% off every box",
+            "text": "The saving stays on for as long as the plan runs."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Shipping on us",
+            "text": "Subscription deliveries skip the order minimum."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Skip, swap or stop",
+            "text": "Change the shade, push a date back or cancel in a few taps."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Plan questions",
+        "heading": "Before you subscribe"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Which products can I subscribe to?",
+            "text": "Full-size face, eye, lip and skin-and-sun products with the subscribe option on their page. Sets and tools are one-time only."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Is there a commitment?",
+            "text": "No. Pause or cancel at any time before the next order is processed."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "What if my skin tone shifts with the season?",
+            "text": "Swap to a deeper or lighter shade before your next delivery; the discount carries over."
           }
         }
       },
@@ -31,7 +117,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add a finishing touch"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -52,11 +141,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
+    "subscription-perks",
+    "subscription-faq",
     "product-recommendations",
     "newsletter"
   ]

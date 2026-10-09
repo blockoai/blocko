@@ -73,13 +73,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Shade finder"
+      "default": "Shade range"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "The shades"
+      "default": "Shades for every depth"
     },
     {
       "type": "url",
@@ -90,7 +90,7 @@
       "type": "text",
       "id": "pill_label",
       "label": "Pill label",
-      "default": "Select your skin tone"
+      "default": "Find my match"
     }
   ],
   "blocks": [
@@ -156,33 +156,41 @@
       "blocks": [
         {
           "type": "shade",
-          "settings": {}
+          "settings": {
+            "name": "Fair to light",
+            "count": "12 undertones",
+            "tone": "light"
+          }
         },
         {
           "type": "shade",
           "settings": {
-            "name": "Honey Sand",
+            "name": "Light to medium",
+            "count": "10 undertones",
             "tone": "honey-sand"
           }
         },
         {
           "type": "shade",
           "settings": {
-            "name": "Soft Caramel",
+            "name": "Medium to tan",
+            "count": "10 undertones",
             "tone": "soft-caramel"
           }
         },
         {
           "type": "shade",
           "settings": {
-            "name": "Golden Tan",
+            "name": "Tan to deep",
+            "count": "8 undertones",
             "tone": "golden-tan"
           }
         },
         {
           "type": "shade",
           "settings": {
-            "name": "Cocoa Deep",
+            "name": "Deep to rich",
+            "count": "8 undertones",
             "tone": "cocoa-deep"
           }
         }

@@ -180,13 +180,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Shop by ritual"
+      "default": "Shop by category"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Begin with the three steps."
+      "default": "Find your first stick."
     }
   ],
   "blocks": [
@@ -204,7 +204,7 @@
           "type": "text",
           "id": "label",
           "label": "Label",
-          "default": "Skincare"
+          "default": "Face"
         }
       ]
     },
@@ -233,7 +233,7 @@
           "type": "text",
           "id": "label",
           "label": "Label",
-          "default": "Skincare"
+          "default": "Face"
         }
       ]
     }
@@ -244,39 +244,60 @@
       "blocks": [
         {
           "type": "link",
-          "settings": {}
-        },
-        {
-          "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "New",
+            "url": "#new"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Cheeks",
-            "url": "#lips"
+            "label": "Best sellers",
+            "url": "#best"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Sculpt",
-            "url": "#care"
+            "label": "Makeup",
+            "url": "#makeup"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Skincare",
+            "url": "#skincare"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Accessories",
+            "url": "#accessories"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Bundles",
+            "url": "#bundles"
           }
         },
         {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#makeup",
+            "image_alt": "Cream sticks in a row",
+            "label": "Makeup"
+          }
         },
         {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Sculpt ritual",
-            "label": "Sculpt"
+            "url": "#bundles",
+            "image_alt": "Gift set laid out on linen",
+            "label": "Bundles"
           }
         }
       ]

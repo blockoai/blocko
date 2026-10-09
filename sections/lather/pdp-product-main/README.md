@@ -37,11 +37,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `breadcrumb_shop` | text | Breadcrumb shop | Shop |
 | `breadcrumb_category_url` | url | Breadcrumb category url |  |
 | `breadcrumb_category` | text | Breadcrumb category | Bar soap |
-| `price_note` | text | Price note | 5 oz / 141 g |
+| `price_note` | text | Price note | 5 oz bar |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure? Find your scent. |
-| `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Free shipping on orders over $50 · Easy returns within 30 days |
+| `shade_help_label` | text | Shade help label | Torn between scents? Take the quiz. |
+| `plan_legend` | text | Plan legend | How do you want it? |
+| `ship_note` | text | Ship note | Free shipping over $55 · 30-day satisfaction guarantee |
 
 ## Blocks
 

@@ -1,4 +1,4 @@
-# Botanical Radiance Serum product detail
+# Complexion Stick product detail
 
 Gallery, shade and size choices, flexible purchase option, quantity, and sticky purchase bar.
 
@@ -11,7 +11,7 @@ Gallery, shade and size choices, flexible purchase option, quantity, and sticky 
 ## Paste this into your coding agent
 
 ```text
-Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section "Botanical Radiance Serum product detail" (id `pdp-product-main`, theme `balm`; live demo: https://demo.blocko.ai/html/balm/sections/main-product--pdp-product-main.html; Shopify bundle: sections/balm/pdp-product-main/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
+Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section "Complexion Stick product detail" (id `pdp-product-main`, theme `balm`; live demo: https://demo.blocko.ai/html/balm/sections/main-product--pdp-product-main.html; Shopify bundle: sections/balm/pdp-product-main/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
 ```
 
 ## Install
@@ -36,12 +36,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | `one_time_label` | text | One time label | One-time purchase |
 | `breadcrumb_shop` | text | Breadcrumb shop | Shop |
 | `breadcrumb_category_url` | url | Breadcrumb category url |  |
-| `breadcrumb_category` | text | Breadcrumb category | Skincare |
-| `price_note` | text | Price note | 1.7 fl oz / 50 ml |
+| `breadcrumb_category` | text | Breadcrumb category | Face |
+| `price_note` | text | Price note | 0.3 oz / 9 g stick |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure? Take the shade quiz. |
+| `shade_help_label` | text | Shade help label | Not sure of your shade? Take the finder. |
 | `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Complimentary delivery over $75 · Returns within 30 days |
+| `ship_note` | text | Ship note | Free US shipping from $75 · 30-day guarantee |
 
 ## Blocks
 

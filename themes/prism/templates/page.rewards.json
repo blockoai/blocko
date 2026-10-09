@@ -2,46 +2,62 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Points program",
+        "heading": "Shop, earn, get hair care for free.",
+        "text": "Join at no cost, start with a bonus, and turn every order, review and referral into points you can spend on vouchers and products.",
+        "button_label": "Join now",
+        "image_alt": "Member holding a reward box",
+        "earn_eyebrow": "Three simple steps",
+        "earn_heading": "Join, earn, redeem.",
+        "tiers_eyebrow": "Levels",
+        "tiers_heading": "Climb a level, earn faster."
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Create an account and 200 points land in your balance straight away."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
             "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "Points per dollar rise with your level, and bonus actions add more."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Redeem",
+            "text": "Swap points for money off a basket or a free full-size product."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "Fresh",
+            "points": "5 points per $1",
+            "perks": "Everyone starts here · birthday points"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Vivid",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Bold",
+            "points": "7 points per $1",
+            "perks": "Faster earning · members-only offers"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Electric",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Icon",
+            "points": "10 points per $1",
+            "perks": "Spend $400 in 12 months · early access to sales"
           }
         }
       },
@@ -54,41 +70,208 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-ways": {
+      "type": "blko-rewards-ways",
+      "settings": {
+        "kicker": "Ways to earn",
+        "heading": "Points for more than buying"
+      },
       "blocks": {
         "block-1": {
-          "type": "question",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "number": "200",
+            "title": "Open an account",
+            "text": "A welcome balance the moment you sign up."
+          }
         },
         "block-2": {
-          "type": "question",
+          "type": "value",
           "settings": {
-            "label": "When will my order ship?"
+            "number": "250",
+            "title": "Write a review",
+            "text": "Share how a product worked, once a month."
           }
         },
         "block-3": {
-          "type": "question",
+          "type": "value",
           "settings": {
-            "label": "Can I update my order?"
+            "number": "2,000",
+            "title": "Birthday bonus",
+            "text": "Set your date and points arrive in your birthday month; amount depends on level."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "20",
+            "title": "Follow us",
+            "text": "Add points for each social account you connect."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "1,000",
+            "title": "Five orders",
+            "text": "A bonus when you place your fifth order."
+          }
+        },
+        "block-6": {
+          "type": "value",
+          "settings": {
+            "number": "1,000",
+            "title": "Refer a friend",
+            "text": "They get $10 off a first order over $35; you get points worth $10."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "rewards-vouchers": {
+      "type": "blko-rewards-vouchers",
+      "settings": {
+        "kicker": "Redeem",
+        "quote": "“One reward per order, and it cannot be stacked with other codes.”",
+        "author": "— How redemption works"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "1,000 points",
+            "text": "$10 off orders of $50 and up"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "2,000 points",
+            "text": "$20 off orders of $100 and up"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "3,000 points",
+            "text": "$30 off orders of $150 and up"
+          }
+        },
+        "block-4": {
+          "type": "point",
+          "settings": {
+            "title": "4,000 points",
+            "text": "$40 off orders of $200 and up"
+          }
+        },
+        "block-5": {
+          "type": "point",
+          "settings": {
+            "title": "500+ points",
+            "text": "Free samples, mini sets and full-size picks"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "rewards-referral": {
+      "type": "blko-rewards-referral",
+      "settings": {
+        "image_alt": "Two gift boxes side by side",
+        "eyebrow": "Refer a friend",
+        "heading": "Give $10, get 1,000 points.",
+        "text": "Share your personal link. When a friend places a first order over $35, you both get rewarded.",
+        "button_label": "Get my link"
+      }
+    },
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Points FAQ",
+        "heading": "Good to know"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Do points expire?",
+            "text": "Points last 12 months from your latest qualifying order, so every new purchase extends them."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "How do I reach the top level?",
+            "text": "Spend $400 within 12 months while signed in to your account."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Do store purchases count?",
+            "text": "No. Only orders placed on this site earn points."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "What happens if I return something?",
+            "text": "The points earned from that item are removed from your balance."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "Where can I see my balance?",
+            "text": "In the rewards tab of your account and in your cart before checkout."
+          }
+        },
+        "block-6": {
+          "type": "question",
+          "settings": {
+            "label": "I am a stylist. Can I join?",
+            "text": "Professionals have a separate program through our pro site."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-ways",
+    "rewards-vouchers",
+    "rewards-referral",
+    "rewards-faq",
     "newsletter"
   ]
 }

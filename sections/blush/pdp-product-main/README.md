@@ -36,12 +36,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | `one_time_label` | text | One time label | One-time purchase |
 | `breadcrumb_shop` | text | Breadcrumb shop | Shop |
 | `breadcrumb_category_url` | url | Breadcrumb category url |  |
-| `breadcrumb_category` | text | Breadcrumb category | Skin |
-| `price_note` | text | Price note | 1 fl oz / 30 ml |
+| `breadcrumb_category` | text | Breadcrumb category | Makeup |
+| `price_note` | text | Price note | Gel-cream · 9 g |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure? Find your colour. |
-| `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Free shipping over $40 · Easy returns within 30 days |
+| `shade_help_label` | text | Shade help label | Not sure which tone? Try the shade finder. |
+| `plan_legend` | text | Plan legend | How would you like it? |
+| `ship_note` | text | Ship note | Free standard shipping from $40 · a free scent sample with every order · limit o |
 
 ## Blocks
 

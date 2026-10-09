@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `label` | text | Label | Skincare |
+| `label` | text | Label | Face |
 
 ## Blocks
 

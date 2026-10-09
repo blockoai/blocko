@@ -29,15 +29,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Routine products (one per step) |  |
-| `pick_label` | text | Pick label | Daily pick |
-| `alternate_label` | text | Alternate label | Alternate |
-| `eyebrow` | text | Eyebrow | Build your edit |
-| `heading` | text | Heading | A routine, your way. |
-| `text` | textarea | Text | Pick one essential for each step. Your total updates as you go. |
-| `step_text` | text | Step text | A reliable daily essential. |
-| `summary_eyebrow` | text | Summary eyebrow | Your three steps |
+| `pick_label` | text | Pick label | Everyday choice |
+| `alternate_label` | text | Alternate label | Upgrade |
+| `eyebrow` | text | Eyebrow | Your five-minute face |
+| `heading` | text | Heading | Choose a product for each step. |
+| `text` | textarea | Text | Pick prep, tint and eye products, and watch the total update. |
+| `step_text` | text | Step text | A reliable essential for this step. |
+| `summary_eyebrow` | text | Summary eyebrow | Your routine |
 | `total_label` | text | Total label | Total |
-| `add_label` | text | Add label | Add routine to bag |
+| `add_label` | text | Add label | Add all three to bag |
 
 ## Blocks
 

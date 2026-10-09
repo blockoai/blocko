@@ -29,11 +29,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Your account |
-| `heading` | text | Heading | Welcome back. |
-| `lede` | textarea | Lede | Sign in to view your orders and saved details. |
+| `heading` | text | Heading | Sign in or create an account. |
+| `lede` | textarea | Lede | Enter your email and we will find your account or set one up in one step. |
 | `email_label` | text | Email label | Email address |
 | `password_label` | text | Password label | Password |
-| `submit_label` | text | Submit label | Sign in |
+| `submit_label` | text | Submit label | Continue |
 | `register_link` | text | Register link | Create an account |
 | `reset_link` | text | Reset link | Reset password |
 | `recover_kicker` | text | Recover kicker | Password help |

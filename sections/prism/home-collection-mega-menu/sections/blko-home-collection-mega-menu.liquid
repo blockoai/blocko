@@ -164,6 +164,14 @@
 .blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 .blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 .blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 {% endstylesheet %}
 {% schema %}
 {
@@ -179,13 +187,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "shop by concern"
+      "default": "Shop by"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "start where your hair is."
+      "default": "Start with your hair."
     }
   ],
   "blocks": [
@@ -243,39 +251,60 @@
       "blocks": [
         {
           "type": "link",
-          "settings": {}
-        },
-        {
-          "type": "link",
           "settings": {
-            "label": "Treatments",
-            "url": "#eyes"
+            "label": "Hair type",
+            "url": "#hair-type"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Styling",
-            "url": "#lips"
+            "label": "Concern",
+            "url": "#concern"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Repair",
-            "url": "#care"
+            "label": "Product type",
+            "url": "#product-type"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Collections",
+            "url": "#collections"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Tools",
+            "url": "#tools"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Value sets",
+            "url": "#sets"
           }
         },
         {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#hair-quiz",
+            "image_alt": "Person with wavy hair smiling",
+            "label": "Find my hair type"
+          }
         },
         {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Repair system",
-            "label": "Repair"
+            "url": "#sets",
+            "image_alt": "Travel bottles lined up on a counter",
+            "label": "Trial sets"
           }
         }
       ]

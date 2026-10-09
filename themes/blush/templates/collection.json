@@ -2,43 +2,60 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Pick a department",
+        "heading": "Skin first, then the fun part."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Cleansers + moisturizers",
+            "url": "#skincare"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Cheeks, brows + base",
+            "url": "#makeup"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips and cheeks",
-            "url": "#lips"
+            "label": "Lip balms",
+            "url": "#balms"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Balm",
-            "url": "#care"
+            "label": "Body + scent",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Sets that save",
+            "url": "#sets"
+          }
         },
         "block-6": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Balm edit",
-            "label": "Balm"
+            "url": "#fragrance",
+            "image_alt": "Perfume bottle on a pale pink ground",
+            "label": "Fragrance"
+          }
+        },
+        "block-7": {
+          "type": "tile",
+          "settings": {
+            "url": "#sets",
+            "image_alt": "Cheek colour shades laid out in a row",
+            "label": "Sets that save"
           }
         }
       },
@@ -48,16 +65,26 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7"
       ]
     },
     "home-collection-collection-toolbar": {
       "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shop all",
+        "filter_eyebrow": "Skin type + concern",
+        "filter_heading": "Filter the shelf"
+      }
     },
     "home-collection-collection-grid": {
       "type": "blko-home-collection-collection-grid",
-      "settings": {}
+      "settings": {
+        "promo_image_alt": "Close-up of defined brows and a soft flush",
+        "promo_eyebrow": "Brows, but make it easy",
+        "promo_heading": "The pomade people reorder in every shade.",
+        "promo_label": "Shop brows"
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -65,7 +92,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [

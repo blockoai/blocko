@@ -29,13 +29,13 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Routine products (one per step) |  |
-| `pick_label` | text | Pick label | Daily pick |
-| `alternate_label` | text | Alternate label | Alternate |
-| `eyebrow` | text | Eyebrow | Build your edit |
-| `heading` | text | Heading | A routine, your way. |
-| `text` | textarea | Text | Pick one essential for each step. Your total updates as you go. |
-| `step_text` | text | Step text | A reliable daily essential. |
-| `summary_eyebrow` | text | Summary eyebrow | Your three steps |
+| `pick_label` | text | Pick label | Core pick |
+| `alternate_label` | text | Alternate label | Upgrade |
+| `eyebrow` | text | Eyebrow | Skincare routine finder |
+| `heading` | text | Heading | Build your routine in three steps. |
+| `text` | textarea | Text | Choose a cleanser, a treatment and a moisturizer, and see the total with your se |
+| `step_text` | text | Step text | A core step for this stage. |
+| `summary_eyebrow` | text | Summary eyebrow | Your routine |
 | `total_label` | text | Total label | Total |
 | `add_label` | text | Add label | Add routine to bag |
 

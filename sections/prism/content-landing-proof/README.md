@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Made for repeat washes |
-| `quote` | text | Quote | “The kind of routine that makes strangers ask what shade you use.” |
-| `author` | text | Author | — Community member |
+| `kicker` | text | Kicker | Why it sells out |
+| `quote` | text | Quote | “I bought two cans because I knew it would be gone by August.” |
+| `author` | text | Author | — Past drop customer |
 
 ## Blocks
 

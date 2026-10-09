@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Our standard |
-| `heading` | text | Heading | Beauty belongs in real life. |
-| `lede` | textarea | Lede | We make everyday color and care for the rituals that help you feel like yourself |
+| `kicker` | text | Kicker | About Shelf |
+| `heading` | text | Heading | Beauty held to a written standard. |
+| `lede` | textarea | Lede | Shoppers shouldn't need a chemistry degree to buy a moisturizer. So we wrote dow |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Read the standard |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with natural makeup |
+| `image_alt` | text | Image alt text | Boutique wall of shelves above a fluted counter |
 
 ## Blocks
 

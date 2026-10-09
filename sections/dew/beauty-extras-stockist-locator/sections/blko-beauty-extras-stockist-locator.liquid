@@ -301,19 +301,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Find us nearby"
+      "default": "Where to find us"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "See it in person."
+      "default": "shop in person."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Choose a country to see a selection of participating stockists."
+      "default": "See which beauty retailers stock the full shelf. Switch between countries to find a store near you."
     },
     {
       "type": "text",
@@ -337,7 +337,7 @@
       "type": "text",
       "id": "directions_label",
       "label": "Directions label",
-      "default": "Directions"
+      "default": "Get directions"
     }
   ],
   "blocks": [
@@ -421,14 +421,31 @@
           }
         },
         {
+          "type": "country",
+          "settings": {
+            "value": "au",
+            "label": "Australia"
+          }
+        },
+        {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Parlor Beauty Hall",
+            "place": "Los Angeles, CA"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Linden & Co.",
+            "place": "Brooklyn, NY"
+          }
         },
         {
           "type": "store",
           "settings": {
             "country": "ca",
-            "name": "The Well Edit",
+            "name": "Juniper Counter",
             "place": "Toronto, ON"
           }
         },
@@ -436,15 +453,16 @@
           "type": "store",
           "settings": {
             "country": "uk",
-            "name": "Field & Form",
+            "name": "Alder Beauty",
             "place": "London"
           }
         },
         {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "au",
+            "name": "Sunbird Cosmetics",
+            "place": "Sydney, NSW"
           }
         }
       ]

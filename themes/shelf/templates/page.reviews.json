@@ -2,38 +2,46 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shopper reviews",
+        "heading": "What 2,000+ shoppers say after using it.",
+        "average": "4.6",
+        "count_text": "From 11,874 verified reviews across the shelf",
+        "stars_label": "Four and a half out of five stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 66
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 21
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 8
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 3
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         "block-6": {
@@ -46,59 +54,87 @@
           "type": "filter",
           "settings": {
             "label": "Skin",
-            "key": "complexion"
+            "key": "skin"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Body",
-            "key": "care"
+            "label": "Makeup",
+            "key": "makeup"
           }
         },
         "block-9": {
+          "type": "filter",
+          "settings": {
+            "label": "Hair + body",
+            "key": "hair"
+          }
+        },
+        "block-10": {
           "type": "filter",
           "settings": {
             "label": "With photos",
             "key": "photos"
           }
         },
-        "block-10": {
-          "type": "photo",
-          "settings": {}
-        },
         "block-11": {
           "type": "photo",
           "settings": {
-            "tags": "care photos"
+            "tags": "skin photos",
+            "image_alt": "Reviewer with calm skin after two weeks",
+            "caption": "Two weeks on the barrier serum"
           }
         },
         "block-12": {
           "type": "photo",
-          "settings": {}
+          "settings": {
+            "tags": "makeup photos",
+            "image_alt": "Reviewer's lip color on a dark stone",
+            "caption": "Four lip balm shades",
+            "rating": 4
+          }
         },
         "block-13": {
           "type": "photo",
           "settings": {
-            "tags": "care photos"
+            "tags": "hair photos",
+            "image_alt": "Scalp drops pump beside a leaf",
+            "caption": "Scalp drops, month three"
           }
         },
         "block-14": {
           "type": "review",
-          "settings": {}
+          "settings": {
+            "tags": "skin",
+            "title": "Cleansing balm removed a full face of waterproof makeup",
+            "meta": "Melting Cleansing Balm · Verified buyer"
+          }
         },
         "block-15": {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Body"
+            "tags": "makeup",
+            "rating": 4,
+            "title": "Tint is sheer, so buy a shade lighter",
+            "meta": "Skin-Tint Moisturizer · Verified buyer"
           }
         },
         "block-16": {
           "type": "review",
           "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "hair",
+            "rating": 3,
+            "title": "Scalp drops need patience",
+            "meta": "Scalp Density Drops · Verified buyer"
+          }
+        },
+        "block-17": {
+          "type": "review",
+          "settings": {
+            "tags": "skin",
+            "title": "Blemish serum cleared marks in a month",
+            "meta": "Clarifying Blemish Serum · Verified buyer"
           }
         }
       },
@@ -118,16 +154,89 @@
         "block-13",
         "block-14",
         "block-15",
-        "block-16"
+        "block-16",
+        "block-17"
+      ]
+    },
+    "reviews-badges": {
+      "type": "blko-reviews-badges",
+      "settings": {
+        "heading": "What reviewers can filter by",
+        "lede": "Narrow the feed to the attributes that matter to you."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "badge",
+          "settings": {
+            "label": "Cruelty-free"
+          }
+        },
+        "block-2": {
+          "type": "badge",
+          "settings": {
+            "label": "Vegan"
+          }
+        },
+        "block-3": {
+          "type": "badge",
+          "settings": {
+            "label": "Fragrance-free"
+          }
+        },
+        "block-4": {
+          "type": "badge",
+          "settings": {
+            "label": "Reef-safe"
+          }
+        },
+        "block-5": {
+          "type": "badge",
+          "settings": {
+            "label": "Refillable"
+          }
+        },
+        "block-6": {
+          "type": "badge",
+          "settings": {
+            "label": "Recyclable"
+          }
+        },
+        "block-7": {
+          "type": "badge",
+          "settings": {
+            "label": "Organic"
+          }
+        },
+        "block-8": {
+          "type": "badge",
+          "settings": {
+            "label": "Dermatologist-tested"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
     "beauty-extras-reviews-hub",
+    "reviews-badges",
     "newsletter"
   ]
 }

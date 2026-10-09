@@ -28,12 +28,12 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Your bag |
-| `heading` | text | Heading | Your bag is waiting. |
-| `text` | textarea | Text | Thoughtful color and care are ready whenever you are. |
-| `button_label` | text | Button label | Continue shopping |
+| `eyebrow` | text | Eyebrow | Bag |
+| `heading` | text | Heading | Nothing in here yet. |
+| `text` | textarea | Text | Every order also gets a free scent sample while stocks last. |
+| `button_label` | text | Button label | Shop all |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Makeup and skin on a table |
+| `image_alt` | text | Image alt text | Pink flat lay with a smiley sticker |
 
 ## Blocks
 

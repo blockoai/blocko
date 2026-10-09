@@ -296,19 +296,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Find us nearby"
+      "default": "Our stores"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "See it in person."
+      "default": "Try the shades with an artist."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Choose a country to see a selection of participating stockists."
+      "default": "Visit a store to test formulas, meet a makeup artist and book a look. Most locations host private events."
     },
     {
       "type": "text",
@@ -332,7 +332,7 @@
       "type": "text",
       "id": "directions_label",
       "label": "Directions label",
-      "default": "Directions"
+      "default": "Book an appointment"
     }
   ],
   "blocks": [
@@ -392,7 +392,9 @@
       "blocks": [
         {
           "type": "country",
-          "settings": {}
+          "settings": {
+            "label": "All locations"
+          }
         },
         {
           "type": "country",
@@ -402,44 +404,38 @@
           }
         },
         {
-          "type": "country",
-          "settings": {
-            "value": "ca",
-            "label": "Canada"
-          }
-        },
-        {
-          "type": "country",
-          "settings": {
-            "value": "uk",
-            "label": "United Kingdom"
-          }
-        },
-        {
-          "type": "store",
-          "settings": {}
-        },
-        {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Flagship Studio",
+            "place": "Short Hills, NJ"
           }
         },
         {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "name": "Downtown Studio",
+            "place": "Manhattan, NY"
           }
         },
         {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "name": "Uptown Studio",
+            "place": "Upper East Side, NY"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Seaside Studio",
+            "place": "Sag Harbor, NY"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Palm Studio",
+            "place": "Palm Beach, FL"
           }
         }
       ]

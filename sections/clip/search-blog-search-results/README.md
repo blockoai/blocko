@@ -32,13 +32,13 @@ Never overwrite an existing file with the same name without comparing it first.
 | `page_size` | range | Results per page | 12 |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | Search |
-| `heading` | text | Heading | Find your next favorite. |
-| `text` | text | Text | Search products, journal notes, and helpful pages. |
-| `search_label` | text | Search label | Search the journal and shop |
-| `placeholder` | text | Placeholder | Search clips, sets, and journal notes |
+| `heading` | text | Heading | Search the drawer. |
+| `text` | text | Text | Look up a colour, a scent or a lookbook. |
+| `search_label` | text | Search label | Search the shop and lookbooks |
+| `placeholder` | text | Placeholder | Try “claw clip” or “vanilla” |
 | `submit_label` | text | Submit label | Search |
 | `dropdown_heading` | text | Dropdown heading | Suggested results |
-| `view_all_label` | text | View all label | View all results |
+| `view_all_label` | text | View all label | See all matches |
 | `results_label` | text | Results label | results for |
 | `all_label` | text | All label | everything |
 | `tabs_label` | text | Tabs label | Result types |

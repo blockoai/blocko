@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "What are you looking for?",
+        "text": "Search products, sets and journal stories.",
+        "placeholder": "Try “butter” or “SPF 50”",
+        "search_label": "Search the shop",
+        "view_all_label": "View all results"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

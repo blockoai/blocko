@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | our story |
-| `heading` | text | Heading | Fun hair days belong in real life. |
-| `lede` | textarea | Lede | We make playful hair tools and accessories for the days you want to feel like yo |
+| `heading` | text | Heading | Small resets for big hair days. |
+| `lede` | textarea | Lede | We started with hair ties and a lot of door knocking, and we still build everyth |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | meet the founder |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with a claw clip updo |
+| `image_alt` | text | Image alt text | Person with a long braid |
 
 ## Blocks
 

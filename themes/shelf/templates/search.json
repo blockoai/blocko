@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search brands, ingredients and concerns.",
+        "text": "Look up a product, a banned ingredient or a journal story.",
+        "placeholder": "Try “niacinamide” or “fragrance-free”",
+        "search_label": "Search the shop",
+        "view_all_label": "See all results"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

@@ -31,12 +31,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
 | `add_label` | text | Add label | Add 3 items to bag |
-| `eyebrow` | text | Eyebrow | Build your set |
-| `heading` | text | Heading | Make your everyday routine. |
-| `text` | text | Text | Choose any three essentials and save 15%. Your set, your pace, your skin. |
+| `eyebrow` | text | Eyebrow | Build a set |
+| `heading` | text | Heading | Pick three, save 15 percent. |
+| `text` | text | Text | Combine any three face or body favorites. The bundle price updates as you choose |
 | `summary_eyebrow` | text | Summary eyebrow | Your set |
 | `summary_empty` | text | Summary empty | Choose 3 items to unlock your set |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
+| `saving_text` | text | Saving text | You save 15% when three items are in your set. |
 | `price_note` | text | Price note | Bundle price |
 
 ## Blocks

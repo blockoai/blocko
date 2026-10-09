@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
-| `crumb` | text | Crumb | Journal |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a more considered routine. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for skin-first color and care. |
+| `crumb` | text | Crumb | Vlog |
+| `eyebrow` | text | Eyebrow | Films and how-tos |
+| `heading` | text | Heading | Get to know every product on the shelf. |
+| `text` | text | Text | Short videos on each formula, routine edits, tutorials and recaps from our event |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Person applying lip tint in a bright studio |
 
 ## Blocks
 

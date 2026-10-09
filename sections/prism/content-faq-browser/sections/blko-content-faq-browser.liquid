@@ -167,6 +167,10 @@
 .blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 {% endstylesheet %}
 {% schema %}
 {
@@ -182,7 +186,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “shipping” or “color”"
+      "default": "Try “returns” or “refill”"
     },
     {
       "type": "text",
@@ -260,6 +264,13 @@
         {
           "type": "tab",
           "settings": {
+            "key": "shipping",
+            "label": "Shipping"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
             "key": "products",
             "label": "Products"
           }
@@ -267,51 +278,70 @@
         {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "rewards",
+            "label": "Rewards"
           }
-        },
-        {
-          "type": "question",
-          "settings": {}
         },
         {
           "type": "question",
           "settings": {
             "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "answer": "Changes are possible for about an hour after checkout; contact us quickly and we will try to catch it."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Can I use two discount codes?",
+            "answer": "Only one code applies per order. The welcome code works on a first purchase."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "What does shipping cost?",
+            "answer": "Orders of $30 or more ship free within the contiguous US; below that, a flat $10 applies."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "When do I get a tracking link?",
+            "answer": "As soon as your parcel leaves the warehouse, usually within two business days."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "products",
-            "question": "How do I find my hair type?",
-            "answer": "Start with the hair-type finder, then compare density and texture. Our team can offer general guidance."
+            "question": "Where do I register my heated tool?",
+            "answer": "On the registration page. Registered tools carry a one-year warranty."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "question": "Which products are vegan?",
+            "answer": "Every formula is vegan and cruelty-free; look for the badge on each product page."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "rewards",
+            "question": "How do I spend my points?",
+            "answer": "Choose a voucher in your cart and the discount applies to the order straight away."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "rewards",
+            "question": "Can I earn points on gift cards?",
+            "answer": "Gift cards do not count toward free shipping, gifts or points thresholds."
           }
         }
       ]

@@ -60,7 +60,7 @@
       "page-header",
       "beauty-extras-shade-quiz",
       "beauty-extras-shade-result",
-      "faq",
+      "shade-faq",
       "newsletter"
     ]
   },
@@ -70,6 +70,7 @@
     "sectionIds": [
       "beauty-extras-ingredient-glossary",
       "ingredients-callout",
+      "ingredients-organic",
       "newsletter"
     ]
   },
@@ -103,16 +104,7 @@
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
-      "newsletter"
-    ]
-  },
-  {
-    "page": "subscriptions",
-    "title": "Subscriptions",
-    "sectionIds": [
-      "beauty-extras-subscription-manager",
-      "product-recommendations",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -202,11 +194,11 @@
     "title": "The three-step ritual",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
+      "landing-promises",
       "content-landing-routine",
-      "tabbed-product-grid",
+      "landing-picks",
       "content-landing-proof",
-      "category-slider",
+      "landing-budgets",
       "newsletter"
     ]
   },
@@ -222,13 +214,6 @@
     "title": "Coming soon",
     "sectionIds": [
       "global-password-page"
-    ]
-  },
-  {
-    "page": "gift-card",
-    "title": "Gift card",
-    "sectionIds": [
-      "global-gift-card-page"
     ]
   },
   {
@@ -259,16 +244,13 @@
       "home-collection-mega-menu",
       "hero-campaign",
       "balm-ritual-steps",
+      "feature-driver",
+      "balm-quiz-cards",
       "message-band",
       "tabbed-product-grid",
       "balm-claim-panel",
-      "balm-quiz-cards",
-      "category-slider",
-      "feature-driver",
-      "commitments",
-      "testimonial-slider",
+      "home-launches",
       "balm-press-quote",
-      "press-slider",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -280,6 +262,8 @@
       "home-collection-mega-menu",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
+      "collection-whats-new",
+      "collection-recently-viewed",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -296,15 +280,17 @@
   },
   {
     "page": "pdp",
-    "title": "Botanical Radiance Serum",
+    "title": "Complexion Stick",
     "sectionIds": [
       "pdp-product-main",
+      "pdp-certifications",
+      "pdp-botanicals",
+      "pdp-how-to-apply",
       "pdp-before-after",
+      "pdp-faq",
       "pdp-complete-routine",
-      "product-recommendations",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-recently-viewed"
     ]
   },
   {

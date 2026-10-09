@@ -2,145 +2,48 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
-    },
-    "message-band": {
-      "type": "blko-message-band",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "message",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "message",
-          "settings": {
-            "text": "EASY FORMULAS"
-          }
-        },
-        "block-3": {
-          "type": "message",
-          "settings": {
-            "text": "MADE FOR EVERY DAY"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-landing-routine": {
-      "type": "blko-content-landing-routine",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "step",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "step",
-          "settings": {
-            "image_alt": "Tinted beauty product",
-            "label": "Step two",
-            "title": "Add a sheer tint",
-            "text": "Build coverage only where you want a little more."
-          }
-        },
-        "block-3": {
-          "type": "step",
-          "settings": {
-            "image_alt": "Makeup and skin on a table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A wash of color is enough to make it yours."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New in",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
+      "settings": {
+        "image_alt": "Bare face with an even, skin-like base",
+        "kicker": "New base",
+        "heading": "Thirty-two shades. Zero mask.",
+        "text": "A fluid foundation that lets freckles through, built for the way real faces move.",
+        "button_label": "Find your shade"
+      }
     },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "point",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "point",
-          "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
-          }
-        },
-        "block-3": {
-          "type": "point",
-          "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
-          }
-        }
+      "settings": {
+        "kicker": "The pitch in four lines",
+        "quote": "“It looks like skin, only calmer.”",
+        "author": "— Beta tester"
       },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "category",
-          "settings": {}
+          "type": "point",
+          "settings": {
+            "title": "Skin first",
+            "text": "A base with care built in"
+          }
         },
         "block-2": {
-          "type": "category",
+          "type": "point",
           "settings": {
-            "title": "Eyes",
-            "url": "#eyes"
+            "title": "Wide range",
+            "text": "32 shades, 7 families, 5 undertones"
           }
         },
         "block-3": {
-          "type": "category",
+          "type": "point",
           "settings": {
-            "title": "Lips",
-            "url": "#lips"
+            "title": "Real faces",
+            "text": "Shot on 64 people, unretouched"
           }
         },
         "block-4": {
-          "type": "category",
+          "type": "point",
           "settings": {
-            "title": "Balm",
-            "url": "#care"
+            "title": "Your cover",
+            "text": "Sheer to medium in layers"
           }
         }
       },
@@ -151,18 +54,87 @@
         "block-4"
       ]
     },
+    "content-landing-routine": {
+      "type": "blko-content-landing-routine",
+      "settings": {
+        "kicker": "Meet the base",
+        "heading": "Three products, one finish"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Foundation bottle with a dropper cap",
+            "label": "Foundation",
+            "title": "Fluid skin foundation",
+            "text": "Lightweight and flexible with a soft glow; the family chips on the product page make matching quick."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Concealer tapped under the eye",
+            "label": "Concealer",
+            "title": "Balm concealer",
+            "text": "A creamy stick for shadows and spots that blends with the same warm fingertip."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Droplet of oil serum on the back of a hand",
+            "label": "Glow",
+            "title": "Glow serum hybrid",
+            "text": "A few drops over base for a lit-from-within finish without any glitter."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "Shop the launch",
+        "heading": "Everything for the new base"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "label": "Base"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "Finish"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
-    "content-landing-routine",
-    "tabbed-product-grid",
     "content-landing-proof",
-    "category-slider",
+    "content-landing-routine",
+    "landing-picks",
     "newsletter"
   ]
 }

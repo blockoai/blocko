@@ -2,34 +2,51 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "The world needs better makeup, not more of it.",
+        "lede": "A working artist's answer to cluttered drawers and complicated routines.",
+        "button_label": "Read the founder's letter",
+        "image_alt": "Our founder blending balm on a client"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Face with a soft, skin-like finish",
+        "kicker": "What we do",
+        "heading": "Make a small shelf that does a lot.",
+        "text": "Every product earns its place by doing more than one job and working across ages, skin types and tones."
+      }
     },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
+    "about-clean-slate": {
+      "type": "blko-about-clean-slate",
+      "settings": {
+        "kicker": "A clean slate",
+        "heading": "What stays out of the pot"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "A banned list",
+            "text": "Parabens, phthalates, sulfates, PEGs, EDTA and BPA never make it into a formula."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "title": "Watching the rules",
+            "text": "We track new regulations and restrictions, and update the list as they change."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
+            "title": "Honest labels",
+            "text": "Vegan, cruelty-free, gluten-free and made in the US, Canada or Germany, stated plainly."
           }
         }
       },
@@ -41,71 +58,40 @@
     },
     "content-founder-note": {
       "type": "blko-content-founder-note",
-      "settings": {}
-    },
-    "content-story-timeline": {
-      "type": "blko-content-story-timeline",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "milestone",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "milestone",
-          "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of care and color essentials."
-          }
-        },
-        "block-3": {
-          "type": "milestone",
-          "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a routine that moves with your day."
-          }
-        },
-        "block-4": {
-          "type": "milestone",
-          "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
+      "settings": {
+        "kicker": "A letter from the founder",
+        "quote": "“I wanted fewer products that each worked harder, on every face I met.”",
+        "name": "Our founder",
+        "role": "Makeup artist",
+        "image_alt": "Our founder at work in the studio",
+        "note": "For years I carried two bags: clean products that did not perform, and performers I did not trust. So I made the formulas I wanted for my own kit, one multi-use cream at a time."
+      }
     },
     "content-press-quotes": {
       "type": "blko-content-press-quotes",
-      "settings": {},
+      "settings": {
+        "kicker": "In the press"
+      },
       "blocks": {
         "block-1": {
           "type": "quote",
-          "settings": {}
+          "settings": {
+            "quote": "“The kind of makeup that makes a face look rested rather than made up.”",
+            "source": "— Beauty Weekly"
+          }
         },
         "block-2": {
           "type": "quote",
           "settings": {
-            "quote": "“A practical answer to the overcomplicated routine.”",
-            "source": "— The Daily Edit"
+            "quote": "“Cream formulas with serious range, for anyone short on time.”",
+            "source": "— The Glossary"
           }
         },
         "block-3": {
           "type": "quote",
           "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
-            "source": "— Studio Notes"
+            "quote": "“A rare brand where the founder is the best salesperson and the artist.”",
+            "source": "— Studio Edit"
           }
         }
       },
@@ -117,15 +103,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [
     "content-about-hero",
     "content-mission",
-    "content-values",
+    "about-clean-slate",
     "content-founder-note",
-    "content-story-timeline",
     "content-press-quotes",
     "newsletter"
   ]

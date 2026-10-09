@@ -30,21 +30,21 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Search |
-| `heading` | text | Heading | Nothing quite matches that. |
-| `text` | text | Text | Try a shorter phrase, check the spelling, or start with one of these useful path |
-| `search_label` | text | Search label | Search the guides and shop |
-| `placeholder` | text | Placeholder | Search products, routines, and guides |
+| `heading` | text | Heading | Nothing matches that yet. |
+| `text` | text | Text | Try a shorter phrase, check the spelling, or start from one of these. |
+| `search_label` | text | Search label | Search the shop and blog |
+| `placeholder` | text | Placeholder | Search razors, scents and guides |
 | `submit_label` | text | Submit label | Search |
 | `dropdown_heading` | text | Dropdown heading | Suggested results |
 | `view_all_label` | text | View all label | View all results |
-| `tip_1` | text | Tip 1 | Try broader terms like “razor”, “gel”, or “routine”. |
-| `tip_2_prefix` | text | Tip 2 prefix | Browse our |
-| `tip_2_link` | text | Tip 2 link | new arrivals |
-| `tip_3_prefix` | text | Tip 3 prefix | Read our |
+| `tip_1` | text | Tip 1 | Try broader words like “razor”, “gel” or “body”. |
+| `tip_2_prefix` | text | Tip 2 prefix | Browse the |
+| `tip_2_link` | text | Tip 2 link | starter sets |
+| `tip_3_prefix` | text | Tip 3 prefix | Read the |
 | `journal_url` | url | Journal url |  |
-| `tip_3_link` | text | Tip 3 link | latest field guide notes |
+| `tip_3_link` | text | Tip 3 link | shave notes |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Grooming gear on a bathroom counter |
+| `image_alt` | text | Image alt text | Man applying shave foam to his neck |
 
 ## Blocks
 

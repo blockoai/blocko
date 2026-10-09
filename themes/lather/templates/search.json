@@ -2,7 +2,14 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "crumb": "Search",
+        "heading": "Search the shop and the locker room.",
+        "text": "Look up scents, products and how-to guides.",
+        "placeholder": "Try “cedar” or “deodorant”",
+        "search_label": "Search products and guides",
+        "view_all_label": "See every result"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

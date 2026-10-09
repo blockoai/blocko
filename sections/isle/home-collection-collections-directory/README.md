@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by collection |
-| `heading` | text | Heading | Find your island. |
-| `text` | textarea | Text | Discover scents, sets and sunny rituals made to fit into real life. |
+| `eyebrow` | text | Eyebrow | All collections |
+| `heading` | text | Heading | Find your way in |
+| `text` | textarea | Text | Browse by product type, by scent family, by size or by the occasion you are shop |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

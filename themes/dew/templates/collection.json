@@ -2,43 +2,58 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by family",
+        "heading": "five families, one short shelf."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "url": "#skin"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Lip + cheek",
+            "url": "#lip-cheek"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips + cheeks",
-            "url": "#lips"
+            "label": "Sets",
+            "url": "#sets"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#care"
+            "label": "On the go",
+            "url": "#on-the-go"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Award winners",
+            "url": "#awards"
+          }
         },
         "block-6": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "body routine",
-            "label": "Body"
+            "url": "#skin",
+            "image_alt": "Glow serum bottle on a pale surface"
+          }
+        },
+        "block-7": {
+          "type": "tile",
+          "settings": {
+            "url": "#lip-cheek",
+            "image_alt": "Lip tints and a blush stick laid out together",
+            "label": "Lip + cheek"
           }
         }
       },
@@ -48,16 +63,55 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7"
+      ]
+    },
+    "collection-band": {
+      "type": "blko-collection-band",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {
+            "text": "ONE SHELF, FIVE FAMILIES"
+          }
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SHADES SELECTED BEFORE YOU ADD"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "SETS SAVE A LITTLE"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
       ]
     },
     "home-collection-collection-toolbar": {
       "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shop the shelf",
+        "filter_eyebrow": "Jump to a family",
+        "filter_heading": "Skin, lip + cheek and more"
+      }
     },
     "home-collection-collection-grid": {
       "type": "blko-home-collection-collection-grid",
-      "settings": {}
+      "settings": {
+        "promo_image_alt": "Bronzer swatches from light to deep on a forearm",
+        "promo_eyebrow": "Bronzer unsure?",
+        "promo_heading": "Match your depth in four taps.",
+        "promo_label": "Try the shade finder"
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -65,11 +119,16 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
+    "collection-band",
     "home-collection-collection-toolbar",
     "home-collection-collection-grid",
     "home-collection-quick-view-modal",

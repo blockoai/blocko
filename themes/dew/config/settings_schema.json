@@ -228,19 +228,19 @@
         "type": "color",
         "id": "color_swatch_clay",
         "label": "Swatch clay",
-        "default": "#bb856c"
+        "default": "#d29a7c"
       },
       {
         "type": "color",
         "id": "color_swatch_mocha",
         "label": "Swatch mocha",
-        "default": "#8a5a40"
+        "default": "#7a5638"
       },
       {
         "type": "color",
         "id": "color_swatch_cocoa",
         "label": "Swatch cocoa",
-        "default": "#4e3328"
+        "default": "#42292a"
       },
       {
         "type": "color",
@@ -252,13 +252,13 @@
         "type": "color",
         "id": "color_swatch_medium",
         "label": "Swatch medium",
-        "default": "#bb856c"
+        "default": "#d29a7c"
       },
       {
         "type": "color",
         "id": "color_swatch_deep",
         "label": "Swatch deep",
-        "default": "#91584b"
+        "default": "#9c5a4b"
       }
     ]
   },

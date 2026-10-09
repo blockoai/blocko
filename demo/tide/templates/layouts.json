@@ -54,21 +54,13 @@
     ]
   },
   {
-    "page": "shade-quiz",
-    "title": "Skin-type quiz",
-    "sectionIds": [
-      "page-header",
-      "beauty-extras-shade-quiz",
-      "beauty-extras-shade-result",
-      "faq",
-      "newsletter"
-    ]
-  },
-  {
     "page": "ingredients",
     "title": "Ingredient glossary",
     "sectionIds": [
+      "ingredients-header",
+      "seaweed-species",
       "beauty-extras-ingredient-glossary",
+      "free-of-list",
       "ingredients-callout",
       "newsletter"
     ]
@@ -77,7 +69,9 @@
     "page": "routine-builder",
     "title": "Routine builder",
     "sectionIds": [
+      "routine-header",
       "beauty-extras-routine-builder",
+      "routine-questions",
       "product-recommendations",
       "newsletter"
     ]
@@ -103,7 +97,8 @@
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-earn-more",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -112,7 +107,10 @@
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
+      "subscription-perks",
+      "tide-subscribe",
       "product-recommendations",
+      "subscription-faq",
       "newsletter"
     ]
   },
@@ -162,10 +160,9 @@
     "sectionIds": [
       "content-about-hero",
       "content-mission",
-      "content-values",
-      "tide-standards",
-      "content-founder-note",
       "content-story-timeline",
+      "tide-standards",
+      "content-values",
       "content-press-quotes",
       "newsletter"
     ]
@@ -203,11 +200,11 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
+      "landing-promises",
       "content-landing-routine",
-      "tabbed-product-grid",
+      "landing-picks",
       "content-landing-proof",
-      "category-slider",
+      "landing-scents",
       "newsletter"
     ]
   },
@@ -260,16 +257,15 @@
       "home-collection-mega-menu",
       "hero-campaign",
       "message-band",
-      "tide-standards",
       "tabbed-product-grid",
-      "tide-ritual",
       "category-slider",
-      "feature-driver",
-      "tide-botanical",
-      "commitments",
-      "testimonial-slider",
-      "press-slider",
+      "home-family",
+      "home-routine-quiz",
       "tide-subscribe",
+      "tide-botanical",
+      "home-guarantee",
+      "testimonial-slider",
+      "home-programs",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -281,6 +277,9 @@
       "home-collection-mega-menu",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
+      "collection-quiz",
+      "collection-routine-guide",
+      "collection-faq",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -291,22 +290,25 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "home-collection-collections-directory",
+      "collections-promises",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
   },
   {
     "page": "pdp",
-    "title": "Mineral Sun Lotion SPF 40",
+    "title": "Sea Botanical Body Oil",
     "sectionIds": [
       "pdp-product-main",
+      "pdp-promises",
       "pdp-before-after",
+      "pdp-ingredients",
+      "pdp-scent",
+      "pdp-how-to",
+      "pdp-faq",
       "pdp-complete-routine",
-      "tide-subscribe",
-      "product-recommendations",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-recently-viewed"
     ]
   },
   {

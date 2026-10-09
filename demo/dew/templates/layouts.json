@@ -60,7 +60,7 @@
       "page-header",
       "beauty-extras-shade-quiz",
       "beauty-extras-shade-result",
-      "faq",
+      "shade-routine",
       "newsletter"
     ]
   },
@@ -87,6 +87,7 @@
     "title": "Reviews",
     "sectionIds": [
       "beauty-extras-reviews-hub",
+      "reviews-picks",
       "newsletter"
     ]
   },
@@ -95,24 +96,6 @@
     "title": "Stockists",
     "sectionIds": [
       "beauty-extras-stockist-locator",
-      "newsletter"
-    ]
-  },
-  {
-    "page": "rewards",
-    "title": "Rewards",
-    "sectionIds": [
-      "beauty-extras-rewards-overview",
-      "faq",
-      "newsletter"
-    ]
-  },
-  {
-    "page": "subscriptions",
-    "title": "Subscriptions",
-    "sectionIds": [
-      "beauty-extras-subscription-manager",
-      "product-recommendations",
       "newsletter"
     ]
   },
@@ -161,11 +144,11 @@
     "title": "Our idea",
     "sectionIds": [
       "content-about-hero",
-      "content-mission",
-      "content-values",
       "content-founder-note",
-      "content-story-timeline",
-      "content-press-quotes",
+      "content-mission",
+      "about-principles",
+      "about-actives",
+      "about-advisors",
       "newsletter"
     ]
   },
@@ -202,11 +185,9 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
+      "landing-details",
       "content-landing-routine",
-      "tabbed-product-grid",
-      "content-landing-proof",
-      "category-slider",
+      "landing-faq",
       "newsletter"
     ]
   },
@@ -258,16 +239,14 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "hero-campaign",
-      "dew-shade-row",
       "message-band",
       "tabbed-product-grid",
       "dew-philosophy",
-      "category-slider",
-      "feature-driver",
-      "commitments",
-      "testimonial-slider",
-      "press-slider",
+      "home-seasonal-edit",
+      "dew-shade-row",
       "dew-social-strip",
+      "home-pillars",
+      "press-slider",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -277,6 +256,7 @@
     "title": "Dew — Shop",
     "sectionIds": [
       "home-collection-mega-menu",
+      "collection-band",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
       "home-collection-quick-view-modal",
@@ -299,12 +279,14 @@
     "sectionIds": [
       "pdp-product-main",
       "dew-facts",
+      "pdp-ingredients",
       "pdp-before-after",
+      "pdp-how-to",
+      "pdp-routine",
+      "pdp-empties",
       "pdp-complete-routine",
-      "product-recommendations",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-recently-viewed"
     ]
   },
   {

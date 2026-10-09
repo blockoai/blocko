@@ -2,43 +2,81 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by step",
+        "heading": "Where does your day begin?"
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Mist sunscreen",
+            "url": "#sun"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Sun",
-            "url": "#eyes"
+            "label": "Gel + cream SPF",
+            "url": "#sun"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips + glow",
-            "url": "#lips"
+            "label": "Sticks + compacts",
+            "url": "#sun"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Sets",
-            "url": "#care"
+            "label": "Wash + polish",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Butters + oils",
+            "url": "#body"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Deodorant",
+            "url": "#deodorant"
+          }
+        },
+        "block-7": {
+          "type": "link",
+          "settings": {
+            "label": "Scent mists",
+            "url": "#scent"
+          }
+        },
+        "block-8": {
+          "type": "link",
+          "settings": {
+            "label": "Savings sets",
+            "url": "#sets"
+          }
+        },
+        "block-9": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Gift ritual",
-            "label": "Sets"
+            "url": "#sun",
+            "image_alt": "Sunscreen mist bottle on warm sand",
+            "label": "Sunscreen"
+          }
+        },
+        "block-10": {
+          "type": "tile",
+          "settings": {
+            "url": "#sets",
+            "image_alt": "Body care products laid out on a towel",
+            "label": "Savings sets"
           }
         }
       },
@@ -48,37 +86,51 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10"
       ]
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
+      "settings": {
+        "image_alt": "Glowing shoulders in warm light next to a jumbo body butter",
+        "eyebrow": "Limited edition scent",
+        "heading": "Wrap yourself in toasted-sugar warmth.",
+        "text": "A seasonal body collection in a cozy new scent, with jumbo sizes that make sharing optional.",
+        "button_label": "Shop the collection"
+      }
     },
     "isle-ticker": {
       "type": "blko-isle-ticker",
-      "settings": {},
+      "settings": {
+        "label": "Our promises"
+      },
       "blocks": {
         "block-1": {
           "type": "claim",
-          "settings": {}
+          "settings": {
+            "text": "Clean, vegan, cruelty-free"
+          }
         },
         "block-2": {
           "type": "claim",
           "settings": {
-            "text": "Powered by actives"
+            "text": "Actives that do the work"
           }
         },
         "block-3": {
           "type": "claim",
           "settings": {
-            "text": "Feels like paradise"
+            "text": "Sun care you will actually wear"
           }
         },
         "block-4": {
           "type": "claim",
           "settings": {
-            "text": "High-performance body care"
+            "text": "Bottled holiday"
           }
         }
       },
@@ -91,11 +143,15 @@
     },
     "isle-claims": {
       "type": "blko-isle-claims",
-      "settings": {},
+      "settings": {
+        "heading": "Gentle on skin and just as gentle on the planet."
+      },
       "blocks": {
         "block-1": {
           "type": "claim",
-          "settings": {}
+          "settings": {
+            "label": "Clean formulas"
+          }
         },
         "block-2": {
           "type": "claim",
@@ -120,6 +176,12 @@
           "settings": {
             "label": "Paraben-free"
           }
+        },
+        "block-6": {
+          "type": "claim",
+          "settings": {
+            "label": "Recyclable packaging"
+          }
         }
       },
       "block_order": [
@@ -127,12 +189,16 @@
         "block-2",
         "block-3",
         "block-4",
-        "block-5"
+        "block-5",
+        "block-6"
       ]
     },
     "tabbed-product-grid": {
       "type": "blko-tabbed-product-grid",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Crowd favorites",
+        "heading": "Best sellers"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -141,77 +207,15 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "Just landed",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "category",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "category",
-          "settings": {
-            "title": "Sun",
-            "url": "#eyes"
+            "key": "new",
+            "label": "Just landed"
           }
         },
         "block-3": {
-          "type": "category",
+          "type": "tab",
           "settings": {
-            "title": "Gifts",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Sets",
-            "url": "#care"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "isle-actives": {
-      "type": "blko-isle-actives",
-      "settings": {}
-    },
-    "isle-results": {
-      "type": "blko-isle-results",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "stat",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "stat",
-          "settings": {
-            "value": "89%",
-            "label": "said it smelled like vacation"
-          }
-        },
-        "block-3": {
-          "type": "stat",
-          "settings": {
-            "value": "96%",
-            "label": "would repurchase"
+            "key": "sets",
+            "label": "Top rated"
           }
         }
       },
@@ -223,22 +227,75 @@
     },
     "press-slider": {
       "type": "blko-press-slider",
-      "settings": {},
+      "settings": {
+        "eyebrow": "As featured in"
+      },
       "blocks": {
         "block-1": {
           "type": "publication",
-          "settings": {}
+          "settings": {
+            "name": "THE GLOW LEDGER"
+          }
         },
         "block-2": {
           "type": "publication",
           "settings": {
-            "name": "COAST & CO"
+            "name": "SUNDAY GLOSS"
           }
         },
         "block-3": {
           "type": "publication",
           "settings": {
-            "name": "SUN JOURNAL"
+            "name": "WELLNESS WEEKLY"
+          }
+        },
+        "block-4": {
+          "type": "publication",
+          "settings": {
+            "name": "SHORELINE"
+          }
+        },
+        "block-5": {
+          "type": "publication",
+          "settings": {
+            "name": "THE SKIN DESK"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "home-jumbo": {
+      "type": "blko-home-jumbo",
+      "settings": {
+        "eyebrow": "More for your money",
+        "heading": "New jumbo sizes"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "key": "wash",
+            "label": "Body wash"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "butter",
+            "label": "Body butter"
+          }
+        },
+        "block-3": {
+          "type": "tab",
+          "settings": {
+            "key": "set",
+            "label": "Jumbo sets"
           }
         }
       },
@@ -248,9 +305,104 @@
         "block-3"
       ]
     },
+    "home-story": {
+      "type": "blko-home-story",
+      "settings": {
+        "image_alt": "Friends laughing on a sunny deck",
+        "kicker": "Why we make it",
+        "heading": "Clean body care for every kind of day.",
+        "text": "Sunrise swim, weekend trail or a long soak at home: our formulas are plant-based, tested for performance and made to feel like a trip, wherever you happen to be standing."
+      }
+    },
+    "isle-actives": {
+      "type": "blko-isle-actives",
+      "settings": {
+        "heading": "Clean ingredients, measured results.",
+        "text": "Our chemists start with high-performance actives such as hyaluronic acid and vitamin C, then check every claim in consumer and clinical testing before it appears on a label.",
+        "button_label": "See how we formulate",
+        "image_alt": "Person smoothing a cream onto their forearm"
+      }
+    },
+    "home-sets": {
+      "type": "blko-home-sets",
+      "settings": {
+        "eyebrow": "Better together",
+        "heading": "Sets that save"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "key": "body",
+            "label": "Body sets"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "spf",
+            "label": "Sun vaults"
+          }
+        },
+        "block-3": {
+          "type": "tab",
+          "settings": {
+            "key": "gift",
+            "label": "Gift kits"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "home-ticker-closing": {
+      "type": "blko-home-ticker-closing",
+      "settings": {
+        "label": "More promises"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "claim",
+          "settings": {
+            "text": "Free samples in every bag"
+          }
+        },
+        "block-2": {
+          "type": "claim",
+          "settings": {
+            "text": "Free US shipping from $39"
+          }
+        },
+        "block-3": {
+          "type": "claim",
+          "settings": {
+            "text": "60-day easy returns"
+          }
+        },
+        "block-4": {
+          "type": "claim",
+          "settings": {
+            "text": "A dollar from every order funds clean water"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -263,10 +415,12 @@
     "isle-ticker",
     "isle-claims",
     "tabbed-product-grid",
-    "category-slider",
-    "isle-actives",
-    "isle-results",
     "press-slider",
+    "home-jumbo",
+    "home-story",
+    "isle-actives",
+    "home-sets",
+    "home-ticker-closing",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

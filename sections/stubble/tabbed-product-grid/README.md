@@ -29,8 +29,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
-| `eyebrow` | text | Eyebrow | Discover |
-| `heading` | text | Heading | Everyday essentials |
+| `eyebrow` | text | Eyebrow | Best sellers |
+| `heading` | text | Heading | Quality you can price-check |
 
 ## Blocks
 

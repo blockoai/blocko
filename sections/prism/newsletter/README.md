@@ -27,13 +27,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `button_label` | text | Button label | Sign up |
+| `button_label` | text | Button label | Join |
 | `placeholder` | text | Placeholder | you@example.com |
-| `eyebrow` | text | Eyebrow | Join the color club |
-| `heading` | text | Heading | get 10% off your first system. |
+| `eyebrow` | text | Eyebrow | Take 15% off your opening order |
+| `heading` | text | Heading | Get the drop before it drops |
 | `email_label` | text | Email label | Email address |
 | `success_message` | text | Success message | Thanks for subscribing. |
-| `message` | text | Message | Drops, tips and color-care know-how. No spam. |
+| `message` | text | Message | New launches, member sales and the odd styling trick, sent once a week. |
 
 ## Blocks
 

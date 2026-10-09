@@ -39,9 +39,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | `breadcrumb_category` | text | Breadcrumb category | Complexion |
 | `price_note` | text | Price note | 1 fl oz / 30 ml |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure? Find your shade. |
+| `shade_help_label` | text | Shade help label | Unsure of your shade? Take the finder. |
 | `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Free delivery on orders over $50 · Easy returns within 30 days |
+| `ship_note` | text | Ship note | Free shipping on orders over $50 · Free returns and exchanges |
 
 ## Blocks
 

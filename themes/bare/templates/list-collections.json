@@ -1,59 +1,12 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "link",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "link",
-          "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
-          }
-        },
-        "block-3": {
-          "type": "link",
-          "settings": {
-            "label": "Lips",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "link",
-          "settings": {
-            "label": "Skin prep",
-            "url": "#care"
-          }
-        },
-        "block-5": {
-          "type": "tile",
-          "settings": {}
-        },
-        "block-6": {
-          "type": "tile",
-          "settings": {
-            "url": "#care",
-            "image_alt": "Skin prep edit",
-            "label": "Skin prep"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6"
-      ]
-    },
     "home-collection-collections-directory": {
       "type": "blko-home-collection-collections-directory",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Every collection",
+        "heading": "Shop by category, skin concern or occasion",
+        "text": "Face, eyes, lips and skin, plus kits, seasonal edits and the looks our artists build from them."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,11 +14,14 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [
-    "home-collection-mega-menu",
     "home-collection-collections-directory",
     "home-collection-quick-view-modal",
     "newsletter"

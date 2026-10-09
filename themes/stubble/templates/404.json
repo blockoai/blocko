@@ -2,7 +2,11 @@
   "sections": {
     "cart-checkout-not-found": {
       "type": "blko-cart-checkout-not-found",
-      "settings": {},
+      "settings": {
+        "heading": "This page took a wrong turn.",
+        "text": "Search, or head back to the razors.",
+        "image_alt": "Man in a towel walking through a doorway"
+      },
       "blocks": {
         "block-1": {
           "type": "link",
@@ -11,15 +15,15 @@
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Shave",
-            "url": "#complexion"
+            "label": "Start shave trial",
+            "url": "#trial"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
             "label": "Body",
-            "url": "#care"
+            "url": "#body"
           }
         }
       },

@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search products and guides.",
+        "text": "Try a product, a shade code or an ingredient.",
+        "placeholder": "Try “contour” or “retinol”",
+        "search_label": "Search products and journal",
+        "view_all_label": "View all results"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

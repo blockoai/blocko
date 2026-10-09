@@ -28,15 +28,15 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | 404 / Page not found |
-| `heading` | text | Heading | This page drifted out to sea. |
-| `text` | textarea | Text | Try a search, or return to a known part of the shop. |
+| `eyebrow` | text | Eyebrow | 404 |
+| `heading` | text | Heading | This page went to the beach. |
+| `text` | textarea | Text | Search for what you need, or head back to a favorite spot. |
 | `search_label` | text | Search label | Search the shop |
 | `search_placeholder` | text | Search placeholder | Search the shop |
 | `search_button_label` | text | Search button label | Search |
 | `nav_label` | text | Nav label | Popular destinations |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person with sun-kissed skin on the beach |
+| `image_alt` | text | Image alt text | Empty beach chair under a palm tree |
 
 ## Blocks
 

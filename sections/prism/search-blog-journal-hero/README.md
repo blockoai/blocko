@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
-| `crumb` | text | Crumb | The Strand |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a more considered routine. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for skin-first color and care. |
+| `crumb` | text | Crumb | The Hair Log |
+| `eyebrow` | text | Eyebrow | Read |
+| `heading` | text | Heading | Hair guides, launches and salon know-how. |
+| `text` | text | Text | More than two hundred articles on routines, technique, ingredients and the peopl |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Colourist working at a salon basin |
 
 ## Blocks
 

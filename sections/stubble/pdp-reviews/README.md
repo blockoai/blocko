@@ -31,10 +31,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `eyebrow` | text | Eyebrow | Customer reviews |
-| `average` | text | Average | 4.8 |
+| `average` | text | Average | 4.4 |
 | `stars` | text | Stars | ★★★★★ |
-| `summary` | text | Summary | Based on 1,248 verified reviews |
-| `list_heading` | text | List heading | Featured reviews |
+| `summary` | text | Summary | From 15,602 verified reviews |
+| `list_heading` | text | List heading | What shavers say |
 | `empty` | text | Empty | No reviews match this filter yet. |
 
 ## Blocks

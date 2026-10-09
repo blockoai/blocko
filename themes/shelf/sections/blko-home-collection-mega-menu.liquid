@@ -74,6 +74,8 @@
 .blko-theme .blko-shelf-clean h2{margin:0 0 .5rem}
 .blko-theme .blko-shelf-visit__card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
 .blko-theme .blko-shelf-visit__body h2{margin:0 0 .5rem}
+.blko-theme .blko-shelf-pillars h2{margin:0 0 .5rem}
+.blko-theme .blko-shelf-services h2{margin:0 0 .5rem}
 .blko-theme .blko-shelf-rewards h2{margin:0 0 .4rem;color:var(--color-bg)}
 .blko-theme .blko-brand-logo img{display:block;width:100%;height:auto}
 .blko-theme .blko-brand-head h2{margin:0;font:var(--kit-heading-weight,var(--weight-light)) var(--text-h2)/var(--leading-display) var(--font-heading)}
@@ -163,6 +165,18 @@
 .blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 .blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 .blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 {% endstylesheet %}
 {% schema %}
 {
@@ -178,13 +192,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Shop by category"
+      "default": "Shop the whole shelf"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Find your next favorite."
+      "default": "Start with what you need."
     }
   ],
   "blocks": [
@@ -242,39 +256,59 @@
       "blocks": [
         {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "url": "#skin"
+          }
         },
         {
           "type": "link",
           "settings": {
             "label": "Makeup",
-            "url": "#eyes"
+            "url": "#makeup"
           }
         },
         {
           "type": "link",
           "settings": {
             "label": "Hair",
-            "url": "#lips"
+            "url": "#hair"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#care"
+            "label": "Bath + body",
+            "url": "#body"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Fragrance",
+            "url": "#fragrance"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Brands A to Z",
+            "url": "#brands"
           }
         },
         {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#skin-analysis",
+            "image_alt": "Woman applying cream in a warm mirror",
+            "label": "Skin analysis"
+          }
         },
         {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Body care",
-            "label": "Body"
+            "url": "#gifts",
+            "image_alt": "Open powder compact with a hexagonal case",
+            "label": "Gifts by budget"
           }
         }
       ]

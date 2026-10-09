@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Neutral skincare products arranged on a soft surface |
-| `eyebrow` | text | Eyebrow | our philosophy |
-| `heading` | text | Heading | one of everything really good. |
-| `text` | textarea | Text | We make a short list of soft, high-performance essentials you reach for every da |
+| `eyebrow` | text | Eyebrow | why the shelf is small |
+| `heading` | text | Heading | a short list, every item pulling its weight. |
+| `text` | textarea | Text | We would rather make one cleanser we love than five we shrug at. Each formula no |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | shop dew |
+| `button_label` | text | Button label | see the shelf |
 
 ## Blocks
 

@@ -2,24 +2,82 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe and save",
+        "heading": "Fresh blades before the old ones dull.",
+        "text": "Take 5% off every order and ship free over $30. Swap items, shift the date or update your address any time.",
+        "shipment_eyebrow": "Next cartridge shipment",
+        "shipment_heading": "Ships on the 12th",
+        "image_alt": "Pro cartridge refills",
+        "variant_label": "4 cartridges",
+        "shipment_note": "Sent to your saved address in plain packaging.",
+        "frequency_eyebrow": "Refill every",
+        "frequency_copy": "You are set to refill every three months.",
+        "skip_label": "Skip this shipment",
+        "swap_label": "Change an item"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
           "settings": {
-            "selected": true
+            "label": "2 months"
           }
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "3 months",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "4 months"
+          }
+        },
+        "block-4": {
+          "type": "frequency",
+          "settings": {
+            "label": "6 months"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "Why it works",
+        "heading": "Grooming on your schedule"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Never run out",
+            "text": "Refills arrive before you notice the blade dulling."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Better value",
+            "text": "5% off every order, rising to 15% with three items."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Fully flexible",
+            "text": "Swap, skip or change the cadence in a few clicks."
           }
         }
       },
@@ -29,19 +87,64 @@
         "block-3"
       ]
     },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "subscription-steps": {
+      "type": "blko-subscription-steps",
+      "settings": {
+        "kicker": "How it works",
+        "heading": "Four steps, then forget about it"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Row of cartridges",
+            "title": "Pick your items",
+            "text": "Choose refills, gel, cleanser or anything marked subscribable."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Stacked towels",
+            "label": "Step two",
+            "title": "Set the rhythm",
+            "text": "Every two to six months for consumables, every six to twelve for the annual razor plan."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Grooming kit on a dark table",
+            "label": "Step three",
+            "title": "Let it arrive",
+            "text": "We ship on the date you chose and email you a few days before."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-popular": {
+      "type": "blko-subscription-popular",
+      "settings": {
+        "eyebrow": "Popular subscriptions",
+        "heading": "What members subscribe to first"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Blade refills"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "Face and body"
           }
         }
       },
@@ -50,14 +153,80 @@
         "block-2"
       ]
     },
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Subscription help",
+        "heading": "Common questions"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "What do I get for subscribing?",
+            "text": "5% off every order, free shipping over $30, and 15% off each item once you have three."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Can I change what is in my shipment?",
+            "text": "Yes. Add, remove or swap items from your account before the next ship date."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "How do I cancel?",
+            "text": "Open your subscription and choose cancel. There is no fee and no call to make."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "Can I skip a shipment?",
+            "text": "Yes, skip the next one and the schedule resumes after it."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "When am I billed?",
+            "text": "On the ship date, a few days after the reminder email."
+          }
+        },
+        "block-6": {
+          "type": "question",
+          "settings": {
+            "label": "Can I change how often it ships?",
+            "text": "Yes, choose a new cadence at any time from the same screen."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
-    "product-recommendations",
+    "subscription-perks",
+    "subscription-steps",
+    "subscription-popular",
+    "subscription-faq",
     "newsletter"
   ]
 }

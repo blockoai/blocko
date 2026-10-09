@@ -282,49 +282,49 @@
       "type": "text",
       "id": "eyebrow_1",
       "label": "Eyebrow 1",
-      "default": "Match in minutes"
+      "default": "Question one"
     },
     {
       "type": "text",
       "id": "heading_1",
       "label": "Heading 1",
-      "default": "Let’s find your ritual."
+      "default": "How deep is your skin?"
     },
     {
       "type": "textarea",
       "id": "text_1",
       "label": "Text 1",
-      "default": "Start with the skin type that feels most like yours."
+      "default": "Check your jawline in daylight without any makeup on."
     },
     {
       "type": "text",
       "id": "eyebrow_2",
       "label": "Eyebrow 2",
-      "default": "Your undertone"
+      "default": "Question two"
     },
     {
       "type": "text",
       "id": "heading_2",
       "label": "Heading 2",
-      "default": "Which description is closest?"
+      "default": "Which undertone sounds like you?"
     },
     {
       "type": "text",
       "id": "eyebrow_3",
       "label": "Eyebrow 3",
-      "default": "Your finish"
+      "default": "Question three"
     },
     {
       "type": "text",
       "id": "heading_3",
       "label": "Heading 3",
-      "default": "How much coverage feels right?"
+      "default": "What finish do you want?"
     },
     {
       "type": "text",
       "id": "finish_label",
       "label": "Finish label",
-      "default": "See my matches"
+      "default": "Show my shade"
     }
   ],
   "blocks": [
@@ -428,7 +428,9 @@
       "blocks": [
         {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Fair"
+          }
         },
         {
           "type": "tone",
@@ -441,57 +443,59 @@
         {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Tan",
             "tone": "tone-2"
           }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Deep",
             "tone": "tone-3"
           }
         },
         {
           "type": "undertone",
           "settings": {
+            "label": "Cool (C)",
+            "hint": "Pink or red flush, silver suits you",
             "selected": true
           }
         },
         {
           "type": "undertone",
           "settings": {
-            "label": "Neutral",
-            "hint": "A balanced mix"
+            "label": "Neutral (N)",
+            "hint": "Neither gold nor silver stands out"
           }
         },
         {
           "type": "undertone",
           "settings": {
-            "label": "Warm",
-            "hint": "Golden or peach tones"
+            "label": "Warm (W)",
+            "hint": "Golden or olive glow, gold suits you"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
+            "label": "Dewy glow",
+            "hint": "Fresh skin that catches light",
             "selected": true
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "Soft satin",
+            "hint": "Smooth with a gentle sheen"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Natural matte",
+            "hint": "Calm, even and shine-free"
           }
         }
       ]

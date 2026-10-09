@@ -29,11 +29,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `map_label` | text | Map label | Abstract map placeholder |
-| `kicker` | text | Kicker | Visit |
-| `heading` | text | Heading | Studio location |
-| `text` | textarea | Text | Location details are a placeholder for your retail studio, office, or event spac |
-| `city` | text | City | City, Region |
-| `country` | text | Country | Country |
+| `kicker` | text | Kicker | Visit us |
+| `heading` | text | Heading | The studio |
+| `text` | textarea | Text | Our product studio and shade-matching room welcome visitors by appointment. |
+| `city` | text | City | Santa Monica, CA |
+| `country` | text | Country | United States |
 | `link` | url | Link |  |
 | `link_label` | text | Link label | Get directions |
 

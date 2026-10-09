@@ -29,15 +29,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Routine products (one per step) |  |
-| `pick_label` | text | Pick label | Daily pick |
-| `alternate_label` | text | Alternate label | Alternate |
-| `eyebrow` | text | Eyebrow | Build your edit |
-| `heading` | text | Heading | A routine, your way. |
-| `text` | textarea | Text | Pick one essential for each step. Your total updates as you go. |
-| `step_text` | text | Step text | A reliable daily essential. |
-| `summary_eyebrow` | text | Summary eyebrow | Your three steps |
+| `pick_label` | text | Pick label | Matched pick |
+| `alternate_label` | text | Alternate label | Deeper option |
+| `eyebrow` | text | Eyebrow | Two-step routines |
+| `heading` | text | Heading | Pair a neutralizer with a concealer. |
+| `text` | textarea | Text | Choose each step in a matching depth, and both go to your bag with one tap. |
+| `step_text` | text | Step text | Shade-matched for your depth. |
+| `summary_eyebrow` | text | Summary eyebrow | Your pair |
 | `total_label` | text | Total label | Total |
-| `add_label` | text | Add label | Add routine to bag |
+| `add_label` | text | Add label | Add both to bag |
 
 ## Blocks
 

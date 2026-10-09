@@ -1,8 +1,90 @@
 {
   "sections": {
+    "routine-header": {
+      "type": "blko-routine-header",
+      "settings": {
+        "breadcrumb": "Routine quiz",
+        "heading": "Build a routine around your skin.",
+        "text": "Ten quick questions about your skin, climate and stress, then a morning and evening plan with every step in order."
+      }
+    },
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Your plan",
+        "heading": "Choose a product for each step.",
+        "text": "Pick your cleanser, treatment and moisturizer. We will total it and add everything to your bag together.",
+        "step_text": "A balanced choice for this step.",
+        "summary_eyebrow": "Your morning routine",
+        "add_label": "Add the routine to bag",
+        "pick_label": "Best for most",
+        "alternate_label": "Richer option",
+        "total_label": "Routine total"
+      }
+    },
+    "routine-questions": {
+      "type": "blko-routine-questions",
+      "settings": {
+        "kicker": "What the quiz asks",
+        "heading": "Six things that shape your routine"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Face, body or both",
+            "text": "Start where you want help most."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Skin type and age",
+            "text": "Dry, oily, combination, normal or sensitive, across every decade."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Main concern",
+            "text": "Dryness, blemishes, redness, dullness or fine lines."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Scent and texture",
+            "text": "Scented or fragrance-free, light oils or rich butters."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Climate and sun",
+            "text": "Hot and humid, cold and dry, or city air, and how much sun you see."
+          }
+        },
+        "block-6": {
+          "type": "value",
+          "settings": {
+            "number": "06",
+            "title": "Stress level",
+            "text": "Whether a calming evening ritual belongs in your plan."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
@@ -27,11 +109,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [
+    "routine-header",
     "beauty-extras-routine-builder",
+    "routine-questions",
     "product-recommendations",
     "newsletter"
   ]

@@ -30,14 +30,14 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
-| `add_label` | text | Add label | Add 3 items to bag |
-| `eyebrow` | text | Eyebrow | Build your set |
-| `heading` | text | Heading | Make your everyday routine. |
-| `text` | text | Text | Choose any three essentials and save 15%. Your set, your pace, your skin. |
-| `summary_eyebrow` | text | Summary eyebrow | Your set |
-| `summary_empty` | text | Summary empty | Choose 3 items to unlock your set |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
-| `price_note` | text | Price note | Bundle price |
+| `add_label` | text | Add label | Add my kit to bag |
+| `eyebrow` | text | Eyebrow | Build your own kit |
+| `heading` | text | Heading | Pick three full sizes, save 15%. |
+| `text` | text | Text | Browse by category, choose your shades, and the kit price updates as you go. Min |
+| `summary_eyebrow` | text | Summary eyebrow | Your kit |
+| `summary_empty` | text | Summary empty | Pick three full sizes to unlock the kit price |
+| `saving_text` | text | Saving text | You keep 15% once three full-size items are chosen. |
+| `price_note` | text | Price note | Kit price |
 
 ## Blocks
 

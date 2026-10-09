@@ -10,11 +10,18 @@
     },
     "search-blog-related-articles": {
       "type": "blko-search-blog-related-articles",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Keep reading",
+        "heading": "More looks to try"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [

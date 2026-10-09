@@ -2,7 +2,19 @@
   "sections": {
     "search-blog-search-empty": {
       "type": "blko-search-blog-search-empty",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Search",
+        "heading": "Nothing matches that yet.",
+        "text": "Try a shorter phrase, check the spelling, or start from one of these.",
+        "search_label": "Search the shop and blog",
+        "placeholder": "Search razors, scents and guides",
+        "tip_1": "Try broader words like “razor”, “gel” or “body”.",
+        "tip_2_prefix": "Browse the",
+        "tip_2_link": "starter sets",
+        "tip_3_prefix": "Read the",
+        "tip_3_link": "shave notes",
+        "image_alt": "Man applying shave foam to his neck"
+      }
     }
   },
   "order": [

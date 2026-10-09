@@ -2,24 +2,82 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe and save",
+        "heading": "Run out of nothing.",
+        "text": "Choose subscribe at the product page for 10% off every delivery. Change the product, the gap or the date from here whenever you like.",
+        "shipment_eyebrow": "Next delivery",
+        "shipment_heading": "Arrives on the 12th",
+        "image_alt": "Gel-cream face wash bottle",
+        "variant_label": "Standard · 177 ml",
+        "shipment_note": "Goes to the address on your account.",
+        "frequency_eyebrow": "Every",
+        "frequency_copy": "Currently set to every 2 months.",
+        "skip_label": "Skip once",
+        "swap_label": "Change product"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
           "settings": {
-            "selected": true
+            "label": "1 month"
           }
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "2 months",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "3 months"
+          }
+        },
+        "block-4": {
+          "type": "frequency",
+          "settings": {
+            "label": "5 months"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "What subscribing means",
+        "heading": "A light-touch way to stay stocked"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "10% off",
+            "text": "Face wash, recovery cream, SPF gel and body wash all qualify."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "You set the pace",
+            "text": "Every month up to every five months; skip or move a delivery anytime."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Cancel in a click",
+            "text": "No minimum number of deliveries and nothing to call about."
           }
         }
       },
@@ -29,19 +87,67 @@
         "block-3"
       ]
     },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Subscription questions",
+        "heading": "Before you tick the box"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Which products can I subscribe to?",
+            "text": "Skincare and body items marked with the subscribe option, including the large refill bottles."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Do makeup shades come on subscription?",
+            "text": "No. Colour is personal, so we keep shades and scents as one-off purchases."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "When am I charged?",
+            "text": "On the day your delivery ships, a few days before it arrives."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "How do I manage it?",
+            "text": "Sign in and use the subscription portal to skip, move or end any delivery."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "subscription-picks": {
+      "type": "blko-subscription-picks",
+      "settings": {
+        "eyebrow": "Eligible for 10% off",
+        "heading": "Skincare worth subscribing to"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Skincare"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New in",
-            "key": "new"
+            "key": "new",
+            "label": "Body"
           }
         }
       },
@@ -52,12 +158,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
-    "product-recommendations",
+    "subscription-perks",
+    "subscription-faq",
+    "subscription-picks",
     "newsletter"
   ]
 }

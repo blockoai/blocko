@@ -35,11 +35,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Person wearing a bow clip |
-| `promo_eyebrow` | text | Promo eyebrow | Build your set |
-| `promo_heading` | text | Promo heading | Pretty meets practical. |
+| `promo_image_alt` | text | Promo image alt text | Warm-toned mist and mask on a shelf |
+| `promo_eyebrow` | text | Promo eyebrow | The scent drop |
+| `promo_heading` | text | Promo heading | Smell as good as your clip looks. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Explore brushes |
+| `promo_label` | text | Promo label | Shop scents |
 | `load_more_label` | text | Load more label | Load more |
 | `previous_label` | text | Previous label | Previous page |
 

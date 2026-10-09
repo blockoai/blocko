@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `breadcrumb` | text | Breadcrumb | About |
-| `heading` | text | Heading | Made for real life. |
-| `text` | textarea | Text | Gentle formulas, short ingredient lists, nothing to shout about. |
+| `breadcrumb` | text | Breadcrumb | Shade finder |
+| `heading` | text | Heading | pick your bronzer in four taps. |
+| `text` | textarea | Text | Choose your depth and how warm you want to go. We will point you to the stick th |
 
 ## Blocks
 

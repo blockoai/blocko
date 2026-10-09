@@ -29,7 +29,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
-| `eyebrow` | text | Eyebrow | fan favorites |
+| `eyebrow` | text | Eyebrow | what everyone's adding first |
 | `heading` | text | Heading | best sellers |
 
 ## Blocks

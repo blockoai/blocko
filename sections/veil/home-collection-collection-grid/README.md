@@ -35,11 +35,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Model with natural makeup |
-| `promo_eyebrow` | text | Promo eyebrow | Build your ritual |
-| `promo_heading` | text | Promo heading | Color meets care. |
+| `promo_image_alt` | text | Promo image alt text | Face with a soft, even complexion |
+| `promo_eyebrow` | text | Promo eyebrow | Not sure where to start? |
+| `promo_heading` | text | Promo heading | Find the formula and shade that fit. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Explore care |
+| `promo_label` | text | Promo label | Try the shade finder |
 | `load_more_label` | text | Load more label | Load more |
 | `previous_label` | text | Previous label | Previous page |
 

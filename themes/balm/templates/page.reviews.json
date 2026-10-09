@@ -2,38 +2,46 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Customer reviews",
+        "heading": "5,000 five-star ratings and counting.",
+        "average": "4.8",
+        "count_text": "From thousands of verified reviews",
+        "stars_label": "Four point eight out of five stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 84
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 11
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 3
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 1
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 1
           }
         },
         "block-6": {
@@ -45,15 +53,15 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "Skincare",
-            "key": "complexion"
+            "label": "Makeup",
+            "key": "makeup"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Sculpt",
-            "key": "care"
+            "label": "Skincare",
+            "key": "skincare"
           }
         },
         "block-9": {
@@ -64,41 +72,28 @@
           }
         },
         "block-10": {
-          "type": "photo",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "tags": "makeup",
+            "title": "My whole face in three sticks",
+            "meta": "Contour set · Verified buyer"
+          }
         },
         "block-11": {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
+            "tags": "skincare",
+            "title": "Cleansing cream that does not sting",
+            "meta": "Cleansing cream · Verified buyer"
           }
         },
         "block-12": {
-          "type": "photo",
-          "settings": {}
-        },
-        "block-13": {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        "block-14": {
-          "type": "review",
-          "settings": {}
-        },
-        "block-15": {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Sculpt"
-          }
-        },
-        "block-16": {
-          "type": "review",
-          "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "makeup",
+            "rating": 4,
+            "title": "Gorgeous lip oil, wish it lasted longer",
+            "meta": "Lip oil · Verified buyer"
           }
         }
       },
@@ -114,16 +109,16 @@
         "block-9",
         "block-10",
         "block-11",
-        "block-12",
-        "block-13",
-        "block-14",
-        "block-15",
-        "block-16"
+        "block-12"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [

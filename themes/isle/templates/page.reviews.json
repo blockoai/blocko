@@ -2,38 +2,46 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Reviews",
+        "heading": "What shoppers say after a few weeks.",
+        "average": "4.7",
+        "count_text": "From 21,400 verified reviews",
+        "stars_label": "Four and a half out of five stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 74
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 16
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 6
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 2
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         "block-6": {
@@ -45,14 +53,14 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "Body",
-            "key": "body"
+            "label": "Sun care",
+            "key": "complexion"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Sets",
+            "label": "Body",
             "key": "care"
           }
         },
@@ -64,41 +72,28 @@
           }
         },
         "block-10": {
-          "type": "photo",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "tags": "complexion",
+            "title": "Survived a week of snorkeling",
+            "meta": "Fine-mist body sunscreen · Gold glow · Verified buyer"
+          }
         },
         "block-11": {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
+            "tags": "care",
+            "title": "My legs finally feel soft",
+            "meta": "Whipped coconut body butter · Vanilla · Verified buyer"
           }
         },
         "block-12": {
-          "type": "photo",
-          "settings": {}
-        },
-        "block-13": {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        "block-14": {
-          "type": "review",
-          "settings": {}
-        },
-        "block-15": {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
             "tags": "care",
-            "meta": "Verified customer · Sets"
-          }
-        },
-        "block-16": {
-          "type": "review",
-          "settings": {
-            "title": "The scent range made picking a favorite easy."
+            "rating": 4,
+            "title": "Great scent, wish the jar were bigger",
+            "meta": "Hydrating gel body wash · Guava · Verified buyer"
           }
         }
       },
@@ -114,16 +109,16 @@
         "block-9",
         "block-10",
         "block-11",
-        "block-12",
-        "block-13",
-        "block-14",
-        "block-15",
-        "block-16"
+        "block-12"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [

@@ -29,7 +29,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Worn by you |
 | `heading` | text | Heading | Clipped in the wild |
-| `button_label` | text | Button label | Follow along |
+| `button_label` | text | Button label | Follow our feed |
 | `button_url` | url | Button url |  |
 
 ## Blocks

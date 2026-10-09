@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person with a fresh, bouncy hair day |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Style that keeps up. |
-| `text` | textarea | Text | Comfortable, snag-free essentials made for hair that moves through a full day. |
+| `image_alt` | text | Image alt text | Wrapped gift box with a ribbon |
+| `kicker` | text | Kicker | limited edition collab |
+| `heading` | text | Heading | The collab drop everyone is asking about. |
+| `text` | textarea | Text | Printed satin, scented mists and collector boxes made with a licensed partner. W |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | build your bundle |
+| `button_label` | text | Button label | shop the drop |
 
 ## Blocks
 

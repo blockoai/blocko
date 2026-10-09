@@ -2,7 +2,21 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ingredient library",
+        "heading": "What we won't stock, and why.",
+        "text": "A growing list of ingredients we prohibit or restrict, with plain explanations of the science and the reasoning. Jump by letter or search by name.",
+        "search_label": "Search the library",
+        "search_placeholder": "Try “formaldehyde”",
+        "note_label": "Open entry ↗",
+        "detail_eyebrow": "Entry",
+        "detail_heading": "Hydroquinone",
+        "detail_text": "A skin-lightening agent. In many regions it is prescription-only because of irritation and long-term safety concerns, so we keep it out of over-the-counter formulas entirely.",
+        "best_for_label": "Reason listed",
+        "best_for": "Human health",
+        "found_in_label": "Status",
+        "found_in": "Prohibited"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -13,71 +27,68 @@
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Prohibited",
+            "key": "prohibited"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Restricted",
+            "key": "restricted"
           }
         },
         "block-4": {
-          "type": "filter",
+          "type": "ingredient",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "name": "Aluminum powder",
+            "detail": "Metallic pigment; restricted by purity and inhalation concerns",
+            "tags": "restricted"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "letter": "F",
+            "name": "Formaldehyde",
+            "detail": "Preservative and releasers; prohibited for irritation and cancer risk",
+            "tags": "prohibited"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "H",
+            "name": "Hydroquinone",
+            "detail": "Skin-lightening agent; prescription-only in many places",
+            "tags": "prohibited"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "letter": "M",
+            "name": "Methylene chloride",
+            "detail": "Industrial solvent; prohibited for toxicity",
+            "tags": "prohibited"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "P",
+            "name": "Parabens",
+            "detail": "Preservatives; limited to short-chain types at low levels",
+            "tags": "restricted"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
-          }
-        },
-        "block-10": {
-          "type": "ingredient",
-          "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "T",
+            "name": "Talc",
+            "detail": "Mineral powder; allowed only with proof of asbestos-free testing",
+            "tags": "restricted"
           }
         }
       },
@@ -90,21 +101,134 @@
         "block-6",
         "block-7",
         "block-8",
-        "block-9",
-        "block-10"
+        "block-9"
+      ]
+    },
+    "ingredient-codes": {
+      "type": "blko-ingredient-codes",
+      "settings": {
+        "kicker": "Reason codes",
+        "heading": "Why an ingredient lands on the list"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "number": "HH",
+            "title": "Human health",
+            "text": "Evidence of harm to people at the doses found in cosmetics."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "EH",
+            "title": "Environmental health",
+            "text": "Persistence or harm to wildlife and water systems."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "S",
+            "title": "Sustainability",
+            "text": "Sourcing that strips land, water or biodiversity."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "ET",
+            "title": "Ethics",
+            "text": "Links to forced labor or other human-rights abuses in supply chains."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "EJ",
+            "title": "Expert judgment",
+            "text": "A call made by our science team when the data is mixed."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "ingredient-method": {
+      "type": "blko-ingredient-method",
+      "settings": {
+        "kicker": "Our approach",
+        "heading": "Four things we weigh before deciding"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "The research",
+            "text": "Peer-reviewed studies, weighed for quality rather than counted."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Regulators",
+            "text": "Agencies often disagree, so we read their reasoning, not just their verdicts."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Real exposure",
+            "text": "How much of it touches skin or is breathed in, and how often."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Safer swaps",
+            "text": "We check the replacement isn't worse before asking brands to switch."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
       ]
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Clear gel droplets and leaves on a peach ground",
+        "eyebrow": "For brands",
+        "heading": "Want to be on our shelves?",
+        "text": "Send a full ingredient list for every product. If it passes the written standard, we'll talk about the next steps.",
+        "button_label": "Read the standard"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
     "beauty-extras-ingredient-glossary",
+    "ingredient-codes",
+    "ingredient-method",
     "ingredients-callout",
     "newsletter"
   ]

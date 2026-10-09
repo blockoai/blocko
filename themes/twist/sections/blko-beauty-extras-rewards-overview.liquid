@@ -329,25 +329,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "twist rewards"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "More hair days, more rewards."
+      "default": "Get paid back for your hair days."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the things you love, and enjoy a little more from every order."
+      "default": "Sign up free, collect points for buying, reviewing and sharing, then turn them into discounts. Spend more in a year and you move up a level."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "join now"
     },
     {
       "type": "image_picker",
@@ -358,31 +358,31 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Hair accessories flat lay"
+      "default": "Person smiling with natural curls"
     },
     {
       "type": "text",
       "id": "earn_eyebrow",
       "label": "Earn eyebrow",
-      "default": "How it works"
+      "default": "how it works"
     },
     {
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "Sign up. Earn. Redeem."
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "four levels"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "More fun, more benefits."
+      "default": "Spend more, get more."
     }
   ],
   "blocks": [
@@ -443,42 +443,57 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Sign up",
+            "text": "Open a free account and a welcome gift is waiting."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
             "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "Points come from orders, reviews, referrals, social follows and in-store receipts."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "title": "Pearl",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Redeem",
+            "text": "Trade points for dollars off at checkout."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Free",
+            "points": "join for $0",
+            "perks": "1 point per $1 · birthday gift · welcome gift"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Level 2",
+            "points": "$100 a year",
+            "perks": "2 points per $1 · 100 bonus points · priority care"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Level 3",
+            "points": "$250 a year",
+            "perks": "3 points per $1 · 250 bonus points · try unreleased products"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Level 4",
+            "points": "$400 a year",
+            "perks": "4 points per $1 · 500 bonus points"
           }
         }
       ]

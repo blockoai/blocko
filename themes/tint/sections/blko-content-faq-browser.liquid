@@ -177,7 +177,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “shipping” or “shade”"
+      "default": "Try “refund” or “shade”"
     },
     {
       "type": "text",
@@ -255,8 +255,8 @@
         {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "shipping",
+            "label": "Shipping"
           }
         },
         {
@@ -267,46 +267,72 @@
           }
         },
         {
-          "type": "question",
-          "settings": {}
-        },
-        {
-          "type": "question",
+          "type": "tab",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "key": "products",
+            "label": "Products"
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "question": "Can I change or cancel my order?",
+            "answer": "Only during the first hour after you place it. After that the order moves to packing and cannot be edited."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "question": "How long until it leaves your warehouse?",
+            "answer": "Two to three business days for processing, then the carrier takes over."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "What does shipping cost?",
+            "answer": "US standard shipping takes about 5 to 7 days and is free from $50, otherwise $5. Expedited three-day delivery is $15."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "Do you ship abroad?",
+            "answer": "Yes. International orders are delivered with duties and taxes already paid, so there are no surprises at the door."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "How long do I have to return something?",
+            "answer": "Thirty days from delivery, and sixty during the holiday window. Samples are final sale."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "Where does my refund go?",
+            "answer": "Back to the original payment method, or as store credit that applies itself to your next bag."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "products",
+            "question": "How do I choose a shade?",
+            "answer": "Start the shade finder, or send us a bare-face selfie in daylight and we will pick for you."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "products",
+            "question": "Are your products safe for sensitive skin?",
+            "answer": "Yes. Everything is dermatologist-tested, non-comedogenic and made without fragrance or the ingredients on our banned list."
           }
         }
       ]

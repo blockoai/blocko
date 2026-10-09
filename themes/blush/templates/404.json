@@ -2,7 +2,12 @@
   "sections": {
     "cart-checkout-not-found": {
       "type": "blko-cart-checkout-not-found",
-      "settings": {},
+      "settings": {
+        "eyebrow": "404",
+        "heading": "This page went out for a walk.",
+        "text": "Search, or jump back to a shelf.",
+        "image_alt": "Smiling person holding a pink balm tube"
+      },
       "blocks": {
         "block-1": {
           "type": "link",
@@ -11,15 +16,15 @@
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Skin",
-            "url": "#complexion"
+            "label": "Skincare",
+            "url": "#skincare"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Balm",
-            "url": "#care"
+            "label": "Fragrance",
+            "url": "#fragrance"
           }
         }
       },

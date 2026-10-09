@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Skincare ritual |
-| `eyebrow` | text | Eyebrow | Our promise |
-| `heading` | text | Heading | Pure ingredients. Visible radiance. |
-| `text` | textarea | Text | Every formula is made with organic botanicals and nothing you cannot pronounce. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Cream smeared across a ceramic dish |
+| `eyebrow` | text | Eyebrow | Organic, in numbers |
+| `heading` | text | Heading | Every claim comes with a footnote. |
+| `text` | textarea | Text | We state organic content as a percentage, name each plant active and say which t |
+| `button_label` | text | Button label | See how we test |
 | `button_url` | url | Button url |  |
 
 ## Blocks

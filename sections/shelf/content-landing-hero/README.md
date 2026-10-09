@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with a fresh natural makeup finish |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Color that keeps up. |
-| `text` | textarea | Text | Comfortable, buildable essentials made for a face that moves through a full day. |
+| `image_alt` | text | Image alt text | Wrapped soap bar with scattered petals |
+| `kicker` | text | Kicker | Current offers |
+| `heading` | text | Heading | Every promotion running right now. |
+| `text` | textarea | Text | Double points, gifts with purchase, refill savings and service credits, all in o |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your routine |
+| `button_label` | text | Button label | Shop the offers |
 
 ## Blocks
 

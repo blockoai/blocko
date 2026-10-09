@@ -2,26 +2,33 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Claw clips",
+        "price_note": "Strong-grip acetate · 4 in",
+        "shade_help_label": "Sold out in your colour? Join the waitlist.",
+        "ship_note": "Free shipping over $75 · Slight swirl variation is part of the charm",
+        "one_time_label": "Add to bag"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Twist, clip and go. Wear it high, low or half-up, and stack it with scrunchies and pins."
+            "label": "About this clip",
+            "text": "Our biggest clip, built for thick, long or curly hair. It twists into a quick updo, holds wet or dry and fits in a tote without snapping. Awarded best of the year by a beauty editors' panel."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Materials",
-            "text": "Smooth cellulose acetate body, rust-resistant steel spring, and a soft matte finish that will not snag hair."
+            "label": "Material + size",
+            "text": "Cut from plant-based cellulose acetate. About four inches long and one and a half inches deep. Each swirl is poured by hand, so patterns differ slightly from the photo."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
-            "label": "How to wear it",
-            "text": "Gather your hair, twist once, and slide the clip in at an angle. Squeeze to open, release to lock. Wear it vertical for a twist or horizontal for a half-up."
+            "label": "Care + sold-out colours",
+            "text": "Wipe with a damp cloth and keep away from heat. If your colour is gone, join the waitlist and we will email you the moment it is back."
           }
         }
       },
@@ -31,112 +38,42 @@
         "block-3"
       ]
     },
-    "pdp-before-after": {
-      "type": "blko-pdp-before-after",
-      "settings": {}
-    },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
+    "pdp-materials": {
+      "type": "blko-pdp-materials",
+      "settings": {
+        "kicker": "What it is made of",
+        "heading": "Details that make it hold"
       },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "pdp-reviews": {
-      "type": "blko-pdp-reviews",
-      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "bar",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Plant-based acetate",
+            "text": "A renewable, polished material that feels smooth in the hand and breaks down more kindly than plastic."
+          }
         },
         "block-2": {
-          "type": "bar",
+          "type": "value",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
+            "number": "02",
+            "title": "Spring that stays tight",
+            "text": "Wide teeth and a firm steel spring keep thick hair in place through a full day."
           }
         },
         "block-3": {
-          "type": "bar",
+          "type": "value",
           "settings": {
-            "label": "3 stars",
-            "percent": 4
+            "number": "03",
+            "title": "One-of-a-kind swirls",
+            "text": "Colours are mixed by hand, so each clip carries its own marbling."
           }
         },
         "block-4": {
-          "type": "bar",
+          "type": "value",
           "settings": {
-            "label": "2 stars",
-            "percent": 1
-          }
-        },
-        "block-5": {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {}
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Hold",
-            "key": "coverage"
-          }
-        },
-        "block-9": {
-          "type": "review",
-          "settings": {
-            "text": "It holds my thick hair up without a single slip, and the matte finish looks so soft."
-          }
-        },
-        "block-10": {
-          "type": "review",
-          "settings": {
-            "title": "My daily go-to",
-            "text": "Easy to put in and it stays comfortable through a long day. The color range made picking simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Cute, not bulky",
-            "text": "This gives me the look I want without pulling or feeling heavy.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Cocoa · photo review"
+            "number": "04",
+            "title": "Wet or dry",
+            "text": "Clip up damp hair after a shower or wear it straight out of bed."
           }
         }
       },
@@ -144,32 +81,111 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-4"
+      ]
+    },
+    "pdp-works-with": {
+      "type": "blko-pdp-works-with",
+      "settings": {
+        "eyebrow": "Works well with",
+        "heading": "Finish the style",
+        "text": "A brush, a scrunchie and a spritz of scent round out the look."
+      }
+    },
+    "pdp-press": {
+      "type": "blko-pdp-press",
+      "settings": {
+        "kicker": "What editors say"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "quote",
+          "settings": {
+            "quote": "“The only clip that survives my commute and my curls.”",
+            "source": "— Style Weekly"
+          }
+        },
+        "block-2": {
+          "type": "quote",
+          "settings": {
+            "quote": "“A collectible you actually use every single day.”",
+            "source": "— The Daily Edit"
+          }
+        },
+        "block-3": {
+          "type": "quote",
+          "settings": {
+            "quote": "“Colours that look edible and hold like a vice.”",
+            "source": "— Studio Notes"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-departments": {
+      "type": "blko-pdp-departments",
+      "settings": {
+        "heading": "Keep browsing"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tile",
+          "settings": {
+            "image_alt": "Scented hair mist beside a mask tub",
+            "label": "Hair care",
+            "url": "#care"
+          }
+        },
+        "block-2": {
+          "type": "tile",
+          "settings": {
+            "image_alt": "Stacked silk scrunchies",
+            "label": "Scrunchies + bands",
+            "url": "#ties"
+          }
+        },
+        "block-3": {
+          "type": "tile",
+          "settings": {
+            "image_alt": "Mini brush and wide-tooth comb",
+            "label": "Brushes + tools",
+            "url": "#tools"
+          }
+        },
+        "block-4": {
+          "type": "tile",
+          "settings": {
+            "image_alt": "Gift box with a bow",
+            "label": "Sets + gifts",
+            "url": "#sets"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
       ]
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Still looking?",
+        "heading": "Recently viewed"
+      }
     }
   },
   "order": [
     "pdp-product-main",
-    "pdp-before-after",
-    "pdp-complete-routine",
-    "product-recommendations",
-    "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-materials",
+    "pdp-works-with",
+    "pdp-press",
+    "pdp-departments",
+    "pdp-recently-viewed"
   ]
 }

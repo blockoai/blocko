@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Beauty routine |
-| `eyebrow` | text | Eyebrow | How we make it |
-| `heading` | text | Heading | Nothing to master. |
-| `text` | textarea | Text | Five lightweight products that blend with your fingers and look like skin, only  |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Our founder with a client in the studio |
+| `eyebrow` | text | Eyebrow | Founder's note |
+| `heading` | text | Heading | “I have spent decades matching faces. This pair finally does the work in two tap |
+| `text` | textarea | Text | Why a corrector plus concealer beats a single heavy layer, from the artist who d |
+| `button_label` | text | Button label | Read the founder's letter |
 | `button_url` | url | Button url |  |
 
 ## Blocks

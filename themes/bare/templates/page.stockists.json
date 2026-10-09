@@ -2,11 +2,18 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Our stores",
+        "heading": "Try the shades with an artist.",
+        "text": "Visit a store to test formulas, meet a makeup artist and book a look. Most locations host private events.",
+        "directions_label": "Book an appointment"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
-          "settings": {}
+          "settings": {
+            "label": "All locations"
+          }
         },
         "block-2": {
           "type": "country",
@@ -16,44 +23,38 @@
           }
         },
         "block-3": {
-          "type": "country",
+          "type": "store",
           "settings": {
-            "value": "ca",
-            "label": "Canada"
+            "name": "Flagship Studio",
+            "place": "Short Hills, NJ"
           }
         },
         "block-4": {
-          "type": "country",
+          "type": "store",
           "settings": {
-            "value": "uk",
-            "label": "United Kingdom"
+            "name": "Downtown Studio",
+            "place": "Manhattan, NY"
           }
         },
         "block-5": {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Uptown Studio",
+            "place": "Upper East Side, NY"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Seaside Studio",
+            "place": "Sag Harbor, NY"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
-          }
-        },
-        "block-8": {
-          "type": "store",
-          "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "name": "Palm Studio",
+            "place": "Palm Beach, FL"
           }
         }
       },
@@ -64,13 +65,16 @@
         "block-4",
         "block-5",
         "block-6",
-        "block-7",
-        "block-8"
+        "block-7"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [

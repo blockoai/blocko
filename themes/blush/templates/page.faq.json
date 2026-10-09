@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help",
+        "heading": "Shipping, returns and everything between.",
+        "text": "Search a topic, or pick shipping, products, subscriptions or membership."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “duties” or “track”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,8 +21,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "shipping",
+            "label": "Shipping"
           }
         },
         "block-3": {
@@ -29,51 +35,64 @@
         "block-4": {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "account",
+            "label": "Subscriptions + club"
           }
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "category": "shipping",
+            "question": "How fast do orders leave?",
+            "answer": "Orders are packed within one to three business days. A tracking email follows, though it can take up to 48 hours to show movement."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "shipping",
+            "question": "What does standard shipping cost?",
+            "answer": "$5.95, and free once your basket reaches $40. We ship to all fifty states and to 180 countries."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "category": "shipping",
+            "question": "Who pays duties and taxes abroad?",
+            "answer": "Some destinations collect them at checkout; in others the carrier bills you on delivery. The checkout page tells you which applies."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "category": "shipping",
+            "question": "Can you send to a PO box?",
+            "answer": "Yes, with standard shipping. Express options need a street address."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "products",
+            "question": "Which skin types are your products for?",
+            "answer": "Filter the shop by skin type or concern to see what suits dry, oily, combination, sensitive or blemish-prone skin."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "products",
+            "question": "Can I engrave a scent bottle?",
+            "answer": "Yes. Use the engrave link on the fragrance page to add up to a few letters before you check out."
+          }
+        },
+        "block-11": {
+          "type": "question",
+          "settings": {
+            "category": "account",
+            "question": "How do I change a subscription?",
+            "answer": "Sign in and open manage subscriptions to skip, move or end a delivery."
           }
         }
       },
@@ -87,12 +106,17 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [

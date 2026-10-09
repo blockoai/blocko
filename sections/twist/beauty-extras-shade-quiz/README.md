@@ -30,14 +30,14 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `back_label` | text | Back label | Back |
 | `continue_label` | text | Continue label | Continue |
-| `eyebrow_1` | text | Eyebrow 1 | Match in minutes |
-| `heading_1` | text | Heading 1 | Let’s find your hair type. |
-| `text_1` | textarea | Text 1 | Start with the hair texture that feels most like you on a normal day. |
-| `eyebrow_2` | text | Eyebrow 2 | Your undertone |
-| `heading_2` | text | Heading 2 | Which description is closest? |
-| `eyebrow_3` | text | Eyebrow 3 | Your hair goal |
-| `heading_3` | text | Heading 3 | How much coverage feels right? |
-| `finish_label` | text | Finish label | See my matches |
+| `eyebrow_1` | text | Eyebrow 1 | question 1 of 3 |
+| `heading_1` | text | Heading 1 | What is your natural hair type? |
+| `text_1` | textarea | Text 1 | Think about how your hair dries when you leave it alone. |
+| `eyebrow_2` | text | Eyebrow 2 | question 2 of 3 |
+| `heading_2` | text | Heading 2 | What bothers you most? |
+| `eyebrow_3` | text | Eyebrow 3 | question 3 of 3 |
+| `heading_3` | text | Heading 3 | What would you like hair to do? |
+| `finish_label` | text | Finish label | show my routine |
 
 ## Blocks
 

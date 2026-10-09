@@ -2,46 +2,61 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "The rewards circle",
+        "heading": "Join free and start with 500 points.",
+        "text": "Members collect points on every order, get first look at new shades and unlock gifts as their balance grows.",
+        "button_label": "Join the circle",
+        "image_alt": "Stick set with a rewards card",
+        "earn_eyebrow": "Earning points",
+        "earn_heading": "Join, shop, spend.",
+        "tiers_eyebrow": "Member levels",
+        "tiers_heading": "Each level brings more."
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Open a free account and 500 welcome points land immediately."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Shop",
+            "text": "Earn points on every dollar and extra points for reviews and referrals."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Spend",
+            "text": "Swap points for a discount at checkout or a mini of a new shade."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "Petal",
+            "perks": "Welcome points · birthday gift"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Bloom",
+            "points": "1,000 points",
+            "perks": "Early access to launches · free shipping on every order"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Grove",
+            "points": "2,500 points",
+            "perks": "Double-point weekends · a yearly full-size gift"
           }
         }
       },
@@ -54,24 +69,32 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Rewards questions",
+        "heading": "Points, explained"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "When do my welcome points arrive?",
+            "text": "Right after you confirm your email, so you can use them on your first order."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Can I use points on sale items?",
+            "text": "Yes, points apply to any item that is not a free gift."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "How do early-access launches work?",
+            "text": "Members get an email and a shop link a day before the public drop."
           }
         }
       },
@@ -83,12 +106,16 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-faq",
     "newsletter"
   ]
 }

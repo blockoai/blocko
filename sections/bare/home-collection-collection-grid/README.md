@@ -35,11 +35,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Person with fresh, natural skin |
-| `promo_eyebrow` | text | Promo eyebrow | Get the look |
-| `promo_heading` | text | Promo heading | Five minutes. Five products. |
+| `promo_image_alt` | text | Promo image alt text | Face with an even, natural complexion |
+| `promo_eyebrow` | text | Promo eyebrow | Shade help is free |
+| `promo_heading` | text | Promo heading | Not sure which tone is yours? |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Shop kits |
+| `promo_label` | text | Promo label | Find your shade |
 | `load_more_label` | text | Load more label | Load more |
 | `previous_label` | text | Previous label | Previous page |
 

@@ -31,12 +31,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
 | `add_label` | text | Add label | Add 3 items to bag |
-| `eyebrow` | text | Eyebrow | Build your kit |
-| `heading` | text | Heading | Make your starter kit. |
-| `text` | text | Text | Choose any three essentials and save 15%. Your kit, your pace, your skin. |
+| `eyebrow` | text | Eyebrow | Build a shave set |
+| `heading` | text | Heading | Pair a razor, gel and balm. |
+| `text` | text | Text | Pick up to three items. Each one you add lowers the set price a little. |
 | `summary_eyebrow` | text | Summary eyebrow | Your kit |
 | `summary_empty` | text | Summary empty | Choose 3 items to unlock your kit |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
+| `saving_text` | text | Saving text | Three items together save about 12%. |
 | `price_note` | text | Price note | Bundle price |
 
 ## Blocks

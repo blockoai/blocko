@@ -2,24 +2,38 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Quarterly box",
+        "heading": "Soap on autopilot.",
+        "text": "Choose your bars, deodorants and extras once. A fresh box lands every three months with a discount on everything inside, and you can edit it whenever you feel like it.",
+        "shipment_eyebrow": "Next box",
+        "shipment_heading": "Leaves the warehouse on the 18th",
+        "image_alt": "Six bars in a shipping box",
+        "variant_label": "6 bars · mixed scents",
+        "shipment_note": "Delivered free to your saved address.",
+        "frequency_eyebrow": "Ship every",
+        "frequency_copy": "Right now you receive a box every 3 months.",
+        "skip_label": "Skip this box",
+        "swap_label": "Swap scents"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
           "settings": {
-            "selected": true
+            "label": "2 months"
           }
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "3 months",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "4 months"
           }
         }
       },
@@ -29,9 +43,140 @@
         "block-3"
       ]
     },
+    "subscription-sizes": {
+      "type": "blko-subscription-sizes",
+      "settings": {
+        "kicker": "Pick a box size",
+        "heading": "More bars, bigger savings"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "number": "4",
+            "title": "Four bars · $24",
+            "text": "A starter box for one shower and a bit of backup."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "6",
+            "title": "Six bars · $36",
+            "text": "The favorite. Saves about $6 on every box."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "8",
+            "title": "Eight bars · $48",
+            "text": "Plenty for two people or a heavy gym habit."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "10",
+            "title": "Ten bars · $60",
+            "text": "The biggest saving, and free gifts on your first order."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "subscription-how": {
+      "type": "blko-subscription-how",
+      "settings": {
+        "eyebrow": "How the box works",
+        "heading": "Set it. Forget it. Change it.",
+        "button_label": "Start my box"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "title": "Choose",
+            "text": "Pick a bar count, then fill it with scents and add deodorant or other items."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "title": "Save",
+            "text": "Save up to 15% on regular items and as much as 27% on hair kits."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "title": "Relax",
+            "text": "Skip, pause or cancel in your account with a couple of clicks."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Subscription questions",
+        "heading": "Before you sign up"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Can I change what is in my box?",
+            "text": "Yes. Swap scents, add products or remove them until the day before your box ships."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "What if I have too much soap?",
+            "text": "Skip a delivery or snooze for up to six months. No fees and no guilt."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Do I get anything for subscribing?",
+            "text": "Free shipping, a discount on every order and early access to limited bars."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "How do I cancel?",
+            "text": "Open your account, select your subscription and cancel. It takes less time than lathering up."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Add to your box",
+        "heading": "Guys also grab these"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -52,11 +197,19 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
+    "subscription-sizes",
+    "subscription-how",
+    "subscription-faq",
     "product-recommendations",
     "newsletter"
   ]

@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by",
+        "heading": "Start with your hair."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Hair type",
+            "url": "#hair-type"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Treatments",
-            "url": "#eyes"
+            "label": "Concern",
+            "url": "#concern"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Styling",
-            "url": "#lips"
+            "label": "Product type",
+            "url": "#product-type"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Repair",
-            "url": "#care"
+            "label": "Collections",
+            "url": "#collections"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Tools",
+            "url": "#tools"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Value sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Repair system",
-            "label": "Repair"
+            "url": "#hair-quiz",
+            "image_alt": "Person with wavy hair smiling",
+            "label": "Find my hair type"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#sets",
+            "image_alt": "Travel bottles lined up on a counter",
+            "label": "Trial sets"
           }
         }
       },
@@ -48,36 +72,51 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
+      "settings": {
+        "image_alt": "Close-up of vivid copper hair with a glossy finish",
+        "eyebrow": "New colour-care launch",
+        "heading": "3 steps to keep your shade.",
+        "text": "A wash, a treatment and a seal built to hold pigment in, so a fresh colour job stays bright and feels stronger between appointments.",
+        "button_label": "Shop the system"
+      }
     },
     "prism-system": {
       "type": "blko-prism-system",
-      "settings": {},
+      "settings": {
+        "eyebrow": "The colour-care system",
+        "heading": "Cleanse, treat, seal.",
+        "text": "Three formulas that work in sequence. Lab testing on dyed hair showed less fade and fewer broken strands after six weeks.*"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "title": "wash gently",
+            "text": "A sulfate-free cleanse that lifts buildup without dragging colour down the drain."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "2",
-            "title": "rebuild it",
-            "text": "Bond-building mask that repairs the damage color leaves behind.",
-            "link_label": "Shop masks"
+            "title": "treat weekly",
+            "text": "A pigment-friendly treatment that patches weak spots and revives dull, tired ends.",
+            "link_label": "Shop treatments"
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "3",
-            "title": "seal the shine",
-            "text": "A weightless serum for glass-like gloss and heat protection.",
+            "title": "seal and shine",
+            "text": "A light serum that closes the cuticle, calms frizz and shields strands from the dryer.",
             "link_label": "Shop serums"
           }
         }
@@ -88,24 +127,36 @@
         "block-3"
       ]
     },
+    "home-heat-launch": {
+      "type": "blko-home-heat-launch",
+      "settings": {
+        "image_alt": "Serum bottle beside a flat iron",
+        "eyebrow": "Back in stock",
+        "heading": "Heat protection, now with extra shine.",
+        "text": "Our best-selling heat serum returns with a lighter feel. It guards hair up to 450°F, smooths flyaways and gives a glassy finish that survives a humid commute.",
+        "button_label": "Shop the serum"
+      }
+    },
     "message-band": {
       "type": "blko-message-band",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "FREE GIFT OVER $100"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SULFATE-FREE"
+            "text": "FREE SAMPLE WITH EVERY ORDER"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "SALON-TESTED"
+            "text": "15% OFF YOUR FIRST ORDER"
           }
         }
       },
@@ -115,54 +166,51 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New drops",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
+    "home-holiday": {
+      "type": "blko-home-holiday",
+      "settings": {
+        "image_alt": "Gift sets wrapped in illustrated paper",
+        "eyebrow": "Holiday gifting",
+        "heading": "Wrapped, boxed and ready to hand over.",
+        "text": "Limited sets in artist-drawn sleeves pair a hero shampoo with a mask and a mini. Sign up now to shop them before they go public.",
+        "button_label": "Get early access"
+      }
     },
     "prism-finder": {
       "type": "blko-prism-finder",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Hair-type finder",
+        "heading": "start with your strand",
+        "text": "Straight to coily, fine to thick: pick the closest match and see formulas picked for it, or take the five-minute quiz.",
+        "button_label": "Take the quiz"
+      },
       "blocks": {
         "block-1": {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "title": "straight · 1a-1c",
+            "text": "Lift without the weigh-down"
+          }
         },
         "block-2": {
           "type": "tile",
           "settings": {
-            "title": "medium + wavy",
-            "text": "Frizz-free definition"
+            "title": "wavy · 2a-2c",
+            "text": "Defined, frizz-free bends"
           }
         },
         "block-3": {
           "type": "tile",
           "settings": {
-            "title": "thick + curly",
-            "text": "Bounce and moisture"
+            "title": "curly · 3a-3b",
+            "text": "Springy, moisturised coils"
           }
         },
         "block-4": {
           "type": "tile",
           "settings": {
-            "title": "coily + coarse",
-            "text": "Deep repair and shine"
+            "title": "coily · 3c-4c",
+            "text": "Deep slip and shrinkage control"
           }
         }
       },
@@ -173,67 +221,76 @@
         "block-4"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "home-bundle-promo": {
+      "type": "blko-home-bundle-promo",
+      "settings": {
+        "image_alt": "Three travel bottles in a bathroom caddy",
+        "eyebrow": "Custom bundles",
+        "heading": "Build a set, unlock the savings.",
+        "text": "Pick from wash, styling or travel sizes and watch the price drop as you add more. Ideal for stocking a gym bag or a guest bathroom.",
+        "button_label": "Customize yours"
+      }
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {
+        "eyebrow": "Shop favourites",
+        "heading": "What people reach for first"
+      },
       "blocks": {
         "block-1": {
-          "type": "category",
-          "settings": {}
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "New in"
+          }
         },
         "block-2": {
-          "type": "category",
-          "settings": {
-            "title": "Treatments",
-            "url": "#eyes"
-          }
+          "type": "tab",
+          "settings": {}
         },
         "block-3": {
-          "type": "category",
+          "type": "tab",
           "settings": {
-            "title": "Styling",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Repair",
-            "url": "#care"
+            "key": "sets",
+            "label": "Value sets"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "block-4"
+        "block-3"
       ]
-    },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {}
     },
     "prism-effect": {
       "type": "blko-prism-effect",
-      "settings": {},
+      "settings": {
+        "eyebrow": "The proof",
+        "heading": "colour that stays put",
+        "before_label": "Week 0",
+        "after_label": "Week 6"
+      },
       "blocks": {
         "block-1": {
           "type": "stat",
-          "settings": {}
+          "settings": {
+            "value": "40",
+            "label": "washes before visible fade in a lab test on dyed hair*"
+          }
         },
         "block-2": {
           "type": "stat",
           "settings": {
             "value": "3x",
-            "label": "less fade after six washes"
+            "label": "fewer broken strands after a month of weekly use*"
           }
         },
         "block-3": {
           "type": "stat",
           "settings": {
             "value": "88%",
-            "label": "said hair felt softer and shinier"
+            "label": "of testers said their hair looked shinier*"
           }
         }
       },
@@ -243,32 +300,104 @@
         "block-3"
       ]
     },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
-    },
-    "testimonial-slider": {
-      "type": "blko-testimonial-slider",
-      "settings": {}
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {
+        "heading": "Shop by category"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {
+            "title": "Dry shampoo",
+            "url": "#dry"
+          }
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Shampoo + conditioner",
+            "url": "#wash"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Prime + protect",
+            "url": "#style"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Masks + treatments",
+            "url": "#treat"
+          }
+        },
+        "block-5": {
+          "type": "category",
+          "settings": {
+            "title": "Styling",
+            "url": "#style"
+          }
+        },
+        "block-6": {
+          "type": "category",
+          "settings": {
+            "title": "Value sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
+          "type": "category",
+          "settings": {
+            "title": "Scalp care",
+            "url": "#scalp"
+          }
+        },
+        "block-8": {
+          "type": "category",
+          "settings": {
+            "title": "Anti-frizz",
+            "url": "#frizz"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8"
+      ]
     },
     "prism-subscribe": {
       "type": "blko-prism-subscribe",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe + save",
+        "heading": "10% off, every refill",
+        "button_label": "See how it works"
+      },
       "blocks": {
         "block-1": {
           "type": "perk",
-          "settings": {}
+          "settings": {
+            "label": "Choose your cadence"
+          }
         },
         "block-2": {
           "type": "perk",
           "settings": {
-            "label": "Free shipping"
+            "label": "Free shipping from $30"
           }
         },
         "block-3": {
           "type": "perk",
           "settings": {
-            "label": "Skip or cancel anytime"
+            "label": "Pause, skip or cancel"
           }
         }
       },
@@ -278,36 +407,31 @@
         "block-3"
       ]
     },
-    "press-slider": {
-      "type": "blko-press-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "publication",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "publication",
-          "settings": {
-            "name": "SALON WEEKLY"
-          }
-        },
-        "block-3": {
-          "type": "publication",
-          "settings": {
-            "name": "BRIGHT MAG"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
+    "testimonial-slider": {
+      "type": "blko-testimonial-slider",
+      "settings": {
+        "image_alt": "Stylist smiling in a bright salon",
+        "eyebrow": "Stylist-approved",
+        "heading": "“My clients ask what I used before they ask about the colour.”",
+        "text": "Working colourists and cutters tell us why they put these formulas in their kits, and what they recommend to clients at the chair.",
+        "button_label": "Meet the stylists"
+      }
+    },
+    "home-journal-strip": {
+      "type": "blko-home-journal-strip",
+      "settings": {
+        "eyebrow": "The Hair Log",
+        "heading": "Guides, launches and wash-day tips"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -318,16 +442,17 @@
     "home-collection-mega-menu",
     "hero-campaign",
     "prism-system",
+    "home-heat-launch",
     "message-band",
-    "tabbed-product-grid",
+    "home-holiday",
     "prism-finder",
-    "category-slider",
-    "feature-driver",
+    "home-bundle-promo",
+    "tabbed-product-grid",
     "prism-effect",
-    "commitments",
-    "testimonial-slider",
+    "category-slider",
     "prism-subscribe",
-    "press-slider",
+    "testimonial-slider",
+    "home-journal-strip",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

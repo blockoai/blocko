@@ -2,11 +2,23 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build your system",
+        "heading": "Pick a product for each step.",
+        "text": "Choose a wash, a treatment and a styler, and see your set price update.",
+        "step_text": "A dependable pick for this step.",
+        "summary_eyebrow": "Your system",
+        "add_label": "Add system to cart",
+        "pick_label": "Go-to pick",
+        "alternate_label": "Bigger size"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Pairs well",
+        "heading": "Round out your shelf"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -27,7 +39,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [

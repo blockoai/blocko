@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Our story |
-| `heading` | text | Heading | Hair accessories belong in real life. |
-| `lede` | textarea | Lede | We make playful hair accessories that help you feel like yourself, one tiny deta |
+| `heading` | text | Heading | Two relatives, one drawer of clips. |
+| `lede` | textarea | Lede | We began by hand-finishing a few accessories for friends. Today the drawer holds |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet the team |
+| `button_label` | text | Button label | Read the founder note |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with a clip in their hair |
+| `image_alt` | text | Image alt text | Two relatives sorting claw clips on a table |
 
 ## Blocks
 

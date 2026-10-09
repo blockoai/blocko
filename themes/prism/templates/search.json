@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search products and guides.",
+        "text": "Look up a product, a hair type or a how-to.",
+        "placeholder": "Try “dry shampoo” or “porosity”",
+        "search_label": "Search the shop and the Hair Log",
+        "view_all_label": "See all results"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

@@ -69,7 +69,7 @@
 .blko-theme .blko-isle-actives h2{margin:0 0 1rem;text-align:left}
 .blko-theme .blko-isle-actives p{max-width:34rem;margin:0 0 1.75rem}
 .blko-theme .blko-isle-results h2{margin:0 0 2rem}
-.blko-theme .blko-isle-results>div{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.blko-theme .blko-isle-results>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:2rem}
 .blko-theme .blko-isle-results>p{margin:2.5rem 0 0;font-size:var(--text-small)}
 @media (max-width:760px){.blko-theme .blko-isle-results>div{grid-template-columns:1fr}}
 .blko-theme .blko-brand-head h2{margin:0;font:var(--kit-heading-weight,var(--weight-light)) var(--text-h2)/var(--leading-display) var(--font-heading)}
@@ -112,13 +112,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Community reviews"
+      "default": "Reviews"
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.7"
     },
     {
       "type": "text",
@@ -130,13 +130,13 @@
       "type": "text",
       "id": "summary",
       "label": "Summary",
-      "default": "Based on 2,483 verified reviews"
+      "default": "Based on 5,806 reviews. Shoppers most often mention scent, texture and glow."
     },
     {
       "type": "text",
       "id": "list_heading",
       "label": "List heading",
-      "default": "Featured reviews"
+      "default": "Customers talked about"
     },
     {
       "type": "text",
@@ -251,34 +251,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 76
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 15
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 5
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 2
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "1 star",
-            "percent": 1
+            "percent": 2
           }
         },
         {
@@ -288,40 +290,59 @@
         {
           "type": "filter",
           "settings": {
-            "label": "With photos",
+            "label": "Fragrance",
+            "key": "fragrance"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Texture",
+            "key": "texture"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Glow",
             "key": "photos"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Scent",
-            "key": "coverage"
+            "label": "Protection",
+            "key": "protection"
           }
         },
         {
           "type": "review",
           "settings": {
-            "text": "Smells like a beach trip and leaves my skin so soft. I love the light, hydrated finish."
+            "text": "I spray this on and the whole patio asks what I am wearing. No stickiness either.",
+            "footer": "Jess R. · 2 weeks ago · Ages 25-34",
+            "tags": "fragrance",
+            "caption": ""
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "My shower staple",
-            "text": "Easy to massage in and it rinses clean. The scent range made picking a favorite simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "title": "Easy for the kids too",
+            "text": "Four of us got covered in a minute at the lake. I rub it in on the little ones.",
+            "footer": "Marco T. · 1 month ago · Ages 35-44",
+            "tags": "texture protection",
+            "caption": ""
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "Glowy, not greasy",
-            "text": "This gives me the glow I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Vanilla · photo review"
+            "title": "Gold glow is gorgeous",
+            "text": "A subtle gold sheen that photographs beautifully. I did not burn all weekend.",
+            "footer": "Amira K. · 3 weeks ago · Ages 18-24",
+            "tags": "photos protection",
+            "caption": "Gold glow · photo review",
+            "rating": 4
           }
         }
       ]

@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person with a natural glow |
-| `eyebrow` | text | Eyebrow | everyday glow |
-| `heading` | text | Heading | quiet glow, here to stay. |
-| `text` | textarea | Text | A short list of soft essentials for lips, cheeks and skin. |
-| `button_label` | text | Button label | Shop the glow |
+| `image_alt` | text | Image alt text | Close-up of cheeks with a soft, rosy flush |
+| `eyebrow` | text | Eyebrow | Limited shade, back again |
+| `heading` | text | Heading | warm, glossy and back for the season. |
+| `text` | textarea | Text | The fan-favorite lip tint returns in its seasonal shade, along with the matching |
+| `button_label` | text | Button label | Shop the shade |
 | `button_url` | url | Button url |  |
 
 ## Blocks

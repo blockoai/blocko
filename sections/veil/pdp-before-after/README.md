@@ -29,13 +29,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Real results |
-| `heading` | text | Heading | Your skin, softly enhanced. |
-| `text` | textarea | Text | A natural-looking wash of coverage that lets your skin show through. |
-| `stat_1_value` | text | Stat 1 value | 94% |
-| `stat_1_label` | text | Stat 1 label | said it felt weightless |
-| `stat_2_value` | text | Stat 2 value | 91% |
-| `stat_2_label` | text | Stat 2 label | said it blended easily |
+| `eyebrow` | text | Eyebrow | Clinical results |
+| `heading` | text | Heading | Visible in a single use. |
+| `text` | textarea | Text | In a perception study of 50 wearers, skin looked more comfortable and more even  |
+| `stat_1_value` | text | Stat 1 value | 100% |
+| `stat_1_label` | text | Stat 1 label | said skin felt more moisturized |
+| `stat_2_value` | text | Stat 2 value | 92% |
+| `stat_2_label` | text | Stat 2 label | of sensitive-skin wearers saw no reaction |
 | `after_image` | image_picker | After image |  |
 | `after_image_alt` | text | After image alt text | Natural complexion after tint |
 | `before_image` | image_picker | Before image |  |

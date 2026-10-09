@@ -1,6 +1,6 @@
 # Subscription manager
 
-Subscribe-and-save benefits and editable upcoming delivery.
+Subscribe-and-save benefits, steps, editable upcoming delivery, and FAQ.
 
 - Category: subscription
 - Kind: section

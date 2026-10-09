@@ -29,7 +29,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `toc_label` | text | Toc label | Table of contents |
-| `toc_heading` | text | Toc heading | On this page |
+| `toc_heading` | text | Toc heading | In this policy |
 
 ## Blocks
 

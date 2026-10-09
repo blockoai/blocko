@@ -2,26 +2,31 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Lip + cheek",
+        "price_note": "0.2 oz / 6 g stick",
+        "shade_help_label": "Which shade suits my skin?",
+        "ship_note": "Free standard shipping over $45 · Return within 30 days"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Light, dewy hydration with a natural glow. Wear alone or layer under your usual care."
+            "text": "A creamy stick that melts into a sheer flush and builds to a deep stain. Satin finish, fragrance-free, and soft enough to use on cheeks and lips alike. Vegan and cruelty-free."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
             "label": "Ingredients",
-            "text": "Squalane, glycerin and peptides in a lightweight daily formula. Fragrance-free."
+            "text": "A peptide complex, plant squalane, vitamin E and shea butter in a cushiony base, with mineral pigments for color. No fragrance, no gluten."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
             "label": "How to use",
-            "text": "Press two or three drops into clean skin, then follow with moisturizer. Use morning and night."
+            "text": "Swipe a dot on the apple of each cheek, then tap outward with fingertips. For lips, press on with a fingertip and blot. Layer for more intensity."
           }
         }
       },
@@ -33,31 +38,82 @@
     },
     "dew-facts": {
       "type": "blko-dew-facts",
-      "settings": {},
+      "settings": {
+        "eyebrow": "At a glance",
+        "heading": "the facts."
+      },
       "blocks": {
         "block-1": {
           "type": "fact",
-          "settings": {}
+          "settings": {
+            "detail": "A cool, smooth balm that glides and then sets down."
+          }
         },
         "block-2": {
           "type": "fact",
           "settings": {
             "term": "looks like",
-            "detail": "a quiet, lit-from-within glow with no visible shine."
+            "detail": "Your own natural flush, from sheer to saturated."
           }
         },
         "block-3": {
           "type": "fact",
           "settings": {
             "term": "smells like",
-            "detail": "nothing at all. Fragrance-free, always."
+            "detail": "Nothing. It is fragrance-free."
           }
         },
         "block-4": {
           "type": "fact",
           "settings": {
-            "term": "wears like",
-            "detail": "all day under sunscreen, makeup or just on its own."
+            "term": "good to know",
+            "detail": "Vegan, cruelty-free, gluten-free and made for all skin types."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-ingredients": {
+      "type": "blko-pdp-ingredients",
+      "settings": {
+        "kicker": "Inside the stick",
+        "heading": "skincare ingredients, in a blush"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Peptide complex",
+            "text": "Keeps cheeks and lips looking bouncy while the color wears."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Plant squalane",
+            "text": "A light oil that gives slip and leaves skin soft."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Vitamin E",
+            "text": "An antioxidant that helps protect the formula and the skin."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Shea butter",
+            "text": "Cushions dry lips and cheeks without feeling greasy."
           }
         }
       },
@@ -70,60 +126,191 @@
     },
     "pdp-before-after": {
       "type": "blko-pdp-before-after",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Wear-time proof",
+        "heading": "A flush that stays put.",
+        "text": "In a wear test, color stayed visible through a full workday. In a consumer survey, most volunteers said the stick looked like a natural flush. Photos are not retouched.",
+        "stat_1_value": "8+ hrs",
+        "stat_1_label": "of visible wear in a clinical test",
+        "stat_2_value": "94%",
+        "stat_2_label": "said it looked like a natural flush",
+        "after_image_alt": "Cheeks with a soft, even flush after blending",
+        "before_image_alt": "Bare cheeks before blush"
+      }
     },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "pdp-how-to": {
+      "type": "blko-pdp-how-to",
+      "settings": {
+        "kicker": "Get the look",
+        "heading": "dot, tap, blot"
+      },
       "blocks": {
         "block-1": {
-          "type": "tab",
-          "settings": {}
+          "type": "step",
+          "settings": {
+            "image_alt": "Blush stick drawn in a dot on the cheek",
+            "title": "Dot on the apples",
+            "text": "One small dot per cheek is enough for a flush; go for two for more."
+          }
         },
         "block-2": {
-          "type": "tab",
+          "type": "step",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "image_alt": "Fingertips tapping blush outward",
+            "label": "Step two",
+            "title": "Tap outward",
+            "text": "Use warm fingertips to tap toward the temples. Patting melts the cream into skin."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Blush pressed onto the lips",
+            "label": "Step three",
+            "title": "Echo on the lips",
+            "text": "Press leftover color onto the lips and blot for a matching, tea-stained tint."
           }
         }
       },
       "block_order": [
         "block-1",
-        "block-2"
+        "block-2",
+        "block-3"
       ]
+    },
+    "pdp-routine": {
+      "type": "blko-pdp-routine",
+      "settings": {
+        "kicker": "Get ready with",
+        "heading": "a five-step glow, start to finish"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Prep",
+            "text": "Press the glow serum in so cream color melts on instead of grabbing."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Flush",
+            "text": "Add the blush stick to the apples and tap out."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Shape",
+            "text": "Trace the lips with the pencil to set the outline."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Tint",
+            "text": "Fill with a glossy stain in a shade that echoes your blush."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Mist",
+            "text": "A fine spritz of hydrating mist blends the layers together."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "pdp-empties": {
+      "type": "blko-pdp-empties",
+      "settings": {
+        "kicker": "After the last swipe",
+        "quote": "“Send back three empties and the label is on us.”",
+        "author": "— From the packaging team"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Recycled casing",
+            "text": "Most of each stick is recycled material"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Free return label",
+            "text": "After three empties"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Easy to separate",
+            "text": "The twist base comes apart cleanly"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {
+        "eyebrow": "Wear it with",
+        "heading": "the five-step glow",
+        "text": "Prep, flush, shape, tint and mist, all from the shelf."
+      }
     },
     "pdp-reviews": {
       "type": "blko-pdp-reviews",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Reviews",
+        "average": "4.7",
+        "summary": "19,320 ratings from verified buyers",
+        "list_heading": "What people say"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 74
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 17
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 6
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 2
           }
         },
         "block-5": {
@@ -140,40 +327,53 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "label": "Fair to light",
+            "key": "light"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Glow",
-            "key": "coverage"
+            "label": "Medium to deep",
+            "key": "deep"
           }
         },
         "block-9": {
-          "type": "review",
+          "type": "filter",
           "settings": {
-            "text": "It leaves my skin looking fresh and completely natural. I love the light, hydrated finish."
+            "label": "With photos",
+            "key": "photos"
           }
         },
         "block-10": {
           "type": "review",
           "settings": {
-            "title": "My daily step",
-            "text": "Absorbs in seconds and stays comfortable through a long day. Easy to layer.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "title": "The only blush I carry",
+            "text": "It blends in seconds and does not slide off by lunch. I use it on my lips on busy days too.",
+            "footer": "Ana R. · age 35 to 44 · Peach rose",
+            "tags": "light photos",
+            "caption": "Peach rose · photo review"
           }
         },
         "block-11": {
           "type": "review",
           "settings": {
-            "title": "Fresh, not shiny",
-            "text": "This gives me the glow I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Deep rich · photo review"
+            "title": "Finally shows up on deep skin",
+            "text": "The plum is rich without turning ashy. It melts in and looks like I just came in from the cold.",
+            "footer": "Keisha M. · age 25 to 34 · Deep plum",
+            "tags": "deep",
+            "caption": ""
+          }
+        },
+        "block-12": {
+          "type": "review",
+          "settings": {
+            "title": "Lovely, wish it came in a bigger size",
+            "text": "Perfect color and texture, but I run through a stick fast. I would pay more for a larger one.",
+            "footer": "Linh T. · age 45 to 54 · Terracotta",
+            "tags": "",
+            "caption": "",
+            "rating": 4
           }
         }
       },
@@ -188,26 +388,25 @@
         "block-8",
         "block-9",
         "block-10",
-        "block-11"
+        "block-11",
+        "block-12"
       ]
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
       "settings": {}
     }
   },
   "order": [
     "pdp-product-main",
     "dew-facts",
+    "pdp-ingredients",
     "pdp-before-after",
+    "pdp-how-to",
+    "pdp-routine",
+    "pdp-empties",
     "pdp-complete-routine",
-    "product-recommendations",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-recently-viewed"
   ]
 }

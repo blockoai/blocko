@@ -287,25 +287,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "Members club"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "More ritual, more rewards."
+      "default": "Every order earns something back."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the things you love, and enjoy a little more from every routine."
+      "default": "Join free, collect points on purchases and reviews, and trade them for products, early looks and shipping perks."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "Join the club"
     },
     {
       "type": "image_picker",
@@ -316,31 +316,31 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Beauty routine flat lay"
+      "default": "Member opening a points reward box"
     },
     {
       "type": "text",
       "id": "earn_eyebrow",
       "label": "Earn eyebrow",
-      "default": "How it works"
+      "default": "How points work"
     },
     {
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "Sign up. Shop. Redeem."
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "Membership levels"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "More beauty, more benefits."
+      "default": "The more you shop, the more you unlock."
     }
   ],
   "blocks": [
@@ -401,42 +401,49 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Sign up",
+            "text": "Create a free account and get 100 points just for joining."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Collect",
+            "text": "One point per dollar, plus bonus points for reviews, referrals and your birthday month."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Redeem",
+            "text": "Spend points on full-size products or a mini of your choice at checkout."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Member",
+            "points": "0+ points",
+            "perks": "Points on every order · birthday gift"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Insider",
+            "points": "500+ points",
+            "perks": "Early access to launches · free shipping"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "VIP",
+            "points": "1,500+ points",
+            "perks": "Double-point events · private samples"
           }
         }
       ]

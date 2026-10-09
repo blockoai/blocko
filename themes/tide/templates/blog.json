@@ -2,15 +2,27 @@
   "sections": {
     "search-blog-journal-hero": {
       "type": "blko-search-blog-journal-hero",
-      "settings": {}
+      "settings": {
+        "crumb": "Journal",
+        "eyebrow": "The Tide Journal",
+        "heading": "Routines, ingredients and a little wellness.",
+        "text": "Step-by-step guides, plant science and stories from the shoreline.",
+        "image_alt": "Serum drops beside a seashell"
+      }
     },
     "search-blog-featured-post": {
       "type": "blko-search-blog-featured-post",
-      "settings": {}
+      "settings": {
+        "eyebrow_prefix": "Featured",
+        "reading_time": "5 minutes"
+      }
     },
     "search-blog-article-grid": {
       "type": "blko-search-blog-article-grid",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Browse the journal",
+        "heading": "How-tos, recipes and ingredient notes"
+      }
     },
     "search-blog-pagination": {
       "type": "blko-search-blog-pagination",
@@ -18,7 +30,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [

@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Ingredient dictionary |
-| `heading` | text | Heading | Ingredients, explained. |
-| `text` | textarea | Text | Search the sea botanicals and minerals behind a calm, considered routine. |
+| `eyebrow` | text | Eyebrow | Ingredient glossary |
+| `heading` | text | Heading | Every ingredient, in plain words. |
+| `text` | textarea | Text | Look up the common and scientific name of each ingredient, and learn what role i |
 | `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “kelp” |
+| `search_placeholder` | text | Search placeholder | Try “glycerin” |
 | `note_label` | text | Note label | Read note ↗ |
 | `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Kelp extract |
-| `detail_text` | textarea | Detail text | A sea botanical rich in minerals that gives formulas a cool, soothing feel. It i |
+| `detail_heading` | text | Detail heading | Wakame extract |
+| `detail_text` | textarea | Detail text | A sea vegetable rich in minerals and sugars that bind water. It helps skin stay  |
 | `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Comfort and hydration |
+| `best_for` | text | Best for | Dry, tight or dull skin |
 | `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Face and body care |
+| `found_in` | text | Found in | Serums, creams and body oils |
 
 ## Blocks
 

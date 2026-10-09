@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search products and journal.",
+        "text": "Look up cleansers, body oils, ingredients and how-to guides.",
+        "placeholder": "Try “body oil” or “wakame”",
+        "search_label": "Search products and journal",
+        "view_all_label": "See every result"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

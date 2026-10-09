@@ -27,8 +27,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Find your ritual |
-| `heading` | text | Heading | Not sure where to begin? Let us guide you. |
+| `eyebrow` | text | Eyebrow | About two minutes each |
+| `heading` | text | Heading | Let a quiz pick the shade or the step. |
 
 ## Blocks
 

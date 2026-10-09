@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "A pile of soap bars with sale tags",
+        "kicker": "The big sale",
+        "heading": "Stock up. Save big.",
+        "text": "Best sellers, starter bundles and the last of the limited drops are marked down. When they are gone, they are gone.",
+        "button_label": "Shop the sale"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-promises": {
+      "type": "blko-landing-promises",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "UP TO 30% OFF"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "BOLD SCENTS"
+            "text": "FREE SHIPPING OVER $55"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "ALL-DAY CLEAN"
+            "text": "30-DAY GUARANTEE"
           }
         }
       },
@@ -33,28 +41,36 @@
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "Three ways to save",
+        "heading": "Pick how you want to pay less"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "A starter bundle with six bars and two deodorants",
+            "label": "Bundles",
+            "title": "Start with a bundle",
+            "text": "Sets with bars, sticks and hair care knock up to 20% off the shelf price."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Tinted beauty product",
-            "label": "Step two",
-            "title": "Add a sheer tint",
-            "text": "Build coverage only where you want a little more."
+            "image_alt": "A shipping box of soap bars",
+            "label": "Subscribe",
+            "title": "Subscribe to a box",
+            "text": "Take 14% to 15% off every box that ships on your schedule."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Grooming products on a table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A wash of color is enough to make it yours."
+            "image_alt": "A points card next to a bottle of body wash",
+            "label": "Rewards",
+            "title": "Spend your points",
+            "text": "Fifty points are worth five dollars at checkout."
           }
         }
       },
@@ -64,9 +80,12 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "Marked down",
+        "heading": "Pick your deal"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -75,8 +94,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "Last chance"
           }
         }
       },
@@ -87,24 +106,31 @@
     },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
+      "settings": {
+        "kicker": "Backed by guys like you",
+        "quote": "“I stocked up on the sale and I am set until spring.”",
+        "author": "— Verified customer"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "300,000+ reviews",
+            "text": "Averaging four and a half stars"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "30-day trial",
+            "text": "Not into it? Send it back"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "Free shipping",
+            "text": "On every order over $55"
           }
         }
       },
@@ -114,55 +140,60 @@
         "block-3"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "landing-hero-discount": {
+      "type": "blko-landing-hero-discount",
+      "settings": {
+        "kicker": "Hero discount",
+        "heading": "Ten percent off for those who serve"
+      },
       "blocks": {
         "block-1": {
-          "type": "category",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Verify",
+            "text": "Show your military, first responder or medical ID to our partner."
+          }
         },
         "block-2": {
-          "type": "category",
+          "type": "value",
           "settings": {
-            "title": "Shave",
-            "url": "#eyes"
+            "number": "02",
+            "title": "Get the code",
+            "text": "A single-use code lands in your inbox within minutes."
           }
         },
         "block-3": {
-          "type": "category",
+          "type": "value",
           "settings": {
-            "title": "Body",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Body care",
-            "url": "#care"
+            "number": "03",
+            "title": "Shop",
+            "text": "Ten percent comes off your order, on top of any sale."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "block-4"
+        "block-3"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
+    "landing-promises",
     "content-landing-routine",
-    "tabbed-product-grid",
+    "landing-picks",
     "content-landing-proof",
-    "category-slider",
+    "landing-hero-discount",
     "newsletter"
   ]
 }

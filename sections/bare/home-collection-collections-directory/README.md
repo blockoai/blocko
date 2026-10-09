@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by category |
-| `heading` | text | Heading | Find your five minutes. |
-| `text` | textarea | Text | Face, eyes, lips and the tools that make getting ready easy. |
+| `eyebrow` | text | Eyebrow | Every collection |
+| `heading` | text | Heading | Shop by category, skin concern or occasion |
+| `text` | textarea | Text | Face, eyes, lips and skin, plus kits, seasonal edits and the looks our artists b |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person enjoying a simple skincare ritual |
-| `kicker` | text | Kicker | A calmer kind of care |
-| `heading` | text | Heading | Good formulas should make every day feel easier. |
-| `text` | textarea | Text | Our work starts with the small, practical moments: a lotion that settles in, a c |
+| `image_alt` | text | Image alt text | Woven basket of freshly cut sea plants |
+| `kicker` | text | Kicker | Why seaweed |
+| `heading` | text | Heading | Skin that borrows from the sea. |
+| `text` | textarea | Text | Sea plants are loaded with minerals, amino acids and moisture-binding sugars. We |
 
 ## Blocks
 

@@ -34,7 +34,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `heading` | text | Heading | Two rituals to try first. |
 | `text` | textarea | Text | Based on your selections, these gentle formulas are a calm place to start. Use t |
 | `button_label` | text | Button label | Add suggested pick |
-| `card_eyebrow` | text | Card eyebrow | Mineral sun lotion |
+| `card_eyebrow` | text | Card eyebrow | Sea botanical body oil |
 | `card_detail` | text | Card detail | Dewy finish · SPF 40 |
 
 ## Blocks

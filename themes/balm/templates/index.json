@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by category",
+        "heading": "Find your first stick."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "New",
+            "url": "#new"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Best sellers",
+            "url": "#best"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Cheeks",
-            "url": "#lips"
+            "label": "Makeup",
+            "url": "#makeup"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Sculpt",
-            "url": "#care"
+            "label": "Skincare",
+            "url": "#skincare"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Accessories",
+            "url": "#accessories"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Bundles",
+            "url": "#bundles"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Sculpt ritual",
-            "label": "Sculpt"
+            "url": "#makeup",
+            "image_alt": "Cream sticks in a row",
+            "label": "Makeup"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#bundles",
+            "image_alt": "Gift set laid out on linen",
+            "label": "Bundles"
           }
         }
       },
@@ -48,33 +72,96 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
+      "settings": {
+        "image_alt": "Close-up of a face with a warm flush and a soft glow on the cheekbone",
+        "eyebrow": "The flagship set",
+        "heading": "Contour, color and glow from three creamy sticks.",
+        "text": "Sculpt, warm and brighten with one routine, each stick built on organic oils and butters.",
+        "button_label": "Shop the contour set"
+      }
     },
     "balm-ritual-steps": {
       "type": "blko-balm-ritual-steps",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Place it in three zones",
+        "heading": "Define, warm, light",
+        "button_label": "Shop the three sticks"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "title": "Define",
+            "text": "Draw the bronzer stick under the cheekbone and along the jaw for shadow and depth."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "title": "Nourish",
-            "text": "Press in radiance serum and velvet day cream."
+            "title": "Warm",
+            "text": "Tap the blush stick onto the apples and sweep it toward the temple for a lifted flush."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "title": "Sculpt",
-            "text": "Define cheekbones and lids with creamy organic sticks."
+            "title": "Light",
+            "text": "Dot the highlighter stick on brow bone, cheekbone and the bridge of the nose, then press in."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {
+        "image_alt": "Hand blending a cream stick into the cheek",
+        "eyebrow": "Skincare inside the color",
+        "heading": "Nearly nine in ten ingredients come from skincare.",
+        "text": "Each stick melts in with the warmth of your fingers, cushions skin with botanical oils and blends without a brush. In consumer testing, wearers reported more moisture and a brighter look after wear.",
+        "button_label": "Shop the sticks"
+      }
+    },
+    "balm-quiz-cards": {
+      "type": "blko-balm-quiz-cards",
+      "settings": {
+        "eyebrow": "About two minutes each",
+        "heading": "Let a quiz pick the shade or the step."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "card",
+          "settings": {
+            "title": "Eye color match",
+            "cta": "Start the quiz",
+            "url": "#shade-quiz"
+          }
+        },
+        "block-2": {
+          "type": "card",
+          "settings": {
+            "title": "Complexion shade finder",
+            "cta": "Start the quiz",
+            "url": "#shade-quiz"
+          }
+        },
+        "block-3": {
+          "type": "card",
+          "settings": {
+            "title": "Skincare routine finder",
+            "cta": "Start the quiz",
+            "url": "#routine-builder"
           }
         }
       },
@@ -90,131 +177,26 @@
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "AWARD-WINNING STICKS"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SMALL-BATCH FORMULAS"
+            "text": "5,000+ FIVE-STAR REVIEWS"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "THREE STEPS, ONE GLOW"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "balm-claim-panel": {
-      "type": "blko-balm-claim-panel",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "stat",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "stat",
-          "settings": {
-            "value": "5,000+",
-            "label": "five-star reviews"
-          }
-        },
-        "block-3": {
-          "type": "stat",
-          "settings": {
-            "value": "100%",
-            "label": "certified organic"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "balm-quiz-cards": {
-      "type": "blko-balm-quiz-cards",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "card",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "card",
-          "settings": {
-            "title": "Dull or tired skin"
-          }
-        },
-        "block-3": {
-          "type": "card",
-          "settings": {
-            "title": "Sensitive skin"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "category",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "category",
-          "settings": {
-            "title": "Eyes",
-            "url": "#eyes"
-          }
-        },
-        "block-3": {
-          "type": "category",
-          "settings": {
-            "title": "Cheeks",
-            "url": "#lips"
+            "text": "FREE SHIPPING OVER $75"
           }
         },
         "block-4": {
-          "type": "category",
+          "type": "message",
           "settings": {
-            "title": "Sculpt",
-            "url": "#care"
+            "text": "FREE GIFT OVER $100"
           }
         }
       },
@@ -225,40 +207,75 @@
         "block-4"
       ]
     },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {}
-    },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
-    },
-    "testimonial-slider": {
-      "type": "blko-testimonial-slider",
-      "settings": {}
-    },
-    "balm-press-quote": {
-      "type": "blko-balm-press-quote",
-      "settings": {}
-    },
-    "press-slider": {
-      "type": "blko-press-slider",
-      "settings": {},
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {
+        "eyebrow": "Four ways to browse",
+        "heading": "Shop by collection"
+      },
       "blocks": {
         "block-1": {
-          "type": "publication",
-          "settings": {}
+          "type": "tab",
+          "settings": {
+            "label": "Best"
+          }
         },
         "block-2": {
-          "type": "publication",
+          "type": "tab",
           "settings": {
-            "name": "HAUTE GLOW"
+            "key": "makeup",
+            "label": "Makeup"
           }
         },
         "block-3": {
-          "type": "publication",
+          "type": "tab",
           "settings": {
-            "name": "SKIN JOURNAL"
+            "key": "accessories",
+            "label": "Tools"
+          }
+        },
+        "block-4": {
+          "type": "tab",
+          "settings": {
+            "key": "skincare",
+            "label": "Skincare"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "balm-claim-panel": {
+      "type": "blko-balm-claim-panel",
+      "settings": {
+        "eyebrow": "New: liquid lid color",
+        "heading": "An eye color that treats the lid while it colors.",
+        "note": "Wear and crease results come from a four-week in-use panel of thirty adults. Organic status refers to certified plant content."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "stat",
+          "settings": {
+            "value": "12 hr",
+            "label": "wear without fading"
+          }
+        },
+        "block-2": {
+          "type": "stat",
+          "settings": {
+            "value": "0",
+            "label": "creasing on test lids"
+          }
+        },
+        "block-3": {
+          "type": "stat",
+          "settings": {
+            "value": "Organic",
+            "label": "certified plant base"
           }
         }
       },
@@ -268,9 +285,63 @@
         "block-3"
       ]
     },
+    "home-launches": {
+      "type": "blko-home-launches",
+      "settings": {
+        "heading": "What is landing next"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {
+            "title": "Shade drops",
+            "url": "#new"
+          }
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Retail debut countdown",
+            "url": "#stockists"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Gift guide",
+            "url": "#gift"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Member early access",
+            "url": "#rewards"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "balm-press-quote": {
+      "type": "blko-balm-press-quote",
+      "settings": {
+        "eyebrow": "In the press",
+        "quote": "“One stick does the job of three, and it leaves cheeks looking like skin.”",
+        "source": "The Beauty Review"
+      }
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -281,16 +352,13 @@
     "home-collection-mega-menu",
     "hero-campaign",
     "balm-ritual-steps",
+    "feature-driver",
+    "balm-quiz-cards",
     "message-band",
     "tabbed-product-grid",
     "balm-claim-panel",
-    "balm-quiz-cards",
-    "category-slider",
-    "feature-driver",
-    "commitments",
-    "testimonial-slider",
+    "home-launches",
     "balm-press-quote",
-    "press-slider",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

@@ -31,12 +31,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
 | `add_label` | text | Add label | Add 3 items to bag |
-| `eyebrow` | text | Eyebrow | Build your set |
-| `heading` | text | Heading | Make your everyday routine. |
-| `text` | text | Text | Choose any three essentials and save 15%. Your set, your pace, your skin. |
+| `eyebrow` | text | Eyebrow | Build a discovery set |
+| `heading` | text | Heading | Choose three minis, save a quarter. |
+| `text` | text | Text | Try travel sizes of skin, makeup and body favorites. The set price drops as you  |
 | `summary_eyebrow` | text | Summary eyebrow | Your set |
 | `summary_empty` | text | Summary empty | Choose 3 items to unlock your set |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
+| `saving_text` | text | Saving text | You save 25% once three minis are in your set. |
 | `price_note` | text | Price note | Bundle price |
 
 ## Blocks

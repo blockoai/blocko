@@ -1,6 +1,6 @@
 # Policy document
 
-Neutral privacy-page typography with concise placeholder copy.
+Neutral authorised seller page with concise placeholder copy.
 
 - Category: policy
 - Kind: section

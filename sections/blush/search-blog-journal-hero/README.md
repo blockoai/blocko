@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
-| `crumb` | text | Crumb | Notes |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a more considered routine. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for skin-first color and care. |
+| `crumb` | text | Crumb | News |
+| `eyebrow` | text | Eyebrow | Company news |
+| `heading` | text | Heading | What is happening at the shop. |
+| `text` | text | Text | People, stores and grants, written by the team. |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Staff arranging products in a shop window |
 
 ## Blocks
 

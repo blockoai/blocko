@@ -1,83 +1,156 @@
 {
   "sections": {
+    "ingredients-callout": {
+      "type": "blko-ingredients-callout",
+      "settings": {
+        "image_alt": "Pine branches and moss on a stone",
+        "eyebrow": "Natural, measured",
+        "heading": "98% natural origin, and we show our math.",
+        "text": "Natural is a word anyone can print on a label. We back it with an international standard that scores each formula, and we list the numbers on the product page.",
+        "button_label": "See what stays out"
+      }
+    },
+    "ingredients-why": {
+      "type": "blko-ingredients-why",
+      "settings": {
+        "kicker": "Why natural wins",
+        "heading": "Three reasons we keep it short"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Skin is not a trash can",
+            "text": "What touches you daily should be something you can describe in plain words."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Short lists, strong bars",
+            "text": "Fewer fillers mean more room for oils that clean and condition."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Honest labels",
+            "text": "Every wrapper lists everything, in order, and no mystery buckets."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "The no-go list",
+        "heading": "Twelve things we will not use.",
+        "text": "Each entry says what the ingredient does, where it usually hides and why we leave it out.",
+        "search_placeholder": "Try “paraben”",
+        "detail_eyebrow": "Why it is out",
+        "detail_heading": "Aluminum salts",
+        "detail_text": "Common in antiperspirants, where they block sweat glands. We make deodorant instead: it handles odor without blocking anything.",
+        "best_for_label": "Usually found in",
+        "best_for": "Antiperspirant sticks and sprays",
+        "found_in_label": "Our replacement",
+        "found_in": "A plant-powder deodorant stick"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
           "settings": {
+            "label": "All 12",
             "active": true
           }
         },
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Preservatives",
+            "key": "preservative"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Fragrance and dyes",
+            "key": "scent"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Fillers",
+            "key": "filler"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "name": "Aluminum salts",
+            "detail": "Block sweat glands in antiperspirant sticks",
+            "tags": "filler"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "F",
+            "name": "Formaldehyde releasers",
+            "detail": "Preservatives that slowly release a known irritant",
+            "tags": "preservative"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "letter": "M",
+            "name": "Mineral oil",
+            "detail": "A cheap petroleum filler that sits on skin",
+            "tags": "filler"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "P",
+            "name": "Parabens",
+            "detail": "Preservatives we replace with gentler ones",
+            "tags": "preservative"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "letter": "P",
+            "name": "Phthalates",
+            "detail": "Fragrance carriers linked to hormone concerns",
+            "tags": "scent"
           }
         },
         "block-10": {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "S",
+            "name": "Sulfates",
+            "detail": "Harsh foaming agents that strip oils",
+            "tags": "filler"
+          }
+        },
+        "block-11": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "S",
+            "name": "Synthetic dyes",
+            "detail": "Color added for looks, not for skin",
+            "tags": "scent"
           }
         }
       },
@@ -91,21 +164,60 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
       ]
     },
-    "ingredients-callout": {
-      "type": "blko-ingredients-callout",
-      "settings": {}
+    "ingredients-faq": {
+      "type": "blko-ingredients-faq",
+      "settings": {
+        "eyebrow": "Naturalness",
+        "heading": "How we score it"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "What does 98% natural origin mean?",
+            "text": "It is a score under an international standard that measures how much of a formula comes from plants, minerals or other natural sources."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Is natural always gentler?",
+            "text": "Not automatically. That is why we test each formula on real skin and publish the no-go list alongside the scores."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Where can I read a full ingredient list?",
+            "text": "On every product page, under the ingredients tab, and on the wrapper."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [
-    "beauty-extras-ingredient-glossary",
     "ingredients-callout",
+    "ingredients-why",
+    "beauty-extras-ingredient-glossary",
+    "ingredients-faq",
     "newsletter"
   ]
 }

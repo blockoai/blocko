@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Beauty routine |
-| `eyebrow` | text | Eyebrow | Brand approach |
-| `heading` | text | Heading | Simple rituals, beautifully made. |
-| `text` | textarea | Text | Build your routine with comfortable essentials that work together naturally. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Customer wearing the tinted serum outdoors |
+| `eyebrow` | text | Eyebrow | Customer love |
+| `heading` | text | Heading | “My skin looks and feels its healthiest.” |
+| `text` | textarea | Text | Read why more than fifteen thousand people rate the tinted serum 4.5 stars, from |
+| `button_label` | text | Button label | Shop the tinted serum |
 | `button_url` | url | Button url |  |
 
 ## Blocks

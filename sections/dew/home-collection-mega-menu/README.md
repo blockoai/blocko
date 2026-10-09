@@ -29,8 +29,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `trigger_href` | text | Header link URL that opens this menu | #shop |
-| `eyebrow` | text | Eyebrow | shop by routine |
-| `heading` | text | Heading | start where you are. |
+| `eyebrow` | text | Eyebrow | Shop by family |
+| `heading` | text | Heading | five families, one short shelf. |
 
 ## Blocks
 
@@ -39,7 +39,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `url` | url | Url |  |
-| `label` | text | Label | Face |
+| `label` | text | Label | Skin |
 
 ### Image tile (`tile`, max 4)
 
@@ -48,7 +48,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `url` | url | Url |  |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | face routine |
-| `label` | text | Label | Face |
+| `label` | text | Label | Skin |
 
 ## Dependencies
 

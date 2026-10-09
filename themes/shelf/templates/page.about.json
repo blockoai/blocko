@@ -2,80 +2,145 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "About Shelf",
+        "heading": "Beauty held to a written standard.",
+        "lede": "Shoppers shouldn't need a chemistry degree to buy a moisturizer. So we wrote down what we accept, and every brand has to meet it.",
+        "button_label": "Read the standard",
+        "image_alt": "Boutique wall of shelves above a fluted counter"
+      }
     },
-    "content-mission": {
-      "type": "blko-content-mission",
-      "settings": {}
-    },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
+    "about-pillars": {
+      "type": "blko-about-pillars",
+      "settings": {
+        "kicker": "Four pillars",
+        "heading": "What the standard covers"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "number": "Product",
+            "title": "Ingredients that earn their place",
+            "text": "An in-house science team and outside advisors review each ingredient against the evidence and the rules in the region where it is sold."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "Packaging",
+            "title": "Less waste by design",
+            "text": "Guidelines push brands toward recycled and renewable materials and designs that can really be recycled."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "People",
+            "title": "Fair sourcing",
+            "text": "We ask for traceable supply chains and fair labor, including for mined minerals such as mica."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "Planet",
+            "title": "No animal testing, lower impact",
+            "text": "Cruelty-free comes first. Beyond that we track our own emissions and expect proof behind sustainability claims."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "shelf-pillar-lists": {
+      "type": "blko-shelf-pillar-lists",
+      "settings": {
+        "eyebrow": "The rulebook",
+        "heading": "Required and encouraged",
+        "lede": "A brand must clear every required item to be listed. Encouraged items win it a place in our spotlight."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "pillar",
+          "settings": {
+            "title": "Product",
+            "required": "Full disclosure of ingredients under standard names. Warning before any formula change. Compliance with local law. Stability, preservative and compatibility tests. Skin patch testing on new launches. Heavy-metal, PFAS and asbestos checks where relevant. Batch traceability. Evidence behind every claim.",
+            "encouraged": "Factories that follow good manufacturing practice. Accredited labs. Open fragrance disclosure. Sourcing notes. Organic certification."
+          }
+        },
+        "block-2": {
+          "type": "pillar",
+          "settings": {
+            "title": "Packaging",
+            "required": "Follow our packaging guidelines. Limit single-use parts. At least half recycled plastic where plastic is used. Disposal directions on pack. Resin codes. Certified paper. Accurate recycling claims.",
+            "encouraged": "Join the packaging collective. Offer refills. Raise recycled content further."
+          }
+        },
+        "block-3": {
+          "type": "pillar",
+          "settings": {
+            "title": "People",
+            "required": "A supplier code of conduct covering fair pay and safe workplaces. Traceability for high-risk materials.",
+            "encouraged": "Third-party labor audits. Programs that support suppliers' communities."
+          }
+        },
+        "block-4": {
+          "type": "pillar",
+          "settings": {
+            "title": "Planet",
+            "required": "No animal testing at any stage. A written position on raw material sourcing.",
+            "encouraged": "Climate targets. Lower-impact materials. Public reports on progress."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "standard-brands": {
+      "type": "blko-standard-brands",
+      "settings": {
+        "kicker": "For brands",
+        "heading": "How a brand gets listed"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Request the technical standard",
+            "text": "Brands ask for the long-form document and a checklist."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "title": "Submit every ingredient list",
+            "text": "We review all products, not a sample."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
-    },
-    "content-story-timeline": {
-      "type": "blko-content-story-timeline",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "milestone",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "milestone",
-          "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of care and color essentials."
-          }
-        },
-        "block-3": {
-          "type": "milestone",
-          "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a routine that moves with your day."
+            "title": "Resolve flags",
+            "text": "Where something is restricted, we agree a reformulation plan."
           }
         },
         "block-4": {
-          "type": "milestone",
+          "type": "value",
           "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
+            "number": "04",
+            "title": "Go on the shelf",
+            "text": "Approved items get a standard card on their product page."
           }
         }
       },
@@ -86,78 +151,12 @@
         "block-4"
       ]
     },
-    "content-press-quotes": {
-      "type": "blko-content-press-quotes",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "quote",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "quote",
-          "settings": {
-            "quote": "“A practical answer to the overcomplicated routine.”",
-            "source": "— The Daily Edit"
-          }
-        },
-        "block-3": {
-          "type": "quote",
-          "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
-            "source": "— Studio Notes"
-          }
-        }
+    "standard-badges": {
+      "type": "blko-standard-badges",
+      "settings": {
+        "heading": "Marks you will see on product pages",
+        "lede": "Each shows an extra commitment, and appears only when it is true."
       },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "shelf-standards": {
-      "type": "blko-shelf-standards",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "pillar",
-          "settings": {
-            "title": "Ingredient transparency",
-            "body": "Every formula is listed in full, with a plain-language note on what each ingredient does."
-          }
-        },
-        "block-2": {
-          "type": "pillar",
-          "settings": {
-            "title": "Safety tested",
-            "body": "We screen each product against a published list of ingredients we leave out."
-          }
-        },
-        "block-3": {
-          "type": "pillar",
-          "settings": {
-            "title": "Responsibly made",
-            "body": "Brands share how they source, package and treat the people who make their products."
-          }
-        },
-        "block-4": {
-          "type": "pillar",
-          "settings": {
-            "title": "Cruelty-free, always",
-            "body": "No animal testing at any stage, and we verify it with every brand."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "shelf-clean-grid": {
-      "type": "blko-shelf-clean-grid",
-      "settings": {},
       "blocks": {
         "block-1": {
           "type": "badge",
@@ -219,20 +218,172 @@
         "block-8"
       ]
     },
+    "about-recognition": {
+      "type": "blko-about-recognition",
+      "settings": {
+        "kicker": "Recognition"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "quote",
+          "settings": {
+            "quote": "“The retailer other beauty chains are quietly copying.”",
+            "source": "— Retail Weekly"
+          }
+        },
+        "block-2": {
+          "type": "quote",
+          "settings": {
+            "quote": "“A shop where the rulebook is part of the display.”",
+            "source": "— The Beauty Ledger"
+          }
+        },
+        "block-3": {
+          "type": "quote",
+          "settings": {
+            "quote": "“Named among the most inventive companies in beauty.”",
+            "source": "— Innovation Review"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "recycling-facts": {
+      "type": "blko-recycling-facts",
+      "settings": {
+        "kicker": "Why it matters",
+        "quote": "“Tubes, caps, wands and pumps are the pieces most municipal systems refuse.”",
+        "author": "— Packaging collective"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "120 billion",
+            "text": "beauty packaging units made a year"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Under 15%",
+            "text": "of it reaches a recycling plant"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "75%+",
+            "text": "of shoppers want greener packaging"
+          }
+        },
+        "block-4": {
+          "type": "point",
+          "settings": {
+            "title": "Small is the problem",
+            "text": "pieces below a yogurt cup size fall through sorters"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "recycling-steps": {
+      "type": "blko-recycling-steps",
+      "settings": {
+        "kicker": "How it works",
+        "heading": "Return your empties in three steps"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Three bottles on a copper shelf in a tiled shower",
+            "label": "One",
+            "title": "Clean it out",
+            "text": "Scrape out product and rinse. Remove pumps and caps where you can."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Serum and jars among smooth stones and greenery",
+            "label": "Two",
+            "title": "Choose the right bin",
+            "text": "Big glass, paper and plastics 1, 2 and 5 go in your home recycling; everything small goes in ours."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Close view of a pump top beside a leaf",
+            "label": "Three",
+            "title": "Give it new life",
+            "text": "We deliver your empties to partners that turn them into new materials."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "recycling-mail": {
+      "type": "blko-recycling-mail",
+      "settings": {
+        "eyebrow": "No boutique nearby?",
+        "heading": "Post up to ten empties",
+        "text": "Buy a prepaid label at checkout and mail your parcel. Each one earns 120 points.",
+        "button_label": "Buy a label"
+      }
+    },
+    "about-collective": {
+      "type": "blko-about-collective",
+      "settings": {
+        "image_alt": "Close view of a pump top beside a leaf",
+        "eyebrow": "Packaging collective",
+        "heading": "Helping hard-to-recycle packaging find a second life.",
+        "text": "We co-founded a non-profit that collects the small pieces curbside programs turn away and works with brands on materials that can be reused.",
+        "button_label": "See the empties program"
+      }
+    },
+    "about-journal": {
+      "type": "blko-about-journal",
+      "settings": {
+        "eyebrow": "From the journal",
+        "heading": "The thinking behind the shelf"
+      }
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
     "content-about-hero",
-    "content-mission",
-    "content-values",
-    "content-founder-note",
-    "content-story-timeline",
-    "content-press-quotes",
-    "shelf-standards",
-    "shelf-clean-grid",
+    "about-pillars",
+    "shelf-pillar-lists",
+    "standard-brands",
+    "standard-badges",
+    "about-recognition",
+    "recycling-facts",
+    "recycling-steps",
+    "recycling-mail",
+    "about-collective",
+    "about-journal",
     "newsletter"
   ]
 }

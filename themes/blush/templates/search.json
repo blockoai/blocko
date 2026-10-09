@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search the shelf.",
+        "text": "Look up a product, a shade or a scent.",
+        "placeholder": "Try “blush” or “mint”",
+        "search_label": "Search products and news",
+        "view_all_label": "Show all results"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

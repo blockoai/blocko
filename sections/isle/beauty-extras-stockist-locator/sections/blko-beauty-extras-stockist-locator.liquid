@@ -298,19 +298,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Find us nearby"
+      "default": "Find a retailer"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "See it in person."
+      "default": "Try the scents in person."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Choose a country to see a selection of participating stockists."
+      "default": "Pick a country to see beauty retailers that stock our body and sun care."
     },
     {
       "type": "text",
@@ -334,7 +334,7 @@
       "type": "text",
       "id": "directions_label",
       "label": "Directions label",
-      "default": "Directions"
+      "default": "Open map"
     }
   ],
   "blocks": [
@@ -418,30 +418,48 @@
           }
         },
         {
+          "type": "country",
+          "settings": {
+            "value": "au",
+            "label": "Australia"
+          }
+        },
+        {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Seabreeze Beauty Hall",
+            "place": "San Diego, CA"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Palm & Pine Apothecary",
+            "place": "Miami, FL"
+          }
         },
         {
           "type": "store",
           "settings": {
             "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "North Shore Pharmacy",
+            "place": "Vancouver, BC"
           }
         },
         {
           "type": "store",
           "settings": {
             "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "name": "Clover Beauty Rooms",
+            "place": "Manchester"
           }
         },
         {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "au",
+            "name": "Sunday Beauty Co.",
+            "place": "Sydney, NSW"
           }
         }
       ]

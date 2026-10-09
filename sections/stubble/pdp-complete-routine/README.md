@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `collection` | collection | Fallback collection |  |
-| `eyebrow` | text | Eyebrow | Build the full kit |
-| `heading` | text | Heading | Complete the kit |
-| `text` | text | Text | Three essentials that work well together. |
+| `eyebrow` | text | Eyebrow | Complete your shaving routine |
+| `heading` | text | Heading | Gel, blades and balm |
+| `text` | text | Text | Add all three and take $1 off each item. Better together, and about $3 back. |
 
 ## Blocks
 

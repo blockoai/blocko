@@ -298,6 +298,16 @@
 .blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 .blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -307,19 +317,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Find us nearby"
+      "default": "Salon + retailer finder"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "See it in person."
+      "default": "Find a stockist near you."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Choose a country to see a selection of participating salons and stockists."
+      "default": "Choose a country to see salons and retail partners that carry the full range, including the pro-only sizes."
     },
     {
       "type": "text",
@@ -343,7 +353,7 @@
       "type": "text",
       "id": "directions_label",
       "label": "Directions label",
-      "default": "Directions"
+      "default": "Get directions"
     }
   ],
   "blocks": [
@@ -428,29 +438,32 @@
         },
         {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Studio Nine Salon",
+            "place": "Brooklyn, NY"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Copper & Comb",
+            "place": "Austin, TX"
+          }
         },
         {
           "type": "store",
           "settings": {
             "country": "ca",
-            "name": "The Color Bar",
-            "place": "Toronto, ON"
+            "name": "Oak Street Hair",
+            "place": "Vancouver, BC"
           }
         },
         {
           "type": "store",
           "settings": {
             "country": "uk",
-            "name": "Field & Fringe",
-            "place": "London"
-          }
-        },
-        {
-          "type": "store",
-          "settings": {
-            "name": "Daylight Salon",
-            "place": "Los Angeles, CA"
+            "name": "The Cut Room",
+            "place": "Leeds"
           }
         }
       ]

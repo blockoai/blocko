@@ -336,25 +336,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "Rewards"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "More ritual, more rewards."
+      "default": "Shop. Collect. Redeem."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the things you love, and enjoy a little more from every routine."
+      "default": "Earn points on purchases and plenty of small actions, then turn them into dollars off. Your tier is based on what you spend in a year, so loyalty speeds up your points."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "Join and get 50 points"
     },
     {
       "type": "image_picker",
@@ -365,31 +365,31 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Skin ritual flat lay"
+      "default": "Gift box of skin and body care products"
     },
     {
       "type": "text",
       "id": "earn_eyebrow",
       "label": "Earn eyebrow",
-      "default": "How it works"
+      "default": "The basics"
     },
     {
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "How points work"
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "Spend tiers"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "More calm, more benefits."
+      "default": "Spend more, earn faster."
     }
   ],
   "blocks": [
@@ -450,42 +450,55 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Create a free account and get 50 points as a welcome gift."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
             "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "One point for every dollar, plus extra points for reviews, referrals and social follows."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "title": "Tide",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Redeem",
+            "text": "Swap 500 points for $5 off, 1,000 for $10 and 1,500 for $15 at checkout."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Ocean",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "points": "$0 to $199 a year",
+            "perks": "1 point per $1 · birthday treat"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Reef",
+            "points": "$200 to $399 a year",
+            "perks": "2 points per $1 · early access"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Open water",
+            "points": "$400+ a year",
+            "perks": "3 points per $1 · private launches"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Subscriber",
+            "points": "With any active plan",
+            "perks": "2 points per $1 · extra bonus actions"
           }
         }
       ]

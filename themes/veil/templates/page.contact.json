@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Customer care",
+        "heading": "Real people, fast answers.",
+        "text": "Need a shade match, an order change or help with a formula? Tell us and a specialist will reply.",
+        "link_label": "Message us"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,30 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "text": "Orders, returns and product questions.",
+            "url": "mailto:care@example.com",
+            "link_label": "care@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Shade match",
+            "text": "Send a makeup-free selfie for a specialist pick.",
+            "url": "mailto:shades@example.com",
+            "link_label": "shades@example.com"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Press",
+            "text": "Samples, interviews and partnerships.",
+            "url": "mailto:press@example.com",
+            "link_label": "press@example.com"
           }
         }
       },
@@ -41,28 +50,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Write to us",
+        "heading": "What can we help with?",
+        "text": "Include your order number if you have one. We reply within one business day.",
+        "button_label": "Send"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "My order"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product guidance"
+            "label": "Shade matching"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Formula or ingredient question"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Members club"
           }
         }
       },
@@ -75,24 +91,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Availability",
+        "heading": "Care team hours"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Monday to Friday",
+            "value": "8 AM to 6 PM Pacific"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
-            "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "label": "Saturday",
+            "value": "10 AM to 4 PM Pacific"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Reply time",
+            "value": "Within one business day"
           }
         }
       },
@@ -104,7 +126,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Visit us",
+        "heading": "The studio",
+        "text": "Our product studio and shade-matching room welcome visitors by appointment.",
+        "city": "Santa Monica, CA",
+        "country": "United States"
+      }
     }
   },
   "order": [

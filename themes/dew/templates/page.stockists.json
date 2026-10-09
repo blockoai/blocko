@@ -2,7 +2,12 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Where to find us",
+        "heading": "shop in person.",
+        "text": "See which beauty retailers stock the full shelf. Switch between countries to find a store near you.",
+        "directions_label": "Get directions"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
@@ -30,30 +35,48 @@
           }
         },
         "block-5": {
-          "type": "store",
-          "settings": {}
+          "type": "country",
+          "settings": {
+            "value": "au",
+            "label": "Australia"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Parlor Beauty Hall",
+            "place": "Los Angeles, CA"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "name": "Linden & Co.",
+            "place": "Brooklyn, NY"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "ca",
+            "name": "Juniper Counter",
+            "place": "Toronto, ON"
+          }
+        },
+        "block-9": {
+          "type": "store",
+          "settings": {
+            "country": "uk",
+            "name": "Alder Beauty",
+            "place": "London"
+          }
+        },
+        "block-10": {
+          "type": "store",
+          "settings": {
+            "country": "au",
+            "name": "Sunbird Cosmetics",
+            "place": "Sydney, NSW"
           }
         }
       },
@@ -65,12 +88,18 @@
         "block-5",
         "block-6",
         "block-7",
-        "block-8"
+        "block-8",
+        "block-9",
+        "block-10"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [

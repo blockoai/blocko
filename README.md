@@ -36,21 +36,21 @@ Without the plugin: every item in the live catalog (https://blocko.ai/browse/) a
 
 ## Themes
 
-- `balm`: 197 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/balm/`.
-- `bare`: 197 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/bare/`.
-- `blush`: 197 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/blush/`.
-- `clip`: 195 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/clip/`.
-- `dew`: 197 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/dew/`.
-- `isle`: 193 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/isle/`.
-- `lather`: 197 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/lather/`.
-- `prism`: 197 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/prism/`.
-- `shelf`: 196 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/shelf/`.
-- `stubble`: 194 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/stubble/`.
-- `tide`: 197 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/tide/`.
-- `tint`: 195 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/tint/`.
+- `balm`: 210 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/balm/`.
+- `bare`: 210 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/bare/`.
+- `blush`: 208 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/blush/`.
+- `clip`: 213 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/clip/`.
+- `dew`: 211 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/dew/`.
+- `isle`: 219 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/isle/`.
+- `lather`: 224 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/lather/`.
+- `prism`: 228 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/prism/`.
+- `shelf`: 248 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/shelf/`.
+- `stubble`: 210 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/stubble/`.
+- `tide`: 221 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/tide/`.
+- `tint`: 213 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/tint/`.
 - `tress`: HTML demo only (126 sections/blocks, 39 pages; port to Liquid with the agent prompts in `catalog.json`) (see `catalog.json`). Demo: `demo/tress/`.
-- `twist`: 194 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/twist/`.
-- `veil`: 193 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/veil/`.
+- `twist`: 215 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/twist/`.
+- `veil`: 205 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/veil/`.
 
 Each theme lives in `themes/<theme>/` and is a complete OS2 theme folder (layout, templates, sections, blocks, snippets,
 assets, config, locales). Sections that are not yet available as Liquid are listed as gaps in `catalog.json`

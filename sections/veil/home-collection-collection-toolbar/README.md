@@ -31,11 +31,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
 | `close_filters` | text | Close filters | Close filters |
-| `filter_eyebrow` | text | Filter eyebrow | Narrow your ritual |
-| `filter_heading` | text | Filter heading | Filters |
+| `filter_eyebrow` | text | Filter eyebrow | Refine your picks |
+| `filter_heading` | text | Filter heading | Filter by department |
 | `apply_label` | text | Apply label | View results |
 | `home_label` | text | Home label | Home |
-| `breadcrumb` | text | Breadcrumb | Shop |
+| `breadcrumb` | text | Breadcrumb | Makeup + skincare |
 | `filters_label` | text | Filters label | Filters |
 | `sort_label` | text | Sort label | Sort |
 | `sort_aria` | text | Sort aria | Sort products |

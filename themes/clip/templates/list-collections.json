@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop the drawer",
+        "heading": "Find your next favorite."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "New + limited",
+            "url": "#new"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Scrunchies",
-            "url": "#eyes"
+            "label": "Claw clips",
+            "url": "#clips"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Bows + pins",
-            "url": "#lips"
+            "label": "Scrunchies + bands",
+            "url": "#ties"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Brushes + tools",
+            "label": "Hair care",
             "url": "#care"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Brushes + tools",
+            "url": "#tools"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Sets + gifts",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
+          "type": "tile",
+          "settings": {
+            "url": "#clips",
+            "image_alt": "Pastel claw clip holding a twist",
+            "label": "Claw clips"
+          }
+        },
+        "block-8": {
           "type": "tile",
           "settings": {
             "url": "#care",
-            "image_alt": "Brushes + tools",
-            "label": "Brushes + tools"
+            "image_alt": "Scented hair mist and mask tub",
+            "label": "Scent drop"
           }
         }
       },
@@ -48,12 +72,18 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "home-collection-collections-directory": {
       "type": "blko-home-collection-collections-directory",
-      "settings": {}
+      "settings": {
+        "eyebrow": "All collections",
+        "heading": "Every drawer, in one place",
+        "text": "Colour drops, everyday clips, scent-led care and gift sets, sorted for quick browsing."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,7 +91,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [

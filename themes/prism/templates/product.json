@@ -2,26 +2,188 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Dry shampoo",
+        "price_note": "Aerosol can",
+        "shade_help_label": "Size guide",
+        "ship_note": "Free shipping from $30"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Cleanses without stripping, locks in color and leaves hair glossy. Use on its own or as step one of the system."
+            "text": "Made for oily roots, workout days and the stretch between washes. It absorbs oil, lifts the crown and brushes out clean on light and dark hair, with a fresh scent that fades by lunchtime."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Ingredients",
-            "text": "Sulfate-free cleansers, bond-building amino acids and UV filters that help color hold its shade."
+            "label": "Who it is for",
+            "text": "Every hair type from fine and straight to thick and coily. Textured hair benefits most when it is sprayed on the scalp rather than the lengths."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
             "label": "How to use",
-            "text": "Massage into wet hair and scalp, lather, then rinse with cool water. Follow with conditioner."
+            "text": "Shake for ten seconds. Hold the can about eight inches from your roots, spray in sections, wait one minute, then massage with fingertips and brush through."
+          }
+        },
+        "block-4": {
+          "type": "accordion",
+          "settings": {
+            "label": "Key ingredients",
+            "text": "Rice starch for oil absorption, a nutrient-rich berry extract for shine, and a light conditioning agent so hair never feels chalky. Full ingredient list on the pack."
+          }
+        },
+        "block-5": {
+          "type": "accordion",
+          "settings": {
+            "label": "Safety",
+            "text": "Contents under pressure. Keep away from flames and heat, avoid eyes, and do not puncture the can. Use in a ventilated space."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "pdp-badges": {
+      "type": "blko-pdp-badges",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "message",
+          "settings": {
+            "text": "VEGAN"
+          }
+        },
+        "block-2": {
+          "type": "message",
+          "settings": {
+            "text": "SULFATE FREE"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "COLOR SAFE"
+          }
+        },
+        "block-4": {
+          "type": "message",
+          "settings": {
+            "text": "NEVER TESTED ON ANIMALS"
+          }
+        },
+        "block-5": {
+          "type": "message",
+          "settings": {
+            "text": "PARABEN FREE"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "pdp-before-after": {
+      "type": "blko-pdp-before-after",
+      "settings": {
+        "eyebrow": "Tested results",
+        "heading": "Roots that look washed, in a minute.",
+        "text": "In a four-week consumer test of 60 volunteers, most said roots looked cleaner and felt lighter right after the first use.",
+        "stat_1_value": "96%",
+        "stat_1_label": "said oil was visibly reduced*",
+        "stat_2_value": "91%",
+        "stat_2_label": "saw no white residue on dark hair*"
+      }
+    },
+    "pdp-ingredients": {
+      "type": "blko-pdp-ingredients",
+      "settings": {
+        "kicker": "What is inside",
+        "heading": "Four ingredients, four jobs"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Rice starch",
+            "text": "Soaks up excess sebum so roots stop looking slick."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Berry seed extract",
+            "text": "Rich in omegas, it lends shine and a soft touch without weight."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Silica",
+            "text": "Adds a dry, airy texture that helps the crown lift."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Light conditioning agent",
+            "text": "Keeps hair smooth and brush-friendly after application."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-how-to": {
+      "type": "blko-pdp-how-to",
+      "settings": {
+        "kicker": "How to use it",
+        "heading": "Spray, wait, massage"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Can being shaken",
+            "title": "Shake it up",
+            "text": "Ten good shakes mix the powder with the propellant so the spray comes out evenly."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Spray applied along a parting",
+            "label": "Step two",
+            "title": "Spray the roots",
+            "text": "Part hair into sections and spray eight inches away, focusing on the crown and temples."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Fingertips massaging the scalp",
+            "label": "Step three",
+            "title": "Wait, then work it in",
+            "text": "Give it a minute to absorb, rub in with fingertips, then brush or style as normal."
           }
         }
       },
@@ -31,112 +193,75 @@
         "block-3"
       ]
     },
-    "pdp-before-after": {
-      "type": "blko-pdp-before-after",
-      "settings": {}
-    },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "pdp-pro-tip": {
+      "type": "blko-pdp-pro-tip",
+      "settings": {
+        "kicker": "Pro tip",
+        "quote": "“Spray it before bed and the powder works overnight, so you wake up with volume instead of grease.”",
+        "author": "— Salon stylist"
+      },
       "blocks": {
         "block-1": {
-          "type": "tab",
-          "settings": {}
+          "type": "point",
+          "settings": {
+            "title": "Pair with",
+            "text": "A silicone-free primer for easier brushing"
+          }
         },
         "block-2": {
-          "type": "tab",
+          "type": "point",
           "settings": {
-            "label": "New drops",
-            "key": "new"
+            "title": "Best for",
+            "text": "Second-day roots and gym days"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Skip if",
+            "text": "Your scalp is freshly washed"
           }
         }
       },
       "block_order": [
         "block-1",
-        "block-2"
+        "block-2",
+        "block-3"
       ]
     },
-    "pdp-reviews": {
-      "type": "blko-pdp-reviews",
-      "settings": {},
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "Quick answers",
+        "heading": "Before you buy"
+      },
       "blocks": {
         "block-1": {
-          "type": "bar",
-          "settings": {}
+          "type": "question",
+          "settings": {
+            "label": "Will it leave a white cast on dark hair?",
+            "text": "No. The powder is fine and clear-drying; massage it in and any trace disappears."
+          }
         },
         "block-2": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
+            "label": "Can I use it on coloured hair?",
+            "text": "Yes. It is colour-safe and keratin-safe, and it will not strip pigment."
           }
         },
         "block-3": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "3 stars",
-            "percent": 4
+            "label": "How often can I use it?",
+            "text": "Two or three days in a row, then wash. Buildup is easier to clear with a clarifying shampoo."
           }
         },
         "block-4": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "2 stars",
-            "percent": 1
-          }
-        },
-        "block-5": {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {}
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Color hold",
-            "key": "coverage"
-          }
-        },
-        "block-9": {
-          "type": "review",
-          "settings": {
-            "text": "My copper stayed vivid for weeks longer than usual, and my hair feels soft instead of straw-like."
-          }
-        },
-        "block-10": {
-          "type": "review",
-          "settings": {
-            "title": "My new wash-day staple",
-            "text": "Lathers well, rinses clean and never weighs my curls down. The hair-type guide made choosing simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Shiny, not greasy",
-            "text": "Gives me the glossy finish I want without any buildup or stickiness.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Coily + bleached · photo review"
+            "label": "What is the difference between sizes?",
+            "text": "Same formula in all sizes. Mini is for travel, standard for daily use, large and jumbo save money per ounce."
           }
         }
       },
@@ -144,32 +269,98 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-4"
       ]
+    },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {
+        "eyebrow": "Works well with",
+        "heading": "Build the full wash-day set",
+        "text": "Three formulas that cover cleanse, treat and style."
+      }
+    },
+    "pdp-recycle": {
+      "type": "blko-pdp-recycle",
+      "settings": {
+        "image_alt": "Empty bottles in a recycling box",
+        "eyebrow": "Planet note",
+        "heading": "Every can can be recycled.",
+        "text": "Empty aerosols and bottles go back into the loop through our take-back box. Find the steps for your area.",
+        "button_label": "How to recycle"
+      }
+    },
+    "pdp-reviews": {
+      "type": "blko-pdp-reviews",
+      "settings": {
+        "eyebrow": "Customer reviews",
+        "average": "4.7",
+        "summary": "Based on 1,812 reviews",
+        "list_heading": "What shoppers say"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "review",
+          "settings": {
+            "title": "Saved my gym days",
+            "text": "Sprayed after class and my roots looked fresh again. No chalky feeling at all.",
+            "footer": "Jordan T. · 2 weeks ago",
+            "tags": "photos oily",
+            "caption": "Type 2b · photo review"
+          }
+        },
+        "block-2": {
+          "type": "review",
+          "settings": {
+            "title": "Finally works on my curls",
+            "text": "I aim at the scalp only and it lifts my roots without frizzing the lengths.",
+            "footer": "Ayo M. · 1 month ago",
+            "tags": "curls",
+            "caption": ""
+          }
+        },
+        "block-3": {
+          "type": "review",
+          "settings": {
+            "title": "Strong scent but great hold",
+            "text": "The berry scent is bold. Power lasts all day, and it brushes out easily.",
+            "footer": "Cam R. · 2 months ago",
+            "tags": "scent",
+            "caption": "Type 1a · photo review",
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-articles": {
+      "type": "blko-pdp-articles",
+      "settings": {
+        "eyebrow": "Keep learning",
+        "heading": "Hair guides that pair with this"
+      }
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
       "settings": {}
     }
   },
   "order": [
     "pdp-product-main",
+    "pdp-badges",
     "pdp-before-after",
+    "pdp-ingredients",
+    "pdp-how-to",
+    "pdp-pro-tip",
+    "pdp-faq",
     "pdp-complete-routine",
-    "product-recommendations",
+    "pdp-recycle",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-articles",
+    "pdp-recently-viewed"
   ]
 }

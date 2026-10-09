@@ -2,26 +2,33 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Makeup",
+        "price_note": "Gel-cream · 9 g",
+        "shade_help_label": "Not sure which tone? Try the shade finder.",
+        "plan_legend": "How would you like it?",
+        "ship_note": "Free standard shipping from $40 · a free scent sample with every order · limit of 3 per customer"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Sheer, buildable colour with a dewy natural finish. Wear it alone or over your usual moisturizer."
+            "label": "What it does",
+            "text": "Pat on for a translucent wash that looks like you just came in from the cold, or build it up for a deeper flush. The bronzer type sits a little warmer and works on cheeks, temples and nose."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Ingredients",
-            "text": "A touch of mineral SPF, light hydration and skin-friendly ingredients in an easy daily formula."
+            "label": "Key ingredients",
+            "text": "A water-light gel base with glycerin, plant squalane and vitamin E, coloured with mineral pigments. No fragrance, vegan, cruelty-free."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
-            "label": "How to use",
-            "text": "Shake well. Pat a few drops on with your fingertips and blend outward. Add more where you want it."
+            "label": "Full ingredient list by shade",
+            "text": "Pigments differ from shade to shade, so each one carries its own list. Open a shade to see it in full."
           }
         }
       },
@@ -31,27 +38,76 @@
         "block-3"
       ]
     },
-    "pdp-before-after": {
-      "type": "blko-pdp-before-after",
-      "settings": {}
+    "pdp-spec-chips": {
+      "type": "blko-pdp-spec-chips",
+      "settings": {
+        "kicker": "At a glance",
+        "quote": "“Looks like a flush, not like makeup.”",
+        "author": "— Customer review"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Buildable",
+            "text": "Sheer to bold in layers"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Vegan + cruelty-free",
+            "text": "No animal ingredients"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Dermatologist-tested",
+            "text": "Fragrance-free formula"
+          }
+        },
+        "block-4": {
+          "type": "point",
+          "settings": {
+            "title": "Eight shades",
+            "text": "Peach to deep cocoa"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
     },
     "pdp-complete-routine": {
       "type": "blko-pdp-complete-routine",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Add on",
+        "heading": "Pairs well with",
+        "text": "A lip balm and a brow pomade that match this shade family, each with its own picker."
+      }
     },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "pdp-sets": {
+      "type": "blko-pdp-sets",
+      "settings": {
+        "eyebrow": "Save with sets",
+        "heading": "Buy together and keep 15 to 21 percent"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Cheek sets"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New in",
-            "key": "new"
+            "key": "new",
+            "label": "Mix-and-match"
           }
         }
       },
@@ -62,17 +118,24 @@
     },
     "pdp-reviews": {
       "type": "blko-pdp-reviews",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ratings",
+        "average": "4.7",
+        "summary": "11,206 ratings",
+        "list_heading": "A line from a customer"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 78
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 15
           }
         },
         "block-3": {
@@ -86,7 +149,7 @@
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 2
           }
         },
         "block-5": {
@@ -103,40 +166,46 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "With photos",
+            "label": "Photos",
             "key": "photos"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Coverage",
-            "key": "coverage"
+            "label": "Sheer wear",
+            "key": "sheer"
           }
         },
         "block-9": {
           "type": "review",
           "settings": {
-            "text": "It evens things out and still looks like me. I love the light, fresh finish."
+            "title": "Blends in seconds",
+            "text": "I dab it on with my ring finger and it is done. It never goes patchy by lunchtime.",
+            "footer": "Nadia R. · 2 weeks ago",
+            "tags": "sheer",
+            "caption": ""
           }
         },
         "block-10": {
           "type": "review",
           "settings": {
-            "title": "My five-minute face",
-            "text": "Easy to blend with fingers and it stays put through a long day. Picking my colour was simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "title": "The only one that suits my skin tone",
+            "text": "Deeper shades often turn ashy on me. This one stayed rich and warm all day.",
+            "footer": "Tamsin O. · 1 month ago",
+            "tags": "photos",
+            "caption": "Cocoa · photo review"
           }
         },
         "block-11": {
           "type": "review",
           "settings": {
-            "title": "Fresh, not shiny",
-            "text": "This gives me the glow I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Orchid · photo review"
+            "title": "Wish the pot was bigger",
+            "text": "I love the flush it gives. Mine is nearly gone after two months of daily use.",
+            "footer": "Ines V. · 3 months ago",
+            "tags": "sheer",
+            "caption": "",
+            "rating": 4
           }
         }
       },
@@ -154,22 +223,109 @@
         "block-11"
       ]
     },
+    "pdp-ingredients": {
+      "type": "blko-pdp-ingredients",
+      "settings": {
+        "kicker": "Key ingredients",
+        "heading": "Four things in the pot"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Glycerin",
+            "text": "Draws water to the surface so the colour never looks dry."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Plant squalane",
+            "text": "Gives the gel its slip and a cushioned, bouncy feel."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Vitamin E",
+            "text": "An antioxidant that helps keep the formula fresh."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Mineral pigments",
+            "text": "Give true colour that builds without turning chalky."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-how-to": {
+      "type": "blko-pdp-how-to",
+      "settings": {
+        "kicker": "How to wear it",
+        "heading": "Three ways to place it"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Fingertip pressing gel-cream colour into the cheek",
+            "label": "Press",
+            "title": "Dab with fingertips",
+            "text": "Start on the apple of the cheek and pat outward until the edge disappears."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Soft flush swept up toward the temple",
+            "label": "Sweep",
+            "title": "Draw it up and out",
+            "text": "Follow the cheekbone toward the temple for a lifted look, or keep it low for a sweet one."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Cheek colour and lip balm side by side",
+            "label": "Layer",
+            "title": "Stack for intensity",
+            "text": "Add a second thin coat once the first has set, and swipe any leftover onto lips."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Get the look",
+        "heading": "You may also like"
+      }
     }
   },
   "order": [
     "pdp-product-main",
-    "pdp-before-after",
+    "pdp-spec-chips",
     "pdp-complete-routine",
-    "product-recommendations",
+    "pdp-sets",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-ingredients",
+    "pdp-how-to",
+    "pdp-recently-viewed"
   ]
 }

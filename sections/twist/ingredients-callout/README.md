@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Hair routine |
-| `eyebrow` | text | Eyebrow | Our story |
-| `heading` | text | Heading | Hair days made happier. |
-| `text` | textarea | Text | Pick up pretty, practical tools and accessories that make every hair day easier. |
-| `button_label` | text | Button label | read more |
+| `image_alt` | text | Image alt text | Person running fingers through curls |
+| `eyebrow` | text | Eyebrow | protein check |
+| `heading` | text | Heading | Not sure if your hair likes protein? |
+| `text` | textarea | Text | Try the stretch test, the feel test and the reaction test. Each takes a few minu |
+| `button_label` | text | Button label | read the guide |
 | `button_url` | url | Button url |  |
 
 ## Blocks

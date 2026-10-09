@@ -1,44 +1,92 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
-      "settings": {},
+    "home-collection-collection-toolbar": {
+      "type": "blko-home-collection-collection-toolbar",
+      "settings": {
+        "breadcrumb": "Bestsellers",
+        "filter_eyebrow": "Narrow the shelf",
+        "filter_heading": "Filter by department"
+      }
+    },
+    "home-collection-collection-grid": {
+      "type": "blko-home-collection-collection-grid",
+      "settings": {
+        "promo_image_alt": "Woman applying cream in a warm mirror",
+        "promo_eyebrow": "Not sure what suits you?",
+        "promo_heading": "Get a routine matched to your skin.",
+        "promo_label": "Take the skin analysis"
+      }
+    },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {}
+    },
+    "collection-for-you": {
+      "type": "blko-collection-for-you",
+      "settings": {
+        "eyebrow": "Picked for you",
+        "heading": "Because you browsed skin care"
+      },
       "blocks": {
         "block-1": {
-          "type": "link",
-          "settings": {}
+          "type": "tab",
+          "settings": {
+            "label": "Recommended"
+          }
         },
         "block-2": {
-          "type": "link",
+          "type": "tab",
           "settings": {
-            "label": "Makeup",
-            "url": "#eyes"
+            "key": "new",
+            "label": "New to the shelf"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "collection-journal": {
+      "type": "blko-collection-journal",
+      "settings": {
+        "eyebrow": "From the journal",
+        "heading": "Read before you buy"
+      }
+    },
+    "collection-faq": {
+      "type": "blko-collection-faq",
+      "settings": {
+        "eyebrow": "Bestsellers, answered",
+        "heading": "Questions about this list"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "What is trending right now?",
+            "text": "Skin-first makeup is leading: tinted serums, balms that do several jobs and color products that carry real skincare actives."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "How often does the list change?",
+            "text": "Every month. Seasons nudge it too, with lighter hydrators in summer and richer creams once it turns cold."
           }
         },
         "block-3": {
-          "type": "link",
+          "type": "question",
           "settings": {
-            "label": "Hair",
-            "url": "#lips"
+            "label": "Will these suit my skin type?",
+            "text": "Check the full ingredient list on each page, or ask an advisor in chat or at a boutique if you have specific sensitivities."
           }
         },
         "block-4": {
-          "type": "link",
+          "type": "question",
           "settings": {
-            "label": "Body",
-            "url": "#care"
-          }
-        },
-        "block-5": {
-          "type": "tile",
-          "settings": {}
-        },
-        "block-6": {
-          "type": "tile",
-          "settings": {
-            "url": "#care",
-            "image_alt": "Body care",
-            "label": "Body"
+            "label": "Can I try a mini or a set first?",
+            "text": "Yes. Many favorites come as travel sizes and discovery sets, filed under Sets + minis."
           }
         }
       },
@@ -46,33 +94,62 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6"
+        "block-4"
       ]
     },
-    "home-collection-collection-toolbar": {
-      "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
-    },
-    "home-collection-collection-grid": {
-      "type": "blko-home-collection-collection-grid",
-      "settings": {}
-    },
-    "home-collection-quick-view-modal": {
-      "type": "blko-home-collection-quick-view-modal",
-      "settings": {}
+    "collection-trust": {
+      "type": "blko-collection-trust",
+      "settings": {
+        "eyebrow": "On every shelf",
+        "heading": "A standard behind every listing",
+        "link_label": "How we vet"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "pillar",
+          "settings": {
+            "title": "Ingredient review",
+            "body": "In-house scientists and outside experts weigh the evidence on each ingredient."
+          }
+        },
+        "block-2": {
+          "type": "pillar",
+          "settings": {
+            "title": "Claims with proof",
+            "body": "Performance numbers must name how many people were tested and how it was measured."
+          }
+        },
+        "block-3": {
+          "type": "pillar",
+          "settings": {
+            "title": "Packaging checked",
+            "body": "Recycled content and disposal guidance are required, not optional."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
-    "home-collection-mega-menu",
     "home-collection-collection-toolbar",
     "home-collection-collection-grid",
     "home-collection-quick-view-modal",
+    "collection-for-you",
+    "collection-journal",
+    "collection-faq",
+    "collection-trust",
     "newsletter"
   ]
 }

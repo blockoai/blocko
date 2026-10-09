@@ -54,10 +54,22 @@
     ]
   },
   {
+    "page": "shade-quiz",
+    "title": "Scent finder",
+    "sectionIds": [
+      "page-header",
+      "beauty-extras-shade-quiz",
+      "beauty-extras-shade-result",
+      "finder-faq",
+      "newsletter"
+    ]
+  },
+  {
     "page": "ingredients",
     "title": "Ingredient glossary",
     "sectionIds": [
       "beauty-extras-ingredient-glossary",
+      "free-from-list",
       "ingredients-callout",
       "newsletter"
     ]
@@ -67,7 +79,7 @@
     "title": "Routine builder",
     "sectionIds": [
       "beauty-extras-routine-builder",
-      "product-recommendations",
+      "routine-extras",
       "newsletter"
     ]
   },
@@ -92,7 +104,8 @@
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-perks",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -101,7 +114,9 @@
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
-      "product-recommendations",
+      "subscription-perks",
+      "top-subscribed",
+      "subscription-faq",
       "newsletter"
     ]
   },
@@ -151,11 +166,10 @@
     "sectionIds": [
       "content-about-hero",
       "content-mission",
-      "isle-claims",
-      "content-values",
+      "about-formulas",
+      "about-packaging",
+      "about-numbers",
       "content-founder-note",
-      "content-story-timeline",
-      "content-press-quotes",
       "newsletter"
     ]
   },
@@ -166,8 +180,7 @@
       "content-contact-hero",
       "content-contact-channels",
       "content-contact-form",
-      "content-contact-hours",
-      "content-contact-map"
+      "content-contact-hours"
     ]
   },
   {
@@ -192,10 +205,11 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
+      "landing-benefits",
       "content-landing-routine",
-      "tabbed-product-grid",
+      "landing-vault",
       "content-landing-proof",
-      "category-slider",
+      "landing-crosssell",
       "newsletter"
     ]
   },
@@ -250,10 +264,12 @@
       "isle-ticker",
       "isle-claims",
       "tabbed-product-grid",
-      "category-slider",
-      "isle-actives",
-      "isle-results",
       "press-slider",
+      "home-jumbo",
+      "home-story",
+      "isle-actives",
+      "home-sets",
+      "home-ticker-closing",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -262,9 +278,10 @@
     "page": "collection",
     "title": "Isle — Shop",
     "sectionIds": [
-      "home-collection-mega-menu",
       "home-collection-collection-toolbar",
+      "collection-trust",
       "home-collection-collection-grid",
+      "collection-concerns",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -275,21 +292,24 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "home-collection-collections-directory",
+      "collections-ways",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
   },
   {
     "page": "pdp",
-    "title": "Coconut Glow Body Oil",
+    "title": "Sunscreen Body Mist",
     "sectionIds": [
       "pdp-product-main",
+      "pdp-sun-facts",
       "pdp-before-after",
+      "pdp-actives",
+      "pdp-how-to",
+      "pdp-faq",
       "pdp-complete-routine",
-      "product-recommendations",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-recently-viewed"
     ]
   },
   {
@@ -298,7 +318,7 @@
     "sectionIds": [
       "pdp-bundle-builder",
       "pdp-bundle-explainer",
-      "product-recommendations",
+      "bundle-picks",
       "newsletter"
     ]
   },

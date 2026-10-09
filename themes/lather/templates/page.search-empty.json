@@ -2,7 +2,16 @@
   "sections": {
     "search-blog-search-empty": {
       "type": "blko-search-blog-search-empty",
-      "settings": {}
+      "settings": {
+        "heading": "Nothing smells like that yet.",
+        "text": "Check the spelling, try a scent family name or head to one of these.",
+        "tip_1": "Try broader words like “soap”, “stick” or “cologne”.",
+        "tip_2_prefix": "Shop the",
+        "tip_2_link": "limited drops",
+        "tip_3_prefix": "Read the",
+        "tip_3_link": "latest guides",
+        "image_alt": "Pine needles on a dark forest floor"
+      }
     }
   },
   "order": [

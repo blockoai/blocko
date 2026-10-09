@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by category",
+        "heading": "Find your first stick."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "New",
+            "url": "#new"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Best sellers",
+            "url": "#best"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Cheeks",
-            "url": "#lips"
+            "label": "Makeup",
+            "url": "#makeup"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Sculpt",
-            "url": "#care"
+            "label": "Skincare",
+            "url": "#skincare"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Accessories",
+            "url": "#accessories"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Bundles",
+            "url": "#bundles"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Sculpt ritual",
-            "label": "Sculpt"
+            "url": "#makeup",
+            "image_alt": "Cream sticks in a row",
+            "label": "Makeup"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#bundles",
+            "image_alt": "Gift set laid out on linen",
+            "label": "Bundles"
           }
         }
       },
@@ -48,12 +72,18 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "home-collection-collections-directory": {
       "type": "blko-home-collection-collections-directory",
-      "settings": {}
+      "settings": {
+        "eyebrow": "All collections",
+        "heading": "Makeup, skincare and the tools between",
+        "text": "Browse by category, by routine or by the savings set that fits your budget."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,7 +91,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [

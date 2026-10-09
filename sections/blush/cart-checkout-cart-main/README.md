@@ -31,33 +31,33 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Upsell collection |  |
-| `note_summary` | text | Note summary | Add a gift note |
+| `note_summary` | text | Note summary | Add a note for a gift |
 | `note_label` | text | Note label | Your message |
 | `note_placeholder` | text | Note placeholder | Write a short note for your recipient. |
-| `upsell_kicker` | text | Upsell kicker | Build the ritual |
-| `upsell_heading` | text | Upsell heading | A little extra care |
-| `upsell_eyebrow` | text | Upsell eyebrow | Pairs well with |
+| `upsell_kicker` | text | Upsell kicker | One more thing |
+| `upsell_heading` | text | Upsell heading | Add a lip balm? |
+| `upsell_eyebrow` | text | Upsell eyebrow | Goes with your bag |
 | `upsell_button` | text | Upsell button | Add |
 | `summary_heading` | text | Summary heading | Order summary |
 | `subtotal_label` | text | Subtotal label | Subtotal |
 | `shipping_label` | text | Shipping label | Shipping |
 | `shipping_text` | text | Shipping text | Calculated at checkout |
 | `total_label` | text | Total label | Total |
-| `checkout_label` | text | Checkout label | Secure checkout |
-| `summary_note` | textarea | Summary note | Taxes and shipping are calculated at checkout. |
-| `eyebrow` | text | Eyebrow | Your shopping bag |
-| `heading` | text | Heading | Bag |
-| `threshold` | range | Free-shipping threshold | 50 |
+| `checkout_label` | text | Checkout label | Check out |
+| `summary_note` | textarea | Summary note | Estimated total. Taxes and shipping are worked out at checkout. |
+| `eyebrow` | text | Eyebrow | Bag |
+| `heading` | text | Heading | Your bag |
+| `threshold` | range | Free-shipping threshold | 40 |
 | `progress_label` | text | Progress label | Shipping progress |
-| `before` | text | Before | Only |
-| `after` | text | After | away from free shipping. |
-| `unlocked` | text | Unlocked | You have unlocked free shipping. |
-| `empty_eyebrow` | text | Empty eyebrow | Your bag |
-| `empty_heading` | text | Empty heading | Your bag is waiting. |
-| `empty_text` | textarea | Empty text | Thoughtful color and care are ready whenever you are. |
-| `empty_button_label` | text | Empty button label | Continue shopping |
+| `before` | text | Before | Just |
+| `after` | text | After | left for free standard shipping. |
+| `unlocked` | text | Unlocked | Standard shipping is on us. |
+| `empty_eyebrow` | text | Empty eyebrow | Bag |
+| `empty_heading` | text | Empty heading | Nothing in here yet. |
+| `empty_text` | textarea | Empty text | Every order also gets a free scent sample while stocks last. |
+| `empty_button_label` | text | Empty button label | Shop all |
 | `empty_image` | image_picker | Empty image |  |
-| `empty_image_alt` | text | Empty image alt text | Makeup and skin on a table |
+| `empty_image_alt` | text | Empty image alt text | Pink flat lay with a smiley sticker |
 
 ## Blocks
 

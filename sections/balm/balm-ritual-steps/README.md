@@ -29,9 +29,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Skincare ritual products |
-| `eyebrow` | text | Eyebrow | The ritual |
-| `heading` | text | Heading | Three simple steps to a glowing complexion |
-| `button_label` | text | Button label | Shop the ritual |
+| `eyebrow` | text | Eyebrow | Place it in three zones |
+| `heading` | text | Heading | Define, warm, light |
+| `button_label` | text | Button label | Shop the three sticks |
 | `button_url` | url | Button url |  |
 
 ## Blocks

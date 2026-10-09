@@ -2,19 +2,32 @@
   "sections": {
     "search-blog-article-hero": {
       "type": "blko-search-blog-article-hero",
-      "settings": {}
+      "settings": {
+        "home_label": "Home",
+        "reading_time": "4 minutes"
+      }
     },
     "search-blog-article-content": {
       "type": "blko-search-blog-article-content",
-      "settings": {}
+      "settings": {
+        "products_heading": "Shop what the guide mentions",
+        "share_label": "Share this guide"
+      }
     },
     "search-blog-related-articles": {
       "type": "blko-search-blog-related-articles",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Keep reading",
+        "heading": "More shave notes"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [

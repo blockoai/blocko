@@ -30,7 +30,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `article` | article | Featured article |  |
 | `eyebrow_prefix` | text | Eyebrow prefix | Featured |
-| `reading_time` | text | Reading time | 5 minutes |
+| `reading_time` | text | Reading time | 4 minutes |
 | `button_label` | text | Button label | Read the story |
 
 ## Blocks

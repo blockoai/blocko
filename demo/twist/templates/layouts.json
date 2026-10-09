@@ -60,13 +60,13 @@
       "page-header",
       "beauty-extras-shade-quiz",
       "beauty-extras-shade-result",
-      "faq",
+      "quiz-faq",
       "newsletter"
     ]
   },
   {
     "page": "ingredients",
-    "title": "Ingredient glossary",
+    "title": "Hair science guide",
     "sectionIds": [
       "beauty-extras-ingredient-glossary",
       "ingredients-callout",
@@ -75,7 +75,7 @@
   },
   {
     "page": "routine-builder",
-    "title": "Routine builder",
+    "title": "Build a bundle",
     "sectionIds": [
       "beauty-extras-routine-builder",
       "product-recommendations",
@@ -92,7 +92,7 @@
   },
   {
     "page": "stockists",
-    "title": "Stockists",
+    "title": "Where to buy",
     "sectionIds": [
       "beauty-extras-stockist-locator",
       "newsletter"
@@ -102,8 +102,10 @@
     "page": "rewards",
     "title": "Rewards",
     "sectionIds": [
+      "rewards-join-banner",
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-perks",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -112,7 +114,10 @@
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
+      "subscription-perks",
+      "subscription-how",
       "product-recommendations",
+      "subscription-faq",
       "newsletter"
     ]
   },
@@ -162,9 +167,9 @@
     "sectionIds": [
       "content-about-hero",
       "content-mission",
-      "content-values",
-      "content-founder-note",
       "content-story-timeline",
+      "content-founder-note",
+      "about-planet",
       "content-press-quotes",
       "newsletter"
     ]
@@ -202,11 +207,10 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
-      "content-landing-routine",
-      "tabbed-product-grid",
-      "content-landing-proof",
-      "category-slider",
+      "landing-promises",
+      "landing-picks",
+      "landing-reasons",
+      "landing-pieces",
       "newsletter"
     ]
   },
@@ -258,13 +262,15 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "twist-promo-hero",
-      "message-band",
       "tabbed-product-grid",
       "category-slider",
       "twist-box-builder",
+      "twist-quiz-cta",
+      "home-whats-new",
+      "home-gift-edits",
       "twist-reviews",
       "twist-story",
-      "press-slider",
+      "home-trust",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -273,11 +279,10 @@
     "page": "collection",
     "title": "Twist — shop",
     "sectionIds": [
-      "home-collection-mega-menu",
-      "twist-quiz-cta",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
       "home-collection-quick-view-modal",
+      "collection-gift-guides",
       "newsletter"
     ]
   },
@@ -285,23 +290,25 @@
     "page": "collections",
     "title": "Twist — Collections",
     "sectionIds": [
-      "home-collection-mega-menu",
       "home-collection-collections-directory",
+      "collections-by-person",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
   },
   {
     "page": "pdp",
-    "title": "Satin Sleep Pillowcase",
+    "title": "Rice Shampoo Bar",
     "sectionIds": [
       "pdp-product-main",
-      "twist-fbt",
       "pdp-before-after",
-      "product-recommendations",
+      "pdp-free-from",
+      "twist-fbt",
+      "pdp-reasons",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-faq",
+      "product-recommendations",
+      "pdp-recently-viewed"
     ]
   },
   {
@@ -310,6 +317,8 @@
     "sectionIds": [
       "pdp-bundle-builder",
       "pdp-bundle-explainer",
+      "bundle-hero-ingredients",
+      "twist-fbt",
       "product-recommendations",
       "newsletter"
     ]

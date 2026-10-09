@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | we've always been obsessed with our customers & we think |
-| `heading` | text | Heading | the feeling is mutual |
+| `kicker` | text | Kicker | our customers talk, we listen |
+| `heading` | text | Heading | loved by 150,000 verified reviewers |
 
 ## Blocks
 

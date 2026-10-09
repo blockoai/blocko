@@ -2,34 +2,51 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Welcome",
+        "heading": "Care for skin, then have fun with colour.",
+        "lede": "A beauty shop that started as a blog where readers shared their routines, and still listens to them first.",
+        "button_label": "Shop bestsellers",
+        "image_alt": "Friends laughing in front of a pink wall"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Close-up of cream cheek colour on a fingertip",
+        "kicker": "Where we started",
+        "heading": "Beauty is built by the people who use it.",
+        "text": "What began in 2014 as an editorial site grew into a shop because readers kept asking for the products they described. We design each one around that conversation, so freedom of expression comes before rules about how to look."
+      }
     },
     "content-values": {
       "type": "blko-content-values",
-      "settings": {},
+      "settings": {
+        "kicker": "What we believe",
+        "heading": "Three ideas behind every product"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "Skin is the main event",
+            "text": "Care comes first; colour is the finishing touch."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "title": "Easy beats elaborate",
+            "text": "Formulas you can use with your fingers, in under five minutes."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
+            "title": "Everyone gets a say",
+            "text": "Customers help pick shades, flavours and scents before they launch."
           }
         }
       },
@@ -39,73 +56,31 @@
         "block-3"
       ]
     },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
-    },
-    "content-story-timeline": {
-      "type": "blko-content-story-timeline",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "milestone",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "milestone",
-          "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of care and color essentials."
-          }
-        },
-        "block-3": {
-          "type": "milestone",
-          "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a routine that moves with your day."
-          }
-        },
-        "block-4": {
-          "type": "milestone",
-          "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
     "content-press-quotes": {
       "type": "blko-content-press-quotes",
-      "settings": {},
+      "settings": {
+        "kicker": "Said about us"
+      },
       "blocks": {
         "block-1": {
           "type": "quote",
-          "settings": {}
+          "settings": {
+            "quote": "“The cheek colour everyone asks about.”",
+            "source": "— Pink Pages magazine"
+          }
         },
         "block-2": {
           "type": "quote",
           "settings": {
-            "quote": "“A practical answer to the overcomplicated routine.”",
-            "source": "— The Daily Edit"
+            "quote": "“A cleanser that earns its shelf space.”",
+            "source": "— The Skin Report"
           }
         },
         "block-3": {
           "type": "quote",
           "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
-            "source": "— Studio Notes"
+            "quote": "“Scent that actually sticks to skin.”",
+            "source": "— Fragrance Weekly"
           }
         }
       },
@@ -117,15 +92,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [
     "content-about-hero",
     "content-mission",
     "content-values",
-    "content-founder-note",
-    "content-story-timeline",
     "content-press-quotes",
     "newsletter"
   ]

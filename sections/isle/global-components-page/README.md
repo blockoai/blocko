@@ -65,7 +65,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `popup_popup_success_message` | text | Popup popup success message | You’re signed up. Keep an eye on your inbox. |
 | `popup_popup_error_message` | text | Popup popup error message | Please enter a valid email address. |
 | `popup_popup_message` | text | Popup popup message | A few thoughtful notes, from time to time. |
-| `cookie_heading` | text | Cookie heading | Cookies, with care. |
+| `cookie_heading` | text | Cookie heading | Cookies, with sets. |
 | `cookie_text` | textarea | Cookie text | We use essential cookies to keep this demonstration running smoothly. |
 | `cookie_reject_label` | text | Cookie reject label | Only essential |
 | `cookie_accept_label` | text | Cookie accept label | Accept all |

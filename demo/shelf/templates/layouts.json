@@ -57,11 +57,11 @@
     "page": "shade-quiz",
     "title": "Shade finder",
     "sectionIds": [
-      "page-header",
+      "finder-header",
       "beauty-extras-shade-quiz",
       "beauty-extras-shade-result",
-      "faq",
-      "newsletter"
+      "shade-faq",
+      "finder-trust"
     ]
   },
   {
@@ -69,6 +69,8 @@
     "title": "Ingredient glossary",
     "sectionIds": [
       "beauty-extras-ingredient-glossary",
+      "ingredient-codes",
+      "ingredient-method",
       "ingredients-callout",
       "newsletter"
     ]
@@ -77,7 +79,9 @@
     "page": "routine-builder",
     "title": "Concern builder",
     "sectionIds": [
+      "analysis-header",
       "beauty-extras-routine-builder",
+      "analysis-method",
       "product-recommendations",
       "newsletter"
     ]
@@ -87,6 +91,7 @@
     "title": "Reviews",
     "sectionIds": [
       "beauty-extras-reviews-hub",
+      "reviews-badges",
       "newsletter"
     ]
   },
@@ -94,7 +99,10 @@
     "page": "stockists",
     "title": "Stockists",
     "sectionIds": [
+      "stores-header",
       "beauty-extras-stockist-locator",
+      "stores-services",
+      "services-perks",
       "newsletter"
     ]
   },
@@ -103,7 +111,11 @@
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-benefits",
+      "rewards-earn",
+      "rewards-redeem",
+      "rewards-referral",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -111,7 +123,10 @@
     "page": "subscriptions",
     "title": "Subscriptions",
     "sectionIds": [
+      "replenish-header",
       "beauty-extras-subscription-manager",
+      "subscription-perks",
+      "replenish-faq",
       "product-recommendations",
       "newsletter"
     ]
@@ -161,13 +176,16 @@
     "title": "Our standard",
     "sectionIds": [
       "content-about-hero",
-      "content-mission",
-      "content-values",
-      "content-founder-note",
-      "content-story-timeline",
-      "content-press-quotes",
-      "shelf-standards",
-      "shelf-clean-grid",
+      "about-pillars",
+      "shelf-pillar-lists",
+      "standard-brands",
+      "standard-badges",
+      "about-recognition",
+      "recycling-facts",
+      "recycling-steps",
+      "recycling-mail",
+      "about-collective",
+      "about-journal",
       "newsletter"
     ]
   },
@@ -188,7 +206,7 @@
     "sectionIds": [
       "content-faq-hero",
       "content-faq-browser",
-      "newsletter"
+      "faq-trust"
     ]
   },
   {
@@ -204,11 +222,11 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
-      "content-landing-routine",
-      "tabbed-product-grid",
-      "content-landing-proof",
-      "category-slider",
+      "offers-rules",
+      "offers-deals",
+      "offers-picks",
+      "offers-points",
+      "offers-more",
       "newsletter"
     ]
   },
@@ -259,17 +277,13 @@
     "title": "Shelf — Home",
     "sectionIds": [
       "home-collection-mega-menu",
-      "hero-campaign",
-      "message-band",
-      "shelf-standards",
+      "home-gift-strip",
+      "home-finder-standard",
       "tabbed-product-grid",
-      "shelf-brand-directory",
-      "category-slider",
-      "feature-driver",
-      "shelf-clean-grid",
-      "shelf-visit",
-      "press-slider",
-      "shelf-rewards",
+      "home-boutiques",
+      "home-empties-club",
+      "home-journal",
+      "home-trust",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -278,10 +292,13 @@
     "page": "collection",
     "title": "Shelf — Shop",
     "sectionIds": [
-      "home-collection-mega-menu",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
       "home-collection-quick-view-modal",
+      "collection-for-you",
+      "collection-journal",
+      "collection-faq",
+      "collection-trust",
       "newsletter"
     ]
   },
@@ -289,9 +306,10 @@
     "page": "collections",
     "title": "Shelf — Collections",
     "sectionIds": [
-      "home-collection-mega-menu",
+      "collections-banner",
       "home-collection-collections-directory",
       "home-collection-quick-view-modal",
+      "collections-trust",
       "newsletter"
     ]
   },
@@ -300,12 +318,14 @@
     "title": "Barrier Repair Serum",
     "sectionIds": [
       "pdp-product-main",
-      "pdp-before-after",
+      "pdp-attributes",
+      "pdp-claims",
+      "pdp-key-ingredients",
+      "pdp-recycling",
       "pdp-complete-routine",
       "product-recommendations",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-recently-viewed"
     ]
   },
   {

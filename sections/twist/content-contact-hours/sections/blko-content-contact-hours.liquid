@@ -46,13 +46,13 @@
       "type": "text",
       "id": "kicker",
       "label": "Kicker",
-      "default": "Support hours"
+      "default": "support times"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "When to reach us"
+      "default": "When we're around"
     }
   ],
   "blocks": [
@@ -82,20 +82,23 @@
       "blocks": [
         {
           "type": "hours",
-          "settings": {}
-        },
-        {
-          "type": "hours",
           "settings": {
-            "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "label": "Weekdays",
+            "value": "9 AM to 6 PM Mountain"
           }
         },
         {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Weekends",
+            "value": "Chat only, 10 AM to 3 PM"
+          }
+        },
+        {
+          "type": "hours",
+          "settings": {
+            "label": "Typical reply",
+            "value": "Within one day"
           }
         }
       ]

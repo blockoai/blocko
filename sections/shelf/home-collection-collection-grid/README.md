@@ -35,11 +35,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Person with healthy skin |
-| `promo_eyebrow` | text | Promo eyebrow | Join the club |
-| `promo_heading` | text | Promo heading | Earn points on every order. |
+| `promo_image_alt` | text | Promo image alt text | Woman applying cream in a warm mirror |
+| `promo_eyebrow` | text | Promo eyebrow | Not sure what suits you? |
+| `promo_heading` | text | Promo heading | Get a routine matched to your skin. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | See perks |
+| `promo_label` | text | Promo label | Take the skin analysis |
 | `load_more_label` | text | Load more label | Load more |
 | `previous_label` | text | Previous label | Previous page |
 

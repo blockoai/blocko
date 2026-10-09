@@ -30,14 +30,14 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
-| `add_label` | text | Add label | Add 3 items to bag |
-| `eyebrow` | text | Eyebrow | Build your set |
-| `heading` | text | Heading | Make your everyday routine. |
-| `text` | text | Text | Choose any three essentials and save 15%. Your set, your pace, your skin. |
-| `summary_eyebrow` | text | Summary eyebrow | Your set |
-| `summary_empty` | text | Summary empty | Choose 3 items to unlock your set |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
-| `price_note` | text | Price note | Bundle price |
+| `add_label` | text | Add label | Add set to bag |
+| `eyebrow` | text | Eyebrow | Bundle and save |
+| `heading` | text | Heading | Sets cost 19 to 26 percent less. |
+| `text` | text | Text | Sets are priced below the sum of their parts. Compare the saving on each before  |
+| `summary_eyebrow` | text | Summary eyebrow | Your set so far |
+| `summary_empty` | text | Summary empty | Pick products to see the set price |
+| `saving_text` | text | Saving text | Each set shows its saving next to the price. |
+| `price_note` | text | Price note | Set price |
 
 ## Blocks
 

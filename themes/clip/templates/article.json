@@ -6,15 +6,26 @@
     },
     "search-blog-article-content": {
       "type": "blko-search-blog-article-content",
-      "settings": {}
+      "settings": {
+        "products_heading": "Shop the look"
+      }
     },
     "search-blog-related-articles": {
       "type": "blko-search-blog-related-articles",
-      "settings": {}
+      "settings": {
+        "eyebrow": "More to flip through",
+        "heading": "Keep browsing",
+        "link_label": "Open"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [

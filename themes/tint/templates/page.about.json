@@ -2,80 +2,78 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "Makeup that is half skincare.",
+        "lede": "We set out to make color you can wear all day and still feel good about when you wash it off.",
+        "button_label": "Meet the founder",
+        "image_alt": "Person with a flushed cheek and glossy lip in warm light"
+      }
+    },
+    "content-founder-note": {
+      "type": "blko-content-founder-note",
+      "settings": {
+        "kicker": "From the founder",
+        "quote": "Good makeup should feel like a favorite sweater: easy, flattering, and kind to you.",
+        "note": "A working makeup artist with sensitive skin built the first formulas in a small lab, then tested every one on faces like her own.",
+        "name": "Our founder",
+        "role": "Makeup artist and creator",
+        "image_alt": "Founder blending cream blush on a client"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Tubes and pots in pastel packaging on a colored block",
+        "kicker": "The difference",
+        "heading": "Clinically checked color, not just color.",
+        "text": "Every formula gets tested for results as well as payoff. We report the numbers, show the actives, and keep the claims to what the studies support."
+      }
     },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
+    "about-pillars": {
+      "type": "blko-about-pillars",
+      "settings": {
+        "kicker": "Five things we hold to",
+        "heading": "What sets our formulas apart"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "Polished, not painted",
+            "text": "Good makeup, not no makeup. Look put together while still looking like yourself."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "title": "Color made simple",
+            "text": "Our founder learned color mixing in a portrait class, which is why shades blend on the first pass."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
-    },
-    "content-story-timeline": {
-      "type": "blko-content-story-timeline",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "milestone",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "milestone",
-          "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of care and color essentials."
-          }
-        },
-        "block-3": {
-          "type": "milestone",
-          "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a routine that moves with your day."
+            "title": "Built for sensitive skin",
+            "text": "Each product is dermatologist-tested on reactive skin before it launches."
           }
         },
         "block-4": {
-          "type": "milestone",
+          "type": "value",
           "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
+            "number": "04",
+            "title": "Clean past the lists",
+            "text": "We go beyond popular banned-ingredient lists with our own, longer one."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Comfort you can feel",
+            "text": "Light textures that let skin breathe, from morning to night."
           }
         }
       },
@@ -83,50 +81,34 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4"
+        "block-4",
+        "block-5"
       ]
     },
-    "content-press-quotes": {
-      "type": "blko-content-press-quotes",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "quote",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "quote",
-          "settings": {
-            "quote": "“A practical answer to the overcomplicated routine.”",
-            "source": "— The Daily Edit"
-          }
-        },
-        "block-3": {
-          "type": "quote",
-          "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
-            "source": "— Studio Notes"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
+    "about-clean": {
+      "type": "blko-about-clean",
+      "settings": {
+        "image_alt": "Skincare actives in small glass dishes",
+        "kicker": "Our clean standard",
+        "heading": "Skin-friendly from the first ingredient.",
+        "text": "We exclude thousands of ingredients and publish the full list for every product and shade, so you can read what you are putting on your face."
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [
     "content-about-hero",
-    "content-mission",
-    "content-values",
     "content-founder-note",
-    "content-story-timeline",
-    "content-press-quotes",
+    "content-mission",
+    "about-pillars",
+    "about-clean",
     "newsletter"
   ]
 }

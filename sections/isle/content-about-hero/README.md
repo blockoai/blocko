@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Our story |
-| `heading` | text | Heading | Paradise belongs in real life. |
-| `lede` | textarea | Lede | We make clean, sunny body care for the rituals that help you feel like yourself. |
+| `heading` | text | Heading | A getaway for everybody. |
+| `lede` | textarea | Lede | We began with one wish: body care that feels like the first day of a holiday, mi |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Meet the founders |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with glowing sun-kissed skin |
+| `image_alt` | text | Image alt text | Two friends sharing a towel on a sunlit beach |
 
 ## Blocks
 

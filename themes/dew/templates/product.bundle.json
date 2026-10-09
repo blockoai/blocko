@@ -2,30 +2,41 @@
   "sections": {
     "pdp-bundle-builder": {
       "type": "blko-pdp-bundle-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build a set",
+        "heading": "Pick three, save around eight percent.",
+        "text": "Choose any three from skin and lip + cheek. The saving shows as an original value next to your set price.",
+        "saving_text": "Three picks unlock the set price."
+      }
     },
     "pdp-bundle-explainer": {
       "type": "blko-pdp-bundle-explainer",
-      "settings": {},
+      "settings": {
+        "eyebrow": "How sets work",
+        "heading": "Three picks, one lower price."
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Pick a slot",
+            "text": "Choose one product for each of the three slots."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your set price updates as you select."
+            "heading": "Select the shade or size",
+            "text": "Set the shade, scent or size before the item goes in the set."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible routine you can return to every day."
+            "heading": "See the original value",
+            "text": "The set price sits under the value of each item priced separately."
           }
         }
       },
@@ -37,7 +48,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Round it out",
+        "heading": "Little sizes for the bag"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -58,7 +72,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [

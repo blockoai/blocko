@@ -27,7 +27,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `heading` | text | Heading | Shop by category |
+| `heading` | text | Heading | Pick a department |
 
 ## Blocks
 

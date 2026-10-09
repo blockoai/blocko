@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with a fresh natural makeup finish |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Color that keeps up. |
-| `text` | textarea | Text | Comfortable, buildable essentials made for a face that moves through a full day. |
+| `image_alt` | text | Image alt text | Person with a tinted-skincare complexion and rosy cheeks |
+| `kicker` | text | Kicker | Tinted skincare |
+| `heading` | text | Heading | Five reasons to wear your skincare. |
+| `text` | textarea | Text | A short guide to base products that tint, protect and treat at the same time. |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Pick a shade |
+| `button_label` | text | Button label | Read the reasons |
 
 ## Blocks
 

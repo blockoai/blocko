@@ -2,34 +2,53 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "Two relatives, one drawer of clips.",
+        "lede": "We began by hand-finishing a few accessories for friends. Today the drawer holds clips, scrunchies, brushes and a small hair-care line, sold online and through large retailers.",
+        "button_label": "Read the founder note",
+        "image_alt": "Two relatives sorting claw clips on a table"
+      }
     },
-    "content-mission": {
-      "type": "blko-content-mission",
-      "settings": {}
+    "content-founder-note": {
+      "type": "blko-content-founder-note",
+      "settings": {
+        "kicker": "From the founders",
+        "quote": "“We wanted accessories that felt like a treat, and hair care that smelled like one.”",
+        "note": "A short note from the two relatives behind the label about how a hobby became a business.",
+        "name": "Founding duo",
+        "role": "Co-founders",
+        "image_alt": "Co-founders laughing beside a rack of clips"
+      }
     },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
+    "about-values": {
+      "type": "blko-about-values",
+      "settings": {
+        "kicker": "What we believe",
+        "heading": "Playful, kind and made well"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "Bold and effortless",
+            "text": "Accessories should invite you to try something, then stay out of your way."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about materials, feedback, and better ways to make everyday pieces."
+            "title": "Made for every hair type",
+            "text": "Clips grip thick curls and fine strands; care formulas are tested across textures."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your clip drawer."
+            "title": "Vegan and cruelty-free",
+            "text": "No animal ingredients, no animal testing, and a third-party certification to prove it."
           }
         }
       },
@@ -39,43 +58,42 @@
         "block-3"
       ]
     },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
-    },
-    "content-story-timeline": {
-      "type": "blko-content-story-timeline",
-      "settings": {},
+    "about-materials": {
+      "type": "blko-about-materials",
+      "settings": {
+        "kicker": "Materials",
+        "heading": "What our pieces are made from"
+      },
       "blocks": {
         "block-1": {
-          "type": "milestone",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Plant-based acetate",
+            "text": "Clips are cut and polished by hand from a biodegradable material."
+          }
         },
         "block-2": {
-          "type": "milestone",
+          "type": "value",
           "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of clips and accessories."
+            "number": "02",
+            "title": "Bamboo handles",
+            "text": "Brush bases are bamboo, with bristles chosen to be gentle on the scalp."
           }
         },
         "block-3": {
-          "type": "milestone",
+          "type": "value",
           "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New colors and finishes make it easier to build a look that moves with your day."
+            "number": "03",
+            "title": "Upcycled cotton",
+            "text": "Everyday scrunchies are sewn locally from leftover fabric."
           }
         },
         "block-4": {
-          "type": "milestone",
+          "type": "value",
           "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
+            "number": "04",
+            "title": "Charmeuse silk",
+            "text": "Our silk bands are cut from smooth French charmeuse."
           }
         }
       },
@@ -86,47 +104,98 @@
         "block-4"
       ]
     },
-    "content-press-quotes": {
-      "type": "blko-content-press-quotes",
-      "settings": {},
+    "content-story-timeline": {
+      "type": "blko-content-story-timeline",
+      "settings": {
+        "kicker": "Milestones",
+        "heading": "From craft fairs to the beauty aisle"
+      },
       "blocks": {
         "block-1": {
-          "type": "quote",
-          "settings": {}
+          "type": "milestone",
+          "settings": {
+            "label": "2009",
+            "datetime": "2009",
+            "title": "The first batch",
+            "text": "A mother and daughter sew and assemble the first accessories at home."
+          }
         },
         "block-2": {
-          "type": "quote",
+          "type": "milestone",
           "settings": {
-            "quote": "“A practical answer to the everyday hair struggle.”",
-            "source": "— The Daily Edit"
+            "label": "2015",
+            "datetime": "2015",
+            "title": "Claw clips take over",
+            "text": "A chunky acetate clip becomes the label's best seller."
           }
         },
         "block-3": {
-          "type": "quote",
+          "type": "milestone",
           "settings": {
-            "quote": "“The colors have a distinctly sweet, lived-in ease.”",
-            "source": "— Studio Notes"
+            "label": "2022",
+            "datetime": "2022",
+            "title": "Hair care arrives",
+            "text": "A scented mist opens the door to masks, oils and styling."
+          }
+        },
+        "block-4": {
+          "type": "milestone",
+          "settings": {
+            "label": "Today",
+            "datetime": "2026",
+            "title": "In stores nationwide",
+            "text": "The line reaches department stores and a major beauty chain."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4"
+      ]
+    },
+    "about-favorites": {
+      "type": "blko-about-favorites",
+      "settings": {
+        "eyebrow": "Start here",
+        "heading": "A few favorites"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "New + limited"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [
     "content-about-hero",
-    "content-mission",
-    "content-values",
     "content-founder-note",
+    "about-values",
+    "about-materials",
     "content-story-timeline",
-    "content-press-quotes",
+    "about-favorites",
     "newsletter"
   ]
 }

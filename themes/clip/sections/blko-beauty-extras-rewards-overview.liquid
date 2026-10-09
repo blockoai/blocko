@@ -332,25 +332,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "The collectors' club"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "More clips, more rewards."
+      "default": "Every clip you love earns a gem."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the things you love, and enjoy a little more from every order."
+      "default": "Join for free, stack gems on every order and trade them for drops, restocks and freebies before anyone else sees them."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "Join the club"
     },
     {
       "type": "image_picker",
@@ -361,31 +361,31 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Hair accessories flat lay"
+      "default": "Gem-shaped charms beside a claw clip"
     },
     {
       "type": "text",
       "id": "earn_eyebrow",
       "label": "Earn eyebrow",
-      "default": "How it works"
+      "default": "Earning gems"
     },
     {
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "Join, shop, redeem."
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "Club levels"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "More clips, more perks."
+      "default": "Collect more, unlock more."
     }
   ],
   "blocks": [
@@ -446,41 +446,49 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Join and sign in",
+            "text": "Create an account, then sign in at checkout so your gems are tracked."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Stack gems",
+            "text": "Earn five gems for every dollar spent, plus bonus gems for a birthday treat and for sharing your look."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Redeem at checkout",
+            "text": "Trade gems for dollars off, a mini mist or a place on a restock list."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Gloss",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Charm",
+            "points": "0+ gems",
+            "perks": "Gems on every order · birthday surprise"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Gem",
+            "points": "1,000+ gems",
+            "perks": "Early access to drops · free shipping on every order"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Crown",
+            "points": "3,000+ gems",
+            "perks": "First pick of limited colours · members-only gifts"
           }
         }
       ]

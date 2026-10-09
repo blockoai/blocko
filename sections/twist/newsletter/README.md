@@ -27,13 +27,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `button_label` | text | Button label | subscribe |
+| `button_label` | text | Button label | sign me up |
 | `placeholder` | text | Placeholder | you@example.com |
-| `eyebrow` | text | Eyebrow | let's connect! |
-| `heading` | text | Heading | Tips, drops and early sale access, straight to your inbox. |
+| `eyebrow` | text | Eyebrow | get 15% off |
+| `heading` | text | Heading | join the list |
 | `email_label` | text | Email label | Email address |
 | `success_message` | text | Success message | Thanks for joining the club. |
-| `message` | text | Message | Occasional notes on hair, gifts and good deals. |
+| `message` | text | Message | Early sale access, scent drops and the odd hair tip, no more than once a week. |
 
 ## Blocks
 

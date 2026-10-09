@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | the facts |
-| `heading` | text | Heading | what it's like. |
+| `eyebrow` | text | Eyebrow | At a glance |
+| `heading` | text | Heading | the facts. |
 
 ## Blocks
 

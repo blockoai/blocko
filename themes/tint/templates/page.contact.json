@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Contact",
+        "heading": "Need a hand?",
+        "text": "Message the team about shade matching, an order or a formula. Chat is open on weekdays.",
+        "link_label": "Open chat"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,59 +15,57 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "text": "Orders, returns and questions about formulas."
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
-          }
-        },
-        "block-3": {
-          "type": "channel",
-          "settings": {
-            "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Live chat",
+            "text": "Real-time shade help on weekdays.",
+            "url": "#chat",
+            "link_label": "Chat with us"
           }
         }
       },
       "block_order": [
         "block-1",
-        "block-2",
-        "block-3"
+        "block-2"
       ]
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Drop a line",
+        "heading": "Tell us what is going on",
+        "text": "Add your order number if it is about a purchase. Someone replies within a day.",
+        "button_label": "Send message"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "Orders and shipping"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product guidance"
+            "label": "Shade help"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Returns and swaps"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Ingredient question"
           }
         }
       },
@@ -75,24 +78,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Availability",
+        "heading": "Chat and email hours"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Monday to Friday",
+            "value": "9 AM to 5 PM Pacific"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
             "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "value": "Email only"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Reply time",
+            "value": "Within one business day"
           }
         }
       },
@@ -101,17 +110,12 @@
         "block-2",
         "block-3"
       ]
-    },
-    "content-contact-map": {
-      "type": "blko-content-contact-map",
-      "settings": {}
     }
   },
   "order": [
     "content-contact-hero",
     "content-contact-channels",
     "content-contact-form",
-    "content-contact-hours",
-    "content-contact-map"
+    "content-contact-hours"
   ]
 }

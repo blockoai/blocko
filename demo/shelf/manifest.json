@@ -18,9 +18,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-register",
@@ -41,9 +39,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-reset-password",
@@ -64,9 +60,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-activate",
@@ -87,9 +81,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-dashboard",
@@ -113,9 +105,7 @@
     },
     "notes": {
       "shopify": "needs app: none. Account details link is a merchant URL setting (classic customer accounts have no details page)."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-order-list",
@@ -139,9 +129,7 @@
     },
     "notes": {
       "shopify": "Shows the 20 most recent orders (no pagination); rendered only when the customer has orders."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-empty-orders",
@@ -165,9 +153,7 @@
     },
     "notes": {
       "shopify": "Rendered only when the customer has no orders (hidden demo state in the HTML library)."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-order-detail",
@@ -191,9 +177,7 @@
     },
     "notes": {
       "shopify": "Reads the Shopify order object: use on the customer order template."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-addresses",
@@ -217,9 +201,7 @@
     },
     "notes": {
       "shopify": "Remove posts a real delete to the address URL; edit opens a per-address {% form 'customer_address' %} panel."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-address-form",
@@ -240,9 +222,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-help-note",
@@ -263,9 +243,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-form-field",
@@ -286,9 +264,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-password-field",
@@ -309,9 +285,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-form-submit",
@@ -332,9 +306,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-auth-switch",
@@ -355,9 +327,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-navigation",
@@ -378,9 +348,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-order-row",
@@ -404,9 +372,7 @@
     },
     "notes": {
       "shopify": "Reads the signed-in customer object: use on the customer account templates."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-order-item",
@@ -430,9 +396,7 @@
     },
     "notes": {
       "shopify": "Reads the Shopify order object: use on the customer order template."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-order-summary",
@@ -456,9 +420,7 @@
     },
     "notes": {
       "shopify": "Reads the Shopify order object: use on the customer order template."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-address-card",
@@ -482,9 +444,7 @@
     },
     "notes": {
       "shopify": "Shows the customer's default address; Edit links to the addresses page."
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "account-status-badge",
@@ -505,9 +465,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 3055,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-shade-quiz",
@@ -531,9 +489,7 @@
     },
     "notes": {
       "shopify": "Client-side quiz (answers are not sent anywhere); the result section reads its recommended tints from a collection setting and does not filter them by the answers."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-shade-result",
@@ -547,12 +503,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1770925758916-44e22e159542",
-        "page_url": "https://unsplash.com/photos/photo-1770925758916-44e22e159542"
-      },
-      {
-        "photo_id": "photo-1641312054216-b4f5425bdde3",
-        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
@@ -561,9 +513,7 @@
     },
     "notes": {
       "shopify": "Tints come from the collection setting; each card adds that product's first variant through a real product form."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-ingredient-glossary",
@@ -585,9 +535,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9646,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-routine-builder",
@@ -601,16 +549,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1775642548371-861fab6cea75",
-        "page_url": "https://unsplash.com/photos/photo-1775642548371-861fab6cea75"
+        "photo_id": "photo-1585945037805-5fd82c2e60b1",
+        "page_url": "https://unsplash.com/photos/photo-1585945037805-5fd82c2e60b1"
       },
       {
-        "photo_id": "photo-1620946419976-46b6e49cb4b3",
-        "page_url": "https://unsplash.com/photos/photo-1620946419976-46b6e49cb4b3"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       },
       {
-        "photo_id": "photo-1736167442640-1988e440297c",
-        "page_url": "https://unsplash.com/photos/photo-1736167442640-1988e440297c"
+        "photo_id": "photo-1612817288484-6f916006741a",
+        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
       }
     ],
     "targets": {
@@ -619,9 +567,7 @@
     },
     "notes": {
       "shopify": "One product per step from the collection setting (eyebrow = product type; daily pick = first variant, alternate = last variant). The total is computed in the browser and the add button posts the picked variants to /cart/add.js."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-reviews-hub",
@@ -636,20 +582,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1761095870661-c4ae15cac605",
-        "page_url": "https://unsplash.com/photos/photo-1761095870661-c4ae15cac605"
-      },
-      {
-        "photo_id": "photo-1580694500583-21a6189e6b56",
-        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
-      },
-      {
         "photo_id": "photo-1546538994-4f15d0aa966f",
         "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       },
       {
-        "photo_id": "photo-1559881230-1af605ca3f67",
-        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
+        "photo_id": "photo-1625480858880-e23be2eaaba6",
+        "page_url": "https://unsplash.com/photos/photo-1625480858880-e23be2eaaba6"
+      },
+      {
+        "photo_id": "photo-1641312054216-b4f5425bdde3",
+        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
       }
     ],
     "targets": {
@@ -658,9 +600,7 @@
     },
     "notes": {
       "shopify": "Static blocks are the fallback; when the Blocko Worker API answers GET {settings.blocko_api_base}/reviews?product_id= the summary, bars and reviews are replaced with live data (needs the Blocko app proxy)."
-    },
-    "jsBytes": 9646,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-stockist-locator",
@@ -684,9 +624,7 @@
     },
     "notes": {
       "shopify": "Static stockists are the fallback; when the Blocko Worker API answers GET {settings.blocko_api_base}/stockists the list is replaced (the country filter keeps working; lat/lng/q search is not wired). The map is illustrative (no map provider)."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-rewards-overview",
@@ -700,8 +638,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1749137315928-bc96451fa4c0",
-        "page_url": "https://unsplash.com/photos/photo-1749137315928-bc96451fa4c0"
+        "photo_id": "photo-1685921233963-67a2a8b6735e",
+        "page_url": "https://unsplash.com/photos/photo-1685921233963-67a2a8b6735e"
       }
     ],
     "targets": {
@@ -710,9 +648,7 @@
     },
     "notes": {
       "shopify": "needs app: UI shell only (join links to the customer registration page)."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-subscription-manager",
@@ -726,8 +662,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1567721913486-6585f069b332",
-        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
+        "photo_id": "photo-1612817288484-6f916006741a",
+        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
       }
     ],
     "targets": {
@@ -736,9 +672,7 @@
     },
     "notes": {
       "shopify": "needs app: UI shell only; the buttons update local page state."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-shade-answer",
@@ -759,9 +693,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-shade-match",
@@ -782,9 +714,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-ingredient-row",
@@ -805,9 +735,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-ingredient-detail",
@@ -828,9 +756,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-routine-step",
@@ -851,9 +777,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-routine-total",
@@ -874,9 +798,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-rating-summary",
@@ -897,9 +819,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-review-card",
@@ -920,9 +840,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-ugc-tile",
@@ -936,16 +854,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1542131597-a4390333d136",
-        "page_url": "https://unsplash.com/photos/photo-1542131597-a4390333d136"
+        "photo_id": "photo-1728949202477-bad2935775cb",
+        "page_url": "https://unsplash.com/photos/photo-1728949202477-bad2935775cb"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-store-card",
@@ -966,9 +882,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-country-filter",
@@ -989,9 +903,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-rewards-tier",
@@ -1015,9 +927,7 @@
     },
     "notes": {
       "shopify": "needs app: UI shell only."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-earn-card",
@@ -1041,9 +951,7 @@
     },
     "notes": {
       "shopify": "needs app: UI shell only."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-subscription-item",
@@ -1057,8 +965,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1567721913486-6585f069b332",
-        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
+        "photo_id": "photo-1612817288484-6f916006741a",
+        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
       }
     ],
     "targets": {
@@ -1067,9 +975,7 @@
     },
     "notes": {
       "shopify": "needs app: shows the picked product as a UI shell."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-frequency-picker",
@@ -1093,9 +999,7 @@
     },
     "notes": {
       "shopify": "needs app: UI shell only."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "beauty-extras-subscription-actions",
@@ -1119,9 +1023,7 @@
     },
     "notes": {
       "shopify": "needs app: UI shell only."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-cart-main",
@@ -1136,20 +1038,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1612817288484-6f916006741a",
-        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       },
       {
         "photo_id": "photo-1704307068094-c2c88c467014",
         "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
       },
       {
-        "photo_id": "photo-1689193504223-cc83c0122a7b",
-        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
-      },
-      {
-        "photo_id": "photo-1615595969182-8fff50d3152f",
-        "page_url": "https://unsplash.com/photos/photo-1615595969182-8fff50d3152f"
+        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
+        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
       }
     ],
     "targets": {
@@ -1158,9 +1056,7 @@
     },
     "notes": {
       "shopify": "Quantity, remove and upsell-add call /cart/change.js and /cart/add.js from the group module; the cart form posts to /cart with checkout."
-    },
-    "jsBytes": 8399,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-cart-empty",
@@ -1174,16 +1070,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
-        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
+        "photo_id": "photo-1645622892695-d34014b2f5f4",
+        "page_url": "https://unsplash.com/photos/photo-1645622892695-d34014b2f5f4"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 7485,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-tracking-lookup",
@@ -1208,9 +1102,7 @@
     },
     "notes": {
       "shopify": "needs app: Shopify has no guest order-lookup endpoint. The form calls GET {blocko_api_base}/order-tracking?order=&email= (expects { step: 1-4 }; the Worker answers 501 until SHOPIFY_ADMIN_TOKEN is configured, and the form then shows the 'not available' message); it never fakes a status."
-    },
-    "jsBytes": 8399,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-not-found",
@@ -1225,16 +1117,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1771033834141-023d630b3965",
-        "page_url": "https://unsplash.com/photos/photo-1771033834141-023d630b3965"
+        "photo_id": "photo-1761095870661-c4ae15cac605",
+        "page_url": "https://unsplash.com/photos/photo-1761095870661-c4ae15cac605"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8399,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-drawer-preview",
@@ -1249,20 +1139,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1612817288484-6f916006741a",
-        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
-      },
-      {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8399,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-service-strip",
@@ -1283,9 +1167,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 7485,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-confirmed",
@@ -1306,9 +1188,7 @@
     "targets": {
       "html": "ok",
       "shopify": "gap: not migrated to neutral template"
-    },
-    "jsBytes": 7485,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-order-status",
@@ -1323,16 +1203,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1736167442640-1988e440297c",
-        "page_url": "https://unsplash.com/photos/photo-1736167442640-1988e440297c"
+        "photo_id": "photo-1612817288484-6f916006741a",
+        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "gap: not migrated to neutral template"
-    },
-    "jsBytes": 8399,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-order-actions",
@@ -1353,9 +1231,7 @@
     "targets": {
       "html": "ok",
       "shopify": "gap: not migrated to neutral template"
-    },
-    "jsBytes": 7485,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-line-item",
@@ -1370,16 +1246,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1612817288484-6f916006741a",
-        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8399,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-free-shipping",
@@ -1400,9 +1274,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 7485,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-drawer-upsell",
@@ -1417,16 +1289,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8399,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-checkout-drawer-shipping",
@@ -1447,9 +1317,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 7485,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-about-hero",
@@ -1463,16 +1331,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1729778783875-103c8545dc65",
-        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
+        "photo_id": "photo-1754321159253-8c9bd02cfb4c",
+        "page_url": "https://unsplash.com/photos/photo-1754321159253-8c9bd02cfb4c"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-mission",
@@ -1493,9 +1359,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-values",
@@ -1516,9 +1380,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-founder-note",
@@ -1532,16 +1394,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1742631454377-3eb6645b4780",
-        "page_url": "https://unsplash.com/photos/photo-1742631454377-3eb6645b4780"
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-story-timeline",
@@ -1562,9 +1422,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-press-quotes",
@@ -1585,9 +1443,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-contact-hero",
@@ -1608,9 +1464,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-contact-channels",
@@ -1631,9 +1485,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-contact-form",
@@ -1654,9 +1506,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-contact-hours",
@@ -1677,9 +1527,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-contact-map",
@@ -1700,9 +1548,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-faq-hero",
@@ -1723,9 +1569,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-faq-browser",
@@ -1746,9 +1590,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-policy-hero",
@@ -1769,9 +1611,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-policy-document",
@@ -1792,9 +1632,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-landing-hero",
@@ -1808,16 +1646,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1633681121751-e4a0392602b8",
-        "page_url": "https://unsplash.com/photos/photo-1633681121751-e4a0392602b8"
+        "photo_id": "photo-1645622892695-d34014b2f5f4",
+        "page_url": "https://unsplash.com/photos/photo-1645622892695-d34014b2f5f4"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-landing-routine",
@@ -1831,24 +1667,22 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1620946419976-46b6e49cb4b3",
-        "page_url": "https://unsplash.com/photos/photo-1620946419976-46b6e49cb4b3"
+        "photo_id": "photo-1560129986-baba295cf72c",
+        "page_url": "https://unsplash.com/photos/photo-1560129986-baba295cf72c"
       },
       {
-        "photo_id": "photo-1668440241100-0fa1d7971e27",
-        "page_url": "https://unsplash.com/photos/photo-1668440241100-0fa1d7971e27"
+        "photo_id": "photo-1733660227083-12b78ad0073d",
+        "page_url": "https://unsplash.com/photos/photo-1733660227083-12b78ad0073d"
       },
       {
-        "photo_id": "photo-1708183350087-1063ce67ddc4",
-        "page_url": "https://unsplash.com/photos/photo-1708183350087-1063ce67ddc4"
+        "photo_id": "photo-1636846528145-46195929433c",
+        "page_url": "https://unsplash.com/photos/photo-1636846528145-46195929433c"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-landing-proof",
@@ -1869,9 +1703,409 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
+  },
+  {
+    "id": "pdp-claims",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign proof",
+    "description": "Community proof and clear service reassurance.",
+    "file": "shelf/sections/landing--pdp-claims.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "pdp-key-ingredients",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--pdp-key-ingredients.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "pdp-recycling",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign routine",
+    "description": "Three-step editorial routine with practical product guidance.",
+    "file": "shelf/sections/landing--pdp-recycling.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1663659504585-8ae937f2337e",
+        "page_url": "https://unsplash.com/photos/photo-1663659504585-8ae937f2337e"
+      },
+      {
+        "photo_id": "photo-1567721913486-6585f069b332",
+        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
+      },
+      {
+        "photo_id": "photo-1641312054216-b4f5425bdde3",
+        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "rewards-benefits",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--rewards-benefits.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "rewards-earn",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--rewards-earn.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "rewards-redeem",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign proof",
+    "description": "Community proof and clear service reassurance.",
+    "file": "shelf/sections/landing--rewards-redeem.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "subscription-perks",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--subscription-perks.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "analysis-method",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--analysis-method.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "ingredient-codes",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--ingredient-codes.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "ingredient-method",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--ingredient-method.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "about-pillars",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--about-pillars.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "standard-brands",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--standard-brands.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "about-recognition",
+    "kind": "section",
+    "category": "about",
+    "name": "Press quotes",
+    "description": "Editorial proof-point strip with generic publication placeholders.",
+    "file": "shelf/sections/about--about-recognition.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "recycling-facts",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign proof",
+    "description": "Community proof and clear service reassurance.",
+    "file": "shelf/sections/landing--recycling-facts.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "recycling-steps",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign routine",
+    "description": "Three-step editorial routine with practical product guidance.",
+    "file": "shelf/sections/landing--recycling-steps.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1663659504585-8ae937f2337e",
+        "page_url": "https://unsplash.com/photos/photo-1663659504585-8ae937f2337e"
+      },
+      {
+        "photo_id": "photo-1612817288484-6f916006741a",
+        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+      },
+      {
+        "photo_id": "photo-1641312054216-b4f5425bdde3",
+        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "offers-deals",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign routine",
+    "description": "Three-step editorial routine with practical product guidance.",
+    "file": "shelf/sections/landing--offers-deals.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1685921233963-67a2a8b6735e",
+        "page_url": "https://unsplash.com/photos/photo-1685921233963-67a2a8b6735e"
+      },
+      {
+        "photo_id": "photo-1580694500583-21a6189e6b56",
+        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
+      },
+      {
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "offers-points",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign proof",
+    "description": "Community proof and clear service reassurance.",
+    "file": "shelf/sections/landing--offers-points.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "services-perks",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "shelf/sections/about--services-perks.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
   },
   {
     "id": "content-contact-channel-card",
@@ -1892,9 +2126,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-contact-form-fields",
@@ -1915,9 +2147,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-faq-accordion-item",
@@ -1938,9 +2168,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-faq-search",
@@ -1961,9 +2189,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-policy-toc",
@@ -1984,9 +2210,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-press-quote",
@@ -2007,9 +2231,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-value-card",
@@ -2030,9 +2252,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "content-support-hours",
@@ -2053,9 +2273,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 2390,
-    "industry": "beauty"
+    }
   },
   {
     "id": "announcement-bar",
@@ -2074,9 +2292,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "header",
@@ -2095,9 +2311,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "mobile-drawer-menu",
@@ -2116,9 +2330,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-bar",
@@ -2130,16 +2342,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "hero-campaign",
@@ -2155,8 +2365,8 @@
         "page_url": "https://unsplash.com/photos/photo-1754321159253-8c9bd02cfb4c"
       },
       {
-        "photo_id": "photo-1736167443280-f63c706c724d",
-        "page_url": "https://unsplash.com/photos/photo-1736167443280-f63c706c724d"
+        "photo_id": "photo-1542131597-a4390333d136",
+        "page_url": "https://unsplash.com/photos/photo-1542131597-a4390333d136"
       },
       {
         "photo_id": "photo-1585945037805-5fd82c2e60b1",
@@ -2166,9 +2376,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "message-band",
@@ -2187,9 +2395,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "tabbed-product-grid",
@@ -2203,24 +2409,22 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
+      },
+      {
         "photo_id": "photo-1704307068094-c2c88c467014",
         "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
       },
       {
-        "photo_id": "photo-1689193504223-cc83c0122a7b",
-        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
-      },
-      {
-        "photo_id": "photo-1615595969182-8fff50d3152f",
-        "page_url": "https://unsplash.com/photos/photo-1615595969182-8fff50d3152f"
+        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
+        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 435,
-    "industry": "beauty"
+    }
   },
   {
     "id": "category-slider",
@@ -2236,24 +2440,22 @@
         "page_url": "https://unsplash.com/photos/photo-1758188753373-5b01a0fc6d9d"
       },
       {
-        "photo_id": "photo-1567721913486-6585f069b332",
-        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
+        "photo_id": "photo-1641312054216-b4f5425bdde3",
+        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
       },
       {
-        "photo_id": "photo-1615595969182-8fff50d3152f",
-        "page_url": "https://unsplash.com/photos/photo-1615595969182-8fff50d3152f"
+        "photo_id": "photo-1625480858880-e23be2eaaba6",
+        "page_url": "https://unsplash.com/photos/photo-1625480858880-e23be2eaaba6"
       },
       {
-        "photo_id": "photo-1775642548371-861fab6cea75",
-        "page_url": "https://unsplash.com/photos/photo-1775642548371-861fab6cea75"
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "feature-driver",
@@ -2272,9 +2474,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "press-slider",
@@ -2293,9 +2493,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "image-with-text-story",
@@ -2307,16 +2505,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1546538994-4f15d0aa966f",
-        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "multicolumn-values",
@@ -2328,16 +2524,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1736236279745-b2c000357470",
-        "page_url": "https://unsplash.com/photos/photo-1736236279745-b2c000357470"
+        "photo_id": "photo-1775642548371-861fab6cea75",
+        "page_url": "https://unsplash.com/photos/photo-1775642548371-861fab6cea75"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "timeline",
@@ -2356,9 +2550,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "clean-beauty",
@@ -2370,16 +2562,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1736236560164-bc741c70bca5",
-        "page_url": "https://unsplash.com/photos/photo-1736236560164-bc741c70bca5"
+        "photo_id": "photo-1620946419976-46b6e49cb4b3",
+        "page_url": "https://unsplash.com/photos/photo-1620946419976-46b6e49cb4b3"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "ingredients-callout",
@@ -2398,9 +2588,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "shade-finder",
@@ -2419,9 +2607,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "collection-banner",
@@ -2440,9 +2626,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "main-collection-grid",
@@ -2456,16 +2640,16 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
+      },
+      {
         "photo_id": "photo-1704307068094-c2c88c467014",
         "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
       },
       {
-        "photo_id": "photo-1689193504223-cc83c0122a7b",
-        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
-      },
-      {
-        "photo_id": "photo-1615595969182-8fff50d3152f",
-        "page_url": "https://unsplash.com/photos/photo-1615595969182-8fff50d3152f"
+        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
+        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
       }
     ],
     "targets": {
@@ -2474,9 +2658,7 @@
     },
     "notes": {
       "shopify": "Shows the first 3 products; pagination and facet filtering belong to the home-collection group."
-    },
-    "jsBytes": 435,
-    "industry": "beauty"
+    }
   },
   {
     "id": "faceted-filters",
@@ -2500,9 +2682,7 @@
     },
     "notes": {
       "shopify": "Chips and sort are presentational (as in the HTML library); applying filters needs the collection toolbar wiring from the home-collection group."
-    },
-    "jsBytes": 435,
-    "industry": "beauty"
+    }
   },
   {
     "id": "main-product-skin-tint",
@@ -2517,16 +2697,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 1344,
-    "industry": "beauty"
+    }
   },
   {
     "id": "main-product-eye-cream",
@@ -2541,16 +2719,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
+        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 1344,
-    "industry": "beauty"
+    }
   },
   {
     "id": "main-product-bundle",
@@ -2565,16 +2741,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1560129986-baba295cf72c",
+        "page_url": "https://unsplash.com/photos/photo-1560129986-baba295cf72c"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 1344,
-    "industry": "beauty"
+    }
   },
   {
     "id": "main-blog",
@@ -2586,24 +2760,22 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1708183350087-1063ce67ddc4",
-        "page_url": "https://unsplash.com/photos/photo-1708183350087-1063ce67ddc4"
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       },
       {
-        "photo_id": "photo-1733145819586-5b65cfee3ecf",
-        "page_url": "https://unsplash.com/photos/photo-1733145819586-5b65cfee3ecf"
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
       },
       {
-        "photo_id": "photo-1742631454377-3eb6645b4780",
-        "page_url": "https://unsplash.com/photos/photo-1742631454377-3eb6645b4780"
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "featured-article",
@@ -2615,24 +2787,22 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1708183350087-1063ce67ddc4",
-        "page_url": "https://unsplash.com/photos/photo-1708183350087-1063ce67ddc4"
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       },
       {
-        "photo_id": "photo-1733145819586-5b65cfee3ecf",
-        "page_url": "https://unsplash.com/photos/photo-1733145819586-5b65cfee3ecf"
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
       },
       {
-        "photo_id": "photo-1742631454377-3eb6645b4780",
-        "page_url": "https://unsplash.com/photos/photo-1742631454377-3eb6645b4780"
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "faq",
@@ -2653,9 +2823,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 589,
-    "industry": "beauty"
+    }
   },
   {
     "id": "newsletter",
@@ -2679,9 +2847,7 @@
     },
     "notes": {
       "shopify": "Posts to Shopify's customer form (contact[email], tag 'newsletter'); no JS is attached in the Shopify output."
-    },
-    "jsBytes": 428,
-    "industry": "beauty"
+    }
   },
   {
     "id": "footer",
@@ -2700,9 +2866,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-drawer",
@@ -2716,8 +2880,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1612817288484-6f916006741a",
-        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
@@ -2726,9 +2890,7 @@
     },
     "notes": {
       "shopify": "Quantity stepper is the shared mock behaviour (display only); quantity changes need cart form/Ajax wiring (cart-checkout group)."
-    },
-    "jsBytes": 603,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-notification",
@@ -2740,16 +2902,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1612817288484-6f916006741a",
-        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "page-header",
@@ -2768,9 +2928,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "not-found",
@@ -2789,9 +2947,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "product-recommendations",
@@ -2805,24 +2961,375 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
+      },
+      {
         "photo_id": "photo-1704307068094-c2c88c467014",
         "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
       },
       {
-        "photo_id": "photo-1689193504223-cc83c0122a7b",
-        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
-      },
-      {
-        "photo_id": "photo-1615595969182-8fff50d3152f",
-        "page_url": "https://unsplash.com/photos/photo-1615595969182-8fff50d3152f"
+        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
+        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 435,
-    "industry": "beauty"
+    }
+  },
+  {
+    "id": "home-gift-strip",
+    "kind": "section",
+    "category": "collection-list",
+    "name": "Category slider",
+    "description": "Horizontal category cards for complexion, eyes, lips and care.",
+    "file": "shelf/sections/collection-list--home-gift-strip.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1636846528145-46195929433c",
+        "page_url": "https://unsplash.com/photos/photo-1636846528145-46195929433c"
+      },
+      {
+        "photo_id": "photo-1625480858880-e23be2eaaba6",
+        "page_url": "https://unsplash.com/photos/photo-1625480858880-e23be2eaaba6"
+      },
+      {
+        "photo_id": "photo-1733660227083-12b78ad0073d",
+        "page_url": "https://unsplash.com/photos/photo-1733660227083-12b78ad0073d"
+      },
+      {
+        "photo_id": "photo-1580564591877-3a6578d09f5d",
+        "page_url": "https://unsplash.com/photos/photo-1580564591877-3a6578d09f5d"
+      },
+      {
+        "photo_id": "photo-1550572017-4b7a301b9d81",
+        "page_url": "https://unsplash.com/photos/photo-1550572017-4b7a301b9d81"
+      },
+      {
+        "photo_id": "photo-1649928801419-ef29e443b047",
+        "page_url": "https://unsplash.com/photos/photo-1649928801419-ef29e443b047"
+      },
+      {
+        "photo_id": "photo-1567721913486-6585f069b332",
+        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
+      },
+      {
+        "photo_id": "photo-1671493227281-459387acbdc6",
+        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "collection-for-you",
+    "kind": "section",
+    "category": "product-recommendations",
+    "name": "Product recommendations",
+    "description": "Related product carousel.",
+    "file": "shelf/sections/product-recommendations--collection-for-you.html",
+    "deps": [
+      "assets/blko-tabs.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
+      },
+      {
+        "photo_id": "photo-1704307068094-c2c88c467014",
+        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+      },
+      {
+        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
+        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "collection-faq",
+    "kind": "section",
+    "category": "faq",
+    "name": "FAQ",
+    "description": "Expandable answers for common service questions.",
+    "file": "shelf/sections/faq--collection-faq.html",
+    "deps": [
+      "assets/blko-accordion.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "collections-banner",
+    "kind": "section",
+    "category": "page-header",
+    "name": "Page header",
+    "description": "Editorial page title and breadcrumb.",
+    "file": "shelf/sections/page-header--collections-banner.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "rewards-faq",
+    "kind": "section",
+    "category": "faq",
+    "name": "FAQ",
+    "description": "Expandable answers for common service questions.",
+    "file": "shelf/sections/faq--rewards-faq.html",
+    "deps": [
+      "assets/blko-accordion.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "replenish-header",
+    "kind": "section",
+    "category": "page-header",
+    "name": "Page header",
+    "description": "Editorial page title and breadcrumb.",
+    "file": "shelf/sections/page-header--replenish-header.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "replenish-faq",
+    "kind": "section",
+    "category": "faq",
+    "name": "FAQ",
+    "description": "Expandable answers for common service questions.",
+    "file": "shelf/sections/faq--replenish-faq.html",
+    "deps": [
+      "assets/blko-accordion.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "finder-header",
+    "kind": "section",
+    "category": "page-header",
+    "name": "Page header",
+    "description": "Editorial page title and breadcrumb.",
+    "file": "shelf/sections/page-header--finder-header.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "shade-faq",
+    "kind": "section",
+    "category": "faq",
+    "name": "FAQ",
+    "description": "Expandable answers for common service questions.",
+    "file": "shelf/sections/faq--shade-faq.html",
+    "deps": [
+      "assets/blko-accordion.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "analysis-header",
+    "kind": "section",
+    "category": "page-header",
+    "name": "Page header",
+    "description": "Editorial page title and breadcrumb.",
+    "file": "shelf/sections/page-header--analysis-header.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "about-collective",
+    "kind": "section",
+    "category": "image-with-text",
+    "name": "Ingredient callout",
+    "description": "Formula transparency callout with ingredient-focused image.",
+    "file": "shelf/sections/image-with-text--about-collective.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1641312054216-b4f5425bdde3",
+        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "offers-rules",
+    "kind": "section",
+    "category": "promotion",
+    "name": "Message band",
+    "description": "Compact value proposition strip.",
+    "file": "shelf/sections/promotion--offers-rules.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "offers-picks",
+    "kind": "section",
+    "category": "featured-collection",
+    "name": "Tabbed product grid",
+    "description": "Bestsellers and new arrivals with interactive tabs.",
+    "file": "shelf/sections/featured-collection--offers-picks.html",
+    "deps": [
+      "assets/blko-tabs.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
+      },
+      {
+        "photo_id": "photo-1704307068094-c2c88c467014",
+        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+      },
+      {
+        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
+        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "offers-more",
+    "kind": "section",
+    "category": "collection-list",
+    "name": "Category slider",
+    "description": "Horizontal category cards for complexion, eyes, lips and care.",
+    "file": "shelf/sections/collection-list--offers-more.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1550572017-4b7a301b9d81",
+        "page_url": "https://unsplash.com/photos/photo-1550572017-4b7a301b9d81"
+      },
+      {
+        "photo_id": "photo-1625480858880-e23be2eaaba6",
+        "page_url": "https://unsplash.com/photos/photo-1625480858880-e23be2eaaba6"
+      },
+      {
+        "photo_id": "photo-1671493227281-459387acbdc6",
+        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
+      },
+      {
+        "photo_id": "photo-1636846528145-46195929433c",
+        "page_url": "https://unsplash.com/photos/photo-1636846528145-46195929433c"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "stores-header",
+    "kind": "section",
+    "category": "page-header",
+    "name": "Page header",
+    "description": "Editorial page title and breadcrumb.",
+    "file": "shelf/sections/page-header--stores-header.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
   },
   {
     "id": "accordion-item",
@@ -2843,9 +3350,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 589,
-    "industry": "beauty"
+    }
   },
   {
     "id": "add-to-cart",
@@ -2864,9 +3369,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "article-card",
@@ -2878,16 +3381,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
-        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "product-badge",
@@ -2906,9 +3407,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "breadcrumb",
@@ -2927,9 +3426,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "button",
@@ -2948,9 +3445,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-line-item",
@@ -2962,16 +3457,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1612817288484-6f916006741a",
-        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "cart-summary",
@@ -2990,9 +3483,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "category-card",
@@ -3004,16 +3495,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1695556128448-1050e9b277e3",
-        "page_url": "https://unsplash.com/photos/photo-1695556128448-1050e9b277e3"
+        "photo_id": "photo-1625480858880-e23be2eaaba6",
+        "page_url": "https://unsplash.com/photos/photo-1625480858880-e23be2eaaba6"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "filter-chip",
@@ -3034,9 +3523,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 435,
-    "industry": "beauty"
+    }
   },
   {
     "id": "ingredient-callout",
@@ -3048,16 +3535,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1620946419976-46b6e49cb4b3",
-        "page_url": "https://unsplash.com/photos/photo-1620946419976-46b6e49cb4b3"
+        "photo_id": "photo-1560129986-baba295cf72c",
+        "page_url": "https://unsplash.com/photos/photo-1560129986-baba295cf72c"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "newsletter-form",
@@ -3081,9 +3566,7 @@
     },
     "notes": {
       "shopify": "Posts to Shopify's customer form (contact[email], tag 'newsletter')."
-    },
-    "jsBytes": 428,
-    "industry": "beauty"
+    }
   },
   {
     "id": "press-logo",
@@ -3102,9 +3585,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "price",
@@ -3123,9 +3604,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "product-card",
@@ -3137,16 +3616,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "quantity-stepper",
@@ -3170,9 +3647,7 @@
     },
     "notes": {
       "shopify": "Shared mock stepper (display only); wire to a cart form for real quantity changes."
-    },
-    "jsBytes": 603,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-result-card",
@@ -3184,16 +3659,14 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "social-link",
@@ -3212,9 +3685,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "rating-stars",
@@ -3233,9 +3704,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "testimonial-card",
@@ -3254,9 +3723,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "trust-badge",
@@ -3275,9 +3742,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "variant-picker",
@@ -3298,9 +3763,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 755,
-    "industry": "beauty"
+    }
   },
   {
     "id": "shade-swatch-picker",
@@ -3324,9 +3787,7 @@
     },
     "notes": {
       "shopify": "Swatches are design-token colours (UI shell); variant-bound swatches need product option metafields."
-    },
-    "jsBytes": 755,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-subscribe-success",
@@ -3347,9 +3808,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-password-page",
@@ -3370,9 +3829,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-gift-card-page",
@@ -3396,9 +3853,7 @@
     },
     "notes": {
       "shopify": "needs app: a scannable QR code needs a QR generator (Shopify exposes only gift_card.qr_identifier); Shopify output shows the Apple Wallet pass link instead of the placeholder grid. Template: templates/gift_card.liquid."
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-wishlist-page",
@@ -3412,16 +3867,16 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
+      },
+      {
         "photo_id": "photo-1704307068094-c2c88c467014",
         "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
       },
       {
-        "photo_id": "photo-1560178243-b1e0b1e0608a",
-        "page_url": "https://unsplash.com/photos/photo-1560178243-b1e0b1e0608a"
-      },
-      {
-        "photo_id": "photo-1559881230-1af605ca3f67",
-        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
+        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
+        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
       }
     ],
     "targets": {
@@ -3430,9 +3885,7 @@
     },
     "notes": {
       "shopify": "needs app: saved items come from the Worker API (GET/POST/DELETE {blocko_api_base}/wishlist); logged-out visitors (401) use localStorage key blko-wishlist (array of product handles). Server-rendered cards from the picked collection are the fallback when the API is unreachable."
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-compare-page",
@@ -3456,9 +3909,7 @@
     },
     "notes": {
       "shopify": "needs app: columns are merchant-authored blocks; building the table from products a shopper picks needs an app (Shopify has no compare feature)."
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-components-page",
@@ -3479,9 +3930,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-newsletter-popup",
@@ -3502,9 +3951,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-newsletter-inline-success",
@@ -3525,9 +3972,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-cookie-consent",
@@ -3548,9 +3993,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-age-region-notice",
@@ -3571,9 +4014,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-country-language-currency",
@@ -3594,9 +4035,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-back-to-top",
@@ -3617,9 +4056,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-toast-notification",
@@ -3640,9 +4077,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-announcement-rotating",
@@ -3663,9 +4098,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "global-announcement-countdown",
@@ -3686,9 +4119,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-mega-menu",
@@ -3702,12 +4133,12 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1770925758916-44e22e159542",
-        "page_url": "https://unsplash.com/photos/photo-1770925758916-44e22e159542"
+        "photo_id": "photo-1775642548371-861fab6cea75",
+        "page_url": "https://unsplash.com/photos/photo-1775642548371-861fab6cea75"
       },
       {
-        "photo_id": "photo-1695556128448-1050e9b277e3",
-        "page_url": "https://unsplash.com/photos/photo-1695556128448-1050e9b277e3"
+        "photo_id": "photo-1580694500583-21a6189e6b56",
+        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
       }
     ],
     "targets": {
@@ -3716,9 +4147,7 @@
     },
     "notes": {
       "shopify": "Opened by the header menu link whose URL matches 'Header link URL that opens this menu'."
-    },
-    "jsBytes": 8503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-collection-toolbar",
@@ -3740,9 +4169,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8938,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-collection-grid",
@@ -3757,80 +4184,78 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
+      },
+      {
         "photo_id": "photo-1704307068094-c2c88c467014",
         "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
-      },
-      {
-        "photo_id": "photo-1641312054216-b4f5425bdde3",
-        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
-      },
-      {
-        "photo_id": "photo-1580694500583-21a6189e6b56",
-        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
-      },
-      {
-        "photo_id": "photo-1749137315928-bc96451fa4c0",
-        "page_url": "https://unsplash.com/photos/photo-1749137315928-bc96451fa4c0"
-      },
-      {
-        "photo_id": "photo-1733145819586-5b65cfee3ecf",
-        "page_url": "https://unsplash.com/photos/photo-1733145819586-5b65cfee3ecf"
-      },
-      {
-        "photo_id": "photo-1689193504223-cc83c0122a7b",
-        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
-      },
-      {
-        "photo_id": "photo-1542131597-a4390333d136",
-        "page_url": "https://unsplash.com/photos/photo-1542131597-a4390333d136"
-      },
-      {
-        "photo_id": "photo-1736167442640-1988e440297c",
-        "page_url": "https://unsplash.com/photos/photo-1736167442640-1988e440297c"
-      },
-      {
-        "photo_id": "photo-1668440241100-0fa1d7971e27",
-        "page_url": "https://unsplash.com/photos/photo-1668440241100-0fa1d7971e27"
-      },
-      {
-        "photo_id": "photo-1729778783875-103c8545dc65",
-        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
-      },
-      {
-        "photo_id": "photo-1742631454377-3eb6645b4780",
-        "page_url": "https://unsplash.com/photos/photo-1742631454377-3eb6645b4780"
-      },
-      {
-        "photo_id": "photo-1585945037805-5fd82c2e60b1",
-        "page_url": "https://unsplash.com/photos/photo-1585945037805-5fd82c2e60b1"
-      },
-      {
-        "photo_id": "photo-1736236560164-bc741c70bca5",
-        "page_url": "https://unsplash.com/photos/photo-1736236560164-bc741c70bca5"
-      },
-      {
-        "photo_id": "photo-1560178243-b1e0b1e0608a",
-        "page_url": "https://unsplash.com/photos/photo-1560178243-b1e0b1e0608a"
       },
       {
         "photo_id": "photo-1687716432096-1a2b80d4c2e0",
         "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
       },
       {
-        "photo_id": "photo-1761095870661-c4ae15cac605",
-        "page_url": "https://unsplash.com/photos/photo-1761095870661-c4ae15cac605"
+        "photo_id": "photo-1775642548371-861fab6cea75",
+        "page_url": "https://unsplash.com/photos/photo-1775642548371-861fab6cea75"
       },
       {
-        "photo_id": "photo-1685921233963-67a2a8b6735e",
-        "page_url": "https://unsplash.com/photos/photo-1685921233963-67a2a8b6735e"
+        "photo_id": "photo-1560129986-baba295cf72c",
+        "page_url": "https://unsplash.com/photos/photo-1560129986-baba295cf72c"
+      },
+      {
+        "photo_id": "photo-1580694500583-21a6189e6b56",
+        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
+      },
+      {
+        "photo_id": "photo-1567721913486-6585f069b332",
+        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
+      },
+      {
+        "photo_id": "photo-1671493227281-459387acbdc6",
+        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
+      },
+      {
+        "photo_id": "photo-1767102125499-0ce314436f67",
+        "page_url": "https://unsplash.com/photos/photo-1767102125499-0ce314436f67"
+      },
+      {
+        "photo_id": "photo-1585945037805-5fd82c2e60b1",
+        "page_url": "https://unsplash.com/photos/photo-1585945037805-5fd82c2e60b1"
+      },
+      {
+        "photo_id": "photo-1612817288484-6f916006741a",
+        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+      },
+      {
+        "photo_id": "photo-1620946419976-46b6e49cb4b3",
+        "page_url": "https://unsplash.com/photos/photo-1620946419976-46b6e49cb4b3"
+      },
+      {
+        "photo_id": "photo-1733660227083-12b78ad0073d",
+        "page_url": "https://unsplash.com/photos/photo-1733660227083-12b78ad0073d"
+      },
+      {
+        "photo_id": "photo-1645622892695-d34014b2f5f4",
+        "page_url": "https://unsplash.com/photos/photo-1645622892695-d34014b2f5f4"
+      },
+      {
+        "photo_id": "photo-1641312054216-b4f5425bdde3",
+        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
+      },
+      {
+        "photo_id": "photo-1663659504585-8ae937f2337e",
+        "page_url": "https://unsplash.com/photos/photo-1663659504585-8ae937f2337e"
+      },
+      {
+        "photo_id": "photo-1748543669178-efd3de4e64e0",
+        "page_url": "https://unsplash.com/photos/photo-1748543669178-efd3de4e64e0"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 9417,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-collections-directory",
@@ -3844,36 +4269,34 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1633681121751-e4a0392602b8",
-        "page_url": "https://unsplash.com/photos/photo-1633681121751-e4a0392602b8"
+        "photo_id": "photo-1612817288484-6f916006741a",
+        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
       },
       {
-        "photo_id": "photo-1567721913486-6585f069b332",
-        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
-      },
-      {
-        "photo_id": "photo-1708183350087-1063ce67ddc4",
-        "page_url": "https://unsplash.com/photos/photo-1708183350087-1063ce67ddc4"
-      },
-      {
-        "photo_id": "photo-1559881230-1af605ca3f67",
-        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
-      },
-      {
-        "photo_id": "photo-1736167443280-f63c706c724d",
-        "page_url": "https://unsplash.com/photos/photo-1736167443280-f63c706c724d"
+        "photo_id": "photo-1761095870661-c4ae15cac605",
+        "page_url": "https://unsplash.com/photos/photo-1761095870661-c4ae15cac605"
       },
       {
         "photo_id": "photo-1748543669178-efd3de4e64e0",
         "page_url": "https://unsplash.com/photos/photo-1748543669178-efd3de4e64e0"
+      },
+      {
+        "photo_id": "photo-1625480858880-e23be2eaaba6",
+        "page_url": "https://unsplash.com/photos/photo-1625480858880-e23be2eaaba6"
+      },
+      {
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
+      },
+      {
+        "photo_id": "photo-1550572017-4b7a301b9d81",
+        "page_url": "https://unsplash.com/photos/photo-1550572017-4b7a301b9d81"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-quick-view-modal",
@@ -3888,8 +4311,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1671493227281-459387acbdc6",
-        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
+        "photo_id": "photo-1663659504585-8ae937f2337e",
+        "page_url": "https://unsplash.com/photos/photo-1663659504585-8ae937f2337e"
       }
     ],
     "targets": {
@@ -3898,9 +4321,7 @@
     },
     "notes": {
       "shopify": "Reads the product from /products/<handle>.js and posts to /cart/add.js (Shopify Ajax API); no app needed."
-    },
-    "jsBytes": 9417,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-promo-tile",
@@ -3914,16 +4335,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1771033834141-023d630b3965",
-        "page_url": "https://unsplash.com/photos/photo-1771033834141-023d630b3965"
+        "photo_id": "photo-1649928801419-ef29e443b047",
+        "page_url": "https://unsplash.com/photos/photo-1649928801419-ef29e443b047"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-active-filter-chips",
@@ -3944,9 +4363,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-sort-dropdown",
@@ -3967,9 +4384,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 8503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "home-collection-load-more",
@@ -3993,9 +4408,7 @@
     },
     "notes": {
       "shopify": "Paginates collection.products itself: set Products per page to the same value as the grid section; a template should hold only one paginating block or section."
-    },
-    "jsBytes": 8503,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-product-main",
@@ -4015,12 +4428,8 @@
         "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       },
       {
-        "photo_id": "photo-1754321159253-8c9bd02cfb4c",
-        "page_url": "https://unsplash.com/photos/photo-1754321159253-8c9bd02cfb4c"
-      },
-      {
-        "photo_id": "photo-1620946419976-46b6e49cb4b3",
-        "page_url": "https://unsplash.com/photos/photo-1620946419976-46b6e49cb4b3"
+        "photo_id": "photo-1748543669178-efd3de4e64e0",
+        "page_url": "https://unsplash.com/photos/photo-1748543669178-efd3de4e64e0"
       },
       {
         "photo_id": "photo-1775642548371-861fab6cea75",
@@ -4037,9 +4446,7 @@
     },
     "notes": {
       "shopify": "Options map to the product's first and last option; the variant is resolved from the variants JSON and submitted with {% form 'product' %}. Plans come from selling_plan_allocations (needs a subscription app to have any)."
-    },
-    "jsBytes": 16450,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-before-after",
@@ -4053,8 +4460,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1729778783875-103c8545dc65",
-        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
+        "photo_id": "photo-1580564591877-3a6578d09f5d",
+        "page_url": "https://unsplash.com/photos/photo-1580564591877-3a6578d09f5d"
       },
       {
         "photo_id": "photo-1758188753373-5b01a0fc6d9d",
@@ -4064,9 +4471,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-complete-routine",
@@ -4080,16 +4485,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1733145819586-5b65cfee3ecf",
-        "page_url": "https://unsplash.com/photos/photo-1733145819586-5b65cfee3ecf"
+        "photo_id": "photo-1585945037805-5fd82c2e60b1",
+        "page_url": "https://unsplash.com/photos/photo-1585945037805-5fd82c2e60b1"
       },
       {
-        "photo_id": "photo-1704307068094-c2c88c467014",
-        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       },
       {
-        "photo_id": "photo-1736236560164-bc741c70bca5",
-        "page_url": "https://unsplash.com/photos/photo-1736236560164-bc741c70bca5"
+        "photo_id": "photo-1612817288484-6f916006741a",
+        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
       }
     ],
     "targets": {
@@ -4098,9 +4503,7 @@
     },
     "notes": {
       "shopify": "Uses Shopify product recommendations (section rendering, intent complementary); the chosen collection is the server-rendered fallback."
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-reviews",
@@ -4114,12 +4517,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1685921233963-67a2a8b6735e",
-        "page_url": "https://unsplash.com/photos/photo-1685921233963-67a2a8b6735e"
-      },
-      {
-        "photo_id": "photo-1742631454377-3eb6645b4780",
-        "page_url": "https://unsplash.com/photos/photo-1742631454377-3eb6645b4780"
+        "photo_id": "photo-1542131597-a4390333d136",
+        "page_url": "https://unsplash.com/photos/photo-1542131597-a4390333d136"
       }
     ],
     "targets": {
@@ -4128,9 +4527,7 @@
     },
     "notes": {
       "shopify": "Needs app: reviews load from the Worker API ({settings.blocko_api_base}/reviews?product_id=) and replace the static content; the static reviews stay when the request fails. No submit form yet."
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-recently-viewed",
@@ -4144,16 +4541,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1641312054216-b4f5425bdde3",
-        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
+        "photo_id": "photo-1580694500583-21a6189e6b56",
+        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
       },
       {
-        "photo_id": "photo-1689193504223-cc83c0122a7b",
-        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
+        "photo_id": "photo-1567721913486-6585f069b332",
+        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
       },
       {
-        "photo_id": "photo-1615595969182-8fff50d3152f",
-        "page_url": "https://unsplash.com/photos/photo-1615595969182-8fff50d3152f"
+        "photo_id": "photo-1671493227281-459387acbdc6",
+        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
       }
     ],
     "targets": {
@@ -4162,9 +4559,7 @@
     },
     "notes": {
       "shopify": "Recently viewed handles are kept in localStorage and loaded from /products/<handle>.js; the chosen collection is the server-rendered fallback."
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-bundle-builder",
@@ -4178,24 +4573,24 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1736236279745-b2c000357470",
-        "page_url": "https://unsplash.com/photos/photo-1736236279745-b2c000357470"
+        "photo_id": "photo-1580694500583-21a6189e6b56",
+        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
       },
       {
-        "photo_id": "photo-1612817288484-6f916006741a",
-        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+        "photo_id": "photo-1748543669178-efd3de4e64e0",
+        "page_url": "https://unsplash.com/photos/photo-1748543669178-efd3de4e64e0"
       },
       {
-        "photo_id": "photo-1585945037805-5fd82c2e60b1",
-        "page_url": "https://unsplash.com/photos/photo-1585945037805-5fd82c2e60b1"
+        "photo_id": "photo-1663659504585-8ae937f2337e",
+        "page_url": "https://unsplash.com/photos/photo-1663659504585-8ae937f2337e"
       },
       {
-        "photo_id": "photo-1770925758916-44e22e159542",
-        "page_url": "https://unsplash.com/photos/photo-1770925758916-44e22e159542"
+        "photo_id": "photo-1567721913486-6585f069b332",
+        "page_url": "https://unsplash.com/photos/photo-1567721913486-6585f069b332"
       },
       {
-        "photo_id": "photo-1695556128448-1050e9b277e3",
-        "page_url": "https://unsplash.com/photos/photo-1695556128448-1050e9b277e3"
+        "photo_id": "photo-1767102125499-0ce314436f67",
+        "page_url": "https://unsplash.com/photos/photo-1767102125499-0ce314436f67"
       }
     ],
     "targets": {
@@ -4204,9 +4599,7 @@
     },
     "notes": {
       "shopify": "Needs app: the 15% set price is shown by the UI; configure a matching automatic discount (or bundle app) so Shopify prices the cart. Lines are added with /cart/add.js."
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-bundle-explainer",
@@ -4227,9 +4620,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-gallery",
@@ -4247,20 +4638,14 @@
         "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       },
       {
-        "photo_id": "photo-1754321159253-8c9bd02cfb4c",
-        "page_url": "https://unsplash.com/photos/photo-1754321159253-8c9bd02cfb4c"
-      },
-      {
-        "photo_id": "photo-1671493227281-459387acbdc6",
-        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
+        "photo_id": "photo-1748543669178-efd3de4e64e0",
+        "page_url": "https://unsplash.com/photos/photo-1748543669178-efd3de4e64e0"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-shade-picker",
@@ -4284,9 +4669,7 @@
     },
     "notes": {
       "shopify": "Swatch colours come from the option value's swatch when set (design-token colours otherwise)."
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-purchase-options",
@@ -4310,9 +4693,7 @@
     },
     "notes": {
       "shopify": "Plans are the selected variant's selling_plan_allocations; shows nothing unless a subscription app defines selling plans. The product section submits the chosen plan."
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-sticky-add-to-cart",
@@ -4326,16 +4707,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1671493227281-459387acbdc6",
-        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-detail-accordions",
@@ -4357,9 +4736,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15847,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-before-after-slider",
@@ -4373,8 +4750,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1736167443280-f63c706c724d",
-        "page_url": "https://unsplash.com/photos/photo-1736167443280-f63c706c724d"
+        "photo_id": "photo-1542131597-a4390333d136",
+        "page_url": "https://unsplash.com/photos/photo-1542131597-a4390333d136"
       },
       {
         "photo_id": "photo-1633681121751-e4a0392602b8",
@@ -4384,9 +4761,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-review-summary",
@@ -4407,9 +4782,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-photo-review",
@@ -4430,9 +4803,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-review-filters",
@@ -4453,9 +4824,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-bundle-picker",
@@ -4469,8 +4838,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1736236279745-b2c000357470",
-        "page_url": "https://unsplash.com/photos/photo-1736236279745-b2c000357470"
+        "photo_id": "photo-1580694500583-21a6189e6b56",
+        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
       }
     ],
     "targets": {
@@ -4479,9 +4848,7 @@
     },
     "notes": {
       "shopify": "Selection UI only; the bundle builder section adds the chosen lines to the cart."
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "pdp-bundle-summary",
@@ -4505,9 +4872,7 @@
     },
     "notes": {
       "shopify": "Summary UI shell; it is driven by the bundle builder section's behaviour."
-    },
-    "jsBytes": 15258,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-search-results",
@@ -4522,16 +4887,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1671493227281-459387acbdc6",
-        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
-      },
-      {
         "photo_id": "photo-1608571424237-381e6b43a2a7",
         "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       },
       {
-        "photo_id": "photo-1580694500583-21a6189e6b56",
-        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
+        "photo_id": "photo-1704307068094-c2c88c467014",
+        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
+      },
+      {
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       },
       {
         "photo_id": "photo-1559881230-1af605ca3f67",
@@ -4544,9 +4909,7 @@
     },
     "notes": {
       "shopify": "Shopify: real `search` object + {% paginate %}; result-type tabs/filters link to /search?type=. Client-side tab filtering and live count exist in the static HTML only."
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-search-empty",
@@ -4571,9 +4934,7 @@
     },
     "notes": {
       "shopify": "Shopify: renders only when `search.performed` and `search.results_count == 0`."
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-journal-hero",
@@ -4587,16 +4948,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1546538994-4f15d0aa966f",
-        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 5289,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-featured-post",
@@ -4610,16 +4969,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1687716432096-1a2b80d4c2e0",
-        "page_url": "https://unsplash.com/photos/photo-1687716432096-1a2b80d4c2e0"
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 5289,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-article-grid",
@@ -4634,28 +4991,20 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1736167443280-f63c706c724d",
-        "page_url": "https://unsplash.com/photos/photo-1736167443280-f63c706c724d"
-      },
-      {
-        "photo_id": "photo-1749137315928-bc96451fa4c0",
-        "page_url": "https://unsplash.com/photos/photo-1749137315928-bc96451fa4c0"
-      },
-      {
-        "photo_id": "photo-1775642548371-861fab6cea75",
-        "page_url": "https://unsplash.com/photos/photo-1775642548371-861fab6cea75"
-      },
-      {
-        "photo_id": "photo-1560178243-b1e0b1e0608a",
-        "page_url": "https://unsplash.com/photos/photo-1560178243-b1e0b1e0608a"
-      },
-      {
-        "photo_id": "photo-1736236279745-b2c000357470",
-        "page_url": "https://unsplash.com/photos/photo-1736236279745-b2c000357470"
-      },
-      {
         "photo_id": "photo-1546538994-4f15d0aa966f",
         "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
+      },
+      {
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
+      },
+      {
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
+      },
+      {
+        "photo_id": "photo-1689193504223-cc83c0122a7b",
+        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
       }
     ],
     "targets": {
@@ -4664,9 +5013,7 @@
     },
     "notes": {
       "shopify": "Shopify: tag buttons link to /blogs/<blog>/tagged/<tag>; keep 'Stories per page' equal to the pagination section's."
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-pagination",
@@ -4691,9 +5038,7 @@
     },
     "notes": {
       "shopify": "Shopify: {% paginate blog.articles %}; 'Stories per page' must match the article grid section."
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-article-hero",
@@ -4707,16 +5052,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1771033834141-023d630b3965",
-        "page_url": "https://unsplash.com/photos/photo-1771033834141-023d630b3965"
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 5289,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-article-content",
@@ -4731,12 +5074,12 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1612817288484-6f916006741a",
-        "page_url": "https://unsplash.com/photos/photo-1612817288484-6f916006741a"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       },
       {
-        "photo_id": "photo-1615595969182-8fff50d3152f",
-        "page_url": "https://unsplash.com/photos/photo-1615595969182-8fff50d3152f"
+        "photo_id": "photo-1704307068094-c2c88c467014",
+        "page_url": "https://unsplash.com/photos/photo-1704307068094-c2c88c467014"
       }
     ],
     "targets": {
@@ -4745,9 +5088,7 @@
     },
     "notes": {
       "shopify": "Both renderers print `article.content` followed by the shoppable product cards. Comments use {% form 'new_comment' %} when the blog enables them."
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-related-articles",
@@ -4762,24 +5103,119 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1708183350087-1063ce67ddc4",
-        "page_url": "https://unsplash.com/photos/photo-1708183350087-1063ce67ddc4"
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
       },
       {
-        "photo_id": "photo-1695556128448-1050e9b277e3",
-        "page_url": "https://unsplash.com/photos/photo-1695556128448-1050e9b277e3"
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
       },
       {
-        "photo_id": "photo-1542131597-a4390333d136",
-        "page_url": "https://unsplash.com/photos/photo-1542131597-a4390333d136"
+        "photo_id": "photo-1689193504223-cc83c0122a7b",
+        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "home-journal",
+    "kind": "section",
+    "category": "blog",
+    "name": "Filterable article grid",
+    "description": "Journal card grid with category controls and a clear mobile layout.",
+    "file": "shelf/sections/blog--home-journal.html",
+    "deps": [
+      "assets/blko-predictive-search.js",
+      "assets/blko-search-blog.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
+      },
+      {
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
+      },
+      {
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
+      },
+      {
+        "photo_id": "photo-1689193504223-cc83c0122a7b",
+        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    "notes": {
+      "shopify": "Shopify: tag buttons link to /blogs/<blog>/tagged/<tag>; keep 'Stories per page' equal to the pagination section's."
+    }
+  },
+  {
+    "id": "collection-journal",
+    "kind": "section",
+    "category": "related-articles",
+    "name": "Related article cards",
+    "description": "Three related journal articles following long-form content.",
+    "file": "shelf/sections/related-articles--collection-journal.html",
+    "deps": [
+      "assets/blko-predictive-search.js",
+      "assets/blko-search-blog.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
+      },
+      {
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
+      },
+      {
+        "photo_id": "photo-1689193504223-cc83c0122a7b",
+        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "about-journal",
+    "kind": "section",
+    "category": "related-articles",
+    "name": "Related article cards",
+    "description": "Three related journal articles following long-form content.",
+    "file": "shelf/sections/related-articles--about-journal.html",
+    "deps": [
+      "assets/blko-predictive-search.js",
+      "assets/blko-search-blog.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1559881230-1af605ca3f67",
+        "page_url": "https://unsplash.com/photos/photo-1559881230-1af605ca3f67"
+      },
+      {
+        "photo_id": "photo-1729778783875-103c8545dc65",
+        "page_url": "https://unsplash.com/photos/photo-1729778783875-103c8545dc65"
+      },
+      {
+        "photo_id": "photo-1689193504223-cc83c0122a7b",
+        "page_url": "https://unsplash.com/photos/photo-1689193504223-cc83c0122a7b"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
   },
   {
     "id": "search-blog-predictive-search",
@@ -4801,9 +5237,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-search-result-card",
@@ -4818,16 +5252,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1671493227281-459387acbdc6",
-        "page_url": "https://unsplash.com/photos/photo-1671493227281-459387acbdc6"
+        "photo_id": "photo-1608571424237-381e6b43a2a7",
+        "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-article-card",
@@ -4842,16 +5274,14 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1736167443280-f63c706c724d",
-        "page_url": "https://unsplash.com/photos/photo-1736167443280-f63c706c724d"
+        "photo_id": "photo-1546538994-4f15d0aa966f",
+        "page_url": "https://unsplash.com/photos/photo-1546538994-4f15d0aa966f"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "search-blog-share-controls",
@@ -4873,9 +5303,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 5717,
-    "industry": "beauty"
+    }
   },
   {
     "id": "shelf-standards",
@@ -4894,9 +5322,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "shelf-brand-directory",
@@ -4915,9 +5341,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "shelf-clean-grid",
@@ -4936,9 +5360,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "shelf-visit",
@@ -4961,9 +5383,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "shelf-rewards",
@@ -4982,9 +5402,323 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
+  },
+  {
+    "id": "shelf-pillar-lists",
+    "kind": "section",
+    "category": "trust",
+    "name": "Required and encouraged lists",
+    "description": "Per-pillar columns that separate what brands must do from what we encourage.",
+    "file": "shelf/sections/trust--shelf-pillar-lists.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "shelf-service-cards",
+    "kind": "section",
+    "category": "split",
+    "name": "Service booking cards",
+    "description": "Bookable in-store services with length, price and a redeemable credit.",
+    "file": "shelf/sections/split--shelf-service-cards.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "home-finder-standard",
+    "kind": "section",
+    "category": "split",
+    "name": "Visit and book split",
+    "description": "Two cards: find a store and book a service.",
+    "file": "shelf/sections/split--home-finder-standard.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1695556128448-1050e9b277e3",
+        "page_url": "https://unsplash.com/photos/photo-1695556128448-1050e9b277e3"
+      },
+      {
+        "photo_id": "photo-1758188753373-5b01a0fc6d9d",
+        "page_url": "https://unsplash.com/photos/photo-1758188753373-5b01a0fc6d9d"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "home-boutiques",
+    "kind": "section",
+    "category": "split",
+    "name": "Visit and book split",
+    "description": "Two cards: find a store and book a service.",
+    "file": "shelf/sections/split--home-boutiques.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1770925758916-44e22e159542",
+        "page_url": "https://unsplash.com/photos/photo-1770925758916-44e22e159542"
+      },
+      {
+        "photo_id": "photo-1728949202477-bad2935775cb",
+        "page_url": "https://unsplash.com/photos/photo-1728949202477-bad2935775cb"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "home-empties-club",
+    "kind": "section",
+    "category": "split",
+    "name": "Visit and book split",
+    "description": "Two cards: find a store and book a service.",
+    "file": "shelf/sections/split--home-empties-club.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1641312054216-b4f5425bdde3",
+        "page_url": "https://unsplash.com/photos/photo-1641312054216-b4f5425bdde3"
+      },
+      {
+        "photo_id": "photo-1685921233963-67a2a8b6735e",
+        "page_url": "https://unsplash.com/photos/photo-1685921233963-67a2a8b6735e"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "home-trust",
+    "kind": "section",
+    "category": "trust",
+    "name": "Standards trust band",
+    "description": "Four-pillar clean standard on a dark ink band.",
+    "file": "shelf/sections/trust--home-trust.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "collection-trust",
+    "kind": "section",
+    "category": "trust",
+    "name": "Standards trust band",
+    "description": "Four-pillar clean standard on a dark ink band.",
+    "file": "shelf/sections/trust--collection-trust.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "collections-trust",
+    "kind": "section",
+    "category": "trust",
+    "name": "Standards trust band",
+    "description": "Four-pillar clean standard on a dark ink band.",
+    "file": "shelf/sections/trust--collections-trust.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "pdp-attributes",
+    "kind": "section",
+    "category": "trust",
+    "name": "Clean badge grid",
+    "description": "Icon grid of standard badges.",
+    "file": "shelf/sections/trust--pdp-attributes.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "rewards-referral",
+    "kind": "section",
+    "category": "promo",
+    "name": "Rewards band",
+    "description": "Club perks banner with a promo colour.",
+    "file": "shelf/sections/promo--rewards-referral.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "finder-trust",
+    "kind": "section",
+    "category": "trust",
+    "name": "Standards trust band",
+    "description": "Four-pillar clean standard on a dark ink band.",
+    "file": "shelf/sections/trust--finder-trust.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "standard-badges",
+    "kind": "section",
+    "category": "trust",
+    "name": "Clean badge grid",
+    "description": "Icon grid of standard badges.",
+    "file": "shelf/sections/trust--standard-badges.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "recycling-mail",
+    "kind": "section",
+    "category": "promo",
+    "name": "Rewards band",
+    "description": "Club perks banner with a promo colour.",
+    "file": "shelf/sections/promo--recycling-mail.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "faq-trust",
+    "kind": "section",
+    "category": "trust",
+    "name": "Standards trust band",
+    "description": "Four-pillar clean standard on a dark ink band.",
+    "file": "shelf/sections/trust--faq-trust.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "reviews-badges",
+    "kind": "section",
+    "category": "trust",
+    "name": "Clean badge grid",
+    "description": "Icon grid of standard badges.",
+    "file": "shelf/sections/trust--reviews-badges.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
+  },
+  {
+    "id": "stores-services",
+    "kind": "section",
+    "category": "split",
+    "name": "Service booking cards",
+    "description": "Bookable in-store services with length, price and a redeemable credit.",
+    "file": "shelf/sections/split--stores-services.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    }
   },
   {
     "id": "brand-hero",
@@ -5003,9 +5737,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "brand-archetype",
@@ -5024,9 +5756,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "brand-palette",
@@ -5045,9 +5775,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "brand-typography",
@@ -5066,9 +5794,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "brand-logo-usage",
@@ -5087,9 +5813,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "brand-voice",
@@ -5108,9 +5832,7 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   },
   {
     "id": "brand-imagery",
@@ -5126,8 +5848,8 @@
         "page_url": "https://unsplash.com/photos/photo-1608571424237-381e6b43a2a7"
       },
       {
-        "photo_id": "photo-1560178243-b1e0b1e0608a",
-        "page_url": "https://unsplash.com/photos/photo-1560178243-b1e0b1e0608a"
+        "photo_id": "photo-1580694500583-21a6189e6b56",
+        "page_url": "https://unsplash.com/photos/photo-1580694500583-21a6189e6b56"
       },
       {
         "photo_id": "photo-1758188753373-5b01a0fc6d9d",
@@ -5137,8 +5859,6 @@
     "targets": {
       "html": "ok",
       "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
+    }
   }
 ]

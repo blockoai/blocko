@@ -30,12 +30,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Recommended tints |  |
 | `add_label` | text | Add label | Add to bag |
-| `eyebrow` | text | Eyebrow | Your starting point |
-| `heading` | text | Heading | Two shades to try first. |
-| `text` | textarea | Text | Based on your selections, these flexible shades are a beautiful place to start.  |
-| `button_label` | text | Button label | Add suggested tint |
-| `card_eyebrow` | text | Card eyebrow | Flexible tint |
-| `card_detail` | text | Card detail | Natural finish · SPF 40 |
+| `eyebrow` | text | Eyebrow | Your best bets |
+| `heading` | text | Heading | Start with these two shades. |
+| `text` | textarea | Text | Swatch both along your jaw. Whichever disappears wins; swaps on shades are free  |
+| `button_label` | text | Button label | Add to bag |
+| `card_eyebrow` | text | Card eyebrow | Bright Cream Concealer |
+| `card_detail` | text | Card detail | Full or mini size |
 
 ## Blocks
 

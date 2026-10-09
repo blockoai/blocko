@@ -30,10 +30,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | shop by collection |
-| `heading` | text | Heading | top collections |
-| `text` | textarea | Text | Discover gift sets, hair-day heroes and accessories made to fit into real life. |
-| `link_label` | text | Link label | shop now |
+| `eyebrow` | text | Eyebrow | every aisle |
+| `heading` | text | Heading | Shop by type, season or gift |
+| `text` | textarea | Text | From bottle-free bars to sleep sets and mystery boxes, each collection groups on |
+| `link_label` | text | Link label | shop it |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |
 | `next_label` | text | Next label | Next |

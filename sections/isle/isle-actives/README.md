@@ -27,12 +27,12 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `heading` | text | Heading | Powerful actives. Proven results. |
-| `text` | textarea | Text | We are a team of clean beauty experts making body care that works, and that is s |
-| `button_label` | text | Button label | Read more |
+| `heading` | text | Heading | Clean ingredients, measured results. |
+| `text` | textarea | Text | Our chemists start with high-performance actives such as hyaluronic acid and vit |
+| `button_label` | text | Button label | See how we formulate |
 | `button_url` | url | Button url |  |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person smoothing coconut cream onto sun-warmed skin |
+| `image_alt` | text | Image alt text | Person smoothing a cream onto their forearm |
 
 ## Blocks
 

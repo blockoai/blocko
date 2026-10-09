@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | A note from our founder |
-| `quote` | text | Quote | “The best routine is one you can stick to, on a busy morning, a slow evening, an |
-| `note` | textarea | Note | Founder name is a placeholder for the person shaping your brand’s point of view. |
-| `name` | text | Name | Founder name |
-| `role` | text | Role | Founder |
+| `kicker` | text | Kicker | From the founders |
+| `quote` | text | Quote | “We were tired of paying for packaging and brand. So we asked around, learned ho |
+| `note` | textarea | Note | Two friends, one stubborn question about overpriced razors. |
+| `name` | text | Name | The founders |
+| `role` | text | Role | Co-founders |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Founder portrait placeholder |
+| `image_alt` | text | Image alt text | Smiling man in a white shirt |
 
 ## Blocks
 

@@ -2,38 +2,46 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Reviews",
+        "heading": "What 15,000+ people write after a month.",
+        "average": "4.5",
+        "count_text": "From 15,988 verified reviews",
+        "stars_label": "Four and a half out of five stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 68
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 20
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 7
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 3
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         "block-6": {
@@ -52,7 +60,7 @@
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Care",
+            "label": "Eye",
             "key": "care"
           }
         },
@@ -64,41 +72,26 @@
           }
         },
         "block-10": {
-          "type": "photo",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "title": "Wore it through a heatwave",
+            "meta": "Tinted serum · Medium warm · Verified buyer"
+          }
         },
         "block-11": {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
+            "tags": "care",
+            "title": "Mascara that does not flake",
+            "meta": "Lash lift mascara · Soft black · Verified buyer"
           }
         },
         "block-12": {
-          "type": "photo",
-          "settings": {}
-        },
-        "block-13": {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        "block-14": {
-          "type": "review",
-          "settings": {}
-        },
-        "block-15": {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Care"
-          }
-        },
-        "block-16": {
-          "type": "review",
-          "settings": {
-            "title": "The shade range made matching easy."
+            "rating": 4,
+            "title": "Great, but size up the brush",
+            "meta": "Complexion brush · Verified buyer"
           }
         }
       },
@@ -114,16 +107,16 @@
         "block-9",
         "block-10",
         "block-11",
-        "block-12",
-        "block-13",
-        "block-14",
-        "block-15",
-        "block-16"
+        "block-12"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [

@@ -2,80 +2,78 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Welcome to the shelf",
+        "heading": "Edited, effective, deliberate.",
+        "lede": "A small line of skincare and hybrid color, built so that you reach for every single thing.",
+        "button_label": "Read the founder note",
+        "image_alt": "Founder holding a serum bottle in a bright room"
+      }
+    },
+    "content-founder-note": {
+      "type": "blko-content-founder-note",
+      "settings": {
+        "kicker": "A note from the founder",
+        "quote": "“I wanted a bathroom shelf where nothing was filler.”",
+        "note": "I was tired of drawers full of half-used products. So we make fewer things, test them harder and write the label like a conversation. Everything here has to earn its spot in a real routine.",
+        "name": "Founder",
+        "role": "Founder and formulator",
+        "image_alt": "Founder at a lab bench with a serum sample"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Cheeks with a soft glow and a rosy flush",
+        "kicker": "Three lanes",
+        "heading": "Skincare, hybrid makeup, and things for the bag.",
+        "text": "Barrier-first skin formulas do the heavy lifting. Hybrid lip and cheek colors carry the same peptides. Little sizes and kits make the whole thing portable."
+      }
     },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
+    "about-principles": {
+      "type": "blko-about-principles",
+      "settings": {
+        "kicker": "What we hold to",
+        "heading": "five principles behind every formula"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "Simplicity",
+            "text": "Short routines that you will actually keep up."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "title": "Fair pricing",
+            "text": "High-performance formulas that do not need a splurge."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
-    },
-    "content-story-timeline": {
-      "type": "blko-content-story-timeline",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "milestone",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "milestone",
-          "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of care and glow essentials."
-          }
-        },
-        "block-3": {
-          "type": "milestone",
-          "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a routine that moves with your day."
+            "title": "Honesty",
+            "text": "Real shades, real photos and no retouching on results."
           }
         },
         "block-4": {
-          "type": "milestone",
+          "type": "value",
           "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
+            "number": "04",
+            "title": "Quality",
+            "text": "Proven actives at doses that have been shown to work."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Openness",
+            "text": "Study numbers, sample sizes and full ingredient lists are public."
           }
         }
       },
@@ -83,50 +81,116 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4"
+        "block-4",
+        "block-5"
       ]
     },
-    "content-press-quotes": {
-      "type": "blko-content-press-quotes",
-      "settings": {},
+    "about-actives": {
+      "type": "blko-about-actives",
+      "settings": {
+        "kicker": "Backed by research",
+        "heading": "the ingredients we keep coming back to"
+      },
       "blocks": {
         "block-1": {
-          "type": "quote",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Peptides",
+            "text": "Amino acid chains that support bounce and a smoother look."
+          }
         },
         "block-2": {
-          "type": "quote",
+          "type": "value",
           "settings": {
-            "quote": "“A practical answer to the overcomplicated routine.”",
-            "source": "— The Daily Note"
+            "number": "02",
+            "title": "Ceramides",
+            "text": "Rebuild the barrier so skin holds water longer."
           }
         },
         "block-3": {
-          "type": "quote",
+          "type": "value",
           "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
-            "source": "— Quiet Review"
+            "number": "03",
+            "title": "Hyaluronic acid",
+            "text": "Attracts moisture to the surface for a fuller finish."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Caffeine",
+            "text": "Perks up tired-looking areas and helps depuff."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Ectoin",
+            "text": "Cushions skin against daily stress and irritation."
+          }
+        },
+        "block-6": {
+          "type": "value",
+          "settings": {
+            "number": "06",
+            "title": "Polyglutamic acid",
+            "text": "Locks in water with a fine, flexible film."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "about-advisors": {
+      "type": "blko-about-advisors",
+      "settings": {
+        "kicker": "Our advisors"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "quote",
+          "settings": {
+            "quote": "“Fewer actives, used at the right strength, beat a crowded label every time.”",
+            "source": "— Cosmetic chemist and advisor"
+          }
+        },
+        "block-2": {
+          "type": "quote",
+          "settings": {
+            "quote": "“A strong barrier is the quiet reason patients' skin looks healthy.”",
+            "source": "— Board-certified dermatologist and advisor"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [
     "content-about-hero",
-    "content-mission",
-    "content-values",
     "content-founder-note",
-    "content-story-timeline",
-    "content-press-quotes",
+    "content-mission",
+    "about-principles",
+    "about-actives",
+    "about-advisors",
     "newsletter"
   ]
 }

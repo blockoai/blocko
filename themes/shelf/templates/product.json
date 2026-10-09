@@ -2,26 +2,264 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Skin",
+        "price_note": "30 ml / 1 fl oz",
+        "shade_help_label": "Not sure what your skin needs? Take the skin analysis.",
+        "ship_note": "Free shipping over $35 · 30-day returns · Earn 58 points on this order"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Lightweight hydration with a natural finish. Use morning and night, alone or under moisturizer."
+            "label": "Overview",
+            "text": "A fast-absorbing serum for every skin type. It restores a worn-out barrier with ceramides, calms visible redness with panthenol and leaves skin looking bouncy rather than slick. Gentle enough for the morning and night routine."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Ingredients",
-            "text": "Water, glycerin, niacinamide, ceramide NP, panthenol, squalane, plant-derived emollients. Free from our banned-ingredient list."
+            "label": "How to use",
+            "text": "After cleansing, press two to three drops into damp skin of the face and neck. Wait a minute, then follow with moisturizer and, in daytime, sunscreen."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
-            "label": "How to use",
-            "text": "Apply two to three drops to clean skin, press in gently, then follow with moisturizer and sunscreen."
+            "label": "Ingredients",
+            "text": "Water, glycerin, niacinamide, ceramide NP, panthenol, plant squalane, sodium hyaluronate, allantoin, plant-derived emollients. The full INCI list sits on the pack, and nothing from our banned list appears in it."
+          }
+        },
+        "block-4": {
+          "type": "accordion",
+          "settings": {
+            "label": "Sustainable packaging",
+            "text": "Glass bottle with an aluminum pump. Rinse it, take the pump off and drop both in a boutique bin or send them back with a prepaid label. Each returned item earns 10 points."
+          }
+        },
+        "block-5": {
+          "type": "accordion",
+          "settings": {
+            "label": "About the brand",
+            "text": "A small laboratory-led skincare maker focused on barrier health. It publishes every formula and tests on volunteers with reactive skin."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "pdp-attributes": {
+      "type": "blko-pdp-attributes",
+      "settings": {
+        "heading": "This product meets the Shelf Standard",
+        "lede": "It cleared our ingredient, safety and packaging review. These marks show which extra commitments apply to it."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "badge",
+          "settings": {
+            "label": "Cruelty-free"
+          }
+        },
+        "block-2": {
+          "type": "badge",
+          "settings": {
+            "label": "Sustainable packaging"
+          }
+        },
+        "block-3": {
+          "type": "badge",
+          "settings": {
+            "label": "Vegan"
+          }
+        },
+        "block-4": {
+          "type": "badge",
+          "settings": {
+            "label": "Gluten-free"
+          }
+        },
+        "block-5": {
+          "type": "badge",
+          "settings": {
+            "label": "Organic"
+          }
+        },
+        "block-6": {
+          "type": "badge",
+          "settings": {
+            "label": "Soy-free"
+          }
+        },
+        "block-7": {
+          "type": "badge",
+          "settings": {
+            "label": "Non-GMO"
+          }
+        },
+        "block-8": {
+          "type": "badge",
+          "settings": {
+            "label": "Scent disclosed"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8"
+      ]
+    },
+    "pdp-claims": {
+      "type": "blko-pdp-claims",
+      "settings": {
+        "kicker": "What the testing showed",
+        "quote": "“Instrument readings on 33 volunteers, then self-rated scores from the same group at week eight.”",
+        "author": "— The brand's own study, not ours"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "+71% hydration",
+            "text": "within an hour of the first use"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "2x bounce",
+            "text": "skin elasticity at week eight"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "2x glow",
+            "text": "radiance scores at week eight"
+          }
+        },
+        "block-4": {
+          "type": "point",
+          "settings": {
+            "title": "0 reactions",
+            "text": "reported by sensitive-skin testers"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-key-ingredients": {
+      "type": "blko-pdp-key-ingredients",
+      "settings": {
+        "kicker": "Key ingredients",
+        "heading": "What each one is there to do"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "number": "Hydrate",
+            "title": "Sodium hyaluronate",
+            "text": "Binds water to the surface so skin looks plumper within minutes."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "Nourish",
+            "title": "Plant squalane",
+            "text": "A light oil that softens without leaving a film."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "Strengthen",
+            "title": "Ceramide NP",
+            "text": "Refills the fatty layer between skin cells that keeps moisture in and irritants out."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "Calm",
+            "title": "Panthenol",
+            "text": "A form of vitamin B5 that takes the edge off tightness and visible redness."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "Brighten",
+            "title": "Niacinamide",
+            "text": "Helps dullness and uneven tone fade from view with steady use."
+          }
+        },
+        "block-6": {
+          "type": "value",
+          "settings": {
+            "number": "Soften",
+            "title": "Allantoin",
+            "text": "Smooths rough patches and eases the feel of dry skin."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "pdp-recycling": {
+      "type": "blko-pdp-recycling",
+      "settings": {
+        "kicker": "Recycle your empties",
+        "heading": "Three steps, ten points an item"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Three bottles on a copper shelf in a tiled shower",
+            "title": "Empty and rinse",
+            "text": "Take off pumps and caps, then rinse the glass so it is free of product."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Black jars and tubes stacked on stone slabs",
+            "label": "Step two",
+            "title": "Sort by material",
+            "text": "Glass, paper and bigger plastics may go in your curbside bin; small or mixed parts need a special drop."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Close view of a pump top beside a leaf",
+            "label": "Step three",
+            "title": "Hand them in",
+            "text": "Leave them in a boutique bin or post them with a prepaid label and collect your points."
           }
         }
       },
@@ -31,17 +269,20 @@
         "block-3"
       ]
     },
-    "pdp-before-after": {
-      "type": "blko-pdp-before-after",
-      "settings": {}
-    },
     "pdp-complete-routine": {
       "type": "blko-pdp-complete-routine",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Pairs well with",
+        "heading": "Build around the serum",
+        "text": "Cleanse, treat, moisturize: three vetted steps from our shelves."
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shopper favorites",
+        "heading": "More bestsellers"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -50,8 +291,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New arrivals"
           }
         }
       },
@@ -62,38 +303,45 @@
     },
     "pdp-reviews": {
       "type": "blko-pdp-reviews",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Reviews + Q&A",
+        "average": "4.7",
+        "summary": "Based on 2,184 verified reviews",
+        "list_heading": "What shoppers report"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 74
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 17
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 5
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 2
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
             "label": "1 star",
-            "percent": 1
+            "percent": 2
           }
         },
         "block-6": {
@@ -103,40 +351,45 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "key": "photos",
+            "label": "With photos"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "coverage"
+            "key": "hydration",
+            "label": "Hydration"
           }
         },
         "block-9": {
           "type": "review",
           "settings": {
-            "text": "Calmed my redness within two weeks and layers well. I love the light, hydrated finish."
+            "title": "Tightness gone in a week",
+            "text": "My cheeks used to sting after washing. This took the sting out within days and my moisturizer now lasts all day.",
+            "footer": "Noor A. · 2 weeks ago",
+            "tags": "hydration",
+            "caption": ""
           }
         },
         "block-10": {
           "type": "review",
           "settings": {
-            "title": "My daily go-to",
-            "text": "Absorbs fast and stays comfortable through a long day. The ingredient list made choosing simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "title": "Good, but wait before layering",
+            "text": "It works well, though I get pilling if I rush the next step. A minute's pause fixes it.",
+            "footer": "Colin P. · 1 month ago",
+            "tags": "hydration",
+            "caption": "",
+            "rating": 4
           }
         },
         "block-11": {
           "type": "review",
           "settings": {
-            "title": "Fresh, not greasy",
-            "text": "Gives me the hydrated finish I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Dry skin · photo review"
+            "title": "Calmed my flare-ups",
+            "text": "Combination skin with a rosacea streak. Fewer red patches since I started using it at night.",
+            "footer": "Imani R. · 2 months ago",
+            "tags": "photos"
           }
         }
       },
@@ -156,20 +409,21 @@
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Back for more",
+        "heading": "Recently viewed"
+      }
     }
   },
   "order": [
     "pdp-product-main",
-    "pdp-before-after",
+    "pdp-attributes",
+    "pdp-claims",
+    "pdp-key-ingredients",
+    "pdp-recycling",
     "pdp-complete-routine",
     "product-recommendations",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-recently-viewed"
   ]
 }

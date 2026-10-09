@@ -2,30 +2,41 @@
   "sections": {
     "pdp-bundle-builder": {
       "type": "blko-pdp-bundle-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build a set",
+        "heading": "Pick three, save fifteen percent.",
+        "text": "Mix any three from prep, tint and finish. The set price updates as you choose.",
+        "saving_text": "You save 15% once three items are in your set."
+      }
     },
     "pdp-bundle-explainer": {
       "type": "blko-pdp-bundle-explainer",
-      "settings": {},
+      "settings": {
+        "eyebrow": "How sets work",
+        "heading": "Three picks, one price."
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Choose three",
+            "text": "Any combination from skincare, complexion and eye."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your set price updates as you select."
+            "heading": "See the saving",
+            "text": "Fifteen percent comes off as soon as the third item lands."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible routine you can return to every day."
+            "heading": "Wear it your way",
+            "text": "Ship it to yourself or add a gift note."
           }
         }
       },
@@ -37,7 +48,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add a finishing touch"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -58,7 +72,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [

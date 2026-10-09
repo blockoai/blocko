@@ -2,30 +2,87 @@
   "sections": {
     "pdp-bundle-builder": {
       "type": "blko-pdp-bundle-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "curly hair routine",
+        "heading": "Pick three, save 30%.",
+        "text": "Mix a shampoo bar, a conditioner bar and a styler. The bundle price shows below as you go.",
+        "saving_text": "You save 30% with three picks."
+      }
     },
     "pdp-bundle-explainer": {
       "type": "blko-pdp-bundle-explainer",
-      "settings": {},
+      "settings": {
+        "eyebrow": "your wash day",
+        "heading": "Four steps to curls that stay."
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Cleanse",
+            "text": "Lather the shampoo bar at the scalp only."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your set price updates as you select."
+            "heading": "Condition",
+            "text": "Glide the conditioner bar through the lengths and detangle."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible set you can return to every day."
+            "heading": "Define",
+            "text": "Rake the cream through while hair is soaking wet."
+          }
+        },
+        "block-4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Air-dry",
+            "text": "Scrunch, then leave it alone until fully dry."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "bundle-hero-ingredients": {
+      "type": "blko-bundle-hero-ingredients",
+      "settings": {
+        "kicker": "what's inside the kit",
+        "heading": "Three standout ingredients"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Shea butter",
+            "text": "Cushions strands so curls clump and stay soft."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Silicone alternative",
+            "text": "A plant-derived slip agent that detangles without buildup."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Argan oil",
+            "text": "Adds shine and seals in the moisture your curls need."
           }
         }
       },
@@ -35,19 +92,32 @@
         "block-3"
       ]
     },
+    "twist-fbt": {
+      "type": "blko-twist-fbt",
+      "settings": {
+        "heading": "frequently bought together",
+        "total_label": "total",
+        "button_label": "add selected to bag"
+      }
+    },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "pair it up",
+        "heading": "best-selling bundles"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "top bundles"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "what's new",
-            "key": "new"
+            "key": "new",
+            "label": "just launched"
           }
         }
       },
@@ -58,12 +128,19 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [
     "pdp-bundle-builder",
     "pdp-bundle-explainer",
+    "bundle-hero-ingredients",
+    "twist-fbt",
     "product-recommendations",
     "newsletter"
   ]

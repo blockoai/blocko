@@ -362,13 +362,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "From the community"
+      "default": "Reviews"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Real rituals, real notes."
+      "default": "Thousands of five-star notes."
     },
     {
       "type": "text",
@@ -380,13 +380,13 @@
       "type": "text",
       "id": "stars_label",
       "label": "Stars label",
-      "default": "Five out of five stars"
+      "default": "Four point eight out of five stars"
     },
     {
       "type": "text",
       "id": "count_text",
       "label": "Count text",
-      "default": "From 2,483 verified reviews"
+      "default": "From 6,214 verified reviews"
     }
   ],
   "blocks": [
@@ -518,34 +518,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 84
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 11
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 3
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 1
           }
         },
         {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 1
           }
         },
         {
@@ -557,15 +559,15 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Face",
-            "key": "face"
+            "label": "Dry skin",
+            "key": "dry"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "care"
+            "label": "Sensitive",
+            "key": "sensitive"
           }
         },
         {
@@ -576,41 +578,28 @@
           }
         },
         {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "body photos"
-          }
-        },
-        {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "body photos"
-          }
-        },
-        {
-          "type": "review",
-          "settings": {}
-        },
-        {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Body"
+            "tags": "dry",
+            "title": "Gone are the winter flakes",
+            "meta": "Whipped body butter · Dry skin · Verified buyer"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "The scent made it easy to love."
+            "tags": "sensitive",
+            "title": "No sting, no redness",
+            "meta": "Soft milk cleanser · Sensitive skin · Verified buyer"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "tags": "dry",
+            "rating": 4,
+            "title": "Worth it for the glow",
+            "meta": "Hyaluronic seaweed serum · Verified buyer"
           }
         }
       ]

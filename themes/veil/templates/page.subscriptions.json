@@ -2,24 +2,73 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe & save",
+        "heading": "Never run out of your daily tint.",
+        "text": "Save 10% and ship free on every refill. Change the product, timing or address whenever life does.",
+        "shipment_eyebrow": "Your next refill",
+        "shipment_heading": "Ships on the 18th",
+        "image_alt": "Tinted serum refill",
+        "variant_label": "Medium neutral · Standard",
+        "shipment_note": "Delivered to your saved address.",
+        "frequency_eyebrow": "Refill every",
+        "frequency_copy": "You are set to refill every 8 weeks.",
+        "skip_label": "Skip this refill",
+        "swap_label": "Swap a product"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
-          "settings": {
-            "selected": true
-          }
+          "settings": {}
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "8 weeks",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "12 weeks"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "Why subscribe",
+        "heading": "Savings that keep going"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "10% off, always",
+            "text": "The discount applies to every refill, not just the first."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Free shipping",
+            "text": "Skip the threshold: subscription orders always ship free."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Total flexibility",
+            "text": "Pause, skip or cancel in two taps, with no fee."
           }
         }
       },
@@ -31,7 +80,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add a finishing touch"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -52,11 +104,16 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
+    "subscription-perks",
     "product-recommendations",
     "newsletter"
   ]

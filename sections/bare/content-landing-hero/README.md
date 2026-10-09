@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with a fresh natural makeup finish |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Color that keeps up. |
-| `text` | textarea | Text | Comfortable, buildable essentials made for a face that moves through a full day. |
+| `image_alt` | text | Image alt text | Face with a bright flush and soft lids |
+| `kicker` | text | Kicker | Five reasons |
+| `heading` | text | Heading | Why one cream balm replaces your whole blush drawer. |
+| `text` | textarea | Text | A short guide for anyone who wants a quick routine and a lighter bag. |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your routine |
+| `button_label` | text | Button label | See the reasons |
 
 ## Blocks
 

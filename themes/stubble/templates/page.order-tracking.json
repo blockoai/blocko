@@ -43,20 +43,23 @@
       "blocks": {
         "block-1": {
           "type": "note",
-          "settings": {}
+          "settings": {
+            "title": "Free shipping",
+            "text": "on orders over $30"
+          }
         },
         "block-2": {
           "type": "note",
           "settings": {
-            "title": "Easy returns",
+            "title": "Full refund",
             "text": "within 30 days"
           }
         },
         "block-3": {
           "type": "note",
           "settings": {
-            "title": "Need help?",
-            "text": "We’re here for you"
+            "title": "5% off",
+            "text": "with a subscription"
           }
         }
       },

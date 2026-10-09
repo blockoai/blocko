@@ -35,9 +35,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Model with glowing skin |
-| `promo_eyebrow` | text | Promo eyebrow | Take the skin quiz |
-| `promo_heading` | text | Promo heading | Find the ritual made for your skin. |
+| `promo_image_alt` | text | Promo image alt text | Face with an even, glowing complexion |
+| `promo_eyebrow` | text | Promo eyebrow | Shade not obvious? |
+| `promo_heading` | text | Promo heading | Take the two-minute shade quiz. |
 | `promo_url` | url | Promo url |  |
 | `promo_label` | text | Promo label | Start the quiz |
 | `load_more_label` | text | Load more label | Load more |

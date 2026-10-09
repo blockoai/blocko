@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | Notes |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a more considered routine. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for skin-first color and care. |
+| `eyebrow` | text | Eyebrow | From our founder |
+| `heading` | text | Heading | Looks, routines and artist advice. |
+| `text` | text | Text | Step-by-step makeup looks, skin basics and conversations with people we admire. |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Founder reviewing a look on a client |
 
 ## Blocks
 

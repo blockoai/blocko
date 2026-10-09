@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Made for repeat wear |
-| `quote` | text | Quote | “The kind of routine you can do without looking in the mirror twice.” |
-| `author` | text | Author | — Community member |
+| `kicker` | text | Kicker | The pitch in four lines |
+| `quote` | text | Quote | “It looks like skin, only calmer.” |
+| `author` | text | Author | — Beta tester |
 
 ## Blocks
 

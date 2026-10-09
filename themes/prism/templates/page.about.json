@@ -2,80 +2,59 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "Every hair type is welcome here.",
+        "lede": "We grew up behind the chair in busy salons, and we still make products the way stylists want them: bold, fast and kind to hair.",
+        "button_label": "Read how it started",
+        "image_alt": "Stylist and client laughing in a salon"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Person with vivid pink-orange hair",
+        "kicker": "What we believe",
+        "heading": "Self-expression starts with healthy hair.",
+        "text": "Colour, cuts and tools are how people say who they are. We make the care that keeps that look going: formulas tested on real heads and backed by clinical-style measurements, not just claims."
+      }
     },
     "content-values": {
       "type": "blko-content-values",
-      "settings": {},
+      "settings": {
+        "kicker": "How we are built",
+        "heading": "Four ideas behind every bottle"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "Raised in the salon",
+            "text": "Our formulas begin as requests from stylists who need a fix that works on the first try."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback and better ways to keep color vivid."
+            "title": "A fruit at the core",
+            "text": "Every formula carries an omega-rich berry extract, chosen for softness and shine."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your system."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
-    },
-    "content-story-timeline": {
-      "type": "blko-content-story-timeline",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "milestone",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "milestone",
-          "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful range of care and color essentials."
-          }
-        },
-        "block-3": {
-          "type": "milestone",
-          "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New formulas make it easier to build a system that moves with your color."
+            "title": "Built on results",
+            "text": "Twelve collections, each measured against a specific hair concern."
           }
         },
         "block-4": {
-          "type": "milestone",
+          "type": "value",
           "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information and brighter results."
+            "number": "04",
+            "title": "Cleaner by default",
+            "text": "No sulfates, parabens or phthalates, and nothing from the long list of ingredients banned in Europe."
           }
         }
       },
@@ -86,26 +65,124 @@
         "block-4"
       ]
     },
-    "content-press-quotes": {
-      "type": "blko-content-press-quotes",
-      "settings": {},
+    "about-results": {
+      "type": "blko-about-results",
+      "settings": {
+        "kicker": "By the numbers",
+        "quote": "“We test before we talk. If a number does not hold up, the claim goes.”",
+        "author": "— Formulation lab"
+      },
       "blocks": {
         "block-1": {
-          "type": "quote",
-          "settings": {}
+          "type": "point",
+          "settings": {
+            "title": "12 collections",
+            "text": "One for each hair concern"
+          }
         },
         "block-2": {
-          "type": "quote",
+          "type": "point",
           "settings": {
-            "quote": "“A practical answer to the overcomplicated hair shelf.”",
-            "source": "— The Color Bar"
+            "title": "40 washes",
+            "text": "Colour hold in lab testing*"
           }
         },
         "block-3": {
-          "type": "quote",
+          "type": "point",
           "settings": {
-            "quote": "“The formulas have a distinctly salon-fresh punch.”",
-            "source": "— Salon Weekly"
+            "title": "450°F",
+            "text": "Heat protection ceiling*"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "about-icons": {
+      "type": "blko-about-icons",
+      "settings": {
+        "heading": "The formulas that started it all"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {
+            "title": "Root Refresh Dry Shampoo",
+            "url": "#dry"
+          }
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Strength Repair Mask",
+            "url": "#repair"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Heat Protect Serum",
+            "url": "#heat"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Slip Detangling Primer",
+            "url": "#primer"
+          }
+        },
+        "block-5": {
+          "type": "category",
+          "settings": {
+            "title": "Daily Cleanse Shampoo",
+            "url": "#wash"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "about-body-care": {
+      "type": "blko-about-body-care",
+      "settings": {
+        "image_alt": "Body butter jars beside a towel",
+        "eyebrow": "Beyond hair",
+        "heading": "The same care, now for skin.",
+        "text": "Our new body line borrows the berry extract and light textures hair fans already love.",
+        "button_label": "Explore body care"
+      }
+    },
+    "about-badges": {
+      "type": "blko-about-badges",
+      "settings": {
+        "eyebrow": "Our credentials"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "publication",
+          "settings": {
+            "name": "CERTIFIED B CORP"
+          }
+        },
+        "block-2": {
+          "type": "publication",
+          "settings": {
+            "name": "NET ZERO BY 2035"
+          }
+        },
+        "block-3": {
+          "type": "publication",
+          "settings": {
+            "name": "VEGAN FORMULAS"
           }
         }
       },
@@ -117,16 +194,22 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [
     "content-about-hero",
     "content-mission",
     "content-values",
-    "content-founder-note",
-    "content-story-timeline",
-    "content-press-quotes",
+    "about-results",
+    "about-icons",
+    "about-body-care",
+    "about-badges",
     "newsletter"
   ]
 }

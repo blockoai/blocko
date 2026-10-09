@@ -2,26 +2,34 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Shave",
+        "price_note": "Handle plus cartridge",
+        "shade_help_label": "Which razor line suits you? Compare below.",
+        "ship_note": "Free shipping over $30 · 30-day money-back guarantee",
+        "button_label": "Add to cart",
+        "one_time_label": "One-time purchase"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "A thick, cushioning gel that turns into a rich lather. Use it on its own or with a weighted razor for a close, comfortable shave."
+            "label": "What is good about it",
+            "text": "A metal handle with real weight, a head that pivots to follow your jaw, five blades set at stepped heights, a lubricating strip and a trimmer on the back for sideburns and edges."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Ingredients",
-            "text": "Water, glycerin, plant-based cleansers and skin-conditioning ingredients in a comfortable daily formula, free of parabens and dyes."
+            "label": "In the box",
+            "text": "One handle in the colour you pick and one cartridge, or four if you choose the larger pack. Refills only fit handles from the same line."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
-            "label": "How to use",
-            "text": "Wet your face, apply a small amount of gel and work it into a lather. Shave in the direction of hair growth, rinse the blade often, then rinse your face."
+            "label": "How to swap the cartridge",
+            "text": "Press the button on the handle, the used cartridge pops off, then click a fresh one on until it seats. Rinse the blades after each shave and swap once the glide feels rough."
           }
         }
       },
@@ -31,17 +39,12 @@
         "block-3"
       ]
     },
-    "pdp-before-after": {
-      "type": "blko-pdp-before-after",
-      "settings": {}
-    },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "pdp-also-like": {
+      "type": "blko-pdp-also-like",
+      "settings": {
+        "eyebrow": "You might also like",
+        "heading": "Refills, prep and care"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -50,8 +53,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New"
           }
         }
       },
@@ -60,40 +63,277 @@
         "block-2"
       ]
     },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {
+        "eyebrow": "Complete your shaving routine",
+        "heading": "Gel, blades and balm",
+        "text": "Add all three and take $1 off each item. Better together, and about $3 back."
+      }
+    },
+    "pdp-stats": {
+      "type": "blko-pdp-stats",
+      "settings": {
+        "kicker": "By the numbers",
+        "quote": "“A single cartridge outlasted a full month of daily shaves.”",
+        "author": "— Customer review"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Up to 21",
+            "text": "shaves per cartridge"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "45°",
+            "text": "pivot range of the head"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "100%",
+            "text": "money-back guarantee"
+          }
+        },
+        "block-4": {
+          "type": "point",
+          "settings": {
+            "title": "10 years",
+            "text": "of refining the design"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-details": {
+      "type": "blko-pdp-details",
+      "settings": {
+        "image_alt": "Many razor handles arranged in a row",
+        "eyebrow": "Little details, big difference",
+        "heading": "Four parts that do the heavy lifting.",
+        "text": "A lubricating strip softens hair as the blades pass, the pivot keeps contact on curves, the trimmer handles edges, and a push button ejects the cartridge without touching the blades.",
+        "button_label": "See how it works"
+      }
+    },
+    "pdp-features": {
+      "type": "blko-pdp-features",
+      "settings": {
+        "kicker": "Engineering",
+        "heading": "Why the shave feels different"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Razor following the curve of the neck",
+            "label": "Pivot",
+            "title": "A head that follows you",
+            "text": "The cartridge rocks forward and back so the blades keep contact around the chin and the neck."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Cartridge detail on a steel tray",
+            "label": "Blades",
+            "title": "Five blades, stepped",
+            "text": "Each blade sits slightly higher than the one before, so hair is cut gradually and tugging drops."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Man shaving at a bathroom mirror",
+            "label": "Handle",
+            "title": "Weight in the right place",
+            "text": "A heavier metal body lets the razor glide on its own instead of being pressed into skin."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-fit": {
+      "type": "blko-pdp-fit",
+      "settings": {
+        "kicker": "Compatibility",
+        "heading": "Refills fit their own handle only"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Razor Pro cartridges",
+            "text": "Five blades. They click onto Razor Pro handles and nothing else."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Razor Classic cartridges",
+            "text": "Four blades. They click onto Razor Classic handles and nothing else."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Not sure what you own?",
+            "text": "Count the blades on the cartridge: five means Pro, four means Classic."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-compare": {
+      "type": "blko-pdp-compare",
+      "settings": {
+        "kicker": "Pro or Classic",
+        "heading": "Worth the upgrade? Side by side"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "number": "A",
+            "title": "Blades and head",
+            "text": "Pro: five blades with a pivot. Classic: four blades, fixed head."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "B",
+            "title": "Handle",
+            "text": "Pro: weighted metal. Classic: light recycled plastic."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "C",
+            "title": "Cartridge life",
+            "text": "Pro: up to 21 shaves. Classic: about 16 shaves."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "D",
+            "title": "Cost per cartridge",
+            "text": "In an eight-pack, Pro averages about $3 and Classic about $2."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you buy"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "What separates Pro from Classic?",
+            "text": "Pro adds a fifth blade, a pivoting head and a metal handle, and each cartridge lasts longer. Classic keeps the price lower."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Will refills from the other line fit?",
+            "text": "No. Each line has its own cartridge shape, so buy refills that match the number of blades on your handle."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "How do I change the cartridge?",
+            "text": "Press the release button, let the old cartridge drop, and push a new one on until it clicks."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "How often should I replace it?",
+            "text": "When the glide gets rough or you notice tugging. Most people land between two and four months."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
     "pdp-reviews": {
       "type": "blko-pdp-reviews",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Customer reviews",
+        "average": "4.4",
+        "summary": "From 15,602 verified reviews",
+        "list_heading": "What shavers say"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 66
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 19
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 8
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 4
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
             "label": "1 star",
-            "percent": 1
+            "percent": 3
           }
         },
         "block-6": {
@@ -103,39 +343,46 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "key": "photos",
+            "label": "With photos"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Closeness",
-            "key": "coverage"
+            "key": "sensitive",
+            "label": "Sensitive skin"
           }
         },
         "block-9": {
           "type": "review",
           "settings": {
-            "text": "I get a close shave with no irritation, and the lather lasts the whole time. Cheaper than what I used before, too."
+            "title": "No more neck irritation",
+            "text": "I used to dread shaving under the jaw. The pivot kept the blades flat and I had no redness the next morning.",
+            "footer": "Marcus T. · 2 weeks ago",
+            "tags": "sensitive",
+            "caption": ""
           }
         },
         "block-10": {
           "type": "review",
           "settings": {
-            "title": "My everyday gel",
-            "text": "Easy to lather, rinses clean and smells fresh without being heavy. Switching was simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "title": "One cartridge, six weeks",
+            "text": "I shave every other day and a single cartridge carried me through. Replacement cost is lower than my old brand.",
+            "footer": "Luis R. · 1 month ago",
+            "tags": "photos",
+            "caption": "Razor Pro · onyx"
           }
         },
         "block-11": {
           "type": "review",
           "settings": {
-            "title": "Fresh, not sticky",
-            "text": "This gives me a fresh feel after the shave without leaving anything heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos"
+            "title": "Good, but check the fit",
+            "text": "Great shave. I ordered the wrong refills at first because I did not realise the lines are not interchangeable.",
+            "footer": "Dev P. · 2 months ago",
+            "tags": "all",
+            "caption": "",
+            "rating": 4
           }
         }
       },
@@ -155,20 +402,23 @@
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Keep browsing",
+        "heading": "Recently viewed"
+      }
     }
   },
   "order": [
     "pdp-product-main",
-    "pdp-before-after",
+    "pdp-also-like",
     "pdp-complete-routine",
-    "product-recommendations",
+    "pdp-stats",
+    "pdp-details",
+    "pdp-features",
+    "pdp-fit",
+    "pdp-compare",
+    "pdp-faq",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-recently-viewed"
   ]
 }

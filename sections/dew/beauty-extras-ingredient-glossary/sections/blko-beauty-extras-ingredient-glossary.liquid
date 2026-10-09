@@ -383,19 +383,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Formula dictionary"
+      "default": "Ingredient index"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Ingredients, explained."
+      "default": "the actives on our shelf, in plain words."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Search the ingredients behind a comfortable, considered routine."
+      "default": "Every formula leans on a few ingredients with a clear purpose. Tap one to see what it does and where it appears."
     },
     {
       "type": "text",
@@ -407,7 +407,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “hydration”"
+      "default": "Try “ceramide”"
     },
     {
       "type": "text",
@@ -425,13 +425,13 @@
       "type": "text",
       "id": "detail_heading",
       "label": "Detail heading",
-      "default": "Aloe leaf juice"
+      "default": "Peptides"
     },
     {
       "type": "textarea",
       "id": "detail_text",
       "label": "Detail text",
-      "default": "A botanical humectant that gives formulas a cool, soothing feel. It is especially welcome in a routine when skin needs a little ease."
+      "default": "Short chains of amino acids that tell skin to behave younger. They are the thread through both our skin and lip formulas, which is why the shelf feels like one family."
     },
     {
       "type": "text",
@@ -443,7 +443,7 @@
       "type": "text",
       "id": "best_for",
       "label": "Best for",
-      "default": "Comfort and hydration"
+      "default": "Bounce and the look of fine lines"
     },
     {
       "type": "text",
@@ -455,7 +455,7 @@
       "type": "text",
       "id": "found_in",
       "label": "Found in",
-      "default": "Face and care"
+      "default": "Glow serum, lip balm, lip tint"
     }
   ],
   "blocks": [
@@ -542,21 +542,35 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Soothing",
+            "key": "soothe"
           }
-        },
-        {
-          "type": "ingredient",
-          "settings": {}
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "name": "Caffeine",
+            "detail": "Helps skin around the eyes and jaw look less puffy",
+            "tags": "soothe"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "C",
+            "name": "Ceramides",
+            "detail": "Fats found naturally in skin that keep the barrier strong",
+            "tags": "barrier"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "E",
+            "name": "Ectoin",
+            "detail": "A shielding amino acid derivative for stressed, reactive skin",
+            "tags": "soothe"
           }
         },
         {
@@ -564,35 +578,26 @@
           "settings": {
             "letter": "H",
             "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
+            "detail": "Binds water at the surface for a fuller, fresher look",
             "tags": "hydration"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "P",
+            "name": "Polyglutamic acid",
+            "detail": "A water-holding film that outperforms many humectants",
+            "tags": "hydration"
           }
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "name": "Shea butter",
+            "detail": "A rich plant butter that cushions and seals dry areas",
+            "tags": "barrier"
           }
         }
       ]

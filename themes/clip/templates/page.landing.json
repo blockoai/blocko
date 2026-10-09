@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Warm-toned mist and mask on a pastel shelf",
+        "kicker": "The scent drop",
+        "heading": "A fragrance you can put in your hair.",
+        "text": "Mist, mask and oil share one warm, bakery-sweet scent. Layer them for a trail that lasts from the shower to midnight.",
+        "button_label": "Meet the scents"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-promises": {
+      "type": "blko-landing-promises",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "LIMITED RUN"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SOFT MATERIALS"
+            "text": "LAYER IT YOUR WAY"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "ALL-DAY WEAR"
+            "text": "VEGAN + CRUELTY-FREE"
           }
         }
       },
@@ -33,28 +41,36 @@
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "Scent notes",
+        "heading": "Top, heart, base"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Sugared fig and pear on a plate",
+            "label": "Top",
+            "title": "Sugar and pear",
+            "text": "A bright, sweet opening that fades within the first few minutes."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Hair accessory",
-            "label": "Step two",
-            "title": "Add a pastel pop",
-            "text": "Add as many as you like."
+            "image_alt": "Vanilla pods and cream",
+            "label": "Heart",
+            "title": "Vanilla and jasmine",
+            "text": "A creamy middle that gives the scent its soft, comforting body."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Hair accessories on a table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A pop of color is enough to make it yours."
+            "image_alt": "Amber resin and tonka beans",
+            "label": "Base",
+            "title": "Tonka and amber",
+            "text": "A warm, lingering finish that stays on hair for hours."
           }
         }
       },
@@ -64,19 +80,24 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "Shop the scent",
+        "heading": "Everything in the family"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "The scent family"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "Add a clip"
           }
         }
       },
@@ -85,26 +106,132 @@
         "block-2"
       ]
     },
+    "landing-ingredients": {
+      "type": "blko-landing-ingredients",
+      "settings": {
+        "kicker": "Inside the tub",
+        "heading": "Six workhorse ingredients"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Silk amino acids",
+            "text": "Smooth the surface of the hair so strands look shinier."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Shea butter",
+            "text": "Softens dry lengths and seals in moisture."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Murumuru and babassu oils",
+            "text": "Tropical oils that add slip and fight frizz."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Coconut oil",
+            "text": "Conditions the hair fiber from root to tip."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Glycerin",
+            "text": "Draws water into strands for lasting softness."
+          }
+        },
+        "block-6": {
+          "type": "value",
+          "settings": {
+            "number": "06",
+            "title": "Vitamin E",
+            "text": "An antioxidant that protects against dryness."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
+      "settings": {
+        "kicker": "Formulated without",
+        "quote": "“Smells like dessert, behaves like a salon treatment.”",
+        "author": "— Ambassador interview"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "No sulfates or parabens",
+            "text": "Gentle on scalps and color"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "No silicones or mineral oil",
+            "text": "Nothing that builds up"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "Vegan, cruelty-free, made in the USA",
+            "text": "Certified and made close to home"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "landing-faq": {
+      "type": "blko-landing-faq",
+      "settings": {
+        "eyebrow": "Scent questions",
+        "heading": "Before you sniff"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Does the mask smell like the mist?",
+            "text": "They share a base accord, but the mask is softer and a little creamier."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Will the scent fade in the shower?",
+            "text": "It lightens after rinsing. Add a spritz of mist on damp hair to bring it back."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Can I use the mask as a leave-in?",
+            "text": "Yes. A pea-size amount on dry ends works as an overnight or leave-in treatment."
           }
         }
       },
@@ -116,15 +243,22 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
+    "landing-promises",
     "content-landing-routine",
-    "tabbed-product-grid",
+    "landing-picks",
+    "landing-ingredients",
     "content-landing-proof",
+    "landing-faq",
     "newsletter"
   ]
 }

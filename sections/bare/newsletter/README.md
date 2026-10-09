@@ -30,10 +30,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | `button_label` | text | Button label | Sign up |
 | `placeholder` | text | Placeholder | you@example.com |
 | `eyebrow` | text | Eyebrow | Free shipping over $55 |
-| `heading` | text | Heading | Join the list. First word on new shades. |
+| `heading` | text | Heading | Join the list |
 | `email_label` | text | Email label | Email address |
 | `success_message` | text | Success message | Thanks for subscribing. |
-| `message` | text | Message | Occasional notes on new shades and easy looks. |
+| `message` | text | Message | Early launch notes, artist tips and the occasional kit restock, sent weekly. |
 
 ## Blocks
 

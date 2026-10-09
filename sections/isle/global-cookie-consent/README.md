@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `heading` | text | Heading | Cookies, with care. |
+| `heading` | text | Heading | Cookies, with sets. |
 | `text` | textarea | Text | We use essential cookies to keep this demonstration running smoothly. |
 | `reject_label` | text | Reject label | Only essential |
 | `accept_label` | text | Accept label | Accept all |

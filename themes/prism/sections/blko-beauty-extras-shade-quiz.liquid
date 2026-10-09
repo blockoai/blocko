@@ -276,6 +276,8 @@
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -297,49 +299,49 @@
       "type": "text",
       "id": "eyebrow_1",
       "label": "Eyebrow 1",
-      "default": "find it in minutes"
+      "default": "Question one of three"
     },
     {
       "type": "text",
       "id": "heading_1",
       "label": "Heading 1",
-      "default": "let’s find your formulas."
+      "default": "What is your hair type?"
     },
     {
       "type": "textarea",
       "id": "text_1",
       "label": "Text 1",
-      "default": "Start with the hair type that feels most like yours when it air-dries."
+      "default": "Choose the pattern that looks most like your hair when it air-dries."
     },
     {
       "type": "text",
       "id": "eyebrow_2",
       "label": "Eyebrow 2",
-      "default": "Your hair type"
+      "default": "Question two of three"
     },
     {
       "type": "text",
       "id": "heading_2",
       "label": "Heading 2",
-      "default": "Which texture is closest?"
+      "default": "How does your hair feel?"
     },
     {
       "type": "text",
       "id": "eyebrow_3",
       "label": "Eyebrow 3",
-      "default": "Your goal"
+      "default": "Question three of three"
     },
     {
       "type": "text",
       "id": "heading_3",
       "label": "Heading 3",
-      "default": "What matters most right now?"
+      "default": "What is your main goal?"
     },
     {
       "type": "text",
       "id": "finish_label",
       "label": "Finish label",
-      "default": "show my formulas"
+      "default": "Show my formulas"
     }
   ],
   "blocks": [
@@ -443,12 +445,14 @@
       "blocks": [
         {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Straight"
+          }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Medium density",
+            "label": "Wavy",
             "tone": "tone-1",
             "selected": true
           }
@@ -456,57 +460,66 @@
         {
           "type": "tone",
           "settings": {
-            "label": "Thick density",
+            "label": "Curly",
             "tone": "tone-2"
           }
         },
         {
           "type": "tone",
           "settings": {
-            "label": "Coily and dense",
+            "label": "Coily",
             "tone": "tone-3"
           }
         },
         {
           "type": "undertone",
           "settings": {
+            "label": "Dry",
+            "hint": "Rough, absorbs product fast",
             "selected": true
           }
         },
         {
           "type": "undertone",
           "settings": {
-            "label": "Wavy",
-            "hint": "A soft S shape"
+            "label": "Balanced",
+            "hint": "Soft, holds style fine"
           }
         },
         {
           "type": "undertone",
           "settings": {
-            "label": "Curly",
-            "hint": "Defined ringlets"
+            "label": "Oily",
+            "hint": "Roots get slick within a day"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Color lock",
-            "hint": "Keep it vivid for longer",
+            "label": "Hydrate",
+            "hint": "Moisture for thirsty lengths",
             "selected": true
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Fine",
-            "hint": "Repair and shine"
+            "label": "Repair",
+            "hint": "Strengthen weak, snapping strands"
           }
         },
         {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Frizz-free volume"
+            "label": "Tame frizz",
+            "hint": "Smooth, humidity-proof finish"
+          }
+        },
+        {
+          "type": "coverage",
+          "settings": {
+            "label": "Protect colour",
+            "hint": "Stop shades fading"
           }
         }
       ]

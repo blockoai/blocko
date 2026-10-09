@@ -174,6 +174,12 @@
 .blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 .blko-theme .blko-search-blog-comment-form textarea{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form textarea{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form textarea{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -183,19 +189,19 @@
       "type": "text",
       "id": "kicker",
       "label": "Kicker",
-      "default": "Send a note"
+      "default": "Send a message"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Tell us what you need."
+      "default": "How can we help?"
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "We’ll respond during the support hours below. Fields marked with an asterisk are required."
+      "default": "Add your order number if you have one. Our team replies in one to two business days."
     },
     {
       "type": "text",
@@ -225,7 +231,7 @@
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Send message"
+      "default": "Submit"
     },
     {
       "type": "text",
@@ -261,24 +267,26 @@
       "blocks": [
         {
           "type": "topic",
-          "settings": {}
-        },
-        {
-          "type": "topic",
           "settings": {
-            "label": "Formula guidance"
+            "label": "Track my order"
           }
         },
         {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Register a tool"
           }
         },
         {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Subscriptions"
+          }
+        },
+        {
+          "type": "topic",
+          "settings": {
+            "label": "Rewards points"
           }
         }
       ]

@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Three easy steps |
-| `heading` | text | Heading | Make room for what feels good. |
+| `kicker` | text | Kicker | Inside the vault |
+| `heading` | text | Heading | Four ways to wear sun protection |
 
 ## Blocks
 
@@ -40,7 +40,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Cream texture |
 | `label` | text | Label | Step one |
-| `title` | text | Title | Start with care |
+| `title` | text | Title | Start with sets |
 | `text` | textarea | Text | Give skin a little hydration after every rinse. |
 
 ## Dependencies

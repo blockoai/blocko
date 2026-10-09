@@ -29,15 +29,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Routine products (one per step) |  |
-| `pick_label` | text | Pick label | Daily pick |
-| `alternate_label` | text | Alternate label | Alternate |
-| `eyebrow` | text | Eyebrow | Build your edit |
-| `heading` | text | Heading | A routine, your way. |
-| `text` | textarea | Text | Pick one essential for each step. Your total updates as you go. |
-| `step_text` | text | Step text | A reliable daily essential. |
-| `summary_eyebrow` | text | Summary eyebrow | Your three steps |
+| `pick_label` | text | Pick label | Crowd favorite |
+| `alternate_label` | text | Alternate label | Switch it up |
+| `eyebrow` | text | Eyebrow | Build your kit |
+| `heading` | text | Heading | Wash, protect, finish. |
+| `text` | textarea | Text | Choose a bar, a deodorant and a fragrance that share a scent family, and the tot |
+| `step_text` | text | Step text | A solid choice for this step. |
+| `summary_eyebrow` | text | Summary eyebrow | Your kit |
 | `total_label` | text | Total label | Total |
-| `add_label` | text | Add label | Add routine to bag |
+| `add_label` | text | Add label | Add the kit to my cart |
 
 ## Blocks
 

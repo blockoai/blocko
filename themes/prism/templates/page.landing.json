@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Hair mid-flip against a bright backdrop",
+        "kicker": "Limited edition drop",
+        "heading": "A summer scent in a can.",
+        "text": "Our dry shampoo wears a juicy fruit scent for six weeks only. Stack it with a fine-fragrance sample and keep the whole collection.",
+        "button_label": "Shop the scent stack"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-promises": {
+      "type": "blko-landing-promises",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "SIX WEEKS ONLY"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SULFATE-FREE"
+            "text": "FRAGRANCE SAMPLE INCLUDED"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "SALON-TESTED"
+            "text": "WHILE STOCKS LAST"
           }
         }
       },
@@ -33,28 +41,35 @@
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "The scent stack",
+        "heading": "Layer it three ways"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Limited-edition can",
+            "title": "Spray the roots",
+            "text": "Fruity top notes with a clean, powdery base and the usual oil-absorbing lift."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Color-care product",
+            "image_alt": "Perfume vial beside the can",
             "label": "Step two",
-            "title": "Add a color boost",
-            "text": "Top up color only where it has faded."
+            "title": "Add the sample",
+            "text": "A rollerball vial of the partner fragrance pairs with the dry shampoo for a fuller scent."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Hair care products on a table",
+            "image_alt": "Mist over damp lengths",
             "label": "Step three",
-            "title": "Seal it with shine",
-            "text": "A drop of serum is enough to make it glow."
+            "title": "Finish with mist",
+            "text": "A hair and body mist in the same family carries the scent all day."
           }
         }
       },
@@ -64,19 +79,24 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "Shop the drop",
+        "heading": "Everything in the stack"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "The stack"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New drops",
-            "key": "new"
+            "key": "new",
+            "label": "Pairings"
           }
         }
       },
@@ -87,24 +107,31 @@
     },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
+      "settings": {
+        "kicker": "Why it sells out",
+        "quote": "“I bought two cans because I knew it would be gone by August.”",
+        "author": "— Past drop customer"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "Limited run",
+            "text": "Never restocked"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "Fan favourite",
+            "text": "Highest-rated drop so far"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Color first, always"
+            "title": "Gift ready",
+            "text": "Ships in a collectable box"
           }
         }
       },
@@ -114,33 +141,38 @@
         "block-3"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "landing-departments": {
+      "type": "blko-landing-departments",
+      "settings": {
+        "heading": "While you are here"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "title": "Dry shampoo",
+            "url": "#dry"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Treatments",
-            "url": "#eyes"
+            "title": "Hair + body mist",
+            "url": "#mist"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Styling",
-            "url": "#lips"
+            "title": "Value sets",
+            "url": "#sets"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Repair",
-            "url": "#care"
+            "title": "Tools",
+            "url": "#tools"
           }
         }
       },
@@ -153,16 +185,21 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
+    "landing-promises",
     "content-landing-routine",
-    "tabbed-product-grid",
+    "landing-picks",
     "content-landing-proof",
-    "category-slider",
+    "landing-departments",
     "newsletter"
   ]
 }

@@ -2,34 +2,51 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "A higher standard for color.",
+        "lede": "Makeup sits on skin for hours. We believed it should be as considered as anything you would put in a skincare routine.",
+        "button_label": "Read our standards",
+        "image_alt": "Founder holding a stick in a daylight studio"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Face with a glowing, even complexion",
+        "kicker": "Why we make sticks",
+        "heading": "Treat the skin while you color it.",
+        "text": "A cream stick needs few steps and no tools. Built on certified organic oils and butters, each one gives color and care in a single stroke."
+      }
     },
     "content-values": {
       "type": "blko-content-values",
-      "settings": {},
+      "settings": {
+        "kicker": "What guides us",
+        "heading": "Three rules for every stick"
+      },
       "blocks": {
         "block-1": {
           "type": "value",
-          "settings": {}
+          "settings": {
+            "title": "Plants first",
+            "text": "We start from certified organic oils, butters and extracts."
+          }
         },
         "block-2": {
           "type": "value",
           "settings": {
             "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "title": "Prove it",
+            "text": "Every benefit comes with the study type and size behind it."
           }
         },
         "block-3": {
           "type": "value",
           "settings": {
             "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
+            "title": "Shades for everyone",
+            "text": "Every product with a shade runs wide, with depth and undertone codes."
           }
         }
       },
@@ -41,32 +58,47 @@
     },
     "content-founder-note": {
       "type": "blko-content-founder-note",
-      "settings": {}
+      "settings": {
+        "kicker": "From our founder",
+        "quote": "“I wanted a cheek color I could wear with the same trust I place in my night cream.”",
+        "note": "Founder name is a placeholder.",
+        "name": "Founder name",
+        "role": "Founder",
+        "image_alt": "Founder portrait"
+      }
     },
     "content-story-timeline": {
       "type": "blko-content-story-timeline",
-      "settings": {},
+      "settings": {
+        "kicker": "How it grew",
+        "heading": "From one stick to a full routine."
+      },
       "blocks": {
         "block-1": {
           "type": "milestone",
-          "settings": {}
+          "settings": {
+            "label": "Start",
+            "datetime": "2019",
+            "title": "A single balm stick",
+            "text": "The first prototype combines blush and skincare in one swivel tube."
+          }
         },
         "block-2": {
           "type": "milestone",
           "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community of gardeners and skin lovers shapes every small batch."
+            "label": "Growth",
+            "datetime": "2021",
+            "title": "Shade codes",
+            "text": "Depth and undertone codes replace vague color names on face sticks."
           }
         },
         "block-3": {
           "type": "milestone",
           "settings": {
-            "label": "2023",
+            "label": "Skincare",
             "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a routine that moves with your day."
+            "title": "A short skincare line",
+            "text": "Cleansers, elixirs and an eye balm join the makeup."
           }
         },
         "block-4": {
@@ -74,8 +106,8 @@
           "settings": {
             "label": "Today",
             "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
+            "title": "Heading to retail",
+            "text": "Shelves in a major beauty retailer join our own store."
           }
         }
       },
@@ -88,24 +120,29 @@
     },
     "content-press-quotes": {
       "type": "blko-content-press-quotes",
-      "settings": {},
+      "settings": {
+        "kicker": "In the press"
+      },
       "blocks": {
         "block-1": {
           "type": "quote",
-          "settings": {}
+          "settings": {
+            "quote": "“Makeup that quietly looks after your skin.”",
+            "source": "— The Beauty Review"
+          }
         },
         "block-2": {
           "type": "quote",
           "settings": {
-            "quote": "“The quiet luxury of a three-step ritual.”",
-            "source": "— The Daily Edit"
+            "quote": "“The rare stick that suits a bare-faced person.”",
+            "source": "— Glow Journal"
           }
         },
         "block-3": {
           "type": "quote",
           "settings": {
-            "quote": "“The textures are pure indulgence.”",
-            "source": "— Studio Notes"
+            "quote": "“Better ingredients, simpler routine.”",
+            "source": "— The Clean Edit"
           }
         }
       },
@@ -117,7 +154,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [

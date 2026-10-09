@@ -327,25 +327,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "The rewards circle"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "More ritual, more rewards."
+      "default": "Join free and start with 500 points."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the things you love, and enjoy a little more from every routine."
+      "default": "Members collect points on every order, get first look at new shades and unlock gifts as their balance grows."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "Join the circle"
     },
     {
       "type": "image_picker",
@@ -356,31 +356,31 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Skincare ritual flat lay"
+      "default": "Stick set with a rewards card"
     },
     {
       "type": "text",
       "id": "earn_eyebrow",
       "label": "Earn eyebrow",
-      "default": "How it works"
+      "default": "Earning points"
     },
     {
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "Join, shop, spend."
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "Member levels"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "More beauty, more benefits."
+      "default": "Each level brings more."
     }
   ],
   "blocks": [
@@ -441,42 +441,47 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Open a free account and 500 welcome points land immediately."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Shop",
+            "text": "Earn points on every dollar and extra points for reviews and referrals."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Spend",
+            "text": "Swap points for a discount at checkout or a mini of a new shade."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Petal",
+            "perks": "Welcome points · birthday gift"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Bloom",
+            "points": "1,000 points",
+            "perks": "Early access to launches · free shipping on every order"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Grove",
+            "points": "2,500 points",
+            "perks": "Double-point weekends · a yearly full-size gift"
           }
         }
       ]

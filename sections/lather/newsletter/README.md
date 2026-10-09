@@ -27,13 +27,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `button_label` | text | Button label | Sign up |
+| `button_label` | text | Button label | Get my code |
 | `placeholder` | text | Placeholder | you@example.com |
-| `eyebrow` | text | Eyebrow | Join the crew |
-| `heading` | text | Heading | 20% off your first order, delivered. |
+| `eyebrow` | text | Eyebrow | 20% off your first order |
+| `heading` | text | Heading | Join the crew |
 | `email_label` | text | Email label | Email address |
 | `success_message` | text | Success message | You're in. Check your inbox. |
-| `message` | text | Message | Occasional notes on scents, deals and bad dad jokes. |
+| `message` | text | Message | Drop dates, secret sales and the odd locker-room joke. Once a week, no spam. |
 
 ## Blocks
 

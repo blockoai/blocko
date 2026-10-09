@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Care team",
+        "heading": "Tell us what is going on.",
+        "text": "Order questions, a product concern or a partnership idea? Pick a reason and we will route it to the right person.",
+        "link_label": "Open the form"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,29 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "title": "Support",
+            "text": "Order status, returns and product help."
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Partnerships",
+            "text": "Collaborations and creator ideas.",
+            "url": "mailto:partners@example.com",
+            "link_label": "partners@example.com"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "title": "Wholesale",
+            "text": "Stocking the shelf in your shop.",
+            "url": "mailto:stockists@example.com",
+            "link_label": "stockists@example.com"
           }
         }
       },
@@ -41,28 +49,35 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Write to us",
+        "heading": "Choose a reason",
+        "text": "Add your order number if it applies. We aim to answer within two business days.",
+        "button_label": "Send message"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "Order status"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product guidance"
+            "label": "Change or cancel an order"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Return or damaged item"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Product question"
           }
         }
       },
@@ -75,24 +90,30 @@
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Support hours",
+        "heading": "When we answer"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Monday to Friday",
+            "value": "9 AM to 5 PM Pacific"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
             "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "value": "Closed"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Reply time",
+            "value": "Within two business days"
           }
         }
       },
@@ -104,7 +125,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Visit",
+        "heading": "The studio",
+        "text": "Our small team works from a studio by the water. Drop-ins are not possible, but pop-ups are open to all.",
+        "city": "Los Angeles, CA",
+        "country": "United States"
+      }
     }
   },
   "order": [

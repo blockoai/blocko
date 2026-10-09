@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `breadcrumb` | text | Breadcrumb | About |
-| `heading` | text | Heading | Made for real life. |
-| `text` | textarea | Text | Comfortable formulas for the way you want to look and feel. |
+| `breadcrumb` | text | Breadcrumb | Shade finder |
+| `heading` | text | Heading | Find the shade that fits. |
+| `text` | textarea | Text | Match by skin tone, a selfie or a short quiz, and get the right formula first ti |
 
 ## Blocks
 

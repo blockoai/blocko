@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Send a note |
-| `heading` | text | Heading | Tell us what you need. |
-| `text` | textarea | Text | We’ll respond during the support hours below. Fields marked with an asterisk are |
+| `kicker` | text | Kicker | Message us |
+| `heading` | text | Heading | Tell us what you need |
+| `text` | textarea | Text | Messages can run to 1,000 characters. For a product problem, add the batch code  |
 | `name_label` | text | Name label | Name |
 | `email_label` | text | Email label | Email |
 | `topic_label` | text | Topic label | Topic |

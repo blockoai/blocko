@@ -1,6 +1,6 @@
 # Category slider
 
-Horizontal category cards for body, sun, glow and care.
+Horizontal category cards for body, sun, scent and sets.
 
 - Category: collection-list
 - Kind: section
@@ -37,7 +37,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `url` | url | Url |  |
 | `image` | image_picker | Image |  |
-| `title` | text | Title | Body |
+| `title` | text | Title | Body care |
 
 ## Dependencies
 

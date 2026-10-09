@@ -2,81 +2,133 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Person with a tinted-skincare complexion and rosy cheeks",
+        "kicker": "Tinted skincare",
+        "heading": "Five reasons to wear your skincare.",
+        "text": "A short guide to base products that tint, protect and treat at the same time.",
+        "button_label": "Read the reasons"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
-      "settings": {},
+    "landing-reasons": {
+      "type": "blko-landing-reasons",
+      "settings": {
+        "kicker": "Why it works",
+        "heading": "Skin-first color, explained"
+      },
       "blocks": {
         "block-1": {
-          "type": "message",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "A soft-glam finish",
+            "text": "Sheer tint that looks like your skin on a good day."
+          }
         },
         "block-2": {
-          "type": "message",
+          "type": "value",
           "settings": {
-            "text": "100% SKINCARE-FRIENDLY"
+            "number": "02",
+            "title": "Two jobs, one step",
+            "text": "Color on the outside, active ingredients underneath."
           }
         },
         "block-3": {
-          "type": "message",
+          "type": "value",
           "settings": {
-            "text": "ALL-DAY WEAR"
+            "number": "03",
+            "title": "Made for sensitive skin",
+            "text": "Tested on reactive complexions, free of fragrance."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "A longer banned list",
+            "text": "Thousands of ingredients we choose not to use."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Three products cover it",
+            "text": "Take the quiz and get a base, a corrector and a finish."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4",
+        "block-5"
       ]
     },
-    "content-landing-routine": {
-      "type": "blko-content-landing-routine",
-      "settings": {},
+    "tint-reels": {
+      "type": "blko-tint-reels",
+      "settings": {
+        "heading": "Five faces, five finishes",
+        "link_label": "Read reviews"
+      },
       "blocks": {
         "block-1": {
-          "type": "step",
-          "settings": {}
+          "type": "reel",
+          "settings": {
+            "quote": "It evened me out and I forgot I had it on.",
+            "shade": "Light 25N"
+          }
         },
         "block-2": {
-          "type": "step",
+          "type": "reel",
           "settings": {
-            "image_alt": "Tinted beauty product",
-            "label": "Step two",
-            "title": "Add a sheer tint",
-            "text": "Build coverage only where you want a little more."
+            "quote": "My dark circles are gone by lunchtime.",
+            "name": "Jo",
+            "shade": "Medium 40W"
           }
         },
         "block-3": {
-          "type": "step",
+          "type": "reel",
           "settings": {
-            "image_alt": "Makeup products on a table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A wash of color is enough to make it yours."
+            "quote": "First tint that does not turn gray on me.",
+            "name": "Ines",
+            "shade": "Tan 60O"
+          }
+        },
+        "block-4": {
+          "type": "reel",
+          "settings": {
+            "quote": "Perfect with sunscreen underneath.",
+            "name": "Ade",
+            "shade": "Rich 90C"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "Shop the lineup",
+        "heading": "Start with a tint, add a corrector"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Base"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "Finish"
           }
         }
       },
@@ -85,46 +137,20 @@
         "block-2"
       ]
     },
-    "content-landing-proof": {
-      "type": "blko-content-landing-proof",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "point",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "point",
-          "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
-          }
-        },
-        "block-3": {
-          "type": "point",
-          "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
-    "content-landing-routine",
-    "tabbed-product-grid",
-    "content-landing-proof",
+    "landing-reasons",
+    "tint-reels",
+    "landing-picks",
     "newsletter"
   ]
 }

@@ -2,11 +2,24 @@
   "sections": {
     "page-header": {
       "type": "blko-page-header",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shade finder",
+        "heading": "pick your bronzer in four taps.",
+        "text": "Choose your depth and how warm you want to go. We will point you to the stick that melts into your skin. Back-in-stock alerts are one email away."
+      }
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "Step one of three",
+        "heading_1": "Where does your skin tone sit?",
+        "text_1": "Look at your bare face by a window and pick the nearest depth.",
+        "eyebrow_2": "Step two of three",
+        "heading_2": "Cool or warm underneath?",
+        "eyebrow_3": "Step three of three",
+        "heading_3": "How much warmth do you want?",
+        "finish_label": "Show my stick"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
@@ -15,7 +28,7 @@
         "block-2": {
           "type": "tone",
           "settings": {
-            "label": "Light to medium",
+            "label": "Medium",
             "tone": "tone-1",
             "selected": true
           }
@@ -23,20 +36,21 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Tan to deep",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Rich",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "hint": "Pink or red comes through when you flush",
             "selected": true
           }
         },
@@ -44,36 +58,36 @@
           "type": "undertone",
           "settings": {
             "label": "Neutral",
-            "hint": "A balanced mix"
+            "hint": "Neither pink nor golden stands out"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
             "label": "Warm",
-            "hint": "Golden or peach tones"
+            "hint": "Skin tans easily and looks golden"
           }
         },
         "block-8": {
           "type": "coverage",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
+            "label": "A hint",
+            "hint": "Barely there warmth",
             "selected": true
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "Sun-kissed",
+            "hint": "Looks like a week outdoors"
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Sculpted",
+            "hint": "Visible contour along the cheek"
           }
         }
       },
@@ -92,7 +106,14 @@
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Your pick",
+        "heading": "Try this stick first.",
+        "text": "Swipe it on the back of your hand, then a little on the cheekbone. A shade up or down is an easy swap.",
+        "button_label": "Add to bag",
+        "card_eyebrow": "Cream bronzer stick",
+        "card_detail": "Buildable warmth · Skin-depth match"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +132,38 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "shade-routine": {
+      "type": "blko-shade-routine",
+      "settings": {
+        "kicker": "After you choose",
+        "heading": "wear it three ways"
+      },
       "blocks": {
         "block-1": {
-          "type": "question",
-          "settings": {}
+          "type": "step",
+          "settings": {
+            "image_alt": "Bronzer swept across the cheeks and nose",
+            "label": "All over",
+            "title": "Warm the whole face",
+            "text": "Draw a loose halo around the hairline and blend inward for a gentle tan."
+          }
         },
         "block-2": {
-          "type": "question",
+          "type": "step",
           "settings": {
-            "label": "When will my order ship?"
+            "image_alt": "Bronzer pressed onto the cheekbone",
+            "label": "Face",
+            "title": "Define the cheekbone",
+            "text": "Sweep a stripe under the bone, then blend it up toward the temple."
           }
         },
         "block-3": {
-          "type": "question",
+          "type": "step",
           "settings": {
-            "label": "Can I update my order?"
+            "image_alt": "Bronzer tapped on the lips",
+            "label": "Lips",
+            "title": "Tap on the lips",
+            "text": "Dab a touch on bare lips for a tea-stained, understated color."
           }
         }
       },
@@ -140,14 +175,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [
     "page-header",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
+    "shade-routine",
     "newsletter"
   ]
 }

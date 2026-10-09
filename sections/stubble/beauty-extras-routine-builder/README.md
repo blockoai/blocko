@@ -29,15 +29,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collection` | collection | Routine products (one per step) |  |
-| `pick_label` | text | Pick label | Daily pick |
-| `alternate_label` | text | Alternate label | Alternate |
-| `eyebrow` | text | Eyebrow | Build your kit |
-| `heading` | text | Heading | A shave routine, your way. |
-| `text` | textarea | Text | Pick one essential for each step. Your total updates as you go. |
-| `step_text` | text | Step text | A reliable daily essential. |
-| `summary_eyebrow` | text | Summary eyebrow | Your three steps |
+| `pick_label` | text | Pick label | Everyday pick |
+| `alternate_label` | text | Alternate label | Upgrade |
+| `eyebrow` | text | Eyebrow | Your shave routine |
+| `heading` | text | Heading | Choose one item for each stage. |
+| `text` | textarea | Text | Pick prep, blades and after-care and watch the $1-per-item discount add up. |
+| `step_text` | text | Step text | Built for this part of the shave. |
+| `summary_eyebrow` | text | Summary eyebrow | Your routine |
 | `total_label` | text | Total label | Total |
-| `add_label` | text | Add label | Add kit to bag |
+| `add_label` | text | Add label | Add all three to cart |
 
 ## Blocks
 

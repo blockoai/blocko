@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Find us nearby |
-| `heading` | text | Heading | See it in person. |
-| `text` | textarea | Text | Choose a country to see a selection of participating stockists. |
+| `eyebrow` | text | Eyebrow | Find it in a store |
+| `heading` | text | Heading | Smell it before you buy it. |
+| `text` | textarea | Text | Search by country to see shelves that carry our bars, wash and deodorant. Nothin |
 | `country_label` | text | Country label | Country |
 | `map_label` | text | Map label | Illustrative store map |
 | `map_text` | text | Map text | Store map |

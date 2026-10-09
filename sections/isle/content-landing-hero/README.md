@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person with a fresh, sun-kissed glow |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Hydration that keeps up. |
-| `text` | textarea | Text | Comfortable, easy essentials made for skin that moves through a full beach day. |
+| `image_alt` | text | Image alt text | A bottle of sun mist on a beach towel next to a tote |
+| `kicker` | text | Kicker | The sun vault |
+| `heading` | text | Heading | Get to know your glow. |
+| `text` | textarea | Text | Four full-size sun essentials in one box, plus an exclusive tote, priced well be |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your beach bag |
+| `button_label` | text | Button label | Meet the vault |
 
 ## Blocks
 

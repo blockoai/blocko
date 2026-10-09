@@ -2,7 +2,19 @@
   "sections": {
     "search-blog-search-empty": {
       "type": "blko-search-blog-search-empty",
-      "settings": {}
+      "settings": {
+        "eyebrow": "No matches",
+        "heading": "We could not find that one.",
+        "text": "Check the spelling, use fewer words or try one of these ideas.",
+        "search_label": "Search the shop",
+        "placeholder": "Search products, sets and stories",
+        "tip_1": "Try broader words such as “mist”, “butter” or “scent”.",
+        "tip_2_prefix": "Browse the",
+        "tip_2_link": "best sellers",
+        "tip_3_prefix": "Read the",
+        "tip_3_link": "island journal",
+        "image_alt": "Coconut halves on a wooden table"
+      }
     }
   },
   "order": [

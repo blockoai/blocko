@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Our method |
-| `heading` | text | Heading | color belongs in real life. |
-| `lede` | textarea | Lede | We make loud, color-safe hair care for people who treat their hair like a statem |
+| `kicker` | text | Kicker | Our story |
+| `heading` | text | Heading | Every hair type is welcome here. |
+| `lede` | textarea | Lede | We grew up behind the chair in busy salons, and we still make products the way s |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | meet our point of view |
+| `button_label` | text | Button label | Read how it started |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with vivid colored hair |
+| `image_alt` | text | Image alt text | Stylist and client laughing in a salon |
 
 ## Blocks
 

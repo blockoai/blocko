@@ -2,32 +2,84 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "A bottle of sun mist on a beach towel next to a tote",
+        "kicker": "The sun vault",
+        "heading": "Get to know your glow.",
+        "text": "Four full-size sun essentials in one box, plus an exclusive tote, priced well below buying them separately.",
+        "button_label": "Meet the vault"
+      }
+    },
+    "landing-benefits": {
+      "type": "blko-landing-benefits",
+      "settings": {
+        "heading": "What every piece in the vault does."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "claim",
+          "settings": {
+            "label": "High-performing ingredients"
+          }
+        },
+        "block-2": {
+          "type": "claim",
+          "settings": {
+            "label": "Protected glow"
+          }
+        },
+        "block-3": {
+          "type": "claim",
+          "settings": {
+            "label": "Zero white cast"
+          }
+        },
+        "block-4": {
+          "type": "claim",
+          "settings": {
+            "label": "Head-to-toe coverage"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "Inside the vault",
+        "heading": "Four ways to wear sun protection"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Body sunscreen mist bottle",
+            "label": "Mist",
+            "title": "Body mist for fast coverage",
+            "text": "Spray it on the shoulders and legs before you leave the car."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Body care product",
-            "label": "Step two",
-            "title": "Add a shimmer stick",
-            "text": "Build coverage only where you want a little more."
+            "image_alt": "Gel-cream sunscreen swatch",
+            "label": "Gel cream",
+            "title": "Gel cream for quiet moisture",
+            "text": "A cushiony SPF 50 that settles into dry skin without a chalky film."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Body care products on a sandy table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A touch of shimmer is enough to make it yours."
+            "image_alt": "Sun stick and compact",
+            "label": "Stick + compact",
+            "title": "Stick and compact for top-ups",
+            "text": "Slip them in a pocket for faces, noses and ears between swims."
           }
         }
       },
@@ -37,19 +89,24 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-vault": {
+      "type": "blko-landing-vault",
+      "settings": {
+        "eyebrow": "Shop the pieces",
+        "heading": "Or buy the favorites one by one"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "In the vault"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "Just landed",
-            "key": "new"
+            "key": "new",
+            "label": "Top-ups"
           }
         }
       },
@@ -60,24 +117,31 @@
     },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
+      "settings": {
+        "kicker": "Bundle and save",
+        "quote": "“The vault covered our whole family for the summer and cost less than the four pieces alone.”",
+        "author": "— Customer review"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "Save up to $65",
+            "text": "Compared with full-size prices"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "Exclusive tote",
+            "text": "Included with every vault"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "Gift ready",
+            "text": "Ships in reusable packaging"
           }
         }
       },
@@ -87,33 +151,38 @@
         "block-3"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "landing-crosssell": {
+      "type": "blko-landing-crosssell",
+      "settings": {
+        "heading": "Round out the beach bag"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "title": "Body butters",
+            "url": "#body"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Sun",
-            "url": "#eyes"
+            "title": "Fragrance mists",
+            "url": "#scent"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Gifts",
-            "url": "#lips"
+            "title": "Lip SPF",
+            "url": "#lip"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Sets",
-            "url": "#care"
+            "title": "Deodorant",
+            "url": "#deodorant"
           }
         }
       },
@@ -126,15 +195,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [
     "content-landing-hero",
+    "landing-benefits",
     "content-landing-routine",
-    "tabbed-product-grid",
+    "landing-vault",
     "content-landing-proof",
-    "category-slider",
+    "landing-crosssell",
     "newsletter"
   ]
 }

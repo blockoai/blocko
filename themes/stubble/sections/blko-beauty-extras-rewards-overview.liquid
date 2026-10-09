@@ -20,7 +20,6 @@
 .blko-theme .blko-beauty-extras-panel h2{margin:.25rem 0 1rem}
 .blko-theme .blko-beauty-extras-filter-row .is-active{background:var(--color-button);color:var(--color-button-text);border-color:var(--color-button)}
 .blko-theme .blko-beauty-extras-routine-summary .blko-button{width:100%;margin-top:1.4rem;background:var(--color-paper);color:var(--color-button)}
-.blko-theme .blko-beauty-extras-map:before{content:"";position:absolute;width:150%;height:25%;background:var(--color-accent);transform:rotate(-35deg)}
 .blko-theme .blko-beauty-extras-store-list h2{margin:.2rem 0;font:var(--weight-medium) var(--text-h4)/var(--leading-h3) var(--font-display);letter-spacing:var(--tracking-body)}
 .blko-theme .blko-beauty-extras-rewards{padding:0}
 .blko-theme .blko-beauty-extras-reward-hero{display:grid;grid-template-columns:1fr 1fr;background:var(--color-button);color:var(--color-paper)}
@@ -330,25 +329,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "Subscriber benefits"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "More gear, more rewards."
+      "default": "No points to count. Just lower prices."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the things you use, and enjoy a little more from every shave."
+      "default": "We skip tiers and balances. Subscribe to what you already buy and the discount shows up in your cart, with more off as you add items."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "Browse subscribable items"
     },
     {
       "type": "image_picker",
@@ -359,31 +358,31 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Grooming kit flat lay"
+      "default": "Stack of rolled white towels"
     },
     {
       "type": "text",
       "id": "earn_eyebrow",
       "label": "Earn eyebrow",
-      "default": "How it works"
+      "default": "How the savings stack"
     },
     {
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "Subscribe. Add. Unlock."
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "What you get"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "More points, more perks."
+      "default": "More items, bigger saving."
     }
   ],
   "blocks": [
@@ -444,42 +443,49 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Subscribe to one item",
+            "text": "Choose refills, gel or a face cleanser and take 5% off every order, not only the first."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Add a third item",
+            "text": "Three or more subscribed items takes 15% off each of them."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "title": "Silver",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Claim the extras",
+            "text": "Subscribers get free engraving on razor stands, a $15 value."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Gold",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "One or two items",
+            "points": "5% off",
+            "perks": "Every subscription order · skip or cancel any time"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Three or more items",
+            "points": "15% off",
+            "perks": "On every subscribed item · access to the benefits shop"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Service discount",
+            "points": "15% off",
+            "perks": "Veterans and active military · verified once a year"
           }
         }
       ]

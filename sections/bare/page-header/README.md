@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `breadcrumb` | text | Breadcrumb | About |
-| `heading` | text | Heading | Made for real life. |
-| `text` | textarea | Text | Lightweight formulas for the way you want to look. |
+| `breadcrumb` | text | Breadcrumb | Find your shade |
+| `heading` | text | Heading | Skip the guesswork, get matched. |
+| `text` | textarea | Text | Take a short quiz, or send a bare-faced selfie to one of our artists. Matching i |
 
 ## Blocks
 

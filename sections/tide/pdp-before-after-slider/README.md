@@ -37,9 +37,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | `stat_2_value` | text | Stat 2 value | 91% |
 | `stat_2_label` | text | Stat 2 label | said it absorbed easily |
 | `after_image` | image_picker | After image |  |
-| `after_image_alt` | text | After image alt text | Skin after sun lotion |
+| `after_image_alt` | text | After image alt text | Skin after body oil |
 | `before_image` | image_picker | Before image |  |
-| `before_image_alt` | text | Before image alt text | Skin before sun lotion |
+| `before_image_alt` | text | Before image alt text | Skin before body oil |
 
 ## Blocks
 

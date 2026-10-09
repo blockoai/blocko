@@ -42,7 +42,7 @@
             "type": "color",
             "id": "button_hover",
             "label": "Button hover",
-            "default": "#ef426f"
+            "default": "#d33786"
           }
         ],
         "role": {
@@ -108,7 +108,7 @@
         "type": "color",
         "id": "color_bg_alt",
         "label": "Bg Alt",
-        "default": "#f8dde9"
+        "default": "#d4b4c6"
       },
       {
         "type": "color",
@@ -120,13 +120,13 @@
         "type": "color",
         "id": "color_text_muted",
         "label": "Text Muted",
-        "default": "#757575"
+        "default": "#56615a"
       },
       {
         "type": "color",
         "id": "color_border",
         "label": "Border",
-        "default": "#e3e6e7"
+        "default": "#babfbf"
       },
       {
         "type": "color",
@@ -144,19 +144,19 @@
         "type": "color",
         "id": "color_button_hover",
         "label": "Button Hover",
-        "default": "#ef426f"
+        "default": "#d33786"
       },
       {
         "type": "color",
         "id": "color_accent",
         "label": "Accent",
-        "default": "#ef426f"
+        "default": "#d33786"
       },
       {
         "type": "color",
         "id": "color_sale",
         "label": "Sale",
-        "default": "#c8102e"
+        "default": "#c20a49"
       },
       {
         "type": "color",
@@ -174,7 +174,7 @@
         "type": "color",
         "id": "color_footer_bg",
         "label": "Footer Bg",
-        "default": "#fbe9f5"
+        "default": "#d5c2d5"
       },
       {
         "type": "color",
@@ -192,7 +192,7 @@
         "type": "color",
         "id": "color_error",
         "label": "Error",
-        "default": "#c8102e"
+        "default": "#c20a49"
       },
       {
         "type": "color",
@@ -210,25 +210,25 @@
         "type": "color",
         "id": "color_swatch_petal",
         "label": "Swatch petal",
-        "default": "#f5dadf"
+        "default": "#d1b1ba"
       },
       {
         "type": "color",
         "id": "color_swatch_honey",
         "label": "Swatch honey",
-        "default": "#f4c67b"
+        "default": "#feb062"
       },
       {
         "type": "color",
         "id": "color_swatch_coral",
         "label": "Swatch coral",
-        "default": "#e3785e"
+        "default": "#cb5452"
       },
       {
         "type": "color",
         "id": "color_swatch_rose",
         "label": "Swatch rose",
-        "default": "#f09491"
+        "default": "#df777a"
       },
       {
         "type": "color",
@@ -240,19 +240,19 @@
         "type": "color",
         "id": "color_swatch_light",
         "label": "Swatch light",
-        "default": "#f1e4c5"
+        "default": "#cab289"
       },
       {
         "type": "color",
         "id": "color_swatch_medium",
         "label": "Swatch medium",
-        "default": "#f09491"
+        "default": "#df777a"
       },
       {
         "type": "color",
         "id": "color_swatch_deep",
         "label": "Swatch deep",
-        "default": "#e3785e"
+        "default": "#cb5452"
       }
     ]
   },

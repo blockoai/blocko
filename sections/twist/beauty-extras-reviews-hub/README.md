@@ -31,11 +31,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `product` | product | Product (optional, store-wide reviews when empty) |  |
-| `eyebrow` | text | Eyebrow | From the community |
-| `heading` | text | Heading | Real hair days, real notes. |
+| `eyebrow` | text | Eyebrow | reviews |
+| `heading` | text | Heading | What shoppers say after a few washes. |
 | `average` | text | Average | 4.8 |
-| `stars_label` | text | Stars label | Five out of five stars |
-| `count_text` | text | Count text | From 2,483 verified reviews |
+| `stars_label` | text | Stars label | Four point eight out of five stars |
+| `count_text` | text | Count text | From 150,000+ verified reviews · 96% recommend |
 
 ## Blocks
 

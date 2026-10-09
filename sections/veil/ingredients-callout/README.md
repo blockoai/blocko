@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Beauty routine |
-| `eyebrow` | text | Eyebrow | Brand approach |
-| `heading` | text | Heading | Simple rituals, beautifully made. |
-| `text` | textarea | Text | Build your routine with comfortable essentials that work together naturally. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Smear of cream on a ceramic dish |
+| `eyebrow` | text | Eyebrow | Our standard |
+| `heading` | text | Heading | If we cannot explain it, it stays out. |
+| `text` | textarea | Text | Every ingredient has a job we can describe in one line. The full list sits on ea |
+| `button_label` | text | Button label | Read our standards |
 | `button_url` | url | Button url |  |
 
 ## Blocks

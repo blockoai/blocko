@@ -2,7 +2,17 @@
   "sections": {
     "cart-checkout-cart-main": {
       "type": "blko-cart-checkout-cart-main",
-      "settings": {}
+      "settings": {
+        "threshold": 30,
+        "upsell_kicker": "Complete the shave",
+        "upsell_heading": "Often added",
+        "empty_heading": "Your cart is empty.",
+        "empty_text": "Start with a trial set, or browse every razor and refill.",
+        "empty_button_label": "Browse razors",
+        "empty_image_alt": "Razor handles on a tray",
+        "after": "away from free shipping.",
+        "unlocked": "Free shipping unlocked."
+      }
     },
     "cart-checkout-service-strip": {
       "type": "blko-cart-checkout-service-strip",
@@ -10,20 +20,23 @@
       "blocks": {
         "block-1": {
           "type": "note",
-          "settings": {}
+          "settings": {
+            "title": "Free shipping",
+            "text": "on orders over $30"
+          }
         },
         "block-2": {
           "type": "note",
           "settings": {
-            "title": "Easy returns",
+            "title": "Full refund",
             "text": "within 30 days"
           }
         },
         "block-3": {
           "type": "note",
           "settings": {
-            "title": "Need help?",
-            "text": "We’re here for you"
+            "title": "5% off",
+            "text": "with a subscription"
           }
         }
       },

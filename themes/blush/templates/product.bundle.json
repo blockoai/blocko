@@ -2,30 +2,41 @@
   "sections": {
     "pdp-bundle-builder": {
       "type": "blko-pdp-bundle-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Custom skincare set",
+        "heading": "Build a routine, save one fifth.",
+        "text": "Choose a cleanser, a cream, an SPF and a serum. The set price updates as you tick them.",
+        "saving_text": "Four or more items takes 20% off the set."
+      }
     },
     "pdp-bundle-explainer": {
       "type": "blko-pdp-bundle-explainer",
-      "settings": {},
+      "settings": {
+        "eyebrow": "How sets work",
+        "heading": "Pick, tick, save."
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Choose your steps",
+            "text": "Wash, treat, moisturize and protect: pick one product for each."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your set price updates as you select."
+            "heading": "Watch the price drop",
+            "text": "The discount appears as soon as your set reaches four items."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible routine you can return to every day."
+            "heading": "Get it as a gift",
+            "text": "Every set ships in a pink pouch with an optional note."
           }
         }
       },
@@ -37,7 +48,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Sets that save",
+        "heading": "Ready-made sets"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -58,7 +72,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [

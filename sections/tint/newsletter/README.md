@@ -30,10 +30,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | `button_label` | text | Button label | Sign up |
 | `placeholder` | text | Placeholder | you@example.com |
 | `eyebrow` | text | Eyebrow | 10% off your first order |
-| `heading` | text | Heading | Get 10% off plus first looks at new colors. |
+| `heading` | text | Heading | Get launches before anyone else |
 | `email_label` | text | Email label | Email address |
 | `success_message` | text | Success message | Thanks for subscribing. |
-| `message` | text | Message | New colors and looks, once in a while. |
+| `message` | text | Message | Early shade drops, offers and quick looks. One email a week at most. |
 
 ## Blocks
 

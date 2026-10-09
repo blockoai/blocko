@@ -30,21 +30,21 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Search |
-| `heading` | text | Heading | Nothing quite matches that. |
-| `text` | text | Text | Try a shorter phrase, check the spelling, or start with one of these useful path |
+| `heading` | text | Heading | No match, yet. |
+| `text` | text | Text | Try a product family such as skin or lip + cheek, or one of the shortcuts below. |
 | `search_label` | text | Search label | Search the journal and shop |
 | `placeholder` | text | Placeholder | Search products, routines, and journal notes |
 | `submit_label` | text | Submit label | Search |
 | `dropdown_heading` | text | Dropdown heading | Suggested results |
 | `view_all_label` | text | View all label | View all results |
-| `tip_1` | text | Tip 1 | Try broader terms like “skin”, “lip”, or “routine”. |
-| `tip_2_prefix` | text | Tip 2 prefix | Browse our |
-| `tip_2_link` | text | Tip 2 link | new arrivals |
-| `tip_3_prefix` | text | Tip 3 prefix | Read our |
+| `tip_1` | text | Tip 1 | Try broader words like “serum”, “blush” or “travel”. |
+| `tip_2_prefix` | text | Tip 2 prefix | Browse the |
+| `tip_2_link` | text | Tip 2 link | award winners |
+| `tip_3_prefix` | text | Tip 3 prefix | Watch the |
 | `journal_url` | url | Journal url |  |
-| `tip_3_link` | text | Tip 3 link | latest journal notes |
+| `tip_3_link` | text | Tip 3 link | latest films |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | A calm skincare routine on a bathroom counter |
+| `image_alt` | text | Image alt text | Lip balms lined up on a shelf |
 
 ## Blocks
 

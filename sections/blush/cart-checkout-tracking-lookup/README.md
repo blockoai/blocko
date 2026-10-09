@@ -29,9 +29,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Order tracking |
-| `heading` | text | Heading | Follow your delivery. |
-| `text` | textarea | Text | Enter the details from your confirmation email to see the latest status. |
+| `eyebrow` | text | Eyebrow | Track |
+| `heading` | text | Heading | Where is my parcel? |
+| `text` | textarea | Text | Enter the order number and email from your confirmation. Tracking can take up to |
 | `found_message` | text | Found message | Your latest shipment status is shown. |
 | `error_message` | text | Error message | We could not find that order. Check the details and try again. |
 | `unavailable_message` | text | Unavailable message | Order tracking is not available for this store yet. Please use the link in your  |
@@ -39,7 +39,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `order_placeholder` | text | Order placeholder | e.g. B-10482 |
 | `email_label` | text | Email label | Email address |
 | `email_placeholder` | text | Email placeholder | you@example.com |
-| `button_label` | text | Button label | Track order |
+| `button_label` | text | Button label | Find my parcel |
 
 ## Blocks
 

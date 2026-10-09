@@ -359,31 +359,31 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "From the community"
+      "default": "Reviews"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Real routines, real notes."
+      "default": "100,000 reviews, one honest average."
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.6"
     },
     {
       "type": "text",
       "id": "stars_label",
       "label": "Stars label",
-      "default": "Five out of five stars"
+      "default": "Four and a half out of five stars"
     },
     {
       "type": "text",
       "id": "count_text",
       "label": "Count text",
-      "default": "From 2,483 verified reviews"
+      "default": "From 103,000 verified reviews"
     }
   ],
   "blocks": [
@@ -504,7 +504,7 @@
           "type": "text",
           "id": "meta",
           "label": "Meta",
-          "default": "Verified customer · Face"
+          "default": "Verified customer · Skin"
         }
       ]
     }
@@ -515,34 +515,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 74
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 16
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 6
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 2
           }
         },
         {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         {
@@ -554,60 +556,47 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Face",
-            "key": "complexion"
+            "label": "Skin",
+            "key": "skin"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Body",
-            "key": "care"
+            "label": "Lip + cheek",
+            "key": "lip"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "With photos",
+            "label": "With photos or video",
             "key": "photos"
           }
         },
         {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
-          }
-        },
-        {
-          "type": "review",
-          "settings": {}
-        },
-        {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Body"
+            "tags": "skin photos",
+            "title": "Cleanser that removes everything",
+            "meta": "Balm-to-lather cleanser · Verified buyer · would recommend"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "lip",
+            "title": "I bought three more lip balms",
+            "meta": "Overnight lip balm · Vanilla bean · Verified buyer"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "tags": "lip photos",
+            "rating": 4,
+            "title": "Shade runs a touch deeper on me",
+            "meta": "Cream blush stick · Raspberry · Verified buyer"
           }
         }
       ]

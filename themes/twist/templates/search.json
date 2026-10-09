@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search bars, clips and blog posts.",
+        "text": "Look up a product, a scent or a how-to.",
+        "placeholder": "Try “claw clip” or “plopping”",
+        "search_label": "Search the shop and blog",
+        "view_all_label": "see all results"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

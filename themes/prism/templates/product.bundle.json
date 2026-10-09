@@ -2,30 +2,79 @@
   "sections": {
     "pdp-bundle-builder": {
       "type": "blko-pdp-bundle-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Custom bundle",
+        "heading": "Pick three and unlock a set price.",
+        "text": "Choose from wash, treat and style. The more you add, the more you save, and travel sizes count.",
+        "saving_text": "Add three items to unlock 15% off the set."
+      }
     },
     "pdp-bundle-explainer": {
       "type": "blko-pdp-bundle-explainer",
-      "settings": {},
+      "settings": {
+        "eyebrow": "How bundles work",
+        "heading": "Mix, match, save."
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Choose a lane",
+            "text": "Start with wash, styling or travel sizes."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your system price updates as you select."
+            "heading": "Add three or more",
+            "text": "Savings start at three items and grow at five."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible routine you can return to every day."
+            "heading": "Check out once",
+            "text": "One shipment, one price, free shipping from $30."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "bundle-value-sets": {
+      "type": "blko-bundle-value-sets",
+      "settings": {
+        "kicker": "Ready-made sets",
+        "heading": "Prefer a set that is already put together?"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "number": "$114",
+            "title": "Super-sized wash set",
+            "text": "Liter shampoo and conditioner priced well below the sum of the parts."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "$79",
+            "title": "Colour-care trio",
+            "text": "Cleanse, treat and seal in a single launch box."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "$32",
+            "title": "Trial set",
+            "text": "Travel bottles of the best-sellers, ideal for testing a routine."
           }
         }
       },
@@ -37,7 +86,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Pairs well",
+        "heading": "Round out your shelf"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -58,12 +110,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [
     "pdp-bundle-builder",
     "pdp-bundle-explainer",
+    "bundle-value-sets",
     "product-recommendations",
     "newsletter"
   ]

@@ -2,19 +2,35 @@
   "sections": {
     "search-blog-article-hero": {
       "type": "blko-search-blog-article-hero",
-      "settings": {}
+      "settings": {
+        "reading_time": "5 minutes"
+      }
     },
     "search-blog-article-content": {
       "type": "blko-search-blog-article-content",
-      "settings": {}
+      "settings": {
+        "products_heading": "Gear mentioned in this guide",
+        "share_label": "Pass it to a buddy",
+        "save_label": "Bookmark",
+        "comments_heading": "Talk back"
+      }
     },
     "search-blog-related-articles": {
       "type": "blko-search-blog-related-articles",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Keep reading",
+        "heading": "More guides to try",
+        "link_label": "Read it"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [

@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with a fresh natural makeup finish |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Color that keeps up. |
-| `text` | textarea | Text | Comfortable, buildable essentials made for a face that moves through a full day. |
+| `image_alt` | text | Image alt text | Face finished in under five minutes |
+| `kicker` | text | Kicker | The five-minute face |
+| `heading` | text | Heading | Out the door looking put together. |
+| `text` | textarea | Text | Four products, one routine: prep, tint, define, brighten. Everything here is bui |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your routine |
+| `button_label` | text | Button label | See the routine |
 
 ## Blocks
 

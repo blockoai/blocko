@@ -2,11 +2,23 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Your daily three",
+        "heading": "Choose a step, see the price.",
+        "text": "Choose one product per step from prep, glow and comfort. The total updates as you swap.",
+        "step_text": "A steady choice for this step.",
+        "summary_eyebrow": "Your routine",
+        "add_label": "Add all three to bag",
+        "pick_label": "Everyday pick",
+        "alternate_label": "Richer option"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Round it out",
+        "heading": "Little sizes for the bag"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -27,7 +39,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [

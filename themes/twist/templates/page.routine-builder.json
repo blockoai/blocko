@@ -2,21 +2,35 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "build a bundle",
+        "heading": "Pick a goal, then pick your bars.",
+        "text": "Choose a shampoo, a conditioner and a styler. The savings bar fills as you add.",
+        "step_text": "A favorite for this step.",
+        "summary_eyebrow": "your bundle",
+        "add_label": "add bundle to bag",
+        "pick_label": "bar",
+        "alternate_label": "swap in"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "pair it up",
+        "heading": "best-selling bundles"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "top bundles"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "what's new",
-            "key": "new"
+            "key": "new",
+            "label": "just launched"
           }
         }
       },
@@ -27,7 +41,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [

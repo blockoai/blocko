@@ -29,8 +29,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `trigger_href` | text | Header link URL that opens this menu | #shop |
-| `eyebrow` | text | Eyebrow | Shop by ritual |
-| `heading` | text | Heading | Start where the sand is. |
+| `eyebrow` | text | Eyebrow | Shop by step |
+| `heading` | text | Heading | Where does your day begin? |
 
 ## Blocks
 
@@ -39,7 +39,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `url` | url | Url |  |
-| `label` | text | Label | Body |
+| `label` | text | Label | Body care |
 
 ### Image tile (`tile`, max 4)
 
@@ -48,7 +48,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `url` | url | Url |  |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Body ritual |
-| `label` | text | Label | Body |
+| `label` | text | Label | Body care |
 
 ## Dependencies
 

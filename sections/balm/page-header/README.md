@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `breadcrumb` | text | Breadcrumb | About |
-| `heading` | text | Heading | Made slowly, by hand. |
-| `text` | textarea | Text | Organic formulas for skin that feels as good as it looks. |
+| `breadcrumb` | text | Breadcrumb | Shade quiz |
+| `heading` | text | Heading | Find your stick shade. |
+| `text` | textarea | Text | Three short questions about depth, undertone and finish point you to a number an |
 
 ## Blocks
 

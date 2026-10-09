@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Our idea |
-| `heading` | text | Heading | Beauty belongs in real life. |
-| `lede` | textarea | Lede | We make everyday color and care for the rituals that help you feel like yourself |
+| `kicker` | text | Kicker | Welcome |
+| `heading` | text | Heading | Care for skin, then have fun with colour. |
+| `lede` | textarea | Lede | A beauty shop that started as a blog where readers shared their routines, and st |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Shop bestsellers |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a person with natural makeup |
+| `image_alt` | text | Image alt text | Friends laughing in front of a pink wall |
 
 ## Blocks
 

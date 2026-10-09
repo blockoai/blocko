@@ -2,7 +2,12 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Find a retailer",
+        "heading": "Try the scents in person.",
+        "text": "Pick a country to see beauty retailers that stock our body and sun care.",
+        "directions_label": "Open map"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
@@ -30,30 +35,48 @@
           }
         },
         "block-5": {
-          "type": "store",
-          "settings": {}
+          "type": "country",
+          "settings": {
+            "value": "au",
+            "label": "Australia"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Seabreeze Beauty Hall",
+            "place": "San Diego, CA"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "name": "Palm & Pine Apothecary",
+            "place": "Miami, FL"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "ca",
+            "name": "North Shore Pharmacy",
+            "place": "Vancouver, BC"
+          }
+        },
+        "block-9": {
+          "type": "store",
+          "settings": {
+            "country": "uk",
+            "name": "Clover Beauty Rooms",
+            "place": "Manchester"
+          }
+        },
+        "block-10": {
+          "type": "store",
+          "settings": {
+            "country": "au",
+            "name": "Sunday Beauty Co.",
+            "place": "Sydney, NSW"
           }
         }
       },
@@ -65,12 +88,18 @@
         "block-5",
         "block-6",
         "block-7",
-        "block-8"
+        "block-8",
+        "block-9",
+        "block-10"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [

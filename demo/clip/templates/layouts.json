@@ -63,14 +63,6 @@
     ]
   },
   {
-    "page": "reviews",
-    "title": "Reviews",
-    "sectionIds": [
-      "beauty-extras-reviews-hub",
-      "newsletter"
-    ]
-  },
-  {
     "page": "stockists",
     "title": "Stockists",
     "sectionIds": [
@@ -83,7 +75,7 @@
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -92,6 +84,8 @@
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
+      "subscription-perks",
+      "subscription-faq",
       "product-recommendations",
       "newsletter"
     ]
@@ -141,11 +135,11 @@
     "title": "Our story",
     "sectionIds": [
       "content-about-hero",
-      "content-mission",
-      "content-values",
       "content-founder-note",
+      "about-values",
+      "about-materials",
       "content-story-timeline",
-      "content-press-quotes",
+      "about-favorites",
       "newsletter"
     ]
   },
@@ -182,10 +176,12 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
+      "landing-promises",
       "content-landing-routine",
-      "tabbed-product-grid",
+      "landing-picks",
+      "landing-ingredients",
       "content-landing-proof",
+      "landing-faq",
       "newsletter"
     ]
   },
@@ -239,12 +235,11 @@
       "hero-campaign",
       "clip-trio",
       "message-band",
-      "clip-category-tiles",
       "tabbed-product-grid",
+      "clip-category-tiles",
       "feature-driver",
-      "commitments",
+      "home-favorites",
       "clip-story-split",
-      "testimonial-slider",
       "clip-mosaic",
       "newsletter",
       "home-collection-quick-view-modal"
@@ -257,6 +252,7 @@
       "home-collection-mega-menu",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
+      "collection-recent",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -273,15 +269,14 @@
   },
   {
     "page": "pdp",
-    "title": "Big Claw Clip in Blush",
+    "title": "Jumbo Claw Clip",
     "sectionIds": [
       "pdp-product-main",
-      "pdp-before-after",
-      "pdp-complete-routine",
-      "product-recommendations",
-      "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-materials",
+      "pdp-works-with",
+      "pdp-press",
+      "pdp-departments",
+      "pdp-recently-viewed"
     ]
   },
   {
@@ -290,6 +285,8 @@
     "sectionIds": [
       "pdp-bundle-builder",
       "pdp-bundle-explainer",
+      "bundle-aura",
+      "bundle-how-to",
       "product-recommendations",
       "newsletter"
     ]

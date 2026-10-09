@@ -30,12 +30,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Recommended tints |  |
 | `add_label` | text | Add label | Add to bag |
-| `eyebrow` | text | Eyebrow | Your starting point |
-| `heading` | text | Heading | Two shades to try first. |
-| `text` | textarea | Text | Based on your selections, these flexible shades are a beautiful place to start.  |
-| `button_label` | text | Button label | Add suggested tint |
-| `card_eyebrow` | text | Card eyebrow | Flexible tint |
-| `card_detail` | text | Card detail | Natural finish · SPF 40 |
+| `eyebrow` | text | Eyebrow | Your shade |
+| `heading` | text | Heading | Family 4, golden undertone. |
+| `text` | textarea | Text | Swipe a stripe along your jaw. If the line vanishes, that is the one. Not quite? |
+| `button_label` | text | Button label | Add to bag |
+| `card_eyebrow` | text | Card eyebrow | Fluid skin foundation |
+| `card_detail` | text | Card detail | Light to medium cover · 30 ml |
 
 ## Blocks
 

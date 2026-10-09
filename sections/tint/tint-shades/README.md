@@ -27,10 +27,10 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Shade finder |
-| `heading` | text | Heading | The shades |
+| `eyebrow` | text | Eyebrow | Shade range |
+| `heading` | text | Heading | Shades for every depth |
 | `pill_url` | url | Pill url |  |
-| `pill_label` | text | Pill label | Select your skin tone |
+| `pill_label` | text | Pill label | Find my match |
 
 ## Blocks
 

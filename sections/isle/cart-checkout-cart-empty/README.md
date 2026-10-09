@@ -28,12 +28,12 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Your bag |
-| `heading` | text | Heading | Your bag is waiting. |
-| `text` | textarea | Text | Sunny, clean body care is ready whenever you are. |
-| `button_label` | text | Button label | Continue shopping |
+| `eyebrow` | text | Eyebrow | My bag |
+| `heading` | text | Heading | Nothing here yet. |
+| `text` | textarea | Text | Sun mists, butters and scents are waiting whenever you are. |
+| `button_label` | text | Button label | Start shopping |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Body care products on a sandy table |
+| `image_alt` | text | Image alt text | Beach tote with body care products |
 
 ## Blocks
 

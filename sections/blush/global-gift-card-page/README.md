@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `card_label` | text | Card label | For a good day |
-| `card_title` | text | Card title | Gift card |
-| `kicker` | text | Kicker | A gift, ready to use |
-| `heading` | text | Heading | Share a little brightness. |
-| `text` | textarea | Text | Use this gift card at checkout. The balance is available until it’s fully redeem |
+| `card_label` | text | Card label | From us to you |
+| `card_title` | text | Card title | Digital gift card |
+| `kicker` | text | Kicker | Amounts from $15 to $200 |
+| `heading` | text | Heading | Let them pick their own. |
+| `text` | textarea | Text | It arrives by email on the morning you choose, with your message on top. The bal |
 | `code_label` | text | Code label | Gift card code |
 | `copied_message` | text | Copied message | Gift card code copied. |
 | `copy_label` | text | Copy label | Copy code |

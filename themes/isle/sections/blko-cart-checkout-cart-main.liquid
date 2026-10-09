@@ -387,7 +387,7 @@
 .blko-theme .blko-isle-actives p{max-width:34rem;margin:0 0 1.75rem}
 .blko-theme .blko-isle-actives img{width:100%;height:100%;min-height:26rem;object-fit:cover}
 .blko-theme .blko-isle-results h2{margin:0 0 2rem}
-.blko-theme .blko-isle-results>div{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.blko-theme .blko-isle-results>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:2rem}
 .blko-theme .blko-isle-results strong{font:700 clamp(3rem,8vw,5.5rem)/1 var(--font-heading)}
 .blko-theme .blko-isle-results>p{margin:2.5rem 0 0;font-size:var(--text-small)}
 @media (max-width:760px){.blko-theme .blko-isle-actives img{min-height:20rem}
@@ -452,6 +452,28 @@
 .blko-theme .blko-cart-checkout-line-item h2 a{color:inherit;text-decoration:none}
 .blko-theme a.blko-cart-checkout-text-button{display:inline-block;text-decoration:none}
 .blko-theme .blko-cart-checkout-line-item h2 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
+.blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
 .blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
 .blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
 .blko-theme .blko-product-card h3 a{color:inherit;text-decoration:none}
@@ -741,19 +763,19 @@
       "type": "text",
       "id": "upsell_kicker",
       "label": "Upsell kicker",
-      "default": "Build the ritual"
+      "default": "Complete the beach bag"
     },
     {
       "type": "text",
       "id": "upsell_heading",
       "label": "Upsell heading",
-      "default": "A little extra care"
+      "default": "Quick add-ons"
     },
     {
       "type": "text",
       "id": "upsell_eyebrow",
       "label": "Upsell eyebrow",
-      "default": "Pairs well with"
+      "default": "You may also like"
     },
     {
       "type": "text",
@@ -807,13 +829,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Your shopping bag"
+      "default": "My bag"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Bag"
+      "default": "Your bag"
     },
     {
       "type": "range",
@@ -823,31 +845,31 @@
       "max": 500,
       "step": 5,
       "unit": "$",
-      "default": 50
+      "default": 39
     },
     {
       "type": "text",
       "id": "progress_label",
       "label": "Progress label",
-      "default": "Shipping progress"
+      "default": "Free shipping progress"
     },
     {
       "type": "text",
       "id": "before",
       "label": "Before",
-      "default": "Only"
+      "default": "You are only"
     },
     {
       "type": "text",
       "id": "after",
       "label": "After",
-      "default": "away from complimentary shipping."
+      "default": "away from free shipping."
     },
     {
       "type": "text",
       "id": "unlocked",
       "label": "Unlocked",
-      "default": "You have unlocked complimentary shipping."
+      "default": "Free shipping unlocked."
     },
     {
       "type": "text",
@@ -859,19 +881,19 @@
       "type": "text",
       "id": "empty_heading",
       "label": "Empty heading",
-      "default": "Your bag is waiting."
+      "default": "Your bag is empty."
     },
     {
       "type": "textarea",
       "id": "empty_text",
       "label": "Empty text",
-      "default": "Sunny, clean body care is ready whenever you are."
+      "default": "Sunscreen, butters and scent mists are waiting."
     },
     {
       "type": "text",
       "id": "empty_button_label",
       "label": "Empty button label",
-      "default": "Continue shopping"
+      "default": "Start shopping"
     },
     {
       "type": "image_picker",
@@ -882,7 +904,7 @@
       "type": "text",
       "id": "empty_image_alt",
       "label": "Empty image alt text",
-      "default": "Body care products on a sandy table"
+      "default": "Beach tote with body care products"
     }
   ],
   "presets": [

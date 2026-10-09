@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "page-header": {
+      "type": "blko-page-header",
+      "settings": {
+        "breadcrumb": "SPF finder",
+        "heading": "Find your sun routine.",
+        "text": "Three quick questions about your skin, your plans and your favorite texture, and we will suggest the right formula and finish."
+      }
+    },
+    "beauty-extras-shade-quiz": {
+      "type": "blko-beauty-extras-shade-quiz",
+      "settings": {
+        "eyebrow_1": "Question one of three",
+        "heading_1": "How does your skin react to sun?",
+        "text_1": "Think about a day outside with no protection and choose the closest match.",
+        "eyebrow_2": "Question two of three",
+        "heading_2": "Where are you heading?",
+        "eyebrow_3": "Question three of three",
+        "heading_3": "Which texture do you reach for?",
+        "finish_label": "Show my picks"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tone",
+          "settings": {
+            "label": "Burns fast"
+          }
+        },
+        "block-2": {
+          "type": "tone",
+          "settings": {
+            "label": "Burns, then tans",
+            "tone": "tone-1",
+            "selected": true
+          }
+        },
+        "block-3": {
+          "type": "tone",
+          "settings": {
+            "label": "Tans easily",
+            "tone": "tone-2"
+          }
+        },
+        "block-4": {
+          "type": "tone",
+          "settings": {
+            "label": "Rarely burns",
+            "tone": "tone-3"
+          }
+        },
+        "block-5": {
+          "type": "undertone",
+          "settings": {
+            "label": "Beach or pool",
+            "hint": "Long days that include swimming",
+            "selected": true
+          }
+        },
+        "block-6": {
+          "type": "undertone",
+          "settings": {
+            "label": "Trail or court",
+            "hint": "Sweaty, active hours outdoors"
+          }
+        },
+        "block-7": {
+          "type": "undertone",
+          "settings": {
+            "label": "Daily errands",
+            "hint": "Short stretches in the daylight"
+          }
+        },
+        "block-8": {
+          "type": "coverage",
+          "settings": {
+            "label": "Mist",
+            "hint": "Fast and easy to spray on",
+            "selected": true
+          }
+        },
+        "block-9": {
+          "type": "coverage",
+          "settings": {
+            "label": "Gel cream",
+            "hint": "Cushiony and moisturizing"
+          }
+        },
+        "block-10": {
+          "type": "coverage",
+          "settings": {
+            "label": "Stick",
+            "hint": "Mess-free for faces and tops of feet"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10"
+      ]
+    },
+    "beauty-extras-shade-result": {
+      "type": "blko-beauty-extras-shade-result",
+      "settings": {
+        "eyebrow": "Your picks",
+        "heading": "Start with these two finishes.",
+        "text": "Both are broad spectrum. Rose glow is lighter on shimmer, Gold glow carries more glow and SPF 50.",
+        "button_label": "Add my pick to bag",
+        "card_eyebrow": "Body sunscreen mist",
+        "card_detail": "Water resistant · SPF 42-50"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "swatch",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "swatch",
+          "settings": {
+            "label": "Sandalwood shade",
+            "tone": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "finder-faq": {
+      "type": "blko-finder-faq",
+      "settings": {
+        "eyebrow": "Sun questions",
+        "heading": "Choosing an SPF, explained"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Does a higher SPF mean I can skip reapplying?",
+            "text": "No. Reapply every two hours and after swimming or sweating, whatever the number on the bottle."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "What does broad spectrum mean?",
+            "text": "It means the formula protects against both UVA rays that age skin and UVB rays that cause burns."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Is the finder a medical recommendation?",
+            "text": "No, it is a shopping guide. If you have a skin condition, ask a dermatologist what suits you."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
+    }
+  },
+  "order": [
+    "page-header",
+    "beauty-extras-shade-quiz",
+    "beauty-extras-shade-result",
+    "finder-faq",
+    "newsletter"
+  ]
+}

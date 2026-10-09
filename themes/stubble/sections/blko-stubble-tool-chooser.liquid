@@ -12,7 +12,6 @@
 .blko-theme .blko-account-card .blko-button{width:100%;background:var(--color-button);border-color:var(--color-button)}
 .blko-theme .blko-beauty-extras-filter-row .is-active{background:var(--color-button);color:var(--color-button-text);border-color:var(--color-button)}
 .blko-theme .blko-beauty-extras-routine-summary .blko-button{width:100%;margin-top:1.4rem;background:var(--color-paper);color:var(--color-button)}
-.blko-theme .blko-beauty-extras-map:before{content:"";position:absolute;width:150%;height:25%;background:var(--color-accent);transform:rotate(-35deg)}
 .blko-theme .blko-beauty-extras-subscription-grid .blko-button{width:100%;margin:1rem 0;background:var(--color-paper);color:var(--color-button)}
 .blko-theme .blko-beauty-extras-subscription-grid .blko-beauty-extras-text-button{color:inherit;padding:0}
 .blko-theme .blko-beauty-extras-mini-match .blko-button{margin-left:auto}
@@ -132,19 +131,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Start here"
+      "default": "The first decision"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Choose your tool."
+      "default": "Choose your razor."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Two razors, one goal: a close, comfortable shave. Pick the handle that suits your hand."
+      "default": "Every cartridge fits one handle line only, so pick the line first and the refills follow."
     }
   ],
   "blocks": [
@@ -208,18 +207,26 @@
       "blocks": [
         {
           "type": "tool",
-          "settings": {}
+          "settings": {
+            "image_alt": "Premium razor handle on a tray",
+            "badge": "Premium",
+            "name": "Razor Pro",
+            "note": "Weighted metal handle, five blades and a pivoting head that stays with your jaw.",
+            "price": "Handle from $12 · refills $15 per 4",
+            "url": "#razor-pro",
+            "label": "Shop Razor Pro"
+          }
         },
         {
           "type": "tool",
           "settings": {
-            "image_alt": "Safety razor on a tray",
-            "badge": "Classic",
-            "name": "Safety Razor",
-            "note": "A single-blade classic for a slower, closer shave and the lowest cost per blade.",
-            "price": "From $12",
-            "url": "#safety",
-            "label": "Shop the classic"
+            "image_alt": "Everyday razor handle close up",
+            "badge": "Everyday",
+            "name": "Razor Classic",
+            "note": "A lighter handle with four blades, the lower-cost way into a close shave.",
+            "price": "Handle from $10 · refills $10 per 4",
+            "url": "#razor-classic",
+            "label": "Shop Razor Classic"
           }
         }
       ]

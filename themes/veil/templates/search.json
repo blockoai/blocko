@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search the shop and the journal.",
+        "text": "Look up products, shade guides and how-tos.",
+        "placeholder": "Try “concealer” or “shade match”",
+        "search_label": "Search products and journal",
+        "view_all_label": "See every result"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

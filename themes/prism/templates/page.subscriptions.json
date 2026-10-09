@@ -2,24 +2,82 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe + save",
+        "heading": "Keep your shelf full, spend 10% less.",
+        "text": "Choose the products you reorder, set how often they arrive and save on every shipment. Change or stop anytime.",
+        "shipment_eyebrow": "Your next delivery",
+        "shipment_heading": "Arrives in three weeks",
+        "image_alt": "Dry shampoo can",
+        "variant_label": "Clean linen · Standard",
+        "shipment_note": "A reminder email goes out seven days before it ships.",
+        "frequency_eyebrow": "Deliver every",
+        "frequency_copy": "Currently set to every 3 months.",
+        "skip_label": "Skip this delivery",
+        "swap_label": "Swap a product"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
           "settings": {
-            "selected": true
+            "label": "2 months"
           }
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "3 months",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "4 months"
+          }
+        },
+        "block-4": {
+          "type": "frequency",
+          "settings": {
+            "label": "6 months"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "Why subscribe",
+        "heading": "Three reasons to set it and forget it"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Pick your favorites",
+            "text": "Every eligible bottle you add earns 10% off, not just your first order."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Pick your timing",
+            "text": "Ship every two to six months to match how fast you use a product."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Ship free from $30",
+            "text": "Orders under $30 pay a flat $10; everything above travels free."
           }
         }
       },
@@ -29,9 +87,12 @@
         "block-3"
       ]
     },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
+    "subscription-picks": {
+      "type": "blko-subscription-picks",
+      "settings": {
+        "eyebrow": "Popular subscription picks",
+        "heading": "Most-subscribed formulas"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -50,14 +111,72 @@
         "block-2"
       ]
     },
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Subscription FAQ",
+        "heading": "Answers before you start"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "How do I begin?",
+            "text": "Choose Subscribe on any eligible product page, set a frequency and check out."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Does it cost extra?",
+            "text": "No fee. You save 10% on each subscribed item."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Can I change or pause it?",
+            "text": "Yes. Edit items, skip a shipment or pause in your account whenever you like."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "What if I cancel?",
+            "text": "You can stop any time and restart later; nothing is locked in."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "Which products qualify?",
+            "text": "Staples such as dry shampoo and masks. Look for the plan selector on the product page."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
-    "product-recommendations",
+    "subscription-perks",
+    "subscription-picks",
+    "subscription-faq",
     "newsletter"
   ]
 }

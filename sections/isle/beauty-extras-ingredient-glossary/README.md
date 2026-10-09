@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Formula dictionary |
-| `heading` | text | Heading | Ingredients, explained. |
-| `text` | textarea | Text | Search the clean ingredients behind every sunny ritual. |
+| `eyebrow` | text | Eyebrow | The clean standard |
+| `heading` | text | Heading | What is in the bottle, and why. |
+| `text` | textarea | Text | Look up the actives, oils and gentle extras behind our formulas, from the sun fi |
 | `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “hydration” |
+| `search_placeholder` | text | Search placeholder | Try “coconut” |
 | `note_label` | text | Note label | Read note ↗ |
 | `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Aloe leaf juice |
-| `detail_text` | textarea | Detail text | A botanical humectant that gives formulas a cool, soothing feel. Especially welc |
+| `detail_heading` | text | Detail heading | Coconut oil |
+| `detail_text` | textarea | Detail text | A plant oil that softens dry patches and gives body products their silky slip. W |
 | `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Comfort and hydration |
+| `best_for` | text | Best for | Dry skin and rough elbows |
 | `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Body and sun care |
+| `found_in` | text | Found in | Coconut oil melt, body butter |
 
 ## Blocks
 

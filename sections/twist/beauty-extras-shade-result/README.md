@@ -30,12 +30,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Recommended tints |  |
 | `add_label` | text | Add label | add to bag |
-| `eyebrow` | text | Eyebrow | Your starting point |
-| `heading` | text | Heading | Two picks to try first. |
-| `text` | textarea | Text | Based on your answers, these easy picks are a fun place to start. Use the swatch |
-| `button_label` | text | Button label | Add suggested pick |
-| `card_eyebrow` | text | Card eyebrow | Flexible hold |
-| `card_detail` | text | Card detail | Everyday hold · all hair types |
+| `eyebrow` | text | Eyebrow | your routine |
+| `heading` | text | Heading | Start with this duo. |
+| `text` | textarea | Text | These two bars suit wavy hair that wants less frizz. Add the cream if you air-dr |
+| `button_label` | text | Button label | add the duo |
+| `card_eyebrow` | text | Card eyebrow | recommended bar |
+| `card_detail` | text | Card detail | Strengthening · about 100 washes |
 
 ## Blocks
 

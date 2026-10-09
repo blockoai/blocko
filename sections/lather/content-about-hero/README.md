@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Our story |
-| `heading` | text | Heading | Smell good. Be loud about it. |
-| `lede` | textarea | Lede | We make natural soap, deodorant and cologne with big scents and short ingredient |
+| `heading` | text | Heading | Cleaning up the shower shelf. |
+| `lede` | textarea | Lede | Most grooming products are a list of things you cannot pronounce. We wanted a ba |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Read our story |
+| `button_label` | text | Button label | Meet the founder |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a bearded man outdoors |
+| `image_alt` | text | Image alt text | A bearded man holding a stack of soap bars |
 
 ## Blocks
 

@@ -2,7 +2,16 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ingredient index",
+        "heading": "the actives on our shelf, in plain words.",
+        "text": "Every formula leans on a few ingredients with a clear purpose. Tap one to see what it does and where it appears.",
+        "search_placeholder": "Try “ceramide”",
+        "detail_heading": "Peptides",
+        "detail_text": "Short chains of amino acids that tell skin to behave younger. They are the thread through both our skin and lip formulas, which is why the shelf feels like one family.",
+        "best_for": "Bounce and the look of fine lines",
+        "found_in": "Glow serum, lip balm, lip tint"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -27,57 +36,62 @@
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Soothing",
+            "key": "soothe"
           }
         },
         "block-5": {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "letter": "C",
+            "name": "Caffeine",
+            "detail": "Helps skin around the eyes and jaw look less puffy",
+            "tags": "soothe"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
             "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "name": "Ceramides",
+            "detail": "Fats found naturally in skin that keep the barrier strong",
+            "tags": "barrier"
           }
         },
         "block-7": {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "letter": "E",
+            "name": "Ectoin",
+            "detail": "A shielding amino acid derivative for stressed, reactive skin",
+            "tags": "soothe"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "H",
+            "name": "Hyaluronic acid",
+            "detail": "Binds water at the surface for a fuller, fresher look",
+            "tags": "hydration"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "letter": "P",
+            "name": "Polyglutamic acid",
+            "detail": "A water-holding film that outperforms many humectants",
+            "tags": "hydration"
           }
         },
         "block-10": {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "S",
+            "name": "Shea butter",
+            "detail": "A rich plant butter that cushions and seals dry areas",
+            "tags": "barrier"
           }
         }
       },
@@ -96,11 +110,21 @@
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Cream smeared on a stone dish",
+        "eyebrow": "Our rule",
+        "heading": "Fewer, better-chosen ingredients.",
+        "text": "Each formula is built around a few actives with clinical backing. Full lists and what they do are on every product page, and a cosmetic chemist and a dermatologist advise us.",
+        "button_label": "Meet the advisors"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [

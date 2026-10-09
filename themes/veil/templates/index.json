@@ -2,7 +2,10 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by department",
+        "heading": "Start with the step you skip."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
@@ -11,34 +14,50 @@
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Eye",
+            "url": "#eye"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips + cheeks",
-            "url": "#lips"
+            "label": "Lip + cheek",
+            "url": "#lip"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Care",
-            "url": "#care"
+            "label": "Skincare",
+            "url": "#skincare"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Tools",
+            "url": "#tools"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Gift sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Care routine",
-            "label": "Care"
+            "image_alt": "Tinted serum bottle"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#sets",
+            "image_alt": "Gloss minis arranged on a table",
+            "label": "Gift sets"
           }
         }
       },
@@ -48,12 +67,20 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
+      "settings": {
+        "image_alt": "Close-up of a face with glossy lids and a soft flush",
+        "eyebrow": "Seasonal gift edit",
+        "heading": "Winter, in full bloom.",
+        "text": "Seasonal makeup edits wrapped in hand-drawn botanical sleeves, ready to give or keep.",
+        "button_label": "Shop the sets"
+      }
     },
     "message-band": {
       "type": "blko-message-band",
@@ -61,18 +88,20 @@
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "TESTED ON SENSITIVE SKIN"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "THOUGHTFUL FORMULAS"
+            "text": "MINERAL SPF IN EVERY TINT"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "EVERYDAY WEAR"
+            "text": "MINI MASCARA ON $100+ ORDERS"
           }
         }
       },
@@ -84,7 +113,10 @@
     },
     "tabbed-product-grid": {
       "type": "blko-tabbed-product-grid",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Customer and staff picks",
+        "heading": "What everyone adds first"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -93,19 +125,29 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "sets",
+            "label": "Gift sets"
+          }
+        },
+        "block-3": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "New arrivals"
           }
         }
       },
       "block_order": [
         "block-1",
-        "block-2"
+        "block-2",
+        "block-3"
       ]
     },
     "category-slider": {
       "type": "blko-category-slider",
-      "settings": {},
+      "settings": {
+        "heading": "Everyday clean essentials"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
@@ -114,22 +156,29 @@
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Eyes",
-            "url": "#eyes"
+            "title": "Eye",
+            "url": "#eye"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Lips",
-            "url": "#lips"
+            "title": "Lip + cheek",
+            "url": "#lip"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Care",
-            "url": "#care"
+            "title": "Skincare",
+            "url": "#skincare"
+          }
+        },
+        "block-5": {
+          "type": "category",
+          "settings": {
+            "title": "Sets",
+            "url": "#sets"
           }
         }
       },
@@ -137,39 +186,120 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4"
+        "block-4",
+        "block-5"
       ]
     },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {}
+    "home-ways-in": {
+      "type": "blko-home-ways-in",
+      "settings": {
+        "kicker": "Three ways in",
+        "heading": "Make it yours"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Smiling member holding a tinted serum",
+            "label": "Rewards",
+            "title": "Join the members club",
+            "text": "Earn points on every order, unlock early access to launches and get picks chosen for you."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Three shade swatches on a forearm",
+            "label": "Shade finder",
+            "title": "Match your tone in a minute",
+            "text": "Answer a few questions about skin tone and undertone to land on the formula and shade that suit you."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Refill box on a bathroom shelf",
+            "label": "Subscribe & save",
+            "title": "Never run out of a favorite",
+            "text": "Save 10% and ship free on every refill, on a schedule you can pause or change."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
+    "home-commitments": {
+      "type": "blko-home-commitments",
+      "settings": {
+        "kicker": "What we stand behind",
+        "heading": "Beauty with a lighter footprint"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Growing forests",
+            "text": "A share of tinted serum sales funds tree planting, with more than a million trees in the ground so far."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Packaging with a second life",
+            "text": "Send back ten empties and our recycling partner keeps the bottles, droppers and caps out of landfill."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Kind to every animal",
+            "text": "Nothing we make is tested on animals, and every formula carries a cruelty-free certification."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "testimonial-slider": {
       "type": "blko-testimonial-slider",
-      "settings": {}
+      "settings": {
+        "image_alt": "Customer wearing the tinted serum outdoors",
+        "eyebrow": "Customer love",
+        "heading": "“My skin looks and feels its healthiest.”",
+        "text": "Read why more than fifteen thousand people rate the tinted serum 4.5 stars, from first-time wearers to long-time repeat buyers.",
+        "button_label": "Shop the tinted serum"
+      }
     },
     "press-slider": {
       "type": "blko-press-slider",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Praise from the press"
+      },
       "blocks": {
         "block-1": {
           "type": "publication",
-          "settings": {}
+          "settings": {
+            "name": "THE DAILY EDIT"
+          }
         },
         "block-2": {
           "type": "publication",
           "settings": {
-            "name": "ALLURE"
+            "name": "STUDIO NOTES"
           }
         },
         "block-3": {
           "type": "publication",
           "settings": {
-            "name": "GLOSSY"
+            "name": "BEAUTY JOURNAL"
           }
         }
       },
@@ -181,7 +311,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -194,8 +328,8 @@
     "message-band",
     "tabbed-product-grid",
     "category-slider",
-    "feature-driver",
-    "commitments",
+    "home-ways-in",
+    "home-commitments",
     "testimonial-slider",
     "press-slider",
     "newsletter",

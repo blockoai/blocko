@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | 60 seconds. 5 questions. |
-| `heading` | text | Heading | Not sure what you smell like? |
-| `text` | textarea | Text | Take the scent quiz and get matched with your family, plus 20% off your first or |
+| `eyebrow` | text | Eyebrow | Five questions, no judgment |
+| `heading` | text | Heading | Cheaper than therapy, and it tells you what you smell like. |
+| `text` | textarea | Text | Answer a few questions about how you spend your weekends and we will match you t |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Take the quiz |
+| `button_label` | text | Button label | Start the quiz |
 
 ## Blocks
 

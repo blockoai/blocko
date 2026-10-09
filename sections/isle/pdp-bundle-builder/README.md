@@ -32,12 +32,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | `collection` | collection | Collection |  |
 | `add_label` | text | Add label | Add 3 items to bag |
 | `eyebrow` | text | Eyebrow | Build your set |
-| `heading` | text | Heading | Make your everyday ritual. |
-| `text` | text | Text | Choose any three essentials and save 15%. Your set, your pace, your skin. |
-| `summary_eyebrow` | text | Summary eyebrow | Your set |
-| `summary_empty` | text | Summary empty | Choose 3 items to unlock your set |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
-| `price_note` | text | Price note | Bundle price |
+| `heading` | text | Heading | Make your own mini trio. |
+| `text` | text | Text | Choose any three deluxe minis and take 15% off the set. Perfect for a carry-on o |
+| `summary_eyebrow` | text | Summary eyebrow | Your minis |
+| `summary_empty` | text | Summary empty | Pick 3 minis to unlock your price |
+| `saving_text` | text | Saving text | You save 15% when three minis are in your set. |
+| `price_note` | text | Price note | Set price |
 
 ## Blocks
 

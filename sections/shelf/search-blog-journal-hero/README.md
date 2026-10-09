@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | Journal |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for a more considered routine. |
-| `text` | text | Text | Ideas, rituals, and useful how-tos for skin-first color and care. |
+| `eyebrow` | text | Eyebrow | The Shelf Journal |
+| `heading` | text | Heading | Founder stories, tested picks and how-tos. |
+| `text` | text | Text | Browse the most read, then filter by skin care, makeup, how-tos and education. |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Amber dropper bottle against a soft shadow |
 
 ## Blocks
 

@@ -37,7 +37,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `url` | url | Url |  |
 | `image` | image_picker | Image |  |
-| `title` | text | Title | Skincare |
+| `title` | text | Title | Face |
 
 ## Dependencies
 

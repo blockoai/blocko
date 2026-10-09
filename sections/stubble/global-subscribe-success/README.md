@@ -28,10 +28,10 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | You’re on the list |
-| `heading` | text | Heading | Thanks for signing up. |
-| `text` | textarea | Text | Look for a welcome note soon. In the meantime, discover a few everyday essential |
-| `button_label` | text | Button label | Explore the collection |
+| `kicker` | text | Kicker | You are in |
+| `heading` | text | Heading | Thanks for joining. |
+| `text` | textarea | Text | Watch your inbox for launches and offers. While you wait, see what shavers add f |
+| `button_label` | text | Button label | Shop best sellers |
 
 ## Blocks
 

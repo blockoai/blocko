@@ -35,11 +35,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `empty_text` | text | Empty text | No products match these filters. |
 | `quick_label` | text | Quick label | Quick view |
 | `promo_image` | image_picker | Promo image |  |
-| `promo_image_alt` | text | Promo image alt text | Model wearing pink eyeshadow |
-| `promo_eyebrow` | text | Promo eyebrow | Find your shade |
-| `promo_heading` | text | Promo heading | Take the shade quiz. |
+| `promo_image_alt` | text | Promo image alt text | Three full-size products arranged on a pastel block |
+| `promo_eyebrow` | text | Promo eyebrow | Build your own kit |
+| `promo_heading` | text | Promo heading | Choose three full sizes and keep 15%. |
 | `promo_url` | url | Promo url |  |
-| `promo_label` | text | Promo label | Start the quiz |
+| `promo_label` | text | Promo label | Start your kit |
 | `load_more_label` | text | Load more label | Load more |
 | `previous_label` | text | Previous label | Previous page |
 

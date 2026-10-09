@@ -27,9 +27,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | The system |
-| `heading` | text | Heading | 3 steps to save your color |
-| `text` | textarea | Text | Cleanse, rebuild, seal. One routine that keeps vivid shades vivid between salon  |
+| `eyebrow` | text | Eyebrow | The colour-care system |
+| `heading` | text | Heading | Cleanse, treat, seal. |
+| `text` | textarea | Text | Three formulas that work in sequence. Lab testing on dyed hair showed less fade  |
 
 ## Blocks
 

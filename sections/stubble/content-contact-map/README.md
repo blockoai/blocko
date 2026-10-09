@@ -29,11 +29,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `map_label` | text | Map label | Abstract map placeholder |
-| `kicker` | text | Kicker | Visit |
-| `heading` | text | Heading | Studio location |
-| `text` | textarea | Text | Location details are a placeholder for your retail studio, office, or event spac |
-| `city` | text | City | City, Region |
-| `country` | text | Country | Country |
+| `kicker` | text | Kicker | Where it is made |
+| `heading` | text | Heading | The factory |
+| `text` | textarea | Text | Blades are ground and assembled in our own plant. Tours are not open to the publ |
+| `city` | text | City | Eisfeld |
+| `country` | text | Country | Germany |
 | `link` | url | Link |  |
 | `link_label` | text | Link label | Get directions |
 

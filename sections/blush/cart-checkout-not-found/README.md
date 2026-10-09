@@ -28,15 +28,15 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | 404 / Page not found |
-| `heading` | text | Heading | This page has slipped away. |
-| `text` | textarea | Text | Try a search, or return to a known part of the shop. |
+| `eyebrow` | text | Eyebrow | 404 |
+| `heading` | text | Heading | This page went out for a walk. |
+| `text` | textarea | Text | Search, or jump back to a shelf. |
 | `search_label` | text | Search label | Search the shop |
 | `search_placeholder` | text | Search placeholder | Search the shop |
 | `search_button_label` | text | Search button label | Search |
 | `nav_label` | text | Nav label | Popular destinations |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person with natural makeup |
+| `image_alt` | text | Image alt text | Smiling person holding a pink balm tube |
 
 ## Blocks
 

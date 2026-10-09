@@ -1,16 +1,31 @@
 {
   "sections": {
-    "page-header": {
-      "type": "blko-page-header",
-      "settings": {}
+    "finder-header": {
+      "type": "blko-finder-header",
+      "settings": {
+        "breadcrumb": "Complexion finder",
+        "heading": "Match your base in a few questions.",
+        "text": "Tell us your depth, undertone and the finish you like, and we'll suggest a foundation or concealer shade from brands that meet our standard."
+      }
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "Question 1 of 3",
+        "heading_1": "How deep is your skin?",
+        "text_1": "Check your bare face by a window and choose the closest depth.",
+        "eyebrow_2": "Question 2 of 3",
+        "heading_2": "What undertone shows through?",
+        "eyebrow_3": "Question 3 of 3",
+        "heading_3": "Which finish do you want?",
+        "finish_label": "Show my shades"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Fair"
+          }
         },
         "block-2": {
           "type": "tone",
@@ -23,20 +38,21 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Tan",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Deep",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "hint": "Pink or blue cast, silver looks best",
             "selected": true
           }
         },
@@ -44,36 +60,36 @@
           "type": "undertone",
           "settings": {
             "label": "Neutral",
-            "hint": "A balanced mix"
+            "hint": "Neither pink nor yellow stands out"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
             "label": "Warm",
-            "hint": "Golden or peach tones"
+            "hint": "Golden or olive cast, gold looks best"
           }
         },
         "block-8": {
           "type": "coverage",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
+            "label": "Natural skin",
+            "hint": "Even tone, visible texture",
             "selected": true
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "Soft matte",
+            "hint": "Smooth with less shine"
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Radiant",
+            "hint": "A lit-from-within glow"
           }
         }
       },
@@ -92,7 +108,14 @@
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Closest shades",
+        "heading": "These two should work.",
+        "text": "Swatch both along your jaw. Concealer often runs a half-step lighter than your base, so check both.",
+        "button_label": "Add to bag",
+        "card_eyebrow": "Skin-tint moisturizer",
+        "card_detail": "Sheer to light · SPF 35"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +134,32 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "shade-faq": {
+      "type": "blko-shade-faq",
+      "settings": {
+        "eyebrow": "Matching tips",
+        "heading": "Getting the shade right"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "Can I use one shade for everything?",
+            "text": "Not always. Brands number their bases differently, so match each product on its own scale."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "How do I test in a boutique?",
+            "text": "Ask an advisor to swatch three neighbours on your jaw and look at them in daylight."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "Does the finder cover every brand?",
+            "text": "It covers the base makeup lines we stock and will grow as we add brands."
           }
         }
       },
@@ -138,16 +169,48 @@
         "block-3"
       ]
     },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+    "finder-trust": {
+      "type": "blko-finder-trust",
+      "settings": {
+        "eyebrow": "Every match is vetted",
+        "heading": "Shades from brands that pass the standard",
+        "link_label": "Read the standard"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "pillar",
+          "settings": {
+            "title": "Disclosed ingredients",
+            "body": "Complete lists, including the pigments, for every shade."
+          }
+        },
+        "block-2": {
+          "type": "pillar",
+          "settings": {
+            "title": "Contaminant testing",
+            "body": "Heavy metals and talc screened before a base reaches our shelves."
+          }
+        },
+        "block-3": {
+          "type": "pillar",
+          "settings": {
+            "title": "Inclusive ranges",
+            "body": "We favor brands that cover deep and fair skin equally well."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     }
   },
   "order": [
-    "page-header",
+    "finder-header",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
-    "newsletter"
+    "shade-faq",
+    "finder-trust"
   ]
 }

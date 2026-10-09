@@ -140,6 +140,16 @@
 .blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 .blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-tabs a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-tag-filter a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-filters a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-pagination a{display:inline-block;border:1px solid var(--color-line);padding:.55rem .75rem;text-decoration:none}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 {% endstylesheet %}
 {% schema %}
 {
@@ -149,19 +159,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "The system"
+      "default": "The colour-care system"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "3 steps to save your color"
+      "default": "Cleanse, treat, seal."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Cleanse, rebuild, seal. One routine that keeps vivid shades vivid between salon visits."
+      "default": "Three formulas that work in sequence. Lab testing on dyed hair showed less fade and fewer broken strands after six weeks.*"
     }
   ],
   "blocks": [
@@ -219,23 +229,26 @@
       "blocks": [
         {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "title": "wash gently",
+            "text": "A sulfate-free cleanse that lifts buildup without dragging colour down the drain."
+          }
         },
         {
           "type": "step",
           "settings": {
             "number": "2",
-            "title": "rebuild it",
-            "text": "Bond-building mask that repairs the damage color leaves behind.",
-            "link_label": "Shop masks"
+            "title": "treat weekly",
+            "text": "A pigment-friendly treatment that patches weak spots and revives dull, tired ends.",
+            "link_label": "Shop treatments"
           }
         },
         {
           "type": "step",
           "settings": {
             "number": "3",
-            "title": "seal the shine",
-            "text": "A weightless serum for glass-like gloss and heat protection.",
+            "title": "seal and shine",
+            "text": "A light serum that closes the cuticle, calms frizz and shields strands from the dryer.",
             "link_label": "Shop serums"
           }
         }

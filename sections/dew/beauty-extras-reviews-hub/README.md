@@ -31,11 +31,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `product` | product | Product (optional, store-wide reviews when empty) |  |
-| `eyebrow` | text | Eyebrow | From the community |
-| `heading` | text | Heading | Real routines, real notes. |
-| `average` | text | Average | 4.8 |
-| `stars_label` | text | Stars label | Five out of five stars |
-| `count_text` | text | Count text | From 2,483 verified reviews |
+| `eyebrow` | text | Eyebrow | Reviews |
+| `heading` | text | Heading | 100,000 reviews, one honest average. |
+| `average` | text | Average | 4.6 |
+| `stars_label` | text | Stars label | Four and a half out of five stars |
+| `count_text` | text | Count text | From 103,000 verified reviews |
 
 ## Blocks
 
@@ -71,7 +71,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `tags` | text | Tags (space separated) | complexion |
 | `rating` | range | Rating | 5 |
 | `title` | text | Title | Fresh finish, no fuss. |
-| `meta` | text | Meta | Verified customer · Face |
+| `meta` | text | Meta | Verified customer · Skin |
 
 ## Dependencies
 

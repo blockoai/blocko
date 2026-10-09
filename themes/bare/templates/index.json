@@ -1,44 +1,148 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
-      "settings": {},
+    "hero-campaign": {
+      "type": "blko-hero-campaign",
+      "settings": {
+        "image_alt": "Close-up of a face with a soft flush and bare lids",
+        "eyebrow": "Limited edition, sixth year",
+        "heading": "The kit that sells out every season is back.",
+        "text": "Eight favorites in one zip pouch, chosen by our founder and priced well under the sum of the parts.",
+        "button_label": "Shop the kit"
+      }
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {
+        "eyebrow": "Shop by category",
+        "heading": "Start with what you reach for"
+      },
       "blocks": {
         "block-1": {
-          "type": "link",
-          "settings": {}
+          "type": "tab",
+          "settings": {
+            "label": "Bestsellers"
+          }
         },
         "block-2": {
-          "type": "link",
+          "type": "tab",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "key": "new",
+            "label": "New"
           }
         },
         "block-3": {
-          "type": "link",
+          "type": "tab",
           "settings": {
-            "label": "Lips",
-            "url": "#lips"
+            "key": "kits",
+            "label": "Kits"
           }
         },
         "block-4": {
-          "type": "link",
+          "type": "tab",
           "settings": {
-            "label": "Skin prep",
-            "url": "#care"
+            "key": "face",
+            "label": "Face"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "bare-press-quote": {
+      "type": "blko-bare-press-quote",
+      "settings": {
+        "quote": "“Formulas that disappear into skin and still make a face look finished.”",
+        "credit": "Beauty Weekly, editors' picks"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "outlet",
+          "settings": {
+            "name": "Beauty Weekly"
+          }
+        },
+        "block-2": {
+          "type": "outlet",
+          "settings": {
+            "name": "The Glossary"
+          }
+        },
+        "block-3": {
+          "type": "outlet",
+          "settings": {
+            "name": "Studio Edit"
+          }
+        },
+        "block-4": {
+          "type": "outlet",
+          "settings": {
+            "name": "Face Journal"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "outlet",
+          "settings": {
+            "name": "Daily Muse"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "category-slider": {
+      "type": "blko-category-slider",
+      "settings": {
+        "heading": "Shop by collection"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {
+            "title": "Shop all",
+            "url": "#shop"
+          }
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Kits",
+            "url": "#kits"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "url": "#face"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Eyes",
+            "url": "#eyes"
+          }
+        },
+        "block-5": {
+          "type": "category",
+          "settings": {
+            "title": "Lips",
+            "url": "#lips"
+          }
         },
         "block-6": {
-          "type": "tile",
+          "type": "category",
           "settings": {
-            "url": "#care",
-            "image_alt": "Skin prep edit",
-            "label": "Skin prep"
+            "title": "Skin",
+            "url": "#skin"
           }
         }
       },
@@ -51,173 +155,23 @@
         "block-6"
       ]
     },
-    "hero-campaign": {
-      "type": "blko-hero-campaign",
-      "settings": {}
-    },
-    "message-band": {
-      "type": "blko-message-band",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "message",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "message",
-          "settings": {
-            "text": "NOTHING TO MASTER"
-          }
-        },
-        "block-3": {
-          "type": "message",
-          "settings": {
-            "text": "FREE SHADE MATCHING"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "bare-press-quote": {
-      "type": "blko-bare-press-quote",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "outlet",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "outlet",
-          "settings": {
-            "name": "Weekly"
-          }
-        },
-        "block-3": {
-          "type": "outlet",
-          "settings": {
-            "name": "Daily"
-          }
-        },
-        "block-4": {
-          "type": "outlet",
-          "settings": {
-            "name": "Review"
-          }
-        },
-        "block-5": {
-          "type": "outlet",
-          "settings": {
-            "name": "Journal"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5"
-      ]
-    },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "bare-get-the-look": {
-      "type": "blko-bare-get-the-look",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "look",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "look",
-          "settings": {
-            "title": "Desk to dinner"
-          }
-        },
-        "block-3": {
-          "type": "look",
-          "settings": {
-            "title": "Weekend"
-          }
-        },
-        "block-4": {
-          "type": "look",
-          "settings": {
-            "title": "Evening"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "category",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "category",
-          "settings": {
-            "title": "Eyes",
-            "url": "#eyes"
-          }
-        },
-        "block-3": {
-          "type": "category",
-          "settings": {
-            "title": "Lips",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Skin prep",
-            "url": "#care"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
+    "bare-founder-note": {
+      "type": "blko-bare-founder-note",
+      "settings": {
+        "eyebrow": "A word from the founder",
+        "quote": "“Clean should not mean weak. I wanted formulas that work on every skin tone and still read as skin, not makeup.”",
+        "name": "Our founder",
+        "role": "Makeup artist"
+      }
     },
     "bare-shade-grid": {
       "type": "blko-bare-shade-grid",
-      "settings": {},
+      "settings": {
+        "eyebrow": "New concealer range",
+        "heading": "Cover that feels like nothing at all.",
+        "text": "Twenty-five shades, each matched by depth and undertone. Answer six quick questions and we will point you to yours.",
+        "button_label": "Take the quiz"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -293,52 +247,106 @@
         "block-9"
       ]
     },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {}
-    },
-    "bare-founder-note": {
-      "type": "blko-bare-founder-note",
-      "settings": {}
-    },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
-    },
-    "testimonial-slider": {
-      "type": "blko-testimonial-slider",
-      "settings": {}
-    },
-    "press-slider": {
-      "type": "blko-press-slider",
-      "settings": {},
+    "home-promises": {
+      "type": "blko-home-promises",
+      "settings": {
+        "kicker": "What we stand for",
+        "heading": "Four ideas behind every formula"
+      },
       "blocks": {
         "block-1": {
-          "type": "publication",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Fewer, better products",
+            "text": "A small shelf of multi-use formulas so a routine takes minutes, not a drawer."
+          }
         },
         "block-2": {
-          "type": "publication",
+          "type": "value",
           "settings": {
-            "name": "WEEKLY"
+            "number": "02",
+            "title": "A clean slate",
+            "text": "No parabens, phthalates, sulfates, PEGs, EDTA or BPA in any pot, tube or stick."
           }
         },
         "block-3": {
-          "type": "publication",
+          "type": "value",
           "settings": {
-            "name": "DAILY"
+            "number": "03",
+            "title": "Built to perform",
+            "text": "One cream can flush a cheek, tint a lid and soften a lip, like a pocket multitool for your face."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Started in a kit bag",
+            "text": "The first formulas were made for one artist's own backstage kit, then shared."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4"
+      ]
+    },
+    "bare-get-the-look": {
+      "type": "blko-bare-get-the-look",
+      "settings": {
+        "eyebrow": "Get the look",
+        "heading": "Four faces, step by step."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "look",
+          "settings": {
+            "title": "Maya's easy morning",
+            "cta": "Get the look",
+            "url": "#get-the-look"
+          }
+        },
+        "block-2": {
+          "type": "look",
+          "settings": {
+            "title": "Dee's soft glam",
+            "cta": "Get the look",
+            "url": "#get-the-look"
+          }
+        },
+        "block-3": {
+          "type": "look",
+          "settings": {
+            "title": "June's bare weekend",
+            "cta": "Get the look",
+            "url": "#get-the-look"
+          }
+        },
+        "block-4": {
+          "type": "look",
+          "settings": {
+            "title": "Ana's evening smoke",
+            "cta": "Get the look",
+            "url": "#get-the-look"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -346,19 +354,14 @@
     }
   },
   "order": [
-    "home-collection-mega-menu",
     "hero-campaign",
-    "message-band",
-    "bare-press-quote",
     "tabbed-product-grid",
-    "bare-get-the-look",
+    "bare-press-quote",
     "category-slider",
-    "bare-shade-grid",
-    "feature-driver",
     "bare-founder-note",
-    "commitments",
-    "testimonial-slider",
-    "press-slider",
+    "bare-shade-grid",
+    "home-promises",
+    "bare-get-the-look",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

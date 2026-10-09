@@ -32,13 +32,13 @@ Never overwrite an existing file with the same name without comparing it first.
 | `article` | article | Article |  |
 | `product_a` | product | First product |  |
 | `product_b` | product | Second product |  |
-| `products_heading` | text | Products heading | Try these together |
-| `share_label` | text | Share label | Share this note |
+| `products_heading` | text | Products heading | Gear mentioned in this guide |
+| `share_label` | text | Share label | Pass it to a buddy |
 | `copy_label` | text | Copy label | Copy link |
 | `email_label` | text | Email label | Email |
 | `save_url` | url | Save url |  |
-| `save_label` | text | Save label | Save |
-| `comments_heading` | text | Comments heading | Comments |
+| `save_label` | text | Save label | Bookmark |
+| `comments_heading` | text | Comments heading | Talk back |
 | `success_message` | text | Success message | Thanks for your comment. |
 | `error_message` | text | Error message | Please complete the required fields. |
 | `author_label` | text | Author label | Name |

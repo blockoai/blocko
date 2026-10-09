@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by collection |
-| `heading` | text | Heading | Browse the full ritual. |
-| `text` | textarea | Text | Skincare, sculpting color and brushes, all made with organic botanicals. |
+| `eyebrow` | text | Eyebrow | All collections |
+| `heading` | text | Heading | Makeup, skincare and the tools between |
+| `text` | textarea | Text | Browse by category, by routine or by the savings set that fits your budget. |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by collection |
-| `heading` | text | Heading | Find your scent. |
-| `text` | textarea | Text | Discover bundles, scent families, and tools built for real guys. |
+| `eyebrow` | text | Eyebrow | Every aisle |
+| `heading` | text | Heading | From the shower to the shave |
+| `text` | textarea | Text | Six aisles, five scent families and one rule: if it goes on your body, you shoul |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

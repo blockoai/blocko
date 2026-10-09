@@ -29,7 +29,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Support hours |
-| `heading` | text | Heading | When to reach us |
+| `heading` | text | Heading | When we answer |
 
 ## Blocks
 

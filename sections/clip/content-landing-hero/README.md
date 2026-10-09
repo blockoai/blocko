@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person wearing a claw clip |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Color that keeps up. |
-| `text` | textarea | Text | Comfortable, stylish pieces made for hair that moves through a full day. |
+| `image_alt` | text | Image alt text | Warm-toned mist and mask on a pastel shelf |
+| `kicker` | text | Kicker | The scent drop |
+| `heading` | text | Heading | A fragrance you can put in your hair. |
+| `text` | textarea | Text | Mist, mask and oil share one warm, bakery-sweet scent. Layer them for a trail th |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your set |
+| `button_label` | text | Button label | Meet the scents |
 
 ## Blocks
 

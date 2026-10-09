@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Man hiking a ridge at golden hour |
-| `eyebrow` | text | Eyebrow | Big bar energy |
-| `heading` | text | Heading | Smell like you mean it. |
-| `text` | textarea | Text | Natural soap, deodorant and cologne with bold scents and zero junk. |
-| `button_label` | text | Button label | Shop bar soap |
+| `image_alt` | text | Image alt text | A hiker on a ridge at sunrise with a pack on his back |
+| `eyebrow` | text | Eyebrow | Limited drop |
+| `heading` | text | Heading | Harvest Smoke is back. |
+| `text` | textarea | Text | Charred maple, tobacco leaf and a dash of cinnamon, pressed into a bar that will |
+| `button_label` | text | Button label | Grab the bar |
 | `button_url` | url | Button url |  |
 
 ## Blocks

@@ -2,7 +2,17 @@
   "sections": {
     "search-blog-search-empty": {
       "type": "blko-search-blog-search-empty",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Search",
+        "heading": "No match, yet.",
+        "text": "Try a product family such as skin or lip + cheek, or one of the shortcuts below.",
+        "tip_1": "Try broader words like “serum”, “blush” or “travel”.",
+        "tip_2_prefix": "Browse the",
+        "tip_2_link": "award winners",
+        "tip_3_prefix": "Watch the",
+        "tip_3_link": "latest films",
+        "image_alt": "Lip balms lined up on a shelf"
+      }
     }
   },
   "order": [

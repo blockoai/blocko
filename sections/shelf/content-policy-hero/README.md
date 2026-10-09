@@ -29,9 +29,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Policies |
-| `heading` | text | Heading | Privacy policy |
-| `text` | textarea | Text | A plain-language placeholder policy structure, ready for legal review and your o |
-| `date` | text | Date | Last updated: Month DD, YYYY |
+| `heading` | text | Heading | Returns + exchanges |
+| `text` | textarea | Text | What you can send back, how long you have and when your refund lands. |
+| `date` | text | Date | Updated October 2026 |
 
 ## Blocks
 

@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Made for repeat wear |
-| `quote` | text | Quote | “The kind of ritual you can do without looking in the mirror twice.” |
-| `author` | text | Author | — Community member |
+| `kicker` | text | Kicker | Bundle and save |
+| `quote` | text | Quote | “The vault covered our whole family for the summer and cost less than the four p |
+| `author` | text | Author | — Customer review |
 
 ## Blocks
 

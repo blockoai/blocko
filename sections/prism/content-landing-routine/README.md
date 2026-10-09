@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Three easy steps |
-| `heading` | text | Heading | make room for what looks loud. |
+| `kicker` | text | Kicker | The scent stack |
+| `heading` | text | Heading | Layer it three ways |
 
 ## Blocks
 

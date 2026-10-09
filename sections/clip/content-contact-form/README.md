@@ -29,8 +29,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Send a note |
-| `heading` | text | Heading | Tell us what you need. |
-| `text` | textarea | Text | We’ll respond during the support hours below. Fields marked with an asterisk are |
+| `heading` | text | Heading | How can we help? |
+| `text` | textarea | Text | Add your order number, if you have one, so we can look it up fast. |
 | `name_label` | text | Name label | Name |
 | `email_label` | text | Email label | Email |
 | `topic_label` | text | Topic label | Topic |

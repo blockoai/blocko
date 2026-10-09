@@ -2,26 +2,68 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Body care",
+        "price_note": "Choose a scent and size",
+        "shade_help_label": "Not sure which scent? Try the routine quiz.",
+        "ship_note": "Free shipping over $50 · 30-day money-back promise"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Lightweight, water-resistant protection with a soft natural finish. Wear alone or layer over your favorite moisturiser."
+            "label": "Benefits",
+            "text": "Deeply softens rough skin, adds a gentle glow and leaves no heavy film. Works on arms, legs, shoulders and the ends of dry hair."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
-            "label": "Ingredients",
-            "text": "Non-nano zinc oxide, kelp extract, sea fennel, and skin-conditioning botanicals in a comfortable daily formula."
+            "label": "Scent profile",
+            "text": "Citrus herb opens with bright peel and finishes in green herbs. Lavender is floral and calming. The fragrance-free version contains no added scent at all."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
             "label": "How to use",
-            "text": "Shake well. Apply generously 15 minutes before sun exposure and blend outward. Reapply after swimming or every two hours."
+            "text": "Press two to four pumps into your palms and smooth over damp skin after bathing. Use it as a bath addition or mix a drop into body lotion."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-promises": {
+      "type": "blko-pdp-promises",
+      "settings": {
+        "kicker": "Gentle on skin and shoreline",
+        "quote": "“The feel of a spa treatment, without the spa visit.”",
+        "author": "— Customer review"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Vegan and cruelty-free",
+            "text": "Certified, with no animal ingredients"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Clean formula",
+            "text": "No parabens, phthalates or silicones"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Responsibly sourced",
+            "text": "Sea greens harvested by hand"
           }
         }
       },
@@ -33,34 +75,135 @@
     },
     "pdp-before-after": {
       "type": "blko-pdp-before-after",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Tester results",
+        "heading": "Softer after one use.",
+        "text": "In a four-week consumer study of 60 adults with dry body skin, most noticed smoother, more supple skin after the first application.",
+        "stat_1_value": "96%",
+        "stat_1_label": "said skin felt softer right away",
+        "stat_2_value": "91%",
+        "stat_2_label": "saw a visible glow after one week"
+      }
     },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
+    "pdp-ingredients": {
+      "type": "blko-pdp-ingredients",
+      "settings": {
+        "kicker": "What's inside",
+        "heading": "Four ingredients doing the work"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Wakame extract",
+            "text": "A brown sea vegetable that helps skin hold on to water."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Squalane",
+            "text": "A weightless plant oil that seals moisture without clogging pores."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Sunflower seed oil",
+            "text": "Rich in vitamin E and fatty acids that soften rough patches."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Jojoba esters",
+            "text": "Give the oil a silky slip and a gentle shimmer."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
     },
-    "tide-subscribe": {
-      "type": "blko-tide-subscribe",
-      "settings": {},
+    "pdp-scent": {
+      "type": "blko-pdp-scent",
+      "settings": {
+        "eyebrow": "Scent profile",
+        "heading": "Bright peel, green herbs, warm woods.",
+        "text": "Top notes of citrus peel fade into rosemary and sage, then settle into a soft wood base. Prefer something quieter? Every scent has a fragrance-free twin.",
+        "link_label": "Shop by scent"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "benefit",
+          "settings": {
+            "label": "Citrus peel"
+          }
+        },
+        "block-2": {
+          "type": "benefit",
+          "settings": {
+            "label": "Rosemary + sage"
+          }
+        },
+        "block-3": {
+          "type": "benefit",
+          "settings": {
+            "label": "Soft woods"
+          }
+        },
+        "block-4": {
+          "type": "benefit",
+          "settings": {
+            "label": "No synthetic dyes"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-how-to": {
+      "type": "blko-pdp-how-to",
+      "settings": {
+        "kicker": "How to use it",
+        "heading": "Three ways to wear body oil"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Oil being pumped into an open palm",
+            "label": "After the shower",
+            "title": "Smooth onto damp skin",
+            "text": "Water helps the oil spread and lock in hydration for hours."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "number": "2",
-            "title": "Choose your rhythm",
-            "text": "Every 4, 6, or 8 weeks, whatever suits you."
+            "image_alt": "Oil swirled into a warm bath",
+            "label": "In the bath",
+            "title": "Add a few pumps",
+            "text": "The oil disperses into the water and leaves skin silky when you step out."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "number": "3",
-            "title": "Pause or cancel anytime",
-            "text": "No minimums, no fees, no fuss."
+            "image_alt": "Shoulders glistening in the sun",
+            "label": "Anytime",
+            "title": "Highlight shoulders and legs",
+            "text": "A thin layer on collarbones and shins adds a soft sheen."
           }
         }
       },
@@ -70,103 +213,39 @@
         "block-3"
       ]
     },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Good to know"
       },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "pdp-reviews": {
-      "type": "blko-pdp-reviews",
-      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "bar",
-          "settings": {}
+          "type": "question",
+          "settings": {
+            "label": "Will it stain my clothes?",
+            "text": "Let it absorb for a minute or two before dressing and it will not leave marks on most fabrics."
+          }
         },
         "block-2": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
+            "label": "Can I layer it with body butter?",
+            "text": "Yes. Use the oil first on damp skin, then add butter over the driest areas."
           }
         },
         "block-3": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "3 stars",
-            "percent": 4
+            "label": "Why does the color vary slightly between bottles?",
+            "text": "The sea extract is a natural ingredient, so the shade can shift a little with each harvest. Quality is the same."
           }
         },
         "block-4": {
-          "type": "bar",
+          "type": "question",
           "settings": {
-            "label": "2 stars",
-            "percent": 1
-          }
-        },
-        "block-5": {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {}
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Finish",
-            "key": "coverage"
-          }
-        },
-        "block-9": {
-          "type": "review",
-          "settings": {
-            "text": "It protects my skin while still feeling completely natural. I love the light, hydrated finish."
-          }
-        },
-        "block-10": {
-          "type": "review",
-          "settings": {
-            "title": "My everyday sun lotion",
-            "text": "Easy to spread and it stays comfortable through a long day by the water. The scent is subtle and fresh.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Fresh, not greasy",
-            "text": "This gives me the dewy finish I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos"
+            "label": "Is the bottle recyclable?",
+            "text": "The pump and bottle are recyclable where facilities exist, and you can return empties to our studio recycling program."
           }
         }
       },
@@ -174,33 +253,79 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-4"
+      ]
+    },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {
+        "eyebrow": "Pairs well with",
+        "heading": "Cleanse, treat, moisturize",
+        "text": "A simple face routine to pair with your body oil."
+      }
+    },
+    "pdp-reviews": {
+      "type": "blko-pdp-reviews",
+      "settings": {
+        "eyebrow": "Customer reviews",
+        "average": "4.8",
+        "summary": "Based on 6,214 reviews · 97% would recommend",
+        "list_heading": "What customers say"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "review",
+          "settings": {
+            "title": "My go-to after every swim",
+            "text": "It sinks in fast and I smell like citrus and herbs for hours. Salt and chlorine no longer leave me dry.",
+            "footer": "Jordan P. · 2 weeks ago",
+            "tags": "photos dry",
+            "caption": "Citrus herb · photo review"
+          }
+        },
+        "block-2": {
+          "type": "review",
+          "settings": {
+            "title": "Perfect for sensitive skin",
+            "text": "I picked the fragrance-free version and had zero irritation. My legs are finally soft in winter.",
+            "footer": "Alex R. · 1 month ago",
+            "tags": "sensitive",
+            "caption": ""
+          }
+        },
+        "block-3": {
+          "type": "review",
+          "settings": {
+            "title": "Lovely, though I wish it were cheaper",
+            "text": "Wonderful glow and scent. The large size is the better value if you use it daily.",
+            "footer": "Sam T. · 2 months ago",
+            "tags": "dry",
+            "caption": "",
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
       ]
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
       "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
     }
   },
   "order": [
     "pdp-product-main",
+    "pdp-promises",
     "pdp-before-after",
+    "pdp-ingredients",
+    "pdp-scent",
+    "pdp-how-to",
+    "pdp-faq",
     "pdp-complete-routine",
-    "tide-subscribe",
-    "product-recommendations",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-recently-viewed"
   ]
 }

@@ -29,7 +29,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `shop_label` | text | Shop label | Shop |
-| `current` | text | Current | Sun lotion |
+| `current` | text | Current | Sea botanical body oil |
 
 ## Blocks
 

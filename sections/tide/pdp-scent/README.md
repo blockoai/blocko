@@ -1,0 +1,53 @@
+# Sea botanical spotlight
+
+Rounded image beside a seafoam panel naming one sea botanical, with benefit chips and a link.
+
+- Category: ingredients
+- Kind: section
+- Shopify target: ok
+- HTML target: ok
+- Live demo: https://demo.blocko.ai/html/tide/sections/ingredients--pdp-scent.html
+
+## Paste this into your coding agent
+
+```text
+Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section "Sea botanical spotlight" (id `pdp-scent`, theme `tide`; live demo: https://demo.blocko.ai/html/tide/sections/ingredients--pdp-scent.html; Shopify bundle: sections/tide/pdp-scent/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
+```
+
+## Install
+
+Copy the files into the same folders of your theme, then add the section from the Theme Editor (Add section).
+Never overwrite an existing file with the same name without comparing it first.
+
+## Files
+
+- `sections/blko-pdp-scent.liquid`
+
+## Section settings
+
+| id | type | label | default |
+| --- | --- | --- | --- |
+| `color_scheme` | color_scheme | Color scheme | scheme-2 |
+| `image` | image_picker | Image |  |
+| `image_alt` | text | Image alt text | Fresh kelp close-up on a pale surface |
+| `eyebrow` | text | Eyebrow | Scent profile |
+| `heading` | text | Heading | Bright peel, green herbs, warm woods. |
+| `text` | textarea | Text | Top notes of citrus peel fade into rosemary and sage, then settle into a soft wo |
+| `link_url` | url | Link url |  |
+| `link_label` | text | Link label | Shop by scent |
+
+## Blocks
+
+### Benefit (`benefit`, max 6)
+
+| id | type | label | default |
+| --- | --- | --- | --- |
+| `label` | text | Label | Soothes |
+
+## Dependencies
+
+- Assets: none (0 KB JavaScript)
+- Locale keys: none
+- Theme settings read (optional, with fallbacks): none
+
+Generated file: do not edit; open an issue instead.

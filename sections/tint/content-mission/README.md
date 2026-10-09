@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person enjoying a simple makeup routine |
-| `kicker` | text | Kicker | A useful kind of beauty |
-| `heading` | text | Heading | Good formulas should make getting ready feel easier. |
-| `text` | textarea | Text | Our work starts with the small, practical moments: a tint that settles in, a cre |
+| `image_alt` | text | Image alt text | Tubes and pots in pastel packaging on a colored block |
+| `kicker` | text | Kicker | The difference |
+| `heading` | text | Heading | Clinically checked color, not just color. |
+| `text` | textarea | Text | Every formula gets tested for results as well as payoff. We report the numbers,  |
 
 ## Blocks
 

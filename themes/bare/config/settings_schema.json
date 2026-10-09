@@ -120,7 +120,7 @@
         "type": "color",
         "id": "color_text_muted",
         "label": "Text Muted",
-        "default": "#595959"
+        "default": "#6a6a6a"
       },
       {
         "type": "color",

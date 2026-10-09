@@ -31,12 +31,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Collection |  |
 | `add_label` | text | Add label | Add 3 items to bag |
-| `eyebrow` | text | Eyebrow | Build your set |
-| `heading` | text | Heading | Make your everyday routine. |
-| `text` | text | Text | Choose any three essentials and save 15%. Your set, your pace, your skin. |
+| `eyebrow` | text | Eyebrow | Build your box |
+| `heading` | text | Heading | Choose six bars and save fourteen percent. |
+| `text` | text | Text | Pick any scents you like, in any mix of grit. The box price updates as you go. |
 | `summary_eyebrow` | text | Summary eyebrow | Your set |
-| `summary_empty` | text | Summary empty | Choose 3 items to unlock your set |
-| `saving_text` | text | Saving text | Save 15% when your three picks are ready. |
+| `summary_empty` | text | Summary empty | Choose your bars to unlock the saving |
+| `saving_text` | text | Saving text | You save 14% when the box is full. |
 | `price_note` | text | Price note | Bundle price |
 
 ## Blocks

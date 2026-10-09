@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `article` | article | Article |  |
-| `eyebrow` | text | Eyebrow | Continue reading |
-| `heading` | text | Heading | More ideas for your ritual |
-| `link_label` | text | Link label | Read the story |
+| `eyebrow` | text | Eyebrow | Keep reading |
+| `heading` | text | Heading | More from the team |
+| `link_label` | text | Link label | Read the post |
 
 ## Blocks
 

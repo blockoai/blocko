@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `collection` | collection | Fallback collection |  |
-| `eyebrow` | text | Eyebrow | Pair it with these |
-| `heading` | text | Heading | Complete the routine |
-| `text` | text | Text | Three gentle essentials that play well together. |
+| `eyebrow` | text | Eyebrow | Pairs well with |
+| `heading` | text | Heading | Cleanse, treat, moisturize |
+| `text` | text | Text | A simple face routine to pair with your body oil. |
 
 ## Blocks
 

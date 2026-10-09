@@ -295,19 +295,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Find us nearby"
+      "default": "where to buy"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "See it in person."
+      "default": "Find us in a store near you."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Choose a country to see a selection of participating stockists."
+      "default": "The line sits in drugstores and big-box chains. Search by country, then pick a store."
     },
     {
       "type": "text",
@@ -331,7 +331,7 @@
       "type": "text",
       "id": "directions_label",
       "label": "Directions label",
-      "default": "Directions"
+      "default": "map it"
     }
   ],
   "blocks": [
@@ -415,30 +415,48 @@
           }
         },
         {
+          "type": "country",
+          "settings": {
+            "value": "au",
+            "label": "Australia"
+          }
+        },
+        {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Corner Drug and Beauty",
+            "place": "Columbus, OH"
+          }
+        },
+        {
+          "type": "store",
+          "settings": {
+            "name": "Midtown Mart",
+            "place": "Atlanta, GA"
+          }
         },
         {
           "type": "store",
           "settings": {
             "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Maple Pharmacy",
+            "place": "Calgary, AB"
           }
         },
         {
           "type": "store",
           "settings": {
             "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "name": "Highstreet Health",
+            "place": "Leeds"
           }
         },
         {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "au",
+            "name": "Harbour Chemist",
+            "place": "Brisbane"
           }
         }
       ]

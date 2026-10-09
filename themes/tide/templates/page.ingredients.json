@@ -1,8 +1,71 @@
 {
   "sections": {
+    "ingredients-header": {
+      "type": "blko-ingredients-header",
+      "settings": {
+        "breadcrumb": "Ingredients",
+        "heading": "What goes in, and what stays out.",
+        "text": "Our formulas pair sea plants with proven moisturizers and skip a long list of exclusions you can read below."
+      }
+    },
+    "seaweed-species": {
+      "type": "blko-seaweed-species",
+      "settings": {
+        "kicker": "Sea plants we use",
+        "heading": "Four seaweeds, four jobs"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Wakame",
+            "text": "A brown kelp that helps reinforce the moisture barrier."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Red algae",
+            "text": "Smooths and softens, leaving skin feeling cushioned."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Bladderwrack",
+            "text": "A firming brown seaweed that brings back radiance."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Miru",
+            "text": "A fine green frond that hydrates while keeping oil in balance."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ingredient glossary",
+        "heading": "Every ingredient, in plain words.",
+        "text": "Look up the common and scientific name of each ingredient, and learn what role it plays in the formula.",
+        "search_placeholder": "Try “glycerin”",
+        "detail_heading": "Wakame extract",
+        "detail_text": "A sea vegetable rich in minerals and sugars that bind water. It helps skin stay hydrated and smooth, especially in drier weather.",
+        "best_for": "Dry, tight or dull skin",
+        "found_in": "Serums, creams and body oils"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -13,35 +76,38 @@
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Humectant",
+            "key": "humectant"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Emollient",
+            "key": "emollient"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
+            "label": "Exfoliant",
+            "key": "exfoliant"
           }
         },
         "block-5": {
-          "type": "ingredient",
-          "settings": {}
+          "type": "filter",
+          "settings": {
+            "label": "Botanical",
+            "key": "botanical"
+          }
         },
         "block-6": {
           "type": "ingredient",
           "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "letter": "G",
+            "name": "Glycerin",
+            "detail": "A humectant that draws water into the skin",
+            "tags": "humectant"
           }
         },
         "block-7": {
@@ -49,35 +115,44 @@
           "settings": {
             "letter": "H",
             "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "detail": "Holds many times its weight in water",
+            "tags": "humectant"
           }
         },
         "block-8": {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "J",
+            "name": "Jojoba esters",
+            "detail": "A silky emollient that smooths and softens",
+            "tags": "emollient"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "letter": "L",
+            "name": "Lactic acid",
+            "detail": "A gentle exfoliant that lifts dull surface cells",
+            "tags": "exfoliant"
           }
         },
         "block-10": {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "S",
+            "name": "Squalane",
+            "detail": "A plant oil that cushions without clogging pores",
+            "tags": "emollient"
+          }
+        },
+        "block-11": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "U",
+            "name": "Undaria extract",
+            "detail": "The botanical name for wakame, used for barrier support",
+            "tags": "botanical"
           }
         }
       },
@@ -91,20 +166,85 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
+      ]
+    },
+    "free-of-list": {
+      "type": "blko-free-of-list",
+      "settings": {
+        "eyebrow": "Our exclusions",
+        "heading": "What we leave out"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Preservative and plasticizer concerns",
+            "text": "No parabens, phthalates or formaldehyde-releasing preservatives."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Harsh cleansers and fillers",
+            "text": "No sulfates, silicones or mineral oil."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Scent and color",
+            "text": "No synthetic fragrance or artificial dyes. Scented products use plant essences only."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "Animal-derived or tested",
+            "text": "Nothing from animals, and nothing tested on them."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "Trace contaminants",
+            "text": "No hydroquinone, coal tar or heavy metals added to any formula."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
       ]
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Dried seaweed laid out on stone",
+        "eyebrow": "Sustainable harvest",
+        "heading": "Cut by hand, never uprooted.",
+        "text": "Our harvesters trim only the top of each plant and leave the holdfast on the rock so the seaweed regrows within months. Watch how in the harvest film.",
+        "button_label": "Watch the harvest film"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [
+    "ingredients-header",
+    "seaweed-species",
     "beauty-extras-ingredient-glossary",
+    "free-of-list",
     "ingredients-callout",
     "newsletter"
   ]

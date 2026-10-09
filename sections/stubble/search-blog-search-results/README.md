@@ -32,13 +32,13 @@ Never overwrite an existing file with the same name without comparing it first.
 | `page_size` | range | Results per page | 12 |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | Search |
-| `heading` | text | Heading | Find your next essential. |
-| `text` | text | Text | Search products, guides, and helpful pages. |
-| `search_label` | text | Search label | Search the guides and shop |
-| `placeholder` | text | Placeholder | Search products, routines, and guides |
+| `heading` | text | Heading | Search products and shave notes. |
+| `text` | text | Text | Look up razors, refills, scents and guides. |
+| `search_label` | text | Search label | Search products and blog |
+| `placeholder` | text | Placeholder | Try “razor” or “body wash” |
 | `submit_label` | text | Submit label | Search |
 | `dropdown_heading` | text | Dropdown heading | Suggested results |
-| `view_all_label` | text | View all label | View all results |
+| `view_all_label` | text | View all label | See every result |
 | `results_label` | text | Results label | results for |
 | `all_label` | text | All label | everything |
 | `tabs_label` | text | Tabs label | Result types |

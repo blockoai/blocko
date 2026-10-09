@@ -362,31 +362,31 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "From the community"
+      "default": "Real reviews"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Real routines, real notes."
+      "default": "100,000+ guys have weighed in."
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.5"
     },
     {
       "type": "text",
       "id": "stars_label",
       "label": "Stars label",
-      "default": "Five out of five stars"
+      "default": "Four and a half out of five stars"
     },
     {
       "type": "text",
       "id": "count_text",
       "label": "Count text",
-      "default": "From 2,483 verified reviews"
+      "default": "Based on 100,000+ verified reviews"
     }
   ],
   "blocks": [
@@ -518,34 +518,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 71
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 17
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 7
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 3
           }
         },
         {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         {
@@ -558,13 +560,13 @@
           "type": "filter",
           "settings": {
             "label": "Bar soap",
-            "key": "soap"
+            "key": "complexion"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Body care",
+            "label": "Deodorant",
             "key": "care"
           }
         },
@@ -576,41 +578,28 @@
           }
         },
         {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
-          }
-        },
-        {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
+            "tags": "complexion",
+            "title": "My whole family steals the bar",
+            "meta": "Everyday bar soap · Cabin Cedar · Verified buyer"
           }
         },
         {
           "type": "review",
-          "settings": {}
-        },
-        {
-          "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
             "tags": "care",
-            "meta": "Verified customer · Body care"
+            "title": "No more shirt stains",
+            "meta": "Clear-glide deodorant · Verified buyer"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "complexion",
+            "rating": 4,
+            "title": "Scent fades by evening",
+            "meta": "Aloe moisture bar · Verified buyer"
           }
         }
       ]

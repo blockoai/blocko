@@ -1,77 +1,25 @@
 {
   "sections": {
-    "beauty-extras-rewards-overview": {
-      "type": "blko-beauty-extras-rewards-overview",
+    "rewards-join-banner": {
+      "type": "blko-rewards-join-banner",
       "settings": {},
       "blocks": {
         "block-1": {
-          "type": "earn",
-          "settings": {}
+          "type": "message",
+          "settings": {
+            "text": "JOIN FREE · 1 POINT PER $1"
+          }
         },
         "block-2": {
-          "type": "earn",
+          "type": "message",
           "settings": {
-            "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "BIRTHDAY GIFT"
           }
         },
         "block-3": {
-          "type": "earn",
+          "type": "message",
           "settings": {
-            "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        "block-4": {
-          "type": "tier",
-          "settings": {}
-        },
-        "block-5": {
-          "type": "tier",
-          "settings": {
-            "title": "Pearl",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
-          }
-        },
-        "block-6": {
-          "type": "tier",
-          "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6"
-      ]
-    },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "question",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "question",
-          "settings": {
-            "label": "When will my order ship?"
-          }
-        },
-        "block-3": {
-          "type": "question",
-          "settings": {
-            "label": "Can I update my order?"
+            "text": "POINTS FOR REVIEWS"
           }
         }
       },
@@ -81,14 +29,221 @@
         "block-3"
       ]
     },
+    "beauty-extras-rewards-overview": {
+      "type": "blko-beauty-extras-rewards-overview",
+      "settings": {
+        "eyebrow": "twist rewards",
+        "heading": "Get paid back for your hair days.",
+        "text": "Sign up free, collect points for buying, reviewing and sharing, then turn them into discounts. Spend more in a year and you move up a level.",
+        "button_label": "join now",
+        "image_alt": "Person smiling with natural curls",
+        "earn_eyebrow": "how it works",
+        "earn_heading": "Sign up. Earn. Redeem.",
+        "tiers_eyebrow": "four levels",
+        "tiers_heading": "Spend more, get more."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "earn",
+          "settings": {
+            "title": "Sign up",
+            "text": "Open a free account and a welcome gift is waiting."
+          }
+        },
+        "block-2": {
+          "type": "earn",
+          "settings": {
+            "number": "02",
+            "title": "Earn",
+            "text": "Points come from orders, reviews, referrals, social follows and in-store receipts."
+          }
+        },
+        "block-3": {
+          "type": "earn",
+          "settings": {
+            "number": "03",
+            "title": "Redeem",
+            "text": "Trade points for dollars off at checkout."
+          }
+        },
+        "block-4": {
+          "type": "tier",
+          "settings": {
+            "title": "Free",
+            "points": "join for $0",
+            "perks": "1 point per $1 · birthday gift · welcome gift"
+          }
+        },
+        "block-5": {
+          "type": "tier",
+          "settings": {
+            "title": "Level 2",
+            "points": "$100 a year",
+            "perks": "2 points per $1 · 100 bonus points · priority care"
+          }
+        },
+        "block-6": {
+          "type": "tier",
+          "settings": {
+            "title": "Level 3",
+            "points": "$250 a year",
+            "perks": "3 points per $1 · 250 bonus points · try unreleased products"
+          }
+        },
+        "block-7": {
+          "type": "tier",
+          "settings": {
+            "title": "Level 4",
+            "points": "$400 a year",
+            "perks": "4 points per $1 · 500 bonus points"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7"
+      ]
+    },
+    "rewards-perks": {
+      "type": "blko-rewards-perks",
+      "settings": {
+        "kicker": "perks to redeem",
+        "heading": "What your points buy"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "$5 off",
+            "text": "A small treat for an order of any size."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "$10 off",
+            "text": "A bigger discount for bundles and sets."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Free gift",
+            "text": "Pick a mini add-on to ship with your order."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "rewards questions",
+        "heading": "Points, explained"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Is joining really free?",
+            "text": "Yes. Every account earns points from day one, with no fee."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Where do points come from?",
+            "text": "Orders, product reviews, referrals, following us on social and uploading in-store receipts."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "When do points expire?",
+            "text": "After twelve months without an order or any other activity."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "What happens if I return something?",
+            "text": "The points from that purchase come off your balance."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "Do auto-ship orders earn points?",
+            "text": "Yes, every shipment counts the same as a normal order."
+          }
+        },
+        "block-6": {
+          "type": "question",
+          "settings": {
+            "label": "Can I use points with a promo code?",
+            "text": "You can, in the same checkout."
+          }
+        },
+        "block-7": {
+          "type": "question",
+          "settings": {
+            "label": "Is there a limit on points?",
+            "text": "No cap on points from purchases or reviews."
+          }
+        },
+        "block-8": {
+          "type": "question",
+          "settings": {
+            "label": "How long does tier status last?",
+            "text": "Your level holds for a full year after you reach it."
+          }
+        },
+        "block-9": {
+          "type": "question",
+          "settings": {
+            "label": "How do in-store receipts work?",
+            "text": "Upload a photo of the receipt and points appear within ten business days."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "get 15% off",
+        "heading": "join the list",
+        "message": "Early sale access, scent drops and the odd hair tip, no more than once a week.",
+        "button_label": "sign me up"
+      }
     }
   },
   "order": [
+    "rewards-join-banner",
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-perks",
+    "rewards-faq",
     "newsletter"
   ]
 }

@@ -115,7 +115,7 @@
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.4"
     },
     {
       "type": "text",
@@ -127,13 +127,13 @@
       "type": "text",
       "id": "summary",
       "label": "Summary",
-      "default": "Based on 1,248 verified reviews"
+      "default": "From 15,602 verified reviews"
     },
     {
       "type": "text",
       "id": "list_heading",
       "label": "List heading",
-      "default": "Featured reviews"
+      "default": "What shavers say"
     },
     {
       "type": "text",
@@ -248,34 +248,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 66
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 19
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 8
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 4
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "1 star",
-            "percent": 1
+            "percent": 3
           }
         },
         {
@@ -285,39 +287,46 @@
         {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "key": "photos",
+            "label": "With photos"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Closeness",
-            "key": "coverage"
+            "key": "sensitive",
+            "label": "Sensitive skin"
           }
         },
         {
           "type": "review",
           "settings": {
-            "text": "I get a close shave with no irritation, and the lather lasts the whole time. Cheaper than what I used before, too."
+            "title": "No more neck irritation",
+            "text": "I used to dread shaving under the jaw. The pivot kept the blades flat and I had no redness the next morning.",
+            "footer": "Marcus T. · 2 weeks ago",
+            "tags": "sensitive",
+            "caption": ""
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "My everyday gel",
-            "text": "Easy to lather, rinses clean and smells fresh without being heavy. Switching was simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "title": "One cartridge, six weeks",
+            "text": "I shave every other day and a single cartridge carried me through. Replacement cost is lower than my old brand.",
+            "footer": "Luis R. · 1 month ago",
+            "tags": "photos",
+            "caption": "Razor Pro · onyx"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "Fresh, not sticky",
-            "text": "This gives me a fresh feel after the shave without leaving anything heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos"
+            "title": "Good, but check the fit",
+            "text": "Great shave. I ordered the wrong refills at first because I did not realise the lines are not interchangeable.",
+            "footer": "Dev P. · 2 months ago",
+            "tags": "all",
+            "caption": "",
+            "rating": 4
           }
         }
       ]

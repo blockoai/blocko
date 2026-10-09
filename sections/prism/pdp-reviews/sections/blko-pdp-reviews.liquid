@@ -100,6 +100,8 @@
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 {% endstylesheet %}
 {% schema %}
 {
@@ -114,13 +116,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Pro and community reviews"
+      "default": "Customer reviews"
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.7"
     },
     {
       "type": "text",
@@ -132,13 +134,13 @@
       "type": "text",
       "id": "summary",
       "label": "Summary",
-      "default": "Based on 1,248 verified reviews"
+      "default": "Based on 1,812 reviews"
     },
     {
       "type": "text",
       "id": "list_heading",
       "label": "List heading",
-      "default": "Featured reviews"
+      "default": "What shoppers say"
     },
     {
       "type": "text",
@@ -252,78 +254,34 @@
       "name": "Reviews with filters",
       "blocks": [
         {
-          "type": "bar",
-          "settings": {}
-        },
-        {
-          "type": "bar",
+          "type": "review",
           "settings": {
-            "label": "4 stars",
-            "percent": 12
-          }
-        },
-        {
-          "type": "bar",
-          "settings": {
-            "label": "3 stars",
-            "percent": 4
-          }
-        },
-        {
-          "type": "bar",
-          "settings": {
-            "label": "2 stars",
-            "percent": 1
-          }
-        },
-        {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 1
-          }
-        },
-        {
-          "type": "filter",
-          "settings": {}
-        },
-        {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        {
-          "type": "filter",
-          "settings": {
-            "label": "Color hold",
-            "key": "coverage"
+            "title": "Saved my gym days",
+            "text": "Sprayed after class and my roots looked fresh again. No chalky feeling at all.",
+            "footer": "Jordan T. · 2 weeks ago",
+            "tags": "photos oily",
+            "caption": "Type 2b · photo review"
           }
         },
         {
           "type": "review",
           "settings": {
-            "text": "My copper stayed vivid for weeks longer than usual, and my hair feels soft instead of straw-like."
+            "title": "Finally works on my curls",
+            "text": "I aim at the scalp only and it lifts my roots without frizzing the lengths.",
+            "footer": "Ayo M. · 1 month ago",
+            "tags": "curls",
+            "caption": ""
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "My new wash-day staple",
-            "text": "Lathers well, rinses clean and never weighs my curls down. The hair-type guide made choosing simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
-          }
-        },
-        {
-          "type": "review",
-          "settings": {
-            "title": "Shiny, not greasy",
-            "text": "Gives me the glossy finish I want without any buildup or stickiness.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Coily + bleached · photo review"
+            "title": "Strong scent but great hold",
+            "text": "The berry scent is bold. Power lasts all day, and it brushes out easily.",
+            "footer": "Cam R. · 2 months ago",
+            "tags": "scent",
+            "caption": "Type 1a · photo review",
+            "rating": 4
           }
         }
       ]

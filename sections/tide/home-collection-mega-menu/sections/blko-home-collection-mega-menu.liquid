@@ -178,13 +178,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Shop by ritual"
+      "default": "Shop by category"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Start where the water meets the shore."
+      "default": "Start with what your skin needs."
     }
   ],
   "blocks": [
@@ -242,39 +242,60 @@
       "blocks": [
         {
           "type": "link",
-          "settings": {}
-        },
-        {
-          "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#eyes"
+            "label": "Cleansers",
+            "url": "#cleanse"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Lips",
-            "url": "#lips"
+            "label": "Serums + masks",
+            "url": "#treat"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Sun care",
-            "url": "#care"
+            "label": "Moisturizers",
+            "url": "#moisturize"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Body care",
+            "url": "#body"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Wellness",
+            "url": "#wellness"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Gift sets",
+            "url": "#sets"
           }
         },
         {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#body",
+            "image_alt": "Body oil bottle on a sandy ledge",
+            "label": "Body care"
+          }
         },
         {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Body ritual",
-            "label": "Sun care"
+            "url": "#treat",
+            "image_alt": "Droplet of clear serum",
+            "label": "Serums"
           }
         }
       ]

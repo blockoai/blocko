@@ -2,7 +2,16 @@
   "sections": {
     "beauty-extras-ingredient-glossary": {
       "type": "blko-beauty-extras-ingredient-glossary",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ingredient index",
+        "heading": "What each ingredient does.",
+        "text": "Look up any ingredient in plain language, from cleansing agents to scent and performance boosters.",
+        "search_placeholder": "Try “castor oil”",
+        "detail_heading": "Behentrimonium chloride",
+        "detail_text": "A conditioning agent derived from plants that helps hair feel soft and comb through easily. It is the backbone of most rinse-out conditioners.",
+        "best_for": "Detangling and slip",
+        "found_in": "Daily conditioner, repair mask"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
@@ -13,71 +22,136 @@
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Moisture",
-            "key": "hydration"
+            "label": "Cleansers",
+            "key": "cleansers"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Bond repair",
-            "key": "barrier"
+            "label": "Moisturizers",
+            "key": "moisturizers"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "UV shield",
-            "key": "sun"
+            "label": "Conditioners",
+            "key": "conditioners"
           }
         },
         "block-5": {
-          "type": "ingredient",
-          "settings": {}
+          "type": "filter",
+          "settings": {
+            "label": "Preservatives",
+            "key": "preservatives"
+          }
         },
         "block-6": {
-          "type": "ingredient",
+          "type": "filter",
           "settings": {
-            "letter": "C",
-            "name": "Amino bond complex",
-            "detail": "Supports strong, bouncy strands",
-            "tags": "bond repair"
+            "label": "Fragrance",
+            "key": "fragrance"
           }
         },
         "block-7": {
-          "type": "ingredient",
+          "type": "filter",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight moisture",
-            "tags": "hydration"
+            "label": "Solvents",
+            "key": "solvents"
           }
         },
         "block-8": {
-          "type": "ingredient",
+          "type": "filter",
           "settings": {
-            "letter": "N",
-            "name": "Panthenol",
-            "detail": "Helps hair feel smooth and full",
-            "tags": "brightening"
+            "label": "Performance",
+            "key": "performance"
           }
         },
         "block-9": {
           "type": "ingredient",
           "settings": {
-            "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "detail": "A cooling water base that adds light moisture",
+            "tags": "moisturizers solvents"
           }
         },
         "block-10": {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "UV filter",
-            "detail": "Helps shield color from sun",
-            "tags": "UV shield"
+            "name": "Amodimethicone",
+            "detail": "Smooths the cuticle for shine and easy combing",
+            "tags": "performance conditioners"
+          }
+        },
+        "block-11": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Avocado oil",
+            "detail": "A rich plant oil that softens dry ends",
+            "tags": "moisturizers"
+          }
+        },
+        "block-12": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "B",
+            "name": "Behentrimonium chloride",
+            "detail": "Gives conditioner its slip and detangling power",
+            "tags": "conditioners"
+          }
+        },
+        "block-13": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "C",
+            "name": "Castor oil",
+            "detail": "A thick oil that seals in moisture",
+            "tags": "moisturizers"
+          }
+        },
+        "block-14": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "C",
+            "name": "Cetyl alcohol",
+            "detail": "A fatty alcohol that thickens creams without drying",
+            "tags": "conditioners moisturizers"
+          }
+        },
+        "block-15": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "C",
+            "name": "Cocamidopropyl betaine",
+            "detail": "A gentle foaming cleanser from coconut",
+            "tags": "cleansers"
+          }
+        },
+        "block-16": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "P",
+            "name": "Phenoxyethanol",
+            "detail": "A preservative that keeps formulas fresh",
+            "tags": "preservatives"
+          }
+        },
+        "block-17": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "P",
+            "name": "Parfum blend",
+            "detail": "The scent mix, kept free of phthalates",
+            "tags": "fragrance"
+          }
+        },
+        "block-18": {
+          "type": "ingredient",
+          "settings": {
+            "letter": "S",
+            "name": "Sodium cocoyl isethionate",
+            "detail": "A mild, sulfate-free foaming agent",
+            "tags": "cleansers"
           }
         }
       },
@@ -91,16 +165,35 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13",
+        "block-14",
+        "block-15",
+        "block-16",
+        "block-17",
+        "block-18"
       ]
     },
     "ingredients-callout": {
       "type": "blko-ingredients-callout",
-      "settings": {}
+      "settings": {
+        "image_alt": "Berries and oil in a dish",
+        "eyebrow": "Hero ingredient",
+        "heading": "One nutrient-rich berry runs through every formula.",
+        "text": "High in vitamins A and C and in omega-7, it is why strands feel soft and shiny from the first wash. Read where it is grown and how we process it.",
+        "button_label": "See its story"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [

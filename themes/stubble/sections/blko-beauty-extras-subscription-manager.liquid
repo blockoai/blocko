@@ -27,7 +27,6 @@
 .blko-theme .blko-beauty-extras-filter-row .is-active{background:var(--color-button);color:var(--color-button-text);border-color:var(--color-button)}
 .blko-theme .blko-beauty-extras-subscription-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:2rem;max-width:1200px;margin:auto}
 .blko-theme .blko-beauty-extras-routine-summary .blko-button{width:100%;margin-top:1.4rem;background:var(--color-paper);color:var(--color-button)}
-.blko-theme .blko-beauty-extras-map:before{content:"";position:absolute;width:150%;height:25%;background:var(--color-accent);transform:rotate(-35deg)}
 .blko-theme .blko-beauty-extras-store-list h2{margin:.2rem 0;font:var(--weight-medium) var(--text-h4)/var(--leading-h3) var(--font-display);letter-spacing:var(--tracking-body)}
 .blko-theme .blko-beauty-extras-rewards{padding:0}
 .blko-theme .blko-beauty-extras-subscriptions{max-width:1200px;margin:auto}
@@ -281,61 +280,61 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Your subscription"
+      "default": "Subscribe and save"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Never run out."
+      "default": "Fresh blades before the old ones dull."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Adjust your next shipment whenever your routine changes."
+      "default": "Take 5% off every order and ship free over $30. Swap items, shift the date or update your address any time."
     },
     {
       "type": "text",
       "id": "shipment_eyebrow",
       "label": "Shipment eyebrow",
-      "default": "Next shipment"
+      "default": "Next cartridge shipment"
     },
     {
       "type": "text",
       "id": "shipment_heading",
       "label": "Shipment heading",
-      "default": "Arrives around the 18th"
+      "default": "Ships on the 12th"
     },
     {
       "type": "text",
       "id": "image_alt",
       "label": "Image alt",
-      "default": "Shave gel and cartridges"
+      "default": "Pro cartridge refills"
     },
     {
       "type": "text",
       "id": "variant_label",
       "label": "Variant label",
-      "default": "Mint"
+      "default": "4 cartridges"
     },
     {
       "type": "text",
       "id": "shipment_note",
       "label": "Shipment note",
-      "default": "Ships to your saved address."
+      "default": "Sent to your saved address in plain packaging."
     },
     {
       "type": "text",
       "id": "frequency_eyebrow",
       "label": "Frequency eyebrow",
-      "default": "Delivery every"
+      "default": "Refill every"
     },
     {
       "type": "text",
       "id": "frequency_copy",
       "label": "Frequency copy",
-      "default": "Currently every 4 weeks."
+      "default": "You are set to refill every three months."
     },
     {
       "type": "text",
@@ -347,7 +346,7 @@
       "type": "text",
       "id": "swap_label",
       "label": "Swap label",
-      "default": "Swap product"
+      "default": "Change an item"
     }
   ],
   "blocks": [
@@ -378,19 +377,26 @@
         {
           "type": "frequency",
           "settings": {
+            "label": "2 months"
+          }
+        },
+        {
+          "type": "frequency",
+          "settings": {
+            "label": "3 months",
             "selected": true
           }
         },
         {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "4 months"
           }
         },
         {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "6 months"
           }
         }
       ]

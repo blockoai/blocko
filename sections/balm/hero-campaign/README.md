@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with luminous skin |
-| `eyebrow` | text | Eyebrow | Luxury organic skincare |
-| `heading` | text | Heading | Skin, sculpted by nature. |
-| `text` | textarea | Text | Certified organic botanicals, cold-pressed and blended in small batches. |
-| `button_label` | text | Button label | Shop skincare |
+| `image_alt` | text | Image alt text | Close-up of a face with a warm flush and a soft glow on the cheekbone |
+| `eyebrow` | text | Eyebrow | The flagship set |
+| `heading` | text | Heading | Contour, color and glow from three creamy sticks. |
+| `text` | textarea | Text | Sculpt, warm and brighten with one routine, each stick built on organic oils and |
+| `button_label` | text | Button label | Shop the contour set |
 | `button_url` | url | Button url |  |
 
 ## Blocks

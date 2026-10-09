@@ -33,7 +33,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | `collection` | collection | Collection |  |
 | `heading` | text | Heading | frequently bought together |
 | `total_label` | text | Total label | total |
-| `button_label` | text | Button label | add all to bag |
+| `button_label` | text | Button label | add selected to bag |
 
 ## Blocks
 

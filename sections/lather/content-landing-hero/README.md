@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with a fresh natural makeup finish |
-| `kicker` | text | Kicker | The everyday edit |
-| `heading` | text | Heading | Color that keeps up. |
-| `text` | textarea | Text | Comfortable, buildable essentials made for a face that moves through a full day. |
+| `image_alt` | text | Image alt text | A pile of soap bars with sale tags |
+| `kicker` | text | Kicker | The big sale |
+| `heading` | text | Heading | Stock up. Save big. |
+| `text` | textarea | Text | Best sellers, starter bundles and the last of the limited drops are marked down. |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your bundle |
+| `button_label` | text | Button label | Shop the sale |
 
 ## Blocks
 

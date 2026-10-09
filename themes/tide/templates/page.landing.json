@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Citrus peel and lavender beside a bottle of body oil",
+        "kicker": "Shop by scent",
+        "heading": "Find the scent that feels like you.",
+        "text": "Citrus, herbal, floral or none at all: every scent family comes in oils, butters, washes and lotions that layer together.",
+        "button_label": "Pick a scent"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-promises": {
+      "type": "blko-landing-promises",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "PLANT-BASED FRAGRANCE"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SEA BOTANICALS"
+            "text": "FRAGRANCE-FREE TWINS"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "EVERYDAY CALM"
+            "text": "LAYERS BEAUTIFULLY"
           }
         }
       },
@@ -33,28 +41,36 @@
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "Scent families",
+        "heading": "Four ways to smell like the coast"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Orange peel curl on a white plate",
+            "label": "Citrus",
+            "title": "Bright and energizing",
+            "text": "Zesty peel and green herbs for mornings."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Mineral skincare product",
-            "label": "Step two",
-            "title": "Add daily protection",
-            "text": "Smooth on mineral SPF wherever the sun reaches."
+            "image_alt": "Lavender sprigs in soft light",
+            "label": "Lavender",
+            "title": "Calm and floral",
+            "text": "Soothing flowers made for the evening bath."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Skincare products on a bathroom shelf",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A touch of balm or butter is enough to make it yours."
+            "image_alt": "Vanilla pods and a wooden spoon",
+            "label": "Vanilla",
+            "title": "Warm and comforting",
+            "text": "Creamy and a little sweet, ideal for body butter."
           }
         }
       },
@@ -64,19 +80,24 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "In every scent",
+        "heading": "Body care, layered"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Bestsellers"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New"
           }
         }
       },
@@ -87,24 +108,31 @@
     },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
+      "settings": {
+        "kicker": "Layering tip",
+        "quote": "“I wear the oil, the butter and the wash and the scent lasts all day.”",
+        "author": "— Customer review"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "Match scents",
+            "text": "Pair the same family across steps"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "Mix and blend",
+            "text": "Try citrus over vanilla"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "Go unscented",
+            "text": "Fragrance-free twin for every product"
           }
         }
       },
@@ -114,33 +142,38 @@
         "block-3"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "landing-scents": {
+      "type": "blko-landing-scents",
+      "settings": {
+        "heading": "Or explore a scent family"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "title": "Citrus herb",
+            "url": "#citrus"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Body",
-            "url": "#eyes"
+            "title": "Lavender",
+            "url": "#lavender"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Lips",
-            "url": "#lips"
+            "title": "Vanilla",
+            "url": "#vanilla"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Sun care",
-            "url": "#care"
+            "title": "Fragrance-free",
+            "url": "#fragrance-free"
           }
         }
       },
@@ -153,16 +186,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
+    "landing-promises",
     "content-landing-routine",
-    "tabbed-product-grid",
+    "landing-picks",
     "content-landing-proof",
-    "category-slider",
+    "landing-scents",
     "newsletter"
   ]
 }

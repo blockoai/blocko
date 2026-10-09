@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by collection |
-| `heading` | text | Heading | find your everyday. |
-| `text` | textarea | Text | Routines, glow edits and tools made to fit into real life. |
+| `eyebrow` | text | Eyebrow | Browse the families |
+| `heading` | text | Heading | Everything on the shelf |
+| `text` | textarea | Text | Skin, lip + cheek, sets and little sizes for travel. Award winners are gathered  |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

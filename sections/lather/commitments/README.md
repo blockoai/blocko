@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Shower routine |
-| `eyebrow` | text | Eyebrow | Our promise |
-| `heading` | text | Heading | Big scents, small ingredient lists. |
-| `text` | textarea | Text | Stack the bundle: soap, deodorant and cologne that work together. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | A hand holding a bar of soap over a sink |
+| `eyebrow` | text | Eyebrow | The difference |
+| `heading` | text | Heading | Soap that earns its spot in the shower. |
+| `text` | textarea | Text | We started in a garage with a pot, some oils and an itch to make something bette |
+| `button_label` | text | Button label | Read our story |
 | `button_url` | url | Button url |  |
 
 ## Blocks

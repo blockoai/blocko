@@ -2,30 +2,41 @@
   "sections": {
     "pdp-bundle-builder": {
       "type": "blko-pdp-bundle-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build a set",
+        "heading": "Pick three, save 15 percent.",
+        "text": "Combine any three face or body favorites. The bundle price updates as you choose.",
+        "saving_text": "You save 15% when three items are in your set."
+      }
     },
     "pdp-bundle-explainer": {
       "type": "blko-pdp-bundle-explainer",
-      "settings": {},
+      "settings": {
+        "eyebrow": "How sets work",
+        "heading": "Choose, save, gift."
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Choose three",
+            "text": "Mix cleansers, serums, creams and body care."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your set price updates as you select."
+            "heading": "See your saving",
+            "text": "Fifteen percent comes off the moment the third item is added."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible routine you can return to every day."
+            "heading": "Gift or keep",
+            "text": "Ship it to yourself or add a printed note at the bag."
           }
         }
       },
@@ -58,7 +69,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [

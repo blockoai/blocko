@@ -14,17 +14,22 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "pair it up",
+        "heading": "best-selling bundles"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "top bundles"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "what's new",
-            "key": "new"
+            "key": "new",
+            "label": "just launched"
           }
         }
       },

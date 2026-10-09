@@ -2,43 +2,81 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by step",
+        "heading": "Where does your day begin?"
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Mist sunscreen",
+            "url": "#sun"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Sun",
-            "url": "#eyes"
+            "label": "Gel + cream SPF",
+            "url": "#sun"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips + glow",
-            "url": "#lips"
+            "label": "Sticks + compacts",
+            "url": "#sun"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Sets",
-            "url": "#care"
+            "label": "Wash + polish",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Butters + oils",
+            "url": "#body"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Deodorant",
+            "url": "#deodorant"
+          }
+        },
+        "block-7": {
+          "type": "link",
+          "settings": {
+            "label": "Scent mists",
+            "url": "#scent"
+          }
+        },
+        "block-8": {
+          "type": "link",
+          "settings": {
+            "label": "Savings sets",
+            "url": "#sets"
+          }
+        },
+        "block-9": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Gift ritual",
-            "label": "Sets"
+            "url": "#sun",
+            "image_alt": "Sunscreen mist bottle on warm sand",
+            "label": "Sunscreen"
+          }
+        },
+        "block-10": {
+          "type": "tile",
+          "settings": {
+            "url": "#sets",
+            "image_alt": "Body care products laid out on a towel",
+            "label": "Savings sets"
           }
         }
       },
@@ -48,12 +86,61 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10"
       ]
     },
     "home-collection-collections-directory": {
       "type": "blko-home-collection-collections-directory",
-      "settings": {}
+      "settings": {
+        "eyebrow": "All collections",
+        "heading": "Find your way in",
+        "text": "Browse by product type, by scent family, by size or by the occasion you are shopping for."
+      }
+    },
+    "collections-ways": {
+      "type": "blko-collections-ways",
+      "settings": {
+        "kicker": "How the shop is organised",
+        "heading": "Three ways to browse"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Scent mists lined up on a shelf",
+            "label": "By scent",
+            "title": "Start with a scent family",
+            "text": "Coconut, vanilla, guava and santal run through washes, butters, deodorants and mists, so a whole routine can match."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Mini, standard and jumbo bottles side by side",
+            "label": "By size",
+            "title": "Pick mini, standard or jumbo",
+            "text": "Minis for the carry-on, jumbos for daily showers, refills when a jar is empty."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "A gift set tied with ribbon",
+            "label": "By occasion",
+            "title": "Shop a set or a gift list",
+            "text": "Sets show their savings upfront, and gift picks are sorted into price tiers."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,12 +148,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
     "home-collection-collections-directory",
+    "collections-ways",
     "home-collection-quick-view-modal",
     "newsletter"
   ]

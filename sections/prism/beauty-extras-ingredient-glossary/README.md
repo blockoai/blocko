@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | ingredient guide |
-| `heading` | text | Heading | ingredients, explained. |
-| `text` | textarea | Text | Search the ingredients behind a color-safe, bond-building routine. |
+| `eyebrow` | text | Eyebrow | Ingredient index |
+| `heading` | text | Heading | What each ingredient does. |
+| `text` | textarea | Text | Look up any ingredient in plain language, from cleansing agents to scent and per |
 | `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “bond repair” |
+| `search_placeholder` | text | Search placeholder | Try “castor oil” |
 | `note_label` | text | Note label | Read note ↗ |
 | `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Aloe leaf juice |
-| `detail_text` | textarea | Detail text | A botanical humectant that gives formulas a cool, soothing feel. Especially welc |
+| `detail_heading` | text | Detail heading | Behentrimonium chloride |
+| `detail_text` | textarea | Detail text | A conditioning agent derived from plants that helps hair feel soft and comb thro |
 | `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Scalp comfort and moisture |
+| `best_for` | text | Best for | Detangling and slip |
 | `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Shampoo and masks |
+| `found_in` | text | Found in | Daily conditioner, repair mask |
 
 ## Blocks
 

@@ -545,16 +545,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1747352690408-0381bf50ec95",
-        "page_url": "https://unsplash.com/photos/photo-1747352690408-0381bf50ec95"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       },
       {
-        "photo_id": "photo-1553519367-2b1993d992dc",
-        "page_url": "https://unsplash.com/photos/photo-1553519367-2b1993d992dc"
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
       },
       {
-        "photo_id": "photo-1650543679355-0fcf8a621d1a",
-        "page_url": "https://unsplash.com/photos/photo-1650543679355-0fcf8a621d1a"
+        "photo_id": "photo-1690603935467-630341102dd5",
+        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
       }
     ],
     "targets": {
@@ -580,20 +580,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1553265576-8533b2cdc606",
-        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
-      },
-      {
-        "photo_id": "photo-1583947214858-88bc0067cf7c",
-        "page_url": "https://unsplash.com/photos/photo-1583947214858-88bc0067cf7c"
-      },
-      {
-        "photo_id": "photo-1700126761911-84f19978e8bb",
-        "page_url": "https://unsplash.com/photos/photo-1700126761911-84f19978e8bb"
-      },
-      {
-        "photo_id": "photo-1587909209111-5097ee578ec3",
-        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
       }
     ],
     "targets": {
@@ -604,32 +592,6 @@
       "shopify": "Static blocks are the fallback; when the Blocko Worker API answers GET {settings.blocko_api_base}/reviews?product_id= the summary, bars and reviews are replaced with live data (needs the Blocko app proxy)."
     },
     "jsBytes": 9646,
-    "industry": "beauty"
-  },
-  {
-    "id": "beauty-extras-stockist-locator",
-    "kind": "section",
-    "category": "store-locator",
-    "name": "Stockist locator",
-    "description": "Country-filtered stockist list and illustrative map.",
-    "file": "stubble/sections/store-locator--beauty-extras-stockist-locator.html",
-    "deps": [
-      "assets/blko-beauty-extras.js"
-    ],
-    "credits": [
-      {
-        "photo_id": "photo-1645697744691-9fd0ee315181",
-        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
-      }
-    ],
-    "targets": {
-      "html": "ok",
-      "shopify": "ok"
-    },
-    "notes": {
-      "shopify": "Static stockists are the fallback; when the Blocko Worker API answers GET {settings.blocko_api_base}/stockists the list is replaced (the country filter keeps working; lat/lng/q search is not wired). The map is illustrative (no map provider)."
-    },
-    "jsBytes": 9211,
     "industry": "beauty"
   },
   {
@@ -644,8 +606,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1766104809723-94241927f92b",
-        "page_url": "https://unsplash.com/photos/photo-1766104809723-94241927f92b"
+        "photo_id": "photo-1662386392771-07d5109da175",
+        "page_url": "https://unsplash.com/photos/photo-1662386392771-07d5109da175"
       }
     ],
     "targets": {
@@ -670,8 +632,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1637503434402-0491c896566b",
-        "page_url": "https://unsplash.com/photos/photo-1637503434402-0491c896566b"
+        "photo_id": "photo-1690603935467-630341102dd5",
+        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
       }
     ],
     "targets": {
@@ -680,52 +642,6 @@
     },
     "notes": {
       "shopify": "needs app: UI shell only; the buttons update local page state."
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
-  },
-  {
-    "id": "beauty-extras-shade-answer",
-    "kind": "block",
-    "category": "quiz",
-    "name": "Scent answer",
-    "description": "Selectable quiz-answer tile.",
-    "file": "stubble/blocks/quiz--beauty-extras-shade-answer.html",
-    "deps": [
-      "assets/blko-beauty-extras.js"
-    ],
-    "credits": [
-      {
-        "photo_id": "photo-1645697744691-9fd0ee315181",
-        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
-      }
-    ],
-    "targets": {
-      "html": "ok",
-      "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
-  },
-  {
-    "id": "beauty-extras-shade-match",
-    "kind": "block",
-    "category": "quiz",
-    "name": "Scent match",
-    "description": "Recommended shade card with add action.",
-    "file": "stubble/blocks/quiz--beauty-extras-shade-match.html",
-    "deps": [
-      "assets/blko-beauty-extras.js"
-    ],
-    "credits": [
-      {
-        "photo_id": "photo-1645697744691-9fd0ee315181",
-        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
-      }
-    ],
-    "targets": {
-      "html": "ok",
-      "shopify": "ok"
     },
     "jsBytes": 9211,
     "industry": "beauty"
@@ -892,29 +808,6 @@
     "industry": "beauty"
   },
   {
-    "id": "beauty-extras-store-card",
-    "kind": "block",
-    "category": "stockists",
-    "name": "Store locator",
-    "description": "Local stockist address card.",
-    "file": "stubble/blocks/stockists--beauty-extras-store-card.html",
-    "deps": [
-      "assets/blko-beauty-extras.js"
-    ],
-    "credits": [
-      {
-        "photo_id": "photo-1645697744691-9fd0ee315181",
-        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
-      }
-    ],
-    "targets": {
-      "html": "ok",
-      "shopify": "ok"
-    },
-    "jsBytes": 9211,
-    "industry": "beauty"
-  },
-  {
     "id": "beauty-extras-country-filter",
     "kind": "block",
     "category": "stockists",
@@ -1001,8 +894,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1637503434402-0491c896566b",
-        "page_url": "https://unsplash.com/photos/photo-1637503434402-0491c896566b"
+        "photo_id": "photo-1690603935467-630341102dd5",
+        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
       }
     ],
     "targets": {
@@ -1080,20 +973,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1632072907857-d2cae8f52888",
-        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
       },
       {
         "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
         "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
-      },
-      {
-        "photo_id": "photo-1691036365017-76f8114f50c4",
-        "page_url": "https://unsplash.com/photos/photo-1691036365017-76f8114f50c4"
-      },
-      {
-        "photo_id": "photo-1612800083273-24ea5c80313d",
-        "page_url": "https://unsplash.com/photos/photo-1612800083273-24ea5c80313d"
       }
     ],
     "targets": {
@@ -1118,8 +1007,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1778909200898-048e133580c1",
-        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -1169,8 +1058,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1659422440915-d516c6dc932e",
-        "page_url": "https://unsplash.com/photos/photo-1659422440915-d516c6dc932e"
+        "photo_id": "photo-1648208567987-d9ec717d1742",
+        "page_url": "https://unsplash.com/photos/photo-1648208567987-d9ec717d1742"
       }
     ],
     "targets": {
@@ -1193,12 +1082,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1632072907857-d2cae8f52888",
-        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
-      },
-      {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -1314,8 +1199,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1632072907857-d2cae8f52888",
-        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -1361,8 +1246,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -1407,8 +1292,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1747352690432-7c90bf17ede1",
-        "page_url": "https://unsplash.com/photos/photo-1747352690432-7c90bf17ede1"
+        "photo_id": "photo-1510711070725-068a3a878a99",
+        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
       }
     ],
     "targets": {
@@ -1430,8 +1315,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1769069919670-8d71bf1a57f6",
-        "page_url": "https://unsplash.com/photos/photo-1769069919670-8d71bf1a57f6"
+        "photo_id": "photo-1587909209111-5097ee578ec3",
+        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
       }
     ],
     "targets": {
@@ -1476,8 +1361,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1766113492854-0f61b7a864da",
-        "page_url": "https://unsplash.com/photos/photo-1766113492854-0f61b7a864da"
+        "photo_id": "photo-1700126761911-84f19978e8bb",
+        "page_url": "https://unsplash.com/photos/photo-1700126761911-84f19978e8bb"
       }
     ],
     "targets": {
@@ -1752,8 +1637,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1735150949874-ec9c9c82b2c4",
-        "page_url": "https://unsplash.com/photos/photo-1735150949874-ec9c9c82b2c4"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       }
     ],
     "targets": {
@@ -1775,16 +1660,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1553519367-2b1993d992dc",
-        "page_url": "https://unsplash.com/photos/photo-1553519367-2b1993d992dc"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1625852043440-f7ed5aff1519",
-        "page_url": "https://unsplash.com/photos/photo-1625852043440-f7ed5aff1519"
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
       },
       {
-        "photo_id": "photo-1662386392771-07d5109da175",
-        "page_url": "https://unsplash.com/photos/photo-1662386392771-07d5109da175"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       }
     ],
     "targets": {
@@ -1801,6 +1686,283 @@
     "name": "Campaign proof",
     "description": "Community proof and clear service reassurance.",
     "file": "stubble/sections/landing--content-landing-proof.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "collection-order",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "stubble/sections/about--collection-order.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "collections-scents",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign routine",
+    "description": "Three-step editorial routine with practical product guidance.",
+    "file": "stubble/sections/landing--collections-scents.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1612800083273-24ea5c80313d",
+        "page_url": "https://unsplash.com/photos/photo-1612800083273-24ea5c80313d"
+      },
+      {
+        "photo_id": "photo-1583947214267-953e8db95f42",
+        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
+      },
+      {
+        "photo_id": "photo-1625852043440-f7ed5aff1519",
+        "page_url": "https://unsplash.com/photos/photo-1625852043440-f7ed5aff1519"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "collections-promises",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign proof",
+    "description": "Community proof and clear service reassurance.",
+    "file": "stubble/sections/landing--collections-promises.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "pdp-stats",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign proof",
+    "description": "Community proof and clear service reassurance.",
+    "file": "stubble/sections/landing--pdp-stats.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "pdp-features",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign routine",
+    "description": "Three-step editorial routine with practical product guidance.",
+    "file": "stubble/sections/landing--pdp-features.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
+      },
+      {
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1510711070725-068a3a878a99",
+        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "pdp-fit",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "stubble/sections/about--pdp-fit.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "pdp-compare",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "stubble/sections/about--pdp-compare.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "subscription-perks",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "stubble/sections/about--subscription-perks.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "subscription-steps",
+    "kind": "section",
+    "category": "landing",
+    "name": "Campaign routine",
+    "description": "Three-step editorial routine with practical product guidance.",
+    "file": "stubble/sections/landing--subscription-steps.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
+        "photo_id": "photo-1662386392771-07d5109da175",
+        "page_url": "https://unsplash.com/photos/photo-1662386392771-07d5109da175"
+      },
+      {
+        "photo_id": "photo-1587909209111-5097ee578ec3",
+        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "about-partners",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "stubble/sections/about--about-partners.html",
+    "deps": [
+      "assets/blko-content.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 2390,
+    "industry": "beauty"
+  },
+  {
+    "id": "landing-compare",
+    "kind": "section",
+    "category": "about",
+    "name": "Values in practice",
+    "description": "Three-card values grid with clear, practical principles.",
+    "file": "stubble/sections/about--landing-compare.html",
     "deps": [
       "assets/blko-content.js"
     ],
@@ -2074,8 +2236,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -2095,8 +2257,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1510711070725-068a3a878a99",
-        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
+        "photo_id": "photo-1625852043440-f7ed5aff1519",
+        "page_url": "https://unsplash.com/photos/photo-1625852043440-f7ed5aff1519"
       }
     ],
     "targets": {
@@ -2139,16 +2301,16 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
         "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
         "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
-      },
-      {
-        "photo_id": "photo-1691036365017-76f8114f50c4",
-        "page_url": "https://unsplash.com/photos/photo-1691036365017-76f8114f50c4"
-      },
-      {
-        "photo_id": "photo-1612800083273-24ea5c80313d",
-        "page_url": "https://unsplash.com/photos/photo-1612800083273-24ea5c80313d"
       }
     ],
     "targets": {
@@ -2168,20 +2330,20 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1648208567987-d9ec717d1742",
-        "page_url": "https://unsplash.com/photos/photo-1648208567987-d9ec717d1742"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       },
       {
-        "photo_id": "photo-1637503434402-0491c896566b",
-        "page_url": "https://unsplash.com/photos/photo-1637503434402-0491c896566b"
+        "photo_id": "photo-1691036365017-76f8114f50c4",
+        "page_url": "https://unsplash.com/photos/photo-1691036365017-76f8114f50c4"
       },
       {
-        "photo_id": "photo-1612800083273-24ea5c80313d",
-        "page_url": "https://unsplash.com/photos/photo-1612800083273-24ea5c80313d"
+        "photo_id": "photo-1658210934892-e0fa57f3deed",
+        "page_url": "https://unsplash.com/photos/photo-1658210934892-e0fa57f3deed"
       },
       {
-        "photo_id": "photo-1747352690408-0381bf50ec95",
-        "page_url": "https://unsplash.com/photos/photo-1747352690408-0381bf50ec95"
+        "photo_id": "photo-1587909209111-5097ee578ec3",
+        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
       }
     ],
     "targets": {
@@ -2369,29 +2531,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1766113493007-93ed1c5a4cd9",
-        "page_url": "https://unsplash.com/photos/photo-1766113493007-93ed1c5a4cd9"
-      }
-    ],
-    "targets": {
-      "html": "ok",
-      "shopify": "ok"
-    },
-    "jsBytes": 0,
-    "industry": "beauty"
-  },
-  {
-    "id": "shade-finder",
-    "kind": "section",
-    "category": "quiz",
-    "name": "Scent finder",
-    "description": "A guided shade-matching entry point.",
-    "file": "stubble/sections/quiz--shade-finder.html",
-    "deps": [],
-    "credits": [
-      {
-        "photo_id": "photo-1769069919670-8d71bf1a57f6",
-        "page_url": "https://unsplash.com/photos/photo-1769069919670-8d71bf1a57f6"
+        "photo_id": "photo-1553519367-2b1993d992dc",
+        "page_url": "https://unsplash.com/photos/photo-1553519367-2b1993d992dc"
       }
     ],
     "targets": {
@@ -2434,16 +2575,16 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
         "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
         "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
-      },
-      {
-        "photo_id": "photo-1691036365017-76f8114f50c4",
-        "page_url": "https://unsplash.com/photos/photo-1691036365017-76f8114f50c4"
-      },
-      {
-        "photo_id": "photo-1612800083273-24ea5c80313d",
-        "page_url": "https://unsplash.com/photos/photo-1612800083273-24ea5c80313d"
       }
     ],
     "targets": {
@@ -2495,8 +2636,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -2543,8 +2684,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       }
     ],
     "targets": {
@@ -2564,16 +2705,16 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1662386392771-07d5109da175",
-        "page_url": "https://unsplash.com/photos/photo-1662386392771-07d5109da175"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       },
       {
-        "photo_id": "photo-1690603935467-630341102dd5",
-        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       },
       {
-        "photo_id": "photo-1766113492854-0f61b7a864da",
-        "page_url": "https://unsplash.com/photos/photo-1766113492854-0f61b7a864da"
+        "photo_id": "photo-1659422440915-d516c6dc932e",
+        "page_url": "https://unsplash.com/photos/photo-1659422440915-d516c6dc932e"
       }
     ],
     "targets": {
@@ -2593,16 +2734,16 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1662386392771-07d5109da175",
-        "page_url": "https://unsplash.com/photos/photo-1662386392771-07d5109da175"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       },
       {
-        "photo_id": "photo-1690603935467-630341102dd5",
-        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       },
       {
-        "photo_id": "photo-1766113492854-0f61b7a864da",
-        "page_url": "https://unsplash.com/photos/photo-1766113492854-0f61b7a864da"
+        "photo_id": "photo-1659422440915-d516c6dc932e",
+        "page_url": "https://unsplash.com/photos/photo-1659422440915-d516c6dc932e"
       }
     ],
     "targets": {
@@ -2694,8 +2835,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1632072907857-d2cae8f52888",
-        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -2718,8 +2859,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1632072907857-d2cae8f52888",
-        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -2783,16 +2924,16 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
         "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
         "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
-      },
-      {
-        "photo_id": "photo-1691036365017-76f8114f50c4",
-        "page_url": "https://unsplash.com/photos/photo-1691036365017-76f8114f50c4"
-      },
-      {
-        "photo_id": "photo-1612800083273-24ea5c80313d",
-        "page_url": "https://unsplash.com/photos/photo-1612800083273-24ea5c80313d"
       }
     ],
     "targets": {
@@ -2800,6 +2941,266 @@
       "shopify": "ok"
     },
     "jsBytes": 435,
+    "industry": "beauty"
+  },
+  {
+    "id": "collection-systems",
+    "kind": "section",
+    "category": "collection-list",
+    "name": "Category slider",
+    "description": "Horizontal category cards for shave, face, hair and body.",
+    "file": "stubble/sections/collection-list--collection-systems.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
+        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+      },
+      {
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
+      },
+      {
+        "photo_id": "photo-1632072907857-d2cae8f52888",
+        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "pdp-also-like",
+    "kind": "section",
+    "category": "product-recommendations",
+    "name": "Product recommendations",
+    "description": "Related product carousel.",
+    "file": "stubble/sections/product-recommendations--pdp-also-like.html",
+    "deps": [
+      "assets/blko-tabs.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
+        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
+        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 435,
+    "industry": "beauty"
+  },
+  {
+    "id": "pdp-details",
+    "kind": "section",
+    "category": "image-with-text",
+    "name": "Feature driver",
+    "description": "Editorial split panel pairing product copy and imagery.",
+    "file": "stubble/sections/image-with-text--pdp-details.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "pdp-faq",
+    "kind": "section",
+    "category": "faq",
+    "name": "FAQ",
+    "description": "Expandable answers for common service questions.",
+    "file": "stubble/sections/faq--pdp-faq.html",
+    "deps": [
+      "assets/blko-accordion.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 589,
+    "industry": "beauty"
+  },
+  {
+    "id": "rewards-faq",
+    "kind": "section",
+    "category": "faq",
+    "name": "FAQ",
+    "description": "Expandable answers for common service questions.",
+    "file": "stubble/sections/faq--rewards-faq.html",
+    "deps": [
+      "assets/blko-accordion.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 589,
+    "industry": "beauty"
+  },
+  {
+    "id": "subscription-popular",
+    "kind": "section",
+    "category": "product-recommendations",
+    "name": "Product recommendations",
+    "description": "Related product carousel.",
+    "file": "stubble/sections/product-recommendations--subscription-popular.html",
+    "deps": [
+      "assets/blko-tabs.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
+        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
+        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 435,
+    "industry": "beauty"
+  },
+  {
+    "id": "subscription-faq",
+    "kind": "section",
+    "category": "faq",
+    "name": "FAQ",
+    "description": "Expandable answers for common service questions.",
+    "file": "stubble/sections/faq--subscription-faq.html",
+    "deps": [
+      "assets/blko-accordion.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 589,
+    "industry": "beauty"
+  },
+  {
+    "id": "landing-promises",
+    "kind": "section",
+    "category": "promotion",
+    "name": "Message band",
+    "description": "Compact value proposition strip.",
+    "file": "stubble/sections/promotion--landing-promises.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beauty"
+  },
+  {
+    "id": "landing-picks",
+    "kind": "section",
+    "category": "featured-collection",
+    "name": "Tabbed product grid",
+    "description": "Best sellers and new arrivals with interactive tabs.",
+    "file": "stubble/sections/featured-collection--landing-picks.html",
+    "deps": [
+      "assets/blko-tabs.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
+        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
+        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 435,
+    "industry": "beauty"
+  },
+  {
+    "id": "landing-faq",
+    "kind": "section",
+    "category": "faq",
+    "name": "FAQ",
+    "description": "Expandable answers for common service questions.",
+    "file": "stubble/sections/faq--landing-faq.html",
+    "deps": [
+      "assets/blko-accordion.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1645697744691-9fd0ee315181",
+        "page_url": "https://unsplash.com/photos/photo-1645697744691-9fd0ee315181"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 589,
     "industry": "beauty"
   },
   {
@@ -2856,8 +3257,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1778909200898-048e133580c1",
-        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       }
     ],
     "targets": {
@@ -2940,8 +3341,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1632072907857-d2cae8f52888",
-        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -2982,8 +3383,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1517832606299-7ae9b720a186",
-        "page_url": "https://unsplash.com/photos/photo-1517832606299-7ae9b720a186"
+        "photo_id": "photo-1587909209111-5097ee578ec3",
+        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
       }
     ],
     "targets": {
@@ -3115,8 +3516,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -3162,8 +3563,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -3341,8 +3742,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1735150949874-ec9c9c82b2c4",
-        "page_url": "https://unsplash.com/photos/photo-1735150949874-ec9c9c82b2c4"
+        "photo_id": "photo-1769069919670-8d71bf1a57f6",
+        "page_url": "https://unsplash.com/photos/photo-1769069919670-8d71bf1a57f6"
       }
     ],
     "targets": {
@@ -3390,16 +3791,16 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
-      },
-      {
         "photo_id": "photo-1764712807175-cdc77d86a7b5",
         "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1587909209111-5097ee578ec3",
-        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
+        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
+        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
       }
     ],
     "targets": {
@@ -3680,12 +4081,12 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1506029214967-eef911357d1b",
-        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1691036365017-76f8114f50c4",
-        "page_url": "https://unsplash.com/photos/photo-1691036365017-76f8114f50c4"
+        "photo_id": "photo-1583947214267-953e8db95f42",
+        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
       }
     ],
     "targets": {
@@ -3735,58 +4136,6 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
-      },
-      {
-        "photo_id": "photo-1536520002442-39764a41e987",
-        "page_url": "https://unsplash.com/photos/photo-1536520002442-39764a41e987"
-      },
-      {
-        "photo_id": "photo-1583947214858-88bc0067cf7c",
-        "page_url": "https://unsplash.com/photos/photo-1583947214858-88bc0067cf7c"
-      },
-      {
-        "photo_id": "photo-1766104809723-94241927f92b",
-        "page_url": "https://unsplash.com/photos/photo-1766104809723-94241927f92b"
-      },
-      {
-        "photo_id": "photo-1690603935467-630341102dd5",
-        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
-      },
-      {
-        "photo_id": "photo-1691036365017-76f8114f50c4",
-        "page_url": "https://unsplash.com/photos/photo-1691036365017-76f8114f50c4"
-      },
-      {
-        "photo_id": "photo-1700126761911-84f19978e8bb",
-        "page_url": "https://unsplash.com/photos/photo-1700126761911-84f19978e8bb"
-      },
-      {
-        "photo_id": "photo-1650543679355-0fcf8a621d1a",
-        "page_url": "https://unsplash.com/photos/photo-1650543679355-0fcf8a621d1a"
-      },
-      {
-        "photo_id": "photo-1625852043440-f7ed5aff1519",
-        "page_url": "https://unsplash.com/photos/photo-1625852043440-f7ed5aff1519"
-      },
-      {
-        "photo_id": "photo-1747352690432-7c90bf17ede1",
-        "page_url": "https://unsplash.com/photos/photo-1747352690432-7c90bf17ede1"
-      },
-      {
-        "photo_id": "photo-1766113492854-0f61b7a864da",
-        "page_url": "https://unsplash.com/photos/photo-1766113492854-0f61b7a864da"
-      },
-      {
-        "photo_id": "photo-1675599193990-33d71150902b",
-        "page_url": "https://unsplash.com/photos/photo-1675599193990-33d71150902b"
-      },
-      {
-        "photo_id": "photo-1766113493007-93ed1c5a4cd9",
-        "page_url": "https://unsplash.com/photos/photo-1766113493007-93ed1c5a4cd9"
-      },
-      {
         "photo_id": "photo-1764712807175-cdc77d86a7b5",
         "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
@@ -3795,12 +4144,72 @@
         "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
       },
       {
-        "photo_id": "photo-1553265576-8533b2cdc606",
-        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
+        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
+        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
       },
       {
         "photo_id": "photo-1769069919670-8d71bf1a57f6",
         "page_url": "https://unsplash.com/photos/photo-1769069919670-8d71bf1a57f6"
+      },
+      {
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
+      },
+      {
+        "photo_id": "photo-1690603935467-630341102dd5",
+        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
+      },
+      {
+        "photo_id": "photo-1583947214267-953e8db95f42",
+        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
+      },
+      {
+        "photo_id": "photo-1612800083273-24ea5c80313d",
+        "page_url": "https://unsplash.com/photos/photo-1612800083273-24ea5c80313d"
+      },
+      {
+        "photo_id": "photo-1648208567987-d9ec717d1742",
+        "page_url": "https://unsplash.com/photos/photo-1648208567987-d9ec717d1742"
+      },
+      {
+        "photo_id": "photo-1625852043440-f7ed5aff1519",
+        "page_url": "https://unsplash.com/photos/photo-1625852043440-f7ed5aff1519"
+      },
+      {
+        "photo_id": "photo-1583947214858-88bc0067cf7c",
+        "page_url": "https://unsplash.com/photos/photo-1583947214858-88bc0067cf7c"
+      },
+      {
+        "photo_id": "photo-1587909209111-5097ee578ec3",
+        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
+      },
+      {
+        "photo_id": "photo-1553519367-2b1993d992dc",
+        "page_url": "https://unsplash.com/photos/photo-1553519367-2b1993d992dc"
+      },
+      {
+        "photo_id": "photo-1658210934892-e0fa57f3deed",
+        "page_url": "https://unsplash.com/photos/photo-1658210934892-e0fa57f3deed"
+      },
+      {
+        "photo_id": "photo-1700126761911-84f19978e8bb",
+        "page_url": "https://unsplash.com/photos/photo-1700126761911-84f19978e8bb"
+      },
+      {
+        "photo_id": "photo-1747352690432-7c90bf17ede1",
+        "page_url": "https://unsplash.com/photos/photo-1747352690432-7c90bf17ede1"
+      },
+      {
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
+      },
+      {
+        "photo_id": "photo-1747352690408-0381bf50ec95",
+        "page_url": "https://unsplash.com/photos/photo-1747352690408-0381bf50ec95"
+      },
+      {
+        "photo_id": "photo-1632072907857-d2cae8f52888",
+        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
       }
     ],
     "targets": {
@@ -3822,28 +4231,28 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1735150949874-ec9c9c82b2c4",
-        "page_url": "https://unsplash.com/photos/photo-1735150949874-ec9c9c82b2c4"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1637503434402-0491c896566b",
-        "page_url": "https://unsplash.com/photos/photo-1637503434402-0491c896566b"
+        "photo_id": "photo-1658210934892-e0fa57f3deed",
+        "page_url": "https://unsplash.com/photos/photo-1658210934892-e0fa57f3deed"
       },
       {
-        "photo_id": "photo-1662386392771-07d5109da175",
-        "page_url": "https://unsplash.com/photos/photo-1662386392771-07d5109da175"
+        "photo_id": "photo-1583947214267-953e8db95f42",
+        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
       },
       {
         "photo_id": "photo-1587909209111-5097ee578ec3",
         "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
       },
       {
-        "photo_id": "photo-1632999876969-cb7c6f410847",
-        "page_url": "https://unsplash.com/photos/photo-1632999876969-cb7c6f410847"
+        "photo_id": "photo-1747352690408-0381bf50ec95",
+        "page_url": "https://unsplash.com/photos/photo-1747352690408-0381bf50ec95"
       },
       {
-        "photo_id": "photo-1678466383195-9a2a3c1e04ae",
-        "page_url": "https://unsplash.com/photos/photo-1678466383195-9a2a3c1e04ae"
+        "photo_id": "photo-1632072907857-d2cae8f52888",
+        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
       }
     ],
     "targets": {
@@ -3989,24 +4398,20 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1583947214267-953e8db95f42",
-        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1510711070725-068a3a878a99",
-        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       },
       {
-        "photo_id": "photo-1553519367-2b1993d992dc",
-        "page_url": "https://unsplash.com/photos/photo-1553519367-2b1993d992dc"
+        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
+        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
       },
       {
-        "photo_id": "photo-1747352690408-0381bf50ec95",
-        "page_url": "https://unsplash.com/photos/photo-1747352690408-0381bf50ec95"
-      },
-      {
-        "photo_id": "photo-1672257493563-0dac80e22b7d",
-        "page_url": "https://unsplash.com/photos/photo-1672257493563-0dac80e22b7d"
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
       }
     ],
     "targets": {
@@ -4035,8 +4440,8 @@
         "page_url": "https://unsplash.com/photos/photo-1659422440915-d516c6dc932e"
       },
       {
-        "photo_id": "photo-1648208567987-d9ec717d1742",
-        "page_url": "https://unsplash.com/photos/photo-1648208567987-d9ec717d1742"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       }
     ],
     "targets": {
@@ -4058,16 +4463,16 @@
     ],
     "credits": [
       {
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
+      },
+      {
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+      },
+      {
         "photo_id": "photo-1690603935467-630341102dd5",
         "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
-      },
-      {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
-      },
-      {
-        "photo_id": "photo-1766113493007-93ed1c5a4cd9",
-        "page_url": "https://unsplash.com/photos/photo-1766113493007-93ed1c5a4cd9"
       }
     ],
     "targets": {
@@ -4092,12 +4497,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1769069919670-8d71bf1a57f6",
-        "page_url": "https://unsplash.com/photos/photo-1769069919670-8d71bf1a57f6"
-      },
-      {
-        "photo_id": "photo-1747352690432-7c90bf17ede1",
-        "page_url": "https://unsplash.com/photos/photo-1747352690432-7c90bf17ede1"
+        "photo_id": "photo-1510711070725-068a3a878a99",
+        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
       }
     ],
     "targets": {
@@ -4122,12 +4523,12 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1536520002442-39764a41e987",
-        "page_url": "https://unsplash.com/photos/photo-1536520002442-39764a41e987"
+        "photo_id": "photo-1690603935467-630341102dd5",
+        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
       },
       {
-        "photo_id": "photo-1691036365017-76f8114f50c4",
-        "page_url": "https://unsplash.com/photos/photo-1691036365017-76f8114f50c4"
+        "photo_id": "photo-1583947214267-953e8db95f42",
+        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
       },
       {
         "photo_id": "photo-1612800083273-24ea5c80313d",
@@ -4156,24 +4557,24 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1503951914875-452162b0f3f1",
-        "page_url": "https://unsplash.com/photos/photo-1503951914875-452162b0f3f1"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1632072907857-d2cae8f52888",
-        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
-      },
-      {
-        "photo_id": "photo-1675599193990-33d71150902b",
-        "page_url": "https://unsplash.com/photos/photo-1675599193990-33d71150902b"
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
       },
       {
         "photo_id": "photo-1506029214967-eef911357d1b",
         "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       },
       {
-        "photo_id": "photo-1517832606299-7ae9b720a186",
-        "page_url": "https://unsplash.com/photos/photo-1517832606299-7ae9b720a186"
+        "photo_id": "photo-1690603935467-630341102dd5",
+        "page_url": "https://unsplash.com/photos/photo-1690603935467-630341102dd5"
+      },
+      {
+        "photo_id": "photo-1583947214267-953e8db95f42",
+        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
       }
     ],
     "targets": {
@@ -4221,16 +4622,12 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1583947214267-953e8db95f42",
-        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1510711070725-068a3a878a99",
-        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
-      },
-      {
-        "photo_id": "photo-1672257493563-0dac80e22b7d",
-        "page_url": "https://unsplash.com/photos/photo-1672257493563-0dac80e22b7d"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       }
     ],
     "targets": {
@@ -4304,8 +4701,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1672257493563-0dac80e22b7d",
-        "page_url": "https://unsplash.com/photos/photo-1672257493563-0dac80e22b7d"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -4355,8 +4752,8 @@
         "page_url": "https://unsplash.com/photos/photo-1766113492854-0f61b7a864da"
       },
       {
-        "photo_id": "photo-1735150949874-ec9c9c82b2c4",
-        "page_url": "https://unsplash.com/photos/photo-1735150949874-ec9c9c82b2c4"
+        "photo_id": "photo-1769069919670-8d71bf1a57f6",
+        "page_url": "https://unsplash.com/photos/photo-1769069919670-8d71bf1a57f6"
       }
     ],
     "targets": {
@@ -4401,8 +4798,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1510711070725-068a3a878a99",
-        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
+        "photo_id": "photo-1735150949874-ec9c9c82b2c4",
+        "page_url": "https://unsplash.com/photos/photo-1735150949874-ec9c9c82b2c4"
       }
     ],
     "targets": {
@@ -4447,8 +4844,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1503951914875-452162b0f3f1",
-        "page_url": "https://unsplash.com/photos/photo-1503951914875-452162b0f3f1"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -4500,20 +4897,20 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1672257493563-0dac80e22b7d",
-        "page_url": "https://unsplash.com/photos/photo-1672257493563-0dac80e22b7d"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1583947214267-953e8db95f42",
-        "page_url": "https://unsplash.com/photos/photo-1583947214267-953e8db95f42"
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
       },
       {
-        "photo_id": "photo-1583947214858-88bc0067cf7c",
-        "page_url": "https://unsplash.com/photos/photo-1583947214858-88bc0067cf7c"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       },
       {
-        "photo_id": "photo-1587909209111-5097ee578ec3",
-        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       }
     ],
     "targets": {
@@ -4539,8 +4936,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1587909209111-5097ee578ec3",
-        "page_url": "https://unsplash.com/photos/photo-1587909209111-5097ee578ec3"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       }
     ],
     "targets": {
@@ -4565,8 +4962,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1632999876969-cb7c6f410847",
-        "page_url": "https://unsplash.com/photos/photo-1632999876969-cb7c6f410847"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       }
     ],
     "targets": {
@@ -4588,8 +4985,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1778909200898-048e133580c1",
-        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       }
     ],
     "targets": {
@@ -4612,28 +5009,28 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1632999876969-cb7c6f410847",
-        "page_url": "https://unsplash.com/photos/photo-1632999876969-cb7c6f410847"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       },
       {
-        "photo_id": "photo-1766104809723-94241927f92b",
-        "page_url": "https://unsplash.com/photos/photo-1766104809723-94241927f92b"
+        "photo_id": "photo-1506029214967-eef911357d1b",
+        "page_url": "https://unsplash.com/photos/photo-1506029214967-eef911357d1b"
       },
       {
-        "photo_id": "photo-1747352690408-0381bf50ec95",
-        "page_url": "https://unsplash.com/photos/photo-1747352690408-0381bf50ec95"
+        "photo_id": "photo-1659422440915-d516c6dc932e",
+        "page_url": "https://unsplash.com/photos/photo-1659422440915-d516c6dc932e"
       },
       {
-        "photo_id": "photo-1764712807175-cdc77d86a7b5",
-        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+        "photo_id": "photo-1553519367-2b1993d992dc",
+        "page_url": "https://unsplash.com/photos/photo-1553519367-2b1993d992dc"
       },
       {
-        "photo_id": "photo-1503951914875-452162b0f3f1",
-        "page_url": "https://unsplash.com/photos/photo-1503951914875-452162b0f3f1"
+        "photo_id": "photo-1510711070725-068a3a878a99",
+        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
       },
       {
-        "photo_id": "photo-1700126761911-84f19978e8bb",
-        "page_url": "https://unsplash.com/photos/photo-1700126761911-84f19978e8bb"
+        "photo_id": "photo-1658210934892-e0fa57f3deed",
+        "page_url": "https://unsplash.com/photos/photo-1658210934892-e0fa57f3deed"
       }
     ],
     "targets": {
@@ -4685,8 +5082,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1659422440915-d516c6dc932e",
-        "page_url": "https://unsplash.com/photos/photo-1659422440915-d516c6dc932e"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       }
     ],
     "targets": {
@@ -4709,12 +5106,12 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1632072907857-d2cae8f52888",
-        "page_url": "https://unsplash.com/photos/photo-1632072907857-d2cae8f52888"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       },
       {
-        "photo_id": "photo-1612800083273-24ea5c80313d",
-        "page_url": "https://unsplash.com/photos/photo-1612800083273-24ea5c80313d"
+        "photo_id": "photo-1778909200898-048e133580c1",
+        "page_url": "https://unsplash.com/photos/photo-1778909200898-048e133580c1"
       }
     ],
     "targets": {
@@ -4740,12 +5137,12 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1662386392771-07d5109da175",
-        "page_url": "https://unsplash.com/photos/photo-1662386392771-07d5109da175"
+        "photo_id": "photo-1553519367-2b1993d992dc",
+        "page_url": "https://unsplash.com/photos/photo-1553519367-2b1993d992dc"
       },
       {
-        "photo_id": "photo-1517832606299-7ae9b720a186",
-        "page_url": "https://unsplash.com/photos/photo-1517832606299-7ae9b720a186"
+        "photo_id": "photo-1510711070725-068a3a878a99",
+        "page_url": "https://unsplash.com/photos/photo-1510711070725-068a3a878a99"
       },
       {
         "photo_id": "photo-1658210934892-e0fa57f3deed",
@@ -4796,8 +5193,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1672257493563-0dac80e22b7d",
-        "page_url": "https://unsplash.com/photos/photo-1672257493563-0dac80e22b7d"
+        "photo_id": "photo-1764712807175-cdc77d86a7b5",
+        "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
       }
     ],
     "targets": {
@@ -4820,8 +5217,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1632999876969-cb7c6f410847",
-        "page_url": "https://unsplash.com/photos/photo-1632999876969-cb7c6f410847"
+        "photo_id": "photo-1553265576-8533b2cdc606",
+        "page_url": "https://unsplash.com/photos/photo-1553265576-8533b2cdc606"
       }
     ],
     "targets": {
@@ -4865,12 +5262,12 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
-        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
-      },
-      {
         "photo_id": "photo-1764712807175-cdc77d86a7b5",
         "page_url": "https://unsplash.com/photos/photo-1764712807175-cdc77d86a7b5"
+      },
+      {
+        "photo_id": "photo-1765502113641-4c8aa8ae4c0f",
+        "page_url": "https://unsplash.com/photos/photo-1765502113641-4c8aa8ae4c0f"
       }
     ],
     "targets": {
@@ -4911,8 +5308,8 @@
     "deps": [],
     "credits": [
       {
-        "photo_id": "photo-1735150949874-ec9c9c82b2c4",
-        "page_url": "https://unsplash.com/photos/photo-1735150949874-ec9c9c82b2c4"
+        "photo_id": "photo-1517832606299-7ae9b720a186",
+        "page_url": "https://unsplash.com/photos/photo-1517832606299-7ae9b720a186"
       }
     ],
     "targets": {

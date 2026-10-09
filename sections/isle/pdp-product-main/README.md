@@ -1,4 +1,4 @@
-# Body oil product detail
+# Sunscreen Body Mist product detail
 
 Gallery, shade and size choices, flexible purchase option, quantity, and sticky purchase bar.
 
@@ -11,7 +11,7 @@ Gallery, shade and size choices, flexible purchase option, quantity, and sticky 
 ## Paste this into your coding agent
 
 ```text
-Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section "Body oil product detail" (id `pdp-product-main`, theme `isle`; live demo: https://demo.blocko.ai/html/isle/sections/main-product--pdp-product-main.html; Shopify bundle: sections/isle/pdp-product-main/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
+Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section "Sunscreen Body Mist product detail" (id `pdp-product-main`, theme `isle`; live demo: https://demo.blocko.ai/html/isle/sections/main-product--pdp-product-main.html; Shopify bundle: sections/isle/pdp-product-main/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
 ```
 
 ## Install
@@ -33,15 +33,15 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `button_label` | text | Button label | Add to bag |
-| `one_time_label` | text | One time label | One-time purchase |
+| `one_time_label` | text | One time label | Buy once |
 | `breadcrumb_shop` | text | Breadcrumb shop | Shop |
 | `breadcrumb_category_url` | url | Breadcrumb category url |  |
-| `breadcrumb_category` | text | Breadcrumb category | Body |
-| `price_note` | text | Price note | 1 fl oz / 30 ml |
+| `breadcrumb_category` | text | Breadcrumb category | Sunscreen |
+| `price_note` | text | Price note | 4 fl oz / 118 ml |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure? Find your scent. |
+| `shade_help_label` | text | Shade help label | Unsure which finish? Take the SPF finder. |
 | `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Free delivery on orders over $40 · Easy returns within 30 days |
+| `ship_note` | text | Ship note | Free US shipping from $39 · Free samples in every bag · 60-day returns |
 
 ## Blocks
 

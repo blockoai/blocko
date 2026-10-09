@@ -120,6 +120,10 @@
 .blko-theme .blko-shelf-standards__item h3{margin:.75rem 0 .4rem;color:inherit}
 .blko-theme .blko-shelf-standards__item p{margin:0;opacity:.8}
 .blko-theme .blko-shelf-visit__body p{margin:0 0 1.25rem}
+.blko-theme .blko-shelf-pillars__item h3{margin:0 0 .75rem}
+.blko-theme .blko-shelf-pillars__item p{margin:0 0 .6rem}
+.blko-theme .blko-shelf-services__item h3{margin:0}
+.blko-theme .blko-shelf-services__item p{margin:0}
 .blko-theme .blko-shelf-rewards p{margin:0;color:var(--color-bg)}
 .blko-theme .blko-brand-rule p{margin:0;font-size:var(--text-small);color:var(--color-text-muted)}
 .blko-theme .blko-brand-do h3{margin:0 0 .75rem;font:var(--weight-medium) var(--text-label)/var(--leading-label) var(--font-accent);letter-spacing:var(--tracking-label);text-transform:var(--kit-label-transform,uppercase)}
@@ -165,6 +169,12 @@
 .blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 {% endstylesheet %}
 {% schema %}
 {
@@ -180,7 +190,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “shipping” or “shade”"
+      "default": "Try “return window” or “points”"
     },
     {
       "type": "text",
@@ -252,14 +262,7 @@
           "type": "tab",
           "settings": {
             "key": "orders",
-            "label": "Orders"
-          }
-        },
-        {
-          "type": "tab",
-          "settings": {
-            "key": "products",
-            "label": "Products"
+            "label": "Orders + shipping"
           }
         },
         {
@@ -270,46 +273,94 @@
           }
         },
         {
-          "type": "question",
-          "settings": {}
+          "type": "tab",
+          "settings": {
+            "key": "discounts",
+            "label": "Discounts"
+          }
         },
         {
-          "type": "question",
+          "type": "tab",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "key": "club",
+            "label": "Shelf Club"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "key": "recycling",
+            "label": "Recycling"
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "question": "How soon does an order leave?",
+            "answer": "Orders are packed within 48 hours. Anything placed after one on Friday afternoon goes out the following Monday."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "question": "Can I change an order after paying?",
+            "answer": "No. Once placed, an order can't be edited or cancelled, but you can return it later."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "How long do I have to return something?",
+            "answer": "Thirty days from delivery. Items must be unused or lightly used. Online returns cost $5; boutique returns are free."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "What can't be sent back?",
+            "answer": "Final-sale items, gifts with purchase, gift cards and anything bought with club rewards."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "discounts",
+            "question": "Can I use two promo codes?",
+            "answer": "One code per order. Welcome codes and sale markdowns can't be applied after the fact."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "club",
+            "question": "Do points expire?",
+            "answer": "Never. They stay put whatever your level does."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "club",
+            "question": "How do I claim a reward?",
+            "answer": "At a boutique register, on the club page, or at the bottom of your online bag."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "recycling",
+            "question": "What can go in the empties bins?",
+            "answer": "Small caps, pumps, tubes and wands. Aerosols, perfume bottles, nail products, toothpaste tubes and pouches can't be accepted."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "recycling",
+            "question": "How many items earn points?",
+            "answer": "Ten points each, with a limit of twelve per boutique visit."
           }
         }
       ]

@@ -29,11 +29,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `button_label` | text | Button label | Sign up |
 | `placeholder` | text | Placeholder | you@example.com |
-| `eyebrow` | text | Eyebrow | Stay in touch |
-| `heading` | text | Heading | A little brightness, delivered. |
+| `eyebrow` | text | Eyebrow | 15% off your first order |
+| `heading` | text | Heading | Be first to see what's next |
 | `email_label` | text | Email label | Email address |
 | `success_message` | text | Success message | Thanks for subscribing. |
-| `message` | text | Message | Occasional notes on color, care, and routine. |
+| `message` | text | Message | Launches, members-only sales and the occasional how-to, once a week. |
 
 ## Blocks
 

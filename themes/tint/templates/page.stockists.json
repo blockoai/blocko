@@ -2,11 +2,18 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Find a store",
+        "heading": "Swatch before you buy.",
+        "text": "Search by city or region to see shops that carry the full shade range. No match nearby shows the closest regional stockists.",
+        "directions_label": "Get directions"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
-          "settings": {}
+          "settings": {
+            "label": "All regions"
+          }
         },
         "block-2": {
           "type": "country",
@@ -18,8 +25,8 @@
         "block-3": {
           "type": "country",
           "settings": {
-            "value": "ca",
-            "label": "Canada"
+            "value": "au",
+            "label": "Australia"
           }
         },
         "block-4": {
@@ -31,29 +38,32 @@
         },
         "block-5": {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Pastel Beauty Hall",
+            "place": "Los Angeles, CA"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "The Blend Bar",
+            "place": "Chicago, IL"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "country": "au",
+            "name": "Colorbox Beauty",
+            "place": "Sydney, NSW"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "uk",
+            "name": "Rosewater Counter",
+            "place": "London"
           }
         }
       },
@@ -70,7 +80,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [

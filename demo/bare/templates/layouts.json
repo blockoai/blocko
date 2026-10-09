@@ -58,9 +58,11 @@
     "title": "Shade finder",
     "sectionIds": [
       "page-header",
+      "quiz-how",
       "beauty-extras-shade-quiz",
       "beauty-extras-shade-result",
-      "faq",
+      "quiz-proof",
+      "shade-faq",
       "newsletter"
     ]
   },
@@ -83,36 +85,10 @@
     ]
   },
   {
-    "page": "reviews",
-    "title": "Reviews",
-    "sectionIds": [
-      "beauty-extras-reviews-hub",
-      "newsletter"
-    ]
-  },
-  {
     "page": "stockists",
     "title": "Stockists",
     "sectionIds": [
       "beauty-extras-stockist-locator",
-      "newsletter"
-    ]
-  },
-  {
-    "page": "rewards",
-    "title": "Rewards",
-    "sectionIds": [
-      "beauty-extras-rewards-overview",
-      "faq",
-      "newsletter"
-    ]
-  },
-  {
-    "page": "subscriptions",
-    "title": "Subscriptions",
-    "sectionIds": [
-      "beauty-extras-subscription-manager",
-      "product-recommendations",
       "newsletter"
     ]
   },
@@ -162,9 +138,8 @@
     "sectionIds": [
       "content-about-hero",
       "content-mission",
-      "content-values",
+      "about-clean-slate",
       "content-founder-note",
-      "content-story-timeline",
       "content-press-quotes",
       "newsletter"
     ]
@@ -175,9 +150,7 @@
     "sectionIds": [
       "content-contact-hero",
       "content-contact-channels",
-      "content-contact-form",
-      "content-contact-hours",
-      "content-contact-map"
+      "content-contact-hours"
     ]
   },
   {
@@ -202,11 +175,10 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
+      "landing-promises",
       "content-landing-routine",
-      "tabbed-product-grid",
+      "landing-picks",
       "content-landing-proof",
-      "category-slider",
       "newsletter"
     ]
   },
@@ -256,19 +228,14 @@
     "page": "home",
     "title": "Bare — Home",
     "sectionIds": [
-      "home-collection-mega-menu",
       "hero-campaign",
-      "message-band",
-      "bare-press-quote",
       "tabbed-product-grid",
-      "bare-get-the-look",
+      "bare-press-quote",
       "category-slider",
-      "bare-shade-grid",
-      "feature-driver",
       "bare-founder-note",
-      "commitments",
-      "testimonial-slider",
-      "press-slider",
+      "bare-shade-grid",
+      "home-promises",
+      "bare-get-the-look",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -277,7 +244,6 @@
     "page": "collection",
     "title": "Bare — Shop",
     "sectionIds": [
-      "home-collection-mega-menu",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
       "home-collection-quick-view-modal",
@@ -288,7 +254,6 @@
     "page": "collections",
     "title": "Bare — Collections",
     "sectionIds": [
-      "home-collection-mega-menu",
       "home-collection-collections-directory",
       "home-collection-quick-view-modal",
       "newsletter"
@@ -299,12 +264,16 @@
     "title": "Sheer Skin Tint",
     "sectionIds": [
       "pdp-product-main",
-      "pdp-before-after",
+      "pdp-founder-quote",
+      "pdp-how-to",
+      "pdp-benefits",
       "pdp-complete-routine",
-      "product-recommendations",
+      "testimonial-slider",
+      "pdp-formula",
+      "pdp-faq",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "product-recommendations",
+      "pdp-reassurance"
     ]
   },
   {

@@ -2,43 +2,52 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop everything",
+        "heading": "Makeup that behaves like skincare."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Bestsellers",
+            "url": "#best"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eye",
-            "url": "#eyes"
+            "label": "New",
+            "url": "#new"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lip + Cheek",
-            "url": "#lips"
+            "label": "Sets",
+            "url": "#sets"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Skin",
-            "url": "#care"
+            "label": "Shade finder",
+            "url": "#shade-quiz"
           }
         },
         "block-5": {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#face",
+            "image_alt": "Concealer and corrector side by side"
+          }
         },
         "block-6": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Skin",
-            "label": "Skin"
+            "url": "#sets",
+            "image_alt": "Pastel pouches holding mini makeup",
+            "label": "Gift sets"
           }
         }
       },
@@ -53,7 +62,11 @@
     },
     "home-collection-collections-directory": {
       "type": "blko-home-collection-collections-directory",
-      "settings": {}
+      "settings": {
+        "eyebrow": "All departments",
+        "heading": "From base to brow",
+        "text": "Browse by area of the face, then check the shade count and finish on every card."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,7 +74,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [

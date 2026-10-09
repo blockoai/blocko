@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Everyday makeup |
-| `eyebrow` | text | Eyebrow | Our idea |
-| `heading` | text | Heading | Skin comes first. Colour follows. |
-| `text` | textarea | Text | We make a short list of easy products that play nicely with real skin, then we l |
-| `button_label` | text | Button label | Read our idea |
+| `image_alt` | text | Image alt text | Creator holding the new lip balm flavour up to the camera |
+| `eyebrow` | text | Eyebrow | Balm drop |
+| `heading` | text | Heading | Our newest balm tastes like green apple. |
+| `text` | textarea | Text | Same cushiony feel as the original tube, now in a sour-sweet flavour. Watch a da |
+| `button_label` | text | Button label | Get the new flavour |
 | `button_url` | url | Button url |  |
 
 ## Blocks

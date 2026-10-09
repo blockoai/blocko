@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Hair care routine |
-| `eyebrow` | text | Eyebrow | Pro-loved formulas |
-| `heading` | text | Heading | wow-worthy color care, made simple. |
-| `text` | textarea | Text | Pick your hair type, pick your goal, and build a system that works from root to  |
-| `button_label` | text | Button label | Find my formula |
+| `image_alt` | text | Image alt text | Berries and oil in a dish |
+| `eyebrow` | text | Eyebrow | Hero ingredient |
+| `heading` | text | Heading | One nutrient-rich berry runs through every formula. |
+| `text` | textarea | Text | High in vitamins A and C and in omega-7, it is why strands feel soft and shiny f |
+| `button_label` | text | Button label | See its story |
 | `button_url` | url | Button url |  |
 
 ## Blocks

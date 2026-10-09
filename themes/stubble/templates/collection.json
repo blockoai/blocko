@@ -2,42 +2,66 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by department",
+        "heading": "Pick a razor, then build around it."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Razors + refills",
+            "url": "#shave"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Face",
-            "url": "#eyes"
+            "label": "Prep + after-shave",
+            "url": "#shave"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Hair",
-            "url": "#lips"
+            "label": "Face care",
+            "url": "#skin"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#care"
+            "label": "Body wash + deodorant",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Hair",
+            "url": "#hair"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Bundles & sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Body",
+            "url": "#shave",
+            "image_alt": "Razor handles lined up on a steel tray",
+            "label": "Razors"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#body",
+            "image_alt": "Clear pump bottle of body wash",
             "label": "Body"
           }
         }
@@ -48,40 +72,134 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "home-collection-collection-toolbar": {
       "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shop all",
+        "filter_eyebrow": "Narrow the list",
+        "filter_heading": "Filter by department"
+      }
     },
     "home-collection-collection-grid": {
       "type": "blko-home-collection-collection-grid",
-      "settings": {}
+      "settings": {
+        "promo_image_alt": "Bearded man in profile touching his jaw",
+        "promo_eyebrow": "Not sure which razor?",
+        "promo_heading": "Start with the trial set.",
+        "promo_label": "See the starter set"
+      }
     },
-    "home-collection-quick-view-modal": {
-      "type": "blko-home-collection-quick-view-modal",
-      "settings": {}
+    "collection-systems": {
+      "type": "blko-collection-systems",
+      "settings": {
+        "heading": "Browse by system"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {
+            "title": "Razor Pro",
+            "url": "#razor-pro"
+          }
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "title": "Razor Classic",
+            "url": "#razor-classic"
+          }
+        },
+        "block-3": {
+          "type": "category",
+          "settings": {
+            "title": "Prep + after",
+            "url": "#shave"
+          }
+        },
+        "block-4": {
+          "type": "category",
+          "settings": {
+            "title": "Accessories",
+            "url": "#gear"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "collection-order": {
+      "type": "blko-collection-order",
+      "settings": {
+        "kicker": "How the shop is organised",
+        "heading": "Three ways to find your gear"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "By razor system",
+            "text": "Handles, cartridges and bundles are grouped by line, so nothing you pick is the wrong fit."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "By routine step",
+            "text": "Prep, shave and after-shave sit together for the moments in front of the mirror."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "By scent",
+            "text": "Body wash, soap, deodorant and shampoo share scents, so the shower smells like one decision."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "stubble-trial-banner": {
       "type": "blko-stubble-trial-banner",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe and save",
+        "heading": "Refills before the old blade dulls.",
+        "text": "Every subscription order takes 5% off, and three or more items take 15% off each. Skip a shipment or cancel in a couple of clicks.",
+        "button_label": "Set up refills",
+        "legend": "Ship every"
+      },
       "blocks": {
         "block-1": {
           "type": "cadence",
           "settings": {
-            "label": "4 weeks",
-            "note": "Fresh blades"
+            "label": "2 months",
+            "note": "Heavy shavers"
           }
         },
         "block-2": {
           "type": "cadence",
-          "settings": {}
+          "settings": {
+            "label": "3 months"
+          }
         },
         "block-3": {
           "type": "cadence",
           "settings": {
-            "label": "12 weeks",
+            "label": "4 months",
             "note": "Light shavers"
           }
         }
@@ -92,17 +210,31 @@
         "block-3"
       ]
     },
+    "home-collection-quick-view-modal": {
+      "type": "blko-home-collection-quick-view-modal",
+      "settings": {
+        "eyebrow": "What is good about it",
+        "add_label": "Add to cart",
+        "details_label": "See the full product"
+      }
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
     "home-collection-collection-toolbar",
     "home-collection-collection-grid",
-    "home-collection-quick-view-modal",
+    "collection-systems",
+    "collection-order",
     "stubble-trial-banner",
+    "home-collection-quick-view-modal",
     "newsletter"
   ]
 }

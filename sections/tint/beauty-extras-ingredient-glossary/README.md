@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Formula dictionary |
-| `heading` | text | Heading | Ingredients, explained. |
-| `text` | textarea | Text | Search the ingredients behind a comfortable, considered routine. |
+| `eyebrow` | text | Eyebrow | Ingredient index |
+| `heading` | text | Heading | Every formula, every ingredient. |
+| `text` | textarea | Text | Choose a product, read its full ingredient list and see what each active does. L |
 | `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “hydration” |
+| `search_placeholder` | text | Search placeholder | Try “vitamin C” |
 | `note_label` | text | Note label | Read note ↗ |
 | `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Aloe leaf juice |
-| `detail_text` | textarea | Detail text | A botanical humectant that gives formulas a cool, soothing feel. It is especiall |
+| `detail_heading` | text | Detail heading | Stabilised vitamin C |
+| `detail_text` | textarea | Detail text | A brightening ingredient in a gentle, stable form. It helps shadows and dullness |
 | `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Comfort and hydration |
+| `best_for` | text | Best for | Dark circles and dullness |
 | `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Face and care |
+| `found_in` | text | Found in | Concealer, serum mist |
 
 ## Blocks
 

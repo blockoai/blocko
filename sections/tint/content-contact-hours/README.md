@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Support hours |
-| `heading` | text | Heading | When to reach us |
+| `kicker` | text | Kicker | Availability |
+| `heading` | text | Heading | Chat and email hours |
 
 ## Blocks
 

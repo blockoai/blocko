@@ -2,7 +2,7 @@
 {%- liquid
   assign product = section.settings.product | default: product
 -%}
-<div class="blko-theme"><blko-pdp><blko-quantity><blko-accordion><section class="blko-pdp-product" data-pdp-product data-pdp-currency="{{ cart.currency.iso_code | escape }}" data-pdp-sold-out="{{ 'blko.pdp.sold_out' | t }}"><div class="blko-pdp-gallery" data-pdp-gallery><div class="blko-pdp-gallery__thumbs" role="tablist" aria-label="{{ 'blko.pdp.product_images' | t }}">{% for image in product.images %}<button{% if forloop.index0 == 0 %} class="is-active"{% else %}{% endif %} type="button" data-pdp-thumb data-src="{{ image | image_url: width: 1400 | escape }}" aria-label="View {{ image.alt | escape }}"{% if forloop.index0 == 0 %} aria-selected="true"{% else %} aria-selected="false"{% endif %}>{% if image != blank %}{{ image | image_url: width: 240 | image_tag: loading: 'lazy', widths: '240', alt: '' }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}</button>{% endfor %}</div><figure class="blko-pdp-gallery__stage" data-pdp-zoom tabindex="0">{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '350, 700, 1050, 1400', alt: product.featured_image.alt }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<button type="button" class="blko-pdp-gallery__zoom" data-pdp-zoom-trigger aria-label="{{ 'blko.pdp.zoom_image' | t }}">{{ 'blko.pdp.zoom' | t }}</button></figure></div><div class="blko-pdp-purchase" data-pdp-purchase><p class="blko-breadcrumb"><a href="{{ routes.collections_url | escape }}">{{ section.settings.breadcrumb_shop | escape }}</a> / <a href="{{ section.settings.breadcrumb_category_url | default: '#complexion' }}">{{ section.settings.breadcrumb_category | escape }}</a> / {{ product.title | escape }}</p><p class="blko-eyebrow">{% if product.type != blank %}{{ product.vendor | escape }} · {{ product.type | escape }}{% else %}{{ product.vendor | escape }}{% endif %}</p><h1>{{ product.title | escape }}</h1>{% if product.metafields.reviews.rating.value.rating != blank %}<div class="blko-pdp-rating" aria-label="{{ product.metafields.reviews.rating.value.rating | escape }} out of 5 stars"><span>{% assign blko_rating = product.metafields.reviews.rating.value.rating | round %}{% for blko_star in (1..5) %}{% if blko_star <= blko_rating %}★{% else %}☆{% endif %}{% endfor %}</span><a href="#pdp-reviews">{{ product.metafields.reviews.rating.value.rating | escape }} · {{ product.metafields.reviews.rating_count | escape }} reviews</a></div>{% else %}{% endif %}<p class="blko-pdp-price"><strong>{{ product.price | money_without_trailing_zeros }}</strong><span>{{ section.settings.price_note | escape }}</span></p><p class="blko-pdp-intro">{{ product.description | strip_html | truncate: 160 | escape }}</p>{% if product.has_only_default_variant == blank %}<fieldset class="blko-pdp-shades" data-pdp-shades><legend>{{ product.options_with_values.first.name | escape }}: <strong data-pdp-shade-name>{{ product.selected_or_first_available_variant.option1 | escape }}</strong></legend><div>{% for shade in product.options_with_values.first.values %}<button{% if shade.selected %} class="is-active"{% else %}{% endif %} type="button" data-pdp-shade="{{ shade.name | escape }}" data-pdp-value="{{ shade.name | escape }}"{% if shade.swatch.color != blank %} style="--pdp-shade:{{ shade.swatch.color | escape }}"{% else %} style="--pdp-shade:var(--color-swatch-medium)"{% endif %} aria-label="{{ shade.name | escape }}"{% if shade.selected %} aria-pressed="true"{% else %} aria-pressed="false"{% endif %}></button>{% endfor %}</div><a href="{{ section.settings.shade_help_url | default: '#shade-match' }}">{{ section.settings.shade_help_label | escape }}</a></fieldset>{% if product.options_with_values.size > 1 %}<fieldset class="blko-pdp-size" data-pdp-size><legend>{{ product.options_with_values.last.name | escape }}</legend>{% for size in product.options_with_values.last.values %}<button{% if size.selected %} class="is-active"{% else %}{% endif %} type="button" data-pdp-size-option data-pdp-value="{{ size.name | escape }}"{% if size.selected %} aria-pressed="true"{% else %} aria-pressed="false"{% endif %}>{{ size.name | escape }}</button>{% endfor %}</fieldset>{% else %}{% endif %}{% else %}{% endif %}{% if product.selected_or_first_available_variant.selling_plan_allocations != blank %}<fieldset class="blko-pdp-plan" data-pdp-plan><legend>{{ section.settings.plan_legend | escape }}</legend><button class="is-active" type="button" data-pdp-plan-option data-price="{{ product.price | money_without_trailing_zeros }}" data-plan="{{ section.settings.one_time_label | escape }}" aria-pressed="true"><span>{{ section.settings.one_time_label | escape }}</span><strong>{{ product.price | money_without_trailing_zeros }}</strong></button>{% for plan in product.selected_or_first_available_variant.selling_plan_allocations %}<button type="button" data-pdp-plan-option data-price="{{ plan.price | money_without_trailing_zeros }}" data-plan="{{ plan.selling_plan.name | escape }}" data-pdp-selling-plan="{{ plan.selling_plan.id | escape }}" aria-pressed="false"><span>{{ plan.selling_plan.name | escape }} {% if plan.selling_plan.price_adjustments.first.value_type == 'percentage' %}<em>Save {{ plan.selling_plan.price_adjustments.first.value | escape }}%</em>{% else %}{% endif %}</span><strong>{{ plan.price | money_without_trailing_zeros }}</strong>{% if plan.selling_plan.description != blank %}<small>{{ plan.selling_plan.description | escape }}</small>{% else %}{% endif %}</button>{% endfor %}</fieldset>{% else %}{% endif %}<div class="blko-pdp-buy-row"><div class="blko-quantity" data-quantity><button type="button" data-quantity-down aria-label="{{ 'blko.pdp.decrease_quantity' | t }}">−</button><output data-quantity-output>1</output><button type="button" data-quantity-up aria-label="{{ 'blko.pdp.increase_quantity' | t }}">+</button></div><button class="blko-button blko-pdp-add" type="submit" name="add" form="blko-pdp-form" data-pdp-add>{{ section.settings.button_label | escape }} · <span data-pdp-cart-price>{{ product.price | money_without_trailing_zeros }}</span></button></div><p class="blko-pdp-ship-note">{{ section.settings.ship_note | escape }}</p><div class="blko-pdp-accordions">{% for block in section.blocks %}<blko-accordion {{ block.shopify_attributes }}><article class="blko-accordion" data-accordion><button type="button" data-accordion-trigger aria-expanded="false">{{ block.settings.label | escape }}<span>+</span></button><div data-accordion-panel hidden><p>{{ block.settings.text | escape | newline_to_br }}</p></div></article></blko-accordion>{% endfor %}</div></div><div class="blko-pdp-sticky-buy" data-pdp-sticky aria-hidden="true">{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 140 | image_tag: loading: 'lazy', widths: '', alt: '' }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<div><strong>{{ product.title | escape }}</strong><span data-pdp-sticky-shade>{{ product.selected_or_first_available_variant.option1 | escape }}</span></div><button class="blko-button" type="submit" name="add" form="blko-pdp-form" data-pdp-add>{{ section.settings.button_label | escape }} · <span data-pdp-sticky-price>{{ product.price | money_without_trailing_zeros }}</span></button></div>{% form 'product', product, id: 'blko-pdp-form', hidden: '' %}<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id | escape }}"><input type="hidden" name="quantity" value="1"><input type="hidden" name="selling_plan" value="" disabled>{% endform %}<script type="application/json" data-pdp-variants>{{ product.variants | json }}</script></section></blko-accordion></blko-quantity></blko-pdp></div>
+<div class="blko-theme"><blko-pdp><blko-quantity><blko-accordion><section class="blko-pdp-product" data-pdp-product data-pdp-currency="{{ cart.currency.iso_code | escape }}" data-pdp-sold-out="{{ 'blko.pdp.sold_out' | t }}"><div class="blko-pdp-gallery" data-pdp-gallery><div class="blko-pdp-gallery__thumbs" role="tablist" aria-label="{{ 'blko.pdp.product_images' | t }}">{% for image in product.images %}<button{% if forloop.index0 == 0 %} class="is-active"{% else %}{% endif %} type="button" data-pdp-thumb data-src="{{ image | image_url: width: 1400 | escape }}" aria-label="View {{ image.alt | escape }}"{% if forloop.index0 == 0 %} aria-selected="true"{% else %} aria-selected="false"{% endif %}>{% if image != blank %}{{ image | image_url: width: 240 | image_tag: loading: 'lazy', widths: '240', alt: '' }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}</button>{% endfor %}</div><figure class="blko-pdp-gallery__stage" data-pdp-zoom tabindex="0">{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '350, 700, 1050, 1400', alt: product.featured_image.alt }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<button type="button" class="blko-pdp-gallery__zoom" data-pdp-zoom-trigger aria-label="{{ 'blko.pdp.zoom_image' | t }}">{{ 'blko.pdp.zoom' | t }}</button></figure></div><div class="blko-pdp-purchase" data-pdp-purchase><p class="blko-breadcrumb"><a href="{{ routes.collections_url | escape }}">{{ section.settings.breadcrumb_shop | escape }}</a> / <a href="{{ section.settings.breadcrumb_category_url | default: '#complexion' }}">{{ section.settings.breadcrumb_category | escape }}</a> / {{ product.title | escape }}</p><p class="blko-eyebrow">{% if product.type != blank %}{{ product.vendor | escape }} · {{ product.type | escape }}{% else %}{{ product.vendor | escape }}{% endif %}</p><h1>{{ product.title | escape }}</h1>{% if product.metafields.reviews.rating.value.rating != blank %}<div class="blko-pdp-rating" aria-label="{{ product.metafields.reviews.rating.value.rating | escape }} out of 5 stars"><span>{% assign blko_rating = product.metafields.reviews.rating.value.rating | round %}{% for blko_star in (1..5) %}{% if blko_star <= blko_rating %}★{% else %}☆{% endif %}{% endfor %}</span><a href="#pdp-reviews">{{ product.metafields.reviews.rating.value.rating | escape }} · {{ product.metafields.reviews.rating_count | escape }} reviews</a></div>{% else %}{% endif %}<p class="blko-pdp-price"><strong>{{ product.price | money_without_trailing_zeros }}</strong><span>{{ section.settings.price_note | escape }}</span></p><p class="blko-pdp-intro">{{ product.description | strip_html | truncate: 160 | escape }}</p>{% if product.has_only_default_variant == blank %}<fieldset class="blko-pdp-shades" data-pdp-shades><legend>{{ product.options_with_values.first.name | escape }}: <strong data-pdp-shade-name>{{ product.selected_or_first_available_variant.option1 | escape }}</strong></legend><div>{% for shade in product.options_with_values.first.values %}<button{% if shade.selected %} class="is-active"{% else %}{% endif %} type="button" data-pdp-shade="{{ shade.name | escape }}" data-pdp-value="{{ shade.name | escape }}"{% if shade.swatch.color != blank %} style="--pdp-shade:{{ shade.swatch.color | escape }}"{% else %} style="--pdp-shade:var(--color-swatch-medium)"{% endif %} aria-label="{{ shade.name | escape }}"{% if shade.selected %} aria-pressed="true"{% else %} aria-pressed="false"{% endif %}></button>{% endfor %}</div><a href="{{ section.settings.shade_help_url | default: '#quiz' }}">{{ section.settings.shade_help_label | escape }}</a></fieldset>{% if product.options_with_values.size > 1 %}<fieldset class="blko-pdp-size" data-pdp-size><legend>{{ product.options_with_values.last.name | escape }}</legend>{% for size in product.options_with_values.last.values %}<button{% if size.selected %} class="is-active"{% else %}{% endif %} type="button" data-pdp-size-option data-pdp-value="{{ size.name | escape }}"{% if size.selected %} aria-pressed="true"{% else %} aria-pressed="false"{% endif %}>{{ size.name | escape }}</button>{% endfor %}</fieldset>{% else %}{% endif %}{% else %}{% endif %}{% if product.selected_or_first_available_variant.selling_plan_allocations != blank %}<fieldset class="blko-pdp-plan" data-pdp-plan><legend>{{ section.settings.plan_legend | escape }}</legend><button class="is-active" type="button" data-pdp-plan-option data-price="{{ product.price | money_without_trailing_zeros }}" data-plan="{{ section.settings.one_time_label | escape }}" aria-pressed="true"><span>{{ section.settings.one_time_label | escape }}</span><strong>{{ product.price | money_without_trailing_zeros }}</strong></button>{% for plan in product.selected_or_first_available_variant.selling_plan_allocations %}<button type="button" data-pdp-plan-option data-price="{{ plan.price | money_without_trailing_zeros }}" data-plan="{{ plan.selling_plan.name | escape }}" data-pdp-selling-plan="{{ plan.selling_plan.id | escape }}" aria-pressed="false"><span>{{ plan.selling_plan.name | escape }} {% if plan.selling_plan.price_adjustments.first.value_type == 'percentage' %}<em>Save {{ plan.selling_plan.price_adjustments.first.value | escape }}%</em>{% else %}{% endif %}</span><strong>{{ plan.price | money_without_trailing_zeros }}</strong>{% if plan.selling_plan.description != blank %}<small>{{ plan.selling_plan.description | escape }}</small>{% else %}{% endif %}</button>{% endfor %}</fieldset>{% else %}{% endif %}<div class="blko-pdp-buy-row"><div class="blko-quantity" data-quantity><button type="button" data-quantity-down aria-label="{{ 'blko.pdp.decrease_quantity' | t }}">−</button><output data-quantity-output>1</output><button type="button" data-quantity-up aria-label="{{ 'blko.pdp.increase_quantity' | t }}">+</button></div><button class="blko-button blko-pdp-add" type="submit" name="add" form="blko-pdp-form" data-pdp-add>{{ section.settings.button_label | escape }} · <span data-pdp-cart-price>{{ product.price | money_without_trailing_zeros }}</span></button></div><p class="blko-pdp-ship-note">{{ section.settings.ship_note | escape }}</p><div class="blko-pdp-accordions">{% for block in section.blocks %}<blko-accordion {{ block.shopify_attributes }}><article class="blko-accordion" data-accordion><button type="button" data-accordion-trigger aria-expanded="false">{{ block.settings.label | escape }}<span>+</span></button><div data-accordion-panel hidden><p>{{ block.settings.text | escape | newline_to_br }}</p></div></article></blko-accordion>{% endfor %}</div></div><div class="blko-pdp-sticky-buy" data-pdp-sticky aria-hidden="true">{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 140 | image_tag: loading: 'lazy', widths: '', alt: '' }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}<div><strong>{{ product.title | escape }}</strong><span data-pdp-sticky-shade>{{ product.selected_or_first_available_variant.option1 | escape }}</span></div><button class="blko-button" type="submit" name="add" form="blko-pdp-form" data-pdp-add>{{ section.settings.button_label | escape }} · <span data-pdp-sticky-price>{{ product.price | money_without_trailing_zeros }}</span></button></div>{% form 'product', product, id: 'blko-pdp-form', hidden: '' %}<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id | escape }}"><input type="hidden" name="quantity" value="1"><input type="hidden" name="selling_plan" value="" disabled>{% endform %}<script type="application/json" data-pdp-variants>{{ product.variants | json }}</script></section></blko-accordion></blko-quantity></blko-pdp></div>
 <script type="module" src="{{ 'blko-accordion.js' | asset_url }}"></script>
 <script type="module" src="{{ 'blko-quantity.js' | asset_url }}"></script>
 <script type="module" src="{{ 'blko-pdp.js' | asset_url }}"></script>
@@ -379,7 +379,7 @@
       "type": "text",
       "id": "one_time_label",
       "label": "One time label",
-      "default": "One-time purchase"
+      "default": "one-time purchase"
     },
     {
       "type": "text",
@@ -396,13 +396,13 @@
       "type": "text",
       "id": "breadcrumb_category",
       "label": "Breadcrumb category",
-      "default": "Hair tools"
+      "default": "Hair care"
     },
     {
       "type": "text",
       "id": "price_note",
       "label": "Price note",
-      "default": "20 x 26 in / 51 x 66 cm"
+      "default": "bar, about 100 washes"
     },
     {
       "type": "url",
@@ -413,7 +413,7 @@
       "type": "text",
       "id": "shade_help_label",
       "label": "Shade help label",
-      "default": "Not sure? Take the hair quiz."
+      "default": "Not sure which formula? Take the quiz."
     },
     {
       "type": "text",
@@ -425,7 +425,7 @@
       "type": "text",
       "id": "ship_note",
       "label": "Ship note",
-      "default": "Free delivery on orders over $40 · Easy returns within 30 days"
+      "default": "Free shipping over $35 · Free gift at $60 · 90-day money-back guarantee"
     }
   ],
   "blocks": [
@@ -456,21 +456,29 @@
         {
           "type": "accordion",
           "settings": {
-            "text": "Silky satin with a cool, smooth feel. Sleep on it, travel with it, gift it to someone you love."
-          }
-        },
-        {
-          "type": "accordion",
-          "settings": {
-            "label": "Materials",
-            "text": "100% polyester satin, hidden envelope closure, machine washable. Zero harsh dyes."
-          }
-        },
-        {
-          "type": "accordion",
-          "settings": {
             "label": "How to use",
-            "text": "Slip it over your pillow, rest your head and wake up to smoother hair. Machine wash cold and tumble dry low."
+            "text": "Wet the bar and your hair, then glide it over your scalp and lengths until you see lather. Work it in, rinse well and follow with a conditioner bar. Pro tip: keep the bar in a mesh bag so it dries between showers."
+          }
+        },
+        {
+          "type": "accordion",
+          "settings": {
+            "label": "Hero ingredients",
+            "text": "Rice protein reinforces each strand, panthenol draws in water for softness, and a mild coconut-derived cleanser lifts oil without stripping."
+          }
+        },
+        {
+          "type": "accordion",
+          "settings": {
+            "label": "Full ingredient list",
+            "text": "Sodium cocoyl isethionate, rice protein, panthenol, shea butter, cetyl alcohol, plant glycerin, fragrance from essential oils, vitamin E. Full INCI list is printed on the wrapper."
+          }
+        },
+        {
+          "type": "accordion",
+          "settings": {
+            "label": "Certifications",
+            "text": "Vegan and cruelty-free certified. Made in the USA. Plastic-free wrapper."
           }
         }
       ]

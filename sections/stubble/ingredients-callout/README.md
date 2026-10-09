@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Grooming routine |
-| `eyebrow` | text | Eyebrow | Our approach |
-| `heading` | text | Heading | Designed and formulated for quality. |
-| `text` | textarea | Text | Build your kit with essentials that work well together and cost less than the bi |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Shave foam being applied |
+| `eyebrow` | text | Eyebrow | Our standard |
+| `heading` | text | Heading | No parabens. No sulfates. No guessing. |
+| `text` | textarea | Text | Each formula is dermatologist tested and listed in full here. Scents come from a |
+| `button_label` | text | Button label | Browse scents |
 | `button_url` | url | Button url |  |
 
 ## Blocks

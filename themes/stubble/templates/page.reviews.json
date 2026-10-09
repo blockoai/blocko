@@ -2,38 +2,46 @@
   "sections": {
     "beauty-extras-reviews-hub": {
       "type": "blko-beauty-extras-reviews-hub",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Reviews",
+        "heading": "What 15,000+ shavers write after a few weeks.",
+        "average": "4.4",
+        "count_text": "From 15,602 verified reviews",
+        "stars_label": "Four and a half out of five stars"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 66
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 19
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 8
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 4
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 3
           }
         },
         "block-6": {
@@ -45,15 +53,15 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "Shave",
-            "key": "shave"
+            "label": "Razors",
+            "key": "complexion"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Body",
-            "key": "body"
+            "label": "Body + skin",
+            "key": "care"
           }
         },
         "block-9": {
@@ -64,41 +72,28 @@
           }
         },
         "block-10": {
-          "type": "photo",
-          "settings": {}
+          "type": "review",
+          "settings": {
+            "tags": "complexion",
+            "title": "Fewer nicks around the chin",
+            "meta": "Razor Pro · Onyx · Verified buyer"
+          }
         },
         "block-11": {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "body photos"
+            "tags": "care",
+            "title": "Body wash that smells grown-up",
+            "meta": "Everyday body wash · Bergamot + Cedar · Verified buyer"
           }
         },
         "block-12": {
-          "type": "photo",
-          "settings": {}
-        },
-        "block-13": {
-          "type": "photo",
-          "settings": {
-            "tags": "body photos"
-          }
-        },
-        "block-14": {
-          "type": "review",
-          "settings": {}
-        },
-        "block-15": {
           "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "body",
-            "meta": "Verified customer · Body"
-          }
-        },
-        "block-16": {
-          "type": "review",
-          "settings": {
-            "title": "The scent range made choosing easy."
+            "tags": "complexion",
+            "rating": 4,
+            "title": "Great handle, wish refills were cheaper",
+            "meta": "Razor Classic · Verified buyer"
           }
         }
       },
@@ -114,16 +109,16 @@
         "block-9",
         "block-10",
         "block-11",
-        "block-12",
-        "block-13",
-        "block-14",
-        "block-15",
-        "block-16"
+        "block-12"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [

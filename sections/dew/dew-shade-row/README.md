@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Six tints |
-| `heading` | text | Heading | find the one that melts in. |
-| `default_label` | text | Default label | pick a tint to preview |
+| `eyebrow` | text | Eyebrow | Cream blush, six ways |
+| `heading` | text | Heading | from baby pink to plum. |
+| `default_label` | text | Default label | tap a shade to see its name |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Shop the tints |
+| `button_label` | text | Button label | Shop blush |
 
 ## Blocks
 

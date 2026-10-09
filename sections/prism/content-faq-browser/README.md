@@ -29,7 +29,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `search_label` | text | Search label | Search answers |
-| `search_placeholder` | text | Search placeholder | Try “shipping” or “color” |
+| `search_placeholder` | text | Search placeholder | Try “returns” or “refill” |
 | `tabs_label` | text | Tabs label | FAQ categories |
 | `empty_message` | text | Empty message | No matching questions yet. Try a different search or contact support. |
 

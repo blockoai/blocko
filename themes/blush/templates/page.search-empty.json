@@ -2,7 +2,19 @@
   "sections": {
     "search-blog-search-empty": {
       "type": "blko-search-blog-search-empty",
-      "settings": {}
+      "settings": {
+        "eyebrow": "No match",
+        "heading": "We could not find that one.",
+        "text": "Try fewer words, or head to one of these shelves.",
+        "search_label": "Search the shop",
+        "placeholder": "Search shades, scents and skincare",
+        "tip_1": "Search for a shelf like “balm”, “cheek” or “scent”.",
+        "tip_2_prefix": "Browse the",
+        "tip_2_link": "bestseller shelf",
+        "tip_3_prefix": "Or read",
+        "tip_3_link": "the latest news",
+        "image_alt": "Cheek colours lined up on pink paper"
+      }
     }
   },
   "order": [

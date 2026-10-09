@@ -2,30 +2,127 @@
   "sections": {
     "pdp-bundle-builder": {
       "type": "blko-pdp-bundle-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build your routine",
+        "heading": "Mix a set, save fifteen percent.",
+        "text": "Pick three pieces from clips, care and tools. The set price drops the moment the third one lands.",
+        "saving_text": "You save 15% when three items are in your set."
+      }
     },
     "pdp-bundle-explainer": {
       "type": "blko-pdp-bundle-explainer",
-      "settings": {},
+      "settings": {
+        "eyebrow": "How sets work",
+        "heading": "Choose, save, gift."
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "heading": "Pick your three",
+            "text": "Any mix of clips, scrunchies, brushes or hair care."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Save 15%",
-            "text": "Your set price updates as you select."
+            "heading": "Watch the price drop",
+            "text": "Fifteen percent comes off automatically."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Use at your pace",
-            "text": "A flexible style you can return to every day."
+            "heading": "Keep it or wrap it",
+            "text": "Ship the set to yourself or add a gift note at checkout."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "bundle-aura": {
+      "type": "blko-bundle-aura",
+      "settings": {
+        "kicker": "What is your aura?",
+        "heading": "Four scents, four moods"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Warm vanilla · gourmand",
+            "text": "Sugar, vanilla bean and tonka over a soft amber base."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Sugared fig · fruity",
+            "text": "Ripe fig, pear and cream with a woody finish."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Milk tea · creamy",
+            "text": "Black tea, oat milk and a hint of brown sugar."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Peach cobbler · juicy",
+            "text": "Peach, buttery crust and cinnamon."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "bundle-how-to": {
+      "type": "blko-bundle-how-to",
+      "settings": {
+        "kicker": "Using the duo",
+        "heading": "Mask first, mist after"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Mask smoothed through damp hair",
+            "title": "Mask for ten minutes",
+            "text": "Work through towel-dried lengths, leave for ten minutes or overnight, then rinse."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Mist sprayed over dry hair",
+            "label": "Step two",
+            "title": "Mist the ends",
+            "text": "Hold the bottle at arm's length and spritz over the lengths and the nape."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "image_alt": "Hair twisted up in a claw clip",
+            "label": "Step three",
+            "title": "Clip it up",
+            "text": "Twist and pin with a jumbo clip. The scent lingers until bedtime."
           }
         }
       },
@@ -37,7 +134,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add one more piece"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -46,8 +146,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New + limited"
           }
         }
       },
@@ -58,12 +158,19 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [
     "pdp-bundle-builder",
     "pdp-bundle-explainer",
+    "bundle-aura",
+    "bundle-how-to",
     "product-recommendations",
     "newsletter"
   ]

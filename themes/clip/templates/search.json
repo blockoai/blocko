@@ -2,7 +2,13 @@
   "sections": {
     "search-blog-search-results": {
       "type": "blko-search-blog-search-results",
-      "settings": {},
+      "settings": {
+        "heading": "Search the drawer.",
+        "text": "Look up a colour, a scent or a lookbook.",
+        "placeholder": "Try “claw clip” or “vanilla”",
+        "search_label": "Search the shop and lookbooks",
+        "view_all_label": "See all matches"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",

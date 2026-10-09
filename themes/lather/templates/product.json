@@ -2,26 +2,34 @@
   "sections": {
     "pdp-product-main": {
       "type": "blko-pdp-product-main",
-      "settings": {},
+      "settings": {
+        "breadcrumb_category": "Bar soap",
+        "price_note": "5 oz bar",
+        "shade_help_label": "Torn between scents? Take the quiz.",
+        "one_time_label": "One-time purchase",
+        "plan_legend": "How do you want it?",
+        "ship_note": "Free shipping over $55 · 30-day satisfaction guarantee"
+      },
       "blocks": {
         "block-1": {
           "type": "accordion",
           "settings": {
-            "text": "Rich lather, serious scent. Use it on your body, face or beard and rinse clean. Pairs well with the matching deodorant."
+            "label": "At a glance",
+            "text": "Smells like: cedar, smoke and a little suede. Grit: medium. Featuring: shea butter, coconut oil and sustainably sourced palm-free soap base."
           }
         },
         "block-2": {
           "type": "accordion",
           "settings": {
             "label": "Ingredients",
-            "text": "Saponified coconut and olive oils, shea butter, cedar and pine essential oils, and natural clay. No parabens, no palm oil."
+            "text": "Saponified coconut, olive and sunflower oils, shea butter, glycerin, essential oils and fragrance, ground pumice for the grit, and nothing from our no-go list. The full list is printed on every wrapper."
           }
         },
         "block-3": {
           "type": "accordion",
           "settings": {
             "label": "How to use",
-            "text": "Wet the bar, work it into a rich lather with your hands or a washcloth, then rinse. Keep it dry between uses to make it last."
+            "text": "Wet the bar and your hands, work up a lather and rinse. Set it somewhere that drains so it dries between uses."
           }
         }
       },
@@ -31,69 +39,225 @@
         "block-3"
       ]
     },
-    "pdp-before-after": {
-      "type": "blko-pdp-before-after",
-      "settings": {}
-    },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {}
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
+    "pdp-ticker": {
+      "type": "blko-pdp-ticker",
       "settings": {},
       "blocks": {
         "block-1": {
-          "type": "tab",
-          "settings": {}
+          "type": "message",
+          "settings": {
+            "text": "COLD PROCESS"
+          }
         },
         "block-2": {
-          "type": "tab",
+          "type": "message",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "text": "PLANT OILS"
+          }
+        },
+        "block-3": {
+          "type": "message",
+          "settings": {
+            "text": "SKIN-TESTED"
+          }
+        },
+        "block-4": {
+          "type": "message",
+          "settings": {
+            "text": "RESPONSIBLY SOURCED"
           }
         }
       },
       "block_order": [
         "block-1",
-        "block-2"
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "pdp-claims": {
+      "type": "blko-pdp-claims",
+      "settings": {
+        "kicker": "Why it works",
+        "heading": "Three things a good bar does"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Moisture stays put",
+            "text": "Shea butter and sunflower oil cushion your skin so it does not feel tight after drying off."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "A lather that lasts",
+            "text": "The bar stays firm instead of melting into mush, so one lasts two to three weeks of daily showers."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Scent with staying power",
+            "text": "Essential oils and plant-derived fragrance linger on skin well past your first coffee."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-usage": {
+      "type": "blko-pdp-usage",
+      "settings": {
+        "image_alt": "A man lathering his forearms at a sink",
+        "kicker": "From the workshop",
+        "heading": "Notes on getting the most from your bar",
+        "text": "Start with a quick rinse, rub the bar between your palms and wash from the shoulders down. Rough patches like elbows and heels can take a second pass. Let the bar air dry afterward and it will keep its shape."
+      }
+    },
+    "pdp-pillars": {
+      "type": "blko-pdp-pillars",
+      "settings": {
+        "eyebrow": "The short list",
+        "heading": "What we put in, what we leave out"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "benefit",
+          "settings": {
+            "title": "Mostly plants",
+            "text": "Ninety-eight percent of what is in the bar comes from natural origins."
+          }
+        },
+        "block-2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "drop",
+            "title": "Nothing sketchy",
+            "text": "No aluminum, parabens, phthalates or synthetic dyes make it past the door."
+          }
+        },
+        "block-3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "peak",
+            "title": "Made for men",
+            "text": "Scented, sized and scrubbed for the way guys really wash."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "pdp-faq": {
+      "type": "blko-pdp-faq",
+      "settings": {
+        "eyebrow": "You asked",
+        "heading": "Everything about this bar"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "What makes a cold-process bar different?",
+            "text": "It is mixed at a low temperature and cured for weeks, which keeps natural glycerin in the soap and leaves skin softer than a machine-milled bar."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "How long does one bar last?",
+            "text": "Used daily and kept dry, about two to three weeks."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Is it okay for sensitive skin?",
+            "text": "Many customers with sensitive skin use it daily. If you react easily, start with the zero-grit moisture bar and patch-test first."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "Is it vegan?",
+            "text": "Most bars are plant-based, but a few limited editions may include beeswax or honey. Check the ingredient list on each page."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "How strong is the scent?",
+            "text": "Strong enough that you will smell it in the shower and faintly through the evening. It will not announce you from across the room."
+          }
+        },
+        "block-6": {
+          "type": "question",
+          "settings": {
+            "label": "When will it arrive?",
+            "text": "Orders leave in one to two business days and take three to seven days to arrive within the United States."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
       ]
     },
     "pdp-reviews": {
       "type": "blko-pdp-reviews",
-      "settings": {},
+      "settings": {
+        "eyebrow": "What guys say",
+        "average": "4.5",
+        "summary": "28,412 reviews · 88% would buy again",
+        "list_heading": "Recent reviews"
+      },
       "blocks": {
         "block-1": {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 71
+          }
         },
         "block-2": {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 17
           }
         },
         "block-3": {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 7
           }
         },
         "block-4": {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 3
           }
         },
         "block-5": {
           "type": "bar",
           "settings": {
             "label": "1 star",
-            "percent": 1
+            "percent": 2
           }
         },
         "block-6": {
@@ -103,40 +267,60 @@
         "block-7": {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "label": "Scent",
+            "key": "scent"
           }
         },
         "block-8": {
           "type": "filter",
           "settings": {
-            "label": "Scent",
-            "key": "coverage"
+            "label": "Lather",
+            "key": "lather"
           }
         },
         "block-9": {
-          "type": "review",
+          "type": "filter",
           "settings": {
-            "text": "It smells like a cabin in the woods and the lather is unreal. My wife keeps stealing the bar."
+            "label": "With photos",
+            "key": "photos"
           }
         },
         "block-10": {
-          "type": "review",
+          "type": "filter",
           "settings": {
-            "title": "My daily bar",
-            "text": "Lasts for weeks, lathers fast and the scent actually sticks around. The scent families made picking simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "label": "Value",
+            "key": "value"
           }
         },
         "block-11": {
           "type": "review",
           "settings": {
-            "title": "Fresh, not fake",
-            "text": "Smells strong without feeling like a gas station air freshener.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Green & Aromatic · photo review"
+            "title": "Smells like a lodge in the hills",
+            "text": "The scent is warm without being sweet. A week in, my towel still smells like it.",
+            "footer": "Aaron K. · 1 week ago",
+            "tags": "scent photos",
+            "caption": "Cabin Cedar · photo review"
+          }
+        },
+        "block-12": {
+          "type": "review",
+          "settings": {
+            "title": "Lathers like crazy",
+            "text": "A thick, creamy lather in about ten seconds. I stopped using body wash entirely.",
+            "footer": "Nate B. · 3 weeks ago",
+            "tags": "lather",
+            "caption": ""
+          }
+        },
+        "block-13": {
+          "type": "review",
+          "settings": {
+            "title": "A bit gritty on my back",
+            "text": "Great bar, but the medium grit is a lot for sensitive spots. I switched to the aloe bar for my chest.",
+            "footer": "Omar S. · 2 months ago",
+            "tags": "value",
+            "caption": "",
+            "rating": 4
           }
         }
       },
@@ -151,25 +335,36 @@
         "block-8",
         "block-9",
         "block-10",
-        "block-11"
+        "block-11",
+        "block-12",
+        "block-13"
       ]
+    },
+    "pdp-complete-routine": {
+      "type": "blko-pdp-complete-routine",
+      "settings": {
+        "eyebrow": "Pair it with",
+        "heading": "Wash, protect, finish",
+        "text": "A bar, a stick and a cologne that share the same scent family."
+      }
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
-      "settings": {}
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Still shopping?",
+        "heading": "Back where you left off"
+      }
     }
   },
   "order": [
     "pdp-product-main",
-    "pdp-before-after",
-    "pdp-complete-routine",
-    "product-recommendations",
+    "pdp-ticker",
+    "pdp-claims",
+    "pdp-usage",
+    "pdp-pillars",
+    "pdp-faq",
     "pdp-reviews",
-    "pdp-recently-viewed",
-    "newsletter"
+    "pdp-complete-routine",
+    "pdp-recently-viewed"
   ]
 }

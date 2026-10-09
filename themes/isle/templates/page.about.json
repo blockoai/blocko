@@ -2,75 +2,67 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "A getaway for everybody.",
+        "lede": "We began with one wish: body care that feels like the first day of a holiday, minus the long ingredient list.",
+        "button_label": "Meet the founders",
+        "image_alt": "Two friends sharing a towel on a sunlit beach"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
+      "settings": {
+        "image_alt": "Raw coconut oil in a glass jar",
+        "kicker": "Our ingredients",
+        "heading": "A list of what stays out.",
+        "text": "Our standard bars more than two hundred substances, including phthalates, sulfates and parabens. What remains is plant-based, vegan and never tested on animals."
+      }
     },
-    "isle-claims": {
-      "type": "blko-isle-claims",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "claim",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "claim",
-          "settings": {
-            "label": "Vegan"
-          }
-        },
-        "block-3": {
-          "type": "claim",
-          "settings": {
-            "label": "Cruelty-free"
-          }
-        },
-        "block-4": {
-          "type": "claim",
-          "settings": {
-            "label": "Sulfate-free"
-          }
-        },
-        "block-5": {
-          "type": "claim",
-          "settings": {
-            "label": "Paraben-free"
-          }
-        }
+    "about-formulas": {
+      "type": "blko-about-formulas",
+      "settings": {
+        "image_alt": "Pumped lotion on a fingertip",
+        "kicker": "Our formulas",
+        "heading": "Textures you want to touch.",
+        "text": "We build butters, mists and gels around actives like hyaluronic acid, gentle acids and peptides, then tune the scent so products can be layered together."
+      }
+    },
+    "about-packaging": {
+      "type": "blko-about-packaging",
+      "settings": {
+        "image_alt": "Recyclable bottles lined up on a beach table",
+        "kicker": "Our packaging",
+        "heading": "Bottles that can come back around.",
+        "text": "In 2021 we moved the whole line into recyclable packaging, with post-consumer recycled plastic wherever the formula allows."
+      }
+    },
+    "about-numbers": {
+      "type": "blko-about-numbers",
+      "settings": {
+        "heading": "A few numbers we are proud of.",
+        "note": "Figures from our most recent packaging and impact review."
       },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5"
-      ]
-    },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "value",
-          "settings": {}
+          "type": "stat",
+          "settings": {
+            "value": "200+",
+            "label": "ingredients on our not-allowed list"
+          }
         },
         "block-2": {
-          "type": "value",
+          "type": "stat",
           "settings": {
-            "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about ingredients, feedback, and better ways to make everyday essentials."
+            "value": "100%",
+            "label": "of bottles in recyclable packaging"
           }
         },
         "block-3": {
-          "type": "value",
+          "type": "stat",
           "settings": {
-            "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
+            "value": "$1",
+            "label": "per order to clean-water projects"
           }
         }
       },
@@ -82,93 +74,31 @@
     },
     "content-founder-note": {
       "type": "blko-content-founder-note",
-      "settings": {}
-    },
-    "content-story-timeline": {
-      "type": "blko-content-story-timeline",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "milestone",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "milestone",
-          "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of body care essentials."
-          }
-        },
-        "block-3": {
-          "type": "milestone",
-          "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a ritual that moves with your day."
-          }
-        },
-        "block-4": {
-          "type": "milestone",
-          "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "content-press-quotes": {
-      "type": "blko-content-press-quotes",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "quote",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "quote",
-          "settings": {
-            "quote": "“A practical answer to the overcomplicated shower shelf.”",
-            "source": "— The Daily Edit"
-          }
-        },
-        "block-3": {
-          "type": "quote",
-          "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
-            "source": "— Studio Notes"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
+      "settings": {
+        "kicker": "From our founders",
+        "quote": "“We wanted a shelf that feels like a trip to the tropics but works as hard as anything in the medicine cabinet.”",
+        "note": "The two cofounders still test new scents and textures themselves before anything is approved.",
+        "name": "The cofounders",
+        "role": "Isle",
+        "image_alt": "Cofounders laughing together outdoors"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [
     "content-about-hero",
     "content-mission",
-    "isle-claims",
-    "content-values",
+    "about-formulas",
+    "about-packaging",
+    "about-numbers",
     "content-founder-note",
-    "content-story-timeline",
-    "content-press-quotes",
     "newsletter"
   ]
 }

@@ -30,7 +30,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `article` | article | Article |  |
 | `home_label` | text | Home label | Home |
-| `reading_time` | text | Reading time | 6 minutes |
+| `reading_time` | text | Reading time | 4 minutes |
 
 ## Blocks
 

@@ -2,46 +2,62 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shelf Club",
+        "heading": "Welcome to the club that rewards good habits.",
+        "text": "Free to join. Earn points when you buy, review and return empties, then spend them on products, discounts and in-store services.",
+        "button_label": "Join for free",
+        "image_alt": "Smiling woman in a yellow dress on a salt flat",
+        "earn_eyebrow": "How it works",
+        "earn_heading": "Join, collect, choose.",
+        "tiers_eyebrow": "Membership levels",
+        "tiers_heading": "Spend more in a year, unlock more."
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Sign up with an email and password; in-store and online orders link to the same account."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Collect",
+            "text": "Points come from purchases, reviews, returned empties and following us on social."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Choose",
+            "text": "Redeem for products, money off, services or a seat at member events."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "Seed",
+            "points": "Free to join",
+            "perks": "1 point per $1 · free shipping over $35 · $15 birthday credit"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Sprout",
+            "points": "$500 spent in a year",
+            "perks": "1.5 points per $1 · early sale access · $25 birthday credit"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Bloom",
+            "points": "$1,000 spent in a year",
+            "perks": "2 points per $1 · free shipping on all orders · free express facial · $25 credit and a service on your birthday"
           }
         }
       },
@@ -54,41 +70,229 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-benefits": {
+      "type": "blko-rewards-benefits",
+      "settings": {
+        "kicker": "Member perks",
+        "heading": "Four reasons to sign up"
+      },
       "blocks": {
         "block-1": {
-          "type": "question",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "title": "Free beauty",
+            "text": "Trade points for a full-size product or a mini of your choosing."
+          }
         },
         "block-2": {
-          "type": "question",
+          "type": "value",
           "settings": {
-            "label": "When will my order ship?"
+            "number": "02",
+            "title": "Pay with points",
+            "text": "Knock up to $20 off any order when you check out."
           }
         },
         "block-3": {
-          "type": "question",
+          "type": "value",
           "settings": {
-            "label": "Can I update my order?"
+            "number": "03",
+            "title": "Shipping perks",
+            "text": "Your level decides the order value that ships free."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Early and exclusive",
+            "text": "Members see sales, gifts and boutique events before everyone else."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3"
+        "block-3",
+        "block-4"
+      ]
+    },
+    "rewards-earn": {
+      "type": "blko-rewards-earn",
+      "settings": {
+        "kicker": "Earning rules",
+        "heading": "Six ways to stack points"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "number": "Shop",
+            "title": "Up to 2 points per $1",
+            "text": "The rate climbs with your level, and double-points days lift it to as much as 4 per dollar."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "Review",
+            "title": "50 points, 100 at Bloom",
+            "text": "Write an honest review of something you bought; one reward per hour."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "Recycle",
+            "title": "10 points per empty",
+            "text": "Hand in up to 12 at a boutique per visit, or 120 points for a mail-back parcel of ten."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "Follow",
+            "title": "50 to 100 points",
+            "text": "Follow our social accounts and claim the points once."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "Refer",
+            "title": "$25 each way",
+            "text": "A friend's first order gives both of you $25."
+          }
+        },
+        "block-6": {
+          "type": "value",
+          "settings": {
+            "number": "Birthday",
+            "title": "A credit in your month",
+            "text": "$15 to $25 lands in your inbox, plus a service for Bloom members."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "rewards-redeem": {
+      "type": "blko-rewards-redeem",
+      "settings": {
+        "kicker": "Spending points",
+        "quote": "“Points from reviews and empties covered my whole refill.”",
+        "author": "— Club member"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "500 points",
+            "text": "takes $10 off"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "1,000 points",
+            "text": "takes $20 off"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "$20 online cap",
+            "text": "per order, claimed in checkout"
+          }
+        },
+        "block-4": {
+          "type": "point",
+          "settings": {
+            "title": "No expiry",
+            "text": "points never lapse"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "rewards-referral": {
+      "type": "blko-rewards-referral",
+      "settings": {
+        "eyebrow": "Refer a friend",
+        "heading": "Give $25, get $25",
+        "text": "Your friend must be a first-time shopper. Your credit arrives after their first purchase, and codes can't be combined.",
+        "button_label": "Get my link"
+      }
+    },
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Club questions",
+        "heading": "The fine print"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Do I lose my level?",
+            "text": "Levels follow the last twelve months of spending, counted from the day you qualified. Drop below the line and you step down; points stay."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Where do I use my rewards?",
+            "text": "At the register in a boutique, in the club page online, or at the foot of your bag."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "How do I get the free facial?",
+            "text": "Bloom members book online or ring a boutique; the session is on us once per year."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "Why didn't my review earn points?",
+            "text": "Only one review per hour counts, and reviews must be of products you bought from us."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-benefits",
+    "rewards-earn",
+    "rewards-redeem",
+    "rewards-referral",
+    "rewards-faq",
     "newsletter"
   ]
 }

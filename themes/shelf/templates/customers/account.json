@@ -14,7 +14,10 @@
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shopper favorites",
+        "heading": "More bestsellers"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -23,8 +26,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New arrivals"
           }
         }
       },

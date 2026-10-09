@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by category |
-| `heading` | text | Heading | Find your color. |
-| `text` | textarea | Text | Discover shades, color stories and tools made to fit into real life. |
+| `eyebrow` | text | Eyebrow | All departments |
+| `heading` | text | Heading | From base to brow |
+| `text` | textarea | Text | Browse by area of the face, then check the shade count and finish on every card. |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

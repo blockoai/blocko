@@ -2,43 +2,52 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop everything",
+        "heading": "Makeup that behaves like skincare."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Bestsellers",
+            "url": "#best"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eye",
-            "url": "#eyes"
+            "label": "New",
+            "url": "#new"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lip + Cheek",
-            "url": "#lips"
+            "label": "Sets",
+            "url": "#sets"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Skin",
-            "url": "#care"
+            "label": "Shade finder",
+            "url": "#shade-quiz"
           }
         },
         "block-5": {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#face",
+            "image_alt": "Concealer and corrector side by side"
+          }
         },
         "block-6": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Skin",
-            "label": "Skin"
+            "url": "#sets",
+            "image_alt": "Pastel pouches holding mini makeup",
+            "label": "Gift sets"
           }
         }
       },
@@ -53,11 +62,54 @@
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
+      "settings": {
+        "image_alt": "Close-up of a face with peach cheeks and glossy lips",
+        "eyebrow": "Holiday shop",
+        "heading": "Wrap it in color.",
+        "text": "Limited sets in pastel pouches, packed with minis and full sizes that are easy to hand over.",
+        "button_label": "Shop gift sets"
+      }
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {
+        "eyebrow": "Handpicked",
+        "heading": "Favorites to start with"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "label": "Bestsellers"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "New shades"
+          }
+        },
+        "block-3": {
+          "type": "tab",
+          "settings": {
+            "key": "sets",
+            "label": "Sets"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
     },
     "tint-categories": {
       "type": "blko-tint-categories",
-      "settings": {},
+      "settings": {
+        "heading": "Shop by category",
+        "link_label": "Shop all"
+      },
       "blocks": {
         "block-1": {
           "type": "tile",
@@ -66,7 +118,7 @@
         "block-2": {
           "type": "tile",
           "settings": {
-            "label": "Skin"
+            "label": "Skin + sun"
           }
         },
         "block-3": {
@@ -103,87 +155,60 @@
         "block-6"
       ]
     },
-    "message-band": {
-      "type": "blko-message-band",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "message",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "message",
-          "settings": {
-            "text": "100% SKINCARE-FRIENDLY"
-          }
-        },
-        "block-3": {
-          "type": "message",
-          "settings": {
-            "text": "ALL-DAY WEAR"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
+    "home-launch": {
+      "type": "blko-home-launch",
+      "settings": {
+        "image_alt": "Cream stick swatched on a cheek and a lip",
+        "kicker": "Just landed",
+        "heading": "The cream stick for cheeks and lips.",
+        "text": "A bouncy, buildable formula that melts in with a fingertip. Seven shades, one swipe, no brush required."
+      }
     },
     "tint-shades": {
       "type": "blko-tint-shades",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shade range",
+        "heading": "Shades for every depth",
+        "pill_label": "Find my match"
+      },
       "blocks": {
         "block-1": {
           "type": "shade",
-          "settings": {}
+          "settings": {
+            "name": "Fair to light",
+            "count": "12 undertones",
+            "tone": "light"
+          }
         },
         "block-2": {
           "type": "shade",
           "settings": {
-            "name": "Honey Sand",
+            "name": "Light to medium",
+            "count": "10 undertones",
             "tone": "honey-sand"
           }
         },
         "block-3": {
           "type": "shade",
           "settings": {
-            "name": "Soft Caramel",
+            "name": "Medium to tan",
+            "count": "10 undertones",
             "tone": "soft-caramel"
           }
         },
         "block-4": {
           "type": "shade",
           "settings": {
-            "name": "Golden Tan",
+            "name": "Tan to deep",
+            "count": "8 undertones",
             "tone": "golden-tan"
           }
         },
         "block-5": {
           "type": "shade",
           "settings": {
-            "name": "Cocoa Deep",
+            "name": "Deep to rich",
+            "count": "8 undertones",
             "tone": "cocoa-deep"
           }
         }
@@ -196,88 +221,32 @@
         "block-5"
       ]
     },
+    "home-quiz": {
+      "type": "blko-home-quiz",
+      "settings": {
+        "image_alt": "Smiling person holding up a phone with quiz results",
+        "eyebrow": "Two-minute quiz",
+        "heading": "Not sure which shade is yours?",
+        "text": "Answer a handful of questions, tell us a shade you already wear, or compare against another brand. You get a short list, not a hundred swatches.",
+        "button_label": "Start the quiz"
+      }
+    },
     "tint-statement": {
       "type": "blko-tint-statement",
-      "settings": {}
-    },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
-    },
-    "testimonial-slider": {
-      "type": "blko-testimonial-slider",
-      "settings": {}
-    },
-    "tint-reels": {
-      "type": "blko-tint-reels",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "reel",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "reel",
-          "settings": {
-            "quote": "My new everyday cheek.",
-            "shade": "Honey Sand",
-            "name": "Jo"
-          }
-        },
-        "block-3": {
-          "type": "reel",
-          "settings": {
-            "quote": "So juicy, so easy.",
-            "shade": "Soft Caramel",
-            "name": "Ines"
-          }
-        },
-        "block-4": {
-          "type": "reel",
-          "settings": {
-            "quote": "Matches perfectly.",
-            "shade": "Cocoa Deep",
-            "name": "Ade"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "press-slider": {
-      "type": "blko-press-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "publication",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "publication",
-          "settings": {
-            "name": "DAILY GLOW"
-          }
-        },
-        "block-3": {
-          "type": "publication",
-          "settings": {
-            "name": "BEAUTY WEEKLY"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
+      "settings": {
+        "line_1": "Color that cares.",
+        "line_2": "Skincare that colors.",
+        "text": "Light, clean formulas with real actives, so one product does the work of two on your face and in your bag.",
+        "button_label": "Shop all"
+      }
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -287,15 +256,12 @@
   "order": [
     "home-collection-mega-menu",
     "hero-campaign",
-    "tint-categories",
-    "message-band",
     "tabbed-product-grid",
+    "tint-categories",
+    "home-launch",
     "tint-shades",
+    "home-quiz",
     "tint-statement",
-    "commitments",
-    "testimonial-slider",
-    "tint-reels",
-    "press-slider",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

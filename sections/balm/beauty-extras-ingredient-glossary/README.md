@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Formula dictionary |
-| `heading` | text | Heading | Ingredients, explained. |
-| `text` | textarea | Text | Search the ingredients behind a comfortable, considered routine. |
+| `eyebrow` | text | Eyebrow | Ingredient index |
+| `heading` | text | Heading | Plants, oils and what they do. |
+| `text` | textarea | Text | Every name in our sticks and skincare, with a plain explanation of its job. |
 | `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “hydration” |
+| `search_placeholder` | text | Search placeholder | Try “jojoba” |
 | `note_label` | text | Note label | Read note ↗ |
 | `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Aloe leaf juice |
-| `detail_text` | textarea | Detail text | A botanical humectant that gives formulas a cool, soothing feel. It is especiall |
+| `detail_heading` | text | Detail heading | Jojoba oil |
+| `detail_text` | textarea | Detail text | A liquid wax pressed from desert seeds. It resembles the oil skin makes, so it s |
 | `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Comfort and hydration |
+| `best_for` | text | Best for | Dry, tight or sensitive skin |
 | `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Skincare and care |
+| `found_in` | text | Found in | Lip oil, complexion stick, face oil |
 
 ## Blocks
 

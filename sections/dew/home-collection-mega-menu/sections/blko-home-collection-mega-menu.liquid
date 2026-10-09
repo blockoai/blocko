@@ -178,13 +178,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "shop by routine"
+      "default": "Shop by family"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "start where you are."
+      "default": "five families, one short shelf."
     }
   ],
   "blocks": [
@@ -202,7 +202,7 @@
           "type": "text",
           "id": "label",
           "label": "Label",
-          "default": "Face"
+          "default": "Skin"
         }
       ]
     },
@@ -231,7 +231,7 @@
           "type": "text",
           "id": "label",
           "label": "Label",
-          "default": "Face"
+          "default": "Skin"
         }
       ]
     }
@@ -242,39 +242,51 @@
       "blocks": [
         {
           "type": "link",
-          "settings": {}
-        },
-        {
-          "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "url": "#skin"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Lips + cheeks",
-            "url": "#lips"
+            "label": "Lip + cheek",
+            "url": "#lip-cheek"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#care"
+            "label": "Sets",
+            "url": "#sets"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "On the go",
+            "url": "#on-the-go"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Award winners",
+            "url": "#awards"
           }
         },
         {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#skin",
+            "image_alt": "Glow serum bottle on a pale surface"
+          }
         },
         {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "body routine",
-            "label": "Body"
+            "url": "#lip-cheek",
+            "image_alt": "Lip tints and a blush stick laid out together",
+            "label": "Lip + cheek"
           }
         }
       ]

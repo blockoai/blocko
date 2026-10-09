@@ -28,9 +28,9 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | gift set builder |
-| `heading` | text | Heading | build a box |
-| `text` | text | Text | Pick any four favorites and save 25%. Wrapped, ribboned and ready to gift. |
+| `kicker` | text | Kicker | bundle everything |
+| `heading` | text | Heading | build your own box |
+| `text` | text | Text | Choose any four items, from bars to clips to sleep gear, and the price drops by  |
 | `button_url` | url | Button url |  |
 | `button_label` | text | Button label | start building |
 

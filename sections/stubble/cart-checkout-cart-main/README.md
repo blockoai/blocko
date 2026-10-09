@@ -34,8 +34,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | `note_summary` | text | Note summary | Add a gift note |
 | `note_label` | text | Note label | Your message |
 | `note_placeholder` | text | Note placeholder | Write a short note for your recipient. |
-| `upsell_kicker` | text | Upsell kicker | Build the kit |
-| `upsell_heading` | text | Upsell heading | A little extra gear |
+| `upsell_kicker` | text | Upsell kicker | Complete the shave |
+| `upsell_heading` | text | Upsell heading | Often added |
 | `upsell_eyebrow` | text | Upsell eyebrow | Pairs well with |
 | `upsell_button` | text | Upsell button | Add |
 | `summary_heading` | text | Summary heading | Order summary |
@@ -47,17 +47,17 @@ Never overwrite an existing file with the same name without comparing it first.
 | `summary_note` | textarea | Summary note | Taxes and shipping are calculated at checkout. |
 | `eyebrow` | text | Eyebrow | Your shopping bag |
 | `heading` | text | Heading | Bag |
-| `threshold` | range | Free-shipping threshold | 50 |
+| `threshold` | range | Free-shipping threshold | 30 |
 | `progress_label` | text | Progress label | Shipping progress |
 | `before` | text | Before | Only |
-| `after` | text | After | away from complimentary shipping. |
-| `unlocked` | text | Unlocked | You have unlocked complimentary shipping. |
+| `after` | text | After | away from free shipping. |
+| `unlocked` | text | Unlocked | Free shipping unlocked. |
 | `empty_eyebrow` | text | Empty eyebrow | Your bag |
-| `empty_heading` | text | Empty heading | Your bag is waiting. |
-| `empty_text` | textarea | Empty text | Your gear is ready whenever you are. |
-| `empty_button_label` | text | Empty button label | Continue shopping |
+| `empty_heading` | text | Empty heading | Your cart is empty. |
+| `empty_text` | textarea | Empty text | Start with a trial set, or browse every razor and refill. |
+| `empty_button_label` | text | Empty button label | Browse razors |
 | `empty_image` | image_picker | Empty image |  |
-| `empty_image_alt` | text | Empty image alt text | Shaving tools on a shelf |
+| `empty_image_alt` | text | Empty image alt text | Razor handles on a tray |
 
 ## Blocks
 

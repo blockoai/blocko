@@ -2,11 +2,18 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Our stores",
+        "heading": "Eleven shops, one full range.",
+        "text": "Every store carries the complete line, offers pickup for online orders and can match your shade in person.",
+        "directions_label": "Open in maps"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
-          "settings": {}
+          "settings": {
+            "label": "All"
+          }
         },
         "block-2": {
           "type": "country",
@@ -18,42 +25,51 @@
         "block-3": {
           "type": "country",
           "settings": {
-            "value": "ca",
-            "label": "Canada"
-          }
-        },
-        "block-4": {
-          "type": "country",
-          "settings": {
             "value": "uk",
             "label": "United Kingdom"
           }
         },
+        "block-4": {
+          "type": "store",
+          "settings": {
+            "name": "Blush SoHo",
+            "place": "New York"
+          }
+        },
         "block-5": {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Blush Silver Lake",
+            "place": "Los Angeles"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Blush Wicker Park",
+            "place": "Chicago"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "name": "Blush Back Bay",
+            "place": "Boston"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "name": "Blush South Congress",
+            "place": "Austin"
+          }
+        },
+        "block-9": {
+          "type": "store",
+          "settings": {
+            "country": "uk",
+            "name": "Blush Covent Garden",
+            "place": "London"
           }
         }
       },
@@ -65,12 +81,17 @@
         "block-5",
         "block-6",
         "block-7",
-        "block-8"
+        "block-8",
+        "block-9"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "Be first to know about the next drop",
+        "message": "New scents, balm flavours and member-only sale days, no more than one note a week."
+      }
     }
   },
   "order": [

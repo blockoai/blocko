@@ -30,10 +30,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | All collections |
-| `heading` | text | Heading | Find your pink. |
-| `text` | textarea | Text | Colour stories, skin basics and easy tools made to fit into real life. |
-| `link_label` | text | Link label | Explore |
+| `eyebrow` | text | Eyebrow | Six shelves |
+| `heading` | text | Heading | Pick a department |
+| `text` | textarea | Text | Cleansers and creams, cheek colour and brows, balms, body and five scents you ca |
+| `link_label` | text | Link label | Shop it |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |
 | `next_label` | text | Next label | Next |

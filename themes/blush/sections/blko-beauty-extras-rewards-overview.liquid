@@ -341,25 +341,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "Membership"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "More ritual, more rewards."
+      "default": "Join the club. It costs nothing."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the things you love, and enjoy a little more from every routine."
+      "default": "No points to track and no tiers to climb: a free account that unlocks a thank-you gift, early looks and the occasional surprise."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "Create an account"
     },
     {
       "type": "image_picker",
@@ -370,7 +370,7 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Everyday makeup flat lay"
+      "default": "Member holding a small pink keychain"
     },
     {
       "type": "text",
@@ -382,19 +382,19 @@
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "Three steps, then it runs itself"
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "What you get"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "More beauty, more benefits."
+      "default": "Perks that arrive by email and in person"
     }
   ],
   "blocks": [
@@ -455,42 +455,49 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Make an account",
+            "text": "Use the same email you shop with and you are already in."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Claim your gift",
+            "text": "A code for a free keychain lands in your inbox. Use it on your next order."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Wait for the good news",
+            "text": "Member-only notes tell you when something is on sale or about to launch."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Early access",
+            "points": "Sales + launches",
+            "perks": "Shop new shades and scents a day before everyone else."
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Birthday gift",
+            "points": "Once a year",
+            "perks": "A small something arrives in the month you were born."
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Store events",
+            "points": "By invitation",
+            "perks": "Pop-in evenings, shade-matching sessions and launch parties."
           }
         }
       ]

@@ -2,111 +2,64 @@
   "sections": {
     "content-about-hero": {
       "type": "blko-content-about-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Our story",
+        "heading": "A family, a coastline and a lot of seaweed.",
+        "lede": "Our founder grew up swimming in the Pacific. Decades later, her daughter helped turn that habit into a skin care company.",
+        "button_label": "Meet the family",
+        "image_alt": "Founder and daughter on a rocky shore"
+      }
     },
     "content-mission": {
       "type": "blko-content-mission",
-      "settings": {}
-    },
-    "content-values": {
-      "type": "blko-content-values",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "value",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "value",
-          "settings": {
-            "number": "02",
-            "title": "Keep learning",
-            "text": "We stay curious about sea botanicals, feedback, and better ways to make everyday essentials."
-          }
-        },
-        "block-3": {
-          "type": "value",
-          "settings": {
-            "number": "03",
-            "title": "Say it plainly",
-            "text": "Clear guidance and useful information help you choose what belongs in your routine."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "tide-standards": {
-      "type": "blko-tide-standards",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "standard",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "standard",
-          "settings": {
-            "number": "02",
-            "title": "Reef-safe sun care",
-            "text": "Non-nano zinc oxide, free from filters that harm coral."
-          }
-        },
-        "block-3": {
-          "type": "standard",
-          "settings": {
-            "number": "03",
-            "title": "Recyclable packaging",
-            "text": "Glass, aluminium and post-consumer plastic you can recycle."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-founder-note": {
-      "type": "blko-content-founder-note",
-      "settings": {}
+      "settings": {
+        "image_alt": "Woven basket of freshly cut sea plants",
+        "kicker": "Why seaweed",
+        "heading": "Skin that borrows from the sea.",
+        "text": "Sea plants are loaded with minerals, amino acids and moisture-binding sugars. We formulate with them first, then add only the extras a product truly needs."
+      }
     },
     "content-story-timeline": {
       "type": "blko-content-story-timeline",
-      "settings": {},
+      "settings": {
+        "kicker": "Timeline",
+        "heading": "Four generations of ocean swimmers."
+      },
       "blocks": {
         "block-1": {
           "type": "milestone",
-          "settings": {}
+          "settings": {
+            "label": "1920s",
+            "datetime": "1920",
+            "title": "The swimming club",
+            "text": "A grandmother and her friends swim in cold water each morning and credit it for their skin."
+          }
         },
         "block-2": {
           "type": "milestone",
           "settings": {
-            "label": "2020",
-            "datetime": "2020",
-            "title": "Room to grow",
-            "text": "A community helps shape a more useful selection of skin and body essentials."
+            "label": "1980s",
+            "datetime": "1985",
+            "title": "A healing-arts career",
+            "text": "Her daughter trains in spa and body therapies and starts to test sea plants in treatments."
           }
         },
         "block-3": {
           "type": "milestone",
           "settings": {
-            "label": "2023",
-            "datetime": "2023",
-            "title": "More ways to wear it",
-            "text": "New textures make it easier to build a routine that moves with your day."
+            "label": "1996",
+            "datetime": "1996",
+            "title": "First formulas on shelves",
+            "text": "The first seaweed skin care line arrives at a small boutique in Los Angeles."
           }
         },
         "block-4": {
           "type": "milestone",
           "settings": {
-            "label": "Today",
-            "datetime": "2026",
-            "title": "Still listening",
-            "text": "The work continues with clearer choices, better information, and a lighter touch."
+            "label": "1998",
+            "datetime": "1998",
+            "title": "The next generation joins",
+            "text": "The founder's daughter comes aboard and helps the brand grow beyond one shop."
           }
         }
       },
@@ -117,26 +70,104 @@
         "block-4"
       ]
     },
+    "tide-standards": {
+      "type": "blko-tide-standards",
+      "settings": {
+        "eyebrow": "Our commitments",
+        "heading": "Good for skin. Kind to the sea."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "standard",
+          "settings": {
+            "text": "Independent certifications back up both claims on every product."
+          }
+        },
+        "block-2": {
+          "type": "standard",
+          "settings": {
+            "number": "02",
+            "title": "Climate and ocean responsible",
+            "text": "We offset our carbon footprint and fund a coastal restoration partner."
+          }
+        },
+        "block-3": {
+          "type": "standard",
+          "settings": {
+            "number": "03",
+            "title": "Packaging progress",
+            "text": "Glass and post-consumer plastic, with a studio take-back program for empties."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "content-values": {
+      "type": "blko-content-values",
+      "settings": {
+        "kicker": "How we work",
+        "heading": "Three promises behind every bottle"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Formulated to work",
+            "text": "Every formula is tested for results as well as safety."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Honest about ingredients",
+            "text": "We publish full ingredient lists and explain what each does."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Respect for the sea",
+            "text": "We harvest slowly and give money back to coastal care."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
     "content-press-quotes": {
       "type": "blko-content-press-quotes",
-      "settings": {},
+      "settings": {
+        "kicker": "In the news"
+      },
       "blocks": {
         "block-1": {
           "type": "quote",
-          "settings": {}
+          "settings": {
+            "quote": "“A seaweed line that actually delivers on moisture.”",
+            "source": "— The Wellness Review"
+          }
         },
         "block-2": {
           "type": "quote",
           "settings": {
-            "quote": "“A practical answer to the overcomplicated routine.”",
-            "source": "— The Daily Edit"
+            "quote": "“Body care that feels like a day at the beach.”",
+            "source": "— Coast Living"
           }
         },
         "block-3": {
           "type": "quote",
           "settings": {
-            "quote": "“The textures have a distinctly lived-in ease.”",
-            "source": "— Studio Notes"
+            "quote": "“A mother-daughter story that holds up on the shelf.”",
+            "source": "— Daily Beauty"
           }
         }
       },
@@ -148,16 +179,19 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [
     "content-about-hero",
     "content-mission",
-    "content-values",
-    "tide-standards",
-    "content-founder-note",
     "content-story-timeline",
+    "tide-standards",
+    "content-values",
     "content-press-quotes",
     "newsletter"
   ]

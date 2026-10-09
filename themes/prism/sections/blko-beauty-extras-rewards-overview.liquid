@@ -332,6 +332,8 @@
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -341,25 +343,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "Points program"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "more color, more rewards."
+      "default": "Shop, earn, get hair care for free."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the formulas you love, and unlock a little more from every wash."
+      "default": "Join at no cost, start with a bonus, and turn every order, review and referral into points you can spend on vouchers and products."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "Join now"
     },
     {
       "type": "image_picker",
@@ -370,31 +372,31 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Hair accessories flat lay"
+      "default": "Member holding a reward box"
     },
     {
       "type": "text",
       "id": "earn_eyebrow",
       "label": "Earn eyebrow",
-      "default": "How it works"
+      "default": "Three simple steps"
     },
     {
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "Join, earn, redeem."
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "Levels"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "more color, more perks."
+      "default": "Climb a level, earn faster."
     }
   ],
   "blocks": [
@@ -455,42 +457,48 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Create an account and 200 points land in your balance straight away."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
             "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "Points per dollar rise with your level, and bonus actions add more."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "title": "Vivid",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Redeem",
+            "text": "Swap points for money off a basket or a free full-size product."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Electric",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Fresh",
+            "points": "5 points per $1",
+            "perks": "Everyone starts here · birthday points"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Bold",
+            "points": "7 points per $1",
+            "perks": "Faster earning · members-only offers"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Icon",
+            "points": "10 points per $1",
+            "perks": "Spend $400 in 12 months · early access to sales"
           }
         }
       ]

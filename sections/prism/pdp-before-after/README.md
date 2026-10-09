@@ -29,13 +29,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | The effect |
-| `heading` | text | Heading | color that holds on. |
-| `text` | textarea | Text | Vivid shades that stay true wash after wash, with shine you can see. |
-| `stat_1_value` | text | Stat 1 value | 94% |
-| `stat_1_label` | text | Stat 1 label | said color lasted longer |
+| `eyebrow` | text | Eyebrow | Tested results |
+| `heading` | text | Heading | Roots that look washed, in a minute. |
+| `text` | textarea | Text | In a four-week consumer test of 60 volunteers, most said roots looked cleaner an |
+| `stat_1_value` | text | Stat 1 value | 96% |
+| `stat_1_label` | text | Stat 1 label | said oil was visibly reduced* |
 | `stat_2_value` | text | Stat 2 value | 91% |
-| `stat_2_label` | text | Stat 2 label | said hair felt softer |
+| `stat_2_label` | text | Stat 2 label | saw no white residue on dark hair* |
 | `after_image` | image_picker | After image |  |
 | `after_image_alt` | text | After image alt text | Vivid hair color after treatment |
 | `before_image` | image_picker | Before image |  |

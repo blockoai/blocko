@@ -1,6 +1,6 @@
 # Scent story
 
-Graphic scent story with small notes and lifestyle image.
+Scent index with place stories and top, heart and base notes.
 
 - Category: about
 - Kind: section

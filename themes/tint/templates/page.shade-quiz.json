@@ -2,20 +2,35 @@
   "sections": {
     "page-header": {
       "type": "blko-page-header",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shade finder",
+        "heading": "Match your shade your way.",
+        "text": "Take the guided quiz, tell us a shade you already wear, or compare against another brand. Either way you end with a short list."
+      }
     },
     "beauty-extras-shade-quiz": {
       "type": "blko-beauty-extras-shade-quiz",
-      "settings": {},
+      "settings": {
+        "eyebrow_1": "Question one of three",
+        "heading_1": "How deep is your skin?",
+        "text_1": "Think about your face without makeup on, in daylight, away from tanning.",
+        "eyebrow_2": "Question two of three",
+        "heading_2": "What undertone shows through?",
+        "eyebrow_3": "Question three of three",
+        "heading_3": "Which finish do you reach for?",
+        "finish_label": "Show my shades"
+      },
       "blocks": {
         "block-1": {
           "type": "tone",
-          "settings": {}
+          "settings": {
+            "label": "Fair"
+          }
         },
         "block-2": {
           "type": "tone",
           "settings": {
-            "label": "Light to medium",
+            "label": "Light",
             "tone": "tone-1",
             "selected": true
           }
@@ -23,20 +38,21 @@
         "block-3": {
           "type": "tone",
           "settings": {
-            "label": "Medium to deep",
+            "label": "Tan",
             "tone": "tone-2"
           }
         },
         "block-4": {
           "type": "tone",
           "settings": {
-            "label": "Deep to rich",
+            "label": "Deep",
             "tone": "tone-3"
           }
         },
         "block-5": {
           "type": "undertone",
           "settings": {
+            "hint": "Pink or red shows through; silver suits you",
             "selected": true
           }
         },
@@ -44,36 +60,43 @@
           "type": "undertone",
           "settings": {
             "label": "Neutral",
-            "hint": "A balanced mix"
+            "hint": "Neither pink nor yellow stands out"
           }
         },
         "block-7": {
           "type": "undertone",
           "settings": {
             "label": "Warm",
-            "hint": "Golden or peach tones"
+            "hint": "Peach or golden; gold looks best"
           }
         },
         "block-8": {
-          "type": "coverage",
+          "type": "undertone",
           "settings": {
-            "label": "Sheer",
-            "hint": "Skin, but brighter",
-            "selected": true
+            "label": "Olive",
+            "hint": "A green-gold cast that tans easily"
           }
         },
         "block-9": {
           "type": "coverage",
           "settings": {
-            "label": "Light",
-            "hint": "Easy everyday polish"
+            "label": "Dewy",
+            "hint": "Fresh, lit-from-within skin",
+            "selected": true
           }
         },
         "block-10": {
           "type": "coverage",
           "settings": {
-            "label": "Medium",
-            "hint": "Buildable confidence"
+            "label": "Natural",
+            "hint": "Skin-like, neither shiny nor flat"
+          }
+        },
+        "block-11": {
+          "type": "coverage",
+          "settings": {
+            "label": "Soft matte",
+            "hint": "A calm, blurred finish"
           }
         }
       },
@@ -87,12 +110,20 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11"
       ]
     },
     "beauty-extras-shade-result": {
       "type": "blko-beauty-extras-shade-result",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Your best bets",
+        "heading": "Start with these two shades.",
+        "text": "Swatch both along your jaw. Whichever disappears wins; swaps on shades are free for 30 days.",
+        "button_label": "Add to bag",
+        "card_eyebrow": "Bright Cream Concealer",
+        "card_detail": "Full or mini size"
+      },
       "blocks": {
         "block-1": {
           "type": "swatch",
@@ -111,24 +142,32 @@
         "block-2"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "shade-faq": {
+      "type": "blko-shade-faq",
+      "settings": {
+        "eyebrow": "Finder questions",
+        "heading": "Three ways to get matched"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "I already wear one of your shades. Now what?",
+            "text": "Enter it, and the finder maps it to the closest tones in every other formula."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Can I compare to a different brand?",
+            "text": "Yes. Pick the brand and product you use, and we translate its shade to ours."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "What if I still need help?",
+            "text": "Send a bare-face selfie in daylight to the team and a human will reply with a recommendation."
           }
         }
       },
@@ -140,14 +179,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [
     "page-header",
     "beauty-extras-shade-quiz",
     "beauty-extras-shade-result",
-    "faq",
+    "shade-faq",
     "newsletter"
   ]
 }

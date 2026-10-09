@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | How we work |
-| `heading` | text | Heading | Less fade. More color. |
+| `kicker` | text | Kicker | How we are built |
+| `heading` | text | Heading | Four ideas behind every bottle |
 
 ## Blocks
 

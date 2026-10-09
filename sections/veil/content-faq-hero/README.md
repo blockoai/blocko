@@ -29,8 +29,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `kicker` | text | Kicker | Help center |
-| `heading` | text | Heading | Answers, without the runaround. |
-| `text` | textarea | Text | Search a topic or browse the questions customers ask most often. |
+| `heading` | text | Heading | Answers to the things people ask first. |
+| `text` | textarea | Text | Search by topic or browse orders, products and the members club. |
 
 ## Blocks
 

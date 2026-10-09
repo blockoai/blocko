@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by category |
-| `heading` | text | Heading | Everything on the shelf. |
-| `text` | textarea | Text | Browse skin, makeup, hair, body and fragrance from brands we have vetted. |
+| `eyebrow` | text | Eyebrow | All collections |
+| `heading` | text | Heading | Browse by department, concern or brand |
+| `text` | textarea | Text | Departments, skin concerns, key ingredients and over two hundred brands, all fil |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

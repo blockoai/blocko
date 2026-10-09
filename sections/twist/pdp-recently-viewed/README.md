@@ -30,7 +30,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `collection` | collection | Fallback collection |  |
-| `eyebrow` | text | Eyebrow | you may also like |
+| `eyebrow` | text | Eyebrow | pick up where you left off |
 | `heading` | text | Heading | recently viewed |
 
 ## Blocks

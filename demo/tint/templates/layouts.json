@@ -60,7 +60,7 @@
       "page-header",
       "beauty-extras-shade-quiz",
       "beauty-extras-shade-result",
-      "faq",
+      "shade-faq",
       "newsletter"
     ]
   },
@@ -99,19 +99,12 @@
     ]
   },
   {
-    "page": "rewards",
-    "title": "Rewards",
-    "sectionIds": [
-      "beauty-extras-rewards-overview",
-      "faq",
-      "newsletter"
-    ]
-  },
-  {
     "page": "subscriptions",
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
+      "subscription-perks",
+      "subscription-faq",
       "product-recommendations",
       "newsletter"
     ]
@@ -161,11 +154,10 @@
     "title": "Our story",
     "sectionIds": [
       "content-about-hero",
-      "content-mission",
-      "content-values",
       "content-founder-note",
-      "content-story-timeline",
-      "content-press-quotes",
+      "content-mission",
+      "about-pillars",
+      "about-clean",
       "newsletter"
     ]
   },
@@ -176,8 +168,7 @@
       "content-contact-hero",
       "content-contact-channels",
       "content-contact-form",
-      "content-contact-hours",
-      "content-contact-map"
+      "content-contact-hours"
     ]
   },
   {
@@ -202,10 +193,9 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
-      "content-landing-routine",
-      "tabbed-product-grid",
-      "content-landing-proof",
+      "landing-reasons",
+      "tint-reels",
+      "landing-picks",
       "newsletter"
     ]
   },
@@ -257,15 +247,12 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "hero-campaign",
-      "tint-categories",
-      "message-band",
       "tabbed-product-grid",
+      "tint-categories",
+      "home-launch",
       "tint-shades",
+      "home-quiz",
       "tint-statement",
-      "commitments",
-      "testimonial-slider",
-      "tint-reels",
-      "press-slider",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -296,12 +283,20 @@
     "title": "Glow Skin Tint SPF 30",
     "sectionIds": [
       "pdp-product-main",
+      "pdp-trust",
+      "pdp-sets",
+      "pdp-actives",
       "pdp-before-after",
+      "pdp-awards",
+      "pdp-shade-compare",
+      "pdp-claims",
+      "pdp-how-to",
       "pdp-complete-routine",
+      "pdp-founder",
+      "pdp-faq",
       "product-recommendations",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-recently-viewed"
     ]
   },
   {

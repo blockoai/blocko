@@ -33,7 +33,7 @@ _No settings._
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `text` | text | Text | REEF-SAFE SUN CARE |
+| `text` | text | Text | VEGAN AND CRUELTY-FREE |
 
 ## Dependencies
 

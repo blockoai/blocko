@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person enjoying a simple makeup routine |
-| `kicker` | text | Kicker | A useful kind of beauty |
-| `heading` | text | Heading | Good formulas should make getting ready feel easier. |
-| `text` | textarea | Text | Our work starts with the small, practical moments: a tint that settles in, a cre |
+| `image_alt` | text | Image alt text | Close-up of cream cheek colour on a fingertip |
+| `kicker` | text | Kicker | Where we started |
+| `heading` | text | Heading | Beauty is built by the people who use it. |
+| `text` | textarea | Text | What began in 2014 as an editorial site grew into a shop because readers kept as |
 
 ## Blocks
 

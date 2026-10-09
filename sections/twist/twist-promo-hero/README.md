@@ -28,14 +28,14 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `burst` | text | Burst | limited edition |
+| `burst` | text | Burst | 35% off |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Person smiling with bouncy curls |
 | `tag` | text | Tag | just in |
-| `heading` | text | Heading | holiday collab is here |
-| `text` | textarea | Text | Giftable sets, sweet scents and playful hair tools for everyone on your list. |
+| `heading` | text | Heading | the winter gift drop is live |
+| `text` | textarea | Text | Scrunchie packs, scented mists and cozy sleep sets, wrapped up in sets you can h |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | shop the collab |
+| `button_label` | text | Button label | shop the drop |
 
 ## Blocks
 

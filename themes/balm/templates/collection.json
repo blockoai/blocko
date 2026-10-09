@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by category",
+        "heading": "Find your first stick."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "New",
+            "url": "#new"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Best sellers",
+            "url": "#best"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Cheeks",
-            "url": "#lips"
+            "label": "Makeup",
+            "url": "#makeup"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Sculpt",
-            "url": "#care"
+            "label": "Skincare",
+            "url": "#skincare"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Accessories",
+            "url": "#accessories"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Bundles",
+            "url": "#bundles"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Sculpt ritual",
-            "label": "Sculpt"
+            "url": "#makeup",
+            "image_alt": "Cream sticks in a row",
+            "label": "Makeup"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#bundles",
+            "image_alt": "Gift set laid out on linen",
+            "label": "Bundles"
           }
         }
       },
@@ -48,16 +72,80 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "home-collection-collection-toolbar": {
       "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Shop all",
+        "filter_eyebrow": "Narrow the shelf",
+        "filter_heading": "Filter and sort"
+      }
     },
     "home-collection-collection-grid": {
       "type": "blko-home-collection-collection-grid",
-      "settings": {}
+      "settings": {
+        "promo_image_alt": "Face with an even, glowing complexion",
+        "promo_eyebrow": "Shade not obvious?",
+        "promo_heading": "Take the two-minute shade quiz.",
+        "promo_label": "Start the quiz"
+      }
+    },
+    "collection-whats-new": {
+      "type": "blko-collection-whats-new",
+      "settings": {
+        "kicker": "What is new",
+        "heading": "Offers and drops this week"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Free gift",
+            "text": "Add $100 to your bag and a cleansing cream sample is on us."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Gift guide",
+            "text": "Sets sorted by price ceiling, from stocking fillers to a full regimen."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Just dropped",
+            "text": "New shades for the face sticks, ready to ship."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Rewards",
+            "text": "Join free and collect points on every order."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "collection-recently-viewed": {
+      "type": "blko-collection-recently-viewed",
+      "settings": {
+        "eyebrow": "Pick up where you left off",
+        "heading": "Recently viewed"
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -65,13 +153,19 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Fifteen percent off a first purchase",
+        "heading": "Hear about shade drops first",
+        "message": "Launch alerts, member perks and the odd application guide."
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
     "home-collection-collection-toolbar",
     "home-collection-collection-grid",
+    "collection-whats-new",
+    "collection-recently-viewed",
     "home-collection-quick-view-modal",
     "newsletter"
   ]

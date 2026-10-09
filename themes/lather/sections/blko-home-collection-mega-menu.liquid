@@ -177,13 +177,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Shop by scent"
+      "default": "Shop by aisle"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Find your scent."
+      "default": "Pick a lane and go."
     }
   ],
   "blocks": [
@@ -241,39 +241,72 @@
       "blocks": [
         {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "url": "#bar-soap"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Body wash",
+            "url": "#body-wash"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Deodorant",
+            "url": "#deodorant"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Hair care",
+            "url": "#hair"
+          }
         },
         {
           "type": "link",
           "settings": {
             "label": "Shave",
-            "url": "#eyes"
+            "url": "#shave"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Beard",
-            "url": "#lips"
+            "label": "Cologne",
+            "url": "#cologne"
           }
         },
         {
           "type": "link",
           "settings": {
-            "label": "Body care",
-            "url": "#care"
+            "label": "Bundles",
+            "url": "#bundles"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Accessories",
+            "url": "#accessories"
           }
         },
         {
           "type": "tile",
-          "settings": {}
+          "settings": {
+            "url": "#bundles",
+            "image_alt": "Six bars of soap lined up on a wooden shelf",
+            "label": "Bundles"
+          }
         },
         {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Fresh & Clean",
-            "label": "Body care"
+            "url": "#bar-soap",
+            "image_alt": "A stack of plain bar soaps"
           }
         }
       ]

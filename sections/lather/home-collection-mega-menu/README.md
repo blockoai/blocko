@@ -29,8 +29,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `trigger_href` | text | Header link URL that opens this menu | #shop |
-| `eyebrow` | text | Eyebrow | Shop by scent |
-| `heading` | text | Heading | Find your scent. |
+| `eyebrow` | text | Eyebrow | Shop by aisle |
+| `heading` | text | Heading | Pick a lane and go. |
 
 ## Blocks
 

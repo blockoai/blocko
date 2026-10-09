@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help",
+        "heading": "Answers about products, orders and returns.",
+        "text": "Browse by topic or search for a keyword."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “returns” or “reef”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,65 +21,107 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "product",
+            "label": "Product"
           }
         },
         "block-3": {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "orders",
+            "label": "Orders"
           }
         },
         "block-4": {
+          "type": "tab",
+          "settings": {
+            "key": "shipping",
+            "label": "Shipping + billing"
+          }
+        },
+        "block-5": {
           "type": "tab",
           "settings": {
             "key": "returns",
             "label": "Returns"
           }
         },
-        "block-5": {
-          "type": "question",
-          "settings": {}
-        },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "product",
+            "question": "Are your sunscreens reef-friendly?",
+            "answer": "They avoid the filters banned in Hawaii and Key West. Always follow local rules where you swim."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my scent?",
-            "answer": "Begin with our best sellers, then compare notes from coconut to vanilla. Our team can offer general guidance."
+            "category": "product",
+            "question": "How long do products last?",
+            "answer": "About a year after opening and up to two years unopened. Check the jar for a small open-lid symbol."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "category": "product",
+            "question": "My butter went hard. Is it spoiled?",
+            "answer": "No. Coconut oil firms up when it is cool. Warm the jar in your hands or leave it in a sunny spot for a few minutes."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "question": "Can I use two promo codes?",
+            "answer": "Only one code applies to each order. Gift cards can be used on top of a code."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
+            "question": "Can I change or cancel an order?",
+            "answer": "Write to us quickly; once an order is packed it cannot be edited."
+          }
+        },
+        "block-11": {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "How much is shipping?",
+            "answer": "US orders over $39 ship free. Standard delivery takes three to seven business days and expedited takes about three."
+          }
+        },
+        "block-12": {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "Where do you ship?",
+            "answer": "We ship across the United States and Canada. Shoppers elsewhere can find us at selected retailers."
+          }
+        },
+        "block-13": {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "Do you sell gift cards?",
+            "answer": "Yes, digital gift cards from $20 to $100 arrive by email within minutes."
+          }
+        },
+        "block-14": {
+          "type": "question",
+          "settings": {
             "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "question": "What is your return window?",
+            "answer": "You have 60 days. Use the prepaid label in your confirmation email and expect a refund within four business days of arrival."
+          }
+        },
+        "block-15": {
+          "type": "question",
+          "settings": {
+            "category": "returns",
+            "question": "What can I not return?",
+            "answer": "Swag, digital gift cards and final-sale items cannot be returned. Damaged items are replaced."
           }
         }
       },
@@ -87,12 +135,21 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13",
+        "block-14",
+        "block-15"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [

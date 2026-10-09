@@ -186,7 +186,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “shipping” or “scent”"
+      "default": "Try “shipping” or “subscription”"
     },
     {
       "type": "text",
@@ -257,8 +257,8 @@
         {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "shipping",
+            "label": "Shipping + returns"
           }
         },
         {
@@ -271,51 +271,64 @@
         {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "programs",
+            "label": "Subscriptions + rewards"
           }
         },
         {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "category": "shipping",
+            "question": "What does shipping cost?",
+            "answer": "Standard shipping is free over $50 within the United States and a flat $7.95 below that. Two-day delivery is available if you order before 10 AM Pacific."
+          }
         },
         {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "shipping",
+            "question": "How long does a return window last?",
+            "answer": "Thirty days from the date your order ships. Send it back for a refund or a gift card through our returns portal."
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category": "shipping",
+            "question": "Do you ship outside the US?",
+            "answer": "Yes, to Canada and many other countries, with duties and taxes either paid at checkout or on delivery."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "products",
-            "question": "How do I find my ritual?",
-            "answer": "Begin with the skin-type quiz, then compare formulas for your routine. Our team can offer general guidance."
+            "question": "Are your products safe in pregnancy?",
+            "answer": "Our formulas contain no retinoids and our maternity routine guide lists gentle picks, but please check with your doctor."
           }
         },
         {
           "type": "question",
           "settings": {
             "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "question": "How do I patch test?",
+            "answer": "Apply a small amount behind your ear or on your inner arm and wait 24 hours before using a new product."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "programs",
+            "question": "How do I manage my subscription?",
+            "answer": "Sign in to your account, open subscriptions and change the product, date or cadence."
           }
         },
         {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "programs",
+            "question": "How do I see my rewards balance?",
+            "answer": "Open the rewards tab after you sign in, or look at the banner in your bag."
           }
         }
       ]

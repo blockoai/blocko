@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by category",
+        "heading": "Start with what your skin needs."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Cleansers",
+            "url": "#cleanse"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#eyes"
+            "label": "Serums + masks",
+            "url": "#treat"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips",
-            "url": "#lips"
+            "label": "Moisturizers",
+            "url": "#moisturize"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Sun care",
-            "url": "#care"
+            "label": "Body care",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Wellness",
+            "url": "#wellness"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Gift sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Body ritual",
-            "label": "Sun care"
+            "url": "#body",
+            "image_alt": "Body oil bottle on a sandy ledge",
+            "label": "Body care"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#treat",
+            "image_alt": "Droplet of clear serum",
+            "label": "Serums"
           }
         }
       },
@@ -48,16 +72,143 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "home-collection-collection-toolbar": {
       "type": "blko-home-collection-collection-toolbar",
-      "settings": {}
+      "settings": {
+        "breadcrumb": "Skin + body care",
+        "filter_eyebrow": "Narrow it down",
+        "filter_heading": "Filter by product type"
+      }
     },
     "home-collection-collection-grid": {
       "type": "blko-home-collection-collection-grid",
-      "settings": {}
+      "settings": {
+        "promo_image_alt": "Woman with calm, hydrated skin",
+        "promo_eyebrow": "Not sure what you need?",
+        "promo_heading": "Take the routine quiz.",
+        "promo_label": "Build your routine"
+      }
+    },
+    "collection-quiz": {
+      "type": "blko-collection-quiz",
+      "settings": {
+        "image_alt": "Face and body products arranged by routine step",
+        "eyebrow": "Skin type, concern, scent",
+        "heading": "Let us line up your routine.",
+        "text": "Answer questions about your skin, your climate and your daily stress, and we will sort a morning and evening plan by step.",
+        "button_label": "Start the quiz"
+      }
+    },
+    "collection-routine-guide": {
+      "type": "blko-collection-routine-guide",
+      "settings": {
+        "kicker": "Putting a routine together",
+        "heading": "Five steps, in order"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Cleanse",
+            "text": "Remove oil, sunscreen and the day, with a gel for oily skin or a milk for dry."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Treat",
+            "text": "A serum with seaweed and hyaluronic acid targets dryness, texture or fine lines."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Moisturize",
+            "text": "Seal in water with a cream matched to your skin type."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Protect",
+            "text": "Finish mornings with a broad-spectrum mineral sunscreen."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Mask weekly",
+            "text": "A treatment mask once or twice a week gives skin an extra reset."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "collection-faq": {
+      "type": "blko-collection-faq",
+      "settings": {
+        "eyebrow": "Skin and body questions",
+        "heading": "Before you pick"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "How is body care different from face care?",
+            "text": "Body skin is thicker and loses moisture faster, so body formulas lean on richer oils and butters, while face products use lighter textures and concentrated actives."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Which products suit sensitive skin?",
+            "text": "Choose the fragrance-free versions of the milk cleanser, hyaluronic serum, barrier cream and body butter, and patch-test any new product first."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "How often should I exfoliate?",
+            "text": "Once or twice a week is enough for most people. Use the salt scrub on the body and the overnight resurfacing serum on the face, never on the same night."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "Are the formulas vegan and cruelty-free?",
+            "text": "Yes. Nothing contains animal ingredients and nothing is tested on animals at any stage."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "label": "How do I choose by skin type?",
+            "text": "Oily and combination skin like gels and water creams, dry skin prefers milks and rich creams, and sensitive skin does best with fragrance-free formulas."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -65,13 +216,20 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
     "home-collection-collection-toolbar",
     "home-collection-collection-grid",
+    "collection-quiz",
+    "collection-routine-guide",
+    "collection-faq",
     "home-collection-quick-view-modal",
     "newsletter"
   ]

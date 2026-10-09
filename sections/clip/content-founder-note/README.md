@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | A note from our founder |
-| `quote` | text | Quote | “The best accessory is the one you reach for again and again, on a busy morning, |
-| `note` | textarea | Note | Founder name is a placeholder for the person shaping your brand’s point of view. |
-| `name` | text | Name | Founder name |
-| `role` | text | Role | Founder |
+| `kicker` | text | Kicker | From the founders |
+| `quote` | text | Quote | “We wanted accessories that felt like a treat, and hair care that smelled like o |
+| `note` | textarea | Note | A short note from the two relatives behind the label about how a hobby became a  |
+| `name` | text | Name | Founding duo |
+| `role` | text | Role | Co-founders |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Founder portrait placeholder |
+| `image_alt` | text | Image alt text | Co-founders laughing beside a rack of clips |
 
 ## Blocks
 

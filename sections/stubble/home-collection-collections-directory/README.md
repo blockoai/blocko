@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `collections_per_page` | range | Collections per page | 6 |
-| `eyebrow` | text | Eyebrow | Shop by collection |
-| `heading` | text | Heading | Find your everyday kit. |
-| `text` | textarea | Text | Discover shave, body, face and hair essentials made to fit into real life. |
+| `eyebrow` | text | Eyebrow | Departments |
+| `heading` | text | Heading | Shave, skin, body and hair |
+| `text` | textarea | Text | Start with a razor system or shop by routine step. Every department shows price  |
 | `link_label` | text | Link label | Explore |
 | `pager_label` | text | Pager label | Pagination |
 | `previous_label` | text | Previous label | Previous |

@@ -28,10 +28,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `color_scheme` | color_scheme | Color scheme | scheme-2 |
-| `eyebrow` | text | Eyebrow | From our founder |
-| `quote` | text | Quote | “I never wanted a face full of product. I wanted five easy things that make skin |
-| `name` | text | Name | Founder name |
-| `role` | text | Role | Founder and makeup artist |
+| `eyebrow` | text | Eyebrow | A word from the founder |
+| `quote` | text | Quote | “Clean should not mean weak. I wanted formulas that work on every skin tone and  |
+| `name` | text | Name | Our founder |
+| `role` | text | Role | Makeup artist |
 
 ## Blocks
 

@@ -29,11 +29,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `eyebrow` | text | Eyebrow | Your bag |
-| `heading` | text | Heading | Your bag is waiting. |
-| `text` | textarea | Text | Your gear is ready whenever you are. |
-| `button_label` | text | Button label | Continue shopping |
+| `heading` | text | Heading | Your cart is empty. |
+| `text` | textarea | Text | Start with a trial set, or browse every razor and refill. |
+| `button_label` | text | Button label | Browse razors |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Shaving tools on a shelf |
+| `image_alt` | text | Image alt text | Razor handles on a tray |
 
 ## Blocks
 

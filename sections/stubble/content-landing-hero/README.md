@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Man with a fresh shave |
-| `kicker` | text | Kicker | The everyday kit |
-| `heading` | text | Heading | Gear that keeps up. |
-| `text` | textarea | Text | Comfortable, dependable essentials made for a face that moves through a full day |
+| `image_alt` | text | Image alt text | Man shaving the side of his neck |
+| `kicker` | text | Kicker | Starter set · $10 |
+| `heading` | text | Heading | Try the shave before you commit. |
+| `text` | textarea | Text | A handle, a cartridge, a travel gel and a cover for a trial price. Not for you?  |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your kit |
+| `button_label` | text | Button label | Build my starter set |
 
 ## Blocks
 

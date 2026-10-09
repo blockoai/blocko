@@ -32,16 +32,16 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
-| `button_label` | text | Button label | Add to bag |
+| `button_label` | text | Button label | Add to cart |
 | `one_time_label` | text | One time label | One-time purchase |
 | `breadcrumb_shop` | text | Breadcrumb shop | Shop |
 | `breadcrumb_category_url` | url | Breadcrumb category url |  |
 | `breadcrumb_category` | text | Breadcrumb category | Shave |
-| `price_note` | text | Price note | 1 fl oz / 30 ml |
+| `price_note` | text | Price note | Handle plus cartridge |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure? Build a starter set. |
+| `shade_help_label` | text | Shade help label | Which razor line suits you? Compare below. |
 | `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Free delivery on orders over $50 · Easy returns within 30 days |
+| `ship_note` | text | Ship note | Free shipping over $30 · 30-day money-back guarantee |
 
 ## Blocks
 

@@ -30,9 +30,9 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
 | `collection` | collection | Fallback collection |  |
-| `eyebrow` | text | Eyebrow | Pack it your way |
-| `heading` | text | Heading | Complete the getaway |
-| `text` | text | Text | Three sunny essentials that play well together. |
+| `eyebrow` | text | Eyebrow | Pairs well with |
+| `heading` | text | Heading | Protect, top up, recover |
+| `text` | text | Text | Add a setting mist for touch-ups and a rich butter for the evening. |
 
 ## Blocks
 

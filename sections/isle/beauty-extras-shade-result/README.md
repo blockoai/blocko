@@ -30,12 +30,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `collection` | collection | Recommended tints |  |
 | `add_label` | text | Add label | Add to bag |
-| `eyebrow` | text | Eyebrow | Your starting point |
-| `heading` | text | Heading | Two shades to try first. |
-| `text` | textarea | Text | Based on your selections, these flexible shades are a beautiful place to start.  |
-| `button_label` | text | Button label | Add suggested tint |
-| `card_eyebrow` | text | Card eyebrow | Silky glow |
-| `card_detail` | text | Card detail | Soft finish · SPF 30 |
+| `eyebrow` | text | Eyebrow | Your picks |
+| `heading` | text | Heading | Start with these two finishes. |
+| `text` | textarea | Text | Both are broad spectrum. Rose glow is lighter on shimmer, Gold glow carries more |
+| `button_label` | text | Button label | Add my pick to bag |
+| `card_eyebrow` | text | Card eyebrow | Body sunscreen mist |
+| `card_detail` | text | Card detail | Water resistant · SPF 42-50 |
 
 ## Blocks
 

@@ -31,11 +31,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `product` | product | Product (optional, store-wide reviews when empty) |  |
-| `eyebrow` | text | Eyebrow | from the color club |
-| `heading` | text | Heading | real hair, real color. |
-| `average` | text | Average | 4.8 |
-| `stars_label` | text | Stars label | Five out of five stars |
-| `count_text` | text | Count text | From 2,483 verified reviews |
+| `eyebrow` | text | Eyebrow | Reviews |
+| `heading` | text | Heading | Twenty thousand reviews, sorted by line. |
+| `average` | text | Average | 4.6 |
+| `stars_label` | text | Stars label | Four and a half out of five stars |
+| `count_text` | text | Count text | From 20,414 verified reviews |
 
 ## Blocks
 

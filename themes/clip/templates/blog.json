@@ -2,15 +2,29 @@
   "sections": {
     "search-blog-journal-hero": {
       "type": "blko-search-blog-journal-hero",
-      "settings": {}
+      "settings": {
+        "crumb": "Lookbooks",
+        "eyebrow": "Lookbooks + community",
+        "heading": "Style stories, ambassador chats and pop-up recaps.",
+        "text": "Seasonal lookbooks with a shop-the-look strip, short interviews with the people who wear the clips and notes from our events.",
+        "image_alt": "Friends in matching pastel clips on a sofa"
+      }
     },
     "search-blog-featured-post": {
       "type": "blko-search-blog-featured-post",
-      "settings": {}
+      "settings": {
+        "eyebrow_prefix": "Latest",
+        "reading_time": "3 minutes",
+        "button_label": "See the look"
+      }
     },
     "search-blog-article-grid": {
       "type": "blko-search-blog-article-grid",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Browse everything",
+        "heading": "Lookbooks, chats and events",
+        "link_label": "Open"
+      }
     },
     "search-blog-pagination": {
       "type": "blko-search-blog-pagination",
@@ -18,7 +32,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [

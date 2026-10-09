@@ -2,11 +2,23 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build your look",
+        "heading": "Correct, conceal, set.",
+        "text": "Choose a corrector, a concealer and a powder, and see the total change as you pick.",
+        "step_text": "A shade-flexible essential for this step.",
+        "summary_eyebrow": "Your look",
+        "add_label": "Add the look to bag",
+        "pick_label": "Everyday pick",
+        "alternate_label": "Swap in"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add a finishing touch"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -27,7 +39,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Get launches before anyone else",
+        "message": "Early shade drops, offers and quick looks. One email a week at most."
+      }
     }
   },
   "order": [

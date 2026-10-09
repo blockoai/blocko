@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "Man shaving the side of his neck",
+        "kicker": "Starter set · $10",
+        "heading": "Try the shave before you commit.",
+        "text": "A handle, a cartridge, a travel gel and a cover for a trial price. Not for you? Return it for a full refund within 30 days.",
+        "button_label": "Build my starter set"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-promises": {
+      "type": "blko-landing-promises",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "$10 TRIAL PRICE"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "DESIGNED FOR QUALITY"
+            "text": "FREE SHIPPING"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "SHIPS TO YOUR DOOR"
+            "text": "30-DAY REFUND"
           }
         }
       },
@@ -33,28 +41,36 @@
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "What is in the box",
+        "heading": "Everything for the first shave"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Razor handle on a tray",
+            "label": "Handle",
+            "title": "Your razor, your colour",
+            "text": "Pick Razor Pro or Razor Classic and a handle colour."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Weighted razor",
-            "label": "Step two",
-            "title": "Add a weighted razor",
-            "text": "Glide with the grain, one pass at a time."
+            "image_alt": "Cartridges in a row",
+            "label": "Cartridge",
+            "title": "One fresh cartridge",
+            "text": "Ready to click on. Add refills at 5% off if you subscribe."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Shaving tools on a shelf",
-            "label": "Step three",
-            "title": "Finish with a balm",
-            "text": "A little balm is enough to calm your skin."
+            "image_alt": "Foam on a freshly lathered neck",
+            "label": "Gel + cover",
+            "title": "Travel gel and a blade cover",
+            "text": "A small gel to try the lather, and a cover that keeps the blades safe in a bag."
           }
         }
       },
@@ -64,19 +80,24 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "landing-picks": {
+      "type": "blko-landing-picks",
+      "settings": {
+        "eyebrow": "Add refills",
+        "heading": "Round out the first order"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
-          "settings": {}
+          "settings": {
+            "label": "Refills"
+          }
         },
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "Prep + after"
           }
         }
       },
@@ -87,24 +108,31 @@
     },
     "content-landing-proof": {
       "type": "blko-content-landing-proof",
-      "settings": {},
+      "settings": {
+        "kicker": "Why people switch",
+        "quote": "“Cheaper than my old cartridges and noticeably closer.”",
+        "author": "— Customer review"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "title": "Up to 21",
+            "text": "shaves per Pro cartridge"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "title": "$10",
+            "text": "trial price for the set"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "title": "30 days",
+            "text": "to change your mind"
           }
         }
       },
@@ -114,55 +142,96 @@
         "block-3"
       ]
     },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
+    "landing-compare": {
+      "type": "blko-landing-compare",
+      "settings": {
+        "kicker": "Worth the upgrade?",
+        "heading": "Razor Pro or Razor Classic"
+      },
       "blocks": {
         "block-1": {
-          "type": "category",
-          "settings": {}
+          "type": "value",
+          "settings": {
+            "number": "A",
+            "title": "Razor Pro",
+            "text": "Five blades, a pivoting head and a weighted metal handle."
+          }
         },
         "block-2": {
-          "type": "category",
+          "type": "value",
           "settings": {
-            "title": "Face",
-            "url": "#eyes"
+            "number": "B",
+            "title": "Razor Classic",
+            "text": "Four blades and a light handle at a lower price."
           }
         },
         "block-3": {
-          "type": "category",
+          "type": "value",
           "settings": {
-            "title": "Hair",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Body",
-            "url": "#care"
+            "number": "C",
+            "title": "Not sure?",
+            "text": "Start with Classic. Moving to Pro later only means new refills."
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2",
-        "block-3",
-        "block-4"
+        "block-3"
+      ]
+    },
+    "landing-faq": {
+      "type": "blko-landing-faq",
+      "settings": {
+        "eyebrow": "Trial questions",
+        "heading": "Before you try it"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Why a new razor at all?",
+            "text": "A better-fitting head and a sharper cartridge make shaving faster and less irritating."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "What keeps the blades sharp?",
+            "text": "A coated edge, a rinse after each use and dry storage on a stand."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Do I have to subscribe?",
+            "text": "No. Refills are optional and the trial ships without a plan."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
+    "landing-promises",
     "content-landing-routine",
-    "tabbed-product-grid",
+    "landing-picks",
     "content-landing-proof",
-    "category-slider",
+    "landing-compare",
+    "landing-faq",
     "newsletter"
   ]
 }

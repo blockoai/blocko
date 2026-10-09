@@ -2,7 +2,12 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Salon + retailer finder",
+        "heading": "Find a stockist near you.",
+        "text": "Choose a country to see salons and retail partners that carry the full range, including the pro-only sizes.",
+        "directions_label": "Get directions"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
@@ -31,29 +36,32 @@
         },
         "block-5": {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Studio Nine Salon",
+            "place": "Brooklyn, NY"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Color Bar",
-            "place": "Toronto, ON"
+            "name": "Copper & Comb",
+            "place": "Austin, TX"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Fringe",
-            "place": "London"
+            "country": "ca",
+            "name": "Oak Street Hair",
+            "place": "Vancouver, BC"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Salon",
-            "place": "Los Angeles, CA"
+            "country": "uk",
+            "name": "The Cut Room",
+            "place": "Leeds"
           }
         }
       },
@@ -70,7 +78,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Take 15% off your opening order",
+        "heading": "Get the drop before it drops",
+        "message": "New launches, member sales and the odd styling trick, sent once a week.",
+        "button_label": "Join"
+      }
     }
   },
   "order": [

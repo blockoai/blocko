@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Contact",
+        "heading": "Write to the right inbox.",
+        "text": "No form here: pick the address that matches your question and we will reply in a couple of days.",
+        "link_label": "Customer care"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,89 +15,31 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "channel",
           "settings": {
-            "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
-            "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "title": "Customer care",
+            "text": "Orders, deliveries and product questions.",
+            "url": "mailto:care@example.com",
+            "link_label": "care@example.com"
           }
         },
-        "block-3": {
+        "block-2": {
           "type": "channel",
           "settings": {
             "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-contact-form": {
-      "type": "blko-content-contact-form",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "topic",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "topic",
-          "settings": {
-            "label": "Product guidance"
+            "title": "Partnerships",
+            "text": "Wholesale and collaboration ideas.",
+            "url": "mailto:partners@example.com",
+            "link_label": "partners@example.com"
           }
         },
         "block-3": {
-          "type": "topic",
+          "type": "channel",
           "settings": {
-            "label": "Press or partnerships"
-          }
-        },
-        "block-4": {
-          "type": "topic",
-          "settings": {
-            "label": "Something else"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "content-contact-hours": {
-      "type": "blko-content-contact-hours",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "hours",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "hours",
-          "settings": {
-            "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
-          }
-        },
-        "block-3": {
-          "type": "hours",
-          "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "icon": "○",
+            "title": "Press + careers",
+            "text": "Review samples, interviews and open roles.",
+            "url": "mailto:press@example.com",
+            "link_label": "press@example.com"
           }
         }
       },
@@ -104,14 +51,18 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Head office",
+        "heading": "Where we work",
+        "text": "Our team sits above the flagship shop. Visits are welcome by appointment only.",
+        "city": "New York, NY",
+        "country": "United States"
+      }
     }
   },
   "order": [
     "content-contact-hero",
     "content-contact-channels",
-    "content-contact-form",
-    "content-contact-hours",
     "content-contact-map"
   ]
 }

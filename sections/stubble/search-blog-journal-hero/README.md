@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
-| `crumb` | text | Crumb | The Field Guide |
-| `eyebrow` | text | Eyebrow | The field guide |
-| `heading` | text | Heading | Straight talk for a better routine. |
-| `text` | text | Text | Ideas, routines, and useful how-tos for shaving and skin care. |
+| `crumb` | text | Crumb | Blog |
+| `eyebrow` | text | Eyebrow | Shave notes |
+| `heading` | text | Heading | How-tos, comparisons and straight talk. |
+| `text` | text | Text | Short guides on shaving, skin and style, with sources where we cite research. |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Man getting ready in the morning light |
+| `image_alt` | text | Image alt text | Man applying shave foam to his neck |
 
 ## Blocks
 

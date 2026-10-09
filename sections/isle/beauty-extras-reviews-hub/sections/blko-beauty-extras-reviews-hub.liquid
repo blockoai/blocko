@@ -361,31 +361,31 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "From the community"
+      "default": "Reviews"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Real rituals, real notes."
+      "default": "What shoppers say after a few weeks."
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.7"
     },
     {
       "type": "text",
       "id": "stars_label",
       "label": "Stars label",
-      "default": "Five out of five stars"
+      "default": "Four and a half out of five stars"
     },
     {
       "type": "text",
       "id": "count_text",
       "label": "Count text",
-      "default": "From 2,483 verified reviews"
+      "default": "From 21,400 verified reviews"
     }
   ],
   "blocks": [
@@ -517,34 +517,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 74
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 16
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 6
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 2
           }
         },
         {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 2
           }
         },
         {
@@ -556,14 +558,14 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Body",
-            "key": "body"
+            "label": "Sun care",
+            "key": "complexion"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Sets",
+            "label": "Body",
             "key": "care"
           }
         },
@@ -575,41 +577,28 @@
           }
         },
         {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
+          "type": "review",
           "settings": {
-            "tags": "care photos"
-          }
-        },
-        {
-          "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
-          "settings": {
-            "tags": "care photos"
+            "tags": "complexion",
+            "title": "Survived a week of snorkeling",
+            "meta": "Fine-mist body sunscreen · Gold glow · Verified buyer"
           }
         },
         {
           "type": "review",
-          "settings": {}
-        },
-        {
-          "type": "review",
           "settings": {
-            "title": "Comfortable through a long day.",
             "tags": "care",
-            "meta": "Verified customer · Sets"
+            "title": "My legs finally feel soft",
+            "meta": "Whipped coconut body butter · Vanilla · Verified buyer"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "The scent range made picking a favorite easy."
+            "tags": "care",
+            "rating": 4,
+            "title": "Great scent, wish the jar were bigger",
+            "meta": "Hydrating gel body wash · Guava · Verified buyer"
           }
         }
       ]

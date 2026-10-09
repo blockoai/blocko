@@ -2,24 +2,38 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe and save",
+        "heading": "Keep your signature scent stocked.",
+        "text": "Choose a refill rhythm for your mist or hair oil and take fifteen percent off every delivery. It renews on its own and you can skip or stop whenever you like.",
+        "shipment_eyebrow": "Next delivery",
+        "shipment_heading": "Arrives on the 4th",
+        "image_alt": "Hair and body mist bottle",
+        "variant_label": "Warm vanilla · 1.8 fl oz",
+        "shipment_note": "$20.40 per delivery, shipping included over $75 with other items.",
+        "frequency_eyebrow": "Deliver every",
+        "frequency_copy": "You are set to refill every two months.",
+        "skip_label": "Skip this delivery",
+        "swap_label": "Switch the scent"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
           "settings": {
-            "selected": true
+            "label": "1 month"
           }
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "2 months",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "3 months"
           }
         }
       },
@@ -29,9 +43,76 @@
         "block-3"
       ]
     },
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "Why subscribe",
+        "heading": "A smaller price for the same spritz"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "Fifteen percent off",
+            "text": "The lower price applies to every delivery, not only the first."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Rhythm to match your bottle",
+            "text": "Mists suit one to three months; hair oil lasts longer, so it ships every two to four."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Skip or stop anytime",
+            "text": "Pause a delivery or cancel from your account with no fee."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Before you subscribe",
+        "heading": "Refill questions"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Which products can I subscribe to?",
+            "text": "The hair and body mist and the finishing oil. Clips, brushes and sets are one-time purchases."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Where do I manage a subscription?",
+            "text": "Open the subscriptions link in the footer or your account to change timing, scent or address."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add one more piece"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -40,8 +121,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New + limited"
           }
         }
       },
@@ -52,11 +133,18 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
+    "subscription-perks",
+    "subscription-faq",
     "product-recommendations",
     "newsletter"
   ]

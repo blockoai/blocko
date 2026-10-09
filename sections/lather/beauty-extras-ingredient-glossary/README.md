@@ -29,19 +29,19 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Formula dictionary |
-| `heading` | text | Heading | Ingredients, explained. |
-| `text` | textarea | Text | Search the ingredients behind a comfortable, considered routine. |
+| `eyebrow` | text | Eyebrow | The no-go list |
+| `heading` | text | Heading | Twelve things we will not use. |
+| `text` | textarea | Text | Each entry says what the ingredient does, where it usually hides and why we leav |
 | `search_label` | text | Search label | Search ingredients |
-| `search_placeholder` | text | Search placeholder | Try “hydration” |
+| `search_placeholder` | text | Search placeholder | Try “paraben” |
 | `note_label` | text | Note label | Read note ↗ |
-| `detail_eyebrow` | text | Detail eyebrow | Ingredient detail |
-| `detail_heading` | text | Detail heading | Aloe leaf juice |
-| `detail_text` | textarea | Detail text | A botanical humectant that gives formulas a cool, soothing feel. It is especiall |
-| `best_for_label` | text | Best for label | Best for |
-| `best_for` | text | Best for | Comfort and hydration |
-| `found_in_label` | text | Found in label | Found in |
-| `found_in` | text | Found in | Bar soap and care |
+| `detail_eyebrow` | text | Detail eyebrow | Why it is out |
+| `detail_heading` | text | Detail heading | Aluminum salts |
+| `detail_text` | textarea | Detail text | Common in antiperspirants, where they block sweat glands. We make deodorant inst |
+| `best_for_label` | text | Best for label | Usually found in |
+| `best_for` | text | Best for | Antiperspirant sticks and sprays |
+| `found_in_label` | text | Found in label | Our replacement |
+| `found_in` | text | Found in | A plant-powder deodorant stick |
 
 ## Blocks
 

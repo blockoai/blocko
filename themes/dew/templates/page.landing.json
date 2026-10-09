@@ -2,26 +2,34 @@
   "sections": {
     "content-landing-hero": {
       "type": "blko-content-landing-hero",
-      "settings": {}
+      "settings": {
+        "image_alt": "A warm cafe table set with lip balms and cups",
+        "kicker": "Pop-up season",
+        "heading": "A winter cafe, open for sipping and sampling.",
+        "text": "Step inside our limited-run pop-up for a lip balm bar, mini facials and first access to the winter shades. Free entry, with a booking recommended.",
+        "button_label": "Reserve a table"
+      }
     },
-    "message-band": {
-      "type": "blko-message-band",
+    "landing-details": {
+      "type": "blko-landing-details",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "THREE WEEKENDS ONLY"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SHORT INGREDIENT LISTS"
+            "text": "SAMPLE CARD TO KEEP"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "MADE FOR EVERY DAY"
+            "text": "WALK-INS WELCOME"
           }
         }
       },
@@ -33,28 +41,36 @@
     },
     "content-landing-routine": {
       "type": "blko-content-landing-routine",
-      "settings": {},
+      "settings": {
+        "kicker": "What is on",
+        "heading": "Three things to do inside"
+      },
       "blocks": {
         "block-1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "image_alt": "Guest trying lip balm scents at a counter",
+            "label": "Counter",
+            "title": "Pick your lip scent",
+            "text": "Smell every flavor, then take a travel tube of your favorite."
+          }
         },
         "block-2": {
           "type": "step",
           "settings": {
-            "image_alt": "Tinted beauty product",
-            "label": "Step two",
-            "title": "Add a sheer tint",
-            "text": "Build coverage only where you want a little more."
+            "image_alt": "Hands receiving a serum treatment",
+            "label": "Studio",
+            "title": "Ten-minute skin reset",
+            "text": "A quick cleanse, essence and serum, led by one of our estheticians."
           }
         },
         "block-3": {
           "type": "step",
           "settings": {
-            "image_alt": "Beauty products on a table",
-            "label": "Step three",
-            "title": "Choose a finishing touch",
-            "text": "A wash of color is enough to make it yours."
+            "image_alt": "Cheek being swatched with cream blush",
+            "label": "Bar",
+            "title": "Try the new shades",
+            "text": "Match a limited blush on your cheek before anyone else can."
           }
         }
       },
@@ -64,47 +80,32 @@
         "block-3"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
+    "landing-faq": {
+      "type": "blko-landing-faq",
+      "settings": {
+        "eyebrow": "Before you come",
+        "heading": "Visiting the pop-up"
       },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "content-landing-proof": {
-      "type": "blko-content-landing-proof",
-      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "point",
-          "settings": {}
+          "type": "question",
+          "settings": {
+            "label": "Do I need to book?",
+            "text": "Booking holds a table, but walk-ins are welcome whenever there is room."
+          }
         },
         "block-2": {
-          "type": "point",
+          "type": "question",
           "settings": {
-            "title": "Easy to explore",
-            "text": "Find guidance when you need it"
+            "label": "How long should I plan to stay?",
+            "text": "Most guests spend forty minutes. The skin reset takes ten of those."
           }
         },
         "block-3": {
-          "type": "point",
+          "type": "question",
           "settings": {
-            "title": "Made for your day",
-            "text": "Comfort first, always"
+            "label": "Is there a sample to take home?",
+            "text": "Yes, every guest leaves with a souvenir card that holds a mini of the newest launch."
           }
         }
       },
@@ -112,57 +113,22 @@
         "block-1",
         "block-2",
         "block-3"
-      ]
-    },
-    "category-slider": {
-      "type": "blko-category-slider",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "category",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "category",
-          "settings": {
-            "title": "Eyes",
-            "url": "#eyes"
-          }
-        },
-        "block-3": {
-          "type": "category",
-          "settings": {
-            "title": "Lips",
-            "url": "#lips"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Body",
-            "url": "#care"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "A note from the founder",
+        "heading": "tips and first looks, straight to your inbox.",
+        "message": "Routine ideas, shade drops and early access before the public sees them."
+      }
     }
   },
   "order": [
     "content-landing-hero",
-    "message-band",
+    "landing-details",
     "content-landing-routine",
-    "tabbed-product-grid",
-    "content-landing-proof",
-    "category-slider",
+    "landing-faq",
     "newsletter"
   ]
 }

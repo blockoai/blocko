@@ -2,11 +2,23 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Build your routine",
+        "heading": "Pick one for each step.",
+        "text": "Choose a brush, a clip and a scent and the set price updates as you go. Save fifteen percent on three.",
+        "step_text": "Our top pick for this slot.",
+        "summary_eyebrow": "Your set",
+        "add_label": "Add the set to bag",
+        "pick_label": "Everyday pick",
+        "alternate_label": "Swap in"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the look",
+        "heading": "Add one more piece"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,8 +27,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "new",
+            "label": "New + limited"
           }
         }
       },
@@ -27,7 +39,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [

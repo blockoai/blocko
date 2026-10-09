@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Clean standard |
-| `eyebrow` | text | Eyebrow | Our standard |
-| `heading` | text | Heading | Every product meets our standard. |
-| `text` | textarea | Text | We screen every formula against a published list of ingredients we leave out. |
-| `button_label` | text | Button label | See the standard |
+| `image_alt` | text | Image alt text | Clear gel droplets and leaves on a peach ground |
+| `eyebrow` | text | Eyebrow | For brands |
+| `heading` | text | Heading | Want to be on our shelves? |
+| `text` | textarea | Text | Send a full ingredient list for every product. If it passes the written standard |
+| `button_label` | text | Button label | Read the standard |
 | `button_url` | url | Button url |  |
 
 ## Blocks

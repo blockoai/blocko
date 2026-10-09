@@ -331,25 +331,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Member benefits"
+      "default": "Free to join"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "More ritual, more rewards."
+      "default": "Wash up. Cash in."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Join, earn on the things you love, and enjoy a little more from every routine."
+      "default": "Collect points on orders, reviews and birthdays, then swap them for dollars off your next box. Spend a little more over time and you level up."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Join the rewards"
+      "default": "Join the program"
     },
     {
       "type": "image_picker",
@@ -360,31 +360,31 @@
       "type": "text",
       "id": "image_alt",
       "label": "Image alt text",
-      "default": "Shower routine flat lay"
+      "default": "Bars of soap arranged next to a points card"
     },
     {
       "type": "text",
       "id": "earn_eyebrow",
       "label": "Earn eyebrow",
-      "default": "How it works"
+      "default": "Three steps"
     },
     {
       "type": "text",
       "id": "earn_heading",
       "label": "Earn heading",
-      "default": "Join. Earn. Enjoy."
+      "default": "Join, earn, redeem"
     },
     {
       "type": "text",
       "id": "tiers_eyebrow",
       "label": "Tiers eyebrow",
-      "default": "Member tiers"
+      "default": "Lifetime spend tiers"
     },
     {
       "type": "text",
       "id": "tiers_heading",
       "label": "Tiers heading",
-      "default": "More beauty, more benefits."
+      "default": "The more you lather, the more you unlock"
     }
   ],
   "blocks": [
@@ -445,42 +445,48 @@
       "blocks": [
         {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Make a free account and pick up 30 points right away."
+          }
         },
         {
           "type": "earn",
           "settings": {
             "number": "02",
             "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "Get a point for every dollar, plus bonuses for reviews, follows and milestone orders."
           }
         },
         {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
-          }
-        },
-        {
-          "type": "tier",
-          "settings": {}
-        },
-        {
-          "type": "tier",
-          "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Redeem",
+            "text": "Pick a reward from the dropdown at checkout and the discount applies instantly."
           }
         },
         {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Rookie",
+            "points": "$20 spent",
+            "perks": "1 point per dollar · birthday reward"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Regular",
+            "points": "$75 spent",
+            "perks": "Double-point events · early access to drops"
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Legend",
+            "points": "$150 spent",
+            "perks": "2 points per dollar · triple-point events · early access"
           }
         }
       ]

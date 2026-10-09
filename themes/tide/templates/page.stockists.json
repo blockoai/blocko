@@ -2,7 +2,12 @@
   "sections": {
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Store locator",
+        "heading": "Find a shelf near you.",
+        "text": "Search spas, department stores and boutiques that carry our full range, and ask about in-store events.",
+        "directions_label": "Get directions"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
@@ -23,37 +28,32 @@
           }
         },
         "block-4": {
-          "type": "country",
+          "type": "store",
           "settings": {
-            "value": "uk",
-            "label": "United Kingdom"
+            "name": "Seaside Spa Market",
+            "place": "Santa Monica, CA"
           }
         },
         "block-5": {
           "type": "store",
-          "settings": {}
+          "settings": {
+            "name": "Linden Department Store",
+            "place": "Chicago, IL"
+          }
         },
         "block-6": {
           "type": "store",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "name": "Driftwood Apothecary",
+            "place": "Portland, ME"
           }
         },
         "block-7": {
           "type": "store",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
-          }
-        },
-        "block-8": {
-          "type": "store",
-          "settings": {
-            "name": "Daylight Goods",
-            "place": "Los Angeles, CA"
+            "country": "ca",
+            "name": "Cove Wellness",
+            "place": "Vancouver, BC"
           }
         }
       },
@@ -64,13 +64,16 @@
         "block-4",
         "block-5",
         "block-6",
-        "block-7",
-        "block-8"
+        "block-7"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [

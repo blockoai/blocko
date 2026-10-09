@@ -47,13 +47,13 @@
       "type": "text",
       "id": "kicker",
       "label": "Kicker",
-      "default": "Support hours"
+      "default": "When we answer"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "When to reach us"
+      "default": "Support hours"
     }
   ],
   "blocks": [
@@ -83,20 +83,23 @@
       "blocks": [
         {
           "type": "hours",
-          "settings": {}
-        },
-        {
-          "type": "hours",
           "settings": {
-            "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "label": "Weekdays",
+            "value": "9 AM to 5 PM Eastern"
           }
         },
         {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Weekends",
+            "value": "Email only"
+          }
+        },
+        {
+          "type": "hours",
+          "settings": {
+            "label": "Reply time",
+            "value": "Within one business day"
           }
         }
       ]

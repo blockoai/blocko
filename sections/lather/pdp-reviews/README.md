@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `product` | product | Product |  |
-| `eyebrow` | text | Eyebrow | The crew says |
-| `average` | text | Average | 4.8 |
+| `eyebrow` | text | Eyebrow | What guys say |
+| `average` | text | Average | 4.5 |
 | `stars` | text | Stars | ★★★★★ |
-| `summary` | text | Summary | Based on 100,000+ verified reviews |
-| `list_heading` | text | List heading | Featured reviews |
+| `summary` | text | Summary | 28,412 reviews · 88% would buy again |
+| `list_heading` | text | List heading | Recent reviews |
 | `empty` | text | Empty | No reviews match this filter yet. |
 
 ## Blocks

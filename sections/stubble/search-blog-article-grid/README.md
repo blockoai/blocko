@@ -32,10 +32,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | `blog` | blog | Blog |  |
 | `page_size` | range | Stories per page | 6 |
 | `all_label` | text | All label | All |
-| `eyebrow` | text | Eyebrow | More to explore |
-| `heading` | text | Heading | From the field guide |
+| `eyebrow` | text | Eyebrow | More reading |
+| `heading` | text | Heading | Latest from the blog |
 | `filter_label` | text | Filter label | Filter guide stories |
-| `link_label` | text | Link label | Read the guide |
+| `link_label` | text | Link label | Read the full piece |
 
 ## Blocks
 

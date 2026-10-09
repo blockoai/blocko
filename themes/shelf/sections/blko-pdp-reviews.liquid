@@ -69,6 +69,12 @@
 .blko-theme .blko-shelf-clean h2{margin:0 0 .5rem}
 .blko-theme .blko-shelf-visit__body h2{margin:0 0 .5rem}
 .blko-theme .blko-shelf-visit__body p{margin:0 0 1.25rem}
+.blko-theme .blko-shelf-pillars h2{margin:0 0 .5rem}
+.blko-theme .blko-shelf-pillars__item h3{margin:0 0 .75rem}
+.blko-theme .blko-shelf-pillars__item p{margin:0 0 .6rem}
+.blko-theme .blko-shelf-services h2{margin:0 0 .5rem}
+.blko-theme .blko-shelf-services__item h3{margin:0}
+.blko-theme .blko-shelf-services__item p{margin:0}
 .blko-theme .blko-shelf-rewards h2{margin:0 0 .4rem;color:var(--color-bg)}
 .blko-theme .blko-shelf-rewards p{margin:0;color:var(--color-bg)}
 .blko-theme .blko-brand-head h2{margin:0;font:var(--kit-heading-weight,var(--weight-light)) var(--text-h2)/var(--leading-display) var(--font-heading)}
@@ -98,6 +104,9 @@
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 {% endstylesheet %}
 {% schema %}
 {
@@ -112,13 +121,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Community reviews"
+      "default": "Reviews + Q&A"
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.7"
     },
     {
       "type": "text",
@@ -130,13 +139,13 @@
       "type": "text",
       "id": "summary",
       "label": "Summary",
-      "default": "Based on 1,248 verified reviews"
+      "default": "Based on 2,184 verified reviews"
     },
     {
       "type": "text",
       "id": "list_heading",
       "label": "List heading",
-      "default": "Featured reviews"
+      "default": "What shoppers report"
     },
     {
       "type": "text",
@@ -251,34 +260,36 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 74
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 12
+            "percent": 17
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 4
+            "percent": 5
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 1
+            "percent": 2
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "1 star",
-            "percent": 1
+            "percent": 2
           }
         },
         {
@@ -288,40 +299,45 @@
         {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "key": "photos",
+            "label": "With photos"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "coverage"
+            "key": "hydration",
+            "label": "Hydration"
           }
         },
         {
           "type": "review",
           "settings": {
-            "text": "Calmed my redness within two weeks and layers well. I love the light, hydrated finish."
+            "title": "Tightness gone in a week",
+            "text": "My cheeks used to sting after washing. This took the sting out within days and my moisturizer now lasts all day.",
+            "footer": "Noor A. · 2 weeks ago",
+            "tags": "hydration",
+            "caption": ""
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "My daily go-to",
-            "text": "Absorbs fast and stays comfortable through a long day. The ingredient list made choosing simple.",
-            "footer": "Sam T. · 1 month ago",
-            "tags": "coverage"
+            "title": "Good, but wait before layering",
+            "text": "It works well, though I get pilling if I rush the next step. A minute's pause fixes it.",
+            "footer": "Colin P. · 1 month ago",
+            "tags": "hydration",
+            "caption": "",
+            "rating": 4
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "Fresh, not greasy",
-            "text": "Gives me the hydrated finish I want without feeling heavy or sticky.",
-            "footer": "Alex M. · 2 months ago",
-            "tags": "photos",
-            "caption": "Dry skin · photo review"
+            "title": "Calmed my flare-ups",
+            "text": "Combination skin with a rosacea streak. Fewer red patches since I started using it at night.",
+            "footer": "Imani R. · 2 months ago",
+            "tags": "photos"
           }
         }
       ]

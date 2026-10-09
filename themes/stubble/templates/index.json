@@ -2,42 +2,66 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by department",
+        "heading": "Pick a razor, then build around it."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "Razors + refills",
+            "url": "#shave"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Face",
-            "url": "#eyes"
+            "label": "Prep + after-shave",
+            "url": "#shave"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Hair",
-            "url": "#lips"
+            "label": "Face care",
+            "url": "#skin"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Body",
-            "url": "#care"
+            "label": "Body wash + deodorant",
+            "url": "#body"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Hair",
+            "url": "#hair"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Bundles & sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Body",
+            "url": "#shave",
+            "image_alt": "Razor handles lined up on a steel tray",
+            "label": "Razors"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#body",
+            "image_alt": "Clear pump bottle of body wash",
             "label": "Body"
           }
         }
@@ -48,12 +72,20 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
+      "settings": {
+        "image_alt": "Glass fragrance bottle with water droplets",
+        "eyebrow": "New this season",
+        "heading": "A scent that lasts the whole day.",
+        "text": "Smoked wood, warm spice and a soft vanilla finish in a bottle small enough for a gym bag.",
+        "button_label": "Shop the fragrance"
+      }
     },
     "message-band": {
       "type": "blko-message-band",
@@ -61,18 +93,52 @@
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "FREE SHIPPING OVER $30"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "DESIGNED FOR QUALITY"
+            "text": "30-DAY MONEY-BACK GUARANTEE"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "SHIPS TO YOUR DOOR"
+            "text": "5% OFF WITH ANY SUBSCRIPTION"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {
+        "eyebrow": "Best sellers",
+        "heading": "Quality you can price-check"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "New and limited"
+          }
+        },
+        "block-3": {
+          "type": "tab",
+          "settings": {
+            "key": "sets",
+            "label": "Bundles"
           }
         }
       },
@@ -84,107 +150,73 @@
     },
     "stubble-tool-chooser": {
       "type": "blko-stubble-tool-chooser",
-      "settings": {},
+      "settings": {
+        "eyebrow": "The first decision",
+        "heading": "Choose your razor.",
+        "text": "Every cartridge fits one handle line only, so pick the line first and the refills follow."
+      },
       "blocks": {
         "block-1": {
           "type": "tool",
-          "settings": {}
+          "settings": {
+            "image_alt": "Premium razor handle on a tray",
+            "badge": "Premium",
+            "name": "Razor Pro",
+            "note": "Weighted metal handle, five blades and a pivoting head that stays with your jaw.",
+            "price": "Handle from $12 · refills $15 per 4",
+            "url": "#razor-pro",
+            "label": "Shop Razor Pro"
+          }
         },
         "block-2": {
           "type": "tool",
           "settings": {
-            "image_alt": "Safety razor on a tray",
-            "badge": "Classic",
-            "name": "Safety Razor",
-            "note": "A single-blade classic for a slower, closer shave and the lowest cost per blade.",
-            "price": "From $12",
-            "url": "#safety",
-            "label": "Shop the classic"
+            "image_alt": "Everyday razor handle close up",
+            "badge": "Everyday",
+            "name": "Razor Classic",
+            "note": "A lighter handle with four blades, the lower-cost way into a close shave.",
+            "price": "Handle from $10 · refills $10 per 4",
+            "url": "#razor-classic",
+            "label": "Shop Razor Classic"
           }
         }
       },
       "block_order": [
         "block-1",
         "block-2"
-      ]
-    },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {}
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New arrivals",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "stubble-trial-banner": {
-      "type": "blko-stubble-trial-banner",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "cadence",
-          "settings": {
-            "label": "4 weeks",
-            "note": "Fresh blades"
-          }
-        },
-        "block-2": {
-          "type": "cadence",
-          "settings": {}
-        },
-        "block-3": {
-          "type": "cadence",
-          "settings": {
-            "label": "12 weeks",
-            "note": "Light shavers"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
       ]
     },
     "category-slider": {
       "type": "blko-category-slider",
-      "settings": {},
+      "settings": {
+        "heading": "Shop by category"
+      },
       "blocks": {
         "block-1": {
           "type": "category",
-          "settings": {}
+          "settings": {
+            "url": "#shave"
+          }
         },
         "block-2": {
           "type": "category",
           "settings": {
-            "title": "Face",
-            "url": "#eyes"
+            "title": "Body",
+            "url": "#body"
           }
         },
         "block-3": {
           "type": "category",
           "settings": {
-            "title": "Hair",
-            "url": "#lips"
+            "title": "Face",
+            "url": "#skin"
           }
         },
         "block-4": {
           "type": "category",
           "settings": {
-            "title": "Body",
-            "url": "#care"
+            "title": "Hair",
+            "url": "#hair"
           }
         }
       },
@@ -195,28 +227,32 @@
         "block-4"
       ]
     },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {}
-    },
     "stubble-color-story": {
       "type": "blko-stubble-color-story",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Why Stubble",
+        "heading": "Good grooming should not cost extra.",
+        "text": "Two friends were tired of paying a premium for razors that felt over-designed. We sell direct, make the parts ourselves and keep every price in plain view.",
+        "button_label": "Read our story",
+        "image_alt": "Man trimming his beard with scissors"
+      },
       "blocks": {
         "block-1": {
           "type": "point",
-          "settings": {}
+          "settings": {
+            "text": "Prices shown on every product card"
+          }
         },
         "block-2": {
           "type": "point",
           "settings": {
-            "text": "Formulas free of parabens and dyes"
+            "text": "Formulas free of parabens and sulfates"
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
-            "text": "Easy returns within 30 days"
+            "text": "A full refund within 30 days"
           }
         }
       },
@@ -226,32 +262,34 @@
         "block-3"
       ]
     },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
-    },
-    "testimonial-slider": {
-      "type": "blko-testimonial-slider",
-      "settings": {}
-    },
-    "press-slider": {
-      "type": "blko-press-slider",
-      "settings": {},
+    "stubble-trial-banner": {
+      "type": "blko-stubble-trial-banner",
+      "settings": {
+        "eyebrow": "Subscribe and save",
+        "heading": "Refills before the old blade dulls.",
+        "text": "Every subscription order takes 5% off, and three or more items take 15% off each. Skip a shipment or cancel in a couple of clicks.",
+        "button_label": "Set up refills",
+        "legend": "Ship every"
+      },
       "blocks": {
         "block-1": {
-          "type": "publication",
-          "settings": {}
+          "type": "cadence",
+          "settings": {
+            "label": "2 months",
+            "note": "Heavy shavers"
+          }
         },
         "block-2": {
-          "type": "publication",
+          "type": "cadence",
           "settings": {
-            "name": "MEN'S EDIT"
+            "label": "3 months"
           }
         },
         "block-3": {
-          "type": "publication",
+          "type": "cadence",
           "settings": {
-            "name": "THE LOADOUT"
+            "label": "4 months",
+            "note": "Light shavers"
           }
         }
       },
@@ -263,26 +301,30 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
-      "settings": {}
+      "settings": {
+        "eyebrow": "What is good about it",
+        "add_label": "Add to cart",
+        "details_label": "See the full product"
+      }
     }
   },
   "order": [
     "home-collection-mega-menu",
     "hero-campaign",
     "message-band",
-    "stubble-tool-chooser",
     "tabbed-product-grid",
-    "stubble-trial-banner",
+    "stubble-tool-chooser",
     "category-slider",
-    "feature-driver",
     "stubble-color-story",
-    "commitments",
-    "testimonial-slider",
-    "press-slider",
+    "stubble-trial-banner",
     "newsletter",
     "home-collection-quick-view-modal"
   ]

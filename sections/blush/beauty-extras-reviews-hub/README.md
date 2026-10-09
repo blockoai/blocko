@@ -31,11 +31,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `product` | product | Product (optional, store-wide reviews when empty) |  |
-| `eyebrow` | text | Eyebrow | From the community |
-| `heading` | text | Heading | Real routines, real notes. |
-| `average` | text | Average | 4.8 |
-| `stars_label` | text | Stars label | Five out of five stars |
-| `count_text` | text | Count text | From 2,483 verified reviews |
+| `eyebrow` | text | Eyebrow | Scent stories |
+| `heading` | text | Heading | Little stories from people who wear it. |
+| `average` | text | Average | 4.7 |
+| `stars_label` | text | Stars label | Four and a half stars |
+| `count_text` | text | Count text | 6,120 stories shared |
 
 ## Blocks
 

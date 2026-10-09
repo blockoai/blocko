@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with vivid pink and orange hair |
-| `eyebrow` | text | Eyebrow | Color-care system |
-| `heading` | text | Heading | color that stays loud. |
-| `text` | textarea | Text | Lock it in, keep it bright. A 3-step system made for color-treated hair. |
-| `button_label` | text | Button label | shop the system |
+| `image_alt` | text | Image alt text | Close-up of vivid copper hair with a glossy finish |
+| `eyebrow` | text | Eyebrow | New colour-care launch |
+| `heading` | text | Heading | 3 steps to keep your shade. |
+| `text` | textarea | Text | A wash, a treatment and a seal built to hold pigment in, so a fresh colour job s |
+| `button_label` | text | Button label | Shop the system |
 | `button_url` | url | Button url |  |
 | `image_2` | image_picker | Collage image 2 |  |
 | `image_2_alt` | text | Collage image 2 alt text |  |

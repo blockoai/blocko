@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `color_scheme` | color_scheme | Color scheme | scheme-12 |
-| `quote` | text | Quote | “Makeup that looks like nothing, and makes everything look like you.” |
-| `credit` | text | Credit | Magazine, Beauty Awards |
+| `quote` | text | Quote | “Formulas that disappear into skin and still make a face look finished.” |
+| `credit` | text | Credit | Beauty Weekly, editors' picks |
 
 ## Blocks
 

@@ -2,11 +2,23 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Two-step routines",
+        "heading": "Pair a neutralizer with a concealer.",
+        "text": "Choose each step in a matching depth, and both go to your bag with one tap.",
+        "step_text": "Shade-matched for your depth.",
+        "summary_eyebrow": "Your pair",
+        "add_label": "Add both to bag",
+        "pick_label": "Matched pick",
+        "alternate_label": "Deeper option"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "You may also like",
+        "heading": "More to try with it"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -27,7 +39,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Free shipping over $55",
+        "heading": "Join the list",
+        "message": "Early launch notes, artist tips and the occasional kit restock, sent weekly."
+      }
     }
   },
   "order": [

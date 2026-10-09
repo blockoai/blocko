@@ -2,7 +2,12 @@
   "sections": {
     "content-contact-hero": {
       "type": "blko-content-contact-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Contact",
+        "heading": "Questions about an order or a product?",
+        "text": "Tell us what happened and we'll route it to the right person. If you're reporting a reaction, include the brand, product name and batch code.",
+        "link_label": "Write to us"
+      }
     },
     "content-contact-channels": {
       "type": "blko-content-contact-channels",
@@ -10,26 +15,30 @@
       "blocks": {
         "block-1": {
           "type": "channel",
-          "settings": {}
+          "settings": {
+            "text": "Orders, returns and account help.",
+            "url": "mailto:care@example.com",
+            "link_label": "care@example.com"
+          }
         },
         "block-2": {
           "type": "channel",
           "settings": {
-            "icon": "○",
-            "title": "Text",
-            "text": "For quick routine guidance.",
+            "icon": "☎",
+            "title": "Phone",
+            "text": "Speak with a care specialist.",
             "url": "tel:+10000000000",
-            "link_label": "+1 (000) 000-0000"
+            "link_label": "1-800-555-0100"
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
-            "icon": "↗",
-            "title": "Social",
-            "text": "For daily inspiration and news.",
-            "url": "#social",
-            "link_label": "@brandplaceholder"
+            "icon": "◌",
+            "title": "Live chat",
+            "text": "Open every day for quick answers.",
+            "url": "#chat",
+            "link_label": "Start a chat"
           }
         }
       },
@@ -41,28 +50,41 @@
     },
     "content-contact-form": {
       "type": "blko-content-contact-form",
-      "settings": {},
+      "settings": {
+        "kicker": "Message us",
+        "heading": "Tell us what you need",
+        "text": "Messages can run to 1,000 characters. For a product problem, add the batch code from the pack.",
+        "button_label": "Send message"
+      },
       "blocks": {
         "block-1": {
           "type": "topic",
-          "settings": {}
+          "settings": {
+            "label": "Order or delivery"
+          }
         },
         "block-2": {
           "type": "topic",
           "settings": {
-            "label": "Product guidance"
+            "label": "Return or exchange"
           }
         },
         "block-3": {
           "type": "topic",
           "settings": {
-            "label": "Press or partnerships"
+            "label": "Report a product reaction"
           }
         },
         "block-4": {
           "type": "topic",
           "settings": {
-            "label": "Something else"
+            "label": "Shelf Club points"
+          }
+        },
+        "block-5": {
+          "type": "topic",
+          "settings": {
+            "label": "Brand submission"
           }
         }
       },
@@ -70,29 +92,36 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4"
+        "block-4",
+        "block-5"
       ]
     },
     "content-contact-hours": {
       "type": "blko-content-contact-hours",
-      "settings": {},
+      "settings": {
+        "kicker": "Chat hours",
+        "heading": "When we're online"
+      },
       "blocks": {
         "block-1": {
           "type": "hours",
-          "settings": {}
+          "settings": {
+            "label": "Every day",
+            "value": "6 AM to 7 PM Pacific"
+          }
         },
         "block-2": {
           "type": "hours",
           "settings": {
-            "label": "Weekends",
-            "value": "Closed, with replies on the next business day"
+            "label": "Email replies",
+            "value": "Next business day"
           }
         },
         "block-3": {
           "type": "hours",
           "settings": {
-            "label": "Response time",
-            "value": "Usually within two business days"
+            "label": "Boutiques",
+            "value": "See each location page"
           }
         }
       },
@@ -104,7 +133,13 @@
     },
     "content-contact-map": {
       "type": "blko-content-contact-map",
-      "settings": {}
+      "settings": {
+        "kicker": "Visit us",
+        "heading": "Our flagship boutique",
+        "text": "Drop by for a consultation, a facial or just a look around the shelf.",
+        "city": "San Francisco, CA",
+        "country": "United States"
+      }
     }
   },
   "order": [

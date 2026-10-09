@@ -385,19 +385,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Formula dictionary"
+      "default": "The no-go list"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Ingredients, explained."
+      "default": "Twelve things we will not use."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Search the ingredients behind a comfortable, considered routine."
+      "default": "Each entry says what the ingredient does, where it usually hides and why we leave it out."
     },
     {
       "type": "text",
@@ -409,7 +409,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “hydration”"
+      "default": "Try “paraben”"
     },
     {
       "type": "text",
@@ -421,43 +421,43 @@
       "type": "text",
       "id": "detail_eyebrow",
       "label": "Detail eyebrow",
-      "default": "Ingredient detail"
+      "default": "Why it is out"
     },
     {
       "type": "text",
       "id": "detail_heading",
       "label": "Detail heading",
-      "default": "Aloe leaf juice"
+      "default": "Aluminum salts"
     },
     {
       "type": "textarea",
       "id": "detail_text",
       "label": "Detail text",
-      "default": "A botanical humectant that gives formulas a cool, soothing feel. It is especially welcome in a routine when skin needs a little ease."
+      "default": "Common in antiperspirants, where they block sweat glands. We make deodorant instead: it handles odor without blocking anything."
     },
     {
       "type": "text",
       "id": "best_for_label",
       "label": "Best for label",
-      "default": "Best for"
+      "default": "Usually found in"
     },
     {
       "type": "text",
       "id": "best_for",
       "label": "Best for",
-      "default": "Comfort and hydration"
+      "default": "Antiperspirant sticks and sprays"
     },
     {
       "type": "text",
       "id": "found_in_label",
       "label": "Found in label",
-      "default": "Found in"
+      "default": "Our replacement"
     },
     {
       "type": "text",
       "id": "found_in",
       "label": "Found in",
-      "default": "Bar soap and care"
+      "default": "A plant-powder deodorant stick"
     }
   ],
   "blocks": [
@@ -524,77 +524,91 @@
         {
           "type": "filter",
           "settings": {
+            "label": "All 12",
             "active": true
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Hydration",
-            "key": "hydration"
+            "label": "Preservatives",
+            "key": "preservative"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Barrier",
-            "key": "barrier"
+            "label": "Fragrance and dyes",
+            "key": "scent"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Sun care",
-            "key": "sun"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {}
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "letter": "C",
-            "name": "Ceramide complex",
-            "detail": "Supports a comfortable barrier",
-            "tags": "barrier care"
+            "label": "Fillers",
+            "key": "filler"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight hydration",
-            "tags": "hydration"
+            "name": "Aluminum salts",
+            "detail": "Block sweat glands in antiperspirant sticks",
+            "tags": "filler"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Niacinamide",
-            "detail": "Helps skin look even and balanced",
-            "tags": "brightening"
+            "letter": "F",
+            "name": "Formaldehyde releasers",
+            "detail": "Preservatives that slowly release a known irritant",
+            "tags": "preservative"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "M",
+            "name": "Mineral oil",
+            "detail": "A cheap petroleum filler that sits on skin",
+            "tags": "filler"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "P",
+            "name": "Parabens",
+            "detail": "Preservatives we replace with gentler ones",
+            "tags": "preservative"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "P",
+            "name": "Phthalates",
+            "detail": "Fragrance carriers linked to hormone concerns",
+            "tags": "scent"
           }
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
+            "name": "Sulfates",
+            "detail": "Harsh foaming agents that strip oils",
+            "tags": "filler"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "Z",
-            "name": "Zinc oxide",
-            "detail": "A mineral UV filter",
-            "tags": "sun care"
+            "letter": "S",
+            "name": "Synthetic dyes",
+            "detail": "Color added for looks, not for skin",
+            "tags": "scent"
           }
         }
       ]

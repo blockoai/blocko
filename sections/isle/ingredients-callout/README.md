@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Body ritual |
-| `eyebrow` | text | Eyebrow | Powerful actives |
-| `heading` | text | Heading | Powerful actives. Proven results. |
-| `text` | textarea | Text | We are a team of clean beauty experts making body care that works, and that is s |
-| `button_label` | text | Button label | Read more |
+| `image_alt` | text | Image alt text | Coconut oil melting on a spoon |
+| `eyebrow` | text | Eyebrow | Our promise |
+| `heading` | text | Heading | If it is on the label, you can look it up. |
+| `text` | textarea | Text | Each hero ingredient has a plain-language entry with what it does and which prod |
+| `button_label` | text | Button label | Browse the glossary |
 | `button_url` | url | Button url |  |
 
 ## Blocks

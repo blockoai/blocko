@@ -24,7 +24,7 @@
             "type": "color",
             "id": "text",
             "label": "Text",
-            "default": "#f8f8e1"
+            "default": "#d8d2ad"
           },
           {
             "type": "color",
@@ -108,19 +108,19 @@
         "type": "color",
         "id": "color_bg_alt",
         "label": "Bg Alt",
-        "default": "#f8f8e1"
+        "default": "#d8d2ad"
       },
       {
         "type": "color",
         "id": "color_text",
         "label": "Text",
-        "default": "#322a26"
+        "default": "#342017"
       },
       {
         "type": "color",
         "id": "color_text_muted",
         "label": "Text Muted",
-        "default": "#5f5f62"
+        "default": "#666671"
       },
       {
         "type": "color",
@@ -180,7 +180,7 @@
         "type": "color",
         "id": "color_footer_text",
         "label": "Footer Text",
-        "default": "#f8f8e1"
+        "default": "#d8d2ad"
       },
       {
         "type": "color",
@@ -204,7 +204,7 @@
         "type": "color",
         "id": "color_input_text",
         "label": "Input Text",
-        "default": "#322a26"
+        "default": "#342017"
       },
       {
         "type": "color",
@@ -223,6 +223,12 @@
         "id": "color_swatch_warm_rich",
         "label": "Swatch warm rich",
         "default": "#9a9414"
+      },
+      {
+        "type": "color",
+        "id": "color_swatch_tropical_fruity",
+        "label": "Swatch tropical fruity",
+        "default": "#c27a1c"
       },
       {
         "type": "color",

@@ -2,68 +2,62 @@
   "sections": {
     "content-policy-hero": {
       "type": "blko-content-policy-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Policies",
+        "heading": "Returns + exchanges",
+        "text": "What you can send back, how long you have and when your refund lands.",
+        "date": "Updated October 2026"
+      }
     },
     "content-policy-document": {
       "type": "blko-content-policy-document",
-      "settings": {},
+      "settings": {
+        "toc_heading": "In this policy"
+      },
       "blocks": {
         "block-1": {
           "type": "section",
-          "settings": {}
+          "settings": {
+            "anchor": "returns-window",
+            "toc": "Return window",
+            "heading": "1. Return window",
+            "body": "<p>Items can be sent back within 30 days of delivery. They must be unused or only lightly tested.</p>"
+          }
         },
         "block-2": {
           "type": "section",
           "settings": {
-            "anchor": "content-policy-data",
-            "toc": "Information we collect",
-            "heading": "2. Information we collect",
-            "body": "<p>Describe the categories of information collected when someone visits, purchases, contacts support, or subscribes. Be specific about information provided directly and information collected automatically.</p><ul><li>Account, contact, and order details</li><li>Device, browser, and usage information</li><li>Support communications and voluntary feedback</li></ul>"
+            "anchor": "returns-cost",
+            "toc": "Fees",
+            "heading": "2. Fees",
+            "body": "<p>Returns by mail cost $5, deducted from the refund. Bringing an item to any boutique is free.</p>"
           }
         },
         "block-3": {
           "type": "section",
           "settings": {
-            "anchor": "content-policy-use",
-            "toc": "How we use information",
-            "heading": "3. How we use information",
-            "body": "<p>Explain the purposes for processing, such as providing services, improving the experience, communicating about an order, preventing misuse, and meeting legal obligations.</p>"
+            "anchor": "returns-excluded",
+            "toc": "Not returnable",
+            "heading": "3. Not returnable",
+            "body": "<p>Final-sale markdowns, gifts with purchase, gift cards and rewards redeemed with points can't be returned.</p>"
           }
         },
         "block-4": {
           "type": "section",
           "settings": {
-            "anchor": "content-policy-sharing",
-            "toc": "When we share information",
-            "heading": "4. When we share information",
-            "body": "<p>Identify the limited circumstances in which information is shared with service providers, professional advisers, authorities, or another party at a person’s direction.</p>"
+            "anchor": "returns-refund",
+            "toc": "Refunds",
+            "heading": "4. Refunds",
+            "body": "<p>Money goes back to the original payment method about two days after the parcel is scanned in. Shipping charges are not refunded.</p>"
           }
         },
         "block-5": {
           "type": "section",
           "settings": {
-            "anchor": "content-policy-choices",
-            "toc": "Your choices",
-            "heading": "5. Your choices",
-            "body": "<p>Explain available access, correction, deletion, marketing preference, cookie, and region-specific privacy choices. Include a workable method to submit a request.</p>"
-          }
-        },
-        "block-6": {
-          "type": "section",
-          "settings": {
-            "anchor": "content-policy-security",
-            "toc": "Security and retention",
-            "heading": "6. Security and retention",
-            "body": "<p>Describe reasonable safeguards and the factors used to determine how long information is retained. Avoid absolute claims about security.</p>"
-          }
-        },
-        "block-7": {
-          "type": "section",
-          "settings": {
-            "anchor": "content-policy-contact",
-            "toc": "Contact",
-            "heading": "7. Contact",
-            "body": "<p>For privacy questions, write to <a href=\"mailto:privacy@example.com\">privacy@example.com</a>. Replace this placeholder and all policy text with approved legal copy before use.</p>"
+            "anchor": "returns-contact",
+            "toc": "Need help",
+            "heading": "5. Need help",
+            "body": "<p>Write to <a href=\"mailto:care@example.com\">care@example.com</a> with your order number.</p>"
           }
         }
       },
@@ -72,9 +66,7 @@
         "block-2",
         "block-3",
         "block-4",
-        "block-5",
-        "block-6",
-        "block-7"
+        "block-5"
       ]
     }
   },

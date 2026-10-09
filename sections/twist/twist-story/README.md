@@ -30,10 +30,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
 | `image_alt` | text | Image alt text | Hair routine in the morning light |
-| `heading` | text | Heading | our story |
-| `text` | textarea | Text | We started with one pillowcase and a simple idea: hair care should be cheerful,  |
+| `heading` | text | Heading | from one hair tie to your whole routine |
+| `text` | textarea | Text | It began with a single hair tie and a stubborn founder who sold it door to door. |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | read more |
+| `button_label` | text | Button label | read our story |
 
 ## Blocks
 

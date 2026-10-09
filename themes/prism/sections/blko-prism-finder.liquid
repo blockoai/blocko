@@ -133,6 +133,10 @@
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -148,19 +152,19 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "let’s find your formulas"
+      "default": "start with your strand"
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Pick the texture that matches your hair and we will point you to the system that fits."
+      "default": "Straight to coily, fine to thick: pick the closest match and see formulas picked for it, or take the five-minute quiz."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Take the full quiz"
+      "default": "Take the quiz"
     },
     {
       "type": "url",
@@ -200,27 +204,30 @@
       "blocks": [
         {
           "type": "tile",
-          "settings": {}
-        },
-        {
-          "type": "tile",
           "settings": {
-            "title": "medium + wavy",
-            "text": "Frizz-free definition"
+            "title": "straight · 1a-1c",
+            "text": "Lift without the weigh-down"
           }
         },
         {
           "type": "tile",
           "settings": {
-            "title": "thick + curly",
-            "text": "Bounce and moisture"
+            "title": "wavy · 2a-2c",
+            "text": "Defined, frizz-free bends"
           }
         },
         {
           "type": "tile",
           "settings": {
-            "title": "coily + coarse",
-            "text": "Deep repair and shine"
+            "title": "curly · 3a-3b",
+            "text": "Springy, moisturised coils"
+          }
+        },
+        {
+          "type": "tile",
+          "settings": {
+            "title": "coily · 3c-4c",
+            "text": "Deep slip and shrinkage control"
           }
         }
       ]

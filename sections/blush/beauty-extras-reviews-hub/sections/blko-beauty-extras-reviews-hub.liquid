@@ -360,31 +360,31 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "From the community"
+      "default": "Scent stories"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Real routines, real notes."
+      "default": "Little stories from people who wear it."
     },
     {
       "type": "text",
       "id": "average",
       "label": "Average",
-      "default": "4.8"
+      "default": "4.7"
     },
     {
       "type": "text",
       "id": "stars_label",
       "label": "Stars label",
-      "default": "Five out of five stars"
+      "default": "Four and a half stars"
     },
     {
       "type": "text",
       "id": "count_text",
       "label": "Count text",
-      "default": "From 2,483 verified reviews"
+      "default": "6,120 stories shared"
     }
   ],
   "blocks": [
@@ -516,99 +516,105 @@
       "blocks": [
         {
           "type": "bar",
-          "settings": {}
+          "settings": {
+            "percent": 76
+          }
         },
         {
           "type": "bar",
           "settings": {
             "label": "4 stars",
-            "percent": 75
+            "percent": 16
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "3 stars",
-            "percent": 58
+            "percent": 5
           }
         },
         {
           "type": "bar",
           "settings": {
             "label": "2 stars",
-            "percent": 41
+            "percent": 2
           }
         },
         {
           "type": "bar",
           "settings": {
-            "label": "1 stars",
-            "percent": 24
+            "label": "1 star",
+            "percent": 1
           }
         },
         {
           "type": "filter",
           "settings": {
+            "label": "All",
             "active": true
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Skin",
-            "key": "complexion"
+            "label": "Amber skin",
+            "key": "amber"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Balm",
-            "key": "care"
+            "label": "Cedar milk",
+            "key": "cedar"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "With photos",
-            "key": "photos"
+            "label": "Layered",
+            "key": "layered"
           }
         },
         {
           "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
           "settings": {
-            "tags": "care photos"
+            "tags": "amber",
+            "image_alt": "Smiling woman at a train station",
+            "caption": "Worn on a first date"
           }
         },
         {
           "type": "photo",
-          "settings": {}
-        },
-        {
-          "type": "photo",
           "settings": {
-            "tags": "care photos"
-          }
-        },
-        {
-          "type": "review",
-          "settings": {}
-        },
-        {
-          "type": "review",
-          "settings": {
-            "title": "Comfortable through a long day.",
-            "tags": "care",
-            "meta": "Verified customer · Balm"
+            "tags": "layered",
+            "image_alt": "Two perfume bottles on a windowsill",
+            "caption": "Two scents, one sleeve"
           }
         },
         {
           "type": "review",
           "settings": {
-            "title": "The shade range made matching easy."
+            "tags": "amber",
+            "title": "My coworker asked what I was wearing three days running.",
+            "meta": "Amber skin · Priya"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "tags": "cedar",
+            "title": "Smells like the inside of a good bookshop.",
+            "meta": "Cedar milk · Theo"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "tags": "layered",
+            "rating": 4,
+            "title": "Citrus on top of musk is now my signature.",
+            "meta": "Layered · Maren"
           }
         }
       ]

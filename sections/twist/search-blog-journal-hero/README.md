@@ -30,11 +30,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `home_label` | text | Home label | Home |
 | `crumb` | text | Crumb | blog |
-| `eyebrow` | text | Eyebrow | The journal |
-| `heading` | text | Heading | Notes for happier hair days. |
-| `text` | text | Text | Ideas, gift guides and useful how-tos for hair tools and accessories. |
+| `eyebrow` | text | Eyebrow | hair blog |
+| `heading` | text | Heading | Hair science, wash-day guides and gift ideas. |
+| `text` | text | Text | Explainers on ingredients, curl techniques and how to get the most from your bar |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person getting ready in soft natural light |
+| `image_alt` | text | Image alt text | Person with defined curls |
 
 ## Blocks
 

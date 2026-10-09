@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Shower routine |
-| `eyebrow` | text | Eyebrow | Our promise |
-| `heading` | text | Heading | Big scents, small ingredient lists. |
-| `text` | textarea | Text | Stack the bundle: soap, deodorant and cologne that work together. |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | A bearded man laughing in a locker room |
+| `eyebrow` | text | Eyebrow | Nine-week challenge |
+| `heading` | text | Heading | Clean streak: win cash for showing up. |
+| `text` | textarea | Text | Join a weekly run of silly, sweaty, shower-friendly challenges. Post your entry, |
+| `button_label` | text | Button label | Count me in |
 | `button_url` | url | Button url |  |
 
 ## Blocks

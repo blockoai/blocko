@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person wearing soft pink cheek colour and glossy lips |
-| `eyebrow` | text | Eyebrow | New colour |
-| `heading` | text | Heading | you, only a little pinker. |
-| `text` | textarea | Text | Skin first, colour second. Just enough to feel like yourself. |
-| `button_label` | text | Button label | Shop the edit |
+| `image_alt` | text | Image alt text | Close-up of a face with a flushed cheek and glossy lips |
+| `eyebrow` | text | Eyebrow | The autumn scent drop |
+| `heading` | text | Heading | you smell like a cosy jumper. |
+| `text` | textarea | Text | A warm, woody new blend that sits close to skin. Wear it solo or stack it over t |
+| `button_label` | text | Button label | Shop the scent |
 | `button_url` | url | Button url |  |
 
 ## Blocks

@@ -28,11 +28,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Beauty routine |
-| `eyebrow` | text | Eyebrow | How we make it |
-| `heading` | text | Heading | Nothing to master. |
-| `text` | textarea | Text | Five lightweight products that blend with your fingers and look like skin, only  |
-| `button_label` | text | Button label | Explore more |
+| `image_alt` | text | Image alt text | Cream balm swirled on a white dish |
+| `eyebrow` | text | Eyebrow | The short list |
+| `heading` | text | Heading | Fifty things we keep out. |
+| `text` | textarea | Text | Parabens, phthalates, talc, PFAS, mineral oil and PEGs are not in anything we ma |
+| `button_label` | text | Button label | See the full list |
 | `button_url` | url | Button url |  |
 
 ## Blocks

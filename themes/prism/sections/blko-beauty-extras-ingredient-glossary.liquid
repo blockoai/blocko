@@ -381,6 +381,14 @@
 .blko-theme .blko-search-blog-comment p{margin:.25rem 0}
 .blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
 .blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-pagination span.is-active{display:inline-block;border-width:1px;border-style:solid;padding:.55rem .75rem}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
+.blko-theme .blko-search-blog-pagination span.is-active{display:inline-block;border-width:1px;border-style:solid;padding:.55rem .75rem}
+.blko-theme .blko-search-blog-comment p{margin:.25rem 0}
+.blko-theme .blko-search-blog-comment-form input{width:100%;border:1px solid var(--color-line);padding:.6rem .75rem;background:transparent;font:inherit;color:inherit}
+.blko-theme .blko-search-blog-comment-form .blko-button{justify-self:start}
 {% endstylesheet %}
 {% schema %}
 {
@@ -390,19 +398,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "ingredient guide"
+      "default": "Ingredient index"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "ingredients, explained."
+      "default": "What each ingredient does."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Search the ingredients behind a color-safe, bond-building routine."
+      "default": "Look up any ingredient in plain language, from cleansing agents to scent and performance boosters."
     },
     {
       "type": "text",
@@ -414,7 +422,7 @@
       "type": "text",
       "id": "search_placeholder",
       "label": "Search placeholder",
-      "default": "Try “bond repair”"
+      "default": "Try “castor oil”"
     },
     {
       "type": "text",
@@ -432,13 +440,13 @@
       "type": "text",
       "id": "detail_heading",
       "label": "Detail heading",
-      "default": "Aloe leaf juice"
+      "default": "Behentrimonium chloride"
     },
     {
       "type": "textarea",
       "id": "detail_text",
       "label": "Detail text",
-      "default": "A botanical humectant that gives formulas a cool, soothing feel. Especially welcome on a scalp that needs a little ease."
+      "default": "A conditioning agent derived from plants that helps hair feel soft and comb through easily. It is the backbone of most rinse-out conditioners."
     },
     {
       "type": "text",
@@ -450,7 +458,7 @@
       "type": "text",
       "id": "best_for",
       "label": "Best for",
-      "default": "Scalp comfort and moisture"
+      "default": "Detangling and slip"
     },
     {
       "type": "text",
@@ -462,7 +470,7 @@
       "type": "text",
       "id": "found_in",
       "label": "Found in",
-      "default": "Shampoo and masks"
+      "default": "Daily conditioner, repair mask"
     }
   ],
   "blocks": [
@@ -535,71 +543,136 @@
         {
           "type": "filter",
           "settings": {
-            "label": "Moisture",
-            "key": "hydration"
+            "label": "Cleansers",
+            "key": "cleansers"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "Bond repair",
-            "key": "barrier"
+            "label": "Moisturizers",
+            "key": "moisturizers"
           }
         },
         {
           "type": "filter",
           "settings": {
-            "label": "UV shield",
-            "key": "sun"
+            "label": "Conditioners",
+            "key": "conditioners"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Preservatives",
+            "key": "preservatives"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Fragrance",
+            "key": "fragrance"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Solvents",
+            "key": "solvents"
+          }
+        },
+        {
+          "type": "filter",
+          "settings": {
+            "label": "Performance",
+            "key": "performance"
           }
         },
         {
           "type": "ingredient",
-          "settings": {}
+          "settings": {
+            "detail": "A cooling water base that adds light moisture",
+            "tags": "moisturizers solvents"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "name": "Amodimethicone",
+            "detail": "Smooths the cuticle for shine and easy combing",
+            "tags": "performance conditioners"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "name": "Avocado oil",
+            "detail": "A rich plant oil that softens dry ends",
+            "tags": "moisturizers"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "B",
+            "name": "Behentrimonium chloride",
+            "detail": "Gives conditioner its slip and detangling power",
+            "tags": "conditioners"
+          }
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "C",
-            "name": "Amino bond complex",
-            "detail": "Supports strong, bouncy strands",
-            "tags": "bond repair"
+            "name": "Castor oil",
+            "detail": "A thick oil that seals in moisture",
+            "tags": "moisturizers"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "H",
-            "name": "Hyaluronic acid",
-            "detail": "Draws in lightweight moisture",
-            "tags": "hydration"
+            "letter": "C",
+            "name": "Cetyl alcohol",
+            "detail": "A fatty alcohol that thickens creams without drying",
+            "tags": "conditioners moisturizers"
           }
         },
         {
           "type": "ingredient",
           "settings": {
-            "letter": "N",
-            "name": "Panthenol",
-            "detail": "Helps hair feel smooth and full",
-            "tags": "brightening"
+            "letter": "C",
+            "name": "Cocamidopropyl betaine",
+            "detail": "A gentle foaming cleanser from coconut",
+            "tags": "cleansers"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "P",
+            "name": "Phenoxyethanol",
+            "detail": "A preservative that keeps formulas fresh",
+            "tags": "preservatives"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "letter": "P",
+            "name": "Parfum blend",
+            "detail": "The scent mix, kept free of phthalates",
+            "tags": "fragrance"
           }
         },
         {
           "type": "ingredient",
           "settings": {
             "letter": "S",
-            "name": "Squalane",
-            "detail": "Softens without a heavy feel",
-            "tags": "nourishing"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "letter": "Z",
-            "name": "UV filter",
-            "detail": "Helps shield color from sun",
-            "tags": "UV shield"
+            "name": "Sodium cocoyl isethionate",
+            "detail": "A mild, sulfate-free foaming agent",
+            "tags": "cleansers"
           }
         }
       ]

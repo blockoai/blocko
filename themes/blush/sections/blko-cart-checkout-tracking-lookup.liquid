@@ -266,19 +266,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Order tracking"
+      "default": "Track"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Follow your delivery."
+      "default": "Where is my parcel?"
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Enter the details from your confirmation email to see the latest status."
+      "default": "Enter the order number and email from your confirmation. Tracking can take up to two days to start moving."
     },
     {
       "type": "text",
@@ -326,7 +326,7 @@
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Track order"
+      "default": "Find my parcel"
     }
   ],
   "blocks": [
@@ -356,27 +356,30 @@
       "blocks": [
         {
           "type": "step",
-          "settings": {}
-        },
-        {
-          "type": "step",
           "settings": {
-            "title": "Preparing your items",
-            "text": "Your order is being carefully packed."
+            "title": "Order placed",
+            "text": "We have your order."
           }
         },
         {
           "type": "step",
           "settings": {
-            "title": "On its way",
-            "text": "Tracking will appear after handoff."
+            "title": "Packed",
+            "text": "One to three business days."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "In transit",
+            "text": "Tracking email on its way."
           }
         },
         {
           "type": "step",
           "settings": {
             "title": "Delivered",
-            "text": "Enjoy your new routine."
+            "text": "Open it and smile."
           }
         }
       ]

@@ -29,10 +29,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Person enjoying a quick hair routine |
-| `kicker` | text | Kicker | A cheerful kind of useful |
-| `heading` | text | Heading | Good tools should make getting ready feel easier. |
-| `text` | textarea | Text | Our work starts with the small, practical moments: a clip that holds all day, a  |
+| `image_alt` | text | Image alt text | Laughing person with curly red hair |
+| `kicker` | text | Kicker | reset moments |
+| `heading` | text | Heading | Hair care should be fun, fair and easy to give. |
+| `text` | textarea | Text | A good day often starts with a small ritual: a bar that lathers well, a clip tha |
 
 ## Blocks
 

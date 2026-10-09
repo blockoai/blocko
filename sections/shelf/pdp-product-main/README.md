@@ -37,11 +37,11 @@ Never overwrite an existing file with the same name without comparing it first.
 | `breadcrumb_shop` | text | Breadcrumb shop | Shop |
 | `breadcrumb_category_url` | url | Breadcrumb category url |  |
 | `breadcrumb_category` | text | Breadcrumb category | Skin |
-| `price_note` | text | Price note | 1 fl oz / 30 ml |
+| `price_note` | text | Price note | 30 ml / 1 fl oz |
 | `shade_help_url` | url | Shade help url |  |
-| `shade_help_label` | text | Shade help label | Not sure? Try the skin analysis. |
+| `shade_help_label` | text | Shade help label | Not sure what your skin needs? Take the skin analysis. |
 | `plan_legend` | text | Plan legend | Purchase option |
-| `ship_note` | text | Ship note | Free shipping over $45 · Easy returns within 30 days |
+| `ship_note` | text | Ship note | Free shipping over $35 · 30-day returns · Earn 58 points on this order |
 
 ## Blocks
 

@@ -2,7 +2,10 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop by department",
+        "heading": "Start with the step you skip."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
@@ -11,34 +14,50 @@
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Eyes",
-            "url": "#eyes"
+            "label": "Eye",
+            "url": "#eye"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Lips + cheeks",
-            "url": "#lips"
+            "label": "Lip + cheek",
+            "url": "#lip"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Care",
-            "url": "#care"
+            "label": "Skincare",
+            "url": "#skincare"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Tools",
+            "url": "#tools"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Gift sets",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
           "type": "tile",
           "settings": {
-            "url": "#care",
-            "image_alt": "Care routine",
-            "label": "Care"
+            "image_alt": "Tinted serum bottle"
+          }
+        },
+        "block-8": {
+          "type": "tile",
+          "settings": {
+            "url": "#sets",
+            "image_alt": "Gloss minis arranged on a table",
+            "label": "Gift sets"
           }
         }
       },
@@ -48,12 +67,18 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "home-collection-collections-directory": {
       "type": "blko-home-collection-collections-directory",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Shop by department",
+        "heading": "Everything for a five-minute face",
+        "text": "Complexion, eye, lip and skincare, plus tools and gift sets, all tested on sensitive skin."
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -61,7 +86,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "15% off your first order",
+        "heading": "Be first to see what's next",
+        "message": "Launches, members-only sales and the occasional how-to, once a week."
+      }
     }
   },
   "order": [

@@ -1,59 +1,189 @@
 {
   "sections": {
+    "stores-header": {
+      "type": "blko-stores-header",
+      "settings": {
+        "breadcrumb": "Find a store",
+        "heading": "Fifteen boutiques and counting.",
+        "text": "Visit a boutique to swatch, sniff and ask an advisor. Choose a state below to see locations."
+      }
+    },
     "beauty-extras-stockist-locator": {
       "type": "blko-beauty-extras-stockist-locator",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Boutiques by state",
+        "heading": "Browse the list.",
+        "text": "Every shop carries the full shelf and offers the same services. Hours and events appear on each location's page.",
+        "country_label": "State",
+        "map_label": "Illustrative boutique map",
+        "map_text": "Boutique map",
+        "directions_label": "Get directions"
+      },
       "blocks": {
         "block-1": {
           "type": "country",
-          "settings": {}
+          "settings": {
+            "label": "All states"
+          }
         },
         "block-2": {
           "type": "country",
           "settings": {
-            "value": "us",
-            "label": "United States"
+            "value": "ca",
+            "label": "California"
           }
         },
         "block-3": {
           "type": "country",
           "settings": {
-            "value": "ca",
-            "label": "Canada"
+            "value": "il",
+            "label": "Illinois"
           }
         },
         "block-4": {
           "type": "country",
           "settings": {
-            "value": "uk",
-            "label": "United Kingdom"
+            "value": "ma",
+            "label": "Massachusetts"
           }
         },
         "block-5": {
-          "type": "store",
-          "settings": {}
+          "type": "country",
+          "settings": {
+            "value": "ny",
+            "label": "New York"
+          }
         },
         "block-6": {
-          "type": "store",
+          "type": "country",
           "settings": {
-            "country": "ca",
-            "name": "The Well Edit",
-            "place": "Toronto, ON"
+            "value": "or",
+            "label": "Oregon"
           }
         },
         "block-7": {
-          "type": "store",
+          "type": "country",
           "settings": {
-            "country": "uk",
-            "name": "Field & Form",
-            "place": "London"
+            "value": "wa",
+            "label": "Washington"
           }
         },
         "block-8": {
           "type": "store",
           "settings": {
-            "name": "Daylight Goods",
+            "country": "ca",
+            "name": "Shelf Hayes Valley",
+            "place": "San Francisco, CA"
+          }
+        },
+        "block-9": {
+          "type": "store",
+          "settings": {
+            "country": "ca",
+            "name": "Shelf Palo Alto",
+            "place": "Palo Alto, CA"
+          }
+        },
+        "block-10": {
+          "type": "store",
+          "settings": {
+            "country": "ca",
+            "name": "Shelf Silver Lake",
             "place": "Los Angeles, CA"
+          }
+        },
+        "block-11": {
+          "type": "store",
+          "settings": {
+            "country": "ca",
+            "name": "Shelf Santa Monica",
+            "place": "Santa Monica, CA"
+          }
+        },
+        "block-12": {
+          "type": "store",
+          "settings": {
+            "country": "ca",
+            "name": "Shelf La Jolla",
+            "place": "San Diego, CA"
+          }
+        },
+        "block-13": {
+          "type": "store",
+          "settings": {
+            "country": "ca",
+            "name": "Shelf Newport",
+            "place": "Newport Beach, CA"
+          }
+        },
+        "block-14": {
+          "type": "store",
+          "settings": {
+            "country": "il",
+            "name": "Shelf Lincoln Park",
+            "place": "Chicago, IL"
+          }
+        },
+        "block-15": {
+          "type": "store",
+          "settings": {
+            "country": "il",
+            "name": "Shelf Evanston",
+            "place": "Evanston, IL"
+          }
+        },
+        "block-16": {
+          "type": "store",
+          "settings": {
+            "country": "ma",
+            "name": "Shelf Back Bay",
+            "place": "Boston, MA"
+          }
+        },
+        "block-17": {
+          "type": "store",
+          "settings": {
+            "country": "ma",
+            "name": "Shelf Cambridge",
+            "place": "Cambridge, MA"
+          }
+        },
+        "block-18": {
+          "type": "store",
+          "settings": {
+            "country": "ny",
+            "name": "Shelf Soho"
+          }
+        },
+        "block-19": {
+          "type": "store",
+          "settings": {
+            "country": "ny",
+            "name": "Shelf Brooklyn Heights",
+            "place": "Brooklyn, NY"
+          }
+        },
+        "block-20": {
+          "type": "store",
+          "settings": {
+            "country": "ny",
+            "name": "Shelf Upper West Side"
+          }
+        },
+        "block-21": {
+          "type": "store",
+          "settings": {
+            "country": "or",
+            "name": "Shelf Pearl District",
+            "place": "Portland, OR"
+          }
+        },
+        "block-22": {
+          "type": "store",
+          "settings": {
+            "country": "wa",
+            "name": "Shelf Capitol Hill",
+            "place": "Seattle, WA"
           }
         }
       },
@@ -65,16 +195,101 @@
         "block-5",
         "block-6",
         "block-7",
-        "block-8"
+        "block-8",
+        "block-9",
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13",
+        "block-14",
+        "block-15",
+        "block-16",
+        "block-17",
+        "block-18",
+        "block-19",
+        "block-20",
+        "block-21",
+        "block-22"
+      ]
+    },
+    "stores-services": {
+      "type": "blko-stores-services",
+      "settings": {
+        "eyebrow": "At every boutique",
+        "heading": "Bookable services",
+        "lede": "Pick one when you reserve a time."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "service",
+          "settings": {
+            "name": "Skin consultation"
+          }
+        },
+        "block-2": {
+          "type": "service",
+          "settings": {
+            "name": "Makeup lesson",
+            "length": "30 min"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "services-perks": {
+      "type": "blko-services-perks",
+      "settings": {
+        "kicker": "Good to know",
+        "heading": "Little extras with every booking"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "A travel-size to take home",
+            "text": "Chosen by your advisor when you check in."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Credit after the session",
+            "text": "Redeem it the same day, or keep it for a week."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Free for Bloom members",
+            "text": "One express facial a year, booked online or by phone."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
       ]
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the list",
+        "message": "New brands, member offers and boutique events by email or text, twice a month."
+      }
     }
   },
   "order": [
+    "stores-header",
     "beauty-extras-stockist-locator",
+    "stores-services",
+    "services-perks",
     "newsletter"
   ]
 }

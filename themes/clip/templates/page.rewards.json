@@ -2,45 +2,63 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "The collectors' club",
+        "heading": "Every clip you love earns a gem.",
+        "text": "Join for free, stack gems on every order and trade them for drops, restocks and freebies before anyone else sees them.",
+        "button_label": "Join the club",
+        "image_alt": "Gem-shaped charms beside a claw clip",
+        "earn_eyebrow": "Earning gems",
+        "earn_heading": "Join, shop, redeem.",
+        "tiers_eyebrow": "Club levels",
+        "tiers_heading": "Collect more, unlock more."
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "title": "Join and sign in",
+            "text": "Create an account, then sign in at checkout so your gems are tracked."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
-            "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "title": "Stack gems",
+            "text": "Earn five gems for every dollar spent, plus bonus gems for a birthday treat and for sharing your look."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Redeem at checkout",
+            "text": "Trade gems for dollars off, a mini mist or a place on a restock list."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "Charm",
+            "points": "0+ gems",
+            "perks": "Gems on every order · birthday surprise"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Gem",
+            "points": "1,000+ gems",
+            "perks": "Early access to drops · free shipping on every order"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Gloss",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Crown",
+            "points": "3,000+ gems",
+            "perks": "First pick of limited colours · members-only gifts"
           }
         }
       },
@@ -53,24 +71,32 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Club questions",
+        "heading": "Gems, explained"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "Where do I see my gem balance?",
+            "text": "Sign in from the account link or from checkout. Your balance and available rewards show at the top of the page."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Did my old points carry over?",
+            "text": "Yes. Points earned before the switch were converted to gems and appear after your first sign-in."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "Do gems stack with sale prices?",
+            "text": "Gems can be redeemed on any order, but limited sets and custom clips are excluded from reward discounts."
           }
         }
       },
@@ -82,12 +108,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-faq",
     "newsletter"
   ]
 }

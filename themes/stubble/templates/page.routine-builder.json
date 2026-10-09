@@ -2,11 +2,23 @@
   "sections": {
     "beauty-extras-routine-builder": {
       "type": "blko-beauty-extras-routine-builder",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Your shave routine",
+        "heading": "Choose one item for each stage.",
+        "text": "Pick prep, blades and after-care and watch the $1-per-item discount add up.",
+        "step_text": "Built for this part of the shave.",
+        "summary_eyebrow": "Your routine",
+        "add_label": "Add all three to cart",
+        "pick_label": "Everyday pick",
+        "alternate_label": "Upgrade"
+      }
     },
     "product-recommendations": {
       "type": "blko-product-recommendations",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Finish the set",
+        "heading": "Add a few essentials"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -27,7 +39,11 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Join the list",
+        "heading": "New drops, first.",
+        "message": "Email for launches and offers. Prefer text? Add your number for the shipping updates and flash sales."
+      }
     }
   },
   "order": [

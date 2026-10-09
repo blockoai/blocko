@@ -80,19 +80,11 @@
     ]
   },
   {
-    "page": "stockists",
-    "title": "Stockists",
-    "sectionIds": [
-      "beauty-extras-stockist-locator",
-      "newsletter"
-    ]
-  },
-  {
     "page": "rewards",
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -101,7 +93,10 @@
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
-      "product-recommendations",
+      "subscription-perks",
+      "subscription-steps",
+      "subscription-popular",
+      "subscription-faq",
       "newsletter"
     ]
   },
@@ -154,7 +149,7 @@
       "content-values",
       "content-founder-note",
       "content-story-timeline",
-      "content-press-quotes",
+      "about-partners",
       "newsletter"
     ]
   },
@@ -191,11 +186,12 @@
     "title": "The everyday kit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
+      "landing-promises",
       "content-landing-routine",
-      "tabbed-product-grid",
+      "landing-picks",
       "content-landing-proof",
-      "category-slider",
+      "landing-compare",
+      "landing-faq",
       "newsletter"
     ]
   },
@@ -248,15 +244,11 @@
       "home-collection-mega-menu",
       "hero-campaign",
       "message-band",
-      "stubble-tool-chooser",
       "tabbed-product-grid",
-      "stubble-trial-banner",
+      "stubble-tool-chooser",
       "category-slider",
-      "feature-driver",
       "stubble-color-story",
-      "commitments",
-      "testimonial-slider",
-      "press-slider",
+      "stubble-trial-banner",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -268,8 +260,10 @@
       "home-collection-mega-menu",
       "home-collection-collection-toolbar",
       "home-collection-collection-grid",
-      "home-collection-quick-view-modal",
+      "collection-systems",
+      "collection-order",
       "stubble-trial-banner",
+      "home-collection-quick-view-modal",
       "newsletter"
     ]
   },
@@ -279,6 +273,8 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "home-collection-collections-directory",
+      "collections-scents",
+      "collections-promises",
       "home-collection-quick-view-modal",
       "newsletter"
     ]
@@ -288,12 +284,16 @@
     "title": "Foaming Shave Gel",
     "sectionIds": [
       "pdp-product-main",
-      "pdp-before-after",
+      "pdp-also-like",
       "pdp-complete-routine",
-      "product-recommendations",
+      "pdp-stats",
+      "pdp-details",
+      "pdp-features",
+      "pdp-fit",
+      "pdp-compare",
+      "pdp-faq",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-recently-viewed"
     ]
   },
   {

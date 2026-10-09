@@ -2,43 +2,67 @@
   "sections": {
     "home-collection-mega-menu": {
       "type": "blko-home-collection-mega-menu",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Shop the drawer",
+        "heading": "Find your next favorite."
+      },
       "blocks": {
         "block-1": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "label": "New + limited",
+            "url": "#new"
+          }
         },
         "block-2": {
           "type": "link",
           "settings": {
-            "label": "Scrunchies",
-            "url": "#eyes"
+            "label": "Claw clips",
+            "url": "#clips"
           }
         },
         "block-3": {
           "type": "link",
           "settings": {
-            "label": "Bows + pins",
-            "url": "#lips"
+            "label": "Scrunchies + bands",
+            "url": "#ties"
           }
         },
         "block-4": {
           "type": "link",
           "settings": {
-            "label": "Brushes + tools",
+            "label": "Hair care",
             "url": "#care"
           }
         },
         "block-5": {
-          "type": "tile",
-          "settings": {}
+          "type": "link",
+          "settings": {
+            "label": "Brushes + tools",
+            "url": "#tools"
+          }
         },
         "block-6": {
+          "type": "link",
+          "settings": {
+            "label": "Sets + gifts",
+            "url": "#sets"
+          }
+        },
+        "block-7": {
+          "type": "tile",
+          "settings": {
+            "url": "#clips",
+            "image_alt": "Pastel claw clip holding a twist",
+            "label": "Claw clips"
+          }
+        },
+        "block-8": {
           "type": "tile",
           "settings": {
             "url": "#care",
-            "image_alt": "Brushes + tools",
-            "label": "Brushes + tools"
+            "image_alt": "Scented hair mist and mask tub",
+            "label": "Scent drop"
           }
         }
       },
@@ -48,37 +72,53 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8"
       ]
     },
     "hero-campaign": {
       "type": "blko-hero-campaign",
-      "settings": {}
+      "settings": {
+        "image_alt": "Creamy hair mask tub beside a vanilla-colored claw clip",
+        "eyebrow": "Out now · limited scent",
+        "heading": "The dessert drop is here.",
+        "text": "A new hair mask in a warm vanilla scent, in a shower-friendly tub with a flip lid. When it is gone, it is gone.",
+        "button_label": "Shop the drop"
+      }
     },
     "clip-trio": {
       "type": "blko-clip-trio",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Cozy + new",
+        "heading": "Fresh from the clip drawer"
+      },
       "blocks": {
         "block-1": {
           "type": "story",
-          "settings": {}
+          "settings": {
+            "image_alt": "Claw clip in a frosted vanilla swirl",
+            "caption": "Limited-edition claw clips",
+            "label": "Shop clips",
+            "url": "#clips"
+          }
         },
         "block-2": {
           "type": "story",
           "settings": {
-            "image_alt": "Satin scrunchies in soft pastel shades",
-            "caption": "Satin scrunchies, six shades",
-            "label": "Shop scrunchies",
-            "url": "#scrunchies"
+            "image_alt": "Travel vanity case beside a knit sleep mask",
+            "caption": "A vanity case and sleep mask, wrapped for winter",
+            "label": "Shop cozy",
+            "url": "#sets"
           }
         },
         "block-3": {
           "type": "story",
           "settings": {
-            "image_alt": "Pearl clips pinned along a side part",
-            "caption": "Pearl pins for tiny moments",
-            "label": "Shop pins",
-            "url": "#pins"
+            "image_alt": "Knit scrunchies in cranberry and oat",
+            "caption": "Knit scrunchies for sweater weather",
+            "label": "Shop scrunchies",
+            "url": "#ties"
           }
         }
       },
@@ -94,18 +134,20 @@
       "blocks": {
         "block-1": {
           "type": "message",
-          "settings": {}
+          "settings": {
+            "text": "NEW SCENT AND COLOUR DROPS EVERY SEASON"
+          }
         },
         "block-2": {
           "type": "message",
           "settings": {
-            "text": "SOFT MATERIALS"
+            "text": "VEGAN + CRUELTY-FREE HAIR CARE"
           }
         },
         "block-3": {
           "type": "message",
           "settings": {
-            "text": "ALL-DAY WEAR"
+            "text": "FREE SHIPPING OVER $75"
           }
         }
       },
@@ -115,38 +157,66 @@
         "block-3"
       ]
     },
+    "tabbed-product-grid": {
+      "type": "blko-tabbed-product-grid",
+      "settings": {
+        "eyebrow": "New + limited",
+        "heading": "Just landed"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "key": "new",
+            "label": "New arrivals"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
     "clip-category-tiles": {
       "type": "blko-clip-category-tiles",
-      "settings": {},
+      "settings": {
+        "heading": "Pick a department"
+      },
       "blocks": {
         "block-1": {
           "type": "tile",
           "settings": {
-            "label": "Brushes + combs"
+            "image_alt": "A boxed set with a mini brush and claw clip",
+            "label": "Sets + gifts",
+            "url": "#sets"
           }
         },
         "block-2": {
           "type": "tile",
           "settings": {
-            "image_alt": "Velvet scrunchies in a stack",
-            "label": "Scrunchies",
-            "url": "#scrunchies"
+            "image_alt": "Pastel mist bottles lined up on a shelf",
+            "label": "Scented mists",
+            "url": "#care"
           }
         },
         "block-3": {
           "type": "tile",
           "settings": {
-            "image_alt": "Pink spa headband and bottles",
-            "label": "Headbands",
-            "url": "#headbands"
+            "image_alt": "Satin and knit hair ties in a stack",
+            "label": "Scrunchies + bands",
+            "url": "#ties"
           }
         },
         "block-4": {
           "type": "tile",
           "settings": {
-            "image_alt": "Hair clip worn on a half-up style",
-            "label": "Clips + pins",
-            "url": "#pins"
+            "image_alt": "Brush with a bamboo handle on a rug",
+            "label": "Brushes + tools",
+            "url": "#tools"
           }
         }
       },
@@ -157,9 +227,22 @@
         "block-4"
       ]
     },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {},
+    "feature-driver": {
+      "type": "blko-feature-driver",
+      "settings": {
+        "image_alt": "Hands holding a fragrance mist and a hair mask",
+        "eyebrow": "The scent story",
+        "heading": "One fragrance, three ways to wear it.",
+        "text": "The mask borrows its warm notes of sugar, vanilla, tonka and amber from our signature mist. Use it as a rinse-out mask, a long overnight treatment or a leave-in finish.",
+        "button_label": "Explore the scent family"
+      }
+    },
+    "home-favorites": {
+      "type": "blko-home-favorites",
+      "settings": {
+        "eyebrow": "Fan favorites",
+        "heading": "The ones everyone reorders"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -168,8 +251,8 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "label": "New arrivals",
-            "key": "new"
+            "key": "sets",
+            "label": "Sets and savings"
           }
         }
       },
@@ -178,25 +261,23 @@
         "block-2"
       ]
     },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {}
-    },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {}
-    },
     "clip-story-split": {
       "type": "blko-clip-story-split",
-      "settings": {}
-    },
-    "testimonial-slider": {
-      "type": "blko-testimonial-slider",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Our story",
+        "heading": "Made by a family, for every hair day",
+        "text": "Two relatives started with a handful of hand-finished accessories and grew into clips, scents and care that make getting ready feel like play.",
+        "button_label": "Read our story",
+        "image_alt": "Person wearing an oversized pastel clip"
+      }
     },
     "clip-mosaic": {
       "type": "blko-clip-mosaic",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Worn by you",
+        "heading": "Clipped in the wild",
+        "button_label": "Follow our feed"
+      },
       "blocks": {
         "block-1": {
           "type": "photo",
@@ -288,7 +369,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Be the first to know",
+        "heading": "Drops, restocks and pop-up news",
+        "message": "Early looks at new colours and scents, plus the occasional members-only sale.",
+        "button_label": "Count me in"
+      }
     },
     "home-collection-quick-view-modal": {
       "type": "blko-home-collection-quick-view-modal",
@@ -300,12 +386,11 @@
     "hero-campaign",
     "clip-trio",
     "message-band",
-    "clip-category-tiles",
     "tabbed-product-grid",
+    "clip-category-tiles",
     "feature-driver",
-    "commitments",
+    "home-favorites",
     "clip-story-split",
-    "testimonial-slider",
     "clip-mosaic",
     "newsletter",
     "home-collection-quick-view-modal"

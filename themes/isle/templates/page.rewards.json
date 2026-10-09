@@ -2,46 +2,61 @@
   "sections": {
     "beauty-extras-rewards-overview": {
       "type": "blko-beauty-extras-rewards-overview",
-      "settings": {},
+      "settings": {
+        "eyebrow": "The rewards club",
+        "heading": "Earn points for every sunny day.",
+        "text": "Sign up free, collect points when you order, and trade them for swag, minis and full-size treats. Members also hear about new scents first.",
+        "button_label": "Join the club",
+        "image_alt": "Tote bag and hair clips in the club swag drop",
+        "earn_eyebrow": "How it works",
+        "earn_heading": "Join. Earn. Redeem.",
+        "tiers_eyebrow": "Club levels",
+        "tiers_heading": "Unlock more as you go."
+      },
       "blocks": {
         "block-1": {
           "type": "earn",
-          "settings": {}
+          "settings": {
+            "text": "Sign up with your email or phone and receive 10% off your first order."
+          }
         },
         "block-2": {
           "type": "earn",
           "settings": {
             "number": "02",
             "title": "Earn",
-            "text": "Collect points when you shop, review, and share."
+            "text": "Collect five points for every dollar, plus bonus points for reviews, referrals and your birthday month."
           }
         },
         "block-3": {
           "type": "earn",
           "settings": {
             "number": "03",
-            "title": "Enjoy",
-            "text": "Redeem a little something at checkout."
+            "title": "Redeem",
+            "text": "Swap points for merch, minis and full-size products at checkout."
           }
         },
         "block-4": {
           "type": "tier",
-          "settings": {}
+          "settings": {
+            "title": "Sand",
+            "perks": "10% welcome offer · birthday bonus"
+          }
         },
         "block-5": {
           "type": "tier",
           "settings": {
-            "title": "Radiance",
-            "points": "500 points",
-            "perks": "Free shipping · double-point days"
+            "title": "Surf",
+            "points": "1,000 points",
+            "perks": "Launch early access · picked samples"
           }
         },
         "block-6": {
           "type": "tier",
           "settings": {
-            "title": "Lustre",
-            "points": "1,200 points",
-            "perks": "Private previews · priority help"
+            "title": "Palm",
+            "points": "3,000 points",
+            "perks": "Double-point weekends · swag-only drops"
           }
         }
       },
@@ -54,24 +69,68 @@
         "block-6"
       ]
     },
-    "faq": {
-      "type": "blko-faq",
-      "settings": {},
+    "rewards-perks": {
+      "type": "blko-rewards-perks",
+      "settings": {
+        "kicker": "Member extras",
+        "quote": "“I get the new scent before it sells out. That alone is worth joining.”",
+        "author": "— Club member"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "point",
+          "settings": {
+            "title": "Launch early access",
+            "text": "Text or email alerts before a drop"
+          }
+        },
+        "block-2": {
+          "type": "point",
+          "settings": {
+            "title": "Swag you can earn",
+            "text": "Totes, hair clips and travel pouches"
+          }
+        },
+        "block-3": {
+          "type": "point",
+          "settings": {
+            "title": "Birthday bonus",
+            "text": "Extra points all month long"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "rewards-faq": {
+      "type": "blko-rewards-faq",
+      "settings": {
+        "eyebrow": "Club questions",
+        "heading": "Points, explained"
+      },
       "blocks": {
         "block-1": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "label": "Can I redeem swag for a refund?",
+            "text": "Swag redemptions are final sale. If an item arrives damaged, contact the care team and we will replace it."
+          }
         },
         "block-2": {
           "type": "question",
           "settings": {
-            "label": "When will my order ship?"
+            "label": "Do the first-order savings stack with other codes?",
+            "text": "Only one discount code works per order, and codes cannot be combined with subscription pricing."
           }
         },
         "block-3": {
           "type": "question",
           "settings": {
-            "label": "Can I update my order?"
+            "label": "How do I get early access to a launch?",
+            "text": "Join the insiders list with your email or phone number. Each launch has its own sign-up that opens a few days before release."
           }
         }
       },
@@ -83,12 +142,17 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the island list",
+        "message": "New scents, early access to launches and sun-care tips. Leave whenever you want."
+      }
     }
   },
   "order": [
     "beauty-extras-rewards-overview",
-    "faq",
+    "rewards-perks",
+    "rewards-faq",
     "newsletter"
   ]
 }

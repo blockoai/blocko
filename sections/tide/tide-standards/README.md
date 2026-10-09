@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `color_scheme` | color_scheme | Color scheme | scheme-2 |
-| `eyebrow` | text | Eyebrow | Our standards |
-| `heading` | text | Heading | Good for skin. Kind to the shoreline. |
+| `eyebrow` | text | Eyebrow | Our commitments |
+| `heading` | text | Heading | Good for skin. Kind to the sea. |
 
 ## Blocks
 

@@ -29,17 +29,17 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Real results |
-| `heading` | text | Heading | Your skin, softly protected. |
-| `text` | textarea | Text | A natural-looking layer of protection that lets your skin show through. |
-| `stat_1_value` | text | Stat 1 value | 94% |
-| `stat_1_label` | text | Stat 1 label | said it felt weightless |
+| `eyebrow` | text | Eyebrow | Tester results |
+| `heading` | text | Heading | Softer after one use. |
+| `text` | textarea | Text | In a four-week consumer study of 60 adults with dry body skin, most noticed smoo |
+| `stat_1_value` | text | Stat 1 value | 96% |
+| `stat_1_label` | text | Stat 1 label | said skin felt softer right away |
 | `stat_2_value` | text | Stat 2 value | 91% |
-| `stat_2_label` | text | Stat 2 label | said it absorbed easily |
+| `stat_2_label` | text | Stat 2 label | saw a visible glow after one week |
 | `after_image` | image_picker | After image |  |
-| `after_image_alt` | text | After image alt text | Skin after sun lotion |
+| `after_image_alt` | text | After image alt text | Skin after body oil |
 | `before_image` | image_picker | Before image |  |
-| `before_image_alt` | text | Before image alt text | Skin before sun lotion |
+| `before_image_alt` | text | Before image alt text | Skin before body oil |
 
 ## Blocks
 

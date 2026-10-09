@@ -29,17 +29,17 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Real results |
-| `heading` | text | Heading | your skin, softly lit. |
-| `text` | textarea | Text | A natural-looking glow that lets your skin do the talking. |
-| `stat_1_value` | text | Stat 1 value | 94% |
-| `stat_1_label` | text | Stat 1 label | said it felt weightless |
-| `stat_2_value` | text | Stat 2 value | 91% |
-| `stat_2_label` | text | Stat 2 label | said it absorbed quickly |
+| `eyebrow` | text | Eyebrow | Wear-time proof |
+| `heading` | text | Heading | A flush that stays put. |
+| `text` | textarea | Text | In a wear test, color stayed visible through a full workday. In a consumer surve |
+| `stat_1_value` | text | Stat 1 value | 8+ hrs |
+| `stat_1_label` | text | Stat 1 label | of visible wear in a clinical test |
+| `stat_2_value` | text | Stat 2 value | 94% |
+| `stat_2_label` | text | Stat 2 label | said it looked like a natural flush |
 | `after_image` | image_picker | After image |  |
-| `after_image_alt` | text | After image alt text | Skin after glow serum |
+| `after_image_alt` | text | After image alt text | Cheeks with a soft, even flush after blending |
 | `before_image` | image_picker | Before image |  |
-| `before_image_alt` | text | Before image alt text | Skin before glow serum |
+| `before_image_alt` | text | Before image alt text | Bare cheeks before blush |
 
 ## Blocks
 

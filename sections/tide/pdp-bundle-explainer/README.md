@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `eyebrow` | text | Eyebrow | Simple by design |
-| `heading` | text | Heading | Pick your three. |
+| `eyebrow` | text | Eyebrow | How sets work |
+| `heading` | text | Heading | Choose, save, gift. |
 
 ## Blocks
 

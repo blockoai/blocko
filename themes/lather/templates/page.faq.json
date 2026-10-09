@@ -2,11 +2,17 @@
   "sections": {
     "content-faq-hero": {
       "type": "blko-content-faq-hero",
-      "settings": {}
+      "settings": {
+        "kicker": "Help center",
+        "heading": "Search for an answer or browse by topic.",
+        "text": "Product info, orders, your account, subscriptions, rewards and the company, all in one place."
+      }
     },
     "content-faq-browser": {
       "type": "blko-content-faq-browser",
-      "settings": {},
+      "settings": {
+        "search_placeholder": "Try “return” or “skip a box”"
+      },
       "blocks": {
         "block-1": {
           "type": "tab",
@@ -15,65 +21,68 @@
         "block-2": {
           "type": "tab",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "key": "products",
+            "label": "Products"
           }
         },
         "block-3": {
           "type": "tab",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "key": "orders",
+            "label": "Orders"
           }
         },
         "block-4": {
           "type": "tab",
           "settings": {
-            "key": "returns",
-            "label": "Returns"
+            "key": "subscriptions",
+            "label": "Subscriptions"
           }
         },
         "block-5": {
           "type": "question",
-          "settings": {}
+          "settings": {
+            "category": "products",
+            "question": "Which bar is gentlest?",
+            "answer": "The zero-grit moisture bar is the softest option. Choose it for your face or if your skin is dry or easily irritated."
+          }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "question": "Can I change my order?",
-            "answer": "Contact support as soon as possible. We’ll help if your order has not begun processing."
+            "category": "products",
+            "question": "How do I find a scent I like?",
+            "answer": "Take the quiz or browse by family. Samples and mini sets help if you want to try before you commit."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find my shade?",
-            "answer": "Begin with the shade finder, then compare undertone and depth in natural light. Our team can offer general guidance."
+            "question": "Can I try it and return it?",
+            "answer": "Yes. Start a return within thirty days, even if the item is partly used, and fill in the three-step form."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Where can I find ingredient information?",
-            "answer": "Each product page includes a clear ingredient list and straightforward usage notes."
+            "question": "Where is my package?",
+            "answer": "Use the tracking page or the link in your shipping email. Most orders land in three to seven days."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What is the return window?",
-            "answer": "Unused items may be eligible for return within the stated window. Start with your order number and support email."
+            "category": "subscriptions",
+            "question": "How do I skip or pause a box?",
+            "answer": "Sign in, open your subscription and choose skip or pause. Changes save immediately."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "returns",
-            "question": "What if something arrived damaged?",
-            "answer": "Send a photo and your order number to support, and we’ll explain the next available step."
+            "category": "subscriptions",
+            "question": "Can I add items to my next box?",
+            "answer": "Yes, add them up to a day before the ship date to get the subscriber discount."
           }
         }
       },
@@ -92,7 +101,12 @@
     },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "20% off your first order",
+        "heading": "Join the crew",
+        "message": "Drop dates, secret sales and the odd locker-room joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
     }
   },
   "order": [

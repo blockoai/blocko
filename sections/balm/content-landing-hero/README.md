@@ -29,12 +29,12 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Model with luminous skin |
-| `kicker` | text | Kicker | The three-step ritual |
-| `heading` | text | Heading | Radiance, grown naturally. |
-| `text` | textarea | Text | Organic cleansing, treatment and color made for skin that glows from within. |
+| `image_alt` | text | Image alt text | Gift set with a ribbon |
+| `kicker` | text | Kicker | The gift guide |
+| `heading` | text | Heading | Sets that look as good as they work. |
+| `text` | textarea | Text | Pick by budget, by person or by routine and every box arrives ready to give. |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Build your routine |
+| `button_label` | text | Button label | Browse the gifts |
 
 ## Blocks
 

@@ -2,24 +2,139 @@
   "sections": {
     "beauty-extras-subscription-manager": {
       "type": "blko-beauty-extras-subscription-manager",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Subscribe & save",
+        "heading": "Keep your favorites coming.",
+        "text": "Take 10% off every order and get free shipping on every refill. Edit the product, date or cadence any time before it ships.",
+        "shipment_eyebrow": "Your next delivery",
+        "shipment_heading": "Arrives on the 12th",
+        "image_alt": "Body oil refill bottle",
+        "variant_label": "Citrus herb · 5 fl oz",
+        "shipment_note": "Shipping to your saved address.",
+        "frequency_eyebrow": "Deliver every",
+        "frequency_copy": "You are set to receive this every 2 months.",
+        "skip_label": "Skip this delivery",
+        "swap_label": "Swap a product"
+      },
       "blocks": {
         "block-1": {
           "type": "frequency",
           "settings": {
-            "selected": true
+            "label": "1 month"
           }
         },
         "block-2": {
           "type": "frequency",
           "settings": {
-            "label": "6 weeks"
+            "label": "2 months",
+            "selected": true
           }
         },
         "block-3": {
           "type": "frequency",
           "settings": {
-            "label": "8 weeks"
+            "label": "3 months"
+          }
+        },
+        "block-4": {
+          "type": "frequency",
+          "settings": {
+            "label": "4 months"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "subscription-perks": {
+      "type": "blko-subscription-perks",
+      "settings": {
+        "kicker": "What you get",
+        "heading": "Five perks on every plan"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "10% off every order",
+            "text": "A lower price on each refill, not just the first."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Free shipping",
+            "text": "Recurring orders ship free in the United States."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Early access",
+            "text": "Be first to try new launches."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "04",
+            "title": "Deluxe samples",
+            "text": "A few extras tucked into each box."
+          }
+        },
+        "block-5": {
+          "type": "value",
+          "settings": {
+            "number": "05",
+            "title": "Skip, edit or cancel",
+            "text": "Change anything in a click, with no fees."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "tide-subscribe": {
+      "type": "blko-tide-subscribe",
+      "settings": {
+        "pill": "Save 10%",
+        "heading": "Subscribe, save and never run out",
+        "text": "Pick a favorite, choose delivery every one to four months and enjoy a lower price on every refill, plus free shipping.",
+        "button_label": "Browse subscription picks"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "title": "Choose a product",
+            "text": "Look for the subscribe option on any face or body favorite."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "title": "Set your cadence",
+            "text": "Every month, every two, three or four months."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "title": "Stay in control",
+            "text": "Skip a delivery, swap a product or cancel in a click."
           }
         }
       },
@@ -50,14 +165,56 @@
         "block-2"
       ]
     },
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Plan questions",
+        "heading": "How subscriptions work"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Which products can I subscribe to?",
+            "text": "Most face and body favorites offer a subscribe option. Gift sets and tools are one-time purchases."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "Can I use my first-order email code?",
+            "text": "No. The subscription discount replaces it, so choose whichever saves you more."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "How do I change my delivery date?",
+            "text": "Sign in, open your subscription and pick a new date or cadence from one to four months."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
     "newsletter": {
       "type": "blko-newsletter",
-      "settings": {}
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join for early looks and offers",
+        "message": "Email and text sign-ups get a welcome discount, new launch alerts and the occasional routine guide."
+      }
     }
   },
   "order": [
     "beauty-extras-subscription-manager",
+    "subscription-perks",
+    "tide-subscribe",
     "product-recommendations",
+    "subscription-faq",
     "newsletter"
   ]
 }

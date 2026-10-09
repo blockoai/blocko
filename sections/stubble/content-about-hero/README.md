@@ -28,13 +28,13 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `kicker` | text | Kicker | Our approach |
-| `heading` | text | Heading | Good gear for real life. |
-| `lede` | textarea | Lede | We make shave, body and face essentials that help you feel like yourself, withou |
+| `kicker` | text | Kicker | Why Stubble |
+| `heading` | text | Heading | Shaving gear built differently. |
+| `lede` | textarea | Lede | We wanted a razor that works as well as the expensive ones and costs far less. O |
 | `button_url` | url | Button url |  |
-| `button_label` | text | Button label | Meet our point of view |
+| `button_label` | text | Button label | Start a shave trial |
 | `image` | image_picker | Image |  |
-| `image_alt` | text | Image alt text | Portrait of a man with a trimmed beard |
+| `image_alt` | text | Image alt text | Man shaving at a bathroom mirror |
 
 ## Blocks
 

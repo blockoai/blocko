@@ -60,16 +60,7 @@
       "page-header",
       "beauty-extras-shade-quiz",
       "beauty-extras-shade-result",
-      "faq",
-      "newsletter"
-    ]
-  },
-  {
-    "page": "ingredients",
-    "title": "Ingredient glossary",
-    "sectionIds": [
-      "beauty-extras-ingredient-glossary",
-      "ingredients-callout",
+      "shade-faq",
       "newsletter"
     ]
   },
@@ -78,7 +69,7 @@
     "title": "Everyday builder",
     "sectionIds": [
       "beauty-extras-routine-builder",
-      "product-recommendations",
+      "builder-picks",
       "newsletter"
     ]
   },
@@ -103,7 +94,7 @@
     "title": "Rewards",
     "sectionIds": [
       "beauty-extras-rewards-overview",
-      "faq",
+      "rewards-faq",
       "newsletter"
     ]
   },
@@ -112,7 +103,9 @@
     "title": "Subscriptions",
     "sectionIds": [
       "beauty-extras-subscription-manager",
-      "product-recommendations",
+      "subscription-perks",
+      "subscription-faq",
+      "subscription-picks",
       "newsletter"
     ]
   },
@@ -163,8 +156,6 @@
       "content-about-hero",
       "content-mission",
       "content-values",
-      "content-founder-note",
-      "content-story-timeline",
       "content-press-quotes",
       "newsletter"
     ]
@@ -175,8 +166,6 @@
     "sectionIds": [
       "content-contact-hero",
       "content-contact-channels",
-      "content-contact-form",
-      "content-contact-hours",
       "content-contact-map"
     ]
   },
@@ -202,11 +191,9 @@
     "title": "The everyday edit",
     "sectionIds": [
       "content-landing-hero",
-      "message-band",
-      "content-landing-routine",
-      "tabbed-product-grid",
       "content-landing-proof",
-      "category-slider",
+      "content-landing-routine",
+      "landing-picks",
       "newsletter"
     ]
   },
@@ -258,17 +245,11 @@
     "sectionIds": [
       "home-collection-mega-menu",
       "hero-campaign",
-      "message-band",
       "blush-visual-links",
-      "tabbed-product-grid",
       "blush-duo",
-      "category-slider",
-      "blush-shades",
+      "tabbed-product-grid",
       "feature-driver",
-      "commitments",
       "blush-ugc",
-      "testimonial-slider",
-      "press-slider",
       "newsletter",
       "home-collection-quick-view-modal"
     ]
@@ -299,12 +280,13 @@
     "title": "Sheer Skin Tint",
     "sectionIds": [
       "pdp-product-main",
-      "pdp-before-after",
+      "pdp-spec-chips",
       "pdp-complete-routine",
-      "product-recommendations",
+      "pdp-sets",
       "pdp-reviews",
-      "pdp-recently-viewed",
-      "newsletter"
+      "pdp-ingredients",
+      "pdp-how-to",
+      "pdp-recently-viewed"
     ]
   },
   {
