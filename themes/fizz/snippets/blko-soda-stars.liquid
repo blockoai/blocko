@@ -13,6 +13,8 @@
     <span class="blko-soda-stars__num">{{ rating | times: 1.0 | round: 1 }}</span>
     {%- if rating_count != blank -%}<span class="blko-soda-stars__count">({{ rating_count }})</span>{%- endif -%}
   </a>
+{%- elsif p.metafields.judgeme.badge != blank or shop.metafields.judgeme.settings != blank -%}
+  <div class="jdgm-widget jdgm-preview-badge" data-id="{{ p.id }}">{{ p.metafields.judgeme.badge }}</div>
 {%- endif -%}
 
 {% stylesheet %}

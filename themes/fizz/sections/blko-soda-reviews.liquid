@@ -11,10 +11,20 @@
   assign rating = product.metafields.reviews.rating.value.rating
   assign rating_count = product.metafields.reviews.rating_count.value
   assign widget = product.metafields.judgeme.widget
+  # Judge.me: its app embed fills the official widget div on the storefront, even when the legacy widget metafield is empty.
+  assign jdgm = false
+  case section.settings.judgeme_mode
+    when 'on'
+      assign jdgm = true
+    when 'auto'
+      if widget != blank or shop.metafields.judgeme.settings != blank or product.metafields.judgeme.badge != blank
+        assign jdgm = true
+      endif
+  endcase
   assign app_blocks = section.blocks | where: 'type', '@app'
   assign own = section.settings.reviews
   assign use_own = false
-  if app_blocks.size == 0 and widget == blank and own.size > 0
+  if app_blocks.size == 0 and jdgm == false and own.size > 0
     assign use_own = true
   endif
   assign avg = rating
@@ -54,7 +64,7 @@
     assign avg = sum | times: 1.0 | divided_by: total
   endif
 -%}
-{%- if app_blocks.size > 0 or widget != blank or use_own or request.design_mode -%}
+{%- if app_blocks.size > 0 or jdgm or use_own or request.design_mode -%}
 <section class="blko-soda-reviews" id="pdp-reviews">
   <blko-soda-reviews data-step="{{ section.settings.page_size }}" data-total="{{ total | default: 0 }}" data-count-text="{{ section.settings.count_text | escape }}">
     <h2 class="blko-soda-reviews__title">{{ section.settings.heading | escape }}</h2>
@@ -87,7 +97,7 @@
             {%- endfor -%}
           </div>
         {%- endif -%}
-        {%- if widget != blank and app_blocks.size == 0 -%}
+        {%- if jdgm and app_blocks.size == 0 -%}
           <a class="blko-soda-reviews__write" href="#judgeme_product_reviews">{{ section.settings.write_label | escape }}</a>
         {%- endif -%}
       </div>
@@ -96,8 +106,10 @@
       <div class="blko-soda-reviews__app">
         {%- for block in app_blocks -%}{% render block %}{%- endfor -%}
       </div>
-    {%- elsif widget != blank -%}
-      <div class="blko-soda-reviews__widget" id="judgeme_product_reviews_wrap">{{ widget }}</div>
+    {%- elsif jdgm -%}
+      <div class="blko-soda-reviews__widget">
+        <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-product-title="{{ product.title | escape }}" data-id="{{ product.id }}" data-product-id="{{ product.id }}" data-widget="review" data-auto-install="false">{{ widget }}</div>
+      </div>
     {%- elsif use_own -%}
       <div class="blko-soda-reviews__filters">
         <div class="blko-soda-reviews__chips">
@@ -210,6 +222,7 @@
   "tag": "div",
   "enabled_on": {"templates": ["product"]},
   "settings": [
+    {"type": "select", "id": "judgeme_mode", "label": "Judge.me reviews", "options": [{"value": "auto", "label": "Auto (when Judge.me is installed)"}, {"value": "on", "label": "Always"}, {"value": "off", "label": "Off (use review metaobjects)"}], "default": "auto", "info": "Judge.me needs its app embed turned on in Theme settings > App embeds."},
     {"type": "paragraph", "content": "Reviews come from Judge.me. Add the Judge.me Review widget app block below, or leave it empty to show the legacy Judge.me widget. Judge.me brings its own filters. Without Judge.me you can pick review metaobjects here and the filter bar works on those. Nothing renders on the live store when there is nothing to show."},
     {"type": "metaobject_list", "id": "reviews", "label": "Reviews (metaobjects)", "metaobject_type": "review", "info": "Used only when Judge.me is not rendering. Fields: rating, title, body, author, date, flavor, photo, helpful, verified."},
     {"type": "range", "id": "page_size", "label": "Reviews per page", "min": 3, "max": 12, "step": 3, "default": 6},
