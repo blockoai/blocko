@@ -13,7 +13,7 @@
   var seen = function () {
     try { var t = Number(localStorage.getItem(KEY)); return !!t && Date.now() - t < 86400000; } catch (e) { return false; }
   };
-  var blocked = function () { return !!document.querySelector('[data-cart-drawer].is-open, blko-soda-cookie:not([hidden])'); };
+  var blocked = function () { return !!document.querySelector('[data-cart-drawer].is-open, blko-soda-cookie:not([hidden]), dialog[open], .blko-soda-rform[open]'); };
 
   var init = function () {
     var style = document.createElement('style');

@@ -240,6 +240,12 @@
 .blko-soda-review__new{padding:.12rem .55rem;border-radius:999px;background:var(--color-accent,#ff6b8b);color:#fff;font-size:.72rem;font-weight:800}
 .blko-soda-review__rec{font-size:.85rem;font-weight:700}
 .blko-soda-rform{box-sizing:border-box;width:min(36rem,calc(100vw - 1.5rem));max-height:calc(100dvh - 1.5rem);margin:auto;padding:0;border:1.5px solid var(--color-text,#0f3b2e);border-radius:24px;background:var(--color-bg,#fbf3e2);color:var(--color-text,#0f3b2e);font-family:var(--font-body,"Outfit",sans-serif);overflow:auto;box-shadow:8px 8px 0 0 var(--flv-accent,#ffd0d6)}
+.blko-soda-rform{overflow:hidden}
+.blko-soda-rform__panel{box-sizing:border-box;max-height:calc(100dvh - 1.5rem - 3px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(15,59,46,.28) transparent}
+.blko-soda-rform__panel::-webkit-scrollbar{width:12px}
+.blko-soda-rform__panel::-webkit-scrollbar-track{margin:22px 0;background:transparent}
+.blko-soda-rform__panel::-webkit-scrollbar-thumb{border:4px solid transparent;border-radius:999px;background:rgba(15,59,46,.28) padding-box}
+.blko-soda-rform__panel::-webkit-scrollbar-thumb:hover{background-color:rgba(15,59,46,.45)}
 .blko-soda-rform::backdrop{background:rgba(15,59,46,.55)}
 .blko-soda-rform *{box-sizing:border-box}
 .blko-soda-rform__panel,.blko-soda-rform__done{position:relative;display:grid;gap:1.1rem;padding:clamp(1.25rem,4vw,2rem)}

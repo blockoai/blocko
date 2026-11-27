@@ -26,7 +26,8 @@
       var blocked = function () {
         var drawer = document.querySelector('[data-cart-drawer].is-open');
         var cookie = document.querySelector('blko-soda-cookie:not([hidden])');
-        return !!(drawer || cookie);
+        var modal = document.querySelector('dialog[open]');
+        return !!(drawer || cookie || modal);
       };
       var seenRecently = function () {
         if (seenThisLoad) return true;
