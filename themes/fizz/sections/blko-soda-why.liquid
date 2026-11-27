@@ -1,7 +1,7 @@
 <section class="blko-soda-why{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background-color:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <h2>{{ section.settings.heading | escape }}</h2>
   <p>{% assign tx = section.settings.text | escape %}{% render 'blko-shop-mail', text: tx %}</p>
-  <a href="{% render 'blko-shop-mail', text: section.settings.button_url %}">{% assign bl = section.settings.button_label | escape %}{% render 'blko-shop-mail', text: bl %}</a>
+  <a href="{% render 'blko-shop-mail', text: section.settings.button_url, mail: 'url' %}">{% assign bl = section.settings.button_label | escape %}{% render 'blko-shop-mail', text: bl, mail: 'addr' %}</a>
   {%- if section.settings.image != blank -%}
     {{ section.settings.image | image_url: width: 1500 | image_tag: class: 'blko-soda-why__art', loading: 'lazy', alt: section.settings.image_alt }}
   {%- else -%}

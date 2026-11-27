@@ -10,7 +10,6 @@
         "heading": "Fizz love",
         "text": "What the sippers and the storytellers are saying.",
         "button_label": "Press inquiries",
-        "button_url": "mailto:press@example.com",
         "banner": "press"
       }
     },
@@ -89,8 +88,7 @@
         "text_color": "#0f3b2e",
         "heading": "Write about Fizz?",
         "text": "We send samples and answer questions fast.",
-        "button_label": "press@example.com",
-        "button_url": "mailto:press@example.com"
+        "button_label": ""
       }
     }
   },

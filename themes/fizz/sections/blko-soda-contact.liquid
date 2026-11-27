@@ -8,7 +8,7 @@
     <div class="blko-soda-contact__intro">
       <ul>
         {%- for block in section.blocks -%}{%- if block.type == 'channel' -%}
-          <li {{ block.shopify_attributes }}><b>{{ block.settings.title | escape }}</b><span>{{ block.settings.text | escape }}</span><a href="{% render 'blko-shop-mail', text: block.settings.url %}">{% assign ll = block.settings.link_label | escape %}{% render 'blko-shop-mail', text: ll %}</a></li>
+          <li {{ block.shopify_attributes }}><b>{{ block.settings.title | escape }}</b><span>{{ block.settings.text | escape }}</span><a href="{% render 'blko-shop-mail', text: block.settings.url, mail: 'url' %}">{% assign ll = block.settings.link_label | escape %}{% render 'blko-shop-mail', text: ll, mail: 'addr' %}</a></li>
         {%- endif -%}{%- endfor -%}
       </ul>
     </div>
@@ -87,7 +87,7 @@
         {"type": "text", "id": "title", "label": "Title", "default": "Help desk"},
         {"type": "text", "id": "text", "label": "Text", "default": "Orders, returns and flavor questions."},
         {"type": "url", "id": "url", "label": "Link"},
-        {"type": "text", "id": "link_label", "label": "Link label", "default": "help@example.com"}
+        {"type": "text", "id": "link_label", "label": "Link label", "info": "Leave blank to show the store email."}
       ]
     }
   ],

@@ -11,27 +11,21 @@
           "type": "channel",
           "settings": {
             "title": "Help desk",
-            "text": "Orders, returns and flavor questions.",
-            "url": "mailto:help@example.com",
-            "link_label": "help@example.com"
+            "text": "Orders, returns and flavor questions."
           }
         },
         "block-2": {
           "type": "channel",
           "settings": {
             "title": "Wholesale",
-            "text": "Stock Fizz in your store, cafe or gym.",
-            "url": "mailto:wholesale@example.com",
-            "link_label": "wholesale@example.com"
+            "text": "Stock Fizz in your store, cafe or gym."
           }
         },
         "block-3": {
           "type": "channel",
           "settings": {
             "title": "Press",
-            "text": "Samples and interviews.",
-            "url": "mailto:press@example.com",
-            "link_label": "press@example.com"
+            "text": "Samples and interviews."
           }
         }
       },
