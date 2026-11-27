@@ -4,9 +4,7 @@
 <div class="blko-soda-pdpwrap" data-flavor-scope style="--tile-bg:{{ tile_bg }};--flv-accent:{{ flavor_accent }}">
 <blko-soda-product class="blko-soda-pdp">
   <div class="blko-soda-pdp__gallery">
-    {%- if product.featured_image -%}
-      {% render 'blko-soda-tile', product: product, size: 'gallery', loading: 'eager', attrs: 'data-main-image' %}
-    {%- endif -%}
+    {% render 'blko-soda-tile', product: product, size: 'gallery', loading: 'eager', attrs: 'data-main-image' %}
     {%- if product.images.size > 1 -%}
       <div class="blko-soda-pdp__thumbs">
         {%- for image in product.images -%}

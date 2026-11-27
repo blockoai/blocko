@@ -3,7 +3,7 @@
   assign article = block.settings.article | default: article
 -%}
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-search-blog><blko-predictive-search><article class="blko-search-blog-article-card" data-search-blog-article data-search-blog-tag="{{ article.tags.first | escape }}">
-  {% if article.image != blank %}{{ article.image | image_url: width: 860 | image_tag: loading: 'lazy', widths: '215, 430, 645, 860', alt: article.title }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}
+  {% if article.image != blank %}{{ article.image | image_url: width: 860 | image_tag: loading: 'lazy', widths: '215, 430, 645, 860', alt: article.title }}{% else %}{% render 'blko-fizz-fallback', kind: 'social', alt: article.title %}{% endif %}
   <div><p class="blko-eyebrow">{{ article.tags.first | escape }}</p><h3>{{ article.title | escape }}</h3><p>{{ article.excerpt_or_content | strip_html | truncate: 160 | escape }}</p><a href="{{ article.url | escape }}">{{ block.settings.link_label | escape }} <span aria-hidden="true">→</span></a></div>
 </article></blko-predictive-search></blko-search-blog></div>
 <script type="module" src="{{ 'blko-predictive-search.js' | asset_url }}"></script>

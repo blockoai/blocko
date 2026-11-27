@@ -38,9 +38,7 @@
 {%- capture includes -%}{%- for c in components -%}{{ c.title }} ×{{ cans_each }}{% unless forloop.last %}, {% endunless %}{%- endfor -%}{%- endcapture -%}
 {%- capture gallery_html -%}
   <div class="blko-soda-pdp__gallery">
-    {%- if product.featured_image -%}
-      {% render 'blko-soda-tile', product: product, size: 'gallery', loading: 'eager', attrs: 'data-main-image' %}
-    {%- endif -%}
+    {% render 'blko-soda-tile', product: product, size: 'gallery', loading: 'eager', attrs: 'data-main-image' %}
     {%- if product.images.size > 1 or components.size > 0 -%}
       <div class="blko-soda-pdp__thumbs">
         {%- for image in product.images -%}

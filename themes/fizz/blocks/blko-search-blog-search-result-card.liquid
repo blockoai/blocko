@@ -3,7 +3,7 @@
   assign result = block.settings.result | default: result
 -%}
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-search-blog><blko-predictive-search><article class="blko-search-blog-result" data-search-blog-result data-search-blog-category="products">
-  {% if result.featured_image != blank %}{{ result.featured_image | image_url: width: 760 | image_tag: loading: 'lazy', widths: '380, 570, 760', alt: result.title }}{% else %}{{ 'image' | placeholder_svg_tag: 'blko-placeholder' }}{% endif %}
+  {% if result.featured_image != blank %}{{ result.featured_image | image_url: width: 760 | image_tag: loading: 'lazy', widths: '380, 570, 760', alt: result.title }}{% else %}{% render 'blko-fizz-fallback', kind: 'can', alt: result.title %}{% endif %}
   <div><p class="blko-eyebrow">{{ block.settings.product_label | escape }}</p><h3>{{ result.title | escape }}</h3><p>{{ result.description | strip_html | truncate: 160 | escape }}</p><a href="{{ result.url | escape }}">{{ block.settings.product_link | escape }}</a></div>
 </article></blko-predictive-search></blko-search-blog></div>
 <script type="module" src="{{ 'blko-predictive-search.js' | asset_url }}"></script>

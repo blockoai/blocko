@@ -21,6 +21,8 @@
 <div class="blko-soda-tile{% if full %} is-full{% endif %}" style="--tile-bg:{{ tile_bg }}">
   {%- if img -%}
     <img class="blko-soda-tile__img blko-soda-tile__img--can" src="{{ img | image_url: width: w }}" alt="{{ img.alt | default: p.title | escape }}" width="{{ w }}" height="{{ w }}" loading="{{ loading | default: 'lazy' }}" {{ attrs }}>
+  {%- else -%}
+    {% render 'blko-fizz-fallback', kind: 'can', n: p.id, alt: p.title, class: 'blko-soda-tile__img blko-soda-tile__img--can' %}
   {%- endif -%}
   {%- if alt_image -%}
     <img class="blko-soda-tile__img blko-soda-tile__img--alt" src="{{ alt_image | image_url: width: w }}" alt="" width="{{ w }}" height="{{ w }}" loading="lazy">

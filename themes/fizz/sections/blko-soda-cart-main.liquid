@@ -12,7 +12,7 @@
             {%- for item in cart.items -%}
               {%- assign n = forloop.index0 | modulo: 5 | plus: 1 -%}
               <li>
-                <a class="blko-soda-cartpage__tile" href="{{ item.url }}" style="--tile-bg:var(--color-pastel-{{ n }}, #ffc9d6)">{%- if item.image -%}<img src="{{ item.image | image_url: width: 240 }}" alt="{{ item.title | escape }}" width="96" height="96" loading="lazy">{%- endif -%}</a>
+                <a class="blko-soda-cartpage__tile" href="{{ item.url }}" style="--tile-bg:var(--color-pastel-{{ n }}, #ffc9d6)">{%- if item.image -%}<img src="{{ item.image | image_url: width: 240 }}" alt="{{ item.title | escape }}" width="96" height="96" loading="lazy">{%- else -%}{% render 'blko-fizz-fallback', kind: 'can', n: item.product.id, alt: item.title, class: 'blko-fizz-fb' %}{%- endif -%}</a>
                 <div class="blko-soda-cartpage__info">
                   <a class="blko-soda-cartpage__title" href="{{ item.url }}">{{ item.product.title }}</a>
                   {%- unless item.product.has_only_default_variant -%}<p>{{ item.variant.title }}</p>{%- endunless -%}

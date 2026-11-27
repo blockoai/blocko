@@ -1,0 +1,40 @@
+{%- comment -%}
+  Illustrated fallback for an empty image slot, so a fresh install never shows a blank colored panel.
+  kind: 'can' | 'social' | 'collection' | 'mark' | any fizz-banner-NAME (story, faq, mega-promo, ...). Default 'story'.
+  n: index used to pick a different can or social banner per card. alt: alt text. class: optional.
+{%- endcomment -%}
+{%- liquid
+  assign blko_k = kind | default: 'story'
+  assign blko_i = n | default: 1 | plus: 0
+  assign blko_fit = 'cover'
+  assign blko_w = 1500
+  assign blko_h = 1000
+  if blko_k == 'can'
+    assign blko_cans = 'cherry-pop,orange-burst,lemon-lime-zing,grape-soda,mango-tango,mint-mojito,root-beer,strawberry-lime' | split: ','
+    assign blko_idx = blko_i | minus: 1 | modulo: 8
+    assign blko_file = 'fizz-can-' | append: blko_cans[blko_idx] | append: '.svg'
+    assign blko_fit = 'contain'
+    assign blko_w = 300
+    assign blko_h = 536
+  elsif blko_k == 'social'
+    assign blko_idx = blko_i | minus: 1 | modulo: 6 | plus: 1
+    assign blko_file = 'fizz-banner-social-' | append: blko_idx | append: '.svg'
+    assign blko_w = 1000
+    assign blko_h = 1000
+  elsif blko_k == 'collection'
+    assign blko_idx = blko_i | modulo: 2
+    if blko_idx == 1
+      assign blko_file = 'fizz-banner-collection-header.svg'
+    else
+      assign blko_file = 'fizz-banner-variety.svg'
+    endif
+  elsif blko_k == 'mark'
+    assign blko_file = 'brand-mark.svg'
+    assign blko_fit = 'contain'
+    assign blko_w = 512
+    assign blko_h = 512
+  else
+    assign blko_file = 'fizz-banner-' | append: blko_k | append: '.svg'
+  endif
+-%}
+<img class="{{ class | default: 'blko-placeholder' }}" src="{{ blko_file | asset_url }}" alt="{{ alt | default: alt2 | escape }}" width="{{ blko_w }}" height="{{ blko_h }}" loading="lazy" style="object-fit:{{ blko_fit }}">

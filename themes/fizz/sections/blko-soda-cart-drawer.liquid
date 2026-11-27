@@ -29,7 +29,7 @@
         <div class="blko-soda-drawer__items">
           {%- for item in cart.items -%}
             <div class="blko-soda-line">
-              <a class="blko-soda-line__img" href="{{ item.url }}">{% if item.image %}<img src="{{ item.image | image_url: width: 160 }}" alt="{{ item.title | escape }}" width="72" height="120" loading="lazy">{% endif %}</a>
+              <a class="blko-soda-line__img" href="{{ item.url }}">{% if item.image %}<img src="{{ item.image | image_url: width: 160 }}" alt="{{ item.title | escape }}" width="72" height="120" loading="lazy">{% else %}{% render 'blko-fizz-fallback', kind: 'can', n: item.product.id, alt: item.title, class: 'blko-fizz-fb' %}{% endif %}</a>
               <div class="blko-soda-line__body">
                 <a class="blko-soda-line__title" href="{{ item.url }}">{{ item.product.title }}</a>
                 {%- unless item.product.has_only_default_variant -%}<p class="blko-soda-line__meta">{{ item.variant.title }}</p>{%- endunless -%}
