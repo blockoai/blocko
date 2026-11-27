@@ -1,0 +1,100 @@
+{
+  "sections": {
+    "hero": {
+      "type": "blko-soda-story-hero",
+      "settings": {}
+    },
+    "mission": {
+      "type": "blko-soda-story-mission",
+      "settings": {}
+    },
+    "real-fruit": {
+      "type": "blko-soda-two-columns",
+      "settings": {
+        "reverse": false,
+        "bg": "#e3f5fd",
+        "heading": "Made in small batches",
+        "text": "We cook fruit, blend fiber and carbonate in small batches so every can tastes the same as the first one we poured.",
+        "button_label": "Meet the flavors",
+        "button_url": "/collections/drinks"
+      }
+    },
+    "impact": {
+      "type": "blko-soda-story-impact",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "stat",
+          "settings": {
+            "number": "2M",
+            "label": "Cans sipped*"
+          }
+        },
+        "block-2": {
+          "type": "stat",
+          "settings": {
+            "number": "2g",
+            "label": "Sugar per can"
+          }
+        },
+        "block-3": {
+          "type": "stat",
+          "settings": {
+            "number": "6",
+            "label": "Fruity flavors"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "retailers": {
+      "type": "blko-soda-retailers",
+      "settings": {
+        "button_url": "/pages/stockists"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "retailer",
+          "settings": {
+            "name": "Corner Market"
+          }
+        },
+        "block-2": {
+          "type": "retailer",
+          "settings": {
+            "name": "Green Grocer"
+          }
+        },
+        "block-3": {
+          "type": "retailer",
+          "settings": {
+            "name": "Daily Pantry"
+          }
+        },
+        "block-4": {
+          "type": "retailer",
+          "settings": {
+            "name": "Fresh Aisle"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "mission",
+    "real-fruit",
+    "impact",
+    "retailers"
+  ]
+}

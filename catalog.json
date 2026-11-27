@@ -31949,58 +31949,6 @@
           "blockTypes": []
         },
         {
-          "id": "extras-shade-quiz",
-          "name": "Scent finder quiz",
-          "kind": "section",
-          "category": "quiz",
-          "description": "Three-step soap matching quiz with recommendations.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Scent finder quiz\" (id `extras-shade-quiz`, theme `fizz`; Shopify bundle: sections/fizz/extras-shade-quiz/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/extras-shade-quiz",
-          "files": [
-            "sections/fizz/extras-shade-quiz/sections/blko-extras-shade-quiz.liquid",
-            "sections/fizz/extras-shade-quiz/assets/blko-extras.js"
-          ],
-          "deps": [
-            "blko-extras.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": [
-            "tone",
-            "undertone",
-            "coverage"
-          ]
-        },
-        {
-          "id": "extras-shade-result",
-          "name": "Scent finder result",
-          "kind": "section",
-          "category": "quiz",
-          "description": "Recommended shade cards and add-to-cart action.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Scent finder result\" (id `extras-shade-result`, theme `fizz`; Shopify bundle: sections/fizz/extras-shade-result/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/extras-shade-result",
-          "files": [
-            "sections/fizz/extras-shade-result/sections/blko-extras-shade-result.liquid",
-            "sections/fizz/extras-shade-result/assets/blko-extras.js"
-          ],
-          "deps": [
-            "blko-extras.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": [
-            "swatch"
-          ]
-        },
-        {
           "id": "extras-ingredient-glossary",
           "name": "Ingredient glossary",
           "kind": "section",
@@ -32027,29 +31975,6 @@
             "filter",
             "ingredient"
           ]
-        },
-        {
-          "id": "extras-routine-builder",
-          "name": "Routine builder",
-          "kind": "section",
-          "category": "routine-builder",
-          "description": "Three-step routine picker with a running total.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Routine builder\" (id `extras-routine-builder`, theme `fizz`; Shopify bundle: sections/fizz/extras-routine-builder/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/extras-routine-builder",
-          "files": [
-            "sections/fizz/extras-routine-builder/sections/blko-extras-routine-builder.liquid",
-            "sections/fizz/extras-routine-builder/assets/blko-extras.js"
-          ],
-          "deps": [
-            "blko-extras.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
         },
         {
           "id": "extras-reviews-hub",
@@ -32153,52 +32078,6 @@
           "blockTypes": []
         },
         {
-          "id": "extras-shade-answer",
-          "name": "Scent answer",
-          "kind": "block",
-          "category": "quiz",
-          "description": "Selectable quiz-answer tile.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the block \"Scent answer\" (id `extras-shade-answer`, theme `fizz`; Shopify bundle: sections/fizz/extras-shade-answer/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/extras-shade-answer",
-          "files": [
-            "sections/fizz/extras-shade-answer/blocks/blko-extras-shade-answer.liquid",
-            "sections/fizz/extras-shade-answer/assets/blko-extras.js"
-          ],
-          "deps": [
-            "blko-extras.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
-          "id": "extras-shade-match",
-          "name": "Scent match",
-          "kind": "block",
-          "category": "quiz",
-          "description": "Recommended shade card with add action.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the block \"Scent match\" (id `extras-shade-match`, theme `fizz`; Shopify bundle: sections/fizz/extras-shade-match/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/extras-shade-match",
-          "files": [
-            "sections/fizz/extras-shade-match/blocks/blko-extras-shade-match.liquid",
-            "sections/fizz/extras-shade-match/assets/blko-extras.js"
-          ],
-          "deps": [
-            "blko-extras.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
           "id": "extras-ingredient-row",
           "name": "Ingredient row",
           "kind": "block",
@@ -32236,52 +32115,6 @@
           "files": [
             "sections/fizz/extras-ingredient-detail/blocks/blko-extras-ingredient-detail.liquid",
             "sections/fizz/extras-ingredient-detail/assets/blko-extras.js"
-          ],
-          "deps": [
-            "blko-extras.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
-          "id": "extras-routine-step",
-          "name": "Routine step",
-          "kind": "block",
-          "category": "routine-builder",
-          "description": "Selectable routine-builder product step.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the block \"Routine step\" (id `extras-routine-step`, theme `fizz`; Shopify bundle: sections/fizz/extras-routine-step/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/extras-routine-step",
-          "files": [
-            "sections/fizz/extras-routine-step/blocks/blko-extras-routine-step.liquid",
-            "sections/fizz/extras-routine-step/assets/blko-extras.js"
-          ],
-          "deps": [
-            "blko-extras.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
-          "id": "extras-routine-total",
-          "name": "Routine total",
-          "kind": "block",
-          "category": "routine-builder",
-          "description": "Live-updating routine order total.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the block \"Routine total\" (id `extras-routine-total`, theme `fizz`; Shopify bundle: sections/fizz/extras-routine-total/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/extras-routine-total",
-          "files": [
-            "sections/fizz/extras-routine-total/blocks/blko-extras-routine-total.liquid",
-            "sections/fizz/extras-routine-total/assets/blko-extras.js"
           ],
           "deps": [
             "blko-extras.js"
@@ -33214,31 +33047,6 @@
           "blockTypes": []
         },
         {
-          "id": "content-landing-routine",
-          "name": "Campaign routine",
-          "kind": "section",
-          "category": "landing",
-          "description": "Three-step editorial routine with practical product guidance.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Campaign routine\" (id `content-landing-routine`, theme `fizz`; Shopify bundle: sections/fizz/content-landing-routine/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/content-landing-routine",
-          "files": [
-            "sections/fizz/content-landing-routine/sections/blko-content-landing-routine.liquid",
-            "sections/fizz/content-landing-routine/assets/blko-content.js"
-          ],
-          "deps": [
-            "blko-content.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": [
-            "step"
-          ]
-        },
-        {
           "id": "content-landing-proof",
           "name": "Campaign proof",
           "kind": "section",
@@ -34155,26 +33963,6 @@
           "blockTypes": []
         },
         {
-          "id": "shade-finder",
-          "name": "Scent finder",
-          "kind": "section",
-          "category": "quiz",
-          "description": "A guided shade-matching entry point.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Scent finder\" (id `shade-finder`, theme `fizz`; Shopify bundle: sections/fizz/shade-finder/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/shade-finder",
-          "files": [
-            "sections/fizz/shade-finder/sections/blko-shade-finder.liquid"
-          ],
-          "deps": [],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
           "id": "collection-banner",
           "name": "Collection banner",
           "kind": "section",
@@ -34248,60 +34036,6 @@
           "themeSettings": [],
           "blockTypes": [
             "chip"
-          ]
-        },
-        {
-          "id": "main-product-skin-tint",
-          "name": "Bar soap product",
-          "kind": "section",
-          "category": "main-product",
-          "description": "Product media, shade swatches, price, and purchase controls.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Bar soap product\" (id `main-product-skin-tint`, theme `fizz`; Shopify bundle: sections/fizz/main-product-skin-tint/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/main-product-skin-tint",
-          "files": [
-            "sections/fizz/main-product-skin-tint/sections/blko-main-product-skin-tint.liquid",
-            "sections/fizz/main-product-skin-tint/assets/blko-accordion.js",
-            "sections/fizz/main-product-skin-tint/assets/blko-variant-picker.js"
-          ],
-          "deps": [
-            "blko-accordion.js",
-            "blko-variant-picker.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": [
-            "accordion"
-          ]
-        },
-        {
-          "id": "main-product-eye-cream",
-          "name": "Eye treatment product",
-          "kind": "section",
-          "category": "main-product",
-          "description": "Skincare detail layout with benefit and ingredient accordions.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Eye treatment product\" (id `main-product-eye-cream`, theme `fizz`; Shopify bundle: sections/fizz/main-product-eye-cream/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/main-product-eye-cream",
-          "files": [
-            "sections/fizz/main-product-eye-cream/sections/blko-main-product-eye-cream.liquid",
-            "sections/fizz/main-product-eye-cream/assets/blko-accordion.js",
-            "sections/fizz/main-product-eye-cream/assets/blko-variant-picker.js"
-          ],
-          "deps": [
-            "blko-accordion.js",
-            "blko-variant-picker.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": [
-            "accordion"
           ]
         },
         {
@@ -35239,29 +34973,6 @@
           "blockTypes": []
         },
         {
-          "id": "shade-swatch-picker",
-          "name": "Scent swatch picker",
-          "kind": "block",
-          "category": "purchase",
-          "description": "Selectable color swatches.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the block \"Scent swatch picker\" (id `shade-swatch-picker`, theme `fizz`; Shopify bundle: sections/fizz/shade-swatch-picker/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/shade-swatch-picker",
-          "files": [
-            "sections/fizz/shade-swatch-picker/blocks/blko-shade-swatch-picker.liquid",
-            "sections/fizz/shade-swatch-picker/assets/blko-variant-picker.js"
-          ],
-          "deps": [
-            "blko-variant-picker.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
           "id": "global-subscribe-success",
           "name": "Subscribe success",
           "kind": "section",
@@ -35841,43 +35552,6 @@
           "blockTypes": []
         },
         {
-          "id": "pdp-product-main",
-          "name": "Bar soap product detail",
-          "kind": "section",
-          "category": "main-product",
-          "description": "Gallery, shade and size choices, flexible purchase option, quantity, and sticky purchase bar.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Bar soap product detail\" (id `pdp-product-main`, theme `fizz`; Shopify bundle: sections/fizz/pdp-product-main/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/pdp-product-main",
-          "files": [
-            "sections/fizz/pdp-product-main/sections/blko-pdp-product-main.liquid",
-            "sections/fizz/pdp-product-main/assets/blko-accordion.js",
-            "sections/fizz/pdp-product-main/assets/blko-quantity.js",
-            "sections/fizz/pdp-product-main/assets/blko-pdp.js",
-            "sections/fizz/pdp-product-main/locales/en.default.blko.json"
-          ],
-          "deps": [
-            "blko-accordion.js",
-            "blko-quantity.js",
-            "blko-pdp.js"
-          ],
-          "localeKeys": [
-            "blko.pdp.decrease_quantity",
-            "blko.pdp.increase_quantity",
-            "blko.pdp.product_images",
-            "blko.pdp.sold_out",
-            "blko.pdp.zoom",
-            "blko.pdp.zoom_image"
-          ],
-          "themeSettings": [],
-          "blockTypes": [
-            "accordion"
-          ]
-        },
-        {
           "id": "pdp-before-after",
           "name": "Before and after comparison",
           "kind": "section",
@@ -35902,29 +35576,6 @@
             "blko.pdp.before",
             "blko.pdp.reveal_comparison"
           ],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
-          "id": "pdp-complete-routine",
-          "name": "Complete the bundle",
-          "kind": "section",
-          "category": "product-recommendations",
-          "description": "Three-step routine recommendation grid for a product page.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Complete the bundle\" (id `pdp-complete-routine`, theme `fizz`; Shopify bundle: sections/fizz/pdp-complete-routine/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/pdp-complete-routine",
-          "files": [
-            "sections/fizz/pdp-complete-routine/sections/blko-pdp-complete-routine.liquid",
-            "sections/fizz/pdp-complete-routine/assets/blko-pdp.js"
-          ],
-          "deps": [
-            "blko-pdp.js"
-          ],
-          "localeKeys": [],
           "themeSettings": [],
           "blockTypes": []
         },
@@ -36058,29 +35709,6 @@
           "localeKeys": [
             "blko.pdp.zoom"
           ],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
-          "id": "pdp-shade-picker",
-          "name": "Scent swatch picker",
-          "kind": "block",
-          "category": "purchase",
-          "description": "Five visual shade choices that update a selected shade label.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the block \"Scent swatch picker\" (id `pdp-shade-picker`, theme `fizz`; Shopify bundle: sections/fizz/pdp-shade-picker/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/pdp-shade-picker",
-          "files": [
-            "sections/fizz/pdp-shade-picker/blocks/blko-pdp-shade-picker.liquid",
-            "sections/fizz/pdp-shade-picker/assets/blko-pdp.js"
-          ],
-          "deps": [
-            "blko-pdp.js"
-          ],
-          "localeKeys": [],
           "themeSettings": [],
           "blockTypes": []
         },
@@ -36698,29 +36326,6 @@
           ]
         },
         {
-          "id": "fizz-quiz-banner",
-          "name": "Scent quiz banner",
-          "kind": "section",
-          "category": "promo",
-          "description": "Full-width banner inviting visitors to take a scent quiz for a discount.",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Scent quiz banner\" (id `fizz-quiz-banner`, theme `fizz`; Shopify bundle: sections/fizz/fizz-quiz-banner/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
-          "bundle": "sections/fizz/fizz-quiz-banner",
-          "files": [
-            "sections/fizz/fizz-quiz-banner/sections/blko-fizz-quiz-banner.liquid",
-            "sections/fizz/fizz-quiz-banner/assets/blko-fizz-signature.js"
-          ],
-          "deps": [
-            "blko-fizz-signature.js"
-          ],
-          "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
-        },
-        {
           "id": "collections-flavor-hubs",
           "name": "Scent line-up",
           "kind": "section",
@@ -36988,6 +36593,457 @@
           "blockTypes": [
             "direction"
           ]
+        },
+        {
+          "id": "soda-announcement",
+          "name": "Soda announcement",
+          "kind": "section",
+          "category": "announcement",
+          "description": "Rotating announcement bar with arrows.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/announcement--soda-announcement.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/announcement--soda-announcement.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda announcement\" (id `soda-announcement`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/announcement--soda-announcement.html; Shopify bundle: sections/fizz/soda-announcement/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-announcement",
+          "files": [
+            "sections/fizz/soda-announcement/sections/blko-soda-announcement.liquid",
+            "sections/fizz/soda-announcement/assets/blko-soda.js"
+          ],
+          "deps": [
+            "blko-soda.js"
+          ],
+          "localeKeys": [],
+          "themeSettings": [
+            "link_label",
+            "link_url",
+            "text"
+          ],
+          "blockTypes": [
+            "message"
+          ]
+        },
+        {
+          "id": "soda-cart-drawer",
+          "name": "Soda cart drawer",
+          "kind": "section",
+          "category": "cart-drawer",
+          "description": "Slide-out cart with a free-shipping progress bar, quantity controls and subscription lines.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/cart-drawer--soda-cart-drawer.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/cart-drawer--soda-cart-drawer.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda cart drawer\" (id `soda-cart-drawer`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/cart-drawer--soda-cart-drawer.html; Shopify bundle: sections/fizz/soda-cart-drawer/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-cart-drawer",
+          "files": [
+            "sections/fizz/soda-cart-drawer/sections/blko-soda-cart-drawer.liquid",
+            "sections/fizz/soda-cart-drawer/assets/blko-soda.js"
+          ],
+          "deps": [
+            "blko-soda.js"
+          ],
+          "localeKeys": [],
+          "themeSettings": [],
+          "blockTypes": []
+        },
+        {
+          "id": "soda-cart-main",
+          "name": "Soda cart",
+          "kind": "section",
+          "category": "cart",
+          "description": "Cart page with quantity inputs and checkout.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/cart--soda-cart-main.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/cart--soda-cart-main.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda cart\" (id `soda-cart-main`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/cart--soda-cart-main.html; Shopify bundle: sections/fizz/soda-cart-main/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-cart-main",
+          "files": [
+            "sections/fizz/soda-cart-main/sections/blko-soda-cart-main.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [],
+          "blockTypes": []
+        },
+        {
+          "id": "soda-collection-tabs",
+          "name": "Soda collection tabs",
+          "kind": "section",
+          "category": "featured-collection",
+          "description": "Tabbed product carousel (classics, fruit punch, minis, limited, variety) with hover image and quick add.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/featured-collection--soda-collection-tabs.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/featured-collection--soda-collection-tabs.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda collection tabs\" (id `soda-collection-tabs`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/featured-collection--soda-collection-tabs.html; Shopify bundle: sections/fizz/soda-collection-tabs/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-collection-tabs",
+          "files": [
+            "sections/fizz/soda-collection-tabs/sections/blko-soda-collection-tabs.liquid",
+            "sections/fizz/soda-collection-tabs/snippets/blko-soda-product-card.liquid",
+            "sections/fizz/soda-collection-tabs/assets/blko-soda.js"
+          ],
+          "deps": [
+            "blko-soda.js"
+          ],
+          "localeKeys": [],
+          "themeSettings": [
+            "collection",
+            "cta_label",
+            "limit",
+            "note",
+            "tab_label"
+          ],
+          "blockTypes": [
+            "collection"
+          ]
+        },
+        {
+          "id": "soda-collection",
+          "name": "Soda collection",
+          "kind": "section",
+          "category": "main-collection-product-grid",
+          "description": "Collection hero, filter tabs and product grid with hover and quick add.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/main-collection-product-grid--soda-collection.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/main-collection-product-grid--soda-collection.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda collection\" (id `soda-collection`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/main-collection-product-grid--soda-collection.html; Shopify bundle: sections/fizz/soda-collection/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-collection",
+          "files": [
+            "sections/fizz/soda-collection/sections/blko-soda-collection.liquid",
+            "sections/fizz/soda-collection/snippets/blko-soda-product-card.liquid",
+            "sections/fizz/soda-collection/assets/blko-soda.js"
+          ],
+          "deps": [
+            "blko-soda.js"
+          ],
+          "localeKeys": [],
+          "themeSettings": [
+            "handle",
+            "label"
+          ],
+          "blockTypes": [
+            "filter"
+          ]
+        },
+        {
+          "id": "soda-header",
+          "name": "Soda header",
+          "kind": "section",
+          "category": "header",
+          "description": "Header with a mega menu built from the main-menu link list, mobile drawer and cart count.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/header--soda-header.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/header--soda-header.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda header\" (id `soda-header`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/header--soda-header.html; Shopify bundle: sections/fizz/soda-header/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-header",
+          "files": [
+            "sections/fizz/soda-header/sections/blko-soda-header.liquid",
+            "sections/fizz/soda-header/assets/blko-soda.js"
+          ],
+          "deps": [
+            "blko-soda.js"
+          ],
+          "localeKeys": [],
+          "themeSettings": [
+            "brand_logo"
+          ],
+          "blockTypes": []
+        },
+        {
+          "id": "soda-press-slider",
+          "name": "Soda press slider",
+          "kind": "section",
+          "category": "as-seen-in",
+          "description": "Rotating press quotes with dot navigation.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/as-seen-in--soda-press-slider.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/as-seen-in--soda-press-slider.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda press slider\" (id `soda-press-slider`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/as-seen-in--soda-press-slider.html; Shopify bundle: sections/fizz/soda-press-slider/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-press-slider",
+          "files": [
+            "sections/fizz/soda-press-slider/sections/blko-soda-press-slider.liquid",
+            "sections/fizz/soda-press-slider/assets/blko-soda.js"
+          ],
+          "deps": [
+            "blko-soda.js"
+          ],
+          "localeKeys": [],
+          "themeSettings": [
+            "quote",
+            "source"
+          ],
+          "blockTypes": [
+            "quote"
+          ]
+        },
+        {
+          "id": "soda-product-details",
+          "name": "Soda product details",
+          "kind": "section",
+          "category": "product-information",
+          "description": "Benefit icons, fiber and nutrition facts panel, and FAQ accordion.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/product-information--soda-product-details.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/product-information--soda-product-details.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda product details\" (id `soda-product-details`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/product-information--soda-product-details.html; Shopify bundle: sections/fizz/soda-product-details/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-product-details",
+          "files": [
+            "sections/fizz/soda-product-details/sections/blko-soda-product-details.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [
+            "answer",
+            "icon",
+            "question",
+            "text",
+            "title"
+          ],
+          "blockTypes": [
+            "benefit",
+            "faq"
+          ]
+        },
+        {
+          "id": "soda-product",
+          "name": "Soda product",
+          "kind": "section",
+          "category": "main-product",
+          "description": "Gallery, price, variant picker and one-time vs Subscribe & Save selector that posts selling_plan.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/main-product--soda-product.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/main-product--soda-product.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda product\" (id `soda-product`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/main-product--soda-product.html; Shopify bundle: sections/fizz/soda-product/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-product",
+          "files": [
+            "sections/fizz/soda-product/sections/blko-soda-product.liquid",
+            "sections/fizz/soda-product/assets/blko-soda.js"
+          ],
+          "deps": [
+            "blko-soda.js"
+          ],
+          "localeKeys": [],
+          "themeSettings": [],
+          "blockTypes": []
+        },
+        {
+          "id": "soda-retailers",
+          "name": "Soda retailers",
+          "kind": "section",
+          "category": "store-locator",
+          "description": "Where to buy: retailer names and a find-in-store button.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/store-locator--soda-retailers.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/store-locator--soda-retailers.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda retailers\" (id `soda-retailers`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/store-locator--soda-retailers.html; Shopify bundle: sections/fizz/soda-retailers/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-retailers",
+          "files": [
+            "sections/fizz/soda-retailers/sections/blko-soda-retailers.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [
+            "image",
+            "name"
+          ],
+          "blockTypes": [
+            "retailer"
+          ]
+        },
+        {
+          "id": "soda-split-hero",
+          "name": "Soda split hero",
+          "kind": "section",
+          "category": "hero-banner",
+          "description": "Split hero with copy on one side and a full-bleed image on the other.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/hero-banner--soda-split-hero.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/hero-banner--soda-split-hero.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda split hero\" (id `soda-split-hero`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/hero-banner--soda-split-hero.html; Shopify bundle: sections/fizz/soda-split-hero/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-split-hero",
+          "files": [
+            "sections/fizz/soda-split-hero/sections/blko-soda-split-hero.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [],
+          "blockTypes": []
+        },
+        {
+          "id": "soda-story-hero",
+          "name": "Soda story hero",
+          "kind": "section",
+          "category": "about",
+          "description": "Dark story intro with heading and paragraph.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/about--soda-story-hero.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/about--soda-story-hero.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda story hero\" (id `soda-story-hero`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/about--soda-story-hero.html; Shopify bundle: sections/fizz/soda-story-hero/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-story-hero",
+          "files": [
+            "sections/fizz/soda-story-hero/sections/blko-soda-story-hero.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [],
+          "blockTypes": []
+        },
+        {
+          "id": "soda-story-impact",
+          "name": "Soda story stats",
+          "kind": "section",
+          "category": "about",
+          "description": "Big-number stats row.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/about--soda-story-impact.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/about--soda-story-impact.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda story stats\" (id `soda-story-impact`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/about--soda-story-impact.html; Shopify bundle: sections/fizz/soda-story-impact/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-story-impact",
+          "files": [
+            "sections/fizz/soda-story-impact/sections/blko-soda-story-impact.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [
+            "label",
+            "number"
+          ],
+          "blockTypes": [
+            "stat"
+          ]
+        },
+        {
+          "id": "soda-story-mission",
+          "name": "Soda story mission",
+          "kind": "section",
+          "category": "about",
+          "description": "Mission statement band.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/about--soda-story-mission.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/about--soda-story-mission.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda story mission\" (id `soda-story-mission`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/about--soda-story-mission.html; Shopify bundle: sections/fizz/soda-story-mission/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-story-mission",
+          "files": [
+            "sections/fizz/soda-story-mission/sections/blko-soda-story-mission.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [],
+          "blockTypes": []
+        },
+        {
+          "id": "soda-two-columns",
+          "name": "Soda two columns",
+          "kind": "section",
+          "category": "image-with-text",
+          "description": "Image and copy side by side.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/image-with-text--soda-two-columns.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/image-with-text--soda-two-columns.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda two columns\" (id `soda-two-columns`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/image-with-text--soda-two-columns.html; Shopify bundle: sections/fizz/soda-two-columns/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-two-columns",
+          "files": [
+            "sections/fizz/soda-two-columns/sections/blko-soda-two-columns.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [],
+          "blockTypes": []
+        },
+        {
+          "id": "soda-two-up",
+          "name": "Soda 2-up",
+          "kind": "section",
+          "category": "image-with-text",
+          "description": "Two product-line cards with image, copy and button.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/image-with-text--soda-two-up.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/image-with-text--soda-two-up.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda 2-up\" (id `soda-two-up`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/image-with-text--soda-two-up.html; Shopify bundle: sections/fizz/soda-two-up/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-two-up",
+          "files": [
+            "sections/fizz/soda-two-up/sections/blko-soda-two-up.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [
+            "button_label",
+            "button_url",
+            "image",
+            "image_url",
+            "text",
+            "title"
+          ],
+          "blockTypes": [
+            "item"
+          ]
+        },
+        {
+          "id": "soda-why",
+          "name": "Soda why block",
+          "kind": "section",
+          "category": "rich-text",
+          "description": "Centered value statement with a button.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/rich-text--soda-why.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/rich-text--soda-why.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda why block\" (id `soda-why`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/rich-text--soda-why.html; Shopify bundle: sections/fizz/soda-why/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-why",
+          "files": [
+            "sections/fizz/soda-why/sections/blko-soda-why.liquid"
+          ],
+          "deps": [],
+          "localeKeys": [],
+          "themeSettings": [],
+          "blockTypes": []
         }
       ],
       "pages": [
@@ -37105,21 +37161,6 @@
           "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Ingredient glossary\" (template `ingredients`, theme `fizz`) in my project. It is made of these sections in order: ingredients-callout, ingredients-why, extras-ingredient-glossary, ingredients-faq, newsletter (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         },
         {
-          "id": "routine-builder",
-          "name": "Routine builder",
-          "kind": "page",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "sections": [
-            "extras-routine-builder",
-            "product-recommendations",
-            "newsletter"
-          ],
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Routine builder\" (template `routine-builder`, theme `fizz`) in my project. It is made of these sections in order: extras-routine-builder, product-recommendations, newsletter (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
-        },
-        {
           "id": "reviews",
           "name": "Reviews",
           "kind": "page",
@@ -37185,17 +37226,19 @@
         },
         {
           "id": "cart",
-          "name": "Your cart",
+          "name": "Fizz — Cart",
           "kind": "page",
           "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
+            "html": "ok",
             "shopify": "ok"
           },
           "sections": [
-            "cart-checkout-cart-main",
+            "soda-cart-main",
             "cart-checkout-service-strip"
           ],
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Your cart\" (template `cart`, theme `fizz`) in my project. It is made of these sections in order: cart-checkout-cart-main, cart-checkout-service-strip (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
+          "demo": "demo/fizz/templates/cart.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/templates/cart.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Cart\" (template `cart`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/cart.html) in my project. It is made of these sections in order: soda-cart-main, cart-checkout-service-strip (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         },
         {
           "id": "cart-empty",
@@ -37331,13 +37374,12 @@
           "sections": [
             "content-landing-hero",
             "landing-promises",
-            "content-landing-routine",
             "landing-picks",
             "content-landing-proof",
             "landing-hero-discount",
             "newsletter"
           ],
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"The everyday edit\" (template `landing`, theme `fizz`) in my project. It is made of these sections in order: content-landing-hero, landing-promises, content-landing-routine, landing-picks, content-landing-proof, landing-hero-discount, newsletter (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"The everyday edit\" (template `landing`, theme `fizz`) in my project. It is made of these sections in order: content-landing-hero, landing-promises, landing-picks, content-landing-proof, landing-hero-discount, newsletter (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         },
         {
           "id": "subscribe-success",
@@ -37419,47 +37461,43 @@
         },
         {
           "id": "home",
-          "name": "Lather — Home",
+          "name": "Fizz — Home",
           "kind": "page",
           "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
+            "html": "ok",
             "shopify": "ok"
           },
           "sections": [
-            "home-collection-mega-menu",
-            "hero-campaign",
-            "tabbed-product-grid",
-            "feature-driver",
-            "fizz-flavor-lineup",
-            "fizz-quiz-banner",
-            "fizz-benefit-trio",
-            "home-clips",
-            "fizz-subscribe-explainer",
+            "soda-split-hero",
+            "soda-collection-tabs",
+            "soda-why",
+            "soda-press-slider",
+            "soda-two-up",
+            "soda-two-columns",
+            "soda-retailers",
             "home-reviews",
-            "commitments",
-            "newsletter",
-            "home-collection-quick-view-modal"
+            "newsletter"
           ],
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Lather — Home\" (template `home`, theme `fizz`) in my project. It is made of these sections in order: home-collection-mega-menu, hero-campaign, tabbed-product-grid, feature-driver, fizz-flavor-lineup, fizz-quiz-banner, fizz-benefit-trio, home-clips, fizz-subscribe-explainer, home-reviews, commitments, newsletter, home-collection-quick-view-modal (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
+          "demo": "demo/fizz/templates/home.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/templates/home.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Home\" (template `home`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/home.html) in my project. It is made of these sections in order: soda-split-hero, soda-collection-tabs, soda-why, soda-press-slider, soda-two-up, soda-two-columns, soda-retailers, home-reviews, newsletter (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         },
         {
           "id": "collection",
-          "name": "Lather — Shop",
+          "name": "Fizz — Collection",
           "kind": "page",
           "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
+            "html": "ok",
             "shopify": "ok"
           },
           "sections": [
-            "home-collection-mega-menu",
-            "home-collection-collection-toolbar",
-            "home-collection-collection-grid",
-            "collection-about",
+            "soda-collection",
             "collection-faq",
-            "home-collection-quick-view-modal",
             "newsletter"
           ],
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Lather — Shop\" (template `collection`, theme `fizz`) in my project. It is made of these sections in order: home-collection-mega-menu, home-collection-collection-toolbar, home-collection-collection-grid, collection-about, collection-faq, home-collection-quick-view-modal, newsletter (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
+          "demo": "demo/fizz/templates/collection.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/templates/collection.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Collection\" (template `collection`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/collection.html) in my project. It is made of these sections in order: soda-collection, collection-faq, newsletter (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         },
         {
           "id": "collections",
@@ -37480,24 +37518,21 @@
         },
         {
           "id": "pdp",
-          "name": "Pine Bar Soap 6-Pack",
+          "name": "Fizz — Product",
           "kind": "page",
           "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
+            "html": "ok",
             "shopify": "ok"
           },
           "sections": [
-            "pdp-product-main",
-            "pdp-ticker",
-            "pdp-claims",
-            "pdp-usage",
-            "pdp-pillars",
-            "pdp-faq",
+            "soda-product",
+            "soda-product-details",
             "pdp-reviews",
-            "pdp-complete-routine",
             "pdp-recently-viewed"
           ],
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Pine Bar Soap 6-Pack\" (template `pdp`, theme `fizz`) in my project. It is made of these sections in order: pdp-product-main, pdp-ticker, pdp-claims, pdp-usage, pdp-pillars, pdp-faq, pdp-reviews, pdp-complete-routine, pdp-recently-viewed (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
+          "demo": "demo/fizz/templates/pdp.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/templates/pdp.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Product\" (template `pdp`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/pdp.html) in my project. It is made of these sections in order: soda-product, soda-product-details, pdp-reviews, pdp-recently-viewed (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         },
         {
           "id": "pdp-bundle",
@@ -37594,8 +37629,28 @@
             "brand-imagery"
           ],
           "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Brand guidelines\" (template `brands`, theme `fizz`) in my project. It is made of these sections in order: brand-hero, brand-archetype, brand-palette, brand-typography, brand-logo-usage, brand-voice, brand-imagery (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
+        },
+        {
+          "id": "our-story",
+          "name": "Fizz — Our story",
+          "kind": "page",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "sections": [
+            "soda-story-hero",
+            "soda-story-mission",
+            "soda-two-columns",
+            "soda-story-impact",
+            "soda-retailers"
+          ],
+          "demo": "demo/fizz/templates/our-story.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/templates/our-story.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Our story\" (template `our-story`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/our-story.html) in my project. It is made of these sections in order: soda-story-hero, soda-story-mission, soda-two-columns, soda-story-impact, soda-retailers (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         }
-      ]
+      ],
+      "demo": "demo/fizz"
     },
     {
       "id": "isle",

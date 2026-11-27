@@ -1,0 +1,8 @@
+<svg width="512" height="204" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 64" role="img" aria-label="Fizz">
+  <g fill="none" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path transform="translate(3 3)" d="M14 58V26Q14 14 30 14M5 33H31M50 33V58M66 33H92L66 58H92M108 33H134L108 58H134" stroke="#ff6b8b"/>
+    <path d="M14 58V26Q14 14 30 14M5 33H31M50 33V58M66 33H92L66 58H92M108 33H134L108 58H134" stroke="#14433d"/>
+    <circle cx="50" cy="13" r="3" fill="#14433d" stroke="#14433d" stroke-width="4"/>
+    <g stroke="#14433d" stroke-width="3"><circle cx="146" cy="40" r="6"/><circle cx="153" cy="22" r="3.5"/><circle cx="144" cy="9" r="2.5"/></g>
+  </g>
+</svg>

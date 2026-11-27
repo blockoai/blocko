@@ -1,220 +1,75 @@
 {
   "sections": {
-    "pdp-product-main": {
-      "type": "blko-pdp-product-main",
-      "settings": {
-        "breadcrumb_category": "Soda",
-        "price_note": "12 fl oz can",
-        "shade_help_label": "Torn between flavors? Take the quiz.",
-        "one_time_label": "One-time purchase",
-        "plan_legend": "How do you want it?",
-        "ship_note": "Free shipping over $35 · 30-day satisfaction guarantee"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "accordion",
-          "settings": {
-            "label": "At a glance",
-            "text": "Tastes like: bright fruit and a little zing. Fizz: crisp. Featuring: 9g plant fiber, 2g sugar and 35 calories per 12 fl oz can."
-          }
-        },
-        "block-2": {
-          "type": "accordion",
-          "settings": {
-            "label": "What's inside",
-            "text": "Sparkling water, prebiotic plant fiber, fruit juice, botanical extracts, natural flavors and citric acid. No artificial sweeteners. Gluten-free and vegan. The full list is printed on every can."
-          }
-        },
-        "block-3": {
-          "type": "accordion",
-          "settings": {
-            "label": "How to enjoy",
-            "text": "Chill, pop, pour over ice if you like. Drink it any time the 3pm snack slump hits. Start with one can a day if you are new to fiber."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
+    "product": {
+      "type": "blko-soda-product",
+      "settings": {}
     },
-    "pdp-ticker": {
-      "type": "blko-pdp-ticker",
+    "details": {
+      "type": "blko-soda-product-details",
       "settings": {},
       "blocks": {
-        "block-1": {
-          "type": "message",
-          "settings": {
-            "text": "9G PLANT FIBER"
-          }
-        },
-        "block-2": {
-          "type": "message",
-          "settings": {
-            "text": "2G SUGAR"
-          }
-        },
-        "block-3": {
-          "type": "message",
-          "settings": {
-            "text": "NO ARTIFICIAL SWEETENERS"
-          }
-        },
-        "block-4": {
-          "type": "message",
-          "settings": {
-            "text": "VEGAN & GLUTEN-FREE"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "pdp-claims": {
-      "type": "blko-pdp-claims",
-      "settings": {
-        "kicker": "Why it works",
-        "heading": "Three things a good soda does"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "value",
-          "settings": {
-            "title": "Fiber that feeds",
-            "text": "9g of plant fiber per can feeds your good bacteria, as part of a gut-friendly routine."
-          }
-        },
-        "block-2": {
-          "type": "value",
-          "settings": {
-            "number": "02",
-            "title": "Fizz that lasts",
-            "text": "Fine bubbles stay lively from first pop to last sip, so the can tastes as good as it looks."
-          }
-        },
-        "block-3": {
-          "type": "value",
-          "settings": {
-            "number": "03",
-            "title": "Flavor with staying power",
-            "text": "Real fruit juice and botanicals give a bright taste that lingers well past your first sip."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "pdp-usage": {
-      "type": "blko-pdp-usage",
-      "settings": {
-        "image_alt": "A hand holding a cold can of soda over a picnic blanket",
-        "kicker": "From the test kitchen",
-        "heading": "Notes on getting the most from your can",
-        "text": "Chill it for at least two hours, pop the tab and pour over ice with a slice of citrus. Pair it with a snack at your usual slump hour, or swap it in for your afternoon soda. Keep a few in the fridge door and they will be gone by Friday."
-      }
-    },
-    "pdp-pillars": {
-      "type": "blko-pdp-pillars",
-      "settings": {
-        "eyebrow": "The short list",
-        "heading": "What we put in, what we leave out"
-      },
-      "blocks": {
-        "block-1": {
+        "benefit-1": {
           "type": "benefit",
           "settings": {
-            "title": "Mostly plants",
-            "text": "Fiber, fruit juice and botanicals do the heavy lifting in every can."
+            "icon": "leaf",
+            "title": "Prebiotic fiber",
+            "text": "9g of plant fiber in every can"
           }
         },
-        "block-2": {
+        "benefit-2": {
           "type": "benefit",
           "settings": {
             "icon": "drop",
-            "title": "Nothing sketchy",
-            "text": "No artificial sweeteners, colors or preservatives make it past the door."
+            "title": "2g sugar",
+            "text": "Fruit sweetened, no sugar bomb"
           }
         },
-        "block-3": {
+        "benefit-3": {
           "type": "benefit",
           "settings": {
-            "icon": "peak",
-            "title": "Made for everyone",
-            "text": "Flavored, sized and fizzed for the way people really snack."
+            "icon": "smile",
+            "title": "Gut friendly",
+            "text": "Feeds the good bacteria"
+          }
+        },
+        "benefit-4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "star",
+            "title": "Real fruit",
+            "text": "Juice, never fake flavor"
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Does it need to stay cold?",
+            "answer": "<p>Nope. Cans are shelf stable, but they taste best chilled.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I pause my subscription?",
+            "answer": "<p>Yes. Skip, pause or cancel any time from your account.</p>"
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "question": "How much fiber is in a can?",
+            "answer": "<p>Every 12 fl oz can has 9g of plant fiber, 2g sugar and 35 calories.</p>"
           }
         }
       },
       "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "pdp-faq": {
-      "type": "blko-pdp-faq",
-      "settings": {
-        "eyebrow": "You asked",
-        "heading": "Everything about this soda"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "question",
-          "settings": {
-            "label": "What makes it different from regular soda?",
-            "text": "Fizz swaps most of the sugar for plant fiber and fruit-based sweetness, so you get the pop with 2g sugar and 35 calories."
-          }
-        },
-        "block-2": {
-          "type": "question",
-          "settings": {
-            "label": "How many cans should I drink a day?",
-            "text": "Most people enjoy one a day. If you are new to fiber, start with one and see how you feel."
-          }
-        },
-        "block-3": {
-          "type": "question",
-          "settings": {
-            "label": "Does it have caffeine?",
-            "text": "No. Fizz cans are caffeine-free, so they work at 3pm or 9pm."
-          }
-        },
-        "block-4": {
-          "type": "question",
-          "settings": {
-            "label": "Is it vegan?",
-            "text": "Yes. Every flavor is vegan and gluten-free. Check the ingredient list on each page."
-          }
-        },
-        "block-5": {
-          "type": "question",
-          "settings": {
-            "label": "How strong is the flavor?",
-            "text": "Bold enough to taste the fruit from the first sip, but never syrupy. It will not overpower your lunch."
-          }
-        },
-        "block-6": {
-          "type": "question",
-          "settings": {
-            "label": "When will it arrive?",
-            "text": "Orders leave in one to two business days and take three to seven days to arrive within the United States."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6"
+        "benefit-1",
+        "benefit-2",
+        "benefit-3",
+        "benefit-4",
+        "faq-1",
+        "faq-2",
+        "faq-3"
       ]
     },
     "pdp-reviews": {
@@ -343,14 +198,6 @@
         "block-13"
       ]
     },
-    "pdp-complete-routine": {
-      "type": "blko-pdp-complete-routine",
-      "settings": {
-        "eyebrow": "Pair it with",
-        "heading": "Sip, snack, repeat",
-        "text": "A single flavor, a variety pack and a Fizz Club plan that share the same flavor family."
-      }
-    },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
       "settings": {
@@ -360,14 +207,9 @@
     }
   },
   "order": [
-    "pdp-product-main",
-    "pdp-ticker",
-    "pdp-claims",
-    "pdp-usage",
-    "pdp-pillars",
-    "pdp-faq",
+    "product",
+    "details",
     "pdp-reviews",
-    "pdp-complete-routine",
     "pdp-recently-viewed"
   ]
 }

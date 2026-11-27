@@ -9,7 +9,7 @@ const sync=product=>{
   const data=product&&product.querySelector("[data-pdp-variants]");if(!data)return;
   let variants;try{variants=JSON.parse(data.textContent||"[]")}catch(error){return}
   const value=selector=>{const choice=product.querySelector(selector+" .is-active");return choice?choice.dataset.pdpValue:undefined};
-  const first=value("[data-pdp-shades]"),second=value("[data-pdp-size]");
+  const first=value("[data-pdp-flavors]"),second=value("[data-pdp-size]");
   const variant=variants.find(item=>(first===undefined||item.option1===first)&&(second===undefined||item.option2===second));
   if(!variant)return;
   const currency=product.dataset.pdpCurrency;
@@ -41,9 +41,9 @@ all("[data-pdp-gallery]").forEach(gallery=>{
   gallery.querySelector("[data-pdp-zoom]")?.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();zoom()}});
 });
 
-all("[data-pdp-shades]").forEach(root=>all("[data-pdp-shade]",root).forEach(choice=>choice.addEventListener("click",()=>{
-  mark(all("[data-pdp-shade]",root),choice);
-  const name=choice.dataset.pdpShade||"";all("[data-pdp-shade-name]").forEach(label=>label.textContent=name);all("[data-pdp-sticky-shade]").forEach(label=>label.textContent=name);
+all("[data-pdp-flavors]").forEach(root=>all("[data-pdp-flavor]",root).forEach(choice=>choice.addEventListener("click",()=>{
+  mark(all("[data-pdp-flavor]",root),choice);
+  const name=choice.dataset.pdpFlavor||"";all("[data-pdp-flavor-name]").forEach(label=>label.textContent=name);all("[data-pdp-sticky-flavor]").forEach(label=>label.textContent=name);
   sync(root.closest("[data-pdp-product]"));
 })));
 all("[data-pdp-size]").forEach(root=>all("[data-pdp-size-option]",root).forEach(choice=>choice.addEventListener("click",()=>{

@@ -1,0 +1,112 @@
+{%- assign current = product.selected_or_first_available_variant -%}
+<blko-soda-product class="blko-soda-pdp">
+  <div class="blko-soda-pdp__gallery">
+    {%- if product.featured_media -%}<img data-main-image src="{{ product.featured_media | image_url: width: 1200 }}" alt="{{ product.featured_media.alt | default: product.title | escape }}" width="1200" height="{{ 1200 | divided_by: product.featured_media.aspect_ratio | round }}">{%- endif -%}
+    {%- if product.images.size > 1 -%}
+      <div class="blko-soda-pdp__thumbs">
+        {%- for image in product.images -%}<button type="button" data-thumb="{{ image | image_url: width: 1200 }}" class="{% if forloop.first %}is-active{% endif %}" aria-label="Image {{ forloop.index }}"><img src="{{ image | image_url: width: 160 }}" alt="" width="72" height="72" loading="lazy"></button>{%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+  <div class="blko-soda-pdp__info">
+    <p class="blko-soda-pdp__line">{{ product.type }}</p>
+    <h1>{{ product.title }}</h1>
+    <p class="blko-soda-pdp__price"><span data-price>{{ current.price | money }}</span> <s data-compare{% unless current.compare_at_price > current.price %} hidden{% endunless %}>{{ current.compare_at_price | money }}</s></p>
+    <div class="blko-soda-pdp__desc">{{ product.description | strip_html | truncatewords: 40 }}</div>
+    {%- form 'product', product, data-product-form: '' -%}
+      {%- capture variants_json -%}[
+        {%- for v in product.variants -%}
+          {"id":{{ v.id }},"options":{{ v.options | json }},"available":{{ v.available | json }},"price":{{ v.price | money | json }},"compare":{% if v.compare_at_price > v.price %}{{ v.compare_at_price | money | json }}{% else %}""{% endif %},"plans":{
+            {%- for a in v.selling_plan_allocations -%}"{{ a.selling_plan.id }}":{{ a.price | money | json }}{% unless forloop.last %},{% endunless %}{%- endfor -%}
+          }}{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ]{%- endcapture -%}
+      <script type="application/json" data-variants>{{ variants_json }}</script>
+      <input type="hidden" name="id" value="{{ current.id }}">
+      {%- unless product.has_only_default_variant -%}
+        {%- for option in product.options_with_values -%}
+          <fieldset class="blko-soda-pdp__option">
+            <legend>{{ option.name }}</legend>
+            <div>
+              {%- for value in option.values -%}
+                <input type="radio" data-option id="blko-o{{ option.position }}-{{ forloop.index }}" name="options[{{ option.name | escape }}]" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %}>
+                <label for="blko-o{{ option.position }}-{{ forloop.index }}">{{ value }}</label>
+              {%- endfor -%}
+            </div>
+          </fieldset>
+        {%- endfor -%}
+      {%- endunless -%}
+      {%- assign group = product.selling_plan_groups.first -%}
+      {%- if group and current.selling_plan_allocations.size > 0 -%}
+        {%- assign first_alloc = current.selling_plan_allocations.first -%}
+        {%- assign save_pct = current.price | minus: first_alloc.price | times: 100 | divided_by: current.price -%}
+        <div class="blko-soda-purchase">
+          <label class="blko-soda-purchase__opt">
+            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="once" checked data-purchase-type> {{ section.settings.one_time_label }}<span class="blko-soda-purchase__price" data-once-price>{{ current.price | money }}</span></span>
+          </label>
+          <label class="blko-soda-purchase__opt">
+            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="sub" data-purchase-type> {{ section.settings.subscribe_label }} <span class="blko-soda-purchase__save">{{ save_pct }}%</span><span class="blko-soda-purchase__price" data-sub-price>{{ first_alloc.price | money }}</span></span>
+            <span class="blko-soda-purchase__freq" data-freq hidden>
+              <label for="blko-plan">{{ section.settings.frequency_label }}</label>
+              <select id="blko-plan" data-plan-select>
+                {%- for plan in group.selling_plans -%}<option value="{{ plan.id }}">{{ plan.name }}</option>{%- endfor -%}
+              </select>
+            </span>
+          </label>
+          <input type="hidden" name="selling_plan" value="" data-selling-plan disabled>
+        </div>
+      {%- endif -%}
+      <button type="submit" class="blko-soda-pdp__add" data-submit data-add="{{ section.settings.add_label }}" data-sold="{{ section.settings.sold_label }}" {% unless current.available %}disabled{% endunless %}>{% if current.available %}{{ section.settings.add_label }}{% else %}{{ section.settings.sold_label }}{% endif %}</button>
+      {{ form | payment_button }}
+    {%- endform -%}
+    <p class="blko-soda-pdp__ship">{{ section.settings.shipping_note }}</p>
+  </div>
+</blko-soda-product>
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+
+{% stylesheet %}
+.blko-soda-pdp{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,4rem);max-width:75rem;margin:0 auto;padding:clamp(1.5rem,4vw,3rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-pdp__gallery>img{width:100%;aspect-ratio:1;border-radius:2rem;object-fit:cover;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-pdp__thumbs{display:flex;gap:.6rem;margin-top:.8rem}
+.blko-soda-pdp__thumbs button{padding:0;border:2px solid transparent;border-radius:.8rem;background:none;overflow:hidden;cursor:pointer}
+.blko-soda-pdp__thumbs button.is-active{border-color:var(--color-text, #14433d)}
+.blko-soda-pdp__thumbs img{display:block;width:4.5rem;height:4.5rem;object-fit:cover}
+.blko-soda-pdp__line{margin:0;font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.blko-soda-pdp__info h1{margin:.2rem 0 .4rem;font:800 clamp(2.2rem,4.5vw,3.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-pdp__price{margin:0 0 .8rem;font:800 1.6rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-pdp__price s{margin-left:.4rem;color:var(--color-text-muted, #3f6a64);font-size:1.1rem}
+.blko-soda-pdp__desc{margin-bottom:1.25rem;font-size:1.05rem;line-height:1.55}
+.blko-soda-pdp__option{margin:0 0 1rem;padding:0;border:0}
+.blko-soda-pdp__option legend{padding:0;margin-bottom:.4rem;font-weight:800}
+.blko-soda-pdp__option div{display:flex;flex-wrap:wrap;gap:.5rem}
+.blko-soda-pdp__option input{position:absolute;opacity:0;pointer-events:none}
+.blko-soda-pdp__option label{padding:.55rem 1.1rem;border:2px solid var(--color-text, #14433d);border-radius:999px;font-weight:700;cursor:pointer}
+.blko-soda-pdp__option input:checked+label{background:var(--color-text, #14433d);color:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-pdp__option input:focus-visible+label{outline:3px solid var(--color-accent, #ff6b8b);outline-offset:2px}
+.blko-soda-purchase{display:grid;gap:.6rem;margin:1.2rem 0}
+.blko-soda-purchase__opt{display:block;padding:.9rem 1.1rem;border:2px solid var(--color-text, #14433d);border-radius:1.1rem;background:var(--color-bg-alt, #e3f5fd);font-weight:700;cursor:pointer}
+.blko-soda-purchase__opt:has(input:checked){background:var(--color-announcement-bg, #d4f23c)}
+.blko-soda-purchase__row{display:flex;align-items:center;gap:.6rem}
+.blko-soda-purchase__price{margin-left:auto;font-weight:800}
+.blko-soda-purchase__save{padding:.1rem .5rem;border-radius:999px;background:var(--color-accent, #ff6b8b);font-size:.78rem;font-weight:800}
+.blko-soda-purchase__freq{display:grid;gap:.3rem;margin-top:.7rem;font-size:.9rem}
+.blko-soda-purchase__freq select{padding:.5rem .7rem;border:2px solid var(--color-text, #14433d);border-radius:.7rem;background:#fff;color:inherit}
+.blko-soda-pdp__add{display:block;width:100%;margin:.4rem 0 .6rem;padding:1rem 1.5rem;border:0;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:800 1.15rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
+.blko-soda-pdp__add:disabled{opacity:.5;cursor:not-allowed}
+.blko-soda-pdp__ship{margin:.8rem 0 0;font-size:.9rem}
+@media(max-width:800px){.blko-soda-pdp{grid-template-columns:1fr}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda product",
+  "settings": [
+    {"type": "text", "id": "one_time_label", "label": "One-time label", "default": "One-time purchase"},
+    {"type": "text", "id": "subscribe_label", "label": "Subscribe label", "default": "Subscribe & Save"},
+    {"type": "text", "id": "frequency_label", "label": "Frequency label", "default": "Delivery frequency"},
+    {"type": "text", "id": "add_label", "label": "Add to cart label", "default": "Add to cart"},
+    {"type": "text", "id": "sold_label", "label": "Sold out label", "default": "Sold out"},
+    {"type": "text", "id": "shipping_note", "label": "Shipping note", "default": "Free shipping over $35. Pause or cancel any time."}
+  ]
+}
+{% endschema %}

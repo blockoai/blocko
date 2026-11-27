@@ -1,0 +1,52 @@
+<blko-soda-rotator class="blko-soda-press" data-interval="6000" style="background-color:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  {%- for block in section.blocks -%}
+    <figure class="blko-soda-press__slide{% if forloop.first %} is-active{% endif %}" data-slide {{ block.shopify_attributes }}>
+      <blockquote>{{ block.settings.quote | escape }}</blockquote>
+      {%- if block.settings.source != blank -%}<figcaption>{{ block.settings.source | escape }}</figcaption>{%- endif -%}
+    </figure>
+  {%- endfor -%}
+  <div class="blko-soda-press__dots">{%- for block in section.blocks -%}<button type="button" class="blko-soda-press__dot{% if forloop.first %} is-active{% endif %}" data-dot aria-label="Slide {{ forloop.index }}"></button>{%- endfor -%}</div>
+</blko-soda-rotator>
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+
+{% stylesheet %}
+.blko-soda-press{display:block;padding:clamp(3rem,7vw,5rem) 1.25rem 2.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-press__slide{display:none;max-width:48rem;margin:0 auto}
+.blko-soda-press__slide.is-active{display:block}
+.blko-soda-press blockquote{margin:0;font:800 clamp(1.6rem,3.6vw,2.6rem)/1.15 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-press figcaption{margin-top:1rem;font-size:.85rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.blko-soda-press__dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.75rem}
+.blko-soda-press__dot{width:.7rem;height:.7rem;padding:0;border:2px solid currentColor;border-radius:50%;background:transparent;cursor:pointer}
+.blko-soda-press__dot.is-active{background:currentColor}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda press slider",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#14433d"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#e3f5fd"}
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        {"type": "textarea", "id": "quote", "label": "Quote", "default": "Tastes like the soda you remember, minus the crash."},
+        {"type": "text", "id": "source", "label": "Source", "default": "Soda Daily"}
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "Soda press slider",
+      "blocks": [
+        {"type": "quote", "settings": {"quote": "Tastes like the soda you remember, minus the crash.", "source": "Soda Daily"}},
+        {"type": "quote", "settings": {"quote": "The cherry flavor is loud in the best way.", "source": "The Sip Report"}},
+        {"type": "quote", "settings": {"quote": "Finally a fizzy drink that makes the fridge look fun.", "source": "Pantry Weekly"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

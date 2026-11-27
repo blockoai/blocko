@@ -1,0 +1,239 @@
+@font-face{font-family:"Figtree";src:url("fonts/figtree.woff2") format("woff2");font-weight:300 800;font-display:swap}
+@font-face{font-family:"Baloo 2";src:url("fonts/baloo-2.woff2") format("woff2");font-weight:100 900;font-display:swap}
+.blko-theme{--color-bg:#b9e4f7;--color-bg-alt:#e3f5fd;--color-text:#14433d;--color-text-muted:#3f6a64;--color-border:#8cc8e3;--color-button:#14433d;--color-button-text:#ffffff;--color-accent:#ff6b8b;--color-announcement-bg:#d4f23c;--font-body:"Figtree",Arial,sans-serif;--font-heading:"Baloo 2","Arial Rounded MT Bold",Arial Black,sans-serif;--logo-width:120px}
+.blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}
+.blko-theme{margin:0;background:var(--color-bg-alt);color:var(--color-text);font:400 1rem/1.5 var(--font-body)}
+.blko-theme img{display:block;max-width:100%}
+.blko-skip-link{position:absolute;left:-999px}.blko-skip-link:focus{left:1rem;top:1rem;z-index:200;background:#fff;padding:.5rem 1rem}
+.blko-footer{padding:3rem 1.25rem;background:#14433d;color:#e3f5fd;text-align:center}.blko-footer a{color:inherit;margin:0 .6rem}
+.blko-footer img{margin:0 auto 1rem;width:120px;filter:brightness(0) invert(1)}
+.blko-soda-card{display:flex;flex-direction:column;gap:.8rem;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-card__media-wrap{position:relative;overflow:hidden;border-radius:1.25rem;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-card__media{display:block;position:relative;aspect-ratio:1}
+.blko-soda-card__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.blko-soda-card__alt{opacity:0}
+.blko-soda-card__media-wrap:hover .blko-soda-card__alt{opacity:1}
+.blko-soda-card__badge{position:absolute;top:.75rem;left:.75rem;z-index:1;padding:.25rem .7rem;border-radius:999px;background:var(--color-accent, #ff6b8b);font:800 .75rem var(--font-body, "Figtree", sans-serif);text-transform:uppercase}
+.blko-soda-card__quick{position:absolute;left:.75rem;right:.75rem;bottom:.75rem;transform:translateY(130%);transition:transform .25s}
+.blko-soda-card__media-wrap:hover .blko-soda-card__quick,.blko-soda-card__quick:focus-within{transform:none}
+.blko-soda-card__info{display:grid;gap:.3rem;text-align:center}
+.blko-soda-card__line{margin:0;color:var(--color-text-muted, #3f6a64);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.blko-soda-card__title{margin:0;font:800 1.25rem/1.1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-card__title a{color:inherit;text-decoration:none}
+.blko-soda-card__price{margin:0;font-weight:700}
+.blko-soda-card__btn{display:block;padding:.7rem 1rem;border:0;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:700 .95rem var(--font-heading, "Baloo 2", sans-serif);text-align:center;text-decoration:none;cursor:pointer}
+.blko-soda-card__quick .blko-soda-card__btn{width:100%;background:var(--color-announcement-bg, #d4f23c);color:var(--color-text, #14433d)}
+.blko-soda-card__info .blko-soda-card__btn{margin-top:.35rem}
+@media(hover:none){.blko-soda-card__quick{display:none}}
+.blko-soda-announce{display:flex;align-items:center;justify-content:center;gap:.75rem;min-height:2.5rem;padding:.4rem 1rem;font:700 .875rem/1.3 var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-announce__slide{display:none;margin:0}
+.blko-soda-announce__slide.is-active{display:block}
+.blko-soda-announce__slide a{margin-left:.35rem;color:inherit;text-underline-offset:2px}
+.blko-soda-announce__arrow{border:0;background:none;color:inherit;font-size:1.4rem;line-height:1;cursor:pointer}
+.blko-soda-drawer{position:fixed;inset:0;z-index:100;visibility:hidden;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-drawer.is-open{visibility:visible}
+.blko-soda-drawer__overlay{position:absolute;inset:0;background:rgba(20,67,61,.55);opacity:0;transition:opacity .25s}
+.blko-soda-drawer.is-open .blko-soda-drawer__overlay{opacity:1}
+.blko-soda-drawer__panel{position:absolute;top:0;right:0;bottom:0;display:flex;flex-direction:column;width:min(26rem,100%);background:var(--color-bg-alt, #e3f5fd);transform:translateX(100%);transition:transform .3s}
+.blko-soda-drawer.is-open .blko-soda-drawer__panel{transform:none}
+.blko-soda-drawer.is-loading .blko-soda-drawer__panel{opacity:.7}
+.blko-soda-drawer__panel>[data-drawer-content]{display:flex;flex-direction:column;min-height:0;height:100%}
+.blko-soda-drawer__head{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;border-bottom:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-drawer__head h2{margin:0;font:800 1.5rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-drawer__close{border:0;background:none;color:inherit;font-size:2rem;line-height:1;cursor:pointer}
+.blko-soda-ship{padding:.9rem 1.25rem;background:var(--color-bg, #b9e4f7)}
+.blko-soda-ship p{margin:0 0 .5rem;font-weight:700;font-size:.9rem}
+.blko-soda-ship__track{height:.6rem;overflow:hidden;border-radius:999px;background:#fff}
+.blko-soda-ship__track span{display:block;height:100%;border-radius:999px;background:var(--color-announcement-bg, #d4f23c);box-shadow:inset 0 0 0 2px var(--color-text, #14433d);transition:width .3s}
+.blko-soda-drawer__items{flex:1;overflow:auto;padding:0 1.25rem}
+.blko-soda-line{display:grid;grid-template-columns:5.25rem 1fr auto;gap:.9rem;padding:1rem 0;border-bottom:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-line img{width:5.25rem;height:5.25rem;border-radius:.9rem;object-fit:cover}
+.blko-soda-line__title{color:inherit;font:700 1.05rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-line__meta{margin:.15rem 0 0;color:var(--color-text-muted, #3f6a64);font-size:.82rem}
+.blko-soda-line__qty{display:inline-flex;align-items:center;gap:.6rem;margin-top:.5rem;padding:.1rem .35rem;border:2px solid var(--color-text, #14433d);border-radius:999px;font-weight:800}
+.blko-soda-line__qty button{width:1.6rem;height:1.6rem;border:0;background:none;color:inherit;font-size:1.1rem;cursor:pointer}
+.blko-soda-line__remove{display:block;margin-top:.35rem;padding:0;border:0;background:none;color:var(--color-text-muted, #3f6a64);font-size:.8rem;text-decoration:underline;cursor:pointer}
+.blko-soda-line__price{margin:0;font-weight:800}
+.blko-soda-drawer__empty{padding:2.5rem 0;text-align:center}
+.blko-soda-drawer__foot{padding:1rem 1.25rem 1.25rem;border-top:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-drawer__sub{display:flex;justify-content:space-between;margin:0 0 .8rem;font:800 1.15rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-drawer__btn{display:inline-block;padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-align:center;text-decoration:none;cursor:pointer}
+.blko-soda-drawer__btn--block{display:block;width:100%}
+.blko-soda-cartpage{max-width:62rem;margin:0 auto;padding:clamp(2rem,5vw,4rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-cartpage h1{margin:0 0 1.5rem;font:800 clamp(2.2rem,5vw,3.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-cartpage__items{display:grid;gap:.9rem;margin:0;padding:0;list-style:none}
+.blko-soda-cartpage__items li{display:grid;grid-template-columns:6rem 1fr 5rem 6rem;align-items:center;gap:1rem;padding:1rem;border-radius:1.25rem;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-cartpage__items img{width:6rem;height:6rem;border-radius:1rem;object-fit:cover}
+.blko-soda-cartpage__items p{margin:.2rem 0 0;color:var(--color-text-muted, #3f6a64);font-size:.88rem}
+.blko-soda-cartpage__title{color:inherit;font:800 1.2rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-cartpage__remove{font-size:.82rem}
+.blko-soda-cartpage input[type=number]{width:100%;padding:.5rem;border:2px solid var(--color-text, #14433d);border-radius:.7rem;background:#fff;color:inherit}
+.blko-soda-cartpage__summary{display:grid;justify-items:end;gap:.6rem;margin-top:1.5rem}
+.blko-soda-cartpage__summary p{display:flex;gap:1.5rem;margin:0;font:800 1.5rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-cartpage__summary button{padding:.85rem 1.8rem;border:2px solid var(--color-text, #14433d);border-radius:999px;background:transparent;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
+.blko-soda-cartpage__summary .is-primary{background:var(--color-button, #14433d);color:var(--color-button-text, #fff)}
+@media(max-width:700px){.blko-soda-cartpage__items li{grid-template-columns:4.5rem 1fr 4rem}.blko-soda-cartpage__items strong{grid-column:2/-1}.blko-soda-cartpage__items img{width:4.5rem;height:4.5rem}}
+.blko-soda-tabs{padding:clamp(2.5rem,6vw,4.5rem) 0;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-tabs__heading{margin:0 0 1.5rem;padding:0 1.25rem;font:800 clamp(2rem,4.5vw,3.25rem)/1 var(--font-heading, "Baloo 2", sans-serif);text-align:center}
+.blko-soda-tabs__bar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;padding:0 1.25rem}
+.blko-soda-tabs__tab{padding:.6rem 1.25rem;border:2px solid var(--color-text, #14433d);border-radius:999px;background:transparent;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
+.blko-soda-tabs__tab.is-active{background:var(--color-text, #14433d);color:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-tabs__panel{display:none;padding-top:1.5rem}
+.blko-soda-tabs__panel.is-active{display:block}
+.blko-soda-tabs__note{margin:0 0 1.25rem;padding:0 1.25rem;font-weight:700;text-align:center}
+.blko-soda-tabs__track{display:flex;gap:1.25rem;overflow-x:auto;padding:0 1.25rem 1rem;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.blko-soda-tabs__track>.blko-soda-card{flex:0 0 min(17rem,72vw);scroll-snap-align:start}
+.blko-soda-tabs__cta{margin:1.25rem 0 0;text-align:center}
+.blko-soda-tabs__cta a{display:inline-block;padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-coll{font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-coll__hero{padding:clamp(2.5rem,6vw,4.5rem) 1.25rem;text-align:center}
+.blko-soda-coll__hero h1{margin:0 0 .6rem;font:800 clamp(2.5rem,6vw,4.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-coll__hero p{max-width:40rem;margin:0 auto;font-size:1.1rem;line-height:1.5}
+.blko-soda-coll__filters{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;padding:1.5rem 1.25rem}
+.blko-soda-coll__filters a{padding:.55rem 1.2rem;border:2px solid var(--color-text, #14433d);border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-coll__filters a.is-active{background:var(--color-text, #14433d);color:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-coll__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.75rem 1.25rem;max-width:82rem;margin:0 auto;padding:0 1.25rem 2rem}
+.blko-soda-coll__empty{grid-column:1/-1;text-align:center}
+.blko-soda-coll__pages{display:flex;justify-content:center;gap:.5rem;padding:0 1.25rem 3rem}
+.blko-soda-coll__pages a,.blko-soda-coll__pages span{padding:.45rem .9rem;border-radius:999px;color:inherit;font-weight:800;text-decoration:none}
+.blko-soda-coll__pages span{background:var(--color-announcement-bg, #d4f23c)}
+@media(max-width:1000px){.blko-soda-coll__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.blko-soda-coll__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem .75rem}}
+.blko-soda-header{position:relative;z-index:20;background:var(--color-bg, #b9e4f7);color:var(--color-text, #14433d);font-family:var(--font-body, "Figtree", sans-serif)}
+.blko-soda-header__inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;max-width:90rem;margin:0 auto;padding:.6rem 1.25rem}
+.blko-soda-header__toggle{display:none;justify-self:start;border:0;background:none;color:inherit;cursor:pointer}
+.blko-soda-header__nav ul{display:flex;gap:1.5rem;margin:0;padding:0;list-style:none}
+.blko-soda-header__item{position:static}
+.blko-soda-header__item>a{display:inline-flex;align-items:center;gap:.35rem;padding:1rem 0;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-header__logo img{display:block;width:var(--logo-width, 120px);max-width:100%;height:auto}
+.blko-soda-header__tools{display:flex;align-items:center;justify-content:flex-end;gap:1rem}
+.blko-soda-header__tools a{position:relative;display:inline-flex;color:inherit;text-decoration:none}
+.blko-soda-header__find{font:700 .95rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-header__count{position:absolute;top:-.45rem;right:-.6rem;min-width:1.15rem;padding:0 .25rem;border-radius:999px;background:var(--color-accent, #ff6b8b);color:var(--color-text, #14433d);font:800 .7rem/1.15rem var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-mega{position:absolute;left:0;right:0;top:100%;display:none;background:var(--color-bg-alt, #e3f5fd);border-top:3px solid var(--color-announcement-bg, #d4f23c);box-shadow:0 18px 30px -18px rgba(20,67,61,.45)}
+.blko-soda-header__item.has-mega:hover .blko-soda-mega,.blko-soda-header__item.has-mega:focus-within .blko-soda-mega{display:block}
+.blko-soda-mega__inner{display:flex;flex-wrap:wrap;align-items:flex-start;gap:2rem;max-width:90rem;margin:0 auto;padding:1.75rem 1.25rem}
+.blko-soda-mega__col{min-width:9rem;max-width:12rem}
+.blko-soda-mega__head{display:grid;gap:.5rem;color:inherit;font:700 1.05rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-mega__img{display:block;overflow:hidden;border-radius:1rem;background:var(--color-bg, #b9e4f7);aspect-ratio:1}
+.blko-soda-mega__img img{width:100%;height:100%;object-fit:cover}
+.blko-soda-mega__col ul{margin:.5rem 0 0;padding:0;list-style:none}
+.blko-soda-mega__col li a{display:block;padding:.2rem 0;color:inherit;font-size:.95rem;text-decoration:none}
+.blko-soda-mega__col li a:hover{text-decoration:underline}
+.blko-soda-header__btn{align-self:center;margin-left:auto;padding:.7rem 1.4rem;border-radius:999px;background:var(--color-announcement-bg, #d4f23c);color:var(--color-text, #14433d);font:700 .95rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-header__mobile{display:none;padding:.5rem 1.25rem 1.25rem;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-header__mobile.is-open{display:grid}
+.blko-soda-header__mobile a{padding:.75rem 0;border-bottom:1px solid var(--color-border, #8cc8e3);color:inherit;font:700 1.1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+@media(max-width:900px){.blko-soda-header__toggle{display:inline-flex}.blko-soda-header__nav{display:none}.blko-soda-header__inner{grid-template-columns:auto 1fr auto}.blko-soda-header__logo{justify-self:center}.blko-soda-header__find{display:none}}
+.blko-soda-press{display:block;padding:clamp(3rem,7vw,5rem) 1.25rem 2.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-press__slide{display:none;max-width:48rem;margin:0 auto}
+.blko-soda-press__slide.is-active{display:block}
+.blko-soda-press blockquote{margin:0;font:800 clamp(1.6rem,3.6vw,2.6rem)/1.15 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-press figcaption{margin-top:1rem;font-size:.85rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.blko-soda-press__dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.75rem}
+.blko-soda-press__dot{width:.7rem;height:.7rem;padding:0;border:2px solid currentColor;border-radius:50%;background:transparent;cursor:pointer}
+.blko-soda-press__dot.is-active{background:currentColor}
+.blko-soda-details{max-width:62rem;margin:0 auto;padding:clamp(2rem,5vw,4rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-details h2{margin:2.5rem 0 1.25rem;font:800 clamp(1.8rem,4vw,2.75rem)/1 var(--font-heading, "Baloo 2", sans-serif);text-align:center}
+.blko-soda-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1rem}
+.blko-soda-benefits div{display:grid;justify-items:center;gap:.35rem;padding:1.25rem 1rem;border-radius:1.5rem;background:var(--color-bg-alt, #e3f5fd);text-align:center}
+.blko-soda-benefits svg{width:2.25rem;height:2.25rem;padding:.5rem;border-radius:50%;background:var(--color-announcement-bg, #d4f23c)}
+.blko-soda-benefits b{font:800 1.15rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-benefits span{font-size:.92rem;color:var(--color-text-muted, #3f6a64)}
+.blko-soda-nutri{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch}
+.blko-soda-nutri__fiber{display:grid;align-content:center;justify-items:center;gap:.3rem;padding:2rem;border-radius:2rem;background:var(--color-announcement-bg, #d4f23c);text-align:center}
+.blko-soda-nutri__fiber b{font:800 clamp(4rem,10vw,7rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-nutri__fiber span{font-weight:800}
+.blko-soda-nutri__facts{margin:0;padding:1.25rem 1.5rem;border:3px solid var(--color-text, #14433d);border-radius:1.25rem;background:#fff}
+.blko-soda-nutri__facts h3{margin:0 0 .5rem;font:800 1.6rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-nutri__facts div{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 0;border-top:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-nutri__facts dt,.blko-soda-nutri__facts dd{margin:0}
+.blko-soda-nutri__facts .is-big{font:800 1.4rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-nutri__facts .is-fiber{font-weight:800}
+.blko-soda-nutri__facts .is-sub dt{padding-left:1rem}
+.blko-soda-faq{display:grid;gap:.6rem}
+.blko-soda-faq details{padding:1rem 1.25rem;border-radius:1.1rem;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-faq summary{font:700 1.1rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
+.blko-soda-faq details div{margin-top:.6rem;line-height:1.55}
+@media(max-width:700px){.blko-soda-nutri{grid-template-columns:1fr}}
+.blko-soda-pdp{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,4rem);max-width:75rem;margin:0 auto;padding:clamp(1.5rem,4vw,3rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-pdp__gallery>img{width:100%;aspect-ratio:1;border-radius:2rem;object-fit:cover;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-pdp__thumbs{display:flex;gap:.6rem;margin-top:.8rem}
+.blko-soda-pdp__thumbs button{padding:0;border:2px solid transparent;border-radius:.8rem;background:none;overflow:hidden;cursor:pointer}
+.blko-soda-pdp__thumbs button.is-active{border-color:var(--color-text, #14433d)}
+.blko-soda-pdp__thumbs img{display:block;width:4.5rem;height:4.5rem;object-fit:cover}
+.blko-soda-pdp__line{margin:0;font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.blko-soda-pdp__info h1{margin:.2rem 0 .4rem;font:800 clamp(2.2rem,4.5vw,3.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-pdp__price{margin:0 0 .8rem;font:800 1.6rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-pdp__price s{margin-left:.4rem;color:var(--color-text-muted, #3f6a64);font-size:1.1rem}
+.blko-soda-pdp__desc{margin-bottom:1.25rem;font-size:1.05rem;line-height:1.55}
+.blko-soda-pdp__option{margin:0 0 1rem;padding:0;border:0}
+.blko-soda-pdp__option legend{padding:0;margin-bottom:.4rem;font-weight:800}
+.blko-soda-pdp__option div{display:flex;flex-wrap:wrap;gap:.5rem}
+.blko-soda-pdp__option input{position:absolute;opacity:0;pointer-events:none}
+.blko-soda-pdp__option label{padding:.55rem 1.1rem;border:2px solid var(--color-text, #14433d);border-radius:999px;font-weight:700;cursor:pointer}
+.blko-soda-pdp__option input:checked+label{background:var(--color-text, #14433d);color:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-pdp__option input:focus-visible+label{outline:3px solid var(--color-accent, #ff6b8b);outline-offset:2px}
+.blko-soda-purchase{display:grid;gap:.6rem;margin:1.2rem 0}
+.blko-soda-purchase__opt{display:block;padding:.9rem 1.1rem;border:2px solid var(--color-text, #14433d);border-radius:1.1rem;background:var(--color-bg-alt, #e3f5fd);font-weight:700;cursor:pointer}
+.blko-soda-purchase__opt:has(input:checked){background:var(--color-announcement-bg, #d4f23c)}
+.blko-soda-purchase__row{display:flex;align-items:center;gap:.6rem}
+.blko-soda-purchase__price{margin-left:auto;font-weight:800}
+.blko-soda-purchase__save{padding:.1rem .5rem;border-radius:999px;background:var(--color-accent, #ff6b8b);font-size:.78rem;font-weight:800}
+.blko-soda-purchase__freq{display:grid;gap:.3rem;margin-top:.7rem;font-size:.9rem}
+.blko-soda-purchase__freq select{padding:.5rem .7rem;border:2px solid var(--color-text, #14433d);border-radius:.7rem;background:#fff;color:inherit}
+.blko-soda-pdp__add{display:block;width:100%;margin:.4rem 0 .6rem;padding:1rem 1.5rem;border:0;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:800 1.15rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
+.blko-soda-pdp__add:disabled{opacity:.5;cursor:not-allowed}
+.blko-soda-pdp__ship{margin:.8rem 0 0;font-size:.9rem}
+@media(max-width:800px){.blko-soda-pdp{grid-template-columns:1fr}}
+.blko-soda-retailers{display:grid;justify-items:center;gap:1.5rem;padding:clamp(2.5rem,6vw,4.5rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-retailers h2{margin:0;font:800 clamp(1.8rem,4vw,2.75rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-retailers ul{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem 2.25rem;margin:0;padding:0;list-style:none}
+.blko-soda-retailers li span{font:800 1.4rem var(--font-heading, "Baloo 2", sans-serif);opacity:.85}
+.blko-soda-retailers li img{width:auto;max-height:3rem}
+.blko-soda-retailers a{padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-hero{display:grid;grid-template-columns:1fr 1fr;min-height:34rem;background:var(--hero-bg, #ff6b8b);color:var(--hero-text, #14433d);font-family:var(--font-body, "Figtree", sans-serif)}
+.blko-soda-hero__text{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:1.1rem;padding:clamp(2rem,6vw,5rem)}
+.blko-soda-hero__eyebrow{margin:0;font:800 .8rem var(--font-body, "Figtree", sans-serif);letter-spacing:.14em;text-transform:uppercase}
+.blko-soda-hero__text h1{margin:0;font:800 clamp(2.6rem,6vw,5rem)/.95 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-hero__text p:not(.blko-soda-hero__eyebrow){max-width:30rem;margin:0;font-size:1.15rem;line-height:1.5}
+.blko-soda-hero__btn{display:inline-block;padding:.95rem 2rem;border-radius:999px;font:800 1.05rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-hero__media{position:relative;min-height:20rem;overflow:hidden;background:var(--color-bg, #b9e4f7)}
+.blko-soda-hero__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:800px){.blko-soda-hero{grid-template-columns:1fr}.blko-soda-hero__media{order:-1;min-height:18rem}}
+.blko-soda-story{display:grid;justify-items:center;gap:1.1rem;padding:clamp(3.5rem,9vw,7rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-story h1{margin:0;font:800 clamp(2.8rem,7vw,5.5rem)/.95 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-story p{max-width:44rem;margin:0;font-size:1.2rem;line-height:1.55}
+.blko-soda-story small{opacity:.8}
+.blko-soda-impact{display:grid;justify-items:center;gap:1.25rem;padding:clamp(3rem,8vw,6rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-impact h2{margin:0;font:800 clamp(2rem,4.5vw,3.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-impact p{max-width:42rem;margin:0;font-size:1.15rem;line-height:1.55}
+.blko-soda-impact dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1.5rem;width:100%;max-width:60rem;margin:1rem 0 0}
+.blko-soda-impact dt{font:800 clamp(2.5rem,5vw,4rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-impact dd{margin:.3rem 0 0;font-weight:700}
+.blko-soda-impact small{opacity:.8}
+.blko-soda-mission{display:grid;justify-items:center;gap:1rem;padding:clamp(3rem,8vw,6rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-mission__eyebrow{margin:0;font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.blko-soda-mission h2{max-width:46rem;margin:0;font:800 clamp(2rem,5vw,3.75rem)/1.05 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-mission p:last-child{margin:0;font-size:1.1rem}
+.blko-soda-cols{padding:clamp(2.5rem,6vw,5rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif)}
+.blko-soda-cols__inner{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(1.5rem,5vw,4rem);max-width:70rem;margin:0 auto}
+.blko-soda-cols__inner.is-reverse .blko-soda-cols__img{order:2}
+.blko-soda-cols__img img{width:100%;aspect-ratio:1;border-radius:2rem;object-fit:cover}
+.blko-soda-cols__copy{display:grid;justify-items:start;gap:1rem}
+.blko-soda-cols__copy h2{margin:0;font:800 clamp(2rem,4.5vw,3.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-cols__copy p{margin:0;font-size:1.15rem;line-height:1.55}
+.blko-soda-cols__copy a{padding:.9rem 1.9rem;border-radius:999px;color:var(--color-button-text, #fff);font:700 1.05rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+@media(max-width:800px){.blko-soda-cols__inner{grid-template-columns:1fr}.blko-soda-cols__inner.is-reverse .blko-soda-cols__img{order:0}}
+.blko-soda-twoup{padding:clamp(2.5rem,6vw,5rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif)}
+.blko-soda-twoup__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.25rem,3vw,2.5rem);max-width:70rem;margin:0 auto}
+.blko-soda-twoup article{display:grid;justify-items:center;gap:.8rem;text-align:center}
+.blko-soda-twoup img{width:100%;aspect-ratio:1;border-radius:1.75rem;object-fit:cover}
+.blko-soda-twoup h3{margin:.4rem 0 0;font:800 clamp(1.5rem,3vw,2.25rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-twoup p{max-width:26rem;margin:0;line-height:1.5}
+.blko-soda-twoup a{padding:.85rem 1.8rem;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+@media(max-width:700px){.blko-soda-twoup__grid{grid-template-columns:1fr}}
+.blko-soda-why{display:grid;justify-items:center;gap:1.1rem;padding:clamp(3rem,8vw,6rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-why h2{margin:0;font:800 clamp(2.2rem,5vw,4rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-why p{max-width:42rem;margin:0;font-size:1.2rem;line-height:1.55}
+.blko-soda-why a{padding:.9rem 2rem;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:700 1.05rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}

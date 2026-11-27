@@ -54,7 +54,7 @@
           "type": "filter",
           "settings": {
             "label": "Single flavors",
-            "key": "complexion"
+            "key": "single"
           }
         },
         "block-8": {
@@ -74,7 +74,7 @@
         "block-10": {
           "type": "review",
           "settings": {
-            "tags": "complexion",
+            "tags": "single",
             "title": "My whole family steals the cans",
             "meta": "Cherry Fizz 12-pack · Verified buyer"
           }
@@ -90,7 +90,7 @@
         "block-12": {
           "type": "review",
           "settings": {
-            "tags": "complexion",
+            "tags": "single",
             "rating": 4,
             "title": "Tastes like real fruit",
             "meta": "Peach Rush · Verified buyer"

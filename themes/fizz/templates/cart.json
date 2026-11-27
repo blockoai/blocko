@@ -1,10 +1,10 @@
 {
   "sections": {
-    "cart-checkout-cart-main": {
-      "type": "blko-cart-checkout-cart-main",
+    "cart": {
+      "type": "blko-soda-cart-main",
       "settings": {}
     },
-    "cart-checkout-service-strip": {
+    "service-strip": {
       "type": "blko-cart-checkout-service-strip",
       "settings": {},
       "blocks": {
@@ -35,7 +35,7 @@
     }
   },
   "order": [
-    "cart-checkout-cart-main",
-    "cart-checkout-service-strip"
+    "cart",
+    "service-strip"
   ]
 }

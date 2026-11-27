@@ -24,7 +24,7 @@
       ]
     },
     "cart-drawer": {
-      "type": "blko-chrome-cart-drawer",
+      "type": "blko-soda-cart-drawer",
       "settings": {}
     }
   },

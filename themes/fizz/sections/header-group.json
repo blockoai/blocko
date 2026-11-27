@@ -3,12 +3,35 @@
   "type": "header",
   "sections": {
     "announcement": {
-      "type": "blko-chrome-announcement",
+      "type": "blko-soda-announcement",
+      "blocks": {
+        "m1": {
+          "type": "message",
+          "settings": {
+            "text": "Free shipping on orders over $35.",
+            "link_label": "Shop now",
+            "link_url": "shopify://collections/all"
+          }
+        },
+        "m2": {
+          "type": "message",
+          "settings": {
+            "text": "Subscribe and save 15% on every box.",
+            "link_label": "How it works"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2"
+      ],
       "settings": {}
     },
     "header": {
-      "type": "blko-chrome-header",
-      "settings": {}
+      "type": "blko-soda-header",
+      "settings": {
+        "menu": "main-menu"
+      }
     }
   },
   "order": [

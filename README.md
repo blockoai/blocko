@@ -41,7 +41,7 @@ Without the plugin: every item in the live catalog (https://blocko.ai/browse/) a
 - `blush`: 208 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/blush/`.
 - `clip`: 213 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/clip/`.
 - `dew`: 211 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/dew/`.
-- `fizz`: 224 sections/blocks as Liquid, 10 gaps (see `catalog.json`). No static HTML demo yet.
+- `fizz`: 225 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/fizz/`.
 - `isle`: 219 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/isle/`.
 - `lather`: 224 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/lather/`.
 - `prism`: 228 sections/blocks as Liquid, 10 gaps (see `catalog.json`). Demo: `demo/prism/`.

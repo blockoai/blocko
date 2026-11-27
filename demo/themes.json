@@ -249,6 +249,23 @@
     "logo": "dew/assets/brand-mark.svg"
   },
   {
+    "id": "fizz",
+    "name": "Fizz",
+    "industry": "beverage",
+    "subIndustry": "Prebiotic soda (playful, fruity)",
+    "status": "active",
+    "manifest": "fizz/manifest.json",
+    "layouts": "fizz/templates/layouts.json",
+    "templateJsBytes": {
+      "home": 9274,
+      "pdp": 9274,
+      "collection": 9274,
+      "cart": 9274,
+      "our-story": 9274
+    },
+    "logo": "fizz/assets/brand-mark.svg"
+  },
+  {
     "id": "isle",
     "name": "Isle",
     "industry": "beauty",

@@ -1,0 +1,100 @@
+{%- assign threshold = section.settings.free_shipping_threshold | times: 100 -%}
+<div class="blko-soda-drawer" id="CartDrawer" data-cart-drawer role="dialog" aria-modal="true" aria-label="{{ section.settings.title | escape }}">
+  <div class="blko-soda-drawer__overlay" data-cart-close></div>
+  <aside class="blko-soda-drawer__panel">
+    <div data-drawer-content data-count="{{ cart.item_count }}">
+      <div class="blko-soda-drawer__head">
+        <h2>{{ section.settings.title }}{% if cart.item_count > 0 %} ({{ cart.item_count }}){% endif %}</h2>
+        <button type="button" class="blko-soda-drawer__close" data-cart-close aria-label="Close">&times;</button>
+      </div>
+      {%- if threshold > 0 -%}
+        {%- assign left = threshold | minus: cart.total_price -%}
+        {%- assign pct = cart.total_price | times: 100 | divided_by: threshold -%}
+        {%- if pct > 100 %}{% assign pct = 100 %}{% endif -%}
+        {%- assign left_money = left | money -%}
+        <div class="blko-soda-ship">
+          <p>{%- if left > 0 -%}{{ section.settings.ship_away | replace: '[amount]', left_money }}{%- else -%}{{ section.settings.ship_done }}{%- endif -%}</p>
+          <div class="blko-soda-ship__track"><span style="width:{{ pct }}%"></span></div>
+        </div>
+      {%- endif -%}
+      <div class="blko-soda-drawer__items">
+        {%- for item in cart.items -%}
+          <div class="blko-soda-line">
+            <a href="{{ item.url }}">{% if item.image %}<img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title | escape }}" width="84" height="84" loading="lazy">{% endif %}</a>
+            <div>
+              <a class="blko-soda-line__title" href="{{ item.url }}">{{ item.product.title }}</a>
+              {%- unless item.product.has_only_default_variant -%}<p class="blko-soda-line__meta">{{ item.variant.title }}</p>{%- endunless -%}
+              {%- if item.selling_plan_allocation -%}<p class="blko-soda-line__meta">{{ section.settings.subscription_label }}: {{ item.selling_plan_allocation.selling_plan.name }}</p>{%- endif -%}
+              <div class="blko-soda-line__qty">
+                <button type="button" data-qty="{{ item.key }}" data-to="{{ item.quantity | minus: 1 }}" aria-label="Decrease quantity">&minus;</button>
+                <span>{{ item.quantity }}</span>
+                <button type="button" data-qty="{{ item.key }}" data-to="{{ item.quantity | plus: 1 }}" aria-label="Increase quantity">+</button>
+              </div>
+              <button type="button" class="blko-soda-line__remove" data-qty="{{ item.key }}" data-to="0">{{ section.settings.remove_label }}</button>
+            </div>
+            <p class="blko-soda-line__price">{% if item.original_line_price > item.final_line_price %}<s>{{ item.original_line_price | money }}</s> {% endif %}{{ item.final_line_price | money }}</p>
+          </div>
+        {%- else -%}
+          <div class="blko-soda-drawer__empty"><p>{{ section.settings.empty_text }}</p><a class="blko-soda-drawer__btn" href="{{ routes.all_products_collection_url }}">{{ section.settings.continue_label }}</a></div>
+        {%- endfor -%}
+      </div>
+      {%- if cart.item_count > 0 -%}
+        <div class="blko-soda-drawer__foot">
+          <p class="blko-soda-drawer__sub"><span>{{ section.settings.subtotal_label }}</span><span>{{ cart.total_price | money }}</span></p>
+          <form action="{{ routes.cart_url }}" method="post"><button type="submit" name="checkout" class="blko-soda-drawer__btn blko-soda-drawer__btn--block">{{ section.settings.checkout_label }}</button></form>
+        </div>
+      {%- endif -%}
+    </div>
+  </aside>
+</div>
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+
+{% stylesheet %}
+.blko-soda-drawer{position:fixed;inset:0;z-index:100;visibility:hidden;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-drawer.is-open{visibility:visible}
+.blko-soda-drawer__overlay{position:absolute;inset:0;background:rgba(20,67,61,.55);opacity:0;transition:opacity .25s}
+.blko-soda-drawer.is-open .blko-soda-drawer__overlay{opacity:1}
+.blko-soda-drawer__panel{position:absolute;top:0;right:0;bottom:0;display:flex;flex-direction:column;width:min(26rem,100%);background:var(--color-bg-alt, #e3f5fd);transform:translateX(100%);transition:transform .3s}
+.blko-soda-drawer.is-open .blko-soda-drawer__panel{transform:none}
+.blko-soda-drawer.is-loading .blko-soda-drawer__panel{opacity:.7}
+.blko-soda-drawer__panel>[data-drawer-content]{display:flex;flex-direction:column;min-height:0;height:100%}
+.blko-soda-drawer__head{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;border-bottom:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-drawer__head h2{margin:0;font:800 1.5rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-drawer__close{border:0;background:none;color:inherit;font-size:2rem;line-height:1;cursor:pointer}
+.blko-soda-ship{padding:.9rem 1.25rem;background:var(--color-bg, #b9e4f7)}
+.blko-soda-ship p{margin:0 0 .5rem;font-weight:700;font-size:.9rem}
+.blko-soda-ship__track{height:.6rem;overflow:hidden;border-radius:999px;background:#fff}
+.blko-soda-ship__track span{display:block;height:100%;border-radius:999px;background:var(--color-announcement-bg, #d4f23c);box-shadow:inset 0 0 0 2px var(--color-text, #14433d);transition:width .3s}
+.blko-soda-drawer__items{flex:1;overflow:auto;padding:0 1.25rem}
+.blko-soda-line{display:grid;grid-template-columns:5.25rem 1fr auto;gap:.9rem;padding:1rem 0;border-bottom:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-line img{width:5.25rem;height:5.25rem;border-radius:.9rem;object-fit:cover}
+.blko-soda-line__title{color:inherit;font:700 1.05rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-line__meta{margin:.15rem 0 0;color:var(--color-text-muted, #3f6a64);font-size:.82rem}
+.blko-soda-line__qty{display:inline-flex;align-items:center;gap:.6rem;margin-top:.5rem;padding:.1rem .35rem;border:2px solid var(--color-text, #14433d);border-radius:999px;font-weight:800}
+.blko-soda-line__qty button{width:1.6rem;height:1.6rem;border:0;background:none;color:inherit;font-size:1.1rem;cursor:pointer}
+.blko-soda-line__remove{display:block;margin-top:.35rem;padding:0;border:0;background:none;color:var(--color-text-muted, #3f6a64);font-size:.8rem;text-decoration:underline;cursor:pointer}
+.blko-soda-line__price{margin:0;font-weight:800}
+.blko-soda-drawer__empty{padding:2.5rem 0;text-align:center}
+.blko-soda-drawer__foot{padding:1rem 1.25rem 1.25rem;border-top:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-drawer__sub{display:flex;justify-content:space-between;margin:0 0 .8rem;font:800 1.15rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-drawer__btn{display:inline-block;padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-align:center;text-decoration:none;cursor:pointer}
+.blko-soda-drawer__btn--block{display:block;width:100%}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda cart drawer",
+  "settings": [
+    {"type": "text", "id": "title", "label": "Title", "default": "Your cart"},
+    {"type": "number", "id": "free_shipping_threshold", "label": "Free shipping threshold (store currency, 0 hides the bar)", "default": 35},
+    {"type": "text", "id": "ship_away", "label": "Free shipping progress text", "info": "Use [amount] for the remaining amount.", "default": "You are [amount] away from free shipping!"},
+    {"type": "text", "id": "ship_done", "label": "Free shipping unlocked text", "default": "You unlocked free shipping!"},
+    {"type": "text", "id": "subscription_label", "label": "Subscription label", "default": "Subscription"},
+    {"type": "text", "id": "remove_label", "label": "Remove label", "default": "Remove"},
+    {"type": "text", "id": "empty_text", "label": "Empty cart text", "default": "Your cart is empty. Let's fix that."},
+    {"type": "text", "id": "continue_label", "label": "Continue shopping label", "default": "Shop flavors"},
+    {"type": "text", "id": "subtotal_label", "label": "Subtotal label", "default": "Subtotal"},
+    {"type": "text", "id": "checkout_label", "label": "Checkout label", "default": "Check out"}
+  ]
+}
+{% endschema %}

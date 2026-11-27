@@ -1,0 +1,122 @@
+{%- assign mf = product.metafields.custom -%}
+{%- assign fiber = mf.fiber.value | default: section.settings.fiber -%}
+{%- assign calories = mf.calories.value | default: section.settings.calories -%}
+<section class="blko-soda-details">
+  {%- assign benefits = section.blocks | where: 'type', 'benefit' -%}
+  {%- if benefits.size > 0 -%}
+    <div class="blko-soda-benefits">
+      {%- for b in benefits -%}
+        <div {{ b.shopify_attributes }}>
+          {%- case b.settings.icon -%}
+            {%- when 'leaf' -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19c3-5 6-8 11-10"/></svg>
+            {%- when 'drop' -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg>
+            {%- when 'smile' -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 13c1.5 2 6.5 2 8 0M9 9.5h.01M15 9.5h.01"/></svg>
+            {%- else -%}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>
+          {%- endcase -%}
+          <b>{{ b.settings.title | escape }}</b><span>{{ b.settings.text | escape }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+  <h2>{{ section.settings.nutrition_heading | escape }}</h2>
+  <div class="blko-soda-nutri">
+    <div class="blko-soda-nutri__fiber"><b>{{ fiber }}g</b><span>{{ section.settings.fiber_caption | escape }}</span></div>
+    <dl class="blko-soda-nutri__facts">
+      <h3>Nutrition facts</h3>
+      <div><dt>Serving size</dt><dd>{{ section.settings.serving | escape }}</dd></div>
+      <div class="is-big"><dt>Calories</dt><dd>{{ calories }}</dd></div>
+      <div><dt>Total fat</dt><dd>{{ mf.fat.value | default: section.settings.fat }}</dd></div>
+      <div><dt>Sodium</dt><dd>{{ mf.sodium.value | default: section.settings.sodium }}</dd></div>
+      <div><dt>Total carbohydrate</dt><dd>{{ mf.carbs.value | default: section.settings.carbs }}</dd></div>
+      <div class="is-fiber"><dt>Dietary fiber</dt><dd>{{ fiber }}g</dd></div>
+      <div class="is-sub"><dt>Total sugars</dt><dd>{{ mf.sugars.value | default: section.settings.sugars }}</dd></div>
+      <div class="is-sub"><dt>Includes added sugars</dt><dd>{{ mf.added_sugars.value | default: section.settings.added_sugars }}</dd></div>
+      <div><dt>Protein</dt><dd>{{ section.settings.protein | escape }}</dd></div>
+    </dl>
+  </div>
+  {%- assign faqs = section.blocks | where: 'type', 'faq' -%}
+  {%- if faqs.size > 0 -%}
+    <h2>{{ section.settings.faq_heading | escape }}</h2>
+    <div class="blko-soda-faq">
+      {%- for f in faqs -%}<details {{ f.shopify_attributes }}><summary>{{ f.settings.question | escape }}</summary><div>{{ f.settings.answer }}</div></details>{%- endfor -%}
+    </div>
+  {%- endif -%}
+</section>
+
+{% stylesheet %}
+.blko-soda-details{max-width:62rem;margin:0 auto;padding:clamp(2rem,5vw,4rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-details h2{margin:2.5rem 0 1.25rem;font:800 clamp(1.8rem,4vw,2.75rem)/1 var(--font-heading, "Baloo 2", sans-serif);text-align:center}
+.blko-soda-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1rem}
+.blko-soda-benefits div{display:grid;justify-items:center;gap:.35rem;padding:1.25rem 1rem;border-radius:1.5rem;background:var(--color-bg-alt, #e3f5fd);text-align:center}
+.blko-soda-benefits svg{width:2.25rem;height:2.25rem;padding:.5rem;border-radius:50%;background:var(--color-announcement-bg, #d4f23c)}
+.blko-soda-benefits b{font:800 1.15rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-benefits span{font-size:.92rem;color:var(--color-text-muted, #3f6a64)}
+.blko-soda-nutri{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch}
+.blko-soda-nutri__fiber{display:grid;align-content:center;justify-items:center;gap:.3rem;padding:2rem;border-radius:2rem;background:var(--color-announcement-bg, #d4f23c);text-align:center}
+.blko-soda-nutri__fiber b{font:800 clamp(4rem,10vw,7rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-nutri__fiber span{font-weight:800}
+.blko-soda-nutri__facts{margin:0;padding:1.25rem 1.5rem;border:3px solid var(--color-text, #14433d);border-radius:1.25rem;background:#fff}
+.blko-soda-nutri__facts h3{margin:0 0 .5rem;font:800 1.6rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-nutri__facts div{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 0;border-top:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-nutri__facts dt,.blko-soda-nutri__facts dd{margin:0}
+.blko-soda-nutri__facts .is-big{font:800 1.4rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-nutri__facts .is-fiber{font-weight:800}
+.blko-soda-nutri__facts .is-sub dt{padding-left:1rem}
+.blko-soda-faq{display:grid;gap:.6rem}
+.blko-soda-faq details{padding:1rem 1.25rem;border-radius:1.1rem;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-faq summary{font:700 1.1rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
+.blko-soda-faq details div{margin-top:.6rem;line-height:1.55}
+@media(max-width:700px){.blko-soda-nutri{grid-template-columns:1fr}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda product details",
+  "settings": [
+    {"type": "text", "id": "nutrition_heading", "label": "Nutrition heading", "default": "What's inside"},
+    {"type": "text", "id": "fiber", "label": "Fiber grams (product metafield custom.fiber overrides)", "default": "9"},
+    {"type": "text", "id": "fiber_caption", "label": "Fiber caption", "default": "grams of prebiotic fiber per can"},
+    {"type": "text", "id": "serving", "label": "Serving size", "default": "1 can (355 mL)"},
+    {"type": "text", "id": "calories", "label": "Calories", "default": "35"},
+    {"type": "text", "id": "fat", "label": "Total fat", "default": "0g (0%)"},
+    {"type": "text", "id": "sodium", "label": "Sodium", "default": "15mg (1%)"},
+    {"type": "text", "id": "carbs", "label": "Total carbohydrate", "default": "11g (4%)"},
+    {"type": "text", "id": "sugars", "label": "Total sugars", "default": "2g"},
+    {"type": "text", "id": "added_sugars", "label": "Added sugars", "default": "0g (0%)"},
+    {"type": "text", "id": "protein", "label": "Protein", "default": "0g"},
+    {"type": "text", "id": "faq_heading", "label": "FAQ heading", "default": "Questions? Answers."}
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit icon",
+      "settings": [
+        {"type": "select", "id": "icon", "label": "Icon", "default": "leaf", "options": [{"value": "leaf", "label": "Leaf"}, {"value": "drop", "label": "Drop"}, {"value": "smile", "label": "Smile"}, {"value": "star", "label": "Star"}]},
+        {"type": "text", "id": "title", "label": "Title", "default": "Plant fiber"},
+        {"type": "text", "id": "text", "label": "Text", "default": "Prebiotic fiber from plants"}
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {"type": "text", "id": "question", "label": "Question", "default": "Question"},
+        {"type": "richtext", "id": "answer", "label": "Answer", "default": "<p>Answer</p>"}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Soda product details",
+      "blocks": [
+        {"type": "benefit", "settings": {"icon": "leaf", "title": "Prebiotic fiber", "text": "Plant fiber in every can"}},
+        {"type": "benefit", "settings": {"icon": "drop", "title": "2g sugar", "text": "Fruit sweetened, no sugar bomb"}},
+        {"type": "benefit", "settings": {"icon": "smile", "title": "Gut friendly", "text": "Feeds the good bacteria"}},
+        {"type": "benefit", "settings": {"icon": "star", "title": "Real fruit", "text": "Juice, never fake flavor"}},
+        {"type": "faq", "settings": {"question": "Does it need to stay cold?", "answer": "<p>Nope. Cans are shelf stable, but they taste best chilled.</p>"}},
+        {"type": "faq", "settings": {"question": "Can I pause my subscription?", "answer": "<p>Yes. Skip, pause or cancel any time from your account.</p>"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,397 +1,69 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
+    "hero": {
+      "type": "blko-soda-split-hero",
       "settings": {
-        "eyebrow": "Shop by flavor",
-        "heading": "Pick a flavor and pop it."
+        "eyebrow": "New: Cherry Pop",
+        "heading": "Big fizz. Small sugar.",
+        "subtext": "Prebiotic soda with real fruit flavor, 2g of sugar and a lot of attitude. Stock up and save on every case.",
+        "button_label": "Shop flavors",
+        "button_url": "/collections/drinks"
+      }
+    },
+    "collections": {
+      "type": "blko-soda-collection-tabs",
+      "settings": {
+        "heading": "Shop our flavors"
       },
       "blocks": {
         "block-1": {
-          "type": "link",
+          "type": "collection",
           "settings": {
-            "url": "/collections/all",
-            "label": "Single flavors"
+            "tab_label": "Classics",
+            "collection": "drinks",
+            "note": "Classic cans, 9g fiber. Ice cold or room temp.",
+            "cta_label": "Shop classics",
+            "limit": 12
           }
         },
         "block-2": {
-          "type": "link",
+          "type": "collection",
           "settings": {
-            "label": "Citrus",
-            "url": "/collections/all"
+            "tab_label": "Fruit punch",
+            "collection": "drinks",
+            "note": "Loud, juicy and light on sugar.",
+            "cta_label": "Shop fruit punch",
+            "limit": 12
           }
         },
         "block-3": {
-          "type": "link",
+          "type": "collection",
           "settings": {
-            "label": "Berry",
-            "url": "/collections/all"
+            "tab_label": "Minis",
+            "collection": "drinks",
+            "note": "Mini cans for lunchboxes and mixers.",
+            "cta_label": "Shop minis",
+            "limit": 12
           }
         },
         "block-4": {
-          "type": "link",
+          "type": "collection",
           "settings": {
-            "label": "Tropical",
-            "url": "/collections/all"
+            "tab_label": "Limited",
+            "collection": "drinks",
+            "note": "Here for a fizzy minute.",
+            "cta_label": "Shop limited",
+            "limit": 12
           }
         },
         "block-5": {
-          "type": "link",
+          "type": "collection",
           "settings": {
-            "label": "Spicy",
-            "url": "/collections/all"
-          }
-        },
-        "block-6": {
-          "type": "link",
-          "settings": {
-            "label": "Variety packs",
-            "url": "/collections/all"
-          }
-        },
-        "block-7": {
-          "type": "link",
-          "settings": {
-            "label": "Fizz Club",
-            "url": "/pages/faq"
-          }
-        },
-        "block-8": {
-          "type": "link",
-          "settings": {
-            "label": "Find Fizz near you",
-            "url": "/pages/contact"
-          }
-        },
-        "block-9": {
-          "type": "tile",
-          "settings": {
-            "url": "/collections/all",
-            "image_alt": "A fridge shelf stacked with colorful cans of Fizz soda",
-            "label": "Variety packs"
-          }
-        },
-        "block-10": {
-          "type": "tile",
-          "settings": {
-            "url": "/collections/all",
-            "image_alt": "Cans of Cherry Fizz lined up on a picnic blanket",
-            "label": "Single flavors"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10"
-      ]
-    },
-    "hero-campaign": {
-      "type": "blko-hero-campaign",
-      "settings": {
-        "image_alt": "A hand holding a cold can of Cherry Fizz at a sunny picnic",
-        "eyebrow": "New flavor drop",
-        "heading": "Watermelon Spritz is back.",
-        "text": "Juicy watermelon, a squeeze of lime and 9g of plant fiber in every can. Cold, crisp and gone before the summer is.",
-        "button_label": "Grab a can"
-      }
-    },
-    "tabbed-product-grid": {
-      "type": "blko-tabbed-product-grid",
-      "settings": {
-        "eyebrow": "What's fizzing",
-        "heading": "The cans everyone grabs first"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {
-            "key": "best",
-            "label": "Best sellers"
-          }
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "key": "new",
-            "label": "New flavors"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "feature-driver": {
-      "type": "blko-feature-driver",
-      "settings": {
-        "image_alt": "Friends laughing around a cooler full of cold Fizz cans",
-        "eyebrow": "Fizz Points",
-        "heading": "Sip, earn, repeat: points on every can.",
-        "text": "Join Fizz Points and rack up rewards on every order, review and referral. Trade them in for free cans, new flavor drops and Fizz Club perks.",
-        "button_label": "Count me in"
-      }
-    },
-    "fizz-flavor-lineup": {
-      "type": "blko-fizz-flavor-lineup",
-      "settings": {
-        "eyebrow": "Five families, one for every craving",
-        "heading": "Find your fizz",
-        "all_label": "Every flavor"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "family",
-          "settings": {
-            "label": "Citrus"
-          }
-        },
-        "block-2": {
-          "type": "family",
-          "settings": {
-            "label": "Berry"
-          }
-        },
-        "block-3": {
-          "type": "family",
-          "settings": {
-            "label": "Tropical"
-          }
-        },
-        "block-4": {
-          "type": "family",
-          "settings": {
-            "label": "Classic"
-          }
-        },
-        "block-5": {
-          "type": "family",
-          "settings": {
-            "label": "Spicy"
-          }
-        },
-        "block-6": {
-          "type": "scent",
-          "settings": {
-            "note": "Lemon zest, lime, bright and crisp",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "family": "Citrus",
-            "name": "Lemon Lime",
-            "image_alt": "A cold can of Lemon Lime soda"
-          }
-        },
-        "block-7": {
-          "type": "scent",
-          "settings": {
-            "name": "Orange Pop",
-            "note": "Sweet orange, a little tang",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "family": "Citrus",
-            "image_alt": "A cold can of Orange Pop soda"
-          }
-        },
-        "block-8": {
-          "type": "scent",
-          "settings": {
-            "family": "Berry",
-            "name": "Berry Blast",
-            "note": "Blueberry, raspberry, blackberry",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "image_alt": "A cold can of Berry Blast soda"
-          }
-        },
-        "block-9": {
-          "type": "scent",
-          "settings": {
-            "family": "Berry",
-            "name": "Grape Gulp",
-            "note": "Concord grape, a little jammy",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "image_alt": "A cold can of Grape Gulp soda"
-          }
-        },
-        "block-10": {
-          "type": "scent",
-          "settings": {
-            "family": "Classic",
-            "name": "Cherry Fizz",
-            "note": "Dark cherry, vanilla, classic cola vibes",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "image_alt": "A cold can of Cherry Fizz soda"
-          }
-        },
-        "block-11": {
-          "type": "scent",
-          "settings": {
-            "family": "Classic",
-            "name": "Peach Rush",
-            "note": "Ripe peach, honey, a splash of tea",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "image_alt": "A cold can of Peach Rush soda"
-          }
-        },
-        "block-12": {
-          "type": "scent",
-          "settings": {
-            "family": "Tropical",
-            "name": "Tropical Splash",
-            "note": "Pineapple, mango, coconut water",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "image_alt": "A cold can of Tropical Splash soda"
-          }
-        },
-        "block-13": {
-          "type": "scent",
-          "settings": {
-            "family": "Tropical",
-            "name": "Watermelon Spritz",
-            "note": "Juicy watermelon, lime, mint",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "image_alt": "A cold can of Watermelon Spritz soda"
-          }
-        },
-        "block-14": {
-          "type": "scent",
-          "settings": {
-            "family": "Spicy",
-            "name": "Ginger Snap",
-            "note": "Fresh ginger, lemon, warm spice",
-            "price": "$2.99",
-            "url": "/collections/all",
-            "image_alt": "A cold can of Ginger Snap soda"
-          }
-        },
-        "block-15": {
-          "type": "scent",
-          "settings": {
-            "family": "Classic",
-            "name": "Starter Variety 8-pack",
-            "note": "Eight cans, a taste of every family",
-            "price": "$24",
-            "url": "/collections/all",
-            "image_alt": "An open box of eight assorted Fizz soda cans"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11",
-        "block-12",
-        "block-13",
-        "block-14",
-        "block-15"
-      ]
-    },
-    "fizz-quiz-banner": {
-      "type": "blko-fizz-quiz-banner",
-      "settings": {
-        "eyebrow": "Five questions, no judgment",
-        "heading": "Cheaper than therapy, and it tells you which fizz you are.",
-        "text": "Answer a few questions about your snack slumps and weekend plans and we will match you to a flavor family and a Starter Variety 8-pack, with 10% off.",
-        "button_label": "Take the flavor quiz"
-      }
-    },
-    "fizz-benefit-trio": {
-      "type": "blko-fizz-benefit-trio",
-      "settings": {
-        "eyebrow": "What's inside the can",
-        "heading": "Three rules we do not bend"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "benefit",
-          "settings": {
-            "title": "9g plant fiber",
-            "text": "Every 12 fl oz can packs prebiotic fiber from plants and botanicals that feeds your good bacteria, with just 2g sugar and 35 calories."
-          }
-        },
-        "block-2": {
-          "type": "benefit",
-          "settings": {
-            "icon": "flame",
-            "title": "Sweet from fruit",
-            "text": "Real fruit juice and botanicals do the sweetening. No artificial sweeteners, ever, and every ingredient is listed on the can."
-          }
-        },
-        "block-3": {
-          "type": "benefit",
-          "settings": {
-            "icon": "peak",
-            "title": "Fizz for everyone",
-            "text": "Sparkling, gluten-free and vegan, with bold flavors that taste like soda night at the picnic, not a health lecture."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "home-clips": {
-      "type": "blko-home-clips",
-      "settings": {
-        "heading": "The fizz fans have opinions"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "category",
-          "settings": {
-            "title": "Fridge stock-up haul",
-            "url": "/collections/all"
-          }
-        },
-        "block-2": {
-          "type": "category",
-          "settings": {
-            "title": "The 3pm snack-slump swap",
-            "url": "/collections/all"
-          }
-        },
-        "block-3": {
-          "type": "category",
-          "settings": {
-            "title": "Cherry Fizz taste test",
-            "url": "/collections/all"
-          }
-        },
-        "block-4": {
-          "type": "category",
-          "settings": {
-            "title": "Unboxing the Fizz Fridge 24-pack",
-            "url": "/collections/all"
-          }
-        },
-        "block-5": {
-          "type": "category",
-          "settings": {
-            "title": "Swapping out the sugary soda",
-            "url": "/collections/all"
+            "tab_label": "Variety packs",
+            "collection": "drinks",
+            "note": "Can't pick a flavor? Do not.",
+            "cta_label": "Shop variety packs",
+            "limit": 12
           }
         }
       },
@@ -403,35 +75,38 @@
         "block-5"
       ]
     },
-    "fizz-subscribe-explainer": {
-      "type": "blko-fizz-subscribe-explainer",
+    "why": {
+      "type": "blko-soda-why",
       "settings": {
-        "eyebrow": "A habit, not a discount",
-        "heading": "Join Fizz Club, save and stop thinking about it",
-        "button_label": "Build my pack"
-      },
+        "heading": "Why Fizz?",
+        "text": "Fizz pairs prebiotic fiber with real fruit and a short ingredient list. Two grams of sugar, zero guilt, and a flavor you would sip on purpose.",
+        "button_label": "Find your flavor",
+        "button_url": "/collections/drinks"
+      }
+    },
+    "press": {
+      "type": "blko-soda-press-slider",
+      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "step",
+          "type": "quote",
           "settings": {
-            "title": "Every four weeks",
-            "text": "Your cans ship on a four-week rhythm. Swap flavors, skip a delivery or pause anytime from your account."
+            "quote": "Tastes like the soda you remember, minus the crash.",
+            "source": "Soda Daily"
           }
         },
         "block-2": {
-          "type": "step",
+          "type": "quote",
           "settings": {
-            "number": "02",
-            "title": "Shipping is on us",
-            "text": "Every Fizz Club order travels free, with no minimum to hit."
+            "quote": "The cherry flavor is loud in the best way.",
+            "source": "The Sip Report"
           }
         },
         "block-3": {
-          "type": "step",
+          "type": "quote",
           "settings": {
-            "number": "03",
-            "title": "First in line",
-            "text": "Members hear about new flavors before anyone else and earn bonus Fizz Points on their first renewal."
+            "quote": "Finally a fizzy drink that makes the fridge look fun.",
+            "source": "Pantry Weekly"
           }
         }
       },
@@ -441,7 +116,79 @@
         "block-3"
       ]
     },
-    "home-reviews": {
+    "two-up": {
+      "type": "blko-soda-two-up",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=900&q=80",
+            "title": "Classic cans",
+            "text": "The original lineup: bright fruit, 2g of sugar and fiber that keeps up.",
+            "button_label": "Shop classics",
+            "button_url": "/collections/drinks"
+          }
+        },
+        "block-2": {
+          "type": "item",
+          "settings": {
+            "image_url": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=900&q=80",
+            "title": "Fruit punch line",
+            "text": "Louder fruit, same short ingredient list. Built for sharing.",
+            "button_label": "Shop fruit punch",
+            "button_url": "/collections/drinks"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "real-fruit": {
+      "type": "blko-soda-two-columns",
+      "settings": {}
+    },
+    "retailers": {
+      "type": "blko-soda-retailers",
+      "settings": {
+        "button_url": "/pages/stockists"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "retailer",
+          "settings": {
+            "name": "Corner Market"
+          }
+        },
+        "block-2": {
+          "type": "retailer",
+          "settings": {
+            "name": "Green Grocer"
+          }
+        },
+        "block-3": {
+          "type": "retailer",
+          "settings": {
+            "name": "Daily Pantry"
+          }
+        },
+        "block-4": {
+          "type": "retailer",
+          "settings": {
+            "name": "Fresh Aisle"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "reviews": {
       "type": "blko-home-reviews",
       "settings": {
         "kicker": "10,000+ five-star reviews",
@@ -477,16 +224,6 @@
         "block-3"
       ]
     },
-    "commitments": {
-      "type": "blko-commitments",
-      "settings": {
-        "image_alt": "A hand holding a cold can of Fizz soda in front of an open fridge",
-        "eyebrow": "The difference",
-        "heading": "Soda that earns its spot in the fridge.",
-        "text": "We started in a tiny kitchen with a pot of fruit, a few botanicals and an itch to make a better soda than the one on the grocery shelf. The recipe is still short and the standards are still stubborn.",
-        "button_label": "Read our story"
-      }
-    },
     "newsletter": {
       "type": "blko-newsletter",
       "settings": {
@@ -495,25 +232,17 @@
         "message": "New flavor drops, fridge deals and the odd cheeky pun. Once a week, no spam.",
         "button_label": "Get my code"
       }
-    },
-    "home-collection-quick-view-modal": {
-      "type": "blko-home-collection-quick-view-modal",
-      "settings": {}
     }
   },
   "order": [
-    "home-collection-mega-menu",
-    "hero-campaign",
-    "tabbed-product-grid",
-    "feature-driver",
-    "fizz-flavor-lineup",
-    "fizz-quiz-banner",
-    "fizz-benefit-trio",
-    "home-clips",
-    "fizz-subscribe-explainer",
-    "home-reviews",
-    "commitments",
-    "newsletter",
-    "home-collection-quick-view-modal"
+    "hero",
+    "collections",
+    "why",
+    "press",
+    "two-up",
+    "real-fruit",
+    "retailers",
+    "reviews",
+    "newsletter"
   ]
 }

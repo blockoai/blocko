@@ -1,0 +1,455 @@
+[
+  {
+    "id": "soda-announcement",
+    "kind": "section",
+    "category": "announcement",
+    "name": "Soda announcement",
+    "description": "Rotating announcement bar with arrows.",
+    "file": "fizz/sections/announcement--soda-announcement.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 9274,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-header",
+    "kind": "section",
+    "category": "header",
+    "name": "Soda header",
+    "description": "Header with a mega menu built from the main-menu link list, mobile drawer and cart count.",
+    "file": "fizz/sections/header--soda-header.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1534353473418-4cfa6c56fd38",
+        "page_url": "https://unsplash.com/photos/photo-1534353473418-4cfa6c56fd38"
+      },
+      {
+        "photo_id": "photo-1551538827-9c037cb4f32a",
+        "page_url": "https://unsplash.com/photos/photo-1551538827-9c037cb4f32a"
+      },
+      {
+        "photo_id": "photo-1559181567-c3190ca9959b",
+        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 9274,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-cart-drawer",
+    "kind": "section",
+    "category": "cart-drawer",
+    "name": "Soda cart drawer",
+    "description": "Slide-out cart with a free-shipping progress bar, quantity controls and subscription lines.",
+    "file": "fizz/sections/cart-drawer--soda-cart-drawer.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1559181567-c3190ca9959b",
+        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 9274,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-split-hero",
+    "kind": "section",
+    "category": "hero-banner",
+    "name": "Soda split hero",
+    "description": "Split hero with copy on one side and a full-bleed image on the other.",
+    "file": "fizz/sections/hero-banner--soda-split-hero.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1559181567-c3190ca9959b",
+        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-collection-tabs",
+    "kind": "section",
+    "category": "featured-collection",
+    "name": "Soda collection tabs",
+    "description": "Tabbed product carousel (classics, fruit punch, minis, limited, variety) with hover image and quick add.",
+    "file": "fizz/sections/featured-collection--soda-collection-tabs.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1464965911861-746a04b4bca6",
+        "page_url": "https://unsplash.com/photos/photo-1464965911861-746a04b4bca6"
+      },
+      {
+        "photo_id": "photo-1497534446932-c925b458314e",
+        "page_url": "https://unsplash.com/photos/photo-1497534446932-c925b458314e"
+      },
+      {
+        "photo_id": "photo-1523677011781-c91d1bbe2f9e",
+        "page_url": "https://unsplash.com/photos/photo-1523677011781-c91d1bbe2f9e"
+      },
+      {
+        "photo_id": "photo-1534353473418-4cfa6c56fd38",
+        "page_url": "https://unsplash.com/photos/photo-1534353473418-4cfa6c56fd38"
+      },
+      {
+        "photo_id": "photo-1546171753-97d7676e4602",
+        "page_url": "https://unsplash.com/photos/photo-1546171753-97d7676e4602"
+      },
+      {
+        "photo_id": "photo-1551538827-9c037cb4f32a",
+        "page_url": "https://unsplash.com/photos/photo-1551538827-9c037cb4f32a"
+      },
+      {
+        "photo_id": "photo-1557800636-894a64c1696f",
+        "page_url": "https://unsplash.com/photos/photo-1557800636-894a64c1696f"
+      },
+      {
+        "photo_id": "photo-1559181567-c3190ca9959b",
+        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+      },
+      {
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
+      },
+      {
+        "photo_id": "photo-1605027990121-cbae9e0642df",
+        "page_url": "https://unsplash.com/photos/photo-1605027990121-cbae9e0642df"
+      },
+      {
+        "photo_id": "photo-1621263764928-df1444c5e859",
+        "page_url": "https://unsplash.com/photos/photo-1621263764928-df1444c5e859"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 9274,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-why",
+    "kind": "section",
+    "category": "rich-text",
+    "name": "Soda why block",
+    "description": "Centered value statement with a button.",
+    "file": "fizz/sections/rich-text--soda-why.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-press-slider",
+    "kind": "section",
+    "category": "as-seen-in",
+    "name": "Soda press slider",
+    "description": "Rotating press quotes with dot navigation.",
+    "file": "fizz/sections/as-seen-in--soda-press-slider.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 9274,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-retailers",
+    "kind": "section",
+    "category": "store-locator",
+    "name": "Soda retailers",
+    "description": "Where to buy: retailer names and a find-in-store button.",
+    "file": "fizz/sections/store-locator--soda-retailers.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-two-up",
+    "kind": "section",
+    "category": "image-with-text",
+    "name": "Soda 2-up",
+    "description": "Two product-line cards with image, copy and button.",
+    "file": "fizz/sections/image-with-text--soda-two-up.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1497534446932-c925b458314e",
+        "page_url": "https://unsplash.com/photos/photo-1497534446932-c925b458314e"
+      },
+      {
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-two-columns",
+    "kind": "section",
+    "category": "image-with-text",
+    "name": "Soda two columns",
+    "description": "Image and copy side by side.",
+    "file": "fizz/sections/image-with-text--soda-two-columns.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1464965911861-746a04b4bca6",
+        "page_url": "https://unsplash.com/photos/photo-1464965911861-746a04b4bca6"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-story-hero",
+    "kind": "section",
+    "category": "about",
+    "name": "Soda story hero",
+    "description": "Dark story intro with heading and paragraph.",
+    "file": "fizz/sections/about--soda-story-hero.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-story-mission",
+    "kind": "section",
+    "category": "about",
+    "name": "Soda story mission",
+    "description": "Mission statement band.",
+    "file": "fizz/sections/about--soda-story-mission.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-story-impact",
+    "kind": "section",
+    "category": "about",
+    "name": "Soda story stats",
+    "description": "Big-number stats row.",
+    "file": "fizz/sections/about--soda-story-impact.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-product",
+    "kind": "section",
+    "category": "main-product",
+    "name": "Soda product",
+    "description": "Gallery, price, variant picker and one-time vs Subscribe & Save selector that posts selling_plan.",
+    "file": "fizz/sections/main-product--soda-product.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1497534446932-c925b458314e",
+        "page_url": "https://unsplash.com/photos/photo-1497534446932-c925b458314e"
+      },
+      {
+        "photo_id": "photo-1559181567-c3190ca9959b",
+        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+      },
+      {
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 9274,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-product-details",
+    "kind": "section",
+    "category": "product-information",
+    "name": "Soda product details",
+    "description": "Benefit icons, fiber and nutrition facts panel, and FAQ accordion.",
+    "file": "fizz/sections/product-information--soda-product-details.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-collection",
+    "kind": "section",
+    "category": "main-collection-product-grid",
+    "name": "Soda collection",
+    "description": "Collection hero, filter tabs and product grid with hover and quick add.",
+    "file": "fizz/sections/main-collection-product-grid--soda-collection.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1464965911861-746a04b4bca6",
+        "page_url": "https://unsplash.com/photos/photo-1464965911861-746a04b4bca6"
+      },
+      {
+        "photo_id": "photo-1497534446932-c925b458314e",
+        "page_url": "https://unsplash.com/photos/photo-1497534446932-c925b458314e"
+      },
+      {
+        "photo_id": "photo-1523677011781-c91d1bbe2f9e",
+        "page_url": "https://unsplash.com/photos/photo-1523677011781-c91d1bbe2f9e"
+      },
+      {
+        "photo_id": "photo-1534353473418-4cfa6c56fd38",
+        "page_url": "https://unsplash.com/photos/photo-1534353473418-4cfa6c56fd38"
+      },
+      {
+        "photo_id": "photo-1546171753-97d7676e4602",
+        "page_url": "https://unsplash.com/photos/photo-1546171753-97d7676e4602"
+      },
+      {
+        "photo_id": "photo-1551538827-9c037cb4f32a",
+        "page_url": "https://unsplash.com/photos/photo-1551538827-9c037cb4f32a"
+      },
+      {
+        "photo_id": "photo-1557800636-894a64c1696f",
+        "page_url": "https://unsplash.com/photos/photo-1557800636-894a64c1696f"
+      },
+      {
+        "photo_id": "photo-1559181567-c3190ca9959b",
+        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+      },
+      {
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
+      },
+      {
+        "photo_id": "photo-1605027990121-cbae9e0642df",
+        "page_url": "https://unsplash.com/photos/photo-1605027990121-cbae9e0642df"
+      },
+      {
+        "photo_id": "photo-1621263764928-df1444c5e859",
+        "page_url": "https://unsplash.com/photos/photo-1621263764928-df1444c5e859"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 9274,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-cart-main",
+    "kind": "section",
+    "category": "cart",
+    "name": "Soda cart",
+    "description": "Cart page with quantity inputs and checkout.",
+    "file": "fizz/sections/cart--soda-cart-main.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1559181567-c3190ca9959b",
+        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 9274,
+    "industry": "beverage"
+  }
+]

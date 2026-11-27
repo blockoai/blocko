@@ -235,24 +235,6 @@
         "id": "color_swatch_mint",
         "label": "Swatch Mint",
         "default": "#2f9e6b"
-      },
-      {
-        "type": "color",
-        "id": "color_swatch_light",
-        "label": "Swatch light",
-        "default": "#ffd3df"
-      },
-      {
-        "type": "color",
-        "id": "color_swatch_medium",
-        "label": "Swatch medium",
-        "default": "#8a5cf6"
-      },
-      {
-        "type": "color",
-        "id": "color_swatch_deep",
-        "label": "Swatch deep",
-        "default": "#14433d"
       }
     ]
   },

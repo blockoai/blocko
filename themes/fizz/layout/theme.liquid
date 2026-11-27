@@ -13,11 +13,11 @@
 </head>
 <body class="blko-theme">
   <a class="blko-skip-link" href="#content">{{ 'blko.general.skip_to_content' | t }}</a>
-  <blko-cart-drawer>
+  <blko-soda-cart>
   {% sections 'header-group' %}
   <main id="content">{{ content_for_layout }}</main>
   {% sections 'footer-group' %}
-  </blko-cart-drawer>
-  <script type="module" src="{{ 'blko-cart-drawer.js' | asset_url }}"></script>
+  </blko-soda-cart>
+  <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 </body>
 </html>

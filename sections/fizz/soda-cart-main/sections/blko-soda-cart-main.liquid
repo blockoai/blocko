@@ -1,0 +1,64 @@
+<section class="blko-soda-cartpage">
+  <h1>{{ section.settings.heading | escape }}</h1>
+  {%- if cart.item_count == 0 -%}
+    <p class="blko-soda-cartpage__empty">{{ section.settings.empty_text }} <a href="{{ routes.all_products_collection_url }}">{{ section.settings.continue_label }}</a></p>
+  {%- else -%}
+    <form action="{{ routes.cart_url }}" method="post" class="blko-soda-cartpage__form">
+      <ul class="blko-soda-cartpage__items">
+        {%- for item in cart.items -%}
+          <li>
+            <a href="{{ item.url }}">{%- if item.image -%}<img src="{{ item.image | image_url: width: 240 }}" alt="{{ item.title | escape }}" width="96" height="96" loading="lazy">{%- endif -%}</a>
+            <div>
+              <a class="blko-soda-cartpage__title" href="{{ item.url }}">{{ item.product.title }}</a>
+              {%- unless item.product.has_only_default_variant -%}<p>{{ item.variant.title }}</p>{%- endunless -%}
+              {%- if item.selling_plan_allocation -%}<p>{{ item.selling_plan_allocation.selling_plan.name }}</p>{%- endif -%}
+              <a class="blko-soda-cartpage__remove" href="{{ item.url_to_remove }}">{{ section.settings.remove_label }}</a>
+            </div>
+            <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" aria-label="Quantity">
+            <strong>{{ item.final_line_price | money }}</strong>
+          </li>
+        {%- endfor -%}
+      </ul>
+      <div class="blko-soda-cartpage__summary">
+        <p><span>{{ section.settings.subtotal_label }}</span><strong>{{ cart.total_price | money }}</strong></p>
+        <small>{{ section.settings.tax_note }}</small>
+        <button type="submit" name="update">{{ section.settings.update_label }}</button>
+        <button type="submit" name="checkout" class="is-primary">{{ section.settings.checkout_label }}</button>
+      </div>
+    </form>
+  {%- endif -%}
+</section>
+
+{% stylesheet %}
+.blko-soda-cartpage{max-width:62rem;margin:0 auto;padding:clamp(2rem,5vw,4rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-cartpage h1{margin:0 0 1.5rem;font:800 clamp(2.2rem,5vw,3.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-cartpage__items{display:grid;gap:.9rem;margin:0;padding:0;list-style:none}
+.blko-soda-cartpage__items li{display:grid;grid-template-columns:6rem 1fr 5rem 6rem;align-items:center;gap:1rem;padding:1rem;border-radius:1.25rem;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-cartpage__items img{width:6rem;height:6rem;border-radius:1rem;object-fit:cover}
+.blko-soda-cartpage__items p{margin:.2rem 0 0;color:var(--color-text-muted, #3f6a64);font-size:.88rem}
+.blko-soda-cartpage__title{color:inherit;font:800 1.2rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-cartpage__remove{font-size:.82rem}
+.blko-soda-cartpage input[type=number]{width:100%;padding:.5rem;border:2px solid var(--color-text, #14433d);border-radius:.7rem;background:#fff;color:inherit}
+.blko-soda-cartpage__summary{display:grid;justify-items:end;gap:.6rem;margin-top:1.5rem}
+.blko-soda-cartpage__summary p{display:flex;gap:1.5rem;margin:0;font:800 1.5rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-cartpage__summary button{padding:.85rem 1.8rem;border:2px solid var(--color-text, #14433d);border-radius:999px;background:transparent;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
+.blko-soda-cartpage__summary .is-primary{background:var(--color-button, #14433d);color:var(--color-button-text, #fff)}
+@media(max-width:700px){.blko-soda-cartpage__items li{grid-template-columns:4.5rem 1fr 4rem}.blko-soda-cartpage__items strong{grid-column:2/-1}.blko-soda-cartpage__items img{width:4.5rem;height:4.5rem}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda cart",
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Your cart"},
+    {"type": "text", "id": "empty_text", "label": "Empty text", "default": "Nothing fizzy in here yet."},
+    {"type": "text", "id": "continue_label", "label": "Continue label", "default": "Shop flavors"},
+    {"type": "text", "id": "remove_label", "label": "Remove label", "default": "Remove"},
+    {"type": "text", "id": "subtotal_label", "label": "Subtotal label", "default": "Subtotal"},
+    {"type": "text", "id": "tax_note", "label": "Tax note", "default": "Taxes and shipping are calculated at checkout."},
+    {"type": "text", "id": "update_label", "label": "Update label", "default": "Update cart"},
+    {"type": "text", "id": "checkout_label", "label": "Checkout label", "default": "Check out"}
+  ],
+  "presets": [{"name": "Soda cart"}]
+}
+{% endschema %}

@@ -1,82 +1,35 @@
 {
   "sections": {
-    "home-collection-mega-menu": {
-      "type": "blko-home-collection-mega-menu",
-      "settings": {
-        "eyebrow": "Shop by flavor",
-        "heading": "Pick a flavor and pop it."
-      },
+    "collection": {
+      "type": "blko-soda-collection",
+      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "link",
+          "type": "filter",
           "settings": {
-            "url": "/collections/all",
-            "label": "Single flavors"
+            "label": "Classics",
+            "handle": "drinks"
           }
         },
         "block-2": {
-          "type": "link",
+          "type": "filter",
           "settings": {
-            "label": "Citrus",
-            "url": "/collections/all"
+            "label": "Fruit punch",
+            "handle": "drinks"
           }
         },
         "block-3": {
-          "type": "link",
+          "type": "filter",
           "settings": {
-            "label": "Berry",
-            "url": "/collections/all"
+            "label": "Minis",
+            "handle": "drinks"
           }
         },
         "block-4": {
-          "type": "link",
-          "settings": {
-            "label": "Tropical",
-            "url": "/collections/all"
-          }
-        },
-        "block-5": {
-          "type": "link",
-          "settings": {
-            "label": "Spicy",
-            "url": "/collections/all"
-          }
-        },
-        "block-6": {
-          "type": "link",
+          "type": "filter",
           "settings": {
             "label": "Variety packs",
-            "url": "/collections/all"
-          }
-        },
-        "block-7": {
-          "type": "link",
-          "settings": {
-            "label": "Fizz Club",
-            "url": "/pages/faq"
-          }
-        },
-        "block-8": {
-          "type": "link",
-          "settings": {
-            "label": "Find Fizz near you",
-            "url": "/pages/contact"
-          }
-        },
-        "block-9": {
-          "type": "tile",
-          "settings": {
-            "url": "/collections/all",
-            "image_alt": "A fridge shelf stacked with colorful cans of Fizz soda",
-            "label": "Variety packs"
-          }
-        },
-        "block-10": {
-          "type": "tile",
-          "settings": {
-            "url": "/collections/all",
-            "image_alt": "Cans of Cherry Fizz lined up on a picnic blanket",
-            "label": "Single flavors"
+            "handle": "drinks"
           }
         }
       },
@@ -84,44 +37,8 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10"
+        "block-4"
       ]
-    },
-    "home-collection-collection-toolbar": {
-      "type": "blko-home-collection-collection-toolbar",
-      "settings": {
-        "breadcrumb": "All flavors",
-        "filter_eyebrow": "Narrow it down",
-        "filter_heading": "Sort by what you crave",
-        "filters_label": "Flavor, pack size, format",
-        "sort_label": "Sort by"
-      }
-    },
-    "home-collection-collection-grid": {
-      "type": "blko-home-collection-collection-grid",
-      "settings": {
-        "promo_image_alt": "A cold can of soda with fresh fruit slices on a picnic blanket",
-        "promo_eyebrow": "Can't decide?",
-        "promo_heading": "Let your mood pick the flavor.",
-        "promo_label": "Take the quiz",
-        "load_more_label": "Show more flavors",
-        "empty_text": "Nothing matches those picks. Try a different flavor family or pack size."
-      }
-    },
-    "collection-about": {
-      "type": "blko-collection-about",
-      "settings": {
-        "image_alt": "Cans of Fizz soda stacked in rows by flavor family",
-        "kicker": "About Fizz soda",
-        "heading": "A proper soda, not a sugar bomb.",
-        "text": "Our cans are made in small batches with fruit juice, plant fiber and real botanicals, then carbonated until they are crisp and bright. Choose a flavor family for your mood and a pack size that fits your fridge schedule."
-      }
     },
     "collection-faq": {
       "type": "blko-collection-faq",
@@ -174,10 +91,6 @@
         "block-5"
       ]
     },
-    "home-collection-quick-view-modal": {
-      "type": "blko-home-collection-quick-view-modal",
-      "settings": {}
-    },
     "newsletter": {
       "type": "blko-newsletter",
       "settings": {
@@ -189,12 +102,8 @@
     }
   },
   "order": [
-    "home-collection-mega-menu",
-    "home-collection-collection-toolbar",
-    "home-collection-collection-grid",
-    "collection-about",
+    "collection",
     "collection-faq",
-    "home-collection-quick-view-modal",
     "newsletter"
   ]
 }

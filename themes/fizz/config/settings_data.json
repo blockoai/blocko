@@ -205,9 +205,6 @@
     "color_swatch_orange": "#ff8a3d",
     "color_swatch_tropical": "#ffb02e",
     "color_swatch_mint": "#2f9e6b",
-    "color_swatch_light": "#ffd3df",
-    "color_swatch_medium": "#8a5cf6",
-    "color_swatch_deep": "#14433d",
     "blocko_api_base": "/apps/blocko",
     "logo_width": 148
   }

@@ -1,0 +1,50 @@
+<blko-soda-rotator class="blko-soda-announce" style="background:{{ section.settings.bg | default: '#d4f23c' }};color:{{ section.settings.text_color | default: '#14433d' }}">
+  {%- if section.blocks.size > 1 -%}<button type="button" class="blko-soda-announce__arrow" data-dir="-1" aria-label="Previous">&#8249;</button>{%- endif -%}
+  {%- for block in section.blocks -%}
+    <p class="blko-soda-announce__slide{% if forloop.first %} is-active{% endif %}" data-slide {{ block.shopify_attributes }}>
+      {{ block.settings.text | escape }}
+      {%- if block.settings.link_label != blank %} <a href="{{ block.settings.link_url }}">{{ block.settings.link_label | escape }}</a>{% endif -%}
+    </p>
+  {%- endfor -%}
+  {%- if section.blocks.size > 1 -%}<button type="button" class="blko-soda-announce__arrow" data-dir="1" aria-label="Next">&#8250;</button>{%- endif -%}
+</blko-soda-rotator>
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+
+{% stylesheet %}
+.blko-soda-announce{display:flex;align-items:center;justify-content:center;gap:.75rem;min-height:2.5rem;padding:.4rem 1rem;font:700 .875rem/1.3 var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-announce__slide{display:none;margin:0}
+.blko-soda-announce__slide.is-active{display:block}
+.blko-soda-announce__slide a{margin-left:.35rem;color:inherit;text-underline-offset:2px}
+.blko-soda-announce__arrow{border:0;background:none;color:inherit;font-size:1.4rem;line-height:1;cursor:pointer}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda announcement",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#d4f23c"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#14433d"}
+  ],
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Message",
+      "settings": [
+        {"type": "text", "id": "text", "label": "Text", "default": "Free shipping on orders over $35."},
+        {"type": "text", "id": "link_label", "label": "Link label", "default": "Shop now"},
+        {"type": "url", "id": "link_url", "label": "Link"}
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Soda announcement",
+      "blocks": [
+        {"type": "message", "settings": {"text": "Free shipping on orders over $35.", "link_label": "Shop now"}},
+        {"type": "message", "settings": {"text": "Subscribe and save 15% on every box.", "link_label": "How it works"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

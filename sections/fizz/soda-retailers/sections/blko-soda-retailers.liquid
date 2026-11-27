@@ -1,0 +1,55 @@
+<section class="blko-soda-retailers" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <h2>{{ section.settings.heading | escape }}</h2>
+  <ul>
+    {%- for block in section.blocks -%}
+      <li {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 240 | image_tag: loading: 'lazy', alt: block.settings.name }}{%- else -%}<span>{{ block.settings.name | escape }}</span>{%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+  <a href="{{ section.settings.button_url }}">{{ section.settings.button_label | escape }}</a>
+</section>
+
+{% stylesheet %}
+.blko-soda-retailers{display:grid;justify-items:center;gap:1.5rem;padding:clamp(2.5rem,6vw,4.5rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-retailers h2{margin:0;font:800 clamp(1.8rem,4vw,2.75rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-retailers ul{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem 2.25rem;margin:0;padding:0;list-style:none}
+.blko-soda-retailers li span{font:800 1.4rem var(--font-heading, "Baloo 2", sans-serif);opacity:.85}
+.blko-soda-retailers li img{width:auto;max-height:3rem}
+.blko-soda-retailers a{padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda retailers",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#fff3b0"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#14433d"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Find Fizz near you"},
+    {"type": "text", "id": "button_label", "label": "Button label", "default": "Find in store"},
+    {"type": "url", "id": "button_url", "label": "Button link"}
+  ],
+  "blocks": [
+    {
+      "type": "retailer",
+      "name": "Retailer",
+      "settings": [
+        {"type": "text", "id": "name", "label": "Name", "default": "Corner Market"},
+        {"type": "image_picker", "id": "image", "label": "Logo (optional)"}
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Soda retailers",
+      "blocks": [
+        {"type": "retailer", "settings": {"name": "Corner Market"}},
+        {"type": "retailer", "settings": {"name": "Green Grocer"}},
+        {"type": "retailer", "settings": {"name": "Daily Pantry"}},
+        {"type": "retailer", "settings": {"name": "Fresh Aisle"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

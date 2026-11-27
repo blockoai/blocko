@@ -1,0 +1,54 @@
+<section class="blko-soda-impact" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <h2>{{ section.settings.heading | escape }}</h2>
+  <p>{{ section.settings.text | escape }}</p>
+  <dl>
+    {%- for block in section.blocks -%}
+      <div {{ block.shopify_attributes }}><dt>{{ block.settings.number | escape }}</dt><dd>{{ block.settings.label | escape }}</dd></div>
+    {%- endfor -%}
+  </dl>
+  {%- if section.settings.footnote != blank -%}<small>{{ section.settings.footnote | escape }}</small>{%- endif -%}
+</section>
+
+{% stylesheet %}
+.blko-soda-impact{display:grid;justify-items:center;gap:1.25rem;padding:clamp(3rem,8vw,6rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-impact h2{margin:0;font:800 clamp(2rem,4.5vw,3.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-impact p{max-width:42rem;margin:0;font-size:1.15rem;line-height:1.55}
+.blko-soda-impact dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1.5rem;width:100%;max-width:60rem;margin:1rem 0 0}
+.blko-soda-impact dt{font:800 clamp(2.5rem,5vw,4rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-impact dd{margin:.3rem 0 0;font-weight:700}
+.blko-soda-impact small{opacity:.8}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda story stats",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#ffc9d6"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#14433d"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Fizz by the numbers"},
+    {"type": "textarea", "id": "text", "label": "Text", "default": "Every can swaps added sugar for fiber and fruit. Here is what that adds up to so far."},
+    {"type": "text", "id": "footnote", "label": "Footnote", "default": "*Placeholder figures, replace with your own."}
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        {"type": "text", "id": "number", "label": "Number", "default": "2M"},
+        {"type": "text", "id": "label", "label": "Label", "default": "Cans sipped*"}
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Soda story stats",
+      "blocks": [
+        {"type": "stat", "settings": {"number": "2M", "label": "Cans sipped*"}},
+        {"type": "stat", "settings": {"number": "2g", "label": "Sugar per can"}},
+        {"type": "stat", "settings": {"number": "6", "label": "Fruity flavors"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

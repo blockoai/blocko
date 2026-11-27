@@ -1,0 +1,85 @@
+<section class="blko-soda-coll">
+  <header class="blko-soda-coll__hero" style="background:{{ section.settings.bg }}">
+    <h1>{{ collection.title }}</h1>
+    {%- if collection.description != blank -%}<p>{{ collection.description | strip_html }}</p>{%- else -%}<p>{{ section.settings.fallback_intro }}</p>{%- endif -%}
+  </header>
+  <nav class="blko-soda-coll__filters" aria-label="Filter">
+    <a class="{% if collection.handle == section.settings.handle_all %}is-active{% endif %}" href="{{ routes.collections_url }}/{{ section.settings.handle_all }}">{{ section.settings.tab_all }}</a>
+    {%- for block in section.blocks -%}
+      <a class="{% if collection.handle == block.settings.handle %}is-active{% endif %}" href="{{ routes.collections_url }}/{{ block.settings.handle }}" {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>
+    {%- endfor -%}
+  </nav>
+  {%- paginate collection.products by section.settings.per_page -%}
+    <div class="blko-soda-coll__grid">
+      {%- for product in collection.products -%}
+        {% render 'blko-soda-product-card', product: product, line: product.type, add_label: section.settings.add_label, view_label: section.settings.view_label, sale_label: section.settings.sale_label %}
+      {%- else -%}
+        <p class="blko-soda-coll__empty">{{ section.settings.empty_text }}</p>
+      {%- endfor -%}
+    </div>
+    {%- if paginate.pages > 1 -%}
+      <nav class="blko-soda-coll__pages" aria-label="Pagination">
+        {%- for part in paginate.parts -%}
+          {%- if part.is_link -%}<a href="{{ part.url }}">{{ part.title }}</a>{%- else -%}<span aria-current="page">{{ part.title }}</span>{%- endif -%}
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+  {%- endpaginate -%}
+</section>
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+
+{% stylesheet %}
+.blko-soda-coll{font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-coll__hero{padding:clamp(2.5rem,6vw,4.5rem) 1.25rem;text-align:center}
+.blko-soda-coll__hero h1{margin:0 0 .6rem;font:800 clamp(2.5rem,6vw,4.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-coll__hero p{max-width:40rem;margin:0 auto;font-size:1.1rem;line-height:1.5}
+.blko-soda-coll__filters{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;padding:1.5rem 1.25rem}
+.blko-soda-coll__filters a{padding:.55rem 1.2rem;border:2px solid var(--color-text, #14433d);border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-coll__filters a.is-active{background:var(--color-text, #14433d);color:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-coll__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.75rem 1.25rem;max-width:82rem;margin:0 auto;padding:0 1.25rem 2rem}
+.blko-soda-coll__empty{grid-column:1/-1;text-align:center}
+.blko-soda-coll__pages{display:flex;justify-content:center;gap:.5rem;padding:0 1.25rem 3rem}
+.blko-soda-coll__pages a,.blko-soda-coll__pages span{padding:.45rem .9rem;border-radius:999px;color:inherit;font-weight:800;text-decoration:none}
+.blko-soda-coll__pages span{background:var(--color-announcement-bg, #d4f23c)}
+@media(max-width:1000px){.blko-soda-coll__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.blko-soda-coll__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem .75rem}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda collection",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Hero background", "default": "#b9e4f7"},
+    {"type": "textarea", "id": "fallback_intro", "label": "Intro (when the collection has no description)", "default": "Prebiotic soda with real fruit flavor. Pick a flavor, a pack size, or build your own case."},
+    {"type": "text", "id": "tab_all", "label": "All tab label", "default": "All flavors"},
+    {"type": "text", "id": "handle_all", "label": "All tab collection handle", "default": "drinks"},
+    {"type": "text", "id": "add_label", "label": "Quick add label", "default": "Quick add"},
+    {"type": "text", "id": "view_label", "label": "Card button label", "default": "Shop now"},
+    {"type": "text", "id": "sale_label", "label": "Sale badge", "default": "Sale"},
+    {"type": "text", "id": "empty_text", "label": "Empty text", "default": "No products found."},
+    {"type": "range", "id": "per_page", "label": "Products per page", "min": 8, "max": 48, "step": 4, "default": 24}
+  ],
+  "blocks": [
+    {
+      "type": "filter",
+      "name": "Filter tab",
+      "settings": [
+        {"type": "text", "id": "label", "label": "Label", "default": "Classics"},
+        {"type": "text", "id": "handle", "label": "Collection handle", "default": "drinks"}
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "Soda collection",
+      "blocks": [
+        {"type": "filter", "settings": {"label": "Classics", "handle": "drinks"}},
+        {"type": "filter", "settings": {"label": "Fruit punch", "handle": "drinks"}},
+        {"type": "filter", "settings": {"label": "Minis", "handle": "drinks"}},
+        {"type": "filter", "settings": {"label": "Variety packs", "handle": "drinks"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,48 @@
+[
+  {
+    "page": "home",
+    "title": "Home",
+    "sectionIds": [
+      "soda-split-hero",
+      "soda-collection-tabs",
+      "soda-why",
+      "soda-press-slider",
+      "soda-two-up",
+      "soda-two-columns",
+      "soda-retailers"
+    ]
+  },
+  {
+    "page": "pdp",
+    "title": "Product",
+    "sectionIds": [
+      "soda-product",
+      "soda-product-details"
+    ]
+  },
+  {
+    "page": "collection",
+    "title": "Collection",
+    "sectionIds": [
+      "soda-collection"
+    ]
+  },
+  {
+    "page": "cart",
+    "title": "Cart",
+    "sectionIds": [
+      "soda-cart-main"
+    ]
+  },
+  {
+    "page": "our-story",
+    "title": "Our story",
+    "sectionIds": [
+      "soda-story-hero",
+      "soda-story-mission",
+      "soda-two-columns",
+      "soda-story-impact",
+      "soda-retailers"
+    ]
+  }
+]
