@@ -30,7 +30,7 @@
           <h2 id="h-{{ line_name | handleize }}">{{ line_name | escape }}</h2>
           <div class="blko-soda-coll__grid">
             {%- for product in group_items -%}
-              {% render 'blko-soda-product-card', product: product, line: line_name, add_label: section.settings.add_label, view_label: section.settings.view_label, sale_label: section.settings.sale_label %}
+              {% render 'blko-soda-product-card', product: product, line: line_name, add_label: section.settings.add_label, sale_label: section.settings.sale_label %}
             {%- endfor -%}
           </div>
         </section>
@@ -99,8 +99,7 @@
     {"type": "text", "id": "jump_label", "label": "Jump pills label", "default": "Jump to a group"},
     {"type": "text", "id": "tab_all", "label": "All tab label", "default": "All flavors"},
     {"type": "text", "id": "handle_all", "label": "All tab collection handle", "default": "drinks"},
-    {"type": "text", "id": "add_label", "label": "Quick add label", "default": "Add to cart"},
-    {"type": "text", "id": "view_label", "label": "Card button label", "default": "Shop now"},
+    {"type": "text", "id": "add_label", "label": "Quick add label", "default": "Add 12-pack"},
     {"type": "text", "id": "sale_label", "label": "Sale badge", "default": "Sale"},
     {"type": "text", "id": "empty_text", "label": "Empty text", "default": "No products found."},
     {"type": "range", "id": "per_page", "label": "Products per page", "min": 8, "max": 50, "step": 4, "default": 48}

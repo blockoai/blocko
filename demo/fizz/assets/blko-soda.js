@@ -627,6 +627,9 @@
 
   /* Arrow slider: <blko-soda-slider> holds [data-prev], [data-next], .blko-soda-slider__viewport (overflow hidden) and
      .blko-soda-slider__track (translateX). No native scrolling: arrows and touch swipes move one page of fully visible items.
+     Optional attributes: loop (endless: the track is padded with clones on both sides and one step moves by a page of slides, the first
+     and last slides wrap around) and edge-arrows (CSS only: arrows sit at the left and right edge of the row). In loop mode the first full slide
+     starts after a lead so partial slides peek at both edges.
      Re-measures on resize, on content or [hidden] changes in the track, and when the element is re-inserted (cart drawer re-renders). */
   define('blko-soda-slider', class extends HTMLElement {
     connectedCallback() {
@@ -634,6 +637,8 @@
       if (root._on) return;
       root._on = true;
       var pos = 0;
+      var loop = root.hasAttribute('loop');
+      var idx = 0, copies = 0, built = '', lead = 0, page = 1, count = 0;
       var view = function () { return root.querySelector('.blko-soda-slider__viewport'); };
       var track = function () { return root.querySelector('.blko-soda-slider__track'); };
       var items = function () {
@@ -642,7 +647,73 @@
       };
       var left = function (el) { return el.offsetLeft; };
       var maxPos = function () { var v = view(), t = track(); return v && t ? Math.max(0, t.offsetWidth - v.clientWidth) : 0; };
+      var snap = function (fn) {
+        var t = track();
+        t.style.transition = 'none';
+        fn();
+        void t.offsetWidth;
+        t.style.transition = '';
+      };
+      var build = function () {
+        var t = track(), v = view();
+        if (!t || !v || !v.clientWidth) return false;
+        var o = Array.prototype.filter.call(t.children, function (c) { return !c.hasAttribute('data-clone'); });
+        if (o.length < 2 || !o[0].offsetWidth) return false;
+        var step = o[0].offsetWidth, vw = v.clientWidth;
+        var key = vw + '|' + o.length + '|' + step;
+        if (key !== built) {
+          Array.prototype.slice.call(t.querySelectorAll(':scope > [data-clone]')).forEach(function (c) { c.remove(); });
+          copies = Math.ceil(vw * 1.5 / (o.length * step)) + 1;
+          var before = document.createDocumentFragment(), after = document.createDocumentFragment();
+          for (var c = 0; c < copies; c++) {
+            o.forEach(function (el) {
+              [before, after].forEach(function (frag) {
+                var k = el.cloneNode(true);
+                k.setAttribute('data-clone', '');
+                k.setAttribute('aria-hidden', 'true');
+                k.removeAttribute('id');
+                Array.prototype.forEach.call(k.querySelectorAll('[id]'), function (n) { n.removeAttribute('id'); });
+                Array.prototype.forEach.call(k.querySelectorAll('a,button,input,select,textarea'), function (n) { n.tabIndex = -1; });
+                frag.appendChild(k);
+              });
+            });
+          }
+          t.insertBefore(before, o[0]);
+          t.appendChild(after);
+          built = key;
+          if (root._mo) root._mo.takeRecords();
+        }
+        count = o.length;
+        var n = Math.max(1, Math.floor(vw / step)), rest = vw - n * step;
+        if (rest < step * 0.3 && n > 1) { n--; rest += step; }
+        lead = rest / 2;
+        page = Math.max(1, n - 1);
+        return true;
+      };
+      var applyLoop = function () {
+        var t = track(), v = view();
+        if (!t || !v) return;
+        var prev = root.querySelector('[data-prev]'), next = root.querySelector('[data-next]');
+        var was = built, ok = build();
+        if (prev) { prev.hidden = !ok; prev.disabled = false; }
+        if (next) { next.hidden = !ok; next.disabled = false; }
+        root.classList.toggle('is-fit', !ok);
+        if (!ok) { t.style.transform = ''; return; }
+        var lim = copies * count - page - 1;
+        idx = Math.max(-lim, Math.min(idx, count + lim));
+        var el = t.children[copies * count + idx];
+        if (el) {
+          var set = function () { pos = el.offsetLeft - lead; t.style.transform = 'translateX(' + (-pos) + 'px)'; };
+          if (was !== built) snap(set); else set();
+        }
+        if (v.scrollLeft) v.scrollLeft = 0;
+      };
+      var wrap = function () {
+        if (!loop || !count || (idx >= 0 && idx < count)) return;
+        snap(function () { idx = ((idx % count) + count) % count; applyLoop(); });
+      };
       var apply = function () {
+        if (loop) return applyLoop();
         var t = track(), v = view();
         if (!t || !v) return;
         var max = maxPos();
@@ -656,6 +727,7 @@
         root.classList.toggle('is-fit', fits);
       };
       var go = function (dir) {
+        if (loop) { build(); idx += dir * page; applyLoop(); return; }
         var v = view(), list = items();
         if (!v || !list.length) return;
         var vw = v.clientWidth, max = maxPos(), target = pos, i;
@@ -678,6 +750,11 @@
         var v = view(), a = el, t = track();
         while (a && a.parentNode !== t) a = a.parentNode;
         if (!a) return;
+        if (loop) {
+          var at = a.offsetLeft - pos;
+          if (count && (at < 0 || at + a.offsetWidth > v.clientWidth)) { idx = Array.prototype.indexOf.call(t.children, a) - copies * count; applyLoop(); }
+          return;
+        }
         var l = left(a), r = l + a.offsetWidth;
         if (l < pos) pos = l; else if (r > pos + v.clientWidth) pos = r - v.clientWidth;
         apply();
@@ -702,6 +779,7 @@
       });
       root.addEventListener('pointercancel', function () { down = false; });
       var again = function () { requestAnimationFrame(apply); };
+      root.addEventListener('transitionend', function (e) { if (loop && e.target === track() && e.propertyName === 'transform') wrap(); });
       if (window.ResizeObserver) {
         root._ro = new ResizeObserver(again);
         root._ro.observe(root);

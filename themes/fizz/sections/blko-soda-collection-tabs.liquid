@@ -10,18 +10,18 @@
       {%- assign coll = collections[block.settings.collection] -%}
       <div class="blko-soda-tabs__panel{% if forloop.first %} is-active{% endif %}" data-panel="{{ block.id }}" role="tabpanel">
         <p class="blko-soda-tabs__note">{{ block.settings.note | escape }}</p>
-        <blko-soda-slider class="blko-soda-tabs__slider">
-          {% render 'blko-soda-slider-btn', dir: 'prev', label: section.settings.prev_label %}
+        <blko-soda-slider class="blko-soda-tabs__slider" loop edge-arrows>
+          {% render 'blko-soda-slider-btn', dir: 'prev', glyph: 'long', label: section.settings.prev_label %}
           <div class="blko-soda-slider__viewport">
             <ul class="blko-soda-slider__track blko-soda-tabs__track">
             {%- for product in coll.products limit: block.settings.limit -%}
-              <li class="blko-soda-slider__item">{% render 'blko-soda-product-card', product: product, line: block.settings.tab_label, add_label: section.settings.add_label, view_label: section.settings.view_label, sale_label: section.settings.sale_label %}</li>
+              <li class="blko-soda-slider__item">{% render 'blko-soda-product-card', product: product, line: block.settings.tab_label, add_label: section.settings.add_label, sale_label: section.settings.sale_label, show_price: false %}</li>
             {%- else -%}
               <li class="blko-soda-slider__item"><p class="blko-soda-tabs__empty">{{ section.settings.empty_text }}</p></li>
             {%- endfor -%}
             </ul>
           </div>
-          {% render 'blko-soda-slider-btn', dir: 'next', label: section.settings.next_label %}
+          {% render 'blko-soda-slider-btn', dir: 'next', glyph: 'long', label: section.settings.next_label %}
         </blko-soda-slider>
         <p class="blko-soda-tabs__cta"><a href="{{ coll.url | default: routes.collections_url }}">{{ block.settings.cta_label | escape }}</a></p>
       </div>
@@ -40,8 +40,8 @@
 .blko-soda-tabs__panel{display:none;padding-top:1.5rem}
 .blko-soda-tabs__panel.is-active{display:block}
 .blko-soda-tabs__note{margin:0 0 1.25rem;padding:0 1.25rem;font-weight:700;text-align:center}
-.blko-soda-tabs__slider{position:static;padding:0 1.25rem 1rem}
-.blko-soda-tabs__track .blko-soda-slider__item{flex:0 0 min(17.5rem,72vw)}
+.blko-soda-tabs__slider{--slide:min(332px,62.5vw);--can-h:calc(var(--slide) - 24px);padding:0 0 1rem}
+.blko-soda-tabs__track .blko-soda-slider__item{flex:0 0 var(--slide);box-sizing:border-box;padding:0 12px}
 .blko-soda-tabs__cta{margin:1.25rem 0 0;text-align:center}
 .blko-soda-tabs__cta a{display:inline-block;padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
 /* pills (14px/700, 1.5px outline) */
@@ -49,11 +49,6 @@
 .blko-soda-tabs__tab:hover,.blko-soda-coll__filters a:hover{background:var(--color-text,#0f3b2e);color:var(--color-bg-alt,#f3e8cd)}
 .blko-soda-tabs__cta a,.blko-soda-retailers a{border-width:1.5px;font:700 14px/1.2 var(--font-body,"Outfit",sans-serif);transition:background-color .25s ease-in-out,color .25s ease-in-out}
 .blko-soda-tabs__cta a:hover,.blko-soda-retailers a:hover{background:var(--color-text,#0f3b2e);color:#fff}
-/* tabs carousel: arrows sit at the right of the heading row */
-.blko-soda-tabs{--tabs-pad:clamp(2.5rem,6vw,4.5rem);--tabs-h:clamp(2rem,4.5vw,3.25rem)}
-.blko-soda-tabs__slider .blko-soda-slider__btn{position:absolute;z-index:2;top:calc(var(--tabs-pad) + var(--tabs-h) / 2 - 20px);right:1.25rem}
-.blko-soda-tabs__slider .blko-soda-slider__btn[data-prev]{right:calc(1.25rem + 48px)}
-@media(max-width:700px){.blko-soda-tabs__heading{padding-right:7rem;text-align:left}.blko-soda-tabs__slider .blko-soda-slider__btn{width:36px;height:36px;top:calc(var(--tabs-pad) + var(--tabs-h) / 2 - 18px)}.blko-soda-tabs__slider .blko-soda-slider__btn[data-prev]{right:calc(1.25rem + 44px)}}
 .blko-soda-strip{padding:1rem 1.25rem}
 .blko-soda-promo{display:block;max-width:70rem;margin:0 auto;height:clamp(110px,14vw,200px);border-radius:20px;overflow:hidden}
 .blko-soda-promo img{width:100%;height:100%;object-fit:cover;transition:transform .25s ease-in-out}
@@ -67,8 +62,7 @@
     {"type": "text", "id": "heading", "label": "Heading", "default": "Shop our flavors"},
     {"type": "color", "id": "bg", "label": "Background", "default": "#f3e8cd"},
     {"type": "color", "id": "heading_color", "label": "Heading color", "default": "#0f3b2e"},
-    {"type": "text", "id": "add_label", "label": "Quick add label", "default": "Add to cart"},
-    {"type": "text", "id": "view_label", "label": "Card button label", "default": "Shop now"},
+    {"type": "text", "id": "add_label", "label": "Quick add label", "default": "Add 12-pack"},
     {"type": "text", "id": "sale_label", "label": "Sale badge", "default": "Sale"},
     {"type": "text", "id": "prev_label", "label": "Previous arrow label", "default": "Previous"},
     {"type": "text", "id": "next_label", "label": "Next arrow label", "default": "Next"},

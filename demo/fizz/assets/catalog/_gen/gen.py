@@ -170,13 +170,14 @@ write("badge-sale.svg", svg("0 0 120 120", badge))
 t = can_use(P[0], 204.9, 66, 0.951, "t")
 write("tile.svg", '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" style="color:#fde1e3">\n<rect width="600" height="600" rx="20" fill="var(--tile-bg, currentColor)"/>\n' + t + '\n</svg>\n')
 # json
+RATINGS = {'cherry-pop': 4.8, 'orange-burst': 4.7, 'strawberry-lime': 4.6, 'lemon-lime-zing': 4.9, 'mango-tango': 4.5, 'mint-mojito': 4.7, 'grape-soda': 4.8, 'root-beer': 4.6}
 prods = []
 for p in P:
     h = p[0]
     prods.append({
         "handle": h, "name": p[1], "tagline": p[4], "fiber": p[5], "line": p[6],
         "price": 29.00, "compare_at": p[11],
-        "color": p[7], "accent": p[8], "tile_bg": p[9],
+        "color": p[7], "accent": p[8], "tile_bg": p[9], "rating": RATINGS.get(h, 4.7),
         "can": f"cans/{h}.svg", "pack": f"packs/{h}.svg",
         "variants": [{"title": "12-pack", "cans": 12, "price": 29.00}, {"title": "24-pack", "cans": 24, "price": 54.00}],
         "subscription": {"discount_percent": 15, "every_weeks": [2, 4, 8]},

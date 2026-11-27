@@ -12,6 +12,7 @@
       "color": "#c8203a",
       "accent": "#ffd0d6",
       "tile_bg": "#fde1e3",
+      "rating": 4.8,
       "can": "cans/cherry-pop.svg",
       "pack": "packs/cherry-pop.svg",
       "variants": [
@@ -46,6 +47,7 @@
       "color": "#f26b1d",
       "accent": "#ffe0b8",
       "tile_bg": "#fde9d2",
+      "rating": 4.7,
       "can": "cans/orange-burst.svg",
       "pack": "packs/orange-burst.svg",
       "variants": [
@@ -80,6 +82,7 @@
       "color": "#e8587a",
       "accent": "#c6f08a",
       "tile_bg": "#fde2ea",
+      "rating": 4.6,
       "can": "cans/strawberry-lime.svg",
       "pack": "packs/strawberry-lime.svg",
       "variants": [
@@ -114,6 +117,7 @@
       "color": "#7fb41a",
       "accent": "#fff08a",
       "tile_bg": "#eef6cf",
+      "rating": 4.9,
       "can": "cans/lemon-lime-zing.svg",
       "pack": "packs/lemon-lime-zing.svg",
       "variants": [
@@ -148,6 +152,7 @@
       "color": "#f2a516",
       "accent": "#ffd98a",
       "tile_bg": "#fff0cc",
+      "rating": 4.5,
       "can": "cans/mango-tango.svg",
       "pack": "packs/mango-tango.svg",
       "variants": [
@@ -182,6 +187,7 @@
       "color": "#1ea58b",
       "accent": "#bff0e2",
       "tile_bg": "#d6f1ea",
+      "rating": 4.7,
       "can": "cans/mint-mojito.svg",
       "pack": "packs/mint-mojito.svg",
       "variants": [
@@ -216,6 +222,7 @@
       "color": "#6d3fa6",
       "accent": "#d9c2f5",
       "tile_bg": "#e8defa",
+      "rating": 4.8,
       "can": "cans/grape-soda.svg",
       "pack": "packs/grape-soda.svg",
       "variants": [
@@ -250,6 +257,7 @@
       "color": "#7b4526",
       "accent": "#e9c9a6",
       "tile_bg": "#f0e1d1",
+      "rating": 4.6,
       "can": "cans/root-beer.svg",
       "pack": "packs/root-beer.svg",
       "variants": [

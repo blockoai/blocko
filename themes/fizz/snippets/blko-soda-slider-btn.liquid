@@ -2,11 +2,12 @@
   Round outline arrow for a blko-soda-slider (blko-soda.js). Also ships the slider base styles.
   @param {string} dir - prev or next
   @param {string} [label] - Accessible label, defaults to Previous or Next
+  @param {string} [glyph] - 'long' draws a long arrow (line with an arrowhead) instead of a chevron
 {%- enddoc -%}
 {%- if dir == 'next' -%}
-<button type="button" class="blko-soda-slider__btn" data-next aria-label="{{ label | default: 'Next' | escape }}"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></button>
+<button type="button" class="blko-soda-slider__btn" data-next aria-label="{{ label | default: 'Next' | escape }}"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{% if glyph == 'long' %}<path d="M2 10h16M12 4l6 6-6 6"/>{% else %}<path d="M8 4l6 6-6 6"/>{% endif %}</svg></button>
 {%- else -%}
-<button type="button" class="blko-soda-slider__btn" data-prev aria-label="{{ label | default: 'Previous' | escape }}"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg></button>
+<button type="button" class="blko-soda-slider__btn" data-prev aria-label="{{ label | default: 'Previous' | escape }}"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{% if glyph == 'long' %}<path d="M18 10H2M8 4l-6 6 6 6"/>{% else %}<path d="M12 4l-6 6 6 6"/>{% endif %}</svg></button>
 {%- endif -%}
 
 {% stylesheet %}
@@ -20,5 +21,13 @@ blko-soda-slider{display:block;position:relative;min-width:0}
 .blko-soda-slider__btn:hover:not(:disabled),.blko-soda-slider__btn:focus-visible:not(:disabled){background:var(--color-text,#0f3b2e);color:var(--color-bg-alt,#f3e8cd)}
 .blko-soda-slider__btn:disabled{opacity:.3;cursor:default}
 .blko-soda-slider__btn[hidden]{display:none}
+/* edge arrows (full-bleed row): arrows sit at the left and right edge, centered on the images, over the peeking slides */
+blko-soda-slider[edge-arrows]{--edge:32px;--btn:40px}
+blko-soda-slider[edge-arrows] .blko-soda-slider__btn{position:absolute;z-index:3;top:calc(var(--can-h,300px) / 2 - var(--btn) / 2);width:var(--btn);height:var(--btn);background:transparent}
+blko-soda-slider[edge-arrows] .blko-soda-slider__btn svg{width:22px;height:22px}
+blko-soda-slider[edge-arrows] .blko-soda-slider__btn[data-prev]{left:var(--edge)}
+blko-soda-slider[edge-arrows] .blko-soda-slider__btn[data-next]{right:var(--edge)}
+blko-soda-slider[loop] .blko-soda-slider__track{gap:0}
+@media(max-width:700px){blko-soda-slider[edge-arrows]{--edge:8px;--btn:36px}}
 @media(prefers-reduced-motion:reduce){.blko-soda-slider__track,.blko-soda-slider__btn{transition:none}}
 {% endstylesheet %}
