@@ -27,6 +27,15 @@
   if app_blocks.size == 0 and jdgm == false and own.size > 0
     assign use_own = true
   endif
+  assign mode = ''
+  if app_blocks.size > 0
+    assign mode = 'app'
+  elsif jdgm
+    assign mode = 'jdgm'
+  elsif use_own
+    assign mode = 'own'
+  endif
+  assign can_write = section.settings.allow_reviews
   assign avg = rating
   assign total = rating_count
   assign n1 = 0
@@ -65,8 +74,8 @@
   endif
 -%}
 {%- if app_blocks.size > 0 or jdgm or use_own or request.design_mode -%}
-<section class="blko-soda-reviews" id="pdp-reviews">
-  <blko-soda-reviews data-step="{{ section.settings.page_size }}" data-total="{{ total | default: 0 }}" data-count-text="{{ section.settings.count_text | escape }}">
+<section class="blko-soda-reviews{% if can_write %} blko-soda-reviews--ours{% endif %}" id="pdp-reviews">
+  <blko-soda-reviews data-mode="{{ mode }}" data-write="{% if can_write %}1{% else %}0{% endif %}" data-endpoint="{{ section.settings.review_endpoint | escape }}" data-shop="{{ shop.permanent_domain | escape }}" data-product-id="{{ product.id }}" data-handle="{{ product.handle | escape }}" data-product-title="{{ product.title | escape }}" data-name-format="{{ section.settings.name_format }}" data-success="{{ section.settings.success_message | escape }}" data-success-jdgm="{{ section.settings.success_message_judgeme | escape }}" data-error="{{ section.settings.error_message | escape }}" data-step="{{ section.settings.page_size }}" data-total="{{ total | default: 0 }}" data-count-text="{{ section.settings.count_text | escape }}">
     <h2 class="blko-soda-reviews__title">{{ section.settings.heading | escape }}</h2>
     {%- if avg != blank -%}
       <div class="blko-soda-reviews__summary">
@@ -97,8 +106,8 @@
             {%- endfor -%}
           </div>
         {%- endif -%}
-        {%- if jdgm and app_blocks.size == 0 -%}
-          <a class="blko-soda-reviews__write" href="#judgeme_product_reviews">{{ section.settings.write_label | escape }}</a>
+        {%- if can_write and mode != '' -%}
+          <button type="button" class="blko-soda-reviews__write" aria-haspopup="dialog">{{ section.settings.write_label | escape }}</button>
         {%- endif -%}
       </div>
     {%- endif -%}
@@ -195,6 +204,7 @@
 .blko-soda-reviews__widget,.blko-soda-reviews__app{margin-top:1rem}
 .blko-soda-reviews__widget :where(.jdgm-rev-widg,.jdgm-widget){font-family:inherit;color:inherit}
 .blko-soda-reviews__widget .jdgm-write-rev-link,.blko-soda-reviews__widget .jdgm-btn--solid{border:1.5px solid var(--color-text,#0f3b2e);border-radius:999px;background:transparent;color:inherit}
+.blko-soda-reviews--ours :where(.jdgm-write-rev-link,.jdgm-rev-widg__actions,.jdgm-form-wrapper,.jdgm-rev-widg__header .jdgm-btn){display:none!important}
 .blko-soda-reviews__note{margin:1rem 0 0;padding:.8rem 1rem;border:2px dashed var(--color-text,#0f3b2e);border-radius:1rem;background:#fff;font-size:.9rem;font-weight:700}
 .blko-soda-reviews__bar{width:100%;padding:.15rem 0;border:0;background:none;color:inherit;font:700 .85rem/1.2 var(--font-body,"Outfit",sans-serif);text-align:left;cursor:pointer}
 .blko-soda-reviews__bar:hover i,.blko-soda-reviews__bar.is-active i{box-shadow:0 0 0 2px var(--flv-accent,#ffd0d6)}
@@ -214,6 +224,57 @@
 @media(max-width:600px){.blko-soda-reviews__controls{grid-template-columns:1fr}}
 @media(max-width:900px){.blko-soda-reviews__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.blko-soda-reviews__summary{grid-template-columns:1fr}}
 @media(max-width:600px){.blko-soda-reviews__grid{grid-template-columns:1fr}.blko-soda-reviews__write{width:100%}}
+.blko-soda-reviews__write{font-family:var(--font-body,"Outfit",sans-serif)}
+.blko-soda-review__new{padding:.12rem .55rem;border-radius:999px;background:var(--color-accent,#ff6b8b);color:#fff;font-size:.72rem;font-weight:800}
+.blko-soda-review__rec{font-size:.85rem;font-weight:700}
+.blko-soda-rform{box-sizing:border-box;width:min(36rem,calc(100vw - 1.5rem));max-height:calc(100dvh - 1.5rem);margin:auto;padding:0;border:1.5px solid var(--color-text,#0f3b2e);border-radius:24px;background:var(--color-bg,#fbf3e2);color:var(--color-text,#0f3b2e);font-family:var(--font-body,"Outfit",sans-serif);overflow:auto;box-shadow:8px 8px 0 0 var(--flv-accent,#ffd0d6)}
+.blko-soda-rform::backdrop{background:rgba(15,59,46,.55)}
+.blko-soda-rform *{box-sizing:border-box}
+.blko-soda-rform__panel,.blko-soda-rform__done{position:relative;display:grid;gap:1.1rem;padding:clamp(1.25rem,4vw,2rem)}
+.blko-soda-rform__done{text-align:center;justify-items:center;padding-block:3rem}
+.blko-soda-rform__title{margin:0;padding-right:2.5rem;font:900 clamp(2rem,6vw,2.75rem)/1 var(--font-heading,"Fraunces",Georgia,serif);letter-spacing:-.02em;text-transform:none}
+.blko-soda-rform__done .blko-soda-rform__title{padding:0}
+.blko-soda-rform__x{position:absolute;top:1rem;right:1rem;display:grid;place-items:center;width:40px;height:40px;padding:0;border:1.5px solid var(--color-text,#0f3b2e);border-radius:50%;background:transparent;color:inherit;cursor:pointer}
+.blko-soda-rform__x:hover{background:var(--color-text,#0f3b2e);color:var(--color-bg,#fbf3e2)}
+.blko-soda-rform__field{display:grid;gap:.35rem;min-width:0;margin:0;padding:0;border:0}
+.blko-soda-rform__field>label,.blko-soda-rform__field>legend{padding:0;font-size:.9rem;font-weight:700}
+.blko-soda-rform__field>label span,.blko-soda-rform__field>legend span{color:var(--color-accent,#ff6b8b)}
+.blko-soda-rform__input{width:100%;min-height:46px;padding:.7rem 1rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:16px;background:#fff;color:inherit;font:500 16px/1.4 var(--font-body,"Outfit",sans-serif)}
+textarea.blko-soda-rform__input{min-height:7.5rem;resize:vertical}
+select.blko-soda-rform__input{border-radius:999px}
+.blko-soda-rform__input[aria-invalid=true]{border-color:#b3261e;background:#fff5f4}
+.blko-soda-rform :focus-visible{outline:3px solid var(--color-accent,#ff6b8b);outline-offset:2px}
+.blko-soda-rform__help{margin:0;font-size:.8rem;color:var(--color-text-muted,#4a6a5c)}
+.blko-soda-rform__help--row{display:flex;justify-content:space-between;gap:1rem}
+.blko-soda-rform__err{margin:0;font-size:.82rem;font-weight:700;color:#b3261e}
+.blko-soda-rform__alert{margin:0;padding:.7rem 1rem;border:1.5px solid #b3261e;border-radius:14px;background:#fff5f4;font-size:.9rem;font-weight:700;color:#b3261e}
+.blko-soda-rform__row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start}
+.blko-soda-rform__stars,.blko-soda-rform__choices,.blko-soda-rform__photo{position:relative}
+.blko-soda-rform__field>label.blko-soda-rform__consent span{color:inherit}
+.blko-soda-rform__stars{display:flex;gap:.15rem}
+.blko-soda-rform__stars input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.blko-soda-rform__stars label{display:grid;place-items:center;width:46px;height:46px;border-radius:12px;color:rgba(15,59,46,.2);cursor:pointer;transition:color .15s ease,transform .15s ease}
+.blko-soda-rform__stars label.is-on{color:var(--color-text,#0f3b2e)}
+.blko-soda-rform__stars label:hover{transform:scale(1.1)}
+.blko-soda-rform__stars input:focus-visible+label{outline:3px solid var(--color-accent,#ff6b8b);outline-offset:1px}
+.blko-soda-rform__stars svg{width:38px;height:38px;fill:currentColor;pointer-events:none}
+.blko-soda-rform__choices{display:flex;flex-wrap:wrap;gap:.5rem}
+.blko-soda-rform__choices label{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 1.2rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:999px;font-size:14px;font-weight:700;cursor:pointer}
+.blko-soda-rform__choices input{position:absolute;width:1px;height:1px;opacity:0}
+.blko-soda-rform__choices input:checked+label{background:var(--color-text,#0f3b2e);color:var(--color-bg,#fbf3e2)}
+.blko-soda-rform__choices input:focus-visible+label{outline:3px solid var(--color-accent,#ff6b8b);outline-offset:2px}
+.blko-soda-rform__photo{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem}
+.blko-soda-rform__photo input[type=file]{position:absolute;width:1px;height:1px;opacity:0}
+.blko-soda-rform__photo img{width:64px;height:64px;border-radius:12px;object-fit:cover;border:1.5px solid var(--color-text,#0f3b2e)}
+.blko-soda-rform__consent{display:flex;align-items:flex-start;gap:.6rem;font-size:.9rem;font-weight:500;cursor:pointer}
+.blko-soda-rform__consent input{flex:none;width:20px;height:20px;margin:.1rem 0 0;accent-color:var(--color-text,#0f3b2e)}
+.blko-soda-rform__actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.blko-soda-rform__btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 2rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:999px;background:transparent;color:inherit;font:700 16px/1 var(--font-body,"Outfit",sans-serif);cursor:pointer;transition:box-shadow .2s ease}
+.blko-soda-rform__btn:hover{box-shadow:4px 4px 0 0 var(--flv-accent,#ffd0d6)}
+.blko-soda-rform__btn--solid{background:var(--color-text,#0f3b2e);color:var(--color-bg,#fbf3e2)}
+.blko-soda-rform__btn[disabled]{opacity:.6;cursor:progress}
+@media(max-width:600px){.blko-soda-rform__row{grid-template-columns:1fr}.blko-soda-rform__actions .blko-soda-rform__btn{flex:1}.blko-soda-rform__stars label{width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.blko-soda-rform__stars label{transition:none}}
 {% endstylesheet %}
 
 {% schema %}
@@ -228,6 +289,12 @@
     {"type": "range", "id": "page_size", "label": "Reviews per page", "min": 3, "max": 12, "step": 3, "default": 6},
     {"type": "text", "id": "heading", "label": "Heading", "default": "Reviews"},
     {"type": "text", "id": "based_on", "label": "Based on text", "default": "Based on {count} reviews", "info": "Use {count}."},
+    {"type": "checkbox", "id": "allow_reviews", "label": "Allow customers to write reviews", "default": true, "info": "Our Write a review button opens a form in every mode and hides Judge.me's own button. With Judge.me active, the review is sent straight to Judge.me and the Judge.me widget keeps showing the list. Otherwise it is posted to the app proxy below, where Blocko holds it until it syncs to your reviews app."},
+    {"type": "text", "id": "review_endpoint", "label": "Review endpoint", "default": "/apps/blocko/reviews", "info": "App proxy URL used when Judge.me is not active."},
+    {"type": "select", "id": "name_format", "label": "Reviewer name format (Judge.me)", "options": [{"value": "full", "label": "Full name"}, {"value": "last_initial", "label": "First name and last initial"}, {"value": "all_initials", "label": "Initials"}, {"value": "anonymous", "label": "Anonymous"}], "default": "last_initial"},
+    {"type": "text", "id": "success_message", "label": "Success message", "default": "Thanks! Your review was submitted and will appear after approval."},
+    {"type": "text", "id": "success_message_judgeme", "label": "Success message (Judge.me)", "default": "Thanks! Your review was sent and will appear in a few minutes."},
+    {"type": "text", "id": "error_message", "label": "Error message", "default": "Reviews aren't connected yet. Please try again later."},
     {"type": "text", "id": "write_label", "label": "Write a review label", "default": "Write a review"},
     {"type": "text", "id": "editor_note", "label": "Editor note", "default": "Add the Judge.me Review widget app block"},
     {"type": "header", "content": "Filter labels"},

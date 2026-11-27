@@ -509,6 +509,13 @@
       if (this.dataset.bound) return;
       this.dataset.bound = '';
       var root = this;
+      /* "Write a review" opens our dialog (blko-soda-review-form.js, loaded on demand) in every mode. */
+      root.addEventListener('click', function (e) {
+        var w = e.target.closest('.blko-soda-reviews__write');
+        if (!w || !root.contains(w)) return;
+        e.preventDefault();
+        import('./blko-soda-review-form.js').then(function (m) { m.default(root, w); }, function () { window.location.hash = 'pdp-reviews'; });
+      });
       var grid = root.querySelector('[data-grid]');
       if (!grid) return;
       var cards = Array.prototype.slice.call(grid.querySelectorAll('[data-review]'));
@@ -576,6 +583,82 @@
       if (q) q.addEventListener('input', function () { st.q = q.value; change(); });
       if (flavor) flavor.addEventListener('change', function () { st.flavor = flavor.value; change(); });
       if (sort) sort.addEventListener('change', function () { st.sort = sort.value; change(); });
+
+      /* Demo mode (no data-mode): reviews are saved in localStorage "fizz-demo-reviews" per product handle and merged into the list. */
+      if (!root.dataset.mode) {
+        var KEY = 'fizz-demo-reviews';
+        var handle = root.dataset.handle || (location.pathname.split('/').pop() || 'product').replace(/\.html?$/, '');
+        var mk = function (tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+        var readAll = function () { try { var o = JSON.parse(localStorage.getItem(KEY)); return o && typeof o === 'object' ? o : {}; } catch (e) { return {}; } };
+        var base = {}, local = [];
+        root.querySelectorAll('.blko-soda-reviews__bar').forEach(function (b) { base[b.dataset.star] = Number((b.querySelector('b') || {}).textContent) || 0; });
+        var summary = function () {
+          var n = {}, total = 0, sum = 0;
+          for (var s = 1; s <= 5; s++) {
+            n[s] = (base[s] || 0) + local.filter(function (r) { return r.rating === s; }).length;
+            total += n[s]; sum += s * n[s];
+          }
+          if (!total) return;
+          var avg = Math.round(sum / total * 10) / 10;
+          var num = root.querySelector('.blko-soda-reviews__num'), rs = root.querySelector('.blko-soda-rstars--lg'), bs = root.querySelector('.blko-soda-reviews__based');
+          if (num) num.textContent = avg.toFixed(1);
+          if (rs) { rs.style.setProperty('--rating', avg); rs.setAttribute('aria-label', rs.getAttribute('aria-label').replace(/^[\d.]+/, avg.toFixed(1))); }
+          if (bs) bs.textContent = bs.textContent.replace(/\d[\d,]*/, total);
+          root.querySelectorAll('.blko-soda-reviews__bar').forEach(function (b) {
+            var c = n[b.dataset.star] || 0;
+            b.querySelector('i').style.setProperty('--pct', Math.round(c * 100 / total) + '%');
+            b.querySelector('b').textContent = c;
+          });
+          all = total;
+          root.dataset.total = total;
+        };
+        var chip = function (r) {
+          if (!r.flavor) return null;
+          var src = cards.filter(function (c) { return c.dataset.flavor === r.flavor; })[0];
+          var tpl = src && src.querySelector('.blko-soda-review__flavor');
+          if (tpl) return tpl.cloneNode(true);
+          return mk('span', 'blko-soda-review__flavor', r.flavorName || r.flavor);
+        };
+        var card = function (r, fresh) {
+          var c = mk('article', 'blko-soda-review');
+          c.setAttribute('data-review', '');
+          c.dataset.rating = r.rating; c.dataset.flavor = r.flavor || ''; c.dataset.photo = r.photo ? '1' : '0'; c.dataset.date = r.ts; c.dataset.helpful = 0;
+          var rs = mk('span', 'blko-soda-rstars');
+          rs.style.setProperty('--rating', r.rating); rs.setAttribute('role', 'img'); rs.setAttribute('aria-label', r.rating + ' out of 5 stars');
+          c.appendChild(rs);
+          c.appendChild(mk('h3', '', r.title));
+          c.appendChild(mk('p', '', r.body));
+          if (r.photo) { var im = mk('img', 'blko-soda-review__photo'); im.src = r.photo; im.alt = 'Customer photo'; c.appendChild(im); }
+          var foot = mk('div', 'blko-soda-review__foot'), who = mk('span', 'blko-soda-review__who');
+          who.appendChild(mk('b', '', r.name));
+          if (fresh) who.appendChild(mk('span', 'blko-soda-review__new', 'New'));
+          if (r.recommend != null) who.appendChild(mk('span', 'blko-soda-review__rec', r.recommend ? 'Recommends this' : 'Does not recommend'));
+          var t = mk('time', '', fresh ? 'Just now' : new Date(r.ts).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }));
+          t.setAttribute('datetime', r.ts);
+          foot.appendChild(who); foot.appendChild(t); c.appendChild(foot);
+          var ch = chip(r); if (ch) c.appendChild(ch);
+          if (r.flavor && flavor && !flavor.querySelector('option[value="' + r.flavor + '"]')) {
+            var o = mk('option', '', r.flavorName || r.flavor); o.value = r.flavor; flavor.appendChild(o);
+          }
+          return c;
+        };
+        var add = function (r, fresh) { local.push(r); var c = card(r, fresh); cards.push(c); grid.appendChild(c); return c; };
+        (readAll()[handle] || []).slice().reverse().forEach(function (r) { add(r, false); });
+        root.addLocalReview = function (r) {
+          var all2 = readAll();
+          (all2[handle] = all2[handle] || []).unshift(r);
+          localStorage.setItem(KEY, JSON.stringify(all2));
+          var c = add(r, true);
+          st = { star: 0, photo: false, flavor: '', q: '', sort: 'recent', shown: step };
+          if (q) q.value = '';
+          if (flavor) flavor.value = '';
+          if (sort) sort.value = 'recent';
+          summary();
+          apply();
+          return c;
+        };
+        summary();
+      }
       apply();
     }
   });
