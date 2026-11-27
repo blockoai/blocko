@@ -211,11 +211,21 @@
         };
         if (sBtn) sBtn.addEventListener('click', function () { if (form.requestSubmit) form.requestSubmit(); else btn.click(); });
         if ('IntersectionObserver' in window) {
+          var gone = false, atFooter = false;
           new IntersectionObserver(function (entries) {
             var e = entries[entries.length - 1];
             paint();
-            show(!e.isIntersecting && e.boundingClientRect.top < 0);
+            gone = !e.isIntersecting && e.boundingClientRect.top < 0;
+            show(gone && !atFooter);
           }).observe(btn);
+          /* Hide the bar while the footer is on screen so it never covers it */
+          var foot = document.querySelector('footer');
+          if (foot) {
+            new IntersectionObserver(function (entries) {
+              atFooter = entries[entries.length - 1].isIntersecting;
+              show(gone && !atFooter);
+            }).observe(foot);
+          }
         }
       }
     }
