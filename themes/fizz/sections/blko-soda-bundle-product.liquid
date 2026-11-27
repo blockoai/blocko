@@ -106,7 +106,7 @@
       <p class="blko-soda-pdp__ship">{{ section.settings.shipping_note | escape }}</p>
     </div>
     <div class="blko-soda-builder__pick">
-      <h2>{{ section.settings.step1_heading | replace: '{size}', pack_size | replace: '{cans}', cans_each | escape }}</h2>
+      {%- assign step1 = section.settings.step1_heading | replace: '{size}', pack_size | replace: '{cans}', cans_each -%}<h2>{{ step1 | escape }}</h2>
       {%- if pack_col == blank -%}
         {%- if request.design_mode -%}<p class="blko-soda-bundle__empty">{{ section.settings.empty_text | escape }}</p>{%- endif -%}
       {%- else -%}

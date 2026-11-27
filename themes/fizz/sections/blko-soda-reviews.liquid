@@ -86,7 +86,7 @@
         <div class="blko-soda-reviews__avg">
           <span class="blko-soda-reviews__num">{{ avg | times: 1.0 | round: 1 }}</span>
           <span class="blko-soda-rstars blko-soda-rstars--lg" style="--rating:{{ avg | times: 1.0 | round: 1 }}" role="img" aria-label="{{ avg | times: 1.0 | round: 1 }} / 5"></span>
-          {%- if total != blank -%}<p class="blko-soda-reviews__based">{{ section.settings.based_on | replace: '{count}', total | escape }}</p>{%- endif -%}
+          {%- if total != blank -%}<p class="blko-soda-reviews__based">{%- assign based_on = section.settings.based_on | replace: '{count}', total -%}{{ based_on | escape }}</p>{%- endif -%}
         </div>
         {%- if use_own -%}
           <div class="blko-soda-reviews__bars" aria-label="{{ section.settings.heading | escape }}">
