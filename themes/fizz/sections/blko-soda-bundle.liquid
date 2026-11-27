@@ -1,4 +1,5 @@
 {%- assign current = product.selected_or_first_available_variant -%}
+{%- assign pack_col = section.settings.pack_collection -%}{%- if pack_col == blank -%}{%- assign pack_col = collections.all -%}{%- endif -%}
 {%- assign cans = section.settings.cans_per_unit | default: 1 -%}
 {%- assign pack_discount = section.settings.pack_discount | default: 10 -%}
 {%- assign pack_size = section.settings.pack_size | default: 3 -%}
@@ -31,12 +32,12 @@
     <p class="blko-soda-bundle__eyebrow">{{ section.settings.pack_eyebrow | escape }}</p>
     <h2>{{ section.settings.pack_heading | escape }}</h2>
     {%- if request.design_mode -%}<p class="blko-soda-bundle__note" data-note="pack" hidden>{{ section.settings.note_pack | escape }}</p>{%- endif -%}
-    {%- if section.settings.pack_collection == blank -%}
-      <p class="blko-soda-bundle__empty">{{ section.settings.empty_text | escape }}</p>
+    {%- if pack_col == blank -%}
+      {%- if request.design_mode -%}<p class="blko-soda-bundle__empty">{{ section.settings.empty_text | escape }}</p>{%- endif -%}
     {%- else -%}
       {%- form 'product', product, data-pack-form: '' -%}
         <div class="blko-soda-pick">
-          {%- for p in section.settings.pack_collection.products limit: 12 -%}
+          {%- for p in pack_col.products limit: 12 -%}
             {%- assign v = p.selected_or_first_available_variant -%}
             <div class="blko-soda-pick__item" data-pick data-id="{{ v.id }}" data-price="{{ v.price }}" {% unless v.available %}data-soldout{% endunless %}>
               {% render 'blko-soda-tile', product: p, size: 'pick' %}

@@ -4,9 +4,9 @@
       "type": "blko-extras-reviews-hub",
       "settings": {
         "eyebrow": "Real reviews",
-        "heading": "100,000+ fizz fans have weighed in.",
+        "heading": "Fizz fans have weighed in.",
         "average": "4.5",
-        "count_text": "Based on 100,000+ verified reviews",
+        "count_text": "Based on verified customer reviews",
         "stars_label": "Four and a half out of five stars"
       },
       "blocks": {
@@ -76,7 +76,7 @@
           "settings": {
             "tags": "single",
             "title": "My whole family steals the cans",
-            "meta": "Cherry Fizz 12-pack · Verified buyer"
+            "meta": "Single flavor 12-pack · Verified buyer"
           }
         },
         "block-11": {
@@ -84,7 +84,7 @@
           "settings": {
             "tags": "care",
             "title": "Goodbye, 3 pm slump",
-            "meta": "Starter Variety 8-pack · Verified buyer"
+            "meta": "Variety pack · Verified buyer"
           }
         },
         "block-12": {
@@ -93,7 +93,7 @@
             "tags": "single",
             "rating": 4,
             "title": "Tastes like real fruit",
-            "meta": "Peach Rush · Verified buyer"
+            "meta": "Single flavor · Verified buyer"
           }
         }
       },

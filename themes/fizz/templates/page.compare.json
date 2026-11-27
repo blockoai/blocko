@@ -6,26 +6,33 @@
       "blocks": {
         "block-1": {
           "type": "column",
-          "settings": {}
+          "settings": {
+            "product": "pomegranate-sparkle",
+            "finish": "Crisp",
+            "coverage": "One flavor",
+            "best_for": "Finding a favorite"
+          }
         },
         "block-2": {
           "type": "column",
           "settings": {
-            "name": "Fizz Starter Variety 8-pack",
+            "product": "fan-favorites-variety-pack",
+            "name": "Variety pack",
             "finish": "Fruity, bright",
             "coverage": "Mixed flavors",
             "best_for": "First-time fizz fans",
-            "price": "$19"
+            "price": ""
           }
         },
         "block-3": {
           "type": "column",
           "settings": {
-            "name": "Fizz Fridge 24-pack",
+            "product": "monthly-fizz-box",
+            "name": "Monthly box",
             "finish": "Bold, crisp",
             "coverage": "Variety",
-            "best_for": "Stocking the fridge",
-            "price": "$49"
+            "best_for": "Never running out",
+            "price": ""
           }
         }
       },

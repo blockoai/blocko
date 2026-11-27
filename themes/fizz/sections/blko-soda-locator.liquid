@@ -24,7 +24,7 @@
       <button type="submit" data-go>{{ section.settings.button_label | escape }}</button>
     </form>
 
-    <p class="blko-soda-loc__count" aria-live="polite"><b data-count>0</b> {{ section.settings.count_label | escape }}</p>
+    <p class="blko-soda-loc__count" aria-live="polite"><b data-count>{{ section.blocks | where: "type", "store" | size }}</b> {{ section.settings.count_label | escape }}</p>
     <ul class="blko-soda-loc__list">
       {%- for block in section.blocks -%}
         {%- if block.type == 'store' -%}

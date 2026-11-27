@@ -8,7 +8,7 @@
     <div class="blko-soda-contact__intro">
       <ul>
         {%- for block in section.blocks -%}{%- if block.type == 'channel' -%}
-          <li {{ block.shopify_attributes }}><b>{{ block.settings.title | escape }}</b><span>{{ block.settings.text | escape }}</span><a href="{{ block.settings.url }}">{{ block.settings.link_label | escape }}</a></li>
+          <li {{ block.shopify_attributes }}><b>{{ block.settings.title | escape }}</b><span>{{ block.settings.text | escape }}</span><a href="{% render 'blko-shop-mail', text: block.settings.url %}">{% assign ll = block.settings.link_label | escape %}{% render 'blko-shop-mail', text: ll %}</a></li>
         {%- endif -%}{%- endfor -%}
       </ul>
     </div>

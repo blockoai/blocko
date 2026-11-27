@@ -1,4 +1,8 @@
 {%- liquid
+  assign pack_col = section.settings.pack_collection
+  if pack_col == blank
+    assign pack_col = collections.all
+  endif
   assign current = product.selected_or_first_available_variant
   assign tile_bg = product.metafields.fizz.tile_bg.value | default: section.settings.tile_bg
   assign flavor_accent = product.metafields.fizz.accent.value | default: section.settings.accent
@@ -103,11 +107,11 @@
     </div>
     <div class="blko-soda-builder__pick">
       <h2>{{ section.settings.step1_heading | replace: '{size}', pack_size | replace: '{cans}', cans_each | escape }}</h2>
-      {%- if section.settings.pack_collection == blank -%}
-        <p class="blko-soda-bundle__empty">{{ section.settings.empty_text | escape }}</p>
+      {%- if pack_col == blank -%}
+        {%- if request.design_mode -%}<p class="blko-soda-bundle__empty">{{ section.settings.empty_text | escape }}</p>{%- endif -%}
       {%- else -%}
         <div class="blko-soda-pick">
-          {%- for p in section.settings.pack_collection.products limit: 12 -%}
+          {%- for p in pack_col.products limit: 12 -%}
             {%- assign v = p.selected_or_first_available_variant -%}
             <div class="blko-soda-pick__item" data-pick data-id="{{ v.id }}" data-price="{{ pick_price }}" {% unless v.available %}data-soldout{% endunless %}>
               {% render 'blko-soda-tile', product: p, size: 'pick' %}
@@ -191,12 +195,12 @@
       <div class="blko-soda-bundle__block" id="build">
         <h2>{{ section.settings.pack_heading | escape }}</h2>
         {%- if request.design_mode -%}<p class="blko-soda-bundle__note" data-note="pack" hidden>{{ section.settings.note_pack | escape }}</p>{%- endif -%}
-        {%- if section.settings.pack_collection == blank -%}
-          <p class="blko-soda-bundle__empty">{{ section.settings.empty_text | escape }}</p>
+        {%- if pack_col == blank -%}
+          {%- if request.design_mode -%}<p class="blko-soda-bundle__empty">{{ section.settings.empty_text | escape }}</p>{%- endif -%}
         {%- else -%}
           {%- form 'product', product, data-pack-form: '' -%}
             <div class="blko-soda-pick">
-              {%- for p in section.settings.pack_collection.products limit: 12 -%}
+              {%- for p in pack_col.products limit: 12 -%}
                 {%- assign v = p.selected_or_first_available_variant -%}
                 <div class="blko-soda-pick__item" data-pick data-id="{{ v.id }}" data-price="{{ v.price }}" {% unless v.available %}data-soldout{% endunless %}>
                   {% render 'blko-soda-tile', product: p, size: 'pick' %}
@@ -283,6 +287,7 @@
 .blko-soda-pack .blko-soda-slot{border-radius:10px}
 .blko-soda-pack .blko-soda-pick__bar{margin:0}
 .blko-soda-pack .blko-soda-pick__price b{font-size:1.2rem}
+.blko-soda-pick__price,.blko-soda-pdp--bundle .blko-soda-pdp__price{display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .6rem}
 .blko-soda-pack .blko-soda-bundle__add{width:auto;margin:0;padding:0 1.2rem;font-size:16px}
 .blko-soda-pdp--builder .blko-soda-pdp__ship{display:none}
 .blko-soda-builder__pick .blko-soda-pick{grid-template-columns:repeat(2,minmax(0,1fr))}

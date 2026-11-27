@@ -5,7 +5,7 @@
     <p class="blko-soda-phero__text">{{ section.settings.text | escape }}</p>
     {%- if section.settings.button_label != blank -%}
       <div class="blko-soda-phero__btns">
-        <a class="is-primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label | escape }}</a>
+        <a class="is-primary" href="{% render 'blko-shop-mail', text: section.settings.button_url %}">{{ section.settings.button_label | escape }}</a>
         {%- if section.settings.button2_label != blank -%}<a class="is-ghost" href="{{ section.settings.button2_url }}">{{ section.settings.button2_label | escape }}</a>{%- endif -%}
       </div>
     {%- endif -%}

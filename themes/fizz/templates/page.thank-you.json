@@ -1,4 +1,16 @@
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "thank-you": {
+      "type": "blko-global-subscribe-success",
+      "settings": {
+        "kicker": "Order confirmed",
+        "heading": "Thanks, your fizz is on the way.",
+        "text": "We sent a confirmation to your inbox. Chill a can and keep an eye out for the box.",
+        "button_label": "Keep shopping"
+      }
+    }
+  },
+  "order": [
+    "thank-you"
+  ]
 }
