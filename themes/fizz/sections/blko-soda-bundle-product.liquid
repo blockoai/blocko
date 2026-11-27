@@ -33,6 +33,7 @@
     endif
   endif
 -%}
+{% render 'blko-soda-pdp-base' %}
 {%- capture includes -%}{%- for c in components -%}{{ c.title }} ×{{ cans_each }}{% unless forloop.last %}, {% endunless %}{%- endfor -%}{%- endcapture -%}
 {%- capture gallery_html -%}
   <div class="blko-soda-pdp__gallery">
