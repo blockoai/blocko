@@ -20,7 +20,7 @@
         "text_color": "#0f3b2e",
         "wave_color": "#cdf26b",
         "heading": "In the news",
-        "footnote": "Outlet names and quotes are placeholders. Replace with your real coverage."
+        "footnote": ""
       },
       "blocks": {
         "block-1": {
@@ -88,7 +88,7 @@
         "text_color": "#0f3b2e",
         "heading": "Write about Fizz?",
         "text": "We send samples and answer questions fast.",
-        "button_label": ""
+        "button_label": "Email our press team"
       }
     }
   },
