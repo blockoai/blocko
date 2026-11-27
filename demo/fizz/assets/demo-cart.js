@@ -78,6 +78,25 @@
   var savedTotal = function () { return lines.reduce(function (s, l) { var p = price(l); return s + Math.max(0, p.compare - p.final); }, 0); };
   var unlocked = function () { return lines.some(function (l) { var p = price(l); return p.disc > 0 || l.plan; }); };
 
+  /* Recommendation cards: same markup as snippets/blko-soda-rec-card.liquid. 12-pack variants whose flavor is not in the cart, in UPSELL order. */
+  var recPick = function (max) {
+    var inCart = lines.map(function (l) { return (CATALOG[l.id] || [])[6]; });
+    return UPSELL.filter(function (id) { return inCart.indexOf(CATALOG[id][6]) < 0; }).slice(0, max);
+  };
+  var recCard = function (id, tile) {
+    var c = CATALOG[id], pdp = url('../templates/pdp.html') + '?flavor=' + c[6];
+    return '<li class="blko-soda-rec" data-rec-id="' + id + '"><a class="blko-soda-rec__img" href="' + pdp + '"' + (tile ? ' style="--tile-bg:' + c[5] + '"' : '') + '><img src="' + esc(c[3]) + '" alt="' + esc(c[0]) + '" width="100" height="100" loading="lazy"></a>' +
+      '<a class="blko-soda-rec__name" href="' + pdp + '">' + esc(c[0]) + '</a>' +
+      '<p class="blko-soda-rec__price">' + (c[4] > c[2] ? '<s>' + money(c[4]) + '</s>' : '') + '<span>' + money(c[2]) + '</span></p>' +
+      '<button type="button" class="blko-soda-rec__add" data-add-to-cart data-id="' + id + '">+ Add</button></li>';
+  };
+  var recsHtml = function (heading, layout, max) {
+    var pick = recPick(max);
+    if (!pick.length) return '';
+    return '<blko-soda-recs class="blko-soda-recs blko-soda-recs--' + layout + '" data-recs><h3 class="blko-soda-recs__title">' + esc(heading) + '</h3><ul class="blko-soda-recs__row" data-recs-list>' +
+      pick.map(function (id) { return recCard(id, layout === 'grid'); }).join('') + '</ul></blko-soda-recs>';
+  };
+
   var drawerHtml = function () {
     var n = count();
     var t = total();
@@ -101,7 +120,7 @@
         (p.title ? '<p class="blko-soda-line__disc">' + esc(p.title) + '</p>' : '') +
         '<p class="blko-soda-line__price">' + priceHtml(p) + '</p></div></div>';
     });
-    h += '</div></div>';
+    h += '</div>' + (lines.length ? recsHtml('You may also like', 'row', 4) : recsHtml('Start with a favorite', 'grid', 4)) + '</div>';
     if (lines.length) {
       h += '<div class="blko-soda-drawer__foot">' + WAVE + '<div class="blko-soda-drawer__foot-in"><p class="blko-soda-drawer__sub"><span>Subtotal</span><span>' + money(t) + '</span></p><a class="blko-soda-drawer__btn blko-soda-drawer__btn--block" href="#" data-checkout>Checkout</a><p class="blko-soda-drawer__guarantee">45-day money-back guarantee</p></div></div>';
     }
@@ -139,18 +158,7 @@
       '<button type="submit" data-checkout>Check out</button><small>Taxes are calculated at checkout.</small></aside></div></form>';
     return h + upsellHtml();
   };
-  var upsellHtml = function () {
-    var inCart = lines.map(function (l) { return (CATALOG[l.id] || [])[6]; });
-    var pick = UPSELL.filter(function (id) { return inCart.indexOf(CATALOG[id][6]) < 0; }).slice(0, 4);
-    var h = '<section class="blko-soda-cartpage__upsell"><h2>You might also like</h2><ul>';
-    pick.forEach(function (id) {
-      var c = CATALOG[id], pdp = url('../templates/pdp.html') + '?flavor=' + c[6];
-      h += '<li class="blko-soda-cartpage__up"><a class="blko-soda-cartpage__up-tile" href="' + pdp + '" style="--tile-bg:' + c[5] + '"><img src="' + esc(c[3]) + '" alt="' + esc(c[0]) + '" width="200" height="200" loading="lazy"></a>' +
-        '<a class="blko-soda-cartpage__up-name" href="' + pdp + '">' + esc(c[0]) + '</a><span>' + money(c[2]) + '</span>' +
-        '<button type="button" data-add-to-cart data-id="' + id + '">Add 12-pack</button></li>';
-    });
-    return h + '</ul></section>';
-  };
+  var upsellHtml = function () { return recsHtml('You might also like', 'grid', 4); };
   var pageEl = function () { return '<blko-soda-cartpage class="blko-soda-cartpage" data-section-id="cart">' + pageHtml() + '</blko-soda-cartpage>'; };
   window.FizzDemoCart = { drawerHtml: drawerHtml, pageHtml: pageEl };
 

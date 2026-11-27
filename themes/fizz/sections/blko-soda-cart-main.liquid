@@ -50,29 +50,8 @@
       </div>
     </form>
   {%- endif -%}
-  {%- assign up = section.settings.upsell_collection | default: collections.all -%}
-  {%- if section.settings.upsell_title != blank and up.products_count > 0 -%}
-    <section class="blko-soda-cartpage__upsell">
-      <h2>{{ section.settings.upsell_title }}</h2>
-      <ul>
-        {%- assign shown = 0 -%}
-        {%- for product in up.products limit: 12 -%}
-          {%- assign in_cart = false -%}
-          {%- for item in cart.items -%}{%- if item.product_id == product.id -%}{%- assign in_cart = true -%}{%- endif -%}{%- endfor -%}
-          {%- if in_cart == false and shown < 4 -%}
-            {%- assign shown = shown | plus: 1 -%}
-            {%- assign n = shown | minus: 1 | modulo: 5 | plus: 1 -%}
-            {%- assign variant = product.selected_or_first_available_variant -%}
-            <li class="blko-soda-cartpage__up">
-              <a class="blko-soda-cartpage__up-tile" href="{{ product.url }}" style="--tile-bg:var(--color-pastel-{{ n }}, #ffc9d6)">{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" width="200" height="200" loading="lazy">{%- endif -%}</a>
-              <a class="blko-soda-cartpage__up-name" href="{{ product.url }}">{{ product.title | escape }}</a>
-              <span>{{ product.price | money }}</span>
-              {%- if variant.available -%}<button type="button" data-add-to-cart data-id="{{ variant.id }}">{{ section.settings.upsell_add }}</button>{%- endif -%}
-            </li>
-          {%- endif -%}
-        {%- endfor -%}
-      </ul>
-    </section>
+  {%- if section.settings.upsell_title != blank -%}
+    {%- render 'blko-soda-recs', heading: section.settings.upsell_title, source: section.settings.upsell_source, limit: section.settings.upsell_max, collection: section.settings.upsell_collection, layout: 'grid' -%}
   {%- endif -%}
 </blko-soda-cartpage>
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
@@ -115,20 +94,11 @@
 .blko-soda-cartpage__summary small{color:var(--color-text-muted, #4a6a5c);font-size:.8125rem;text-align:center}
 .blko-soda-cartpage__summary button{padding:0;height:52px;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:700 1.125rem/1 var(--font-body, "Outfit", sans-serif);cursor:pointer;transition:background-color .25s ease-in-out}
 .blko-soda-cartpage__summary button:hover{background:#1f5a44}
-.blko-soda-cartpage__upsell{margin-top:clamp(2rem,5vw,3.5rem)}
-.blko-soda-cartpage__upsell h2{margin:0 0 1rem;font:900 1.75rem/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
-.blko-soda-cartpage__upsell ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin:0;padding:0;list-style:none}
-.blko-soda-cartpage__up{display:grid;gap:.5rem}
-.blko-soda-cartpage__up-tile{display:flex;align-items:center;justify-content:center;aspect-ratio:1;border-radius:20px;background:var(--tile-bg, var(--color-pastel-1, #ffc9d6))}
-.blko-soda-cartpage__up-tile img{width:auto;max-width:90%;height:78%;object-fit:contain;transition:transform .25s ease-in-out}
-.blko-soda-cartpage__up-tile:hover img{transform:scale(1.06)}
-.blko-soda-cartpage__up a.blko-soda-cartpage__up-name{color:inherit;font:700 1rem/1.25 var(--font-body, "Outfit", sans-serif);text-decoration:none}
-.blko-soda-cartpage__up span{font-size:.9rem}
-.blko-soda-cartpage__up button{height:40px;border:1px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:inherit;font:700 .9rem/1 var(--font-body, "Outfit", sans-serif);cursor:pointer;transition:background-color .25s ease-in-out,color .25s ease-in-out}
-.blko-soda-cartpage__up button:hover{background:var(--color-text, #0f3b2e);color:var(--color-bg, #fbf3e2)}
-@media(max-width:900px){.blko-soda-cartpage__grid{grid-template-columns:1fr}.blko-soda-cartpage__upsell ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.blko-soda-cartpage__grid{grid-template-columns:1fr}}
 @media(max-width:700px){.blko-soda-cartpage__cols{display:none}.blko-soda-cartpage__items li{grid-template-columns:80px minmax(0,1fr) auto;gap:.5rem 1rem;align-items:start}.blko-soda-cartpage__tile{width:80px;height:80px}.blko-soda-cartpage__items li>.blko-soda-cartpage__step{grid-column:2;grid-row:2;justify-self:start}.blko-soda-cartpage__items li>.blko-soda-cartpage__price{grid-column:3;grid-row:1/3;align-self:start}}
-@media(prefers-reduced-motion:reduce){.blko-soda-cartpage__ship i span,.blko-soda-cartpage__up-tile img{transition:none}}
+.blko-soda-cartpage .blko-soda-recs{margin:clamp(2rem,5vw,3.5rem) 0 0}
+.blko-soda-cartpage .blko-soda-recs__title{font-size:1.75rem}
+@media(prefers-reduced-motion:reduce){.blko-soda-cartpage__ship i span{transition:none}}
 {% endstylesheet %}
 
 {% schema %}
@@ -155,8 +125,9 @@
     {"type": "text", "id": "tax_note", "label": "Tax note", "default": "Taxes are calculated at checkout."},
     {"type": "text", "id": "checkout_label", "label": "Checkout label", "default": "Check out"},
     {"type": "text", "id": "upsell_title", "label": "Upsell heading (empty hides the row)", "default": "You might also like"},
-    {"type": "collection", "id": "upsell_collection", "label": "Upsell collection", "info": "Shows up to 4 products that are not in the cart. Defaults to all products."},
-    {"type": "text", "id": "upsell_add", "label": "Upsell button", "default": "Add 12-pack"}
+    {"type": "select", "id": "upsell_source", "label": "Upsell source", "info": "Related and Complementary use the first cart line. If nothing comes back, the fallback collection is shown.", "options": [{"value": "related", "label": "Related"}, {"value": "complementary", "label": "Complementary"}, {"value": "collection", "label": "Collection"}], "default": "related"},
+    {"type": "collection", "id": "upsell_collection", "label": "Upsell fallback collection", "info": "Products already in the cart are hidden. Defaults to all products."},
+    {"type": "range", "id": "upsell_max", "label": "Upsell max products", "min": 2, "max": 8, "step": 1, "default": 4}
   ],
   "presets": [{"name": "Soda cart"}]
 }

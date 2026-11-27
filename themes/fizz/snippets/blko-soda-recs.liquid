@@ -1,0 +1,31 @@
+{%- doc -%}
+  "You may also like" block. Server-renders the fallback collection; blko-soda-recs (blko-soda.js) swaps in product recommendations for the first cart line.
+  @param {string} heading - Heading text
+  @param {string} [source] - related, complementary or collection
+  @param {number} [limit] - Max cards, 2 to 8
+  @param {collection} [collection] - Fallback collection, defaults to all products
+  @param {string} [layout] - row (scroll row) or grid
+{%- enddoc -%}
+{%- liquid
+  assign max = limit | default: 4
+  assign mode = layout | default: 'row'
+  assign cart_ids = cart.items | map: 'product_id'
+  assign pool = collection | default: collections.all
+  assign shown = 0
+-%}
+{%- capture cards -%}
+  {%- for product in pool.products limit: 30 -%}
+    {%- if shown < max and product.available -%}
+      {%- unless cart_ids contains product.id -%}
+        {%- if mode == 'grid' -%}{%- assign tile = shown | modulo: 5 | plus: 1 -%}{%- else -%}{%- assign tile = false -%}{%- endif -%}
+        {%- assign shown = shown | plus: 1 -%}
+        {%- render 'blko-soda-rec-card', product: product, tile: tile -%}
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if source == 'collection' or cart.item_count == 0 -%}{%- assign dynamic = false -%}{%- else -%}{%- assign dynamic = true -%}{%- endif -%}
+<blko-soda-recs class="blko-soda-recs blko-soda-recs--{{ mode }}" data-recs{% if dynamic %} data-url="{{ routes.product_recommendations_url }}" data-product-id="{{ cart.items.first.product_id }}" data-intent="{{ source | default: 'related' }}" data-limit="{{ max }}" data-cart-ids="{{ cart_ids | join: ',' }}"{% if mode == 'grid' %} data-tiles{% endif %}{% endif %}{% if shown == 0 %} hidden{% endif %}>
+  <h3 class="blko-soda-recs__title">{{ heading }}</h3>
+  <ul class="blko-soda-recs__row" data-recs-list>{{ cards }}</ul>
+</blko-soda-recs>

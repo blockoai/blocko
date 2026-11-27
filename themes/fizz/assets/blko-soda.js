@@ -537,6 +537,50 @@
     }
   });
 
+  /* Recommendations ("You may also like"): the server renders the fallback cards. When data-url is set, swap in product
+     recommendations for the first cart line via the Section Rendering API. Cart changes re-render the drawer or cart page,
+     which reconnects this element; results are cached per product id and the fetch is debounced. */
+  var recsCache = {};
+  var recsTimer = null;
+  define('blko-soda-recs', class extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.bound) return;
+      this.dataset.bound = '';
+      var root = this;
+      var url = root.dataset.url;
+      var pid = root.dataset.productId;
+      if (!url || !pid) return;
+      var limit = Number(root.dataset.limit) || 4;
+      var skip = (root.dataset.cartIds || '').split(',').filter(Boolean);
+      var intent = root.dataset.intent === 'complementary' ? 'complementary' : 'related';
+      var key = pid + '|' + intent + '|' + limit;
+      var apply = function (html) {
+        if (!root.isConnected) return;
+        var doc = new DOMParser().parseFromString(html || '', 'text/html');
+        var cards = Array.prototype.filter.call(doc.querySelectorAll('[data-rec-id]'), function (c) { return skip.indexOf(c.dataset.recId) < 0; }).slice(0, limit);
+        var list = root.querySelector('[data-recs-list]');
+        if (!cards.length || !list) return;
+        list.textContent = '';
+        cards.forEach(function (c, i) {
+          if (root.hasAttribute('data-tiles')) { var t = c.querySelector('.blko-soda-rec__img'); if (t) t.style.setProperty('--tile-bg', 'var(--color-pastel-' + (i % 5 + 1) + ', #ffc9d6)'); }
+          list.appendChild(document.importNode(c, true));
+        });
+        root.hidden = false;
+      };
+      var load = function () {
+        if (!recsCache[key]) {
+          var q = '?product_id=' + encodeURIComponent(pid) + '&limit=' + Math.min(10, limit + skip.length) + '&intent=' + intent + '&section_id=blko-soda-cart-recs';
+          recsCache[key] = fetch(url + q, { headers: { Accept: 'text/html' } }).then(function (r) { return r.ok ? r.text() : ''; }).catch(function () { return ''; });
+          recsCache[key].then(function (h) { if (!h) delete recsCache[key]; });
+        }
+        recsCache[key].then(apply);
+      };
+      if (recsCache[key]) { load(); return; }
+      clearTimeout(recsTimer);
+      recsTimer = setTimeout(load, 250);
+    }
+  });
+
   /* Store locator: filter [data-store] by flavor chips, text and zip prefix. */
   define('blko-soda-locator', class extends HTMLElement {
     connectedCallback() {

@@ -51,6 +51,13 @@
             <div class="blko-soda-drawer__empty"><p>{{ section.settings.empty_text }}</p><a class="blko-soda-drawer__btn" href="{{ routes.all_products_collection_url }}">{{ section.settings.continue_label }}</a></div>
           {%- endfor -%}
         </div>
+        {%- if section.settings.show_recs -%}
+          {%- if cart.item_count > 0 -%}
+            {%- render 'blko-soda-recs', heading: section.settings.recs_heading, source: section.settings.recs_source, limit: section.settings.recs_max, collection: section.settings.recs_collection, layout: 'row' -%}
+          {%- else -%}
+            {%- render 'blko-soda-recs', heading: section.settings.recs_empty_heading, source: 'collection', limit: 4, collection: section.settings.recs_collection, layout: 'grid' -%}
+          {%- endif -%}
+        {%- endif -%}
       </div>
       {%- if cart.item_count > 0 -%}
         <div class="blko-soda-drawer__foot">
@@ -139,7 +146,14 @@
     {"type": "text", "id": "subtotal_label", "label": "Subtotal label", "default": "Subtotal"},
     {"type": "text", "id": "checkout_label", "label": "Checkout label", "default": "Checkout"},
     {"type": "text", "id": "guarantee", "label": "Guarantee line", "default": "45-day money-back guarantee"},
-    {"type": "checkbox", "id": "bubbles", "label": "Bubbles overlay", "default": false}
+    {"type": "checkbox", "id": "bubbles", "label": "Bubbles overlay", "default": false},
+    {"type": "header", "content": "Recommendations"},
+    {"type": "checkbox", "id": "show_recs", "label": "Show recommendations", "default": true},
+    {"type": "text", "id": "recs_heading", "label": "Heading", "default": "You may also like"},
+    {"type": "text", "id": "recs_empty_heading", "label": "Heading when the cart is empty", "default": "Start with a favorite"},
+    {"type": "select", "id": "recs_source", "label": "Source", "info": "Related and Complementary use the first cart line. If nothing comes back, the fallback collection is shown.", "options": [{"value": "related", "label": "Related"}, {"value": "complementary", "label": "Complementary"}, {"value": "collection", "label": "Collection"}], "default": "related"},
+    {"type": "collection", "id": "recs_collection", "label": "Fallback collection", "info": "Defaults to all products."},
+    {"type": "range", "id": "recs_max", "label": "Max products", "min": 2, "max": 8, "step": 1, "default": 4}
   ]
 }
 {% endschema %}

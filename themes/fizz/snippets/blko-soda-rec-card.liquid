@@ -1,0 +1,39 @@
+{%- doc -%}
+  Compact recommendation card (can cutout, name, price, "+ Add"). Shared by the cart drawer and the cart page.
+  @param {product} product - Product to show
+  @param {number} [tile] - 1 to 5: pastel tile behind the image (grid layout only)
+  @param {string} [add_label] - Button text, defaults to "+ Add"
+{%- enddoc -%}
+{%- assign variant = product.first_available_variant -%}
+{%- if variant -%}
+  <li class="blko-soda-rec" data-rec-id="{{ product.id }}">
+    <a class="blko-soda-rec__img" href="{{ product.url }}"{% if tile %} style="--tile-bg:var(--color-pastel-{{ tile }}, #ffc9d6)"{% endif %}>{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 280 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" width="100" height="100" loading="lazy">{%- endif -%}</a>
+    <a class="blko-soda-rec__name" href="{{ product.url }}">{{ product.title | escape }}</a>
+    <p class="blko-soda-rec__price">{%- if variant.compare_at_price > variant.price -%}<s>{{ variant.compare_at_price | money }}</s>{%- endif -%}<span>{{ variant.price | money }}</span></p>
+    <button type="button" class="blko-soda-rec__add" data-add-to-cart data-id="{{ variant.id }}"{% if product.requires_selling_plan %} data-selling-plan="{{ product.selling_plan_groups.first.selling_plans.first.id }}"{% endif %}>{{ add_label | default: '+ Add' }}</button>
+  </li>
+{%- endif -%}
+
+{% stylesheet %}
+.blko-soda-recs{display:block;margin:1.25rem 0 1.5rem;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
+.blko-soda-recs[hidden]{display:none}
+.blko-soda-recs__title{margin:0 0 .75rem;font:900 1.25rem/1.2 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-recs__row{display:flex;gap:.75rem;margin:0;padding:0;list-style:none}
+.blko-soda-recs--row .blko-soda-recs__row{margin:0 -1.25rem;padding:0 1.25rem .5rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 1.25rem;scrollbar-width:thin}
+.blko-soda-recs--grid .blko-soda-recs__row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem .75rem}
+.blko-soda-rec{display:flex;flex:0 0 140px;flex-direction:column;gap:.3rem;min-width:0;scroll-snap-align:start}
+.blko-soda-recs--grid .blko-soda-rec{flex:none}
+.blko-soda-rec__img{display:flex;align-items:center;justify-content:center;height:100px;margin-bottom:.2rem;border-radius:16px}
+.blko-soda-recs--grid .blko-soda-rec__img{height:auto;aspect-ratio:1;background:var(--tile-bg, var(--color-pastel-1, #ffc9d6))}
+.blko-soda-rec__img img{width:auto;max-width:90%;height:100px;object-fit:contain;transition:transform .25s ease-in-out}
+.blko-soda-recs--grid .blko-soda-rec__img img{height:78%}
+.blko-soda-rec__img:hover img{transform:scale(1.08)}
+.blko-soda-rec a.blko-soda-rec__name{display:-webkit-box;overflow:hidden;color:inherit;font:600 .875rem/1.3 var(--font-body, "Outfit", sans-serif);text-decoration:none;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2}
+.blko-soda-rec__price{margin:0;font:700 .875rem/1.3 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-rec__price s{margin-right:.3rem;color:var(--color-text-muted, #4a6a5c);font-weight:400}
+.blko-soda-rec__add{align-self:flex-start;height:32px;margin-top:.15rem;padding:0 .85rem;border:1.5px solid currentColor;border-radius:999px;background:transparent;color:inherit;font:700 .875rem/1 var(--font-sans, var(--font-body, "Outfit", sans-serif));cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-rec__add:hover{background:var(--color-mint, #b8f0d8)}
+.blko-soda-rec__add:disabled{opacity:.5;cursor:default}
+@media(min-width:900px){.blko-soda-cartpage .blko-soda-recs--grid .blko-soda-recs__row{grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}}
+@media(prefers-reduced-motion:reduce){.blko-soda-rec__img img,.blko-soda-rec__add{transition:none}.blko-soda-rec__img:hover img{transform:none}}
+{% endstylesheet %}

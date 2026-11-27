@@ -1,0 +1,15 @@
+{%- comment -%} Rendered through the Section Rendering API by blko-soda-recs: ?section_id=blko-soda-cart-recs. Returns only cards. {%- endcomment -%}
+{%- assign cart_ids = cart.items | map: 'product_id' -%}
+{%- if recommendations.performed and recommendations.products_count > 0 -%}
+  <ul data-recs-list>
+    {%- for product in recommendations.products -%}
+      {%- unless cart_ids contains product.id -%}{%- render 'blko-soda-rec-card', product: product -%}{%- endunless -%}
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Soda cart recommendations"
+}
+{% endschema %}
