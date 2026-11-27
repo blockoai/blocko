@@ -1246,8 +1246,8 @@ blko-soda-slider[loop] .blko-soda-slider__track{gap:0}
 .blko-soda-wl__bar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;max-width:75rem;margin:0 auto 2rem;padding:0 1.25rem}
 .blko-soda-wl__btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 1.4rem;border:3px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:var(--color-text, #0f3b2e);font:700 1rem/1 var(--font-body, "Outfit", sans-serif);text-decoration:none;cursor:pointer;transition:background-color .25s ease-in-out,color .25s ease-in-out,box-shadow .2s ease}
 .blko-soda-wl__btn:hover:not(:disabled){background:#fff;box-shadow:4px 4px 0 0 var(--flv-accent, #ffd0d6)}
-.blko-soda-wl__btn--solid{background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff)}
-.blko-soda-wl__btn--solid:hover:not(:disabled){background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff)}
+.blko-soda-wl__btn--solid{background:var(--color-text, #0f3b2e);color:#fdf6ea}
+.blko-soda-wl__btn--solid:hover:not(:disabled){background:#1f5a44;color:#fdf6ea}
 .blko-soda-wl__btn:disabled{opacity:.5;cursor:not-allowed}
 .blko-soda-wl__btn:focus-visible,.blko-soda-wl__add:focus-visible,.blko-soda-wl__select:focus-visible{outline:3px solid var(--color-accent, #ff6b8b);outline-offset:2px}
 .blko-soda-wl__grid,.blko-soda-wl__recs ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2.25rem 1.25rem;max-width:75rem;margin:0 auto;padding:0 1.25rem;list-style:none}
