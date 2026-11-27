@@ -57,7 +57,7 @@
       "name": "Collection tab",
       "settings": [
         {"type": "text", "id": "tab_label", "label": "Tab label", "default": "Classics"},
-        {"type": "text", "id": "collection", "label": "Collection handle", "default": "drinks"},
+        {"type": "text", "id": "collection", "label": "Collection handle", "default": "drinks", "info": "Handle of a real store collection, for example drinks or variety-packs."},
         {"type": "text", "id": "note", "label": "Note", "default": "2g sugar. Ice cold or room temp."},
         {"type": "text", "id": "cta_label", "label": "Button label", "default": "Shop all"},
         {"type": "range", "id": "limit", "label": "Products", "min": 2, "max": 24, "step": 1, "default": 12}
@@ -69,11 +69,11 @@
     {
       "name": "Soda collection tabs",
       "blocks": [
-        {"type": "collection", "settings": {"tab_label": "Classics", "collection": "drinks"}},
-        {"type": "collection", "settings": {"tab_label": "Fruit punch", "collection": "drinks", "note": "Loud, juicy and light on sugar."}},
-        {"type": "collection", "settings": {"tab_label": "Minis", "collection": "drinks", "note": "Mini cans for lunchboxes."}},
-        {"type": "collection", "settings": {"tab_label": "Limited", "collection": "drinks", "note": "Here for a fizzy minute."}},
-        {"type": "collection", "settings": {"tab_label": "Variety packs", "collection": "drinks", "note": "Can't pick? Don't."}}
+        {"type": "collection", "settings": {"tab_label": "Drinks", "collection": "drinks"}},
+        {"type": "collection", "settings": {"tab_label": "Variety packs", "collection": "variety-packs", "note": "Can't pick? Don't."}},
+        {"type": "collection", "settings": {"tab_label": "Single flavor packs", "collection": "single-flavor-packs", "note": "Stock up on your favorite."}},
+        {"type": "collection", "settings": {"tab_label": "9g fiber", "collection": "shop-9g-fiber", "note": "Classic cans, 9g of fiber."}},
+        {"type": "collection", "settings": {"tab_label": "6g fiber", "collection": "shop-6g-fiber", "note": "Lighter on fiber, same fizz."}}
       ]
     }
   ]

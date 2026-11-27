@@ -30,6 +30,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | --- | --- | --- | --- |
 | `one_time_label` | text | One-time label | One-time purchase |
 | `subscribe_label` | text | Subscribe label | Subscribe & Save |
+| `save_label` | text | Save label | Save |
 | `frequency_label` | text | Frequency label | Delivery frequency |
 | `add_label` | text | Add to cart label | Add to cart |
 | `sold_label` | text | Sold out label | Sold out |

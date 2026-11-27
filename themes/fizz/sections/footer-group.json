@@ -10,14 +10,16 @@
           "type": "column",
           "settings": {
             "title": "Shop",
-            "menu": "footer"
+            "menu": "main-menu",
+            "parent_title": "Shop"
           }
         },
         "block-2": {
           "type": "column",
           "settings": {
             "title": "Learn",
-            "menu": "footer"
+            "menu": "main-menu",
+            "parent_title": "Learn"
           }
         },
         "block-3": {

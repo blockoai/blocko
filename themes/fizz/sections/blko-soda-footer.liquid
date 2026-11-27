@@ -15,19 +15,30 @@
       {%- for block in section.blocks -%}{%- if block.type == 'column' -%}
         <div {{ block.shopify_attributes }}>
           <h2>{{ block.settings.title | escape }}</h2>
-          <ul>{%- for link in block.settings.menu.links -%}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{%- endfor -%}</ul>
+          {%- assign col_links = block.settings.menu.links -%}
+          {%- if block.settings.parent_title != blank -%}
+            {%- for top in block.settings.menu.links -%}{%- if top.title == block.settings.parent_title -%}{%- assign col_links = top.links -%}{%- endif -%}{%- endfor -%}
+          {%- endif -%}
+          <ul>{%- for link in col_links -%}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{%- endfor -%}</ul>
         </div>
       {%- endif -%}{%- endfor -%}
     </nav>
   </div>
   <div class="blko-soda-footer__bottom">
     <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | escape }}. {{ section.settings.legal | escape }}</p>
+    <ul class="blko-soda-footer__legal">
+      <li><a href="{{ routes.search_url }}">{{ section.settings.search_label | escape }}</a></li>
+      <li><a href="{{ routes.account_url }}">{{ section.settings.account_label | escape }}</a></li>
+      {%- for policy in shop.policies -%}<li><a href="{{ policy.url }}">{{ policy.title | escape }}</a></li>{%- endfor -%}
+    </ul>
   </div>
 </footer>
 
 {% stylesheet %}
 .blko-soda-footer{padding:clamp(2.5rem,6vw,5rem) 1.25rem 1.5rem;font-family:var(--font-body, "Outfit", sans-serif)}
 .blko-soda-footer__top{display:grid;grid-template-columns:1.1fr 1.4fr;gap:clamp(2rem,5vw,4rem);max-width:80rem;margin:0 auto}
+.blko-soda-footer__legal{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;margin:.6rem 0 0;padding:0;list-style:none;font-size:.9rem}
+.blko-soda-footer__legal a{color:inherit}
 .blko-soda-footer__brand{display:grid;align-content:start;gap:1rem}
 .blko-soda-footer__brand img{width:10rem;height:auto}
 .blko-soda-footer__brand p{max-width:24rem;margin:0;font-size:1.05rem}
@@ -56,6 +67,8 @@
     {"type": "text", "id": "email_label", "label": "Email placeholder", "default": "Your email"},
     {"type": "text", "id": "button_label", "label": "Button label", "default": "Join the club"},
     {"type": "text", "id": "success_text", "label": "Success message", "default": "You are in!"},
+    {"type": "text", "id": "search_label", "label": "Search link label", "default": "Search"},
+    {"type": "text", "id": "account_label", "label": "Account link label", "default": "Account"},
     {"type": "text", "id": "legal", "label": "Legal line", "default": "These statements have not been evaluated by the FDA."}
   ],
   "blocks": [
@@ -64,7 +77,8 @@
       "name": "Link column",
       "settings": [
         {"type": "text", "id": "title", "label": "Title", "default": "Shop"},
-        {"type": "link_list", "id": "menu", "label": "Menu", "default": "footer"}
+        {"type": "link_list", "id": "menu", "label": "Menu", "default": "footer"},
+        {"type": "text", "id": "parent_title", "label": "Show children of this menu item", "info": "Optional. Type the title of a top-level link (for example Shop) to list only its child links."}
       ]
     }
   ],

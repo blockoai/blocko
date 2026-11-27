@@ -13,7 +13,7 @@
 </head>
 <body class="blko-theme">
   <a class="blko-skip-link" href="#content">{{ 'blko.general.skip_to_content' | t }}</a>
-  <blko-soda-cart>
+  <blko-soda-cart data-root="{{ routes.root_url }}">
   {% sections 'header-group' %}
   <main id="content">{{ content_for_layout }}</main>
   {% sections 'footer-group' %}

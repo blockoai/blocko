@@ -25,6 +25,8 @@
               <a class="blko-soda-line__title" href="{{ item.url }}">{{ item.product.title }}</a>
               {%- unless item.product.has_only_default_variant -%}<p class="blko-soda-line__meta">{{ item.variant.title }}</p>{%- endunless -%}
               {%- if item.selling_plan_allocation -%}<p class="blko-soda-line__meta">{{ section.settings.subscription_label }}: {{ item.selling_plan_allocation.selling_plan.name }}</p>{%- endif -%}
+              {%- for property in item.properties -%}{%- assign first_char = property.first | slice: 0 -%}{%- if first_char != '_' and property.last != blank -%}<p class="blko-soda-line__meta">{{ property.first }}: {{ property.last }}</p>{%- endif -%}{%- endfor -%}
+              {%- for allocation in item.line_level_discount_allocations -%}<p class="blko-soda-line__discount">{{ allocation.discount_application.title | escape }} (-{{ allocation.amount | money }})</p>{%- endfor -%}
               <div class="blko-soda-line__qty">
                 <button type="button" data-qty="{{ item.key }}" data-to="{{ item.quantity | minus: 1 }}" aria-label="Decrease quantity">&minus;</button>
                 <span>{{ item.quantity }}</span>
@@ -40,8 +42,11 @@
       </div>
       {%- if cart.item_count > 0 -%}
         <div class="blko-soda-drawer__foot">
+          {%- if cart.cart_level_discount_applications.size > 0 -%}
+            {%- for application in cart.cart_level_discount_applications -%}<p class="blko-soda-drawer__disc"><span>{{ application.title | escape }}</span><span>-{{ application.total_allocated_amount | money }}</span></p>{%- endfor -%}
+          {%- endif -%}
           <p class="blko-soda-drawer__sub"><span>{{ section.settings.subtotal_label }}</span><span>{{ cart.total_price | money }}</span></p>
-          <form action="{{ routes.cart_url }}" method="post"><button type="submit" name="checkout" class="blko-soda-drawer__btn blko-soda-drawer__btn--block">{{ section.settings.checkout_label }}</button></form>
+          <a class="blko-soda-drawer__btn blko-soda-drawer__btn--block" href="{{ routes.root_url | append: 'checkout' }}" data-checkout>{{ section.settings.checkout_label }}</a>
         </div>
       {%- endif -%}
     </div>
@@ -76,6 +81,8 @@
 .blko-soda-line__price{margin:0;font-weight:800}
 .blko-soda-drawer__empty{padding:2.5rem 0;text-align:center}
 .blko-soda-drawer__foot{padding:1rem 1.25rem 1.25rem;border-top:1px solid var(--color-border, #dccfae)}
+.blko-soda-line__discount{margin:.2rem 0 0;color:var(--color-text, #0f3b2e);font-size:.82rem;font-weight:700}
+.blko-soda-drawer__disc{display:flex;justify-content:space-between;margin:0 0 .4rem;font-size:.9rem;font-weight:700}
 .blko-soda-drawer__sub{display:flex;justify-content:space-between;margin:0 0 .8rem;font:900 1.15rem var(--font-heading, "Fraunces", Georgia, serif)}
 .blko-soda-drawer__btn{display:inline-block;padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-align:center;text-decoration:none;cursor:pointer}
 .blko-soda-drawer__btn--block{display:block;width:100%}

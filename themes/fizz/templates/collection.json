@@ -2,34 +2,44 @@
   "sections": {
     "collection": {
       "type": "blko-soda-collection",
-      "settings": {},
+      "settings": {
+        "handle_all": "drinks",
+        "tab_all": "All drinks"
+      },
       "blocks": {
         "block-1": {
           "type": "filter",
           "settings": {
-            "label": "Classics",
-            "handle": "drinks"
+            "label": "Variety packs",
+            "handle": "variety-packs"
           }
         },
         "block-2": {
           "type": "filter",
           "settings": {
-            "label": "Fruit punch",
-            "handle": "drinks"
+            "label": "Single flavor packs",
+            "handle": "single-flavor-packs"
           }
         },
         "block-3": {
           "type": "filter",
           "settings": {
-            "label": "Minis",
-            "handle": "drinks"
+            "label": "9g fiber",
+            "handle": "shop-9g-fiber"
           }
         },
         "block-4": {
           "type": "filter",
           "settings": {
-            "label": "Variety packs",
-            "handle": "drinks"
+            "label": "6g fiber",
+            "handle": "shop-6g-fiber"
+          }
+        },
+        "block-5": {
+          "type": "filter",
+          "settings": {
+            "label": "6g fiber",
+            "handle": "shop-6g-fiber"
           }
         }
       },
@@ -37,7 +47,8 @@
         "block-1",
         "block-2",
         "block-3",
-        "block-4"
+        "block-4",
+        "block-5"
       ]
     },
     "collection-faq": {

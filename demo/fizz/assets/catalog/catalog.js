@@ -1,0 +1,337 @@
+/* Fizz demo catalog. Works over file:// (inline fallback) and http (fetches products.json). */
+(function () {
+  var DATA = {
+  "currency": "USD",
+  "products": [
+    {
+      "handle": "cherry-pop",
+      "name": "Cherry Pop",
+      "tagline": "Bright, juicy, and a little bit sweet",
+      "fiber": "9g",
+      "line": "Classics",
+      "price": 29.0,
+      "compare_at": 34.0,
+      "color": "#c8203a",
+      "accent": "#ffd0d6",
+      "tile_bg": "#fde1e3",
+      "can": "cans/cherry-pop.svg",
+      "pack": "packs/cherry-pop.svg",
+      "variants": [
+        {
+          "title": "12-pack",
+          "cans": 12,
+          "price": 29.0
+        },
+        {
+          "title": "24-pack",
+          "cans": 24,
+          "price": 54.0
+        }
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "handle": "orange-burst",
+      "name": "Orange Burst",
+      "tagline": "Sunny citrus with a zesty finish",
+      "fiber": "9g",
+      "line": "Classics",
+      "price": 29.0,
+      "compare_at": null,
+      "color": "#f26b1d",
+      "accent": "#ffe0b8",
+      "tile_bg": "#fde9d2",
+      "can": "cans/orange-burst.svg",
+      "pack": "packs/orange-burst.svg",
+      "variants": [
+        {
+          "title": "12-pack",
+          "cans": 12,
+          "price": 29.0
+        },
+        {
+          "title": "24-pack",
+          "cans": 24,
+          "price": 54.0
+        }
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "handle": "strawberry-lime",
+      "name": "Strawberry Lime",
+      "tagline": "Ripe berries meet a sharp lime twist",
+      "fiber": "6g",
+      "line": "Fruit punch",
+      "price": 29.0,
+      "compare_at": null,
+      "color": "#e8587a",
+      "accent": "#c6f08a",
+      "tile_bg": "#fde2ea",
+      "can": "cans/strawberry-lime.svg",
+      "pack": "packs/strawberry-lime.svg",
+      "variants": [
+        {
+          "title": "12-pack",
+          "cans": 12,
+          "price": 29.0
+        },
+        {
+          "title": "24-pack",
+          "cans": 24,
+          "price": 54.0
+        }
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "handle": "lemon-lime-zing",
+      "name": "Lemon Lime Zing",
+      "tagline": "Crisp, cold, and wildly refreshing",
+      "fiber": "6g",
+      "line": "Classics",
+      "price": 29.0,
+      "compare_at": null,
+      "color": "#7fb41a",
+      "accent": "#fff08a",
+      "tile_bg": "#eef6cf",
+      "can": "cans/lemon-lime-zing.svg",
+      "pack": "packs/lemon-lime-zing.svg",
+      "variants": [
+        {
+          "title": "12-pack",
+          "cans": 12,
+          "price": 29.0
+        },
+        {
+          "title": "24-pack",
+          "cans": 24,
+          "price": 54.0
+        }
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "handle": "mango-tango",
+      "name": "Mango Tango",
+      "tagline": "Tropical, golden, summer in a can",
+      "fiber": "9g",
+      "line": "Limited",
+      "price": 29.0,
+      "compare_at": 34.0,
+      "color": "#f2a516",
+      "accent": "#ffd98a",
+      "tile_bg": "#fff0cc",
+      "can": "cans/mango-tango.svg",
+      "pack": "packs/mango-tango.svg",
+      "variants": [
+        {
+          "title": "12-pack",
+          "cans": 12,
+          "price": 29.0
+        },
+        {
+          "title": "24-pack",
+          "cans": 24,
+          "price": 54.0
+        }
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "handle": "mint-mojito",
+      "name": "Mint Mojito",
+      "tagline": "Cool mint, bright lime, zero guilt",
+      "fiber": "6g",
+      "line": "Fruit punch",
+      "price": 29.0,
+      "compare_at": null,
+      "color": "#1ea58b",
+      "accent": "#bff0e2",
+      "tile_bg": "#d6f1ea",
+      "can": "cans/mint-mojito.svg",
+      "pack": "packs/mint-mojito.svg",
+      "variants": [
+        {
+          "title": "12-pack",
+          "cans": 12,
+          "price": 29.0
+        },
+        {
+          "title": "24-pack",
+          "cans": 24,
+          "price": 54.0
+        }
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "handle": "grape-soda",
+      "name": "Grape Soda",
+      "tagline": "Old-school purple, brand-new fizz",
+      "fiber": "9g",
+      "line": "Classics",
+      "price": 29.0,
+      "compare_at": null,
+      "color": "#6d3fa6",
+      "accent": "#d9c2f5",
+      "tile_bg": "#e8defa",
+      "can": "cans/grape-soda.svg",
+      "pack": "packs/grape-soda.svg",
+      "variants": [
+        {
+          "title": "12-pack",
+          "cans": 12,
+          "price": 29.0
+        },
+        {
+          "title": "24-pack",
+          "cans": 24,
+          "price": 54.0
+        }
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "handle": "root-beer",
+      "name": "Root Beer",
+      "tagline": "Creamy, bold, and nostalgic",
+      "fiber": "9g",
+      "line": "Classics",
+      "price": 29.0,
+      "compare_at": null,
+      "color": "#7b4526",
+      "accent": "#e9c9a6",
+      "tile_bg": "#f0e1d1",
+      "can": "cans/root-beer.svg",
+      "pack": "packs/root-beer.svg",
+      "variants": [
+        {
+          "title": "12-pack",
+          "cans": 12,
+          "price": 29.0
+        },
+        {
+          "title": "24-pack",
+          "cans": 24,
+          "price": 54.0
+        }
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      }
+    }
+  ],
+  "bundles": [
+    {
+      "handle": "fan-favorites",
+      "name": "Fan Favorites",
+      "tagline": "Four top flavors, one box",
+      "price": 36.0,
+      "flavors": [
+        "cherry-pop",
+        "orange-burst",
+        "strawberry-lime",
+        "mango-tango"
+      ],
+      "image": "variety-fan-favorites.svg"
+    },
+    {
+      "handle": "build-your-own",
+      "name": "Build your own",
+      "tagline": "Pick any 3 flavors, save 10%",
+      "pick": 3,
+      "discount_percent": 10
+    }
+  ]
+};
+  var base = (function () {
+    var s = document.currentScript && document.currentScript.src;
+    return s ? s.replace(/[^\/]*$/, "") : "";
+  })();
+  function money(n) { return "$" + Number(n).toFixed(2); }
+  var C = window.FizzCatalog = {
+    base: base,
+    data: DATA,
+    all: function () { return C.data.products.slice(); },
+    get: function (h) {
+      var a = C.data.products.concat(C.data.bundles || []);
+      for (var i = 0; i < a.length; i++) if (a[i].handle === h) return a[i];
+      return null;
+    },
+    byLine: function (l) { return C.data.products.filter(function (p) { return p.line === l; }); },
+    render: function (root) {
+      (root || document).querySelectorAll("[data-product]").forEach(function (el) {
+        var p = C.get(el.getAttribute("data-product"));
+        if (!p) return;
+        var n = el.querySelector("[data-name]"); if (n) n.textContent = p.name;
+        var pr = el.querySelector("[data-price]"); if (pr) pr.textContent = money(p.price);
+        var c = el.querySelector("[data-compare]");
+        if (c) { c.textContent = p.compare_at ? money(p.compare_at) : ""; c.hidden = !p.compare_at; }
+        var im = el.querySelector("img[data-can]");
+        if (im && p.can) { im.src = base + p.can; im.alt = p.name; }
+      });
+    }
+  };
+  try {
+    if (location.protocol !== "file:" && window.fetch) {
+      fetch(base + "products.json").then(function (r) { return r.json(); }).then(function (d) { C.data = d; C.render(document); }).catch(function () {});
+    }
+  } catch (e) {}
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", function () { C.render(document); });
+  else C.render(document);
+})();

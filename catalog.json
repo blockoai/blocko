@@ -36830,7 +36830,7 @@
           "name": "Soda product",
           "kind": "section",
           "category": "main-product",
-          "description": "Gallery, price, variant picker and one-time vs Subscribe & Save selector that posts selling_plan.",
+          "description": "Gallery, price, variant picker and a Subscribe & Save selector built from the product's selling plan groups; posts selling_plan.",
           "targets": {
             "html": "ok",
             "shopify": "ok"
@@ -37054,7 +37054,7 @@
           "name": "Soda bundle",
           "kind": "section",
           "category": "main-product",
-          "description": "Volume tier cards with per-can price and a build-your-own variety pack picker with bundle price.",
+          "description": "Volume tier cards (active AOV.ai volume offer or section tiers) and a build-your-own variety pack picker that applies the AOV.ai mix-and-match offer.",
           "targets": {
             "html": "ok",
             "shopify": "ok"

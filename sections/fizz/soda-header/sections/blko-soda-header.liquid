@@ -45,7 +45,22 @@
     </div>
   </div>
   <nav class="blko-soda-header__mobile" data-menu aria-label="Mobile">
-    {%- for link in menu.links -%}<a href="{{ link.url }}">{{ link.title }}</a>{%- endfor -%}
+    {%- for link in menu.links -%}
+      {%- if link.links.size > 0 -%}
+        <details class="blko-soda-header__sub">
+          <summary>{{ link.title }}</summary>
+          <a href="{{ link.url }}">{{ section.settings.shop_all_label }}</a>
+          {%- for child in link.links -%}
+            <a href="{{ child.url }}">{{ child.title }}</a>
+            {%- for grand in child.links -%}<a class="is-grand" href="{{ grand.url }}">{{ grand.title }}</a>{%- endfor -%}
+          {%- endfor -%}
+        </details>
+      {%- else -%}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if section.settings.find_label != blank and section.settings.find_url != blank -%}<a href="{{ section.settings.find_url }}">{{ section.settings.find_label | escape }}</a>{%- endif -%}
+    <a href="{{ routes.account_url }}">Account</a>
   </nav>
 </blko-soda-nav>
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
@@ -75,6 +90,10 @@
 .blko-soda-header__btn{align-self:center;margin-left:auto;padding:.7rem 1.4rem;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);color:var(--color-text, #0f3b2e);font:700 .95rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
 .blko-soda-header__mobile{display:none;padding:.5rem 1.25rem 1.25rem;background:var(--color-bg-alt, #f3e8cd)}
 .blko-soda-header__mobile.is-open{display:grid}
+.blko-soda-header__sub{border-bottom:1px solid var(--color-border, #dccfae)}
+.blko-soda-header__sub summary{padding:.75rem 0;font:700 1.1rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
+.blko-soda-header__sub a{display:block;padding:.55rem 0 .55rem 1rem;border-bottom:0;font-size:1rem}
+.blko-soda-header__sub a.is-grand{padding-left:2rem;font-weight:500;font-size:.95rem}
 .blko-soda-header__mobile a{padding:.75rem 0;border-bottom:1px solid var(--color-border, #dccfae);color:inherit;font:700 1.1rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
 @media(max-width:900px){.blko-soda-header__toggle{display:inline-flex}.blko-soda-header__nav{display:none}.blko-soda-header__inner{grid-template-columns:auto 1fr auto}.blko-soda-header__logo{justify-self:center}.blko-soda-header__find{display:none}}
 {% endstylesheet %}

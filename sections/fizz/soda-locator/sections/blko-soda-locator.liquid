@@ -27,7 +27,9 @@
     <ul class="blko-soda-loc__list">
       {%- for block in section.blocks -%}
         {%- if block.type == 'store' -%}
-          <li class="blko-soda-loc__store" data-store data-zip="{{ block.settings.zip | escape }}" data-flavors="{{ block.settings.flavors | downcase | replace: ', ', ',' | replace: ' ', '-' | escape }}" data-text="{{ block.settings.name | append: ' ' | append: block.settings.address | append: ' ' | append: block.settings.city | downcase | escape }}" {{ block.shopify_attributes }}>
+          {%- assign store_flavors = '' -%}
+          {%- assign flavor_list = block.settings.flavors | split: ',' -%}{%- for f in flavor_list -%}{%- assign hf = f | handleize -%}{%- assign store_flavors = store_flavors | append: hf | append: ',' -%}{%- endfor -%}
+          <li class="blko-soda-loc__store" data-store data-zip="{{ block.settings.zip | strip | escape }}" data-flavors="{{ store_flavors | escape }}" data-text="{{ block.settings.name | append: ' ' | append: block.settings.address | append: ' ' | append: block.settings.city | append: ' ' | append: block.settings.zip | downcase | escape }}" {{ block.shopify_attributes }}>
             <h3>{{ block.settings.name | escape }}</h3>
             <p>{{ block.settings.address | escape }}<br>{{ block.settings.city | escape }} {{ block.settings.zip | escape }}</p>
             <p class="blko-soda-loc__tags">{{ block.settings.flavors | escape }}</p>
@@ -49,7 +51,7 @@
 .blko-soda-loc__sub{margin:1rem 0 0;font:900 1.6rem/1.1 var(--font-heading, "Fraunces", Georgia, serif);text-align:center}
 .blko-soda-loc__chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(8.5rem,1fr));gap:.9rem}
 .blko-soda-loc__chip{display:grid;justify-items:center;gap:.5rem;padding:.8rem .6rem 1rem;border:3px solid transparent;border-radius:1.5rem;background:var(--chip, #ffc9d6);color:inherit;cursor:pointer;font:700 .95rem var(--font-body, "Outfit", sans-serif)}
-.blko-soda-loc__chip img{width:100%;aspect-ratio:1;border-radius:1rem;object-fit:cover}
+.blko-soda-loc__chip img{width:100%;height:auto;aspect-ratio:1;border-radius:1rem;object-fit:cover}
 .blko-soda-loc__chip[aria-pressed="true"]{border-color:var(--color-text, #0f3b2e);box-shadow:0 0 0 3px var(--color-announcement-bg, #cdf26b)}
 .blko-soda-loc__form{display:grid;grid-template-columns:2fr 1fr auto;gap:.75rem;align-items:end;padding:1rem;border-radius:2rem;background:var(--color-bg-alt, #f3e8cd)}
 .blko-soda-loc__form label{display:grid;gap:.3rem;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}

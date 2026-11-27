@@ -33,12 +33,17 @@ Never overwrite an existing file with the same name without comparing it first.
 | `cans_per_unit` | range | Cans per unit | 12 |
 | `buy_label` | text | Buy label | Buy |
 | `save_label` | text | Save label | Save |
+| `can_label` | text | Per-unit label | can |
+| `note_tiers` | text | Editor note: section tiers | No active AOV.ai volume offer covers this product, so these section tiers are display only. Create a Shopify automatic discount that matches each tier. |
+| `note_pack` | text | Editor note: variety pack | No active AOV.ai mix-and-match offer found. The pack discount is display only; create a matching Shopify automatic discount for items with the _bundle property. |
+| `note_aov` | text | Editor note: AOV.ai offer in use | Using the active AOV.ai offer. Its code is applied to the cart after add. |
 | `tier_add_label` | text | Add tier button label | Add to cart |
 | `pack_eyebrow` | text | Eyebrow | Build your own |
 | `pack_heading` | text | Heading | Build your own variety pack |
 | `pack_collection` | collection | Flavor collection |  |
 | `pack_size` | range | Flavors to pick | 3 |
 | `pack_discount` | range | Pack discount (%) | 10 |
+| `hint_label` | text | Hint text | Pick {left} more to save {discount} |
 | `progress_label` | text | Progress text | {picked} of {total} picked |
 | `add_label` | text | Add flavor label | Add |
 | `remove_label` | text | Remove flavor label | Remove |

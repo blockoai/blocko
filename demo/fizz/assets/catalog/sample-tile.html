@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>Fizz tiles</title>
+<style>body{margin:0;padding:24px;background:#fffaf0;font-family:Georgia,serif}.g{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:960px}
+.t{aspect-ratio:1;border-radius:calc(100%% * 20 / 600);display:flex;align-items:center;justify-content:center}.t img{height:78%%;display:block}</style>
+<div class="g" id="g"></div><script src="catalog.js"></script>
+<script>FizzCatalog.all().forEach(function(p){var d=document.createElement("div");d.className="t";d.style.background=p.tile_bg;d.innerHTML='<img src="'+p.can+'" alt="'+p.name+'">';document.getElementById("g").appendChild(d)})</script>

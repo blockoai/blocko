@@ -17,7 +17,12 @@
       {%- capture variants_json -%}[
         {%- for v in product.variants -%}
           {"id":{{ v.id }},"options":{{ v.options | json }},"available":{{ v.available | json }},"price":{{ v.price | money | json }},"compare":{% if v.compare_at_price > v.price %}{{ v.compare_at_price | money | json }}{% else %}""{% endif %},"plans":{
-            {%- for a in v.selling_plan_allocations -%}"{{ a.selling_plan.id }}":{{ a.price | money | json }}{% unless forloop.last %},{% endunless %}{%- endfor -%}
+            {%- for a in v.selling_plan_allocations -%}
+              {%- assign unit_price = a.per_delivery_price | default: a.price -%}
+              {%- assign pct = 0 -%}
+              {%- if v.price > 0 and unit_price < v.price -%}{%- assign pct = v.price | minus: unit_price | times: 100.0 | divided_by: v.price | round -%}{%- endif -%}
+              "{{ a.selling_plan.id }}":{"price":{{ unit_price | money | json }},"pct":{{ pct }}}{% unless forloop.last %},{% endunless %}
+            {%- endfor -%}
           }}{% unless forloop.last %},{% endunless %}
         {%- endfor -%}
       ]{%- endcapture -%}
@@ -36,20 +41,28 @@
           </fieldset>
         {%- endfor -%}
       {%- endunless -%}
-      {%- assign group = product.selling_plan_groups.first -%}
-      {%- if group and current.selling_plan_allocations.size > 0 -%}
+      {%- if product.selling_plan_groups.size > 0 -%}
         {%- assign first_alloc = current.selling_plan_allocations.first -%}
-        {%- assign save_pct = current.price | minus: first_alloc.price | times: 100 | divided_by: current.price -%}
-        <div class="blko-soda-purchase">
+        {%- assign first_unit = first_alloc.per_delivery_price | default: first_alloc.price | default: current.price -%}
+        {%- assign save_pct = current.price | minus: first_unit | times: 100.0 | divided_by: current.price | round -%}
+        {%- assign sub_default = section.settings.default_subscribe | default: false -%}
+        {%- if product.requires_selling_plan %}{% assign sub_default = true %}{% endif -%}
+        <div class="blko-soda-purchase" data-purchase data-save-label="{{ section.settings.save_label | escape }}" data-required="{{ product.requires_selling_plan }}"{% if current.selling_plan_allocations.size == 0 %} hidden{% endif %}>
+          {%- unless product.requires_selling_plan -%}
           <label class="blko-soda-purchase__opt">
-            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="once" {% unless section.settings.default_subscribe %}checked{% endunless %} data-purchase-type> {{ section.settings.one_time_label }}<span class="blko-soda-purchase__price" data-once-price>{{ current.price | money }}</span></span>
+            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="once" {% unless sub_default %}checked{% endunless %} data-purchase-type> {{ section.settings.one_time_label }}<span class="blko-soda-purchase__price" data-once-price>{{ current.price | money }}</span></span>
           </label>
+          {%- endunless -%}
           <label class="blko-soda-purchase__opt">
-            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="sub" {% if section.settings.default_subscribe %}checked{% endif %} data-purchase-type> {{ section.settings.subscribe_label }} <span class="blko-soda-purchase__save">{{ save_pct }}%</span><span class="blko-soda-purchase__price" data-sub-price>{{ first_alloc.price | money }}</span></span>
-            <span class="blko-soda-purchase__freq" data-freq {% unless section.settings.default_subscribe %}hidden{% endunless %}>
+            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="sub" {% if sub_default %}checked{% endif %} data-purchase-type> {{ section.settings.subscribe_label }} <span class="blko-soda-purchase__save" data-save{% unless save_pct > 0 %} hidden{% endunless %}>{{ section.settings.save_label }} {{ save_pct }}%</span><span class="blko-soda-purchase__price" data-sub-price>{{ first_unit | money }}</span></span>
+            <span class="blko-soda-purchase__freq" data-freq {% unless sub_default %}hidden{% endunless %}>
               <label for="blko-plan">{{ section.settings.frequency_label }}</label>
               <select id="blko-plan" data-plan-select>
-                {%- for plan in group.selling_plans -%}<option value="{{ plan.id }}">{{ plan.name }}</option>{%- endfor -%}
+                {%- for group in product.selling_plan_groups -%}
+                  <optgroup label="{{ group.name | escape }}">
+                    {%- for plan in group.selling_plans -%}<option value="{{ plan.id }}" data-name="{{ plan.name | escape }}">{{ plan.name | escape }}</option>{%- endfor -%}
+                  </optgroup>
+                {%- endfor -%}
               </select>
             </span>
           </label>
@@ -73,8 +86,9 @@
 
 {% stylesheet %}
 .blko-soda-pdp{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,4rem);max-width:75rem;margin:0 auto;padding:clamp(1.5rem,4vw,3rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
-.blko-soda-pdp__gallery>img{width:100%;aspect-ratio:1;border-radius:2rem;object-fit:cover;background:var(--color-bg-alt, #f3e8cd)}
-.blko-soda-pdp__thumbs{display:flex;gap:.6rem;margin-top:.8rem}
+.blko-soda-pdp__gallery{min-width:0}
+.blko-soda-pdp__gallery>img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1;border-radius:2rem;object-fit:cover;background:var(--color-bg-alt, #f3e8cd)}
+.blko-soda-pdp__thumbs{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.8rem}
 .blko-soda-pdp__thumbs button{padding:0;border:2px solid transparent;border-radius:.8rem;background:none;overflow:hidden;cursor:pointer}
 .blko-soda-pdp__thumbs button.is-active{border-color:var(--color-text, #0f3b2e)}
 .blko-soda-pdp__thumbs img{display:block;width:4.5rem;height:4.5rem;object-fit:cover}
@@ -97,6 +111,7 @@
 .blko-soda-purchase__price{margin-left:auto;font-weight:800}
 .blko-soda-purchase__save{padding:.1rem .5rem;border-radius:999px;background:var(--color-accent, #ff6b8b);font-size:.78rem;font-weight:800}
 .blko-soda-purchase__freq{display:grid;gap:.3rem;margin-top:.7rem;font-size:.9rem}
+.blko-soda-purchase[hidden],.blko-soda-purchase__freq[hidden],.blko-soda-purchase__save[hidden]{display:none}
 .blko-soda-purchase__freq select{padding:.5rem .7rem;border:2px solid var(--color-text, #0f3b2e);border-radius:.7rem;background:#fff;color:inherit}
 .blko-soda-pdp__add{display:block;width:100%;margin:.4rem 0 .6rem;padding:1rem 1.5rem;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:900 1.15rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
 .blko-soda-pdp__add:disabled{opacity:.5;cursor:not-allowed}
@@ -114,11 +129,12 @@
   "settings": [
     {"type": "text", "id": "one_time_label", "label": "One-time label", "default": "One-time purchase"},
     {"type": "text", "id": "subscribe_label", "label": "Subscribe label", "default": "Subscribe & Save"},
+    {"type": "text", "id": "save_label", "label": "Save label", "default": "Save"},
     {"type": "text", "id": "frequency_label", "label": "Frequency label", "default": "Delivery frequency"},
     {"type": "text", "id": "add_label", "label": "Add to cart label", "default": "Add to cart"},
     {"type": "text", "id": "sold_label", "label": "Sold out label", "default": "Sold out"},
     {"type": "text", "id": "shipping_note", "label": "Shipping note", "default": "Free shipping over $35. Pause or cancel any time."},
-    {"type": "checkbox", "id": "default_subscribe", "label": "Default to subscription", "default": false, "info": "Preselects Subscribe & Save when the product has a selling plan."},
+    {"type": "checkbox", "id": "default_subscribe", "label": "Default to subscription", "default": false, "info": "Preselects Subscribe & Save when the product has a selling plan. Plans, prices and percentages come from the product's selling plan groups (Shopify Subscriptions); the selector hides itself when there are none."},
     {"type": "text", "id": "perks_heading", "label": "Perks heading", "default": "How subscription works"}
   ],
   "blocks": [

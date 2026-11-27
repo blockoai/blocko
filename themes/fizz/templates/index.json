@@ -19,50 +19,50 @@
         "block-1": {
           "type": "collection",
           "settings": {
-            "tab_label": "Classics",
+            "tab_label": "Drinks",
             "collection": "drinks",
-            "note": "Classic cans, 9g fiber. Ice cold or room temp.",
-            "cta_label": "Shop classics",
+            "note": "All the cans. Ice cold or room temp.",
+            "cta_label": "Shop drinks",
             "limit": 12
           }
         },
         "block-2": {
           "type": "collection",
           "settings": {
-            "tab_label": "Fruit punch",
-            "collection": "drinks",
-            "note": "Loud, juicy and light on sugar.",
-            "cta_label": "Shop fruit punch",
+            "tab_label": "Variety packs",
+            "collection": "variety-packs",
+            "note": "Can't pick a flavor? Do not.",
+            "cta_label": "Shop variety packs",
             "limit": 12
           }
         },
         "block-3": {
           "type": "collection",
           "settings": {
-            "tab_label": "Minis",
-            "collection": "drinks",
-            "note": "Mini cans for lunchboxes and mixers.",
-            "cta_label": "Shop minis",
+            "tab_label": "Single flavor packs",
+            "collection": "single-flavor-packs",
+            "note": "Stock up on your favorite.",
+            "cta_label": "Shop single flavor packs",
             "limit": 12
           }
         },
         "block-4": {
           "type": "collection",
           "settings": {
-            "tab_label": "Limited",
-            "collection": "drinks",
-            "note": "Here for a fizzy minute.",
-            "cta_label": "Shop limited",
+            "tab_label": "9g fiber",
+            "collection": "shop-9g-fiber",
+            "note": "Classic cans, 9g of fiber.",
+            "cta_label": "Shop 9g fiber",
             "limit": 12
           }
         },
         "block-5": {
           "type": "collection",
           "settings": {
-            "tab_label": "Variety packs",
-            "collection": "drinks",
-            "note": "Can't pick a flavor? Do not.",
-            "cta_label": "Shop variety packs",
+            "tab_label": "6g fiber",
+            "collection": "shop-6g-fiber",
+            "note": "Lighter on fiber, same fizz.",
+            "cta_label": "Shop 6g fiber",
             "limit": 12
           }
         }
@@ -192,29 +192,29 @@
       "type": "blko-home-reviews",
       "settings": {
         "kicker": "10,000+ five-star reviews",
-        "quote": "“I swapped my 3pm soda for Fizz and honestly forgot I was not drinking the real thing.”",
-        "author": "— Verified customer"
+        "quote": "\u201cI swapped my 3pm soda for Fizz and honestly forgot I was not drinking the real thing.\u201d",
+        "author": "\u2014 Verified customer"
       },
       "blocks": {
         "block-1": {
           "type": "point",
           "settings": {
             "title": "Tastes like a treat",
-            "text": "Cherry Fizz is crisp, fruity and my fridge is never without it. — Maya R."
+            "text": "Cherry Fizz is crisp, fruity and my fridge is never without it. \u2014 Maya R."
           }
         },
         "block-2": {
           "type": "point",
           "settings": {
             "title": "Fizz for days",
-            "text": "Bubbles stay lively to the last sip, no sugar crash after. — Eli R."
+            "text": "Bubbles stay lively to the last sip, no sugar crash after. \u2014 Eli R."
           }
         },
         "block-3": {
           "type": "point",
           "settings": {
             "title": "The snack-slump fix",
-            "text": "Peach Rush at 3pm beats my old afternoon soda every time. — Dev P."
+            "text": "Peach Rush at 3pm beats my old afternoon soda every time. \u2014 Dev P."
           }
         }
       },

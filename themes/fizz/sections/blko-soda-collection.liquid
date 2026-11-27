@@ -4,9 +4,9 @@
     {%- if collection.description != blank -%}<p>{{ collection.description | strip_html }}</p>{%- else -%}<p>{{ section.settings.fallback_intro }}</p>{%- endif -%}
   </header>
   <nav class="blko-soda-coll__filters" aria-label="Filter">
-    <a class="{% if collection.handle == section.settings.handle_all %}is-active{% endif %}" href="{{ routes.collections_url }}/{{ section.settings.handle_all }}">{{ section.settings.tab_all }}</a>
+    <a class="{% if collection.handle == section.settings.handle_all %}is-active{% endif %}" href="{{ collections[section.settings.handle_all].url | default: routes.collections_url }}"{% if collection.handle == section.settings.handle_all %} aria-current="page"{% endif %}>{{ section.settings.tab_all }}</a>
     {%- for block in section.blocks -%}
-      <a class="{% if collection.handle == block.settings.handle %}is-active{% endif %}" href="{{ routes.collections_url }}/{{ block.settings.handle }}" {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>
+      <a class="{% if collection.handle == block.settings.handle %}is-active{% endif %}" href="{{ collections[block.settings.handle].url | default: routes.collections_url }}"{% if collection.handle == block.settings.handle %} aria-current="page"{% endif %} {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>
     {%- endfor -%}
   </nav>
   {%- paginate collection.products by section.settings.per_page -%}
@@ -65,7 +65,7 @@
       "name": "Filter tab",
       "settings": [
         {"type": "text", "id": "label", "label": "Label", "default": "Classics"},
-        {"type": "text", "id": "handle", "label": "Collection handle", "default": "drinks"}
+        {"type": "text", "id": "handle", "label": "Collection handle", "default": "drinks", "info": "Handle of a real store collection. The tab links to it."}
       ]
     }
   ],
@@ -74,10 +74,10 @@
     {
       "name": "Soda collection",
       "blocks": [
-        {"type": "filter", "settings": {"label": "Classics", "handle": "drinks"}},
-        {"type": "filter", "settings": {"label": "Fruit punch", "handle": "drinks"}},
-        {"type": "filter", "settings": {"label": "Minis", "handle": "drinks"}},
-        {"type": "filter", "settings": {"label": "Variety packs", "handle": "drinks"}}
+        {"type": "filter", "settings": {"label": "Variety packs", "handle": "variety-packs"}},
+        {"type": "filter", "settings": {"label": "Single flavor packs", "handle": "single-flavor-packs"}},
+        {"type": "filter", "settings": {"label": "9g fiber", "handle": "shop-9g-fiber"}},
+        {"type": "filter", "settings": {"label": "6g fiber", "handle": "shop-6g-fiber"}}
       ]
     }
   ]
