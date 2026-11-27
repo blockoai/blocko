@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "search-blog-search-empty": {
+      "type": "blko-search-blog-search-empty",
+      "settings": {
+        "heading": "Nothing tastes like that yet.",
+        "text": "Check the spelling, try a flavor family name or head to one of these.",
+        "tip_1": "Try broader words like “cherry”, “citrus” or “variety”.",
+        "tip_2_prefix": "Shop the",
+        "tip_2_link": "new flavors",
+        "tip_3_prefix": "Read the",
+        "tip_3_link": "latest stories",
+        "image_alt": "A cold can with condensation on a wooden table"
+      }
+    }
+  },
+  "order": [
+    "search-blog-search-empty"
+  ]
+}

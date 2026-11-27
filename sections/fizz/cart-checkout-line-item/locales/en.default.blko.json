@@ -1,0 +1,10 @@
+{
+  "blko": {
+    "cart": {
+      "decrease": "Decrease quantity",
+      "increase": "Increase quantity",
+      "line_total": "Line total",
+      "remove": "Remove"
+    }
+  }
+}

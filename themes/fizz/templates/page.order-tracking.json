@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "cart-checkout-tracking-lookup": {
+      "type": "blko-cart-checkout-tracking-lookup",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "title": "Preparing your items",
+            "text": "Your cans are being carefully packed."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "title": "On its way",
+            "text": "Tracking will appear after handoff."
+          }
+        },
+        "block-4": {
+          "type": "step",
+          "settings": {
+            "title": "Delivered",
+            "text": "Chill them and crack one open."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "cart-checkout-service-strip": {
+      "type": "blko-cart-checkout-service-strip",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "note",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "note",
+          "settings": {
+            "title": "Taste guarantee",
+            "text": "30 days, or we make it right"
+          }
+        },
+        "block-3": {
+          "type": "note",
+          "settings": {
+            "title": "Need help?",
+            "text": "We’re here for you"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "cart-checkout-tracking-lookup",
+    "cart-checkout-service-strip"
+  ]
+}

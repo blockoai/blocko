@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "account-activate": {
+      "type": "blko-account-activate",
+      "settings": {}
+    }
+  },
+  "order": [
+    "account-activate"
+  ]
+}

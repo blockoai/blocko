@@ -1,0 +1,216 @@
+{
+  "sections": {
+    "extras-subscription-manager": {
+      "type": "blko-extras-subscription-manager",
+      "settings": {
+        "eyebrow": "Fizz Club",
+        "heading": "Fizz on autopilot.",
+        "text": "Choose your flavors once. A fresh pack lands every four weeks with free shipping and a discount on every can, and you can edit it whenever you feel like it.",
+        "shipment_eyebrow": "Next shipment",
+        "shipment_heading": "Leaves the warehouse on the 18th",
+        "image_alt": "A box of Fizz cans ready to ship",
+        "variant_label": "12 cans · mixed flavors",
+        "shipment_note": "Delivered free to your saved address.",
+        "frequency_eyebrow": "Ship every",
+        "frequency_copy": "Right now you receive a pack every 4 weeks.",
+        "skip_label": "Skip this shipment",
+        "swap_label": "Swap flavors"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "frequency",
+          "settings": {
+            "label": "2 weeks"
+          }
+        },
+        "block-2": {
+          "type": "frequency",
+          "settings": {
+            "label": "4 weeks",
+            "selected": true
+          }
+        },
+        "block-3": {
+          "type": "frequency",
+          "settings": {
+            "label": "6 weeks"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-sizes": {
+      "type": "blko-subscription-sizes",
+      "settings": {
+        "kicker": "Pick a pack size",
+        "heading": "More cans, bigger savings"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "number": "4",
+            "title": "Eight cans · $19",
+            "text": "The Starter Variety 8-pack, a taste of every family."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "6",
+            "title": "Twelve cans · $29",
+            "text": "The favorite. One flavor, a full 12-pack, saves on every shipment."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "8",
+            "title": "Twenty-four cans · $49",
+            "text": "The Fizz Fridge 24-pack. Plenty for two people or a busy office."
+          }
+        },
+        "block-4": {
+          "type": "value",
+          "settings": {
+            "number": "10",
+            "title": "Forty-eight cans · $90",
+            "text": "The biggest saving, and free gifts on your first order."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "subscription-how": {
+      "type": "blko-subscription-how",
+      "settings": {
+        "eyebrow": "How Fizz Club works",
+        "heading": "Set it. Forget it. Change it.",
+        "button_label": "Start my box"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "title": "Choose",
+            "text": "Pick a pack size, then fill it with your favorite flavors."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "title": "Save",
+            "text": "Save up to 15% on every can, with free shipping."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "title": "Relax",
+            "text": "Skip, pause or cancel in your account with a couple of clicks."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "subscription-faq": {
+      "type": "blko-subscription-faq",
+      "settings": {
+        "eyebrow": "Subscription questions",
+        "heading": "Before you join the club"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "question",
+          "settings": {
+            "label": "Can I change what is in my pack?",
+            "text": "Yes. Swap flavors, add packs or remove them until the day before your shipment leaves."
+          }
+        },
+        "block-2": {
+          "type": "question",
+          "settings": {
+            "label": "What if I have too many cans?",
+            "text": "Skip a shipment or snooze for up to six months. No fees and no guilt."
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "label": "Do I get anything for subscribing?",
+            "text": "Free shipping, a discount on every order and early access to new flavors."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "label": "How do I cancel?",
+            "text": "Open your account, select your Fizz Club plan and cancel. It takes less time than cracking a can."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "product-recommendations": {
+      "type": "blko-product-recommendations",
+      "settings": {
+        "eyebrow": "Add to your pack",
+        "heading": "Fizz fans also grab these"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New flavors",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {
+        "eyebrow": "$5 off your first 12-pack",
+        "heading": "Join the fizz list",
+        "message": "New flavors, pack deals and the odd cold-can joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
+    }
+  },
+  "order": [
+    "extras-subscription-manager",
+    "subscription-sizes",
+    "subscription-how",
+    "subscription-faq",
+    "product-recommendations",
+    "newsletter"
+  ]
+}

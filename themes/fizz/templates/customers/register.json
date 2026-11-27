@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "account-register": {
+      "type": "blko-account-register",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "benefit",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Save delivery details"
+          }
+        },
+        "block-3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Move through checkout faster"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "account-register"
+  ]
+}

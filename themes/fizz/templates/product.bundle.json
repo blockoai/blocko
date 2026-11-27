@@ -1,0 +1,198 @@
+{
+  "sections": {
+    "pdp-bundle-builder": {
+      "type": "blko-pdp-bundle-builder",
+      "settings": {
+        "eyebrow": "Build your pack",
+        "heading": "Choose eight cans and save fourteen percent.",
+        "text": "Pick any flavors you like, in any mix of families. The pack price updates as you go.",
+        "saving_text": "You save 14% when the pack is full.",
+        "summary_empty": "Choose your cans to unlock the saving"
+      }
+    },
+    "pdp-bundle-explainer": {
+      "type": "blko-pdp-bundle-explainer",
+      "settings": {
+        "eyebrow": "What is in the pack",
+        "heading": "Eight cans, one fridge and a few freebies."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "heading": "Eight cans of soda",
+            "text": "Mix and match flavors from any family."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Two flavor swaps",
+            "text": "Trade any can for a flavor you have not tried yet."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Three free extras",
+            "text": "A sticker pack, a flavor guide and a Fizz Points boost ride along with every pack."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "bundle-families": {
+      "type": "blko-bundle-families",
+      "settings": {
+        "eyebrow": "Mix by family",
+        "heading": "Which flavors pair well?",
+        "all_label": "All families"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "family",
+          "settings": {
+            "label": "Citrus"
+          }
+        },
+        "block-2": {
+          "type": "family",
+          "settings": {
+            "label": "Berry"
+          }
+        },
+        "block-3": {
+          "type": "family",
+          "settings": {
+            "label": "Classic"
+          }
+        },
+        "block-4": {
+          "type": "scent",
+          "settings": {
+            "note": "Pairs with Orange Pop",
+            "price": "Add",
+            "url": "/collections/all",
+            "family": "Citrus",
+            "name": "Lemon Lime"
+          }
+        },
+        "block-5": {
+          "type": "scent",
+          "settings": {
+            "family": "Berry",
+            "name": "Berry Blast",
+            "note": "Pairs with Grape Gulp",
+            "price": "Add",
+            "url": "/collections/all"
+          }
+        },
+        "block-6": {
+          "type": "scent",
+          "settings": {
+            "family": "Classic",
+            "name": "Cherry Fizz",
+            "note": "Pairs with Peach Rush",
+            "price": "Add",
+            "url": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "bundle-promises": {
+      "type": "blko-bundle-promises",
+      "settings": {
+        "kicker": "Gift it or keep it",
+        "heading": "Good for your fridge, better as a gift"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "value",
+          "settings": {
+            "title": "30-day guarantee",
+            "text": "Not loving a flavor? Tell us within thirty days and we will sort it out."
+          }
+        },
+        "block-2": {
+          "type": "value",
+          "settings": {
+            "number": "02",
+            "title": "Gift ready",
+            "text": "Every pack arrives in a recyclable box, with a note if you want one."
+          }
+        },
+        "block-3": {
+          "type": "value",
+          "settings": {
+            "number": "03",
+            "title": "Clean ingredients",
+            "text": "Every can skips artificial sweeteners and keeps the label short."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "product-recommendations": {
+      "type": "blko-product-recommendations",
+      "settings": {
+        "eyebrow": "Add to your pack",
+        "heading": "Fizz fans also grab these"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tab",
+          "settings": {
+            "label": "Best sellers",
+            "key": "best"
+          }
+        },
+        "block-2": {
+          "type": "tab",
+          "settings": {
+            "label": "New flavors",
+            "key": "new"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2"
+      ]
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the Fizz Club",
+        "message": "New flavor drops, fridge deals and the odd cheeky pun. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
+    }
+  },
+  "order": [
+    "pdp-bundle-builder",
+    "pdp-bundle-explainer",
+    "bundle-families",
+    "bundle-promises",
+    "product-recommendations",
+    "newsletter"
+  ]
+}

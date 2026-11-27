@@ -1,0 +1,61 @@
+# Product comparison
+
+Responsive product comparison table with removable columns.
+
+- Category: page
+- Kind: section
+- Shopify target: ok
+- HTML target: gap: no static HTML demo for this theme yet
+
+## Paste this into your coding agent
+
+```text
+Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section "Product comparison" (id `global-compare-page`, theme `fizz`; Shopify bundle: sections/fizz/global-compare-page/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).
+```
+
+## Install
+
+Copy the files into the same folders of your theme, then add the section from the Theme Editor (Add section).
+Never overwrite an existing file with the same name without comparing it first.
+
+## Files
+
+- `sections/blko-global-compare-page.liquid`
+- `assets/blko-global.js`
+
+## Section settings
+
+| id | type | label | default |
+| --- | --- | --- | --- |
+| `kicker` | text | Kicker | Compare flavors |
+| `heading` | text | Heading | Find the fizz that fits. |
+| `text` | textarea | Text | Compare the flavors side by side, then choose the one that suits your sip. |
+| `details_label` | text | Details label | Details |
+| `remove_label` | text | Remove label | Remove |
+| `finish_label` | text | Finish label | Fizz level |
+| `coverage_label` | text | Coverage label | Flavor |
+| `best_for_label` | text | Best for label | Best for |
+| `price_label` | text | Price label | Price |
+| `empty_kicker` | text | Empty kicker | No products to compare |
+| `empty_heading` | text | Empty heading | Add a few flavors to see them side by side. |
+| `button_label` | text | Button label | Browse products |
+
+## Blocks
+
+### Product column (`column`, max 4)
+
+| id | type | label | default |
+| --- | --- | --- | --- |
+| `name` | text | Name | Cherry Fizz |
+| `finish` | text | Fizz level | Crisp |
+| `coverage` | text | Coverage | Cherry |
+| `best_for` | text | Best for | Everyday sipping |
+| `price` | text | Price | $29 |
+
+## Dependencies
+
+- Assets: `blko-global.js`
+- Locale keys: none
+- Theme settings read (optional, with fallbacks): none
+
+Generated file: do not edit; open an issue instead.

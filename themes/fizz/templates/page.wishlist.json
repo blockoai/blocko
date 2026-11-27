@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "global-wishlist-page": {
+      "type": "blko-global-wishlist-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "global-wishlist-page"
+  ]
+}

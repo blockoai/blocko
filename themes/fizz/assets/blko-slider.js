@@ -1,0 +1,1 @@
+class BlkoSlider extends HTMLElement{connectedCallback(){this.setAttribute('role','region');this.setAttribute('aria-roledescription','carousel')}}if(!customElements.get('blko-slider'))customElements.define('blko-slider',BlkoSlider);

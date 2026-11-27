@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "global-subscribe-success": {
+      "type": "blko-global-subscribe-success",
+      "settings": {}
+    }
+  },
+  "order": [
+    "global-subscribe-success"
+  ]
+}

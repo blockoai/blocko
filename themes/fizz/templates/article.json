@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "search-blog-article-hero": {
+      "type": "blko-search-blog-article-hero",
+      "settings": {
+        "reading_time": "5 minutes"
+      }
+    },
+    "search-blog-article-content": {
+      "type": "blko-search-blog-article-content",
+      "settings": {
+        "products_heading": "Fizz mentioned in this story",
+        "share_label": "Share the fizz",
+        "save_label": "Save for later",
+        "comments_heading": "Join the chat"
+      }
+    },
+    "search-blog-related-articles": {
+      "type": "blko-search-blog-related-articles",
+      "settings": {
+        "eyebrow": "Keep sipping",
+        "heading": "More fizz reads",
+        "link_label": "Read it"
+      }
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the Fizz Club",
+        "message": "New flavor drops, fridge deals and the odd cheeky pun. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
+    }
+  },
+  "order": [
+    "search-blog-article-hero",
+    "search-blog-article-content",
+    "search-blog-related-articles",
+    "newsletter"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "global-compare-page": {
+      "type": "blko-global-compare-page",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "column",
+          "settings": {}
+        },
+        "block-2": {
+          "type": "column",
+          "settings": {
+            "name": "Fizz Starter Variety 8-pack",
+            "finish": "Fruity, bright",
+            "coverage": "Mixed flavors",
+            "best_for": "First-time fizz fans",
+            "price": "$19"
+          }
+        },
+        "block-3": {
+          "type": "column",
+          "settings": {
+            "name": "Fizz Fridge 24-pack",
+            "finish": "Bold, crisp",
+            "coverage": "Variety",
+            "best_for": "Stocking the fridge",
+            "price": "$49"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    }
+  },
+  "order": [
+    "global-compare-page"
+  ]
+}

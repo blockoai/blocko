@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "search-blog-journal-hero": {
+      "type": "blko-search-blog-journal-hero",
+      "settings": {
+        "crumb": "The Fizz Journal",
+        "eyebrow": "The Fizz Journal",
+        "heading": "Soda talk without the sugar rush.",
+        "text": "Short reads on flavors, fiber, recipes and snack-slump swaps, written by the Fizz team.",
+        "image_alt": "A cold can of soda on a picnic blanket with fresh fruit"
+      }
+    },
+    "search-blog-featured-post": {
+      "type": "blko-search-blog-featured-post",
+      "settings": {
+        "eyebrow_prefix": "Pick of the week",
+        "reading_time": "6 minutes",
+        "button_label": "Read it"
+      }
+    },
+    "search-blog-article-grid": {
+      "type": "blko-search-blog-article-grid",
+      "settings": {
+        "eyebrow": "Browse by topic",
+        "heading": "More from the Fizz Journal",
+        "link_label": "Read it"
+      }
+    },
+    "search-blog-pagination": {
+      "type": "blko-search-blog-pagination",
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "blko-newsletter",
+      "settings": {
+        "eyebrow": "10% off your first order",
+        "heading": "Join the Fizz Club",
+        "message": "New flavor drops, fridge deals and the odd cheeky pun. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
+    }
+  },
+  "order": [
+    "search-blog-journal-hero",
+    "search-blog-featured-post",
+    "search-blog-article-grid",
+    "search-blog-pagination",
+    "newsletter"
+  ]
+}
