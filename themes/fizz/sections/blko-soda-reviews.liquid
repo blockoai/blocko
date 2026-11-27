@@ -36,6 +36,10 @@
     assign mode = 'own'
   endif
   assign can_write = section.settings.allow_reviews
+  # No reviews source yet: still let shoppers write the first review (posted to the app proxy).
+  if mode == '' and can_write
+    assign mode = 'proxy'
+  endif
   assign avg = rating
   assign total = rating_count
   assign n1 = 0
@@ -73,7 +77,7 @@
     assign avg = sum | times: 1.0 | divided_by: total
   endif
 -%}
-{%- if app_blocks.size > 0 or jdgm or use_own or request.design_mode -%}
+{%- if mode != '' or request.design_mode -%}
 <section class="blko-soda-reviews{% if can_write %} blko-soda-reviews--ours{% endif %}" id="pdp-reviews">
   <blko-soda-reviews data-mode="{{ mode }}" data-write="{% if can_write %}1{% else %}0{% endif %}" data-endpoint="{{ section.settings.review_endpoint | escape }}" data-shop="{{ shop.permanent_domain | escape }}" data-product-id="{{ product.id }}" data-handle="{{ product.handle | escape }}" data-product-title="{{ product.title | escape }}" data-name-format="{{ section.settings.name_format }}" data-success="{{ section.settings.success_message | escape }}" data-success-jdgm="{{ section.settings.success_message_judgeme | escape }}" data-error="{{ section.settings.error_message | escape }}" data-step="{{ section.settings.page_size }}" data-total="{{ total | default: 0 }}" data-count-text="{{ section.settings.count_text | escape }}">
     <h2 class="blko-soda-reviews__title">{{ section.settings.heading | escape }}</h2>
@@ -109,6 +113,12 @@
         {%- if can_write and mode != '' -%}
           <button type="button" class="blko-soda-reviews__write" aria-haspopup="dialog">{{ section.settings.write_label | escape }}</button>
         {%- endif -%}
+      </div>
+    {%- endif -%}
+    {%- if avg == blank and can_write and mode != '' -%}
+      <div class="blko-soda-reviews__first">
+        <p>{{ section.settings.first_text | escape }}</p>
+        <button type="button" class="blko-soda-reviews__write" aria-haspopup="dialog">{{ section.settings.write_label | escape }}</button>
       </div>
     {%- endif -%}
     {%- if app_blocks.size > 0 -%}
@@ -164,7 +174,7 @@
       </div>
       <p class="blko-soda-reviews__empty" data-empty hidden>{{ section.settings.empty_text | escape }} <button type="button" class="blko-soda-reviews__clear" data-clear>{{ section.settings.clear_label | escape }}</button></p>
       <div class="blko-soda-reviews__more-wrap"><button type="button" class="blko-soda-reviews__more" data-more>{{ section.settings.load_more_label | escape }}</button></div>
-    {%- elsif request.design_mode -%}
+    {%- elsif request.design_mode and mode == '' -%}
       <p class="blko-soda-reviews__note">{{ section.settings.editor_note | escape }}</p>
     {%- endif -%}
   </blko-soda-reviews>
@@ -219,6 +229,8 @@
 .blko-soda-reviews__field:focus-visible,.blko-soda-reviews__chip:focus-visible,.blko-soda-reviews__bar:focus-visible{outline:3px solid var(--color-accent,#ff6b8b);outline-offset:2px}
 .blko-soda-reviews__status{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem 1rem;margin:0 0 1rem;font-size:.9rem;font-weight:700}
 .blko-soda-reviews__clear{padding:0;border:0;background:none;color:inherit;font:700 .9rem/1 var(--font-body,"Outfit",sans-serif);text-decoration:underline;cursor:pointer}
+.blko-soda-reviews__first{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin:0 0 1.5rem;padding:1.5rem;border:1.5px dashed var(--color-text,#0f3b2e);border-radius:20px}
+.blko-soda-reviews__first p{margin:0;font-weight:700}
 .blko-soda-reviews__empty{margin:0;padding:2rem 1rem;border:1.5px dashed var(--color-text,#0f3b2e);border-radius:20px;text-align:center;font-weight:700}
 .blko-soda-review__photo{display:block;width:100%;height:9rem;border-radius:14px;object-fit:cover}
 @media(max-width:600px){.blko-soda-reviews__controls{grid-template-columns:1fr}}
@@ -296,6 +308,7 @@ select.blko-soda-rform__input{border-radius:999px}
     {"type": "text", "id": "success_message_judgeme", "label": "Success message (Judge.me)", "default": "Thanks! Your review was sent and will appear in a few minutes."},
     {"type": "text", "id": "error_message", "label": "Error message", "default": "Reviews aren't connected yet. Please try again later."},
     {"type": "text", "id": "write_label", "label": "Write a review label", "default": "Write a review"},
+    {"type": "text", "id": "first_text", "label": "No reviews yet text", "default": "No reviews yet. Be the first to tell us what you think."},
     {"type": "text", "id": "editor_note", "label": "Editor note", "default": "Add the Judge.me Review widget app block"},
     {"type": "header", "content": "Filter labels"},
     {"type": "text", "id": "all_label", "label": "All", "default": "All"},
