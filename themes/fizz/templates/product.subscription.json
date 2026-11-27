@@ -1,0 +1,249 @@
+{
+  "sections": {
+    "product": {
+      "type": "blko-soda-product",
+      "settings": {
+        "default_subscribe": true
+      },
+      "blocks": {
+        "perk-1": {
+          "type": "perk",
+          "settings": {
+            "text": "Skip any delivery"
+          }
+        },
+        "perk-2": {
+          "type": "perk",
+          "settings": {
+            "text": "Pause any time"
+          }
+        },
+        "perk-3": {
+          "type": "perk",
+          "settings": {
+            "text": "Cancel any time"
+          }
+        },
+        "perk-4": {
+          "type": "perk",
+          "settings": {
+            "text": "Free shipping on every box"
+          }
+        }
+      },
+      "block_order": [
+        "perk-1",
+        "perk-2",
+        "perk-3",
+        "perk-4"
+      ]
+    },
+    "details": {
+      "type": "blko-soda-product-details",
+      "settings": {},
+      "blocks": {
+        "benefit-1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "leaf",
+            "title": "Prebiotic fiber",
+            "text": "9g of plant fiber in every can"
+          }
+        },
+        "benefit-2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "drop",
+            "title": "2g sugar",
+            "text": "Fruit sweetened, no sugar bomb"
+          }
+        },
+        "benefit-3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "smile",
+            "title": "Gut friendly",
+            "text": "Feeds the good bacteria"
+          }
+        },
+        "benefit-4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "star",
+            "title": "Real fruit",
+            "text": "Juice, never fake flavor"
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Does it need to stay cold?",
+            "answer": "<p>Nope. Cans are shelf stable, but they taste best chilled.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I pause my subscription?",
+            "answer": "<p>Yes. Skip, pause or cancel any time from your account.</p>"
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "question": "How much fiber is in a can?",
+            "answer": "<p>Every 12 fl oz can has 9g of plant fiber, 2g sugar and 35 calories.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit-1",
+        "benefit-2",
+        "benefit-3",
+        "benefit-4",
+        "faq-1",
+        "faq-2",
+        "faq-3"
+      ]
+    },
+    "pdp-reviews": {
+      "type": "blko-pdp-reviews",
+      "settings": {
+        "eyebrow": "What fizz fans say",
+        "average": "4.5",
+        "summary": "28,412 reviews \u00b7 88% would buy again",
+        "list_heading": "Recent reviews"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "bar",
+          "settings": {
+            "percent": 71,
+            "label": "5 stars"
+          }
+        },
+        "block-2": {
+          "type": "bar",
+          "settings": {
+            "label": "4 stars",
+            "percent": 17
+          }
+        },
+        "block-3": {
+          "type": "bar",
+          "settings": {
+            "label": "3 stars",
+            "percent": 7
+          }
+        },
+        "block-4": {
+          "type": "bar",
+          "settings": {
+            "label": "2 stars",
+            "percent": 3
+          }
+        },
+        "block-5": {
+          "type": "bar",
+          "settings": {
+            "label": "1 star",
+            "percent": 2
+          }
+        },
+        "block-6": {
+          "type": "filter",
+          "settings": {
+            "label": "All"
+          }
+        },
+        "block-7": {
+          "type": "filter",
+          "settings": {
+            "label": "Flavor",
+            "key": "flavor"
+          }
+        },
+        "block-8": {
+          "type": "filter",
+          "settings": {
+            "label": "Fizz",
+            "key": "fizz"
+          }
+        },
+        "block-9": {
+          "type": "filter",
+          "settings": {
+            "label": "With photos",
+            "key": "photos"
+          }
+        },
+        "block-10": {
+          "type": "filter",
+          "settings": {
+            "label": "Value",
+            "key": "value"
+          }
+        },
+        "block-11": {
+          "type": "review",
+          "settings": {
+            "title": "Tastes like summer in a can",
+            "text": "The cherry is bright without being sweet. A week in, there is always a can chilling in my fridge.",
+            "footer": "Aaron K. \u00b7 1 week ago",
+            "tags": "flavor photos",
+            "caption": "Cherry Fizz \u00b7 photo review"
+          }
+        },
+        "block-12": {
+          "type": "review",
+          "settings": {
+            "title": "So much fizz",
+            "text": "Crisp, lively bubbles from the first pop. I stopped buying my old afternoon soda entirely.",
+            "footer": "Nate B. \u00b7 3 weeks ago",
+            "tags": "fizz",
+            "caption": ""
+          }
+        },
+        "block-13": {
+          "type": "review",
+          "settings": {
+            "title": "A bit tart for me",
+            "text": "Great can, but the lemon lime is a lot on an empty stomach. I switched to Peach Rush for my afternoon slump.",
+            "footer": "Omar S. \u00b7 2 months ago",
+            "tags": "value",
+            "caption": "",
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13"
+      ]
+    },
+    "pdp-recently-viewed": {
+      "type": "blko-pdp-recently-viewed",
+      "settings": {
+        "eyebrow": "Still thirsty?",
+        "heading": "Back where you left off"
+      }
+    }
+  },
+  "order": [
+    "product",
+    "details",
+    "pdp-reviews",
+    "pdp-recently-viewed"
+  ]
+}

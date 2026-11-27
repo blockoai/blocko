@@ -1,106 +1,222 @@
 {
   "sections": {
-    "pdp-bundle-builder": {
-      "type": "blko-pdp-bundle-builder",
-      "settings": {
-        "eyebrow": "Build your pack",
-        "heading": "Choose eight cans and save fourteen percent.",
-        "text": "Pick any flavors you like, in any mix of families. The pack price updates as you go.",
-        "saving_text": "You save 14% when the pack is full.",
-        "summary_empty": "Choose your cans to unlock the saving"
-      }
+    "product": {
+      "type": "blko-soda-product",
+      "settings": {}
     },
-    "pdp-bundle-explainer": {
-      "type": "blko-pdp-bundle-explainer",
+    "bundle": {
+      "type": "blko-soda-bundle",
       "settings": {
-        "eyebrow": "What is in the pack",
-        "heading": "Eight cans, one fridge and a few freebies."
+        "pack_size": 3,
+        "pack_discount": 10,
+        "cans_per_unit": 12
       },
       "blocks": {
-        "block-1": {
-          "type": "step",
+        "tier-1": {
+          "type": "tier",
           "settings": {
-            "heading": "Eight cans of soda",
-            "text": "Mix and match flavors from any family."
+            "quantity": 1,
+            "discount": 0
           }
         },
-        "block-2": {
-          "type": "step",
+        "tier-2": {
+          "type": "tier",
           "settings": {
-            "number": "02",
-            "heading": "Two flavor swaps",
-            "text": "Trade any can for a flavor you have not tried yet."
+            "quantity": 2,
+            "discount": 10,
+            "badge": "Popular"
           }
         },
-        "block-3": {
-          "type": "step",
+        "tier-3": {
+          "type": "tier",
           "settings": {
-            "number": "03",
-            "heading": "Three free extras",
-            "text": "A sticker pack, a flavor guide and a Fizz Points boost ride along with every pack."
+            "quantity": 3,
+            "discount": 15,
+            "badge": "Best value"
           }
         }
       },
       "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
+        "tier-1",
+        "tier-2",
+        "tier-3"
       ]
     },
-    "bundle-families": {
-      "type": "blko-bundle-families",
+    "details": {
+      "type": "blko-soda-product-details",
+      "settings": {},
+      "blocks": {
+        "benefit-1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "leaf",
+            "title": "Prebiotic fiber",
+            "text": "9g of plant fiber in every can"
+          }
+        },
+        "benefit-2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "drop",
+            "title": "2g sugar",
+            "text": "Fruit sweetened, no sugar bomb"
+          }
+        },
+        "benefit-3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "smile",
+            "title": "Gut friendly",
+            "text": "Feeds the good bacteria"
+          }
+        },
+        "benefit-4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "star",
+            "title": "Real fruit",
+            "text": "Juice, never fake flavor"
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Does it need to stay cold?",
+            "answer": "<p>Nope. Cans are shelf stable, but they taste best chilled.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I pause my subscription?",
+            "answer": "<p>Yes. Skip, pause or cancel any time from your account.</p>"
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "question": "How much fiber is in a can?",
+            "answer": "<p>Every 12 fl oz can has 9g of plant fiber, 2g sugar and 35 calories.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit-1",
+        "benefit-2",
+        "benefit-3",
+        "benefit-4",
+        "faq-1",
+        "faq-2",
+        "faq-3"
+      ]
+    },
+    "pdp-reviews": {
+      "type": "blko-pdp-reviews",
       "settings": {
-        "eyebrow": "Mix by family",
-        "heading": "Which flavors pair well?",
-        "all_label": "All families"
+        "eyebrow": "What fizz fans say",
+        "average": "4.5",
+        "summary": "28,412 reviews \u00b7 88% would buy again",
+        "list_heading": "Recent reviews"
       },
       "blocks": {
         "block-1": {
-          "type": "family",
+          "type": "bar",
           "settings": {
-            "label": "Citrus"
+            "percent": 71,
+            "label": "5 stars"
           }
         },
         "block-2": {
-          "type": "family",
+          "type": "bar",
           "settings": {
-            "label": "Berry"
+            "label": "4 stars",
+            "percent": 17
           }
         },
         "block-3": {
-          "type": "family",
+          "type": "bar",
           "settings": {
-            "label": "Classic"
+            "label": "3 stars",
+            "percent": 7
           }
         },
         "block-4": {
-          "type": "scent",
+          "type": "bar",
           "settings": {
-            "note": "Pairs with Orange Pop",
-            "price": "Add",
-            "url": "/collections/all",
-            "family": "Citrus",
-            "name": "Lemon Lime"
+            "label": "2 stars",
+            "percent": 3
           }
         },
         "block-5": {
-          "type": "scent",
+          "type": "bar",
           "settings": {
-            "family": "Berry",
-            "name": "Berry Blast",
-            "note": "Pairs with Grape Gulp",
-            "price": "Add",
-            "url": "/collections/all"
+            "label": "1 star",
+            "percent": 2
           }
         },
         "block-6": {
-          "type": "scent",
+          "type": "filter",
           "settings": {
-            "family": "Classic",
-            "name": "Cherry Fizz",
-            "note": "Pairs with Peach Rush",
-            "price": "Add",
-            "url": "/collections/all"
+            "label": "All"
+          }
+        },
+        "block-7": {
+          "type": "filter",
+          "settings": {
+            "label": "Flavor",
+            "key": "flavor"
+          }
+        },
+        "block-8": {
+          "type": "filter",
+          "settings": {
+            "label": "Fizz",
+            "key": "fizz"
+          }
+        },
+        "block-9": {
+          "type": "filter",
+          "settings": {
+            "label": "With photos",
+            "key": "photos"
+          }
+        },
+        "block-10": {
+          "type": "filter",
+          "settings": {
+            "label": "Value",
+            "key": "value"
+          }
+        },
+        "block-11": {
+          "type": "review",
+          "settings": {
+            "title": "Tastes like summer in a can",
+            "text": "The cherry is bright without being sweet. A week in, there is always a can chilling in my fridge.",
+            "footer": "Aaron K. \u00b7 1 week ago",
+            "tags": "flavor photos",
+            "caption": "Cherry Fizz \u00b7 photo review"
+          }
+        },
+        "block-12": {
+          "type": "review",
+          "settings": {
+            "title": "So much fizz",
+            "text": "Crisp, lively bubbles from the first pop. I stopped buying my old afternoon soda entirely.",
+            "footer": "Nate B. \u00b7 3 weeks ago",
+            "tags": "fizz",
+            "caption": ""
+          }
+        },
+        "block-13": {
+          "type": "review",
+          "settings": {
+            "title": "A bit tart for me",
+            "text": "Great can, but the lemon lime is a lot on an empty stomach. I switched to Peach Rush for my afternoon slump.",
+            "footer": "Omar S. \u00b7 2 months ago",
+            "tags": "value",
+            "caption": "",
+            "rating": 4
           }
         }
       },
@@ -110,89 +226,29 @@
         "block-3",
         "block-4",
         "block-5",
-        "block-6"
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13"
       ]
     },
-    "bundle-promises": {
-      "type": "blko-bundle-promises",
+    "pdp-recently-viewed": {
+      "type": "blko-pdp-recently-viewed",
       "settings": {
-        "kicker": "Gift it or keep it",
-        "heading": "Good for your fridge, better as a gift"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "value",
-          "settings": {
-            "title": "30-day guarantee",
-            "text": "Not loving a flavor? Tell us within thirty days and we will sort it out."
-          }
-        },
-        "block-2": {
-          "type": "value",
-          "settings": {
-            "number": "02",
-            "title": "Gift ready",
-            "text": "Every pack arrives in a recyclable box, with a note if you want one."
-          }
-        },
-        "block-3": {
-          "type": "value",
-          "settings": {
-            "number": "03",
-            "title": "Clean ingredients",
-            "text": "Every can skips artificial sweeteners and keeps the label short."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "product-recommendations": {
-      "type": "blko-product-recommendations",
-      "settings": {
-        "eyebrow": "Add to your pack",
-        "heading": "Fizz fans also grab these"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "tab",
-          "settings": {
-            "label": "Best sellers",
-            "key": "best"
-          }
-        },
-        "block-2": {
-          "type": "tab",
-          "settings": {
-            "label": "New flavors",
-            "key": "new"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2"
-      ]
-    },
-    "newsletter": {
-      "type": "blko-newsletter",
-      "settings": {
-        "eyebrow": "10% off your first order",
-        "heading": "Join the Fizz Club",
-        "message": "New flavor drops, fridge deals and the odd cheeky pun. Once a week, no spam.",
-        "button_label": "Get my code"
+        "eyebrow": "Still thirsty?",
+        "heading": "Back where you left off"
       }
     }
   },
   "order": [
-    "pdp-bundle-builder",
-    "pdp-bundle-explainer",
-    "bundle-families",
-    "bundle-promises",
-    "product-recommendations",
-    "newsletter"
+    "product",
+    "bundle",
+    "details",
+    "pdp-reviews",
+    "pdp-recently-viewed"
   ]
 }

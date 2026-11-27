@@ -1,0 +1,147 @@
+{%- assign current = product.selected_or_first_available_variant -%}
+{%- assign cans = section.settings.cans_per_unit | default: 1 -%}
+{%- assign pack_discount = section.settings.pack_discount | default: 10 -%}
+{%- assign pack_size = section.settings.pack_size | default: 3 -%}
+{%- assign tiers = section.blocks | where: 'type', 'tier' -%}
+<blko-soda-bundle class="blko-soda-bundle" data-price="{{ current.price }}" data-cans="{{ cans }}" data-currency="{{ cart.currency.iso_code | default: 'USD' }}" data-pack="{{ pack_size }}" data-discount="{{ pack_discount }}">
+  {%- if tiers.size > 0 -%}
+    <div class="blko-soda-bundle__block">
+      <p class="blko-soda-bundle__eyebrow">{{ section.settings.tiers_eyebrow | escape }}</p>
+      <h2>{{ section.settings.tiers_heading | escape }}</h2>
+      {%- form 'product', product, data-tier-form: '' -%}
+        <input type="hidden" name="id" value="{{ current.id }}">
+        <input type="hidden" name="quantity" value="1" data-tier-qty>
+        <div class="blko-soda-tiers" role="radiogroup" aria-label="{{ section.settings.tiers_heading | escape }}">
+          {%- for tier in tiers -%}
+            <label class="blko-soda-tier" {{ tier.shopify_attributes }}>
+              <input type="radio" name="tier" value="{{ tier.settings.quantity }}" data-tier data-off="{{ tier.settings.discount }}" {% if forloop.first %}checked{% endif %}>
+              <span class="blko-soda-tier__badge" {% if tier.settings.badge == blank %}hidden{% endif %}>{{ tier.settings.badge | escape }}</span>
+              <span class="blko-soda-tier__name">{{ section.settings.buy_label | escape }} {{ tier.settings.quantity }}</span>
+              <span class="blko-soda-tier__save">{% if tier.settings.discount > 0 %}{{ section.settings.save_label | escape }} {{ tier.settings.discount }}%{% else %}&nbsp;{% endif %}</span>
+              <span class="blko-soda-tier__per" data-tier-per></span>
+            </label>
+          {%- endfor -%}
+        </div>
+        <button type="submit" class="blko-soda-bundle__add" data-tier-add data-label="{{ section.settings.tier_add_label | escape }}" {% unless current.available %}disabled{% endunless %}>{{ section.settings.tier_add_label | escape }}</button>
+      {%- endform -%}
+    </div>
+  {%- endif -%}
+
+  <div class="blko-soda-bundle__block">
+    <p class="blko-soda-bundle__eyebrow">{{ section.settings.pack_eyebrow | escape }}</p>
+    <h2>{{ section.settings.pack_heading | escape }}</h2>
+    {%- if section.settings.pack_collection == blank -%}
+      <p class="blko-soda-bundle__empty">{{ section.settings.empty_text | escape }}</p>
+    {%- else -%}
+      {%- form 'product', product, action: '/cart/add', data-pack-form: '' -%}
+        <div class="blko-soda-pick">
+          {%- for p in section.settings.pack_collection.products limit: 12 -%}
+            {%- assign v = p.selected_or_first_available_variant -%}
+            <div class="blko-soda-pick__item" data-pick data-id="{{ v.id }}" data-price="{{ v.price }}" {% unless v.available %}data-soldout{% endunless %}>
+              {%- if p.featured_image -%}<img src="{{ p.featured_image | image_url: width: 300 }}" alt="{{ p.featured_image.alt | default: p.title | escape }}" width="150" height="150" loading="lazy">{%- endif -%}
+              <b>{{ p.title | escape }}</b>
+              <span class="blko-soda-pick__qty">
+                <button type="button" data-minus aria-label="{{ section.settings.remove_label | escape }} {{ p.title | escape }}" disabled>&minus;</button>
+                <output data-count>0</output>
+                <button type="button" data-plus aria-label="{{ section.settings.add_label | escape }} {{ p.title | escape }}" {% unless v.available %}disabled{% endunless %}>+</button>
+              </span>
+            </div>
+          {%- endfor -%}
+        </div>
+        <div class="blko-soda-pick__bar">
+          <div class="blko-soda-pick__progress"><span data-bar></span></div>
+          <p data-progress data-template="{{ section.settings.progress_label | escape }}" aria-live="polite"></p>
+          <p class="blko-soda-pick__price"><s data-was></s> <b data-total></b> <span class="blko-soda-pick__off">{{ section.settings.save_label | escape }} {{ pack_discount }}%</span></p>
+        </div>
+        <input type="hidden" data-bundle-items value="">
+        <button type="submit" class="blko-soda-bundle__add" data-pack-add data-label="{{ section.settings.pack_add_label | escape }}" disabled>{{ section.settings.pack_add_label | escape }}</button>
+      {%- endform -%}
+    {%- endif -%}
+  </div>
+</blko-soda-bundle>
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+
+{% stylesheet %}
+.blko-soda-bundle{display:grid;gap:clamp(1.5rem,4vw,3rem);max-width:75rem;margin:0 auto;padding:clamp(1.5rem,4vw,3rem) 1.25rem;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-bundle__block{padding:clamp(1.25rem,3vw,2.25rem);border:2px solid var(--color-text, #14433d);border-radius:2rem;background:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-bundle__eyebrow{margin:0;font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.blko-soda-bundle__block h2{margin:.2rem 0 1.2rem;font:800 clamp(1.6rem,3vw,2.3rem)/1.05 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-bundle__empty{margin:0}
+.blko-soda-tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:.8rem}
+.blko-soda-tier{position:relative;display:grid;gap:.15rem;padding:1.1rem 1rem;border:2px solid var(--color-text, #14433d);border-radius:1.2rem;background:#fff;text-align:center;font-weight:700;cursor:pointer}
+.blko-soda-tier input{position:absolute;opacity:0;pointer-events:none}
+.blko-soda-tier:has(input:checked){background:var(--color-announcement-bg, #d4f23c)}
+.blko-soda-tier:has(input:focus-visible){outline:3px solid var(--color-accent, #ff6b8b);outline-offset:2px}
+.blko-soda-tier__badge{position:absolute;top:-.8rem;left:50%;transform:translateX(-50%);padding:.1rem .7rem;border-radius:999px;background:var(--color-accent, #ff6b8b);font-size:.75rem;font-weight:800;white-space:nowrap}
+.blko-soda-tier__name{font:800 1.4rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-tier__save{font-size:.85rem}
+.blko-soda-tier__per{font-size:1.05rem;font-weight:800}
+.blko-soda-bundle__add{display:block;width:100%;max-width:26rem;margin:1.2rem 0 0;padding:1rem 1.5rem;border:0;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:800 1.1rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
+.blko-soda-bundle__add:disabled{opacity:.5;cursor:not-allowed}
+.blko-soda-pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(9rem,1fr));gap:.8rem}
+.blko-soda-pick__item{display:grid;gap:.4rem;justify-items:center;padding:.7rem;border:2px solid transparent;border-radius:1.2rem;background:#fff;text-align:center}
+.blko-soda-pick__item.is-picked{border-color:var(--color-text, #14433d)}
+.blko-soda-pick__item img{width:100%;aspect-ratio:1;border-radius:.9rem;object-fit:cover}
+.blko-soda-pick__item[data-soldout]{opacity:.5}
+.blko-soda-pick__qty{display:inline-flex;align-items:center;gap:.6rem}
+.blko-soda-pick__qty button{width:2.2rem;height:2.2rem;border:2px solid var(--color-text, #14433d);border-radius:50%;background:none;color:inherit;font-size:1.2rem;font-weight:800;line-height:1;cursor:pointer}
+.blko-soda-pick__qty button:disabled{opacity:.35;cursor:not-allowed}
+.blko-soda-pick__qty output{min-width:1.2rem;font-weight:800;text-align:center}
+.blko-soda-pick__bar{margin-top:1.2rem}
+.blko-soda-pick__bar p{margin:.4rem 0 0;font-weight:700}
+.blko-soda-pick__progress{height:.8rem;border-radius:999px;background:#fff;overflow:hidden}
+.blko-soda-pick__progress span{display:block;width:0;height:100%;border-radius:999px;background:var(--color-accent, #ff6b8b);transition:width .2s}
+.blko-soda-pick__price b{font:800 1.5rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-pick__price s{color:var(--color-text-muted, #3f6a64)}
+.blko-soda-pick__off{padding:.1rem .5rem;border-radius:999px;background:var(--color-announcement-bg, #d4f23c);font-size:.78rem;font-weight:800}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda bundle",
+  "tag": "section",
+  "enabled_on": {"templates": ["product"]},
+  "settings": [
+    {"type": "header", "content": "Volume tiers"},
+    {"type": "text", "id": "tiers_eyebrow", "label": "Eyebrow", "default": "Stock the fridge"},
+    {"type": "text", "id": "tiers_heading", "label": "Heading", "default": "Buy more, save more"},
+    {"type": "range", "id": "cans_per_unit", "label": "Cans per unit", "min": 1, "max": 48, "step": 1, "default": 12, "info": "Used for the per-can price. A 12-pack variant is 12."},
+    {"type": "text", "id": "buy_label", "label": "Buy label", "default": "Buy"},
+    {"type": "text", "id": "save_label", "label": "Save label", "default": "Save"},
+    {"type": "text", "id": "tier_add_label", "label": "Add tier button label", "default": "Add to cart"},
+    {"type": "header", "content": "Variety pack picker"},
+    {"type": "text", "id": "pack_eyebrow", "label": "Eyebrow", "default": "Build your own"},
+    {"type": "text", "id": "pack_heading", "label": "Heading", "default": "Build your own variety pack"},
+    {"type": "collection", "id": "pack_collection", "label": "Flavor collection"},
+    {"type": "range", "id": "pack_size", "label": "Flavors to pick", "min": 2, "max": 12, "step": 1, "default": 3},
+    {"type": "range", "id": "pack_discount", "label": "Pack discount (%)", "min": 0, "max": 50, "step": 1, "default": 10, "info": "Display only. Create a matching automatic discount in Shopify admin for items with the _bundle property."},
+    {"type": "text", "id": "progress_label", "label": "Progress text", "default": "{picked} of {total} picked", "info": "Use {picked} and {total}."},
+    {"type": "text", "id": "add_label", "label": "Add flavor label", "default": "Add"},
+    {"type": "text", "id": "remove_label", "label": "Remove flavor label", "default": "Remove"},
+    {"type": "text", "id": "pack_add_label", "label": "Add bundle button label", "default": "Add bundle to cart"},
+    {"type": "text", "id": "empty_text", "label": "Empty text", "default": "Choose a flavor collection in the section settings."}
+  ],
+  "blocks": [
+    {
+      "type": "tier",
+      "name": "Volume tier",
+      "limit": 6,
+      "settings": [
+        {"type": "range", "id": "quantity", "label": "Quantity", "min": 1, "max": 12, "step": 1, "default": 1},
+        {"type": "range", "id": "discount", "label": "Discount (%)", "min": 0, "max": 50, "step": 1, "default": 0},
+        {"type": "text", "id": "badge", "label": "Badge"}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Soda bundle",
+      "blocks": [
+        {"type": "tier", "settings": {"quantity": 1, "discount": 0}},
+        {"type": "tier", "settings": {"quantity": 2, "discount": 10, "badge": "Popular"}},
+        {"type": "tier", "settings": {"quantity": 3, "discount": 15, "badge": "Best value"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

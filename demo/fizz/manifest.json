@@ -14,7 +14,7 @@
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 9274,
+    "jsBytes": 13401,
     "industry": "beverage"
   },
   {
@@ -37,8 +37,8 @@
         "page_url": "https://unsplash.com/photos/photo-1551538827-9c037cb4f32a"
       },
       {
-        "photo_id": "photo-1559181567-c3190ca9959b",
-        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
       },
       {
         "photo_id": "photo-1600271886742-f049cd451bba",
@@ -49,7 +49,7 @@
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 9274,
+    "jsBytes": 13401,
     "industry": "beverage"
   },
   {
@@ -64,8 +64,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1559181567-c3190ca9959b",
-        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
       },
       {
         "photo_id": "photo-1600271886742-f049cd451bba",
@@ -76,7 +76,7 @@
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 9274,
+    "jsBytes": 13401,
     "industry": "beverage"
   },
   {
@@ -140,10 +140,6 @@
         "page_url": "https://unsplash.com/photos/photo-1557800636-894a64c1696f"
       },
       {
-        "photo_id": "photo-1559181567-c3190ca9959b",
-        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
-      },
-      {
         "photo_id": "photo-1595981267035-7b04ca84a82d",
         "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
       },
@@ -164,7 +160,7 @@
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 9274,
+    "jsBytes": 13401,
     "industry": "beverage"
   },
   {
@@ -198,7 +194,7 @@
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 9274,
+    "jsBytes": 13401,
     "industry": "beverage"
   },
   {
@@ -327,19 +323,19 @@
         "page_url": "https://unsplash.com/photos/photo-1497534446932-c925b458314e"
       },
       {
-        "photo_id": "photo-1559181567-c3190ca9959b",
-        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
-      },
-      {
         "photo_id": "photo-1595981267035-7b04ca84a82d",
         "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
       }
     ],
     "targets": {
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 9274,
+    "jsBytes": 13401,
     "industry": "beverage"
   },
   {
@@ -398,10 +394,6 @@
         "page_url": "https://unsplash.com/photos/photo-1557800636-894a64c1696f"
       },
       {
-        "photo_id": "photo-1559181567-c3190ca9959b",
-        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
-      },
-      {
         "photo_id": "photo-1595981267035-7b04ca84a82d",
         "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
       },
@@ -422,7 +414,7 @@
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 9274,
+    "jsBytes": 13401,
     "industry": "beverage"
   },
   {
@@ -437,8 +429,8 @@
     ],
     "credits": [
       {
-        "photo_id": "photo-1559181567-c3190ca9959b",
-        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
       },
       {
         "photo_id": "photo-1600271886742-f049cd451bba",
@@ -449,7 +441,50 @@
       "html": "ok",
       "shopify": "ok"
     },
-    "jsBytes": 9274,
+    "jsBytes": 13401,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-bundle",
+    "kind": "section",
+    "category": "main-product",
+    "name": "Soda bundle",
+    "description": "Volume tier cards with per-can price and a build-your-own variety pack picker with bundle price.",
+    "file": "fizz/sections/main-product--soda-bundle.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1497534446932-c925b458314e",
+        "page_url": "https://unsplash.com/photos/photo-1497534446932-c925b458314e"
+      },
+      {
+        "photo_id": "photo-1534353473418-4cfa6c56fd38",
+        "page_url": "https://unsplash.com/photos/photo-1534353473418-4cfa6c56fd38"
+      },
+      {
+        "photo_id": "photo-1551538827-9c037cb4f32a",
+        "page_url": "https://unsplash.com/photos/photo-1551538827-9c037cb4f32a"
+      },
+      {
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
+      },
+      {
+        "photo_id": "photo-1621263764928-df1444c5e859",
+        "page_url": "https://unsplash.com/photos/photo-1621263764928-df1444c5e859"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 13401,
     "industry": "beverage"
   }
 ]

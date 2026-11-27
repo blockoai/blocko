@@ -34,15 +34,22 @@ Never overwrite an existing file with the same name without comparing it first.
 | `add_label` | text | Add to cart label | Add to cart |
 | `sold_label` | text | Sold out label | Sold out |
 | `shipping_note` | text | Shipping note | Free shipping over $35. Pause or cancel any time. |
+| `default_subscribe` | checkbox | Default to subscription | False |
+| `perks_heading` | text | Perks heading | How subscription works |
 
 ## Blocks
 
-_No blocks._
+### Subscription perk (`perk`, max 6)
+
+| id | type | label | default |
+| --- | --- | --- | --- |
+| `text` | text | Text | Skip any delivery |
+
 
 ## Dependencies
 
 - Assets: `blko-soda.js`
 - Locale keys: none
-- Theme settings read (optional, with fallbacks): none
+- Theme settings read (optional, with fallbacks): `text`
 
 Generated file: do not edit; open an issue instead.

@@ -13,6 +13,23 @@
     ]
   },
   {
+    "page": "pdp-subscription",
+    "title": "Product (subscription)",
+    "sectionIds": [
+      "soda-product",
+      "soda-product-details"
+    ]
+  },
+  {
+    "page": "pdp-bundle",
+    "title": "Product (bundle)",
+    "sectionIds": [
+      "soda-product",
+      "soda-bundle",
+      "soda-product-details"
+    ]
+  },
+  {
     "page": "pdp",
     "title": "Product",
     "sectionIds": [

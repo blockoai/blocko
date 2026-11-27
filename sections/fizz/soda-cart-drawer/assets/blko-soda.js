@@ -120,6 +120,76 @@
     }
   });
 
+  /* Bundles: volume tier cards and a build-your-own variety pack. Posts items to /cart/add through blko-soda-cart. */
+  define('blko-soda-bundle', class extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.bound) return;
+      this.dataset.bound = '';
+      var root = this;
+      var unit = Number(root.dataset.price) || 0;
+      var cans = Number(root.dataset.cans) || 1;
+      var size = Number(root.dataset.pack) || 3;
+      var off = Number(root.dataset.discount) || 0;
+      var money = function (c) {
+        try { return new Intl.NumberFormat(document.documentElement.lang || 'en', { style: 'currency', currency: root.dataset.currency || 'USD' }).format(c / 100); }
+        catch (e) { return (c / 100).toFixed(2); }
+      };
+      var tiers = root.querySelectorAll('[data-tier]');
+      var tierQty = root.querySelector('[data-tier-qty]');
+      var tierAdd = root.querySelector('[data-tier-add]');
+      var syncTiers = function () {
+        var chosen = null;
+        tiers.forEach(function (r) {
+          var d = Number(r.dataset.off) || 0;
+          var per = Math.round(unit * (100 - d) / 100 / cans);
+          var label = r.closest('label').querySelector('[data-tier-per]');
+          if (label) label.textContent = money(per) + '/can';
+          if (r.checked) chosen = r;
+        });
+        if (!chosen) return;
+        var q = Number(chosen.value) || 1;
+        var total = Math.round(unit * q * (100 - (Number(chosen.dataset.off) || 0)) / 100);
+        if (tierQty) tierQty.value = q;
+        if (tierAdd) tierAdd.textContent = tierAdd.dataset.label + ' · ' + money(total);
+      };
+      var tf = root.querySelector('[data-tier-form]');
+      if (tf) { tf.addEventListener('change', syncTiers); syncTiers(); }
+
+      var picks = root.querySelectorAll('[data-pick]');
+      var bar = root.querySelector('[data-bar]');
+      var progress = root.querySelector('[data-progress]');
+      var was = root.querySelector('[data-was]');
+      var total = root.querySelector('[data-total]');
+      var add = root.querySelector('[data-pack-add]');
+      var items = root.querySelector('[data-bundle-items]');
+      var counts = new Map();
+      var sync = function () {
+        var n = 0, sum = 0, list = [];
+        picks.forEach(function (p) {
+          var c = counts.get(p) || 0;
+          n += c; sum += c * Number(p.dataset.price);
+          if (c) list.push({ id: Number(p.dataset.id), quantity: c, properties: { _bundle: 'variety-pack' } });
+          p.querySelector('[data-count]').textContent = c;
+          p.classList.toggle('is-picked', c > 0);
+          p.querySelector('[data-minus]').disabled = c === 0;
+          if (!p.hasAttribute('data-soldout')) p.querySelector('[data-plus]').disabled = n >= size;
+        });
+        picks.forEach(function (p) { if (!p.hasAttribute('data-soldout')) p.querySelector('[data-plus]').disabled = n >= size; });
+        if (bar) bar.style.width = Math.min(100, n / size * 100) + '%';
+        if (progress) progress.textContent = (progress.dataset.template || '{picked} of {total} picked').replace('{picked}', n).replace('{total}', size);
+        if (was) { was.textContent = sum && off ? money(sum) : ''; was.hidden = !(sum && off); }
+        if (total) total.textContent = money(Math.round(sum * (100 - off) / 100));
+        if (items) items.value = JSON.stringify(list);
+        if (add) add.disabled = n !== size;
+      };
+      picks.forEach(function (p) {
+        p.querySelector('[data-plus]').addEventListener('click', function () { counts.set(p, (counts.get(p) || 0) + 1); sync(); });
+        p.querySelector('[data-minus]').addEventListener('click', function () { counts.set(p, Math.max(0, (counts.get(p) || 0) - 1)); sync(); });
+      });
+      if (picks.length) sync();
+    }
+  });
+
   /* Cart: drawer open/close, ajax add to cart, quantity changes. Wrap the whole page in <blko-soda-cart>. */
   define('blko-soda-cart', class extends HTMLElement {
     connectedCallback() {
@@ -172,14 +242,18 @@
         var btn = f.querySelector('[type=submit]');
         if (btn) btn.disabled = true;
         var done = function () { if (btn) btn.disabled = false; };
+        var bundled = f.querySelector('[data-bundle-items]');
+        var list = null;
+        try { list = bundled && bundled.value ? JSON.parse(bundled.value) : null; } catch (err) { list = null; }
         if (demo) {
-          root.querySelectorAll('[data-cart-count]').forEach(function (c) { c.textContent = Number(c.textContent || 0) + 1; c.hidden = false; });
+          var added = list ? list.reduce(function (s, i) { return s + i.quantity; }, 0) : (Number(new FormData(f).get('quantity')) || 1);
+          root.querySelectorAll('[data-cart-count]').forEach(function (c) { c.textContent = Number(c.textContent || 0) + added; c.hidden = false; });
           open(); done(); return;
         }
         var fd = new FormData(f);
         var item = { quantity: Number(fd.get('quantity')) || 1, id: Number(fd.get('id')) };
         if (fd.get('selling_plan')) item.selling_plan = Number(fd.get('selling_plan'));
-        post('/cart/add.js', { items: [item], sections: 'cart-drawer' })
+        post('/cart/add.js', { items: list || [item], sections: 'cart-drawer' })
           .then(function (res) {
             if (res.status && res.status >= 400) { window.alert(res.description || res.message); return; }
             paint(res.sections); open();

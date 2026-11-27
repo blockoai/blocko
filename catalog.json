@@ -36847,8 +36847,12 @@
             "blko-soda.js"
           ],
           "localeKeys": [],
-          "themeSettings": [],
-          "blockTypes": []
+          "themeSettings": [
+            "text"
+          ],
+          "blockTypes": [
+            "perk"
+          ]
         },
         {
           "id": "soda-retailers",
@@ -37044,6 +37048,37 @@
           "localeKeys": [],
           "themeSettings": [],
           "blockTypes": []
+        },
+        {
+          "id": "soda-bundle",
+          "name": "Soda bundle",
+          "kind": "section",
+          "category": "main-product",
+          "description": "Volume tier cards with per-can price and a build-your-own variety pack picker with bundle price.",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "demo": "demo/fizz/sections/main-product--soda-bundle.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/sections/main-product--soda-bundle.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to implement the section \"Soda bundle\" (id `soda-bundle`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/sections/main-product--soda-bundle.html; Shopify bundle: sections/fizz/soda-bundle/ in the repo) into my project. Before changing any code, ask me where it should go — which project/theme, which page or template, and the position (e.g. after the hero) — and whether the target is a Shopify theme or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify).",
+          "bundle": "sections/fizz/soda-bundle",
+          "files": [
+            "sections/fizz/soda-bundle/sections/blko-soda-bundle.liquid",
+            "sections/fizz/soda-bundle/assets/blko-soda.js"
+          ],
+          "deps": [
+            "blko-soda.js"
+          ],
+          "localeKeys": [],
+          "themeSettings": [
+            "badge",
+            "discount",
+            "quantity"
+          ],
+          "blockTypes": [
+            "tier"
+          ]
         }
       ],
       "pages": [
@@ -37535,24 +37570,6 @@
           "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Product\" (template `pdp`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/pdp.html) in my project. It is made of these sections in order: soda-product, soda-product-details, pdp-reviews, pdp-recently-viewed (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         },
         {
-          "id": "pdp-bundle",
-          "name": "Build Your Routine",
-          "kind": "page",
-          "targets": {
-            "html": "gap: no static HTML demo for this theme yet",
-            "shopify": "ok"
-          },
-          "sections": [
-            "pdp-bundle-builder",
-            "pdp-bundle-explainer",
-            "bundle-families",
-            "bundle-promises",
-            "product-recommendations",
-            "newsletter"
-          ],
-          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Build Your Routine\" (template `pdp-bundle`, theme `fizz`) in my project. It is made of these sections in order: pdp-bundle-builder, pdp-bundle-explainer, bundle-families, bundle-promises, product-recommendations, newsletter (bundles under sections/fizz/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
-        },
-        {
           "id": "search",
           "name": "Search",
           "kind": "page",
@@ -37648,6 +37665,43 @@
           "demo": "demo/fizz/templates/our-story.html",
           "demoUrl": "https://demo.blocko.ai/html/fizz/templates/our-story.html",
           "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Our story\" (template `our-story`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/our-story.html) in my project. It is made of these sections in order: soda-story-hero, soda-story-mission, soda-two-columns, soda-story-impact, soda-retailers (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
+        },
+        {
+          "id": "pdp-subscription",
+          "name": "Fizz — Product (subscription)",
+          "kind": "page",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "sections": [
+            "soda-product",
+            "soda-product-details",
+            "pdp-reviews",
+            "pdp-recently-viewed"
+          ],
+          "demo": "demo/fizz/templates/pdp-subscription.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/templates/pdp-subscription.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Product (subscription)\" (template `pdp-subscription`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/pdp-subscription.html) in my project. It is made of these sections in order: soda-product, soda-product-details, pdp-reviews, pdp-recently-viewed (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
+        },
+        {
+          "id": "pdp-bundle",
+          "name": "Fizz — Product (bundle)",
+          "kind": "page",
+          "targets": {
+            "html": "ok",
+            "shopify": "ok"
+          },
+          "sections": [
+            "soda-product",
+            "soda-bundle",
+            "soda-product-details",
+            "pdp-reviews",
+            "pdp-recently-viewed"
+          ],
+          "demo": "demo/fizz/templates/pdp-bundle.html",
+          "demoUrl": "https://demo.blocko.ai/html/fizz/templates/pdp-bundle.html",
+          "prompt": "Use the Blocko library (https://github.com/blockoai/blocko, or the Claude Code plugin: claude plugin marketplace add blockoai/blocko && claude plugin install blocko-sections@blocko) to build the page \"Fizz — Product (bundle)\" (template `pdp-bundle`, theme `fizz`; live demo: https://demo.blocko.ai/html/fizz/templates/pdp-bundle.html) in my project. It is made of these sections in order: soda-product, soda-bundle, soda-product-details, pdp-reviews, pdp-recently-viewed (bundles under sections/fizz/, HTML in demo/fizz/sections/). Before changing any code, ask me which project/theme it belongs to, whether it should be a new page/template or replace/extend an existing one (and which), which sections to keep or drop, and whether the target is a Shopify theme (JSON template) or a plain HTML site, unless I already said; restate the plan and wait for my OK. Then follow the repo's AGENTS.md: keep the blko- class prefix and CSS tokens (with fallbacks), keep custom elements idempotent, don't touch unrelated code, run `shopify theme check` for Shopify targets, and finish by telling me how to add/arrange it (Theme Editor steps for Shopify)."
         }
       ],
       "demo": "demo/fizz"

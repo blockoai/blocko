@@ -42,11 +42,11 @@
         {%- assign save_pct = current.price | minus: first_alloc.price | times: 100 | divided_by: current.price -%}
         <div class="blko-soda-purchase">
           <label class="blko-soda-purchase__opt">
-            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="once" checked data-purchase-type> {{ section.settings.one_time_label }}<span class="blko-soda-purchase__price" data-once-price>{{ current.price | money }}</span></span>
+            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="once" {% unless section.settings.default_subscribe %}checked{% endunless %} data-purchase-type> {{ section.settings.one_time_label }}<span class="blko-soda-purchase__price" data-once-price>{{ current.price | money }}</span></span>
           </label>
           <label class="blko-soda-purchase__opt">
-            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="sub" data-purchase-type> {{ section.settings.subscribe_label }} <span class="blko-soda-purchase__save">{{ save_pct }}%</span><span class="blko-soda-purchase__price" data-sub-price>{{ first_alloc.price | money }}</span></span>
-            <span class="blko-soda-purchase__freq" data-freq hidden>
+            <span class="blko-soda-purchase__row"><input type="radio" name="purchase_type" value="sub" {% if section.settings.default_subscribe %}checked{% endif %} data-purchase-type> {{ section.settings.subscribe_label }} <span class="blko-soda-purchase__save">{{ save_pct }}%</span><span class="blko-soda-purchase__price" data-sub-price>{{ first_alloc.price | money }}</span></span>
+            <span class="blko-soda-purchase__freq" data-freq {% unless section.settings.default_subscribe %}hidden{% endunless %}>
               <label for="blko-plan">{{ section.settings.frequency_label }}</label>
               <select id="blko-plan" data-plan-select>
                 {%- for plan in group.selling_plans -%}<option value="{{ plan.id }}">{{ plan.name }}</option>{%- endfor -%}
@@ -60,6 +60,13 @@
       {{ form | payment_button }}
     {%- endform -%}
     <p class="blko-soda-pdp__ship">{{ section.settings.shipping_note }}</p>
+    {%- assign perks = section.blocks | where: 'type', 'perk' -%}
+    {%- if perks.size > 0 -%}
+      <div class="blko-soda-perks">
+        <h2>{{ section.settings.perks_heading | escape }}</h2>
+        <ul>{%- for perk in perks -%}<li {{ perk.shopify_attributes }}>{{ perk.settings.text | escape }}</li>{%- endfor -%}</ul>
+      </div>
+    {%- endif -%}
   </div>
 </blko-soda-product>
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
@@ -94,6 +101,10 @@
 .blko-soda-pdp__add{display:block;width:100%;margin:.4rem 0 .6rem;padding:1rem 1.5rem;border:0;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:800 1.15rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
 .blko-soda-pdp__add:disabled{opacity:.5;cursor:not-allowed}
 .blko-soda-pdp__ship{margin:.8rem 0 0;font-size:.9rem}
+.blko-soda-perks{margin-top:1.2rem;padding:1rem 1.2rem;border:2px dashed var(--color-text, #14433d);border-radius:1.1rem}
+.blko-soda-perks h2{margin:0 0 .6rem;font:800 1.1rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-perks ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem .8rem;margin:0;padding:0;list-style:none;font-size:.92rem;font-weight:700}
+.blko-soda-perks li::before{content:"\2713";margin-right:.4rem;color:var(--color-accent, #ff6b8b)}
 @media(max-width:800px){.blko-soda-pdp{grid-template-columns:1fr}}
 {% endstylesheet %}
 
@@ -106,7 +117,15 @@
     {"type": "text", "id": "frequency_label", "label": "Frequency label", "default": "Delivery frequency"},
     {"type": "text", "id": "add_label", "label": "Add to cart label", "default": "Add to cart"},
     {"type": "text", "id": "sold_label", "label": "Sold out label", "default": "Sold out"},
-    {"type": "text", "id": "shipping_note", "label": "Shipping note", "default": "Free shipping over $35. Pause or cancel any time."}
+    {"type": "text", "id": "shipping_note", "label": "Shipping note", "default": "Free shipping over $35. Pause or cancel any time."},
+    {"type": "checkbox", "id": "default_subscribe", "label": "Default to subscription", "default": false, "info": "Preselects Subscribe & Save when the product has a selling plan."},
+    {"type": "text", "id": "perks_heading", "label": "Perks heading", "default": "How subscription works"}
+  ],
+  "blocks": [
+    {"type": "perk", "name": "Subscription perk", "limit": 6, "settings": [{"type": "text", "id": "text", "label": "Text", "default": "Skip any delivery"}]}
+  ],
+  "presets": [
+    {"name": "Soda product"}
   ]
 }
 {% endschema %}
