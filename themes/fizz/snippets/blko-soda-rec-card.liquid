@@ -8,6 +8,7 @@
 {%- if variant -%}
   <li class="blko-soda-rec" data-rec-id="{{ product.id }}">
     <a class="blko-soda-rec__img" href="{{ product.url }}"{% if tile %} style="--tile-bg:var(--color-pastel-{{ tile }}, #ffc9d6)"{% endif %}>{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 280 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" width="100" height="100" loading="lazy">{%- endif -%}</a>
+    {% render 'blko-soda-heart', product: product, small: true %}
     <a class="blko-soda-rec__name" href="{{ product.url }}">{{ product.title | escape }}</a>
     <p class="blko-soda-rec__price">{%- if variant.compare_at_price > variant.price -%}<s>{{ variant.compare_at_price | money }}</s>{%- endif -%}<span>{{ variant.price | money }}</span></p>
     <button type="button" class="blko-soda-rec__add" data-add-to-cart data-id="{{ variant.id }}"{% if product.requires_selling_plan %} data-selling-plan="{{ product.selling_plan_groups.first.selling_plans.first.id }}"{% endif %}>{{ add_label | default: '+ Add' }}</button>

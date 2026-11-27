@@ -172,5 +172,12 @@
       "soda-quote-wall",
       "soda-why"
     ]
+  },
+  {
+    "page": "wishlist",
+    "title": "Wishlist",
+    "sectionIds": [
+      "soda-wishlist"
+    ]
   }
 ]

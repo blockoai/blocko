@@ -1,0 +1,116 @@
+{%- comment -%}
+  Wishlist page. Saved handles live in the browser (localStorage "blko-wishlist"); blko-soda-wishlist.js renders the grid with
+  fetch('/products/<handle>.js'), skipping handles that 404. Share links use ?items=handle1,handle2 and open read-only.
+{%- endcomment -%}
+{%- assign recs = section.settings.recs_collection | default: collections.all -%}
+<blko-soda-wishlist-page class="blko-soda-wl" data-root="{{ routes.root_url }}" data-add-label="{{ section.settings.add_label | escape }}" data-badge="{{ 'fizz-badge-sale.svg' | asset_url }}" data-sale-label="{{ section.settings.sale_label | escape }}" data-currency="{{ cart.currency.iso_code }}" data-count-one="{{ section.settings.count_one | escape }}" data-count-other="{{ section.settings.count_other | escape }}">
+  <header class="blko-soda-wl__hero">
+    <h1>{{ section.settings.heading | escape }}</h1>
+    <p class="blko-soda-wl__count" data-wl-count aria-live="polite" hidden></p>
+  </header>
+  <div class="blko-soda-wl__shared" data-wl-shared hidden>
+    <p>{{ section.settings.shared_text | escape }}</p>
+    <button type="button" class="blko-soda-wl__btn blko-soda-wl__btn--solid" data-wl-merge>{{ section.settings.merge_label | escape }}</button>
+  </div>
+  <div class="blko-soda-wl__bar" data-wl-bar hidden>
+    <button type="button" class="blko-soda-wl__btn blko-soda-wl__btn--solid" data-wl-add-all>{{ section.settings.add_all_label | escape }}</button>
+    <button type="button" class="blko-soda-wl__btn" data-wl-share>{{ section.settings.share_label | escape }}</button>
+    <button type="button" class="blko-soda-wl__btn" data-wl-clear>{{ section.settings.clear_label | escape }}</button>
+  </div>
+  <ul class="blko-soda-wl__grid" data-wl-grid aria-live="polite"></ul>
+  <div class="blko-soda-wl__empty" data-wl-empty hidden>
+    <svg class="blko-soda-wl__art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 536" width="150" height="268" role="img" aria-label="Soda can with a heart"><g transform="translate(0 -22)"><path d="M62 524Q62 534 76 536L224 536Q238 534 238 524L238 500L62 500Z" fill="#d9dde0"/><path d="M50 112Q50 96 66 90L84 56Q150 44 216 56L234 90Q250 96 250 112L250 500Q150 512 50 500Z" fill="#d9dde0"/><path d="M50 112L250 112L250 500Q150 512 50 500Z" fill="#ff6b8b"/><path d="M50 112Q150 122 250 112" fill="none" stroke="#5a1a2b" stroke-width="3" opacity=".5"/><path d="M84 56Q150 44 216 56L234 90L66 90Z" fill="#c5cacf"/><ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/><ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/><rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/><rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/><rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/><rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/><rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/><rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/><path id="wl-arc-{{ section.id }}" d="M68 190Q150 130 232 190" fill="none"/><text font-family="Fraunces,Georgia,serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#5a1a2b" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#wl-arc-{{ section.id }}" startOffset="50%">fizz</textPath></text><circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#5a1a2b" stroke-width="3"/><circle cx="150" cy="292" r="67" fill="#ffd0d6" opacity=".55"/><path d="M150 342C112 314 98 292 98 270C98 250 112 238 128 238C140 238 148 245 150 254C152 245 160 238 172 238C188 238 202 250 202 270C202 292 188 314 150 342Z" fill="none" stroke="#5a1a2b" stroke-width="6" stroke-linejoin="round" stroke-dasharray="2 11" stroke-linecap="round"/><circle cx="262" cy="170" r="9" fill="#cdf26b" stroke="#0f3b2e" stroke-width="3"/><circle cx="282" cy="120" r="6" fill="#fff3d6" stroke="#0f3b2e" stroke-width="3"/><circle cx="30" cy="150" r="7" fill="#cdf26b" stroke="#0f3b2e" stroke-width="3"/></g></svg>
+    <h2>{{ section.settings.empty_heading | escape }}</h2>
+    <p>{{ section.settings.empty_text | escape }}</p>
+    <a class="blko-soda-wl__btn blko-soda-wl__btn--solid" href="{{ section.settings.cta_url | default: routes.collections_url }}">{{ section.settings.cta_label | escape }}</a>
+    {%- if recs.products_count > 0 -%}
+      <section class="blko-soda-wl__recs" aria-labelledby="wl-recs-{{ section.id }}">
+        <h3 id="wl-recs-{{ section.id }}">{{ section.settings.recs_heading | escape }}</h3>
+        <ul>
+          {%- for product in recs.products limit: 4 -%}<li class="blko-soda-wl__item">{% render 'blko-soda-product-card', product: product, add_label: section.settings.add_label %}</li>{%- endfor -%}
+        </ul>
+      </section>
+    {%- endif -%}
+  </div>
+</blko-soda-wishlist-page>
+<script type="module" src="{{ 'blko-soda-wishlist.js' | asset_url }}"></script>
+
+{% stylesheet %}
+/* wishlist page */
+.blko-soda-wl{max-width:none;padding-bottom:clamp(3rem,7vw,5rem);background:var(--color-bg, #fbf3e2);color:var(--color-text, #0f3b2e);font-family:var(--font-body, "Outfit", sans-serif)}
+.blko-soda-wl__hero{padding:clamp(2.5rem,6vw,4.5rem) 1.25rem 1.5rem;text-align:center}
+.blko-soda-wl__hero h1{margin:0;font:900 clamp(2.4rem,6vw,4rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-wl__count{margin:.8rem 0 0;font:500 1.1rem/1.3 var(--font-body, "Outfit", sans-serif);color:var(--color-text-muted, #4a6a5c)}
+.blko-soda-wl__shared{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.25rem;max-width:75rem;margin:0 auto 1.5rem;padding:.8rem 1.4rem;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);font-weight:600}
+.blko-soda-wl__shared[hidden],.blko-soda-wl__bar[hidden],.blko-soda-wl__empty[hidden],.blko-soda-wl__grid[hidden]{display:none}
+.blko-soda-wl__shared p{margin:0}
+.blko-soda-wl__bar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;max-width:75rem;margin:0 auto 2rem;padding:0 1.25rem}
+.blko-soda-wl__btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 1.4rem;border:3px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:var(--color-text, #0f3b2e);font:700 1rem/1 var(--font-body, "Outfit", sans-serif);text-decoration:none;cursor:pointer;transition:background-color .25s ease-in-out,color .25s ease-in-out,box-shadow .2s ease}
+.blko-soda-wl__btn:hover:not(:disabled){background:#fff;box-shadow:4px 4px 0 0 var(--flv-accent, #ffd0d6)}
+.blko-soda-wl__btn--solid{background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff)}
+.blko-soda-wl__btn--solid:hover:not(:disabled){background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff)}
+.blko-soda-wl__btn:disabled{opacity:.5;cursor:not-allowed}
+.blko-soda-wl__btn:focus-visible,.blko-soda-wl__add:focus-visible,.blko-soda-wl__select:focus-visible{outline:3px solid var(--color-accent, #ff6b8b);outline-offset:2px}
+.blko-soda-wl__grid,.blko-soda-wl__recs ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2.25rem 1.25rem;max-width:75rem;margin:0 auto;padding:0 1.25rem;list-style:none}
+.blko-soda-wl-card{display:flex;flex-direction:column;gap:.9rem;height:100%}
+.blko-soda-wl-card .blko-soda-card__media-wrap{position:relative;overflow:hidden;border-radius:16px}
+.blko-soda-wl-card .blko-soda-card__media{display:block;position:relative}
+.blko-soda-wl-card .blko-soda-tile{position:relative;display:block;aspect-ratio:1/1;border-radius:16px;background:transparent;overflow:hidden;isolation:isolate}
+.blko-soda-wl-card .blko-soda-tile::before{content:"";position:absolute;inset:0;z-index:0;border-radius:16px;background:var(--tile-bg, #fde1e3);opacity:0;transition:opacity .5s ease-in-out}
+.blko-soda-wl-card .blko-soda-tile__img{position:absolute;max-width:none;transition:opacity .5s ease-in-out}
+.blko-soda-wl-card .blko-soda-tile__img--can{left:2%;top:2%;width:96%;height:96%;object-fit:contain}
+.blko-soda-wl-card .blko-soda-tile__img--alt{left:0;top:0;width:100%;height:100%;object-fit:cover;opacity:0}
+.blko-soda-wl-card .blko-soda-card__media-wrap:hover .blko-soda-tile::before,.blko-soda-wl-card .blko-soda-card__media:focus-visible .blko-soda-tile::before{opacity:1}
+.blko-soda-wl-card .blko-soda-card__media-wrap:hover .blko-soda-tile__img--alt,.blko-soda-wl-card .blko-soda-card__media:focus-visible .blko-soda-tile__img--alt{opacity:1}
+.blko-soda-wl-card .blko-soda-card__media-wrap:hover .blko-soda-tile__img--can,.blko-soda-wl-card .blko-soda-card__media:focus-visible .blko-soda-tile__img--can{opacity:0}
+.blko-soda-wl-card .blko-soda-tile__badge{position:absolute;top:.6rem;right:.6rem;z-index:2;width:64px;height:auto;pointer-events:none}
+.blko-soda-wl-card__info{display:flex;flex:1;flex-direction:column;align-items:center;gap:.25rem;text-align:center}
+.blko-soda-wl-card__title{margin:0;font:500 17px/1.3 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-wl-card__title a{color:inherit;text-decoration:none}
+.blko-soda-wl-card__price{margin:0;font:500 15px/1.3 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-wl-card__price s{margin-right:.35rem;color:var(--color-text-muted, #4a6a5c)}
+.blko-soda-wl__buy{display:grid;gap:.5rem;width:100%;margin-top:auto;padding-top:.4rem}
+.blko-soda-wl__select{width:100%;height:40px;padding:0 1rem;border:1.5px solid var(--color-text, #0f3b2e);border-radius:999px;background:#fff;color:inherit;font:500 15px var(--font-body, "Outfit", sans-serif)}
+.blko-soda-wl__add{display:flex;align-items:center;justify-content:center;width:100%;height:40px;padding:0 1rem;border:0;border-radius:50px;background:var(--color-text, #0f3b2e);color:#fff;font:600 15px/1 var(--font-body, "Outfit", sans-serif);text-decoration:none;cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-wl__add:hover:not(:disabled){background:#1f5a44}
+.blko-soda-wl__add:disabled{opacity:.5;cursor:not-allowed}
+.blko-soda-wl__skel .blko-soda-tile{aspect-ratio:1/1;border-radius:16px;background:linear-gradient(100deg,rgba(15,59,46,.06) 30%,rgba(15,59,46,.14) 50%,rgba(15,59,46,.06) 70%) 0 0/200% 100%;animation:blko-soda-shimmer 1.2s linear infinite}
+.blko-soda-wl__skel i{display:block;height:14px;margin:.5rem auto 0;border-radius:7px;background:rgba(15,59,46,.1)}
+@keyframes blko-soda-shimmer{to{background-position:-200% 0}}
+.blko-soda-wl__empty{max-width:75rem;margin:0 auto;padding:0 1.25rem;text-align:center}
+.blko-soda-wl__art{display:block;width:150px;height:auto;margin:0 auto 1rem}
+.blko-soda-wl__empty h2{margin:0;font:900 clamp(1.8rem,4vw,2.6rem)/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-wl__empty>p{margin:.7rem 0 1.5rem;color:var(--color-text-muted, #4a6a5c)}
+.blko-soda-wl__recs{margin-top:clamp(2.5rem,6vw,4rem)}
+.blko-soda-wl__recs h3{margin:0 0 1.5rem;font:900 clamp(1.4rem,3vw,2rem)/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-wl__recs ul{padding:0}
+@media(max-width:989px){.blko-soda-wl__grid,.blko-soda-wl__recs ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.blko-soda-wl__grid,.blko-soda-wl__recs ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.75rem .85rem}.blko-soda-wl__shared{border-radius:20px}.blko-soda-wl__bar .blko-soda-wl__btn{flex:1 1 40%}}
+@media(prefers-reduced-motion:reduce){.blko-soda-wl *,.blko-soda-wl .blko-soda-tile::before{transition-duration:.01ms!important}.blko-soda-wl__skel .blko-soda-tile{animation:none}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda wishlist",
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Your wishlist"},
+    {"type": "text", "id": "count_one", "label": "Count (one item)", "default": "{n} saved item", "info": "{n} is replaced with the number."},
+    {"type": "text", "id": "count_other", "label": "Count (many items)", "default": "{n} saved items"},
+    {"type": "text", "id": "add_label", "label": "Quick add label", "default": "Add 12-pack"},
+    {"type": "text", "id": "sale_label", "label": "Sale badge text", "default": "Sale"},
+    {"type": "text", "id": "add_all_label", "label": "Add all button", "default": "Add all to cart"},
+    {"type": "text", "id": "share_label", "label": "Share button", "default": "Share wishlist"},
+    {"type": "text", "id": "clear_label", "label": "Clear button", "default": "Clear wishlist"},
+    {"type": "text", "id": "shared_text", "label": "Shared list banner", "default": "Someone shared this wishlist with you."},
+    {"type": "text", "id": "merge_label", "label": "Shared list button", "default": "Add all to my wishlist"},
+    {"type": "header", "content": "Empty state"},
+    {"type": "text", "id": "empty_heading", "label": "Heading", "default": "Nothing saved yet"},
+    {"type": "text", "id": "empty_text", "label": "Text", "default": "Tap the heart on any flavor and it will wait for you here."},
+    {"type": "text", "id": "cta_label", "label": "Button label", "default": "Shop flavors"},
+    {"type": "url", "id": "cta_url", "label": "Button link", "info": "Defaults to the collections page."},
+    {"type": "text", "id": "recs_heading", "label": "Recommendations heading", "default": "You might like"},
+    {"type": "collection", "id": "recs_collection", "label": "Recommendations collection", "info": "Four products from this collection. Defaults to all products."}
+  ],
+  "presets": [{"name": "Soda wishlist"}]
+}
+{% endschema %}

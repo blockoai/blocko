@@ -97,7 +97,7 @@
             <p class="blko-soda-pick__hint" data-hint data-template="{{ section.settings.hint_label | escape }}" aria-live="polite"></p>
           </div>
           <input type="hidden" data-bundle-items value="">
-          <button type="submit" class="blko-soda-bundle__add" data-pack-add data-label="{{ section.settings.builder_add_label | escape }}" disabled>{{ section.settings.builder_add_label | escape }}</button>
+          <div class="blko-soda-buy"><button type="submit" class="blko-soda-bundle__add" data-pack-add data-label="{{ section.settings.builder_add_label | escape }}" disabled>{{ section.settings.builder_add_label | escape }}</button>{% render 'blko-soda-wish', product: product %}</div>
           <button type="button" class="blko-soda-pack__surprise" data-surprise>{{ section.settings.surprise_label | escape }}</button>
         {%- endform -%}
       </div>
@@ -186,7 +186,7 @@
               </label>
             </div>
           {%- endif -%}
-          <button type="submit" class="blko-soda-bundle__add" data-tier-add data-label="{{ section.settings.tier_add_label | escape }}" {% unless current.available %}disabled{% endunless %}>{{ section.settings.tier_add_label | escape }}</button>
+          <div class="blko-soda-buy"><button type="submit" class="blko-soda-bundle__add" data-tier-add data-label="{{ section.settings.tier_add_label | escape }}" {% unless current.available %}disabled{% endunless %}>{{ section.settings.tier_add_label | escape }}</button>{% render 'blko-soda-wish', product: product %}</div>
         {%- endform -%}
       </div>
 

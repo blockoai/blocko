@@ -26,7 +26,7 @@
             {%- if block.settings.parent_title != blank -%}
               {%- for top in block.settings.menu.links -%}{%- if top.title == block.settings.parent_title -%}{%- assign col_links = top.links -%}{%- endif -%}{%- endfor -%}
             {%- endif -%}
-            <ul>{%- for link in col_links -%}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{%- endfor -%}</ul>
+            <ul>{%- for link in col_links -%}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{%- endfor -%}{%- if block.settings.wishlist_label != blank -%}<li><a href="{{ routes.root_url }}pages/wishlist">{{ block.settings.wishlist_label | escape }}</a></li>{%- endif -%}</ul>
           </div>
         {%- endif -%}{%- endfor -%}
       </nav>
@@ -100,6 +100,7 @@
       "settings": [
         {"type": "text", "id": "title", "label": "Title", "default": "Shop"},
         {"type": "link_list", "id": "menu", "label": "Menu", "default": "footer"},
+        {"type": "text", "id": "wishlist_label", "label": "Wishlist link label", "info": "Optional. Adds a link to /pages/wishlist at the end of this column. Leave empty to hide it."},
         {"type": "text", "id": "parent_title", "label": "Show children of this menu item", "info": "Optional. Type the title of a top-level link (for example Shop) to list only its child links."}
       ]
     }

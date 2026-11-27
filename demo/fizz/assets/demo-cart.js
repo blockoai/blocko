@@ -109,6 +109,7 @@
   var recCard = function (id, tile) {
     var c = CATALOG[id], pdp = url('../templates/pdp.html') + '?flavor=' + c[6];
     return '<li class="blko-soda-rec" data-rec-id="' + id + '"><a class="blko-soda-rec__img" href="' + pdp + '"' + (tile ? ' style="--tile-bg:' + c[5] + '"' : '') + '><img src="' + esc(c[3]) + '" alt="' + esc(c[0]) + '" width="100" height="100" loading="lazy"></a>' +
+      '<button type="button" class="blko-soda-heart blko-soda-heart--sm" data-wishlist-toggle data-handle="' + c[6] + '" data-name="' + esc(c[0]) + '" aria-pressed="false" aria-label="Save ' + esc(c[0]) + ' to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5C5.5 16 3 12.6 3 9.2 3 6.6 5 4.8 7.3 4.8c1.8 0 3.5 1 4.7 2.9 1.2-1.9 2.9-2.9 4.7-2.9C19 4.8 21 6.6 21 9.2c0 3.4-2.5 6.8-9 11.3z"/></svg></button>' +
       '<a class="blko-soda-rec__name" href="' + pdp + '">' + esc(c[0]) + '</a>' +
       '<p class="blko-soda-rec__price">' + (c[4] > c[2] ? '<s>' + money(c[4]) + '</s>' : '') + '<span>' + money(c[2]) + '</span></p>' +
       '<button type="button" class="blko-soda-rec__add" data-add-to-cart data-id="' + id + '">+ Add</button></li>';

@@ -865,5 +865,23 @@
     },
     "jsBytes": 5501,
     "industry": "beverage"
+  },
+  {
+    "id": "soda-wishlist",
+    "kind": "section",
+    "category": "wishlist",
+    "name": "Soda wishlist",
+    "description": "Wishlist page: saved flavors grid with quick add, add all to cart, share link, read-only shared view and an empty state with recommendations.",
+    "file": "fizz/sections/wishlist--soda-wishlist.html",
+    "deps": [
+      "assets/blko-soda-wishlist.js"
+    ],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 22257,
+    "industry": "beverage"
   }
 ]

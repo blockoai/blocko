@@ -1,0 +1,6 @@
+{%- doc -%}
+  Wishlist pill for product pages: "Save to wishlist" / "Saved", or icon only in the sticky bar.
+  @param {product} product - Product to save
+  @param {boolean} [icon] - Icon only
+{%- enddoc -%}
+<button type="button" class="blko-soda-wish{% if icon %} blko-soda-wish--icon{% endif %}" data-wishlist-toggle data-handle="{{ product.handle | escape }}" data-name="{{ product.title | escape }}" aria-pressed="false"{% if icon %} aria-label="Save {{ product.title | escape }} to wishlist"{% endif %}><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5C5.5 16 3 12.6 3 9.2 3 6.6 5 4.8 7.3 4.8c1.8 0 3.5 1 4.7 2.9 1.2-1.9 2.9-2.9 4.7-2.9C19 4.8 21 6.6 21 9.2c0 3.4-2.5 6.8-9 11.3z"/></svg>{% unless icon %}<span data-wl-text>Save to wishlist</span>{% endunless %}</button>

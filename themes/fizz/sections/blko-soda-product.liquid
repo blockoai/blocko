@@ -91,7 +91,10 @@
           <input type="hidden" name="selling_plan" value="" data-selling-plan disabled>
         </div>
       {%- endif -%}
+      <div class="blko-soda-buy">
       <button type="submit" class="blko-soda-pdp__add" data-submit data-add="{{ section.settings.add_label }}" data-sold="{{ section.settings.sold_label }}" {% unless current.available %}disabled{% endunless %}>{% if current.available %}{{ section.settings.add_label }}{% else %}{{ section.settings.sold_label }}{% endif %}</button>
+      {% render 'blko-soda-wish', product: product %}
+      </div>
       {{ form | payment_button }}
     {%- endform -%}
     <p class="blko-soda-pdp__ship">{{ section.settings.shipping_note }}</p>
@@ -109,6 +112,7 @@
       <b class="blko-soda-sticky__name">{{ product.title }}</b>
       <span class="blko-soda-sticky__opt" data-sticky-opt>{{ current.title }}</span>
       <span class="blko-soda-sticky__price"><s data-sticky-compare{% unless current.compare_at_price > current.price %} hidden{% endunless %}>{{ current.compare_at_price | money }}</s><b data-sticky-price>{{ current.price | money }}</b></span>
+      {% render 'blko-soda-wish', product: product, icon: true %}
       <button type="button" class="blko-soda-sticky__btn" data-sticky-add tabindex="-1"{% unless current.available %} disabled{% endunless %}>{% if current.available %}{{ section.settings.add_label }}{% else %}{{ section.settings.sold_label }}{% endif %}</button>
     </div>
   </div>

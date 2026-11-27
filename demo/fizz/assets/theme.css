@@ -1209,3 +1209,80 @@ blko-soda-slider[loop] .blko-soda-slider__track{gap:0}
 .blko-soda-bxitem label{grid-template-columns:auto 2.4rem minmax(0,1fr) auto;gap:.5rem;padding:.5rem .6rem}
 .blko-soda-bxitem__img{width:2.4rem;height:2.4rem}
 }
+
+/* wishlist: heart toggle, PDP pill, header link, toast */
+.blko-soda-heart{position:absolute;top:12px;left:12px;z-index:4;display:inline-grid;place-items:center;width:36px;height:36px;margin:0;padding:0;border:1.5px solid var(--color-text, #0f3b2e);border-radius:50%;background:var(--color-bg, #fbf3e2);color:var(--color-text, #0f3b2e);cursor:pointer;transition:background-color .25s ease-in-out,border-color .25s ease-in-out}
+.blko-soda-heart:hover{background:#fff}
+.blko-soda-heart:focus-visible,.blko-soda-wish:focus-visible{outline:3px solid var(--color-accent, #ff6b8b);outline-offset:2px}
+.blko-soda-heart svg,.blko-soda-wish svg{width:18px;height:18px;flex:none;fill:transparent;stroke:currentColor;stroke-width:2;stroke-linejoin:round;transition:fill .25s ease-in-out,stroke .25s ease-in-out}
+.blko-soda-heart.is-saved svg,.blko-soda-wish.is-saved svg{fill:#ff6b8b;stroke:#ff6b8b}
+.blko-soda-heart.is-pop svg,.blko-soda-wish.is-pop svg{animation:blko-soda-pop .25s ease-in-out}
+@keyframes blko-soda-pop{0%{transform:scale(1)}50%{transform:scale(1.25)}100%{transform:scale(1)}}
+.blko-soda-wish{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;height:48px;padding:0 1.25rem;border:3px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:var(--color-text, #0f3b2e);font:700 1rem/1 var(--font-body, "Outfit", sans-serif);white-space:nowrap;cursor:pointer;transition:background-color .25s ease-in-out,box-shadow .2s ease}
+.blko-soda-wish:hover{background:#fff;box-shadow:4px 4px 0 0 var(--flv-accent, #ffd0d6)}
+.blko-soda-wish--icon{width:48px;padding:0}
+.blko-soda-buy{display:flex;gap:.6rem;align-items:stretch;margin:.4rem 0 .6rem}
+.blko-soda-buy button.blko-soda-pdp__add,.blko-soda-buy button.blko-soda-bundle__add{flex:1;width:auto;max-width:none;margin:0}
+.blko-soda-buy .blko-soda-wish{height:auto;min-height:48px}
+@media(max-width:600px){.blko-soda-buy{flex-direction:column}.blko-soda-buy .blko-soda-wish{height:48px}}
+.blko-soda-header__tools .blko-soda-header__count[hidden],.blko-soda-header__mobile .blko-soda-header__count[hidden]{display:none}
+.blko-soda-header__mobile .blko-soda-header__count{position:static;display:inline-block;margin-left:.5rem;vertical-align:middle;color:#fff}
+.blko-soda-toast{position:fixed;left:50%;bottom:1.5rem;z-index:300;display:flex;align-items:center;gap:.75rem;max-width:calc(100vw - 2rem);padding:.8rem 1.4rem;border-radius:999px;background:var(--color-text, #0f3b2e);color:var(--color-bg-alt, #f3e8cd);font:700 .95rem var(--font-body, "Outfit", sans-serif);box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;transform:translate(-50%,12px);transition:opacity .25s ease-in-out,transform .25s ease-in-out}
+.blko-soda-toast.is-visible{opacity:1;pointer-events:auto;transform:translate(-50%,0)}
+.blko-soda-toast a{color:var(--color-announcement-bg, #cdf26b);text-decoration:underline;text-underline-offset:3px}
+@media(prefers-reduced-motion:reduce){.blko-soda-heart,.blko-soda-heart svg,.blko-soda-wish,.blko-soda-wish svg,.blko-soda-toast{transition-duration:.01ms!important}.blko-soda-heart.is-pop svg,.blko-soda-wish.is-pop svg{animation:none}}
+.blko-soda-heart--sm{top:6px;left:6px;width:28px;height:28px}
+.blko-soda-heart--sm svg{width:15px;height:15px}
+.blko-soda-mega__item,.blko-soda-rec,.blko-soda-spot__li{position:relative}
+.blko-soda-bxbar__act{display:flex;align-items:center;gap:.5rem}
+/* wishlist page */
+.blko-soda-wl{max-width:none;padding-bottom:clamp(3rem,7vw,5rem);background:var(--color-bg, #fbf3e2);color:var(--color-text, #0f3b2e);font-family:var(--font-body, "Outfit", sans-serif)}
+.blko-soda-wl__hero{padding:clamp(2.5rem,6vw,4.5rem) 1.25rem 1.5rem;text-align:center}
+.blko-soda-wl__hero h1{margin:0;font:900 clamp(2.4rem,6vw,4rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-wl__count{margin:.8rem 0 0;font:500 1.1rem/1.3 var(--font-body, "Outfit", sans-serif);color:var(--color-text-muted, #4a6a5c)}
+.blko-soda-wl__shared{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.25rem;max-width:75rem;margin:0 auto 1.5rem;padding:.8rem 1.4rem;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);font-weight:600}
+.blko-soda-wl__shared[hidden],.blko-soda-wl__bar[hidden],.blko-soda-wl__empty[hidden],.blko-soda-wl__grid[hidden]{display:none}
+.blko-soda-wl__shared p{margin:0}
+.blko-soda-wl__bar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;max-width:75rem;margin:0 auto 2rem;padding:0 1.25rem}
+.blko-soda-wl__btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 1.4rem;border:3px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:var(--color-text, #0f3b2e);font:700 1rem/1 var(--font-body, "Outfit", sans-serif);text-decoration:none;cursor:pointer;transition:background-color .25s ease-in-out,color .25s ease-in-out,box-shadow .2s ease}
+.blko-soda-wl__btn:hover:not(:disabled){background:#fff;box-shadow:4px 4px 0 0 var(--flv-accent, #ffd0d6)}
+.blko-soda-wl__btn--solid{background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff)}
+.blko-soda-wl__btn--solid:hover:not(:disabled){background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff)}
+.blko-soda-wl__btn:disabled{opacity:.5;cursor:not-allowed}
+.blko-soda-wl__btn:focus-visible,.blko-soda-wl__add:focus-visible,.blko-soda-wl__select:focus-visible{outline:3px solid var(--color-accent, #ff6b8b);outline-offset:2px}
+.blko-soda-wl__grid,.blko-soda-wl__recs ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2.25rem 1.25rem;max-width:75rem;margin:0 auto;padding:0 1.25rem;list-style:none}
+.blko-soda-wl-card{display:flex;flex-direction:column;gap:.9rem;height:100%}
+.blko-soda-wl-card .blko-soda-card__media-wrap{position:relative;overflow:hidden;border-radius:16px}
+.blko-soda-wl-card .blko-soda-card__media{display:block;position:relative}
+.blko-soda-wl-card .blko-soda-tile{position:relative;display:block;aspect-ratio:1/1;border-radius:16px;background:transparent;overflow:hidden;isolation:isolate}
+.blko-soda-wl-card .blko-soda-tile::before{content:"";position:absolute;inset:0;z-index:0;border-radius:16px;background:var(--tile-bg, #fde1e3);opacity:0;transition:opacity .5s ease-in-out}
+.blko-soda-wl-card .blko-soda-tile__img{position:absolute;max-width:none;transition:opacity .5s ease-in-out}
+.blko-soda-wl-card .blko-soda-tile__img--can{left:2%;top:2%;width:96%;height:96%;object-fit:contain}
+.blko-soda-wl-card .blko-soda-tile__img--alt{left:0;top:0;width:100%;height:100%;object-fit:cover;opacity:0}
+.blko-soda-wl-card .blko-soda-card__media-wrap:hover .blko-soda-tile::before,.blko-soda-wl-card .blko-soda-card__media:focus-visible .blko-soda-tile::before{opacity:1}
+.blko-soda-wl-card .blko-soda-card__media-wrap:hover .blko-soda-tile__img--alt,.blko-soda-wl-card .blko-soda-card__media:focus-visible .blko-soda-tile__img--alt{opacity:1}
+.blko-soda-wl-card .blko-soda-card__media-wrap:hover .blko-soda-tile__img--can,.blko-soda-wl-card .blko-soda-card__media:focus-visible .blko-soda-tile__img--can{opacity:0}
+.blko-soda-wl-card .blko-soda-tile__badge{position:absolute;top:.6rem;right:.6rem;z-index:2;width:64px;height:auto;pointer-events:none}
+.blko-soda-wl-card__info{display:flex;flex:1;flex-direction:column;align-items:center;gap:.25rem;text-align:center}
+.blko-soda-wl-card__title{margin:0;font:500 17px/1.3 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-wl-card__title a{color:inherit;text-decoration:none}
+.blko-soda-wl-card__price{margin:0;font:500 15px/1.3 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-wl-card__price s{margin-right:.35rem;color:var(--color-text-muted, #4a6a5c)}
+.blko-soda-wl__buy{display:grid;gap:.5rem;width:100%;margin-top:auto;padding-top:.4rem}
+.blko-soda-wl__select{width:100%;height:40px;padding:0 1rem;border:1.5px solid var(--color-text, #0f3b2e);border-radius:999px;background:#fff;color:inherit;font:500 15px var(--font-body, "Outfit", sans-serif)}
+.blko-soda-wl__add{display:flex;align-items:center;justify-content:center;width:100%;height:40px;padding:0 1rem;border:0;border-radius:50px;background:var(--color-text, #0f3b2e);color:#fff;font:600 15px/1 var(--font-body, "Outfit", sans-serif);text-decoration:none;cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-wl__add:hover:not(:disabled){background:#1f5a44}
+.blko-soda-wl__add:disabled{opacity:.5;cursor:not-allowed}
+.blko-soda-wl__skel .blko-soda-tile{aspect-ratio:1/1;border-radius:16px;background:linear-gradient(100deg,rgba(15,59,46,.06) 30%,rgba(15,59,46,.14) 50%,rgba(15,59,46,.06) 70%) 0 0/200% 100%;animation:blko-soda-shimmer 1.2s linear infinite}
+.blko-soda-wl__skel i{display:block;height:14px;margin:.5rem auto 0;border-radius:7px;background:rgba(15,59,46,.1)}
+@keyframes blko-soda-shimmer{to{background-position:-200% 0}}
+.blko-soda-wl__empty{max-width:75rem;margin:0 auto;padding:0 1.25rem;text-align:center}
+.blko-soda-wl__art{display:block;width:150px;height:auto;margin:0 auto 1rem}
+.blko-soda-wl__empty h2{margin:0;font:900 clamp(1.8rem,4vw,2.6rem)/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-wl__empty>p{margin:.7rem 0 1.5rem;color:var(--color-text-muted, #4a6a5c)}
+.blko-soda-wl__recs{margin-top:clamp(2.5rem,6vw,4rem)}
+.blko-soda-wl__recs h3{margin:0 0 1.5rem;font:900 clamp(1.4rem,3vw,2rem)/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-wl__recs ul{padding:0}
+@media(max-width:989px){.blko-soda-wl__grid,.blko-soda-wl__recs ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.blko-soda-wl__grid,.blko-soda-wl__recs ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.75rem .85rem}.blko-soda-wl__shared{border-radius:20px}.blko-soda-wl__bar .blko-soda-wl__btn{flex:1 1 40%}}
+@media(prefers-reduced-motion:reduce){.blko-soda-wl *,.blko-soda-wl .blko-soda-tile::before{transition-duration:.01ms!important}.blko-soda-wl__skel .blko-soda-tile{animation:none}}

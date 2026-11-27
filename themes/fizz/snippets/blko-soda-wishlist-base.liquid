@@ -1,0 +1,34 @@
+{%- comment -%}
+  Wishlist runtime for every page: config for blko-soda-wishlist.js and the shared styles (hearts, pill, header count, toast).
+  Account sync is optional and off by default (theme settings > Wishlist).
+{%- endcomment -%}
+<script type="application/json" id="blko-wishlist-config">{"sync":{% if settings.wishlist_sync and customer %}true{% else %}false{% endif %},"proxy":{{ settings.wishlist_proxy | default: '/apps/blocko/wishlist' | json }}}</script>
+<script type="module" src="{{ 'blko-soda-wishlist.js' | asset_url }}"></script>
+
+{% stylesheet %}
+/* wishlist: heart toggle, PDP pill, header link, toast */
+.blko-soda-heart{position:absolute;top:12px;left:12px;z-index:4;display:inline-grid;place-items:center;width:36px;height:36px;margin:0;padding:0;border:1.5px solid var(--color-text, #0f3b2e);border-radius:50%;background:var(--color-bg, #fbf3e2);color:var(--color-text, #0f3b2e);cursor:pointer;transition:background-color .25s ease-in-out,border-color .25s ease-in-out}
+.blko-soda-heart:hover{background:#fff}
+.blko-soda-heart:focus-visible,.blko-soda-wish:focus-visible{outline:3px solid var(--color-accent, #ff6b8b);outline-offset:2px}
+.blko-soda-heart svg,.blko-soda-wish svg{width:18px;height:18px;flex:none;fill:transparent;stroke:currentColor;stroke-width:2;stroke-linejoin:round;transition:fill .25s ease-in-out,stroke .25s ease-in-out}
+.blko-soda-heart.is-saved svg,.blko-soda-wish.is-saved svg{fill:#ff6b8b;stroke:#ff6b8b}
+.blko-soda-heart.is-pop svg,.blko-soda-wish.is-pop svg{animation:blko-soda-pop .25s ease-in-out}
+@keyframes blko-soda-pop{0%{transform:scale(1)}50%{transform:scale(1.25)}100%{transform:scale(1)}}
+.blko-soda-wish{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;height:48px;padding:0 1.25rem;border:3px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:var(--color-text, #0f3b2e);font:700 1rem/1 var(--font-body, "Outfit", sans-serif);white-space:nowrap;cursor:pointer;transition:background-color .25s ease-in-out,box-shadow .2s ease}
+.blko-soda-wish:hover{background:#fff;box-shadow:4px 4px 0 0 var(--flv-accent, #ffd0d6)}
+.blko-soda-wish--icon{width:48px;padding:0}
+.blko-soda-buy{display:flex;gap:.6rem;align-items:stretch;margin:.4rem 0 .6rem}
+.blko-soda-buy button.blko-soda-pdp__add,.blko-soda-buy button.blko-soda-bundle__add{flex:1;width:auto;max-width:none;margin:0}
+.blko-soda-buy .blko-soda-wish{height:auto;min-height:48px}
+@media(max-width:600px){.blko-soda-buy{flex-direction:column}.blko-soda-buy .blko-soda-wish{height:48px}}
+.blko-soda-header__tools .blko-soda-header__count[hidden],.blko-soda-header__mobile .blko-soda-header__count[hidden]{display:none}
+.blko-soda-header__mobile .blko-soda-header__count{position:static;display:inline-block;margin-left:.5rem;vertical-align:middle;color:#fff}
+.blko-soda-toast{position:fixed;left:50%;bottom:1.5rem;z-index:300;display:flex;align-items:center;gap:.75rem;max-width:calc(100vw - 2rem);padding:.8rem 1.4rem;border-radius:999px;background:var(--color-text, #0f3b2e);color:var(--color-bg-alt, #f3e8cd);font:700 .95rem var(--font-body, "Outfit", sans-serif);box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;transform:translate(-50%,12px);transition:opacity .25s ease-in-out,transform .25s ease-in-out}
+.blko-soda-toast.is-visible{opacity:1;pointer-events:auto;transform:translate(-50%,0)}
+.blko-soda-toast a{color:var(--color-announcement-bg, #cdf26b);text-decoration:underline;text-underline-offset:3px}
+@media(prefers-reduced-motion:reduce){.blko-soda-heart,.blko-soda-heart svg,.blko-soda-wish,.blko-soda-wish svg,.blko-soda-toast{transition-duration:.01ms!important}.blko-soda-heart.is-pop svg,.blko-soda-wish.is-pop svg{animation:none}}
+.blko-soda-heart--sm{top:6px;left:6px;width:28px;height:28px}
+.blko-soda-heart--sm svg{width:15px;height:15px}
+.blko-soda-mega__item,.blko-soda-rec,.blko-soda-spot__li{position:relative}
+.blko-soda-bxbar__act{display:flex;align-items:center;gap:.5rem}
+{% endstylesheet %}

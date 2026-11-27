@@ -1,11 +1,11 @@
 {
   "sections": {
-    "global-wishlist-page": {
-      "type": "blko-global-wishlist-page",
+    "wishlist": {
+      "type": "blko-soda-wishlist",
       "settings": {}
     }
   },
   "order": [
-    "global-wishlist-page"
+    "wishlist"
   ]
 }

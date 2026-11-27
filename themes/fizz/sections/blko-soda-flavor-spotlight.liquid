@@ -13,7 +13,11 @@
         {%- endif -%}
         <b>{{ block.settings.name | escape }}</b>
         <span>{{ block.settings.text | escape }}</span>
-      </a></li>
+      </a>
+      {%- assign wl_handle = block.settings.product.handle -%}
+      {%- if wl_handle == blank and block.settings.url contains '/products/' -%}{%- assign wl_handle = block.settings.url | split: '/products/' | last | split: '?' | first -%}{%- endif -%}
+      {%- render 'blko-soda-heart', handle: wl_handle, name: block.settings.name -%}
+      </li>
     {%- endfor -%}
       </ul>
     </div>
@@ -53,7 +57,8 @@
         {"type": "text", "id": "image_name", "label": "Fallback banner name (fizz-banner-NAME.svg)", "default": "flavor-cherry-pop"},
         {"type": "text", "id": "name", "label": "Name", "default": "Cherry Pop"},
         {"type": "text", "id": "text", "label": "Text", "default": "Bright, juicy, and a little bit sweet"},
-        {"type": "url", "id": "url", "label": "Link"}
+        {"type": "url", "id": "url", "label": "Link"},
+        {"type": "product", "id": "product", "label": "Product (for the wishlist heart)", "info": "Optional. Defaults to the product in the link."}
       ]
     }
   ],

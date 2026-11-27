@@ -1,0 +1,12 @@
+{%- doc -%}
+  Wishlist heart on a product tile. Place it next to (not inside) the product link, in a position:relative wrapper.
+  @param {product} [product] - Product to save
+  @param {string} [handle] - Product handle when no product object is at hand
+  @param {string} [name] - Product name for the label
+  @param {boolean} [small] - 28px variant for compact tiles (mega menu, recommendations)
+{%- enddoc -%}
+{%- assign wl_handle = handle | default: product.handle -%}
+{%- assign wl_name = name | default: product.title -%}
+{%- if wl_handle != blank -%}
+<button type="button" class="blko-soda-heart{% if small %} blko-soda-heart--sm{% endif %}" data-wishlist-toggle data-handle="{{ wl_handle | escape }}" data-name="{{ wl_name | escape }}" aria-pressed="false" aria-label="Save {{ wl_name | escape }} to wishlist"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5C5.5 16 3 12.6 3 9.2 3 6.6 5 4.8 7.3 4.8c1.8 0 3.5 1 4.7 2.9 1.2-1.9 2.9-2.9 4.7-2.9C19 4.8 21 6.6 21 9.2c0 3.4-2.5 6.8-9 11.3z"/></svg></button>
+{%- endif -%}

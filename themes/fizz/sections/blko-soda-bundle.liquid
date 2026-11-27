@@ -23,7 +23,7 @@
           </label>
         {%- endfor -%}
       </div>
-      <button type="submit" class="blko-soda-bundle__add" data-tier-add data-label="{{ section.settings.tier_add_label | escape }}" {% unless current.available %}disabled{% endunless %}>{{ section.settings.tier_add_label | escape }}</button>
+      <div class="blko-soda-buy"><button type="submit" class="blko-soda-bundle__add" data-tier-add data-label="{{ section.settings.tier_add_label | escape }}" {% unless current.available %}disabled{% endunless %}>{{ section.settings.tier_add_label | escape }}</button>{% render 'blko-soda-wish', product: product %}</div>
     {%- endform -%}
   </div>
 

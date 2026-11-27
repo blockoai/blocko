@@ -55,6 +55,7 @@
                                 </span>
                                 <span class="blko-soda-mega__name">{{ product.title | escape }}</span>
                               </a>
+                              {% render 'blko-soda-heart', product: product, small: true %}
                             </li>
                           {%- endfor -%}
                         </ul>
@@ -83,6 +84,7 @@
     </a>
     <div class="blko-soda-header__tools">
       {%- if section.settings.find_label != blank -%}<a class="blko-soda-header__find" href="{{ section.settings.find_url }}">{{ section.settings.find_label | escape }}</a>{%- endif -%}
+      <a class="blko-soda-header__wish" href="{{ routes.root_url }}pages/wishlist" data-wishlist-link data-wl-labelled aria-label="Wishlist"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5C5.5 16 3 12.6 3 9.2 3 6.6 5 4.8 7.3 4.8c1.8 0 3.5 1 4.7 2.9 1.2-1.9 2.9-2.9 4.7-2.9C19 4.8 21 6.6 21 9.2c0 3.4-2.5 6.8-9 11.3z"/></svg><span class="blko-soda-header__count" data-wishlist-count hidden>0</span></a>
       <a class="blko-soda-header__acct" href="{{ routes.account_url }}" aria-label="Account"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
       <a href="{{ routes.cart_url }}" data-cart-open aria-controls="CartDrawer" aria-label="Cart"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 7h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="blko-soda-header__count" data-cart-count{% if cart.item_count == 0 %} hidden{% endif %}>{{ cart.item_count }}</span></a>
     </div>
@@ -103,6 +105,7 @@
       {%- endif -%}
     {%- endfor -%}
     {%- if section.settings.find_label != blank and section.settings.find_url != blank -%}<a href="{{ section.settings.find_url }}">{{ section.settings.find_label | escape }}</a>{%- endif -%}
+    <a href="{{ routes.root_url }}pages/wishlist">Wishlist<span class="blko-soda-header__count" data-wishlist-count hidden>0</span></a>
     <a href="{{ routes.account_url }}">Account</a>
   </nav>
 </blko-soda-nav>

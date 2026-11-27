@@ -252,5 +252,28 @@
         "default": "/apps/blocko"
       }
     ]
+  },
+  {
+    "name": "Wishlist",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Wishlists are saved in the shopper's browser (localStorage) and work out of the box. Syncing to the customer account is optional and needs the Blocko app proxy."
+      },
+      {
+        "type": "checkbox",
+        "id": "wishlist_sync",
+        "label": "Sync to customer account via app proxy",
+        "default": false,
+        "info": "Optional. Off by default. When on and a customer is logged in, saved handles are POSTed to the proxy path below and merged on load. If the proxy is missing (404) or offline, nothing breaks: the browser copy stays the source of truth."
+      },
+      {
+        "type": "text",
+        "id": "wishlist_proxy",
+        "label": "Wishlist proxy path",
+        "default": "/apps/blocko/wishlist",
+        "info": "Only used when sync is on."
+      }
+    ]
   }
 ]

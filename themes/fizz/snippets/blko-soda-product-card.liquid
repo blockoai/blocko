@@ -9,6 +9,7 @@
     <a href="{{ p.url }}" class="blko-soda-card__media" aria-label="{{ p.title | escape }}">
       {% render 'blko-soda-tile', product: p, size: 'card', alt_image: p.images[1], tint: flavor, sale_label: sale_label %}
     </a>
+    {% render 'blko-soda-heart', product: p %}
     {%- if p.available -%}
       {%- form 'product', p, class: 'blko-soda-card__quick' -%}
         <input type="hidden" name="id" value="{{ p.selected_or_first_available_variant.id }}">
