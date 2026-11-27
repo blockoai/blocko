@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+<g transform="translate(0 0) scale(1)">
+<path d="M88 50 L212 50 L196 262 Q195 276 180 276 L120 276 Q105 276 104 262Z" fill="#ffffff" fill-opacity=".55" stroke="#0f3b2e" stroke-width="6" stroke-linejoin="round"/>
+<path d="M95 112 L205 112 L196 262 Q195 276 180 276 L120 276 Q105 276 104 262Z" fill="#ff6b8b" opacity=".85"/>
+<rect x="124" y="134" width="30" height="30" rx="6" fill="#ffffff" opacity=".7" transform="rotate(-12 139 149)"/>
+<rect x="156" y="158" width="28" height="28" rx="6" fill="#ffffff" opacity=".6" transform="rotate(14 170 172)"/>
+<circle cx="132" cy="210" r="6" fill="#fff" opacity=".8"/><circle cx="168" cy="226" r="5" fill="#fff" opacity=".8"/><circle cx="150" cy="86" r="5" fill="#ff6b8b"/><circle cx="176" cy="70" r="4" fill="#ff6b8b"/><circle cx="122" cy="74" r="3.5" fill="#ff6b8b"/>
+<path d="M112 60 L116 240" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+<text x="152" y="258" font-family="Fraunces, Georgia, serif" font-weight="900" font-size="30" text-anchor="middle" fill="#fbf3e2" stroke="#0f3b2e" stroke-width="5" stroke-linejoin="round" paint-order="stroke">fizz</text>
+</g>
+</svg>

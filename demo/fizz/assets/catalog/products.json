@@ -302,6 +302,83 @@
       "tagline": "Pick any 3 flavors, save 10%",
       "pick": 3,
       "discount_percent": 10
+    },
+    {
+      "handle": "mix-match-case",
+      "name": "Mix & Match Case",
+      "tagline": "Pick 6, 12 or 24 cans, bigger cases save more",
+      "sizes": [
+        {
+          "cans": 6,
+          "discount_percent": 0
+        },
+        {
+          "cans": 12,
+          "discount_percent": 10
+        },
+        {
+          "cans": 24,
+          "discount_percent": 15
+        }
+      ],
+      "per_can": 3.0,
+      "image": "case-mix-match.svg"
+    },
+    {
+      "handle": "fizz-gift-box",
+      "name": "Fizz Gift Box",
+      "tagline": "A box of cans, wrapped, with your note",
+      "boxes": [
+        {
+          "title": "Starter",
+          "cans": 6
+        },
+        {
+          "title": "Party",
+          "cans": 12
+        },
+        {
+          "title": "Big Fizz",
+          "cans": 24
+        }
+      ],
+      "gift_fee": 2.0,
+      "image": "gift-box.svg"
+    },
+    {
+      "handle": "monthly-fizz-box",
+      "name": "Monthly Fizz Box",
+      "tagline": "Subscription bundle: swap flavors anytime",
+      "sizes": [
+        6,
+        12,
+        24
+      ],
+      "subscription": {
+        "discount_percent": 15,
+        "every_weeks": [
+          2,
+          4,
+          8
+        ]
+      },
+      "image": "monthly-box.svg"
+    },
+    {
+      "handle": "starter-kit",
+      "name": "Starter Kit",
+      "tagline": "Variety pack plus tote, glass and minis",
+      "main": "fan-favorites",
+      "accessories": [
+        "fizz-tote",
+        "fizz-glass",
+        "fizz-minis"
+      ],
+      "discount_percent": {
+        "main": 10,
+        "accessories": 25
+      },
+      "image": "starter-kit.svg"
     }
   ],
   "banners": {
@@ -601,5 +678,31 @@
       ],
       "focal": "envelope center with can and bubbles above"
     }
-  }
+  },
+  "accessories": [
+    {
+      "handle": "fizz-tote",
+      "name": "Fizz tote",
+      "tagline": "Heavy canvas, fits a 12-pack",
+      "price": 14.0,
+      "tile_bg": "#d6f1ea",
+      "image": "accessories/tote.svg"
+    },
+    {
+      "handle": "fizz-glass",
+      "name": "Fizz glass",
+      "tagline": "16 oz tumbler for the ice",
+      "price": 12.0,
+      "tile_bg": "#e8defa",
+      "image": "accessories/glass.svg"
+    },
+    {
+      "handle": "fizz-minis",
+      "name": "Minis sampler",
+      "tagline": "4 mini cans, 4 flavors",
+      "price": 8.0,
+      "tile_bg": "#fff0cc",
+      "image": "accessories/minis.svg"
+    }
+  ]
 }

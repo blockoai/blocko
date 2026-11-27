@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+<g transform="translate(0 0) scale(1)">
+<path d="M104 112 C104 40 196 40 196 112" fill="none" stroke="#0f3b2e" stroke-width="9" stroke-linecap="round"/>
+<path d="M104 112 C104 52 196 52 196 112" fill="none" stroke="#fbf3e2" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+<path d="M62 106 L238 106 L250 272 Q250 282 240 282 L60 282 Q50 282 50 272Z" fill="#cdf26b" stroke="#0f3b2e" stroke-width="5" stroke-linejoin="round"/>
+<path d="M62 106 L238 106 L240 132 L60 132Z" fill="#0f3b2e" opacity=".18"/>
+<rect x="50" y="236" width="200" height="22" fill="#ff6b8b" opacity=".9"/>
+<text x="150" y="212" font-family="Fraunces, Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fbf3e2" stroke="#0f3b2e" stroke-width="8" stroke-linejoin="round" paint-order="stroke">fizz</text>
+</g>
+</svg>

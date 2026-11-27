@@ -34,10 +34,16 @@
     18: ['Strawberry Lime', '12-pack', 2900, can('strawberry-lime'), 0, '#fde2ea', 'strawberry-lime'],
     19: ['Mint Mojito', '12-pack', 2900, can('mint-mojito'), 0, '#d6f1ea', 'mint-mojito'],
     300: ['Fan Favorites Variety Pack', '4 flavors \u00b7 12 cans', 3600, url('catalog/variety-fan-favorites.svg'), 0, '#fff0cc', 'fan-favorites'],
-    301: ['Build Your Own 12-Pack', '4 flavors \u00b7 12 cans', 3600, url('catalog/variety-fan-favorites.svg'), 0, '#fff0cc', 'build-your-own']
+    301: ['Build Your Own 12-Pack', '4 flavors \u00b7 12 cans', 3600, url('catalog/variety-fan-favorites.svg'), 0, '#fff0cc', 'build-your-own'],
+    /* demo-bundles.js pages: base price 0, the line carries its own price in hidden _price / _compare / _disc / _sub properties */
+    310: ['Mix & Match Case', 'Mix & match', 0, url('catalog/case-mix-match.svg'), 0, '#fff0cc', 'mix-match-case'],
+    311: ['Fizz Gift Box', 'Gift box', 0, url('catalog/gift-box.svg'), 0, '#fde1e3', 'fizz-gift-box'],
+    312: ['Monthly Fizz Box', 'Subscription box', 0, url('catalog/monthly-box.svg'), 0, '#d6f1ea', 'monthly-fizz-box'],
+    313: ['Starter Kit', 'Kit', 0, url('catalog/starter-kit.svg'), 0, '#e8defa', 'starter-kit']
   };
   /* Where a line links to: the variety pack has its own page, flavors use the flavor switcher on pdp.html. */
-  var pdpOf = function (c) { return c[6] === 'fan-favorites' ? url('../templates/pdp-bundle.html') : c[6] === 'build-your-own' ? url('../templates/pdp-only-bundle.html') : url('../templates/pdp.html') + '?flavor=' + c[6]; };
+  var PAGES = { 'fan-favorites': 'pdp-bundle', 'build-your-own': 'pdp-only-bundle', 'mix-match-case': 'pdp-bundle-size', 'fizz-gift-box': 'pdp-bundle-gift', 'monthly-fizz-box': 'pdp-bundle-subscription', 'starter-kit': 'pdp-bundle-starter' };
+  var pdpOf = function (c) { return PAGES[c[6]] ? url('../templates/' + PAGES[c[6]] + '.html') : url('../templates/pdp.html') + '?flavor=' + c[6]; };
   /* Visible line properties (no leading underscore), the same rule the theme drawer uses. */
   var metaHtml = function (l, cls) {
     var out = '';
@@ -65,6 +71,13 @@
   /* Price one line: unit price (plan applied), discount allocations, final price */
   var price = function (l) {
     var c = CATALOG[l.id] || ['Item', '', 0, '', 0, '#fde1e3', ''];
+    var pr = l.props || {};
+    if (pr._price) {
+      /* priced by the page (demo-bundles.js): unit price already has every discount, _compare is the undiscounted price */
+      var u = Number(pr._price), w = Math.max(u, Number(pr._compare) || 0);
+      if (pr._sub) c = [c[0], pr._sub].concat(c.slice(2));
+      return { c: c, original: w * l.quantity, compare: w * l.quantity, final: u * l.quantity, disc: (w - u) * l.quantity, title: pr._disc || '' };
+    }
     var unit = l.plan ? Math.round(c[2] * (100 - PLAN_OFF) / 100) : c[2];
     var original = c[2] * l.quantity;
     var line = unit * l.quantity;
