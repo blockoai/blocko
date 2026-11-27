@@ -1,0 +1,73 @@
+<footer class="blko-soda-footer" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <div class="blko-soda-footer__top">
+    <div class="blko-soda-footer__brand">
+      <a href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}"><img src="{{ 'brand-logo-inverse.svg' | asset_url }}" alt="{{ shop.name | escape }}" width="160" height="64" loading="lazy"></a>
+      <p>{{ section.settings.tagline | escape }}</p>
+      {%- form 'customer', class: 'blko-soda-footer__form' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <label class="blko-soda-footer__sr" for="blko-soda-footer-email">{{ section.settings.email_label | escape }}</label>
+        <input id="blko-soda-footer-email" type="email" name="contact[email]" placeholder="{{ section.settings.email_label | escape }}" autocomplete="email" required>
+        <button type="submit">{{ section.settings.button_label | escape }}</button>
+        {%- if form.posted_successfully? -%}<span role="status">{{ section.settings.success_text | escape }}</span>{%- endif -%}
+      {%- endform -%}
+    </div>
+    <nav class="blko-soda-footer__cols">
+      {%- for block in section.blocks -%}{%- if block.type == 'column' -%}
+        <div {{ block.shopify_attributes }}>
+          <h2>{{ block.settings.title | escape }}</h2>
+          <ul>{%- for link in block.settings.menu.links -%}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{%- endfor -%}</ul>
+        </div>
+      {%- endif -%}{%- endfor -%}
+    </nav>
+  </div>
+  <div class="blko-soda-footer__bottom">
+    <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | escape }}. {{ section.settings.legal | escape }}</p>
+  </div>
+</footer>
+
+{% stylesheet %}
+.blko-soda-footer{padding:clamp(2.5rem,6vw,5rem) 1.25rem 1.5rem;font-family:var(--font-body, "Outfit", sans-serif)}
+.blko-soda-footer__top{display:grid;grid-template-columns:1.1fr 1.4fr;gap:clamp(2rem,5vw,4rem);max-width:80rem;margin:0 auto}
+.blko-soda-footer__brand{display:grid;align-content:start;gap:1rem}
+.blko-soda-footer__brand img{width:10rem;height:auto}
+.blko-soda-footer__brand p{max-width:24rem;margin:0;font-size:1.05rem}
+.blko-soda-footer__form{display:flex;flex-wrap:wrap;gap:.5rem}
+.blko-soda-footer__form input{flex:1 1 12rem;padding:.85rem 1.25rem;border:2px solid currentColor;border-radius:999px;background:transparent;color:inherit;font-size:1rem}
+.blko-soda-footer__form input::placeholder{color:inherit;opacity:.7}
+.blko-soda-footer__form button{padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);color:var(--color-footer-bg, #0f3b2e);font:800 1rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
+.blko-soda-footer__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.blko-soda-footer__cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1.5rem}
+.blko-soda-footer__cols h2{margin:0 0 .75rem;font:900 1.2rem var(--font-heading, "Fraunces", Georgia, serif);color:var(--color-announcement-bg, #cdf26b)}
+.blko-soda-footer__cols ul{display:grid;gap:.45rem;margin:0;padding:0;list-style:none}
+.blko-soda-footer__cols a{color:inherit;text-decoration:none}
+.blko-soda-footer__cols a:hover{text-decoration:underline}
+.blko-soda-footer__bottom{max-width:80rem;margin:clamp(2rem,5vw,3.5rem) auto 0;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.25);font-size:.85rem;opacity:.85}
+.blko-soda-footer__bottom p{margin:0}
+@media(max-width:800px){.blko-soda-footer__top{grid-template-columns:1fr}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda footer",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#0f3b2e"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#fbf3e2"},
+    {"type": "textarea", "id": "tagline", "label": "Tagline", "default": "Prebiotic soda with real fruit, 2g of sugar and a lot of attitude."},
+    {"type": "text", "id": "email_label", "label": "Email placeholder", "default": "Your email"},
+    {"type": "text", "id": "button_label", "label": "Button label", "default": "Join the club"},
+    {"type": "text", "id": "success_text", "label": "Success message", "default": "You are in!"},
+    {"type": "text", "id": "legal", "label": "Legal line", "default": "These statements have not been evaluated by the FDA."}
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Link column",
+      "settings": [
+        {"type": "text", "id": "title", "label": "Title", "default": "Shop"},
+        {"type": "link_list", "id": "menu", "label": "Menu", "default": "footer"}
+      ]
+    }
+  ],
+  "presets": [{"name": "Soda footer", "blocks": [{"type": "column", "settings": {}}]}]
+}
+{% endschema %}

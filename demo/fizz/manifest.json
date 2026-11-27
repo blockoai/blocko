@@ -486,5 +486,147 @@
     },
     "jsBytes": 13401,
     "industry": "beverage"
+  },
+  {
+    "id": "soda-locator",
+    "kind": "section",
+    "category": "store-locator",
+    "name": "Soda store locator",
+    "description": "Where to buy: flavor chips grid, then a store list with search box and zip input (no map API).",
+    "file": "fizz/sections/store-locator--soda-locator.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1497534446932-c925b458314e",
+        "page_url": "https://unsplash.com/photos/photo-1497534446932-c925b458314e"
+      },
+      {
+        "photo_id": "photo-1534353473418-4cfa6c56fd38",
+        "page_url": "https://unsplash.com/photos/photo-1534353473418-4cfa6c56fd38"
+      },
+      {
+        "photo_id": "photo-1551538827-9c037cb4f32a",
+        "page_url": "https://unsplash.com/photos/photo-1551538827-9c037cb4f32a"
+      },
+      {
+        "photo_id": "photo-1559181567-c3190ca9959b",
+        "page_url": "https://unsplash.com/photos/photo-1559181567-c3190ca9959b"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
+      },
+      {
+        "photo_id": "photo-1621263764928-df1444c5e859",
+        "page_url": "https://unsplash.com/photos/photo-1621263764928-df1444c5e859"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 15750,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-fiber",
+    "kind": "section",
+    "category": "about",
+    "name": "Soda fiber education",
+    "description": "Fiber 101: three steps and a grams-of-fiber comparison.",
+    "file": "fizz/sections/about--soda-fiber.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-ingredients",
+    "kind": "section",
+    "category": "rich-text",
+    "name": "Soda ingredients",
+    "description": "Pastel ingredient tiles and a what-we-left-out pill row.",
+    "file": "fizz/sections/rich-text--soda-ingredients.html",
+    "deps": [],
+    "credits": [
+      {
+        "photo_id": "photo-1464965911861-746a04b4bca6",
+        "page_url": "https://unsplash.com/photos/photo-1464965911861-746a04b4bca6"
+      },
+      {
+        "photo_id": "photo-1523677011781-c91d1bbe2f9e",
+        "page_url": "https://unsplash.com/photos/photo-1523677011781-c91d1bbe2f9e"
+      },
+      {
+        "photo_id": "photo-1546171753-97d7676e4602",
+        "page_url": "https://unsplash.com/photos/photo-1546171753-97d7676e4602"
+      },
+      {
+        "photo_id": "photo-1605027990121-cbae9e0642df",
+        "page_url": "https://unsplash.com/photos/photo-1605027990121-cbae9e0642df"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-qa",
+    "kind": "section",
+    "category": "faq",
+    "name": "Soda FAQ",
+    "description": "Category pills and an accordion of questions.",
+    "file": "fizz/sections/faq--soda-qa.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 15750,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-contact",
+    "kind": "section",
+    "category": "contact",
+    "name": "Soda contact",
+    "description": "Contact channels and a message form.",
+    "file": "fizz/sections/contact--soda-contact.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-footer",
+    "kind": "section",
+    "category": "footer",
+    "name": "Soda footer",
+    "description": "Deep green footer with newsletter and link columns.",
+    "file": "fizz/sections/footer--soda-footer.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
   }
 ]

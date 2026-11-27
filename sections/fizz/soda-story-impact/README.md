@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `bg` | color | Background | #ffc9d6 |
-| `text_color` | color | Text | #14433d |
+| `text_color` | color | Text | #0f3b2e |
 | `heading` | text | Heading | Fizz by the numbers |
 | `text` | textarea | Text | Every can swaps added sugar for fiber and fruit. Here is what that adds up to so far. |
 | `footnote` | text | Footnote | *Placeholder figures, replace with your own. |

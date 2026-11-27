@@ -12,7 +12,7 @@
       "type": "blko-soda-two-columns",
       "settings": {
         "reverse": false,
-        "bg": "#e3f5fd",
+        "bg": "#f3e8cd",
         "heading": "Made in small batches",
         "text": "We cook fruit, blend fiber and carbonate in small batches so every can tastes the same as the first one we poured.",
         "button_label": "Meet the flavors",
@@ -54,7 +54,7 @@
     "retailers": {
       "type": "blko-soda-retailers",
       "settings": {
-        "button_url": "/pages/stockists"
+        "button_url": "/pages/store-locator"
       },
       "blocks": {
         "block-1": {

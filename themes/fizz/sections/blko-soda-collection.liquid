@@ -29,18 +29,18 @@
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 
 {% stylesheet %}
-.blko-soda-coll{font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-coll{font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
 .blko-soda-coll__hero{padding:clamp(2.5rem,6vw,4.5rem) 1.25rem;text-align:center}
-.blko-soda-coll__hero h1{margin:0 0 .6rem;font:800 clamp(2.5rem,6vw,4.5rem)/1 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-coll__hero h1{margin:0 0 .6rem;font:900 clamp(2.5rem,6vw,4.5rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
 .blko-soda-coll__hero p{max-width:40rem;margin:0 auto;font-size:1.1rem;line-height:1.5}
 .blko-soda-coll__filters{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;padding:1.5rem 1.25rem}
-.blko-soda-coll__filters a{padding:.55rem 1.2rem;border:2px solid var(--color-text, #14433d);border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
-.blko-soda-coll__filters a.is-active{background:var(--color-text, #14433d);color:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-coll__filters a{padding:.55rem 1.2rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
+.blko-soda-coll__filters a.is-active{background:var(--color-text, #0f3b2e);color:var(--color-bg-alt, #f3e8cd)}
 .blko-soda-coll__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.75rem 1.25rem;max-width:82rem;margin:0 auto;padding:0 1.25rem 2rem}
 .blko-soda-coll__empty{grid-column:1/-1;text-align:center}
 .blko-soda-coll__pages{display:flex;justify-content:center;gap:.5rem;padding:0 1.25rem 3rem}
 .blko-soda-coll__pages a,.blko-soda-coll__pages span{padding:.45rem .9rem;border-radius:999px;color:inherit;font-weight:800;text-decoration:none}
-.blko-soda-coll__pages span{background:var(--color-announcement-bg, #d4f23c)}
+.blko-soda-coll__pages span{background:var(--color-announcement-bg, #cdf26b)}
 @media(max-width:1000px){.blko-soda-coll__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.blko-soda-coll__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem .75rem}}
 {% endstylesheet %}
@@ -49,7 +49,7 @@
 {
   "name": "Soda collection",
   "settings": [
-    {"type": "color", "id": "bg", "label": "Hero background", "default": "#b9e4f7"},
+    {"type": "color", "id": "bg", "label": "Hero background", "default": "#fbf3e2"},
     {"type": "textarea", "id": "fallback_intro", "label": "Intro (when the collection has no description)", "default": "Prebiotic soda with real fruit flavor. Pick a flavor, a pack size, or build your own case."},
     {"type": "text", "id": "tab_all", "label": "All tab label", "default": "All flavors"},
     {"type": "text", "id": "handle_all", "label": "All tab collection handle", "default": "drinks"},

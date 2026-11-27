@@ -31,10 +31,10 @@ Never overwrite an existing file with the same name without comparing it first.
 | `heading` | text | Heading | Type |
 | `lede` | textarea | Lede | The scale below is set in the live theme fonts and sizes. |
 | `heading_label` | text | Heading font label | Heading |
-| `heading_font` | text | Heading font name | Baloo 2 |
+| `heading_font` | text | Heading font name | Fraunces |
 | `heading_glyphs` | text | Heading specimen | ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 |
 | `body_label` | text | Body font label | Body |
-| `body_font` | text | Body font name | Figtree |
+| `body_font` | text | Body font name | Outfit |
 | `body_glyphs` | text | Body specimen | ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 |
 | `name_display` | text | Display name | Display |
 | `sample_display` | text | Display sample | Made with care |

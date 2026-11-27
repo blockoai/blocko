@@ -153,7 +153,7 @@
     "retailers": {
       "type": "blko-soda-retailers",
       "settings": {
-        "button_url": "/pages/stockists"
+        "button_url": "/pages/store-locator"
       },
       "blocks": {
         "block-1": {

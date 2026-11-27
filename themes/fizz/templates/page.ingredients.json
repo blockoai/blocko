@@ -1,156 +1,73 @@
 {
   "sections": {
-    "ingredients-callout": {
-      "type": "blko-ingredients-callout",
-      "settings": {
-        "image_alt": "Fresh berries, citrus slices and ginger root on a countertop",
-        "eyebrow": "Short list, measured",
-        "heading": "9g of plant fiber, and we show our math.",
-        "text": "Prebiotic is a word anyone can print on a can. We back it with a plain nutrition panel that lists every gram, and we put the numbers on each product page.",
-        "button_label": "See what stays out"
-      }
-    },
-    "ingredients-why": {
-      "type": "blko-ingredients-why",
-      "settings": {
-        "kicker": "Why short wins",
-        "heading": "Three reasons we keep it short"
-      },
+    "ingredients": {
+      "type": "blko-soda-ingredients",
+      "settings": {},
       "blocks": {
         "block-1": {
-          "type": "value",
+          "type": "ingredient",
           "settings": {
-            "title": "Your gut is not a trash can",
-            "text": "What you sip daily should be something you can describe in plain words."
+            "name": "Real fruit juice",
+            "text": "Pressed cherries, citrus and berries give the flavor, not a lab.",
+            "color": "#ffc9d6",
+            "image_url": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80"
           }
         },
         "block-2": {
-          "type": "value",
+          "type": "ingredient",
           "settings": {
-            "number": "02",
-            "title": "Short lists, big flavor",
-            "text": "Fewer fillers mean more room for real fruit juice and botanicals."
+            "name": "Chicory fiber",
+            "text": "Prebiotic fiber from chicory root: nine grams a can.",
+            "color": "#fff3b0",
+            "image_url": "https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?auto=format&fit=crop&w=600&q=80"
           }
         },
         "block-3": {
-          "type": "value",
+          "type": "ingredient",
           "settings": {
-            "number": "03",
-            "title": "Honest labels",
-            "text": "Every can lists everything, in order, and no mystery buckets."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "extras-ingredient-glossary": {
-      "type": "blko-extras-ingredient-glossary",
-      "settings": {
-        "eyebrow": "The no-go list",
-        "heading": "Twelve things we will not use.",
-        "text": "Each entry says what the ingredient does, where it usually hides in soda and why we leave it out.",
-        "search_placeholder": "Try “aspartame”",
-        "detail_eyebrow": "Why it is out",
-        "detail_heading": "Artificial sweeteners",
-        "detail_text": "Common in diet sodas, where they stand in for sugar. We sweeten with fruit juice and a little cane sugar instead, so you get flavor without the aftertaste.",
-        "best_for_label": "Usually found in",
-        "best_for": "Diet sodas and zero-sugar mixers",
-        "found_in_label": "Our replacement",
-        "found_in": "Fruit juice and plant fiber"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "filter",
-          "settings": {
-            "label": "All 12",
-            "active": true
-          }
-        },
-        "block-2": {
-          "type": "filter",
-          "settings": {
-            "label": "Preservatives",
-            "key": "preservative"
-          }
-        },
-        "block-3": {
-          "type": "filter",
-          "settings": {
-            "label": "Flavors and dyes",
-            "key": "scent"
+            "name": "Sparkling water",
+            "text": "Cold, crisp and the first ingredient on the label.",
+            "color": "#d8f0ff",
+            "image_url": "https://images.unsplash.com/photo-1546171753-97d7676e4602?auto=format&fit=crop&w=600&q=80"
           }
         },
         "block-4": {
-          "type": "filter",
+          "type": "ingredient",
           "settings": {
-            "label": "Fillers",
-            "key": "filler"
+            "name": "Botanicals",
+            "text": "A little mint, ginger and lime peel for a clean finish.",
+            "color": "#c8f1dd",
+            "image_url": "https://images.unsplash.com/photo-1605027990121-cbae9e0642df?auto=format&fit=crop&w=600&q=80"
           }
         },
         "block-5": {
-          "type": "ingredient",
+          "type": "out",
           "settings": {
-            "name": "Artificial sweeteners",
-            "detail": "Stand in for sugar but leave an aftertaste",
-            "tags": "filler"
+            "text": "Artificial sweeteners"
           }
         },
         "block-6": {
-          "type": "ingredient",
+          "type": "out",
           "settings": {
-            "letter": "F",
-            "name": "Benzoate preservatives",
-            "detail": "Shelf-life helpers that we skip in favor of cold, quick shipping",
-            "tags": "preservative"
+            "text": "Artificial colors"
           }
         },
         "block-7": {
-          "type": "ingredient",
+          "type": "out",
           "settings": {
-            "letter": "M",
-            "name": "High-fructose corn syrup",
-            "detail": "A cheap sweetener that fills regular soda",
-            "tags": "filler"
+            "text": "High fructose corn syrup"
           }
         },
         "block-8": {
-          "type": "ingredient",
+          "type": "out",
           "settings": {
-            "letter": "P",
-            "name": "Caramel color",
-            "detail": "Brown dye added for looks, not for taste",
-            "tags": "preservative"
+            "text": "Preservatives"
           }
         },
         "block-9": {
-          "type": "ingredient",
+          "type": "out",
           "settings": {
-            "letter": "P",
-            "name": "Artificial flavors",
-            "detail": "Lab-made flavor we swap for real fruit and botanicals",
-            "tags": "scent"
-          }
-        },
-        "block-10": {
-          "type": "ingredient",
-          "settings": {
-            "letter": "S",
-            "name": "Phosphoric acid",
-            "detail": "A harsh tang we replace with citrus and apple juice",
-            "tags": "filler"
-          }
-        },
-        "block-11": {
-          "type": "ingredient",
-          "settings": {
-            "letter": "S",
-            "name": "Synthetic dyes",
-            "detail": "Color added for looks, not for flavor",
-            "tags": "scent"
+            "text": "Mystery flavors"
           }
         }
       },
@@ -163,47 +80,10 @@
         "block-6",
         "block-7",
         "block-8",
-        "block-9",
-        "block-10",
-        "block-11"
+        "block-9"
       ]
     },
-    "ingredients-faq": {
-      "type": "blko-ingredients-faq",
-      "settings": {
-        "eyebrow": "Nutrition",
-        "heading": "How it adds up"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "question",
-          "settings": {
-            "label": "What does 9g of plant fiber mean?",
-            "text": "Each 12 fl oz can has 9 grams of prebiotic plant fiber, 2 grams of sugar and 35 calories, so it feeds your good bacteria without the sugar crash."
-          }
-        },
-        "block-2": {
-          "type": "question",
-          "settings": {
-            "label": "Is Fizz good for everyone?",
-            "text": "Fiber can feel new to some tummies. Start with one can a day, and check with your doctor if you have a health condition."
-          }
-        },
-        "block-3": {
-          "type": "question",
-          "settings": {
-            "label": "Where can I read a full ingredient list?",
-            "text": "On every product page, under the ingredients tab, and on the can."
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "newsletter": {
+    "news": {
       "type": "blko-newsletter",
       "settings": {
         "eyebrow": "$5 off your first 12-pack",
@@ -214,10 +94,7 @@
     }
   },
   "order": [
-    "ingredients-callout",
-    "ingredients-why",
-    "extras-ingredient-glossary",
-    "ingredients-faq",
-    "newsletter"
+    "ingredients",
+    "news"
   ]
 }

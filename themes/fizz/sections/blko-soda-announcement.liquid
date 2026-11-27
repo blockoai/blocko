@@ -1,4 +1,4 @@
-<blko-soda-rotator class="blko-soda-announce" style="background:{{ section.settings.bg | default: '#d4f23c' }};color:{{ section.settings.text_color | default: '#14433d' }}">
+<blko-soda-rotator class="blko-soda-announce" style="background:{{ section.settings.bg | default: '#cdf26b' }};color:{{ section.settings.text_color | default: '#0f3b2e' }}">
   {%- if section.blocks.size > 1 -%}<button type="button" class="blko-soda-announce__arrow" data-dir="-1" aria-label="Previous">&#8249;</button>{%- endif -%}
   {%- for block in section.blocks -%}
     <p class="blko-soda-announce__slide{% if forloop.first %} is-active{% endif %}" data-slide {{ block.shopify_attributes }}>
@@ -11,7 +11,7 @@
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 
 {% stylesheet %}
-.blko-soda-announce{display:flex;align-items:center;justify-content:center;gap:.75rem;min-height:2.5rem;padding:.4rem 1rem;font:700 .875rem/1.3 var(--font-body, "Figtree", sans-serif);text-align:center}
+.blko-soda-announce{display:flex;align-items:center;justify-content:center;gap:.75rem;min-height:2.5rem;padding:.4rem 1rem;font:700 .875rem/1.3 var(--font-body, "Outfit", sans-serif);text-align:center}
 .blko-soda-announce__slide{display:none;margin:0}
 .blko-soda-announce__slide.is-active{display:block}
 .blko-soda-announce__slide a{margin-left:.35rem;color:inherit;text-underline-offset:2px}
@@ -22,8 +22,8 @@
 {
   "name": "Soda announcement",
   "settings": [
-    {"type": "color", "id": "bg", "label": "Background", "default": "#d4f23c"},
-    {"type": "color", "id": "text_color", "label": "Text", "default": "#14433d"}
+    {"type": "color", "id": "bg", "label": "Background", "default": "#cdf26b"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"}
   ],
   "blocks": [
     {

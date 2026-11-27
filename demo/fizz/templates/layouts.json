@@ -61,5 +61,42 @@
       "soda-story-impact",
       "soda-retailers"
     ]
+  },
+  {
+    "page": "store-locator",
+    "title": "Where to buy",
+    "sectionIds": [
+      "soda-locator"
+    ]
+  },
+  {
+    "page": "fiber",
+    "title": "Fiber 101",
+    "sectionIds": [
+      "soda-fiber",
+      "soda-retailers"
+    ]
+  },
+  {
+    "page": "ingredients",
+    "title": "Ingredients",
+    "sectionIds": [
+      "soda-ingredients",
+      "soda-why"
+    ]
+  },
+  {
+    "page": "faq",
+    "title": "FAQ",
+    "sectionIds": [
+      "soda-qa"
+    ]
+  },
+  {
+    "page": "contact",
+    "title": "Contact",
+    "sectionIds": [
+      "soda-contact"
+    ]
   }
 ]

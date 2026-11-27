@@ -1,0 +1,124 @@
+<section class="blko-soda-loc" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <blko-soda-locator class="blko-soda-loc__inner">
+    <header class="blko-soda-loc__head">
+      <h1>{{ section.settings.heading | escape }}</h1>
+      <p>{{ section.settings.text | escape }}</p>
+    </header>
+
+    <h2 class="blko-soda-loc__sub">{{ section.settings.flavor_heading | escape }}</h2>
+    <div class="blko-soda-loc__chips" role="group" aria-label="{{ section.settings.flavor_heading | escape }}">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'flavor' -%}
+          <button type="button" class="blko-soda-loc__chip" data-flavor="{{ block.settings.name | handleize }}" aria-pressed="false" style="--chip:{{ block.settings.color }}" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}{%- elsif block.settings.image_url != blank -%}<img src="{{ block.settings.image_url }}" alt="" width="160" height="160" loading="lazy">{%- endif -%}
+            <span>{{ block.settings.name | escape }}</span>
+          </button>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <form class="blko-soda-loc__form" role="search" onsubmit="return false">
+      <label><span>{{ section.settings.search_label | escape }}</span><input type="search" data-q placeholder="{{ section.settings.search_placeholder | escape }}"></label>
+      <label><span>{{ section.settings.zip_label | escape }}</span><input type="text" inputmode="numeric" maxlength="10" data-zip placeholder="{{ section.settings.zip_placeholder | escape }}"></label>
+      <button type="submit" data-go>{{ section.settings.button_label | escape }}</button>
+    </form>
+
+    <p class="blko-soda-loc__count" aria-live="polite"><b data-count>0</b> {{ section.settings.count_label | escape }}</p>
+    <ul class="blko-soda-loc__list">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'store' -%}
+          <li class="blko-soda-loc__store" data-store data-zip="{{ block.settings.zip | escape }}" data-flavors="{{ block.settings.flavors | downcase | replace: ', ', ',' | replace: ' ', '-' | escape }}" data-text="{{ block.settings.name | append: ' ' | append: block.settings.address | append: ' ' | append: block.settings.city | downcase | escape }}" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.name | escape }}</h3>
+            <p>{{ block.settings.address | escape }}<br>{{ block.settings.city | escape }} {{ block.settings.zip | escape }}</p>
+            <p class="blko-soda-loc__tags">{{ block.settings.flavors | escape }}</p>
+            {%- if block.settings.url != blank -%}<a href="{{ block.settings.url }}">{{ section.settings.directions_label | escape }}</a>{%- endif -%}
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+    <p class="blko-soda-loc__empty" data-empty hidden>{{ section.settings.empty_text | escape }}</p>
+  </blko-soda-locator>
+</section>
+
+{% stylesheet %}
+.blko-soda-loc{padding:clamp(2.5rem,6vw,5rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif)}
+.blko-soda-loc__inner{display:grid;gap:1.5rem;max-width:72rem;margin:0 auto}
+.blko-soda-loc__head{display:grid;gap:.75rem;text-align:center}
+.blko-soda-loc__head h1{margin:0;font:900 clamp(2.6rem,7vw,5.5rem)/.95 var(--font-heading, "Fraunces", Georgia, serif);letter-spacing:-.02em}
+.blko-soda-loc__head p{max-width:36rem;margin:0 auto;font-size:1.15rem}
+.blko-soda-loc__sub{margin:1rem 0 0;font:900 1.6rem/1.1 var(--font-heading, "Fraunces", Georgia, serif);text-align:center}
+.blko-soda-loc__chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(8.5rem,1fr));gap:.9rem}
+.blko-soda-loc__chip{display:grid;justify-items:center;gap:.5rem;padding:.8rem .6rem 1rem;border:3px solid transparent;border-radius:1.5rem;background:var(--chip, #ffc9d6);color:inherit;cursor:pointer;font:700 .95rem var(--font-body, "Outfit", sans-serif)}
+.blko-soda-loc__chip img{width:100%;aspect-ratio:1;border-radius:1rem;object-fit:cover}
+.blko-soda-loc__chip[aria-pressed="true"]{border-color:var(--color-text, #0f3b2e);box-shadow:0 0 0 3px var(--color-announcement-bg, #cdf26b)}
+.blko-soda-loc__form{display:grid;grid-template-columns:2fr 1fr auto;gap:.75rem;align-items:end;padding:1rem;border-radius:2rem;background:var(--color-bg-alt, #f3e8cd)}
+.blko-soda-loc__form label{display:grid;gap:.3rem;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.blko-soda-loc__form input{padding:.85rem 1.1rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;background:#fff;color:var(--color-text, #0f3b2e);font-size:1rem}
+.blko-soda-loc__form button{padding:.95rem 2rem;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:800 1rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
+.blko-soda-loc__count{margin:0;font-weight:700}
+.blko-soda-loc__list{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:1rem;margin:0;padding:0;list-style:none}
+.blko-soda-loc__store{display:grid;align-content:start;gap:.4rem;padding:1.25rem;border-radius:1.5rem;background:#fff}
+.blko-soda-loc__store[hidden]{display:none}
+.blko-soda-loc__store h3{margin:0;font:900 1.3rem/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-loc__store p{margin:0}
+.blko-soda-loc__tags{color:var(--color-text-muted, #4a6a5c);font-size:.85rem;font-weight:700}
+.blko-soda-loc__store a{justify-self:start;margin-top:.4rem;padding:.45rem 1.1rem;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);color:var(--color-text, #0f3b2e);font-weight:800;text-decoration:none}
+.blko-soda-loc__empty{margin:0;padding:2rem;border-radius:1.5rem;background:#fff;text-align:center;font-weight:700}
+@media(max-width:700px){.blko-soda-loc__form{grid-template-columns:1fr}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda store locator",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#fff3b0"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Where to buy"},
+    {"type": "textarea", "id": "text", "label": "Intro", "default": "Pick a flavor, add your zip and find a cold can near you. No map needed."},
+    {"type": "text", "id": "flavor_heading", "label": "Flavor heading", "default": "Which flavor are you after?"},
+    {"type": "text", "id": "search_label", "label": "Search label", "default": "Store or city"},
+    {"type": "text", "id": "search_placeholder", "label": "Search placeholder", "default": "Try Denver or Corner Market"},
+    {"type": "text", "id": "zip_label", "label": "Zip label", "default": "Zip code"},
+    {"type": "text", "id": "zip_placeholder", "label": "Zip placeholder", "default": "80202"},
+    {"type": "text", "id": "button_label", "label": "Button label", "default": "Find stores"},
+    {"type": "text", "id": "count_label", "label": "Count label", "default": "stores found"},
+    {"type": "text", "id": "directions_label", "label": "Link label", "default": "Get directions"},
+    {"type": "text", "id": "empty_text", "label": "Empty message", "default": "No stores match yet. Try fewer filters, or shop Fizz online."}
+  ],
+  "blocks": [
+    {
+      "type": "flavor",
+      "name": "Flavor chip",
+      "settings": [
+        {"type": "text", "id": "name", "label": "Name", "default": "Cherry Pop"},
+        {"type": "color", "id": "color", "label": "Tile color", "default": "#ffc9d6"},
+        {"type": "image_picker", "id": "image", "label": "Image"},
+        {"type": "url", "id": "image_url", "label": "Image URL (demo)"}
+      ]
+    },
+    {
+      "type": "store",
+      "name": "Store",
+      "settings": [
+        {"type": "text", "id": "name", "label": "Name", "default": "Corner Market"},
+        {"type": "text", "id": "address", "label": "Street", "default": "120 Larimer St"},
+        {"type": "text", "id": "city", "label": "City and state", "default": "Denver, CO"},
+        {"type": "text", "id": "zip", "label": "Zip", "default": "80202"},
+        {"type": "text", "id": "flavors", "label": "Flavors (comma separated)", "default": "Cherry Pop, Orange Burst"},
+        {"type": "url", "id": "url", "label": "Directions link"}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Soda store locator",
+      "blocks": [
+        {"type": "flavor", "settings": {"name": "Cherry Pop", "color": "#ffc9d6"}},
+        {"type": "flavor", "settings": {"name": "Lemon Lime Zing", "color": "#fff3b0"}},
+        {"type": "flavor", "settings": {"name": "Orange Burst", "color": "#ffdcc2"}},
+        {"type": "store", "settings": {"name": "Corner Market"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

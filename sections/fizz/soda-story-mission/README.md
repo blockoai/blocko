@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `bg` | color | Background | #fff3b0 |
-| `text_color` | color | Text | #14433d |
+| `text_color` | color | Text | #0f3b2e |
 | `eyebrow` | text | Eyebrow | Our mission |
 | `statement` | textarea | Statement | Make the fridge door the fun part of your day. |
 | `subtext` | text | Subtext | Yes, we said fun and fiber in the same breath. |

@@ -50,34 +50,34 @@
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 
 {% stylesheet %}
-.blko-soda-drawer{position:fixed;inset:0;z-index:100;visibility:hidden;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
+.blko-soda-drawer{position:fixed;inset:0;z-index:100;visibility:hidden;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
 .blko-soda-drawer.is-open{visibility:visible}
 .blko-soda-drawer__overlay{position:absolute;inset:0;background:rgba(20,67,61,.55);opacity:0;transition:opacity .25s}
 .blko-soda-drawer.is-open .blko-soda-drawer__overlay{opacity:1}
-.blko-soda-drawer__panel{position:absolute;top:0;right:0;bottom:0;display:flex;flex-direction:column;width:min(26rem,100%);background:var(--color-bg-alt, #e3f5fd);transform:translateX(100%);transition:transform .3s}
+.blko-soda-drawer__panel{position:absolute;top:0;right:0;bottom:0;display:flex;flex-direction:column;width:min(26rem,100%);background:var(--color-bg-alt, #f3e8cd);transform:translateX(100%);transition:transform .3s}
 .blko-soda-drawer.is-open .blko-soda-drawer__panel{transform:none}
 .blko-soda-drawer.is-loading .blko-soda-drawer__panel{opacity:.7}
 .blko-soda-drawer__panel>[data-drawer-content]{display:flex;flex-direction:column;min-height:0;height:100%}
-.blko-soda-drawer__head{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;border-bottom:1px solid var(--color-border, #8cc8e3)}
-.blko-soda-drawer__head h2{margin:0;font:800 1.5rem var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-drawer__head{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;border-bottom:1px solid var(--color-border, #dccfae)}
+.blko-soda-drawer__head h2{margin:0;font:900 1.5rem var(--font-heading, "Fraunces", Georgia, serif)}
 .blko-soda-drawer__close{border:0;background:none;color:inherit;font-size:2rem;line-height:1;cursor:pointer}
-.blko-soda-ship{padding:.9rem 1.25rem;background:var(--color-bg, #b9e4f7)}
+.blko-soda-ship{padding:.9rem 1.25rem;background:var(--color-bg, #fbf3e2)}
 .blko-soda-ship p{margin:0 0 .5rem;font-weight:700;font-size:.9rem}
 .blko-soda-ship__track{height:.6rem;overflow:hidden;border-radius:999px;background:#fff}
-.blko-soda-ship__track span{display:block;height:100%;border-radius:999px;background:var(--color-announcement-bg, #d4f23c);box-shadow:inset 0 0 0 2px var(--color-text, #14433d);transition:width .3s}
+.blko-soda-ship__track span{display:block;height:100%;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);box-shadow:inset 0 0 0 2px var(--color-text, #0f3b2e);transition:width .3s}
 .blko-soda-drawer__items{flex:1;overflow:auto;padding:0 1.25rem}
-.blko-soda-line{display:grid;grid-template-columns:5.25rem 1fr auto;gap:.9rem;padding:1rem 0;border-bottom:1px solid var(--color-border, #8cc8e3)}
+.blko-soda-line{display:grid;grid-template-columns:5.25rem 1fr auto;gap:.9rem;padding:1rem 0;border-bottom:1px solid var(--color-border, #dccfae)}
 .blko-soda-line img{width:5.25rem;height:5.25rem;border-radius:.9rem;object-fit:cover}
-.blko-soda-line__title{color:inherit;font:700 1.05rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
-.blko-soda-line__meta{margin:.15rem 0 0;color:var(--color-text-muted, #3f6a64);font-size:.82rem}
-.blko-soda-line__qty{display:inline-flex;align-items:center;gap:.6rem;margin-top:.5rem;padding:.1rem .35rem;border:2px solid var(--color-text, #14433d);border-radius:999px;font-weight:800}
+.blko-soda-line__title{color:inherit;font:700 1.05rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
+.blko-soda-line__meta{margin:.15rem 0 0;color:var(--color-text-muted, #4a6a5c);font-size:.82rem}
+.blko-soda-line__qty{display:inline-flex;align-items:center;gap:.6rem;margin-top:.5rem;padding:.1rem .35rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;font-weight:800}
 .blko-soda-line__qty button{width:1.6rem;height:1.6rem;border:0;background:none;color:inherit;font-size:1.1rem;cursor:pointer}
-.blko-soda-line__remove{display:block;margin-top:.35rem;padding:0;border:0;background:none;color:var(--color-text-muted, #3f6a64);font-size:.8rem;text-decoration:underline;cursor:pointer}
+.blko-soda-line__remove{display:block;margin-top:.35rem;padding:0;border:0;background:none;color:var(--color-text-muted, #4a6a5c);font-size:.8rem;text-decoration:underline;cursor:pointer}
 .blko-soda-line__price{margin:0;font-weight:800}
 .blko-soda-drawer__empty{padding:2.5rem 0;text-align:center}
-.blko-soda-drawer__foot{padding:1rem 1.25rem 1.25rem;border-top:1px solid var(--color-border, #8cc8e3)}
-.blko-soda-drawer__sub{display:flex;justify-content:space-between;margin:0 0 .8rem;font:800 1.15rem var(--font-heading, "Baloo 2", sans-serif)}
-.blko-soda-drawer__btn{display:inline-block;padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-button, #14433d);color:var(--color-button-text, #fff);font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-align:center;text-decoration:none;cursor:pointer}
+.blko-soda-drawer__foot{padding:1rem 1.25rem 1.25rem;border-top:1px solid var(--color-border, #dccfae)}
+.blko-soda-drawer__sub{display:flex;justify-content:space-between;margin:0 0 .8rem;font:900 1.15rem var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-drawer__btn{display:inline-block;padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-align:center;text-decoration:none;cursor:pointer}
 .blko-soda-drawer__btn--block{display:block;width:100%}
 {% endstylesheet %}
 

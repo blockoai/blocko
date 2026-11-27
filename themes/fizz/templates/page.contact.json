@@ -1,16 +1,7 @@
 {
   "sections": {
-    "content-contact-hero": {
-      "type": "blko-content-contact-hero",
-      "settings": {
-        "kicker": "Contact",
-        "heading": "Talk to a human who loves soda.",
-        "text": "Questions about an order, a subscription or which flavor to try? Send a note and our team will get back to you.",
-        "link_label": "Write to us"
-      }
-    },
-    "content-contact-channels": {
-      "type": "blko-content-contact-channels",
+    "contact": {
+      "type": "blko-soda-contact",
       "settings": {},
       "blocks": {
         "block-1": {
@@ -25,7 +16,6 @@
         "block-2": {
           "type": "channel",
           "settings": {
-            "icon": "○",
             "title": "Wholesale",
             "text": "Stock Fizz in your store, cafe or gym.",
             "url": "mailto:wholesale@example.com",
@@ -35,11 +25,10 @@
         "block-3": {
           "type": "channel",
           "settings": {
-            "icon": "↗",
-            "title": "Creators",
-            "text": "Collabs, samples and taste challenges.",
-            "url": "mailto:creators@example.com",
-            "link_label": "creators@example.com"
+            "title": "Press",
+            "text": "Samples and interviews.",
+            "url": "mailto:press@example.com",
+            "link_label": "press@example.com"
           }
         }
       },
@@ -48,99 +37,9 @@
         "block-2",
         "block-3"
       ]
-    },
-    "content-contact-form": {
-      "type": "blko-content-contact-form",
-      "settings": {
-        "kicker": "Drop us a line",
-        "heading": "What is going on?",
-        "text": "Add your order number if you have one. You can attach photos, too, up to ten files.",
-        "button_label": "Send it"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "topic",
-          "settings": {
-            "label": "An order"
-          }
-        },
-        "block-2": {
-          "type": "topic",
-          "settings": {
-            "label": "Fizz Club"
-          }
-        },
-        "block-3": {
-          "type": "topic",
-          "settings": {
-            "label": "My account"
-          }
-        },
-        "block-4": {
-          "type": "topic",
-          "settings": {
-            "label": "A return"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ]
-    },
-    "content-contact-hours": {
-      "type": "blko-content-contact-hours",
-      "settings": {
-        "kicker": "When we answer",
-        "heading": "Support hours"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "hours",
-          "settings": {
-            "label": "Weekdays",
-            "value": "7 AM to 7 PM Pacific"
-          }
-        },
-        "block-2": {
-          "type": "hours",
-          "settings": {
-            "label": "Saturday",
-            "value": "9 AM to 3 PM Pacific"
-          }
-        },
-        "block-3": {
-          "type": "hours",
-          "settings": {
-            "label": "Typical reply",
-            "value": "Same business day"
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ]
-    },
-    "content-contact-map": {
-      "type": "blko-content-contact-map",
-      "settings": {
-        "kicker": "Headquarters",
-        "heading": "Where the cans get packed",
-        "text": "Our test kitchen and warehouse sit at the edge of town. Visitors are welcome for tastings on Fridays, by appointment.",
-        "city": "Portland, OR",
-        "country": "United States"
-      }
     }
   },
   "order": [
-    "content-contact-hero",
-    "content-contact-channels",
-    "content-contact-form",
-    "content-contact-hours",
-    "content-contact-map"
+    "contact"
   ]
 }

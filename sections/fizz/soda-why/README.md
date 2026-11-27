@@ -27,8 +27,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `bg` | color | Background | #d4f23c |
-| `text_color` | color | Text | #14433d |
+| `bg` | color | Background | #cdf26b |
+| `text_color` | color | Text | #0f3b2e |
 | `heading` | text | Heading | Why Fizz? |
 | `text` | textarea | Text | Fizz pairs prebiotic fiber with real fruit and a short ingredient list. Two grams of sugar, zero guilt, and a flavor you would sip on purpose. |
 | `button_label` | text | Button label | Find your flavor |

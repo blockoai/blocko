@@ -30,8 +30,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `heading` | text | Heading | Shop our flavors |
-| `bg` | color | Background | #e3f5fd |
-| `heading_color` | color | Heading color | #14433d |
+| `bg` | color | Background | #f3e8cd |
+| `heading_color` | color | Heading color | #0f3b2e |
 | `add_label` | text | Quick add label | Quick add |
 | `view_label` | text | Card button label | Shop now |
 | `sale_label` | text | Sale badge | Sale |

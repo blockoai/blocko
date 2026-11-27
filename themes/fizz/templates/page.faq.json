@@ -1,88 +1,97 @@
 {
   "sections": {
-    "content-faq-hero": {
-      "type": "blko-content-faq-hero",
+    "faq": {
+      "type": "blko-soda-qa",
       "settings": {
-        "kicker": "Help center",
-        "heading": "Search for an answer or browse by topic.",
-        "text": "Flavors, orders, your account, Fizz Club, points and the company, all in one place."
-      }
-    },
-    "content-faq-browser": {
-      "type": "blko-content-faq-browser",
-      "settings": {
-        "search_placeholder": "Try “return” or “skip a shipment”"
+        "more_url": "/pages/contact"
       },
       "blocks": {
         "block-1": {
-          "type": "tab",
-          "settings": {}
+          "type": "category",
+          "settings": {
+            "name": "Flavors"
+          }
         },
         "block-2": {
-          "type": "tab",
+          "type": "category",
           "settings": {
-            "key": "products",
-            "label": "Products"
+            "name": "Fiber"
           }
         },
         "block-3": {
-          "type": "tab",
+          "type": "category",
           "settings": {
-            "key": "orders",
-            "label": "Orders"
+            "name": "Orders"
           }
         },
         "block-4": {
-          "type": "tab",
+          "type": "category",
           "settings": {
-            "key": "subscriptions",
-            "label": "Fizz Club"
+            "name": "Subscriptions"
           }
         },
         "block-5": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "Which flavor is the mildest?",
-            "answer": "Lemon Lime is the lightest option. Choose it if you are new to fiber soda or like your fizz gentle and crisp."
+            "category": "Flavors",
+            "question": "Which flavor should I try first?",
+            "answer": "Start with Cherry Pop or grab a variety pack and pick a favorite."
           }
         },
         "block-6": {
           "type": "question",
           "settings": {
-            "category": "products",
-            "question": "How do I find a flavor I like?",
-            "answer": "Take the flavor quiz or browse by family. The Starter Variety 8-pack helps if you want to try before you commit."
+            "category": "Flavors",
+            "question": "Does it taste like regular soda?",
+            "answer": "Close. Real fruit, real fizz, a lot less sugar."
           }
         },
         "block-7": {
           "type": "question",
           "settings": {
-            "question": "Can I try it and return it?",
-            "answer": "Yes. Not loving it? Reach out within thirty days, even if you opened a can, and we will make it right with our taste guarantee."
+            "category": "Fiber",
+            "question": "What is prebiotic fiber?",
+            "answer": "Plant fiber that feeds the friendly bacteria already living in your gut."
           }
         },
         "block-8": {
           "type": "question",
           "settings": {
-            "question": "Where is my package?",
-            "answer": "Use the tracking page or the link in your shipping email. Most cases land in three to seven days."
+            "category": "Fiber",
+            "question": "How much fiber is in a can?",
+            "answer": "Nine grams, from chicory root. Check the label on each flavor for exact numbers."
           }
         },
         "block-9": {
           "type": "question",
           "settings": {
-            "category": "subscriptions",
-            "question": "How do I skip or pause a shipment?",
-            "answer": "Sign in, open your Fizz Club plan and choose skip or pause. Changes save immediately."
+            "category": "Orders",
+            "question": "How fast do orders ship?",
+            "answer": "Most orders leave within two business days and arrive in three to seven."
           }
         },
         "block-10": {
           "type": "question",
           "settings": {
-            "category": "subscriptions",
-            "question": "Can I add flavors to my next shipment?",
-            "answer": "Yes, add them up to a day before the ship date to get the Fizz Club discount."
+            "category": "Orders",
+            "question": "Is shipping free?",
+            "answer": "Yes on orders over $35."
+          }
+        },
+        "block-11": {
+          "type": "question",
+          "settings": {
+            "category": "Subscriptions",
+            "question": "Can I skip or pause?",
+            "answer": "Anytime. Skip a box, swap flavors or pause from your account page."
+          }
+        },
+        "block-12": {
+          "type": "question",
+          "settings": {
+            "category": "Subscriptions",
+            "question": "How much do I save?",
+            "answer": "Fifteen percent on every box, plus free shipping."
           }
         }
       },
@@ -96,10 +105,12 @@
         "block-7",
         "block-8",
         "block-9",
-        "block-10"
+        "block-10",
+        "block-11",
+        "block-12"
       ]
     },
-    "newsletter": {
+    "news": {
       "type": "blko-newsletter",
       "settings": {
         "eyebrow": "$5 off your first 12-pack",
@@ -110,8 +121,7 @@
     }
   },
   "order": [
-    "content-faq-hero",
-    "content-faq-browser",
-    "newsletter"
+    "faq",
+    "news"
   ]
 }

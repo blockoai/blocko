@@ -1,0 +1,167 @@
+{
+  "sections": {
+    "locator": {
+      "type": "blko-soda-locator",
+      "settings": {},
+      "blocks": {
+        "block-1": {
+          "type": "flavor",
+          "settings": {
+            "name": "Cherry Pop",
+            "color": "#ffc9d6",
+            "image_url": "https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=200&q=80"
+          }
+        },
+        "block-2": {
+          "type": "flavor",
+          "settings": {
+            "name": "Lemon Lime Zing",
+            "color": "#fff3b0",
+            "image_url": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=200&q=80"
+          }
+        },
+        "block-3": {
+          "type": "flavor",
+          "settings": {
+            "name": "Orange Burst",
+            "color": "#ffdcc2",
+            "image_url": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=200&q=80"
+          }
+        },
+        "block-4": {
+          "type": "flavor",
+          "settings": {
+            "name": "Tropical Punch",
+            "color": "#c8f1dd",
+            "image_url": "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=200&q=80"
+          }
+        },
+        "block-5": {
+          "type": "flavor",
+          "settings": {
+            "name": "Strawberry Fizz",
+            "color": "#e0d6ff",
+            "image_url": "https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=200&q=80"
+          }
+        },
+        "block-6": {
+          "type": "flavor",
+          "settings": {
+            "name": "Mint Lime Fizz",
+            "color": "#d8f0ff",
+            "image_url": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=200&q=80"
+          }
+        },
+        "block-7": {
+          "type": "store",
+          "settings": {
+            "name": "Corner Market",
+            "address": "120 Larimer St",
+            "city": "Denver, CO",
+            "zip": "80202",
+            "flavors": "Cherry Pop, Orange Burst, Mint Lime Fizz"
+          }
+        },
+        "block-8": {
+          "type": "store",
+          "settings": {
+            "name": "Sunny Side Cafe",
+            "address": "48 High St",
+            "city": "Columbus, OH",
+            "zip": "43215",
+            "flavors": "Lemon Lime Zing, Strawberry Fizz"
+          }
+        },
+        "block-9": {
+          "type": "store",
+          "settings": {
+            "name": "Green Grocer",
+            "address": "902 Pine Ave",
+            "city": "Denver, CO",
+            "zip": "80203",
+            "flavors": "Cherry Pop, Lemon Lime Zing, Tropical Punch"
+          }
+        },
+        "block-10": {
+          "type": "store",
+          "settings": {
+            "name": "Daily Pantry",
+            "address": "15 Mission St",
+            "city": "San Francisco, CA",
+            "zip": "94105",
+            "flavors": "Orange Burst, Tropical Punch, Strawberry Fizz"
+          }
+        },
+        "block-11": {
+          "type": "store",
+          "settings": {
+            "name": "Fresh Aisle",
+            "address": "77 Bay Rd",
+            "city": "Austin, TX",
+            "zip": "78701",
+            "flavors": "Cherry Pop, Mint Lime Fizz"
+          }
+        },
+        "block-12": {
+          "type": "store",
+          "settings": {
+            "name": "Maple Street Grocer",
+            "address": "310 Maple St",
+            "city": "Portland, OR",
+            "zip": "97205",
+            "flavors": "Lemon Lime Zing, Orange Burst, Cherry Pop"
+          }
+        },
+        "block-13": {
+          "type": "store",
+          "settings": {
+            "name": "Harbor Provisions",
+            "address": "5 Wharf Ln",
+            "city": "Boston, MA",
+            "zip": "02110",
+            "flavors": "Strawberry Fizz, Tropical Punch"
+          }
+        },
+        "block-14": {
+          "type": "store",
+          "settings": {
+            "name": "Lakeside Deli",
+            "address": "640 Shore Dr",
+            "city": "Chicago, IL",
+            "zip": "60601",
+            "flavors": "Cherry Pop, Lemon Lime Zing, Mint Lime Fizz"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13",
+        "block-14"
+      ]
+    },
+    "news": {
+      "type": "blko-newsletter",
+      "settings": {
+        "eyebrow": "$5 off your first 12-pack",
+        "heading": "Join the fizz list",
+        "message": "New flavors, pack deals and the odd cold-can joke. Once a week, no spam.",
+        "button_label": "Get my code"
+      }
+    }
+  },
+  "order": [
+    "locator",
+    "news"
+  ]
+}

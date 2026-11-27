@@ -27,8 +27,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `bg` | color | Background | #14433d |
-| `text_color` | color | Text | #e3f5fd |
+| `bg` | color | Background | #0f3b2e |
+| `text_color` | color | Text | #f3e8cd |
 | `heading` | text | Heading | Our story |
 | `text` | textarea | Text | Fizz started in a garage with a juicer, a few botanicals and one stubborn idea: soda can taste like summer and still be kind to your gut. |
 | `footnote` | text | Footnote | *Per 12 fl oz can. |

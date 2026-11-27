@@ -2,7 +2,7 @@
 <div class="blko-theme" {{ block.shopify_attributes }}><blko-extras><article class="blko-extras-review-card"><p>{% assign blko_rating = block.settings.rating | round %}{% for blko_star in (1..5) %}{% if blko_star <= blko_rating %}★{% else %}☆{% endif %}{% endfor %}</p><h3>{{ block.settings.title | escape }}</h3><p>{{ block.settings.meta | escape }}</p></article></blko-extras></div>
 <script type="module" src="{{ 'blko-extras.js' | asset_url }}"></script>
 {% stylesheet %}
-:where(.blko-theme){--tracking-h3:.0875rem;--leading-h3:1.5;--weight-medium:500;--text-h3:.875rem;--font-body:"Figtree",Arial,sans-serif;--color-paper:var(--color-bg);--color-bg:Canvas;--color-ink:var(--color-text);--color-text:CanvasText}
+:where(.blko-theme){--tracking-h3:.0875rem;--leading-h3:1.5;--weight-medium:500;--text-h3:.875rem;--font-body:"Outfit",Arial,sans-serif;--color-paper:var(--color-bg);--color-bg:Canvas;--color-ink:var(--color-text);--color-text:CanvasText}
 @media (min-width:1024px){:where(.blko-theme){--tracking-h3:.1rem;--text-h3:1rem}}
 .blko-theme,.blko-theme *,.blko-theme *::before,.blko-theme *::after{box-sizing:border-box}.blko-theme{margin:0;background:var(--color-paper);color:var(--color-ink);font:400 1rem/1.5 var(--font-body)}.blko-theme img{display:block;max-width:100%;object-fit:cover}.blko-theme a{color:inherit}.blko-theme button,.blko-theme input,.blko-theme select{font:inherit}
 .blko-theme .blko-extras-review-card{padding:1.5rem;background:var(--color-paper)}

@@ -3,24 +3,35 @@
   "type": "footer",
   "sections": {
     "footer": {
-      "type": "blko-chrome-footer",
+      "type": "blko-soda-footer",
       "settings": {},
       "blocks": {
         "block-1": {
           "type": "column",
-          "settings": {}
+          "settings": {
+            "title": "Shop",
+            "menu": "footer"
+          }
         },
         "block-2": {
           "type": "column",
           "settings": {
-            "title": "Our story",
-            "menu": "footer-about"
+            "title": "Learn",
+            "menu": "footer"
+          }
+        },
+        "block-3": {
+          "type": "column",
+          "settings": {
+            "title": "Help",
+            "menu": "footer"
           }
         }
       },
       "block_order": [
         "block-1",
-        "block-2"
+        "block-2",
+        "block-3"
       ]
     },
     "cart-drawer": {

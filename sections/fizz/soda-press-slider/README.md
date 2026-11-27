@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `bg` | color | Background | #14433d |
-| `text_color` | color | Text | #e3f5fd |
+| `bg` | color | Background | #0f3b2e |
+| `text_color` | color | Text | #f3e8cd |
 
 ## Blocks
 

@@ -28,8 +28,8 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `bg` | color | Background | #ffc9d6 |
-| `text_color` | color | Text | #14433d |
-| `button_bg` | color | Button | #14433d |
+| `text_color` | color | Text | #0f3b2e |
+| `button_bg` | color | Button | #0f3b2e |
 | `reverse` | checkbox | Image on the right | True |
 | `image` | image_picker | Image |  |
 | `image_url` | text | Fallback image URL (Unsplash) | https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=1000&q=80 |

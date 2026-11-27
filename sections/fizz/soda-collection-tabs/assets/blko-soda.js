@@ -262,4 +262,54 @@
       });
     }
   });
+
+  /* Store locator: filter [data-store] by flavor chips, text and zip prefix. */
+  define('blko-soda-locator', class extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.bound) return;
+      this.dataset.bound = '';
+      var root = this, stores = this.querySelectorAll('[data-store]');
+      var q = this.querySelector('[data-q]'), zip = this.querySelector('[data-zip]');
+      var count = this.querySelector('[data-count]'), empty = this.querySelector('[data-empty]');
+      var chips = this.querySelectorAll('[data-flavor]');
+      var apply = function () {
+        var text = (q.value || '').trim().toLowerCase();
+        var z = (zip.value || '').trim().slice(0, 3);
+        var on = [].filter.call(chips, function (c) { return c.getAttribute('aria-pressed') === 'true'; }).map(function (c) { return c.dataset.flavor; });
+        var n = 0;
+        stores.forEach(function (s) {
+          var fl = (s.dataset.flavors || '').split(',');
+          var ok = (!text || (s.dataset.text || '').indexOf(text) > -1) &&
+            (!z || (s.dataset.zip || '').indexOf(z) === 0) &&
+            on.every(function (f) { return fl.indexOf(f) > -1; });
+          s.hidden = !ok;
+          if (ok) n++;
+        });
+        count.textContent = n;
+        empty.hidden = n > 0;
+      };
+      chips.forEach(function (c) {
+        c.addEventListener('click', function () { c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); apply(); });
+      });
+      q.addEventListener('input', apply);
+      zip.addEventListener('input', apply);
+      this.querySelector('form').addEventListener('submit', function (e) { e.preventDefault(); apply(); });
+      apply();
+    }
+  });
+
+  /* FAQ category filter. */
+  define('blko-soda-qa', class extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.bound) return;
+      this.dataset.bound = '';
+      var items = this.querySelectorAll('[data-item]'), tabs = this.querySelectorAll('[data-cat]:not([data-item])');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (o) { o.setAttribute('aria-pressed', o === tab ? 'true' : 'false'); });
+          items.forEach(function (i) { i.hidden = !!tab.dataset.cat && i.dataset.cat !== tab.dataset.cat; });
+        });
+      });
+    }
+  });
 })();

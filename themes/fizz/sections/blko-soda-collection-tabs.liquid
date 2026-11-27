@@ -25,18 +25,18 @@
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 
 {% stylesheet %}
-.blko-soda-tabs{padding:clamp(2.5rem,6vw,4.5rem) 0;font-family:var(--font-body, "Figtree", sans-serif);color:var(--color-text, #14433d)}
-.blko-soda-tabs__heading{margin:0 0 1.5rem;padding:0 1.25rem;font:800 clamp(2rem,4.5vw,3.25rem)/1 var(--font-heading, "Baloo 2", sans-serif);text-align:center}
+.blko-soda-tabs{padding:clamp(2.5rem,6vw,4.5rem) 0;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
+.blko-soda-tabs__heading{margin:0 0 1.5rem;padding:0 1.25rem;font:900 clamp(2rem,4.5vw,3.25rem)/1 var(--font-heading, "Fraunces", Georgia, serif);text-align:center}
 .blko-soda-tabs__bar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;padding:0 1.25rem}
-.blko-soda-tabs__tab{padding:.6rem 1.25rem;border:2px solid var(--color-text, #14433d);border-radius:999px;background:transparent;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);cursor:pointer}
-.blko-soda-tabs__tab.is-active{background:var(--color-text, #14433d);color:var(--color-bg-alt, #e3f5fd)}
+.blko-soda-tabs__tab{padding:.6rem 1.25rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
+.blko-soda-tabs__tab.is-active{background:var(--color-text, #0f3b2e);color:var(--color-bg-alt, #f3e8cd)}
 .blko-soda-tabs__panel{display:none;padding-top:1.5rem}
 .blko-soda-tabs__panel.is-active{display:block}
 .blko-soda-tabs__note{margin:0 0 1.25rem;padding:0 1.25rem;font-weight:700;text-align:center}
 .blko-soda-tabs__track{display:flex;gap:1.25rem;overflow-x:auto;padding:0 1.25rem 1rem;scroll-snap-type:x mandatory;scrollbar-width:thin}
 .blko-soda-tabs__track>.blko-soda-card{flex:0 0 min(17rem,72vw);scroll-snap-align:start}
 .blko-soda-tabs__cta{margin:1.25rem 0 0;text-align:center}
-.blko-soda-tabs__cta a{display:inline-block;padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
+.blko-soda-tabs__cta a{display:inline-block;padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
 {% endstylesheet %}
 
 {% schema %}
@@ -44,8 +44,8 @@
   "name": "Soda collection tabs",
   "settings": [
     {"type": "text", "id": "heading", "label": "Heading", "default": "Shop our flavors"},
-    {"type": "color", "id": "bg", "label": "Background", "default": "#e3f5fd"},
-    {"type": "color", "id": "heading_color", "label": "Heading color", "default": "#14433d"},
+    {"type": "color", "id": "bg", "label": "Background", "default": "#f3e8cd"},
+    {"type": "color", "id": "heading_color", "label": "Heading color", "default": "#0f3b2e"},
     {"type": "text", "id": "add_label", "label": "Quick add label", "default": "Quick add"},
     {"type": "text", "id": "view_label", "label": "Card button label", "default": "Shop now"},
     {"type": "text", "id": "sale_label", "label": "Sale badge", "default": "Sale"},

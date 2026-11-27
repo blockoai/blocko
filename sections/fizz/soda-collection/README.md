@@ -29,7 +29,7 @@ Never overwrite an existing file with the same name without comparing it first.
 
 | id | type | label | default |
 | --- | --- | --- | --- |
-| `bg` | color | Hero background | #b9e4f7 |
+| `bg` | color | Hero background | #fbf3e2 |
 | `fallback_intro` | textarea | Intro (when the collection has no description) | Prebiotic soda with real fruit flavor. Pick a flavor, a pack size, or build your own case. |
 | `tab_all` | text | All tab label | All flavors |
 | `handle_all` | text | All tab collection handle | drinks |

@@ -1,0 +1,79 @@
+<section class="blko-soda-contact" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <div class="blko-soda-contact__inner">
+    <div class="blko-soda-contact__intro">
+      <h1>{{ section.settings.heading | escape }}</h1>
+      <p>{{ section.settings.text | escape }}</p>
+      <ul>
+        {%- for block in section.blocks -%}{%- if block.type == 'channel' -%}
+          <li {{ block.shopify_attributes }}><b>{{ block.settings.title | escape }}</b><span>{{ block.settings.text | escape }}</span><a href="{{ block.settings.url }}">{{ block.settings.link_label | escape }}</a></li>
+        {%- endif -%}{%- endfor -%}
+      </ul>
+    </div>
+    {%- form 'contact', class: 'blko-soda-contact__form' -%}
+      {%- if form.posted_successfully? -%}<p class="blko-soda-contact__ok" role="status">{{ section.settings.success_text | escape }}</p>{%- endif -%}
+      {%- if form.errors -%}<p class="blko-soda-contact__err" role="alert">{{ form.errors | default_errors }}</p>{%- endif -%}
+      <label><span>{{ section.settings.name_label | escape }}</span><input type="text" name="contact[name]" autocomplete="name" required></label>
+      <label><span>{{ section.settings.email_label | escape }}</span><input type="email" name="contact[email]" autocomplete="email" required></label>
+      <label><span>{{ section.settings.topic_label | escape }}</span>
+        <select name="contact[topic]">
+          {%- assign topic_list = section.settings.topics | split: ',' -%}
+          {%- for t in topic_list -%}<option value="{{ t | strip | escape }}">{{ t | strip | escape }}</option>{%- endfor -%}
+        </select>
+      </label>
+      <label><span>{{ section.settings.message_label | escape }}</span><textarea name="contact[body]" rows="5" required></textarea></label>
+      <button type="submit">{{ section.settings.button_label | escape }}</button>
+    {%- endform -%}
+  </div>
+</section>
+
+{% stylesheet %}
+.blko-soda-contact{padding:clamp(2.5rem,6vw,5rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif)}
+.blko-soda-contact__inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start;max-width:72rem;margin:0 auto}
+.blko-soda-contact__intro{display:grid;gap:1rem}
+.blko-soda-contact__intro h1{margin:0;font:900 clamp(2.4rem,6vw,4.5rem)/.98 var(--font-heading, "Fraunces", Georgia, serif);letter-spacing:-.02em}
+.blko-soda-contact__intro>p{margin:0;font-size:1.15rem}
+.blko-soda-contact__intro ul{display:grid;gap:.75rem;margin:.5rem 0 0;padding:0;list-style:none}
+.blko-soda-contact__intro li{display:grid;gap:.15rem;padding:1rem 1.25rem;border-radius:1.5rem;background:rgba(255,255,255,.7)}
+.blko-soda-contact__intro li b{font:900 1.2rem var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-contact__intro li a{color:inherit;font-weight:800}
+.blko-soda-contact__form{display:grid;gap:1rem;padding:clamp(1.25rem,3vw,2rem);border-radius:2rem;background:#fff}
+.blko-soda-contact__form label{display:grid;gap:.35rem;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.blko-soda-contact__form :is(input,select,textarea){width:100%;padding:.85rem 1.1rem;border:2px solid var(--color-text, #0f3b2e);border-radius:1.25rem;background:#fff;color:var(--color-text, #0f3b2e);font:400 1rem var(--font-body, "Outfit", sans-serif)}
+.blko-soda-contact__form button{justify-self:start;padding:.95rem 2.25rem;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:800 1.05rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
+.blko-soda-contact__ok,.blko-soda-contact__err{margin:0;padding:.8rem 1rem;border-radius:1rem;font-weight:700}
+.blko-soda-contact__ok{background:var(--color-announcement-bg, #cdf26b)}
+.blko-soda-contact__err{background:#ffd3df}
+@media(max-width:800px){.blko-soda-contact__inner{grid-template-columns:1fr}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda contact",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#ffdcc2"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Say hi."},
+    {"type": "textarea", "id": "text", "label": "Intro", "default": "Order question, flavor idea or a stockist inquiry? A real person reads every message."},
+    {"type": "text", "id": "name_label", "label": "Name label", "default": "Your name"},
+    {"type": "text", "id": "email_label", "label": "Email label", "default": "Email"},
+    {"type": "text", "id": "topic_label", "label": "Topic label", "default": "Topic"},
+    {"type": "text", "id": "topics", "label": "Topics (comma separated)", "default": "My order, Flavors, Subscriptions, Wholesale, Something else"},
+    {"type": "text", "id": "message_label", "label": "Message label", "default": "Message"},
+    {"type": "text", "id": "button_label", "label": "Button label", "default": "Send message"},
+    {"type": "text", "id": "success_text", "label": "Success message", "default": "Thanks! We will reply within one business day."}
+  ],
+  "blocks": [
+    {
+      "type": "channel",
+      "name": "Channel",
+      "settings": [
+        {"type": "text", "id": "title", "label": "Title", "default": "Help desk"},
+        {"type": "text", "id": "text", "label": "Text", "default": "Orders, returns and flavor questions."},
+        {"type": "url", "id": "url", "label": "Link"},
+        {"type": "text", "id": "link_label", "label": "Link label", "default": "help@example.com"}
+      ]
+    }
+  ],
+  "presets": [{"name": "Soda contact", "blocks": [{"type": "channel", "settings": {}}]}]
+}
+{% endschema %}

@@ -1,0 +1,84 @@
+<section class="blko-soda-ingr" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <header class="blko-soda-ingr__head">
+    <p class="blko-soda-ingr__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    <h1>{{ section.settings.heading | escape }}</h1>
+    <p>{{ section.settings.text | escape }}</p>
+  </header>
+  <ul class="blko-soda-ingr__grid">
+    {%- for block in section.blocks -%}{%- if block.type == 'ingredient' -%}
+      <li style="background:{{ block.settings.color }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.name }}{%- elsif block.settings.image_url != blank -%}<img src="{{ block.settings.image_url }}" alt="{{ block.settings.name | escape }}" width="600" height="600" loading="lazy">{%- endif -%}
+        <h2>{{ block.settings.name | escape }}</h2>
+        <p>{{ block.settings.text | escape }}</p>
+      </li>
+    {%- endif -%}{%- endfor -%}
+  </ul>
+  <div class="blko-soda-ingr__out">
+    <h2>{{ section.settings.out_heading | escape }}</h2>
+    <ul>
+      {%- for block in section.blocks -%}{%- if block.type == 'out' -%}<li {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</li>{%- endif -%}{%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+{% stylesheet %}
+.blko-soda-ingr{display:grid;gap:2.5rem;padding:clamp(2.5rem,6vw,5rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif)}
+.blko-soda-ingr__head,.blko-soda-ingr__grid,.blko-soda-ingr__out{width:100%;max-width:72rem;margin:0 auto}
+.blko-soda-ingr__head{display:grid;gap:.8rem;text-align:center}
+.blko-soda-ingr__eyebrow{margin:0;font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.blko-soda-ingr__head h1{max-width:16ch;margin:0 auto;font:900 clamp(2.4rem,6vw,4.75rem)/.98 var(--font-heading, "Fraunces", Georgia, serif);letter-spacing:-.02em}
+.blko-soda-ingr__head p:last-child{max-width:38rem;margin:0 auto;font-size:1.15rem}
+.blko-soda-ingr__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem;margin-block:0;padding:0;list-style:none}
+.blko-soda-ingr__grid li{display:grid;align-content:start;gap:.5rem;padding:1rem 1rem 1.5rem;border-radius:2rem;color:var(--color-text, #0f3b2e)}
+.blko-soda-ingr__grid img{width:100%;aspect-ratio:1;border-radius:1.5rem;object-fit:cover}
+.blko-soda-ingr__grid h2{margin:.4rem .4rem 0;font:900 1.5rem/1.05 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-ingr__grid p{margin:0 .4rem}
+.blko-soda-ingr__out{display:grid;justify-items:center;gap:1rem;padding:clamp(1.5rem,4vw,2.5rem);border-radius:2rem;background:var(--color-text, #0f3b2e);color:var(--color-bg, #fbf3e2);text-align:center}
+.blko-soda-ingr__out h2{margin:0;font:900 clamp(1.7rem,3.5vw,2.5rem)/1.05 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-ingr__out ul{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin:0;padding:0;list-style:none}
+.blko-soda-ingr__out li{padding:.5rem 1.1rem;border:2px solid currentColor;border-radius:999px;font-weight:700;text-decoration:line-through;text-decoration-color:var(--color-accent, #ff6b8b);text-decoration-thickness:2px}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda ingredients",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#fbf3e2"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "What is in the can"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Short list. Real stuff."},
+    {"type": "textarea", "id": "text", "label": "Intro", "default": "If you cannot picture it growing somewhere, it is not in Fizz. Here is the whole cast."},
+    {"type": "text", "id": "out_heading", "label": "Left-out heading", "default": "What we left out"}
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {"type": "color", "id": "color", "label": "Tile color", "default": "#ffc9d6"},
+        {"type": "image_picker", "id": "image", "label": "Image"},
+        {"type": "url", "id": "image_url", "label": "Image URL (demo)"},
+        {"type": "text", "id": "name", "label": "Name", "default": "Real fruit juice"},
+        {"type": "textarea", "id": "text", "label": "Text", "default": "Pressed cherries and citrus give the flavor, not a lab."}
+      ]
+    },
+    {
+      "type": "out",
+      "name": "Left out",
+      "settings": [
+        {"type": "text", "id": "text", "label": "Text", "default": "Artificial sweeteners"}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Soda ingredients",
+      "blocks": [
+        {"type": "ingredient", "settings": {}},
+        {"type": "ingredient", "settings": {"name": "Chicory fiber", "color": "#fff3b0"}},
+        {"type": "out", "settings": {}}
+      ]
+    }
+  ]
+}
+{% endschema %}

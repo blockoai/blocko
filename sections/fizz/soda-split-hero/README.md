@@ -28,14 +28,14 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `bg` | color | Background | #ff6b8b |
-| `text_color` | color | Text | #14433d |
+| `text_color` | color | Text | #0f3b2e |
 | `eyebrow` | text | Eyebrow | New: Cherry Pop |
 | `heading` | text | Heading | Big fizz. Small sugar. |
 | `subtext` | textarea | Subtext | Prebiotic soda with real fruit flavor, 2g of sugar and a lot of attitude. Stock up and save on every case. |
 | `button_label` | text | Button label | Shop flavors |
 | `button_url` | url | Button link |  |
-| `button_bg` | color | Button background | #d4f23c |
-| `button_color` | color | Button text | #14433d |
+| `button_bg` | color | Button background | #cdf26b |
+| `button_color` | color | Button text | #0f3b2e |
 | `image` | image_picker | Image |  |
 | `image_url` | text | Fallback image URL (Unsplash) | https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=1400&q=80 |
 | `image_alt` | text | Image alt text | Two glossy cherries on a mint background |

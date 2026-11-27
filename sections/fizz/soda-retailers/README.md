@@ -28,7 +28,7 @@ Never overwrite an existing file with the same name without comparing it first.
 | id | type | label | default |
 | --- | --- | --- | --- |
 | `bg` | color | Background | #fff3b0 |
-| `text_color` | color | Text | #14433d |
+| `text_color` | color | Text | #0f3b2e |
 | `heading` | text | Heading | Find Fizz near you |
 | `button_label` | text | Button label | Find in store |
 | `button_url` | url | Button link |  |

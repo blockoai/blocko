@@ -30,7 +30,9 @@
     "header": {
       "type": "blko-soda-header",
       "settings": {
-        "menu": "main-menu"
+        "menu": "main-menu",
+        "find_url": "/pages/store-locator",
+        "find_label": "Where to buy"
       }
     }
   },

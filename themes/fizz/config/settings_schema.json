@@ -18,19 +18,19 @@
             "type": "color",
             "id": "background",
             "label": "Background",
-            "default": "#14433d"
+            "default": "#0f3b2e"
           },
           {
             "type": "color",
             "id": "text",
             "label": "Text",
-            "default": "#e3f5fd"
+            "default": "#f3e8cd"
           },
           {
             "type": "color",
             "id": "button",
             "label": "Button",
-            "default": "#14433d"
+            "default": "#0f3b2e"
           },
           {
             "type": "color",
@@ -42,7 +42,7 @@
             "type": "color",
             "id": "button_hover",
             "label": "Button hover",
-            "default": "#0c2f2b"
+            "default": "#082a20"
           }
         ],
         "role": {
@@ -102,37 +102,37 @@
         "type": "color",
         "id": "color_bg",
         "label": "Bg",
-        "default": "#b9e4f7"
+        "default": "#fbf3e2"
       },
       {
         "type": "color",
         "id": "color_bg_alt",
         "label": "Bg Alt",
-        "default": "#e3f5fd"
+        "default": "#f3e8cd"
       },
       {
         "type": "color",
         "id": "color_text",
         "label": "Text",
-        "default": "#14433d"
+        "default": "#0f3b2e"
       },
       {
         "type": "color",
         "id": "color_text_muted",
         "label": "Text Muted",
-        "default": "#3f6a64"
+        "default": "#4a6a5c"
       },
       {
         "type": "color",
         "id": "color_border",
         "label": "Border",
-        "default": "#8cc8e3"
+        "default": "#dccfae"
       },
       {
         "type": "color",
         "id": "color_button",
         "label": "Button",
-        "default": "#14433d"
+        "default": "#0f3b2e"
       },
       {
         "type": "color",
@@ -144,7 +144,7 @@
         "type": "color",
         "id": "color_button_hover",
         "label": "Button Hover",
-        "default": "#0c2f2b"
+        "default": "#082a20"
       },
       {
         "type": "color",
@@ -162,25 +162,25 @@
         "type": "color",
         "id": "color_announcement_bg",
         "label": "Announcement Bg",
-        "default": "#d4f23c"
+        "default": "#cdf26b"
       },
       {
         "type": "color",
         "id": "color_announcement_text",
         "label": "Announcement Text",
-        "default": "#14433d"
+        "default": "#0f3b2e"
       },
       {
         "type": "color",
         "id": "color_footer_bg",
         "label": "Footer Bg",
-        "default": "#14433d"
+        "default": "#0f3b2e"
       },
       {
         "type": "color",
         "id": "color_footer_text",
         "label": "Footer Text",
-        "default": "#e3f5fd"
+        "default": "#f3e8cd"
       },
       {
         "type": "color",
@@ -204,7 +204,7 @@
         "type": "color",
         "id": "color_input_text",
         "label": "Input Text",
-        "default": "#14433d"
+        "default": "#0f3b2e"
       },
       {
         "type": "color",

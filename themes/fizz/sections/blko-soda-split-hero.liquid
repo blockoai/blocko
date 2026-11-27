@@ -15,13 +15,13 @@
 </section>
 
 {% stylesheet %}
-.blko-soda-hero{display:grid;grid-template-columns:1fr 1fr;min-height:34rem;background:var(--hero-bg, #ff6b8b);color:var(--hero-text, #14433d);font-family:var(--font-body, "Figtree", sans-serif)}
+.blko-soda-hero{display:grid;grid-template-columns:1fr 1fr;min-height:34rem;background:var(--hero-bg, #ff6b8b);color:var(--hero-text, #0f3b2e);font-family:var(--font-body, "Outfit", sans-serif)}
 .blko-soda-hero__text{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:1.1rem;padding:clamp(2rem,6vw,5rem)}
-.blko-soda-hero__eyebrow{margin:0;font:800 .8rem var(--font-body, "Figtree", sans-serif);letter-spacing:.14em;text-transform:uppercase}
-.blko-soda-hero__text h1{margin:0;font:800 clamp(2.6rem,6vw,5rem)/.95 var(--font-heading, "Baloo 2", sans-serif)}
+.blko-soda-hero__eyebrow{margin:0;font:800 .8rem var(--font-body, "Outfit", sans-serif);letter-spacing:.14em;text-transform:uppercase}
+.blko-soda-hero__text h1{margin:0;font:900 clamp(2.6rem,6vw,5rem)/.95 var(--font-heading, "Fraunces", Georgia, serif)}
 .blko-soda-hero__text p:not(.blko-soda-hero__eyebrow){max-width:30rem;margin:0;font-size:1.15rem;line-height:1.5}
-.blko-soda-hero__btn{display:inline-block;padding:.95rem 2rem;border-radius:999px;font:800 1.05rem var(--font-heading, "Baloo 2", sans-serif);text-decoration:none}
-.blko-soda-hero__media{position:relative;min-height:20rem;overflow:hidden;background:var(--color-bg, #b9e4f7)}
+.blko-soda-hero__btn{display:inline-block;padding:.95rem 2rem;border-radius:999px;font:900 1.05rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
+.blko-soda-hero__media{position:relative;min-height:20rem;overflow:hidden;background:var(--color-bg, #fbf3e2)}
 .blko-soda-hero__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 @media(max-width:800px){.blko-soda-hero{grid-template-columns:1fr}.blko-soda-hero__media{order:-1;min-height:18rem}}
 {% endstylesheet %}
@@ -31,14 +31,14 @@
   "name": "Soda split hero",
   "settings": [
     {"type": "color", "id": "bg", "label": "Background", "default": "#ff6b8b"},
-    {"type": "color", "id": "text_color", "label": "Text", "default": "#14433d"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
     {"type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "New: Cherry Pop"},
     {"type": "text", "id": "heading", "label": "Heading", "default": "Big fizz. Small sugar."},
     {"type": "textarea", "id": "subtext", "label": "Subtext", "default": "Prebiotic soda with real fruit flavor, 2g of sugar and a lot of attitude. Stock up and save on every case."},
     {"type": "text", "id": "button_label", "label": "Button label", "default": "Shop flavors"},
     {"type": "url", "id": "button_url", "label": "Button link"},
-    {"type": "color", "id": "button_bg", "label": "Button background", "default": "#d4f23c"},
-    {"type": "color", "id": "button_color", "label": "Button text", "default": "#14433d"},
+    {"type": "color", "id": "button_bg", "label": "Button background", "default": "#cdf26b"},
+    {"type": "color", "id": "button_color", "label": "Button text", "default": "#0f3b2e"},
     {"type": "image_picker", "id": "image", "label": "Image"},
     {"type": "text", "id": "image_url", "label": "Fallback image URL (Unsplash)", "default": "https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=1400&q=80"},
     {"type": "text", "id": "image_alt", "label": "Image alt text", "default": "Two glossy cherries on a mint background"}
