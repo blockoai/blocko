@@ -956,4 +956,13 @@
 @media(prefers-reduced-motion:reduce){.blko-soda-tile .blko-soda-tile__img,.blko-soda-card *,.blko-soda-promo img,.blko-soda-spot__item img,.blko-soda-sticky,.blko-soda-pdp *,.blko-soda-flavor *,.blko-soda-hero *,.blko-soda-fan img{transition-duration:.01ms!important}.blko-soda-card__media-wrap:hover .blko-soda-tile__img--can,.blko-soda-spot__item:hover img,.blko-soda-promo:hover img{transform:none}.blko-soda-tabs__track{scroll-behavior:auto}}
 /* hero mobile */
 @media(max-width:800px){.blko-soda-hero{grid-template-columns:1fr;height:auto}.blko-soda-hero .blko-soda-hero__text{padding:2.5rem 1.25rem}.blko-soda-hero .blko-soda-hero__media{order:0;height:420px}}
+/* card hover (Olipop): crossfade to the flavor scene, quick add fades in; no zoom, lift or slide */
+.blko-soda-card .blko-soda-tile .blko-soda-tile__img--alt{left:0;top:0;width:100%;height:100%;max-height:none;object-fit:cover;transform:none;opacity:0;transition:opacity .5s ease-in-out}
+.blko-soda-card__media-wrap:hover .blko-soda-tile__img--can,.blko-soda-card__media:focus-visible .blko-soda-tile__img--can{transform:none}
+.blko-soda-card__media-wrap:hover .blko-soda-tile__img--alt,.blko-soda-card__media:focus-visible .blko-soda-tile__img--alt{opacity:1}
+.blko-soda-card__quick{left:16px;right:16px;bottom:16px;z-index:3;transform:none;opacity:0;pointer-events:none;transition:opacity .3s cubic-bezier(.4,0,.2,1)}
+.blko-soda-card__media-wrap:hover .blko-soda-card__quick,.blko-soda-card__quick:focus-within{transform:none;opacity:1;pointer-events:auto}
+.blko-soda-card__quick .blko-soda-card__btn{border-radius:50px;background:var(--color-text,#0f3b2e);color:#fff}
+.blko-soda-card__quick .blko-soda-card__btn:hover{background:#1f5a44}
+@media(hover:none){.blko-soda-card__quick{opacity:1;pointer-events:auto}}
 /* === /shop === */
