@@ -1,0 +1,59 @@
+<section class="blko-soda-cmp{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <div class="blko-soda-cmp__in">
+    <h2>{{ section.settings.heading | escape }}</h2>
+    <p>{{ section.settings.text | escape }}</p>
+    <div class="blko-soda-cmp__card">
+      <table>
+        <thead><tr><th scope="col">{{ section.settings.col_label | escape }}</th><th scope="col">{{ section.settings.col_fizz | escape }}</th><th scope="col">{{ section.settings.col_other | escape }}</th></tr></thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr {{ block.shopify_attributes }}><th scope="row">{{ block.settings.label | escape }}</th><td>{{ block.settings.fizz | escape }}</td><td>{{ block.settings.other | escape }}</td></tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+.blko-soda-cmp{padding:clamp(3rem,7vw,5.5rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif);text-align:center}
+.blko-soda-cmp__in{display:grid;gap:1rem;max-width:56rem;margin:0 auto}
+.blko-soda-cmp h2{margin:0;font:900 clamp(2rem,4.5vw,3.5rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-cmp__in>p{max-width:40rem;margin:0 auto;font-size:1.15rem}
+.blko-soda-cmp__card{overflow:hidden;margin-top:1rem;border:3px solid var(--color-text, #0f3b2e);border-radius:1.5rem;background:#fff;color:var(--color-text, #0f3b2e)}
+.blko-soda-cmp table{width:100%;border-collapse:collapse;text-align:left}
+.blko-soda-cmp th,.blko-soda-cmp td{padding:1rem 1.25rem;border-bottom:2px solid var(--color-text, #0f3b2e)}
+.blko-soda-cmp tr:last-child :is(th,td){border-bottom:0}
+.blko-soda-cmp thead th{background:var(--color-pastel-3, #c8f1dd);font:900 1.15rem var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-cmp tbody th{font-weight:700}
+.blko-soda-cmp td:nth-child(2),.blko-soda-cmp th:nth-child(2){background:var(--color-announcement-bg, #cdf26b);font-weight:800}
+.blko-soda-cmp thead th:nth-child(2){font:900 1.15rem var(--font-heading, "Fraunces", Georgia, serif)}
+@media(max-width:600px){.blko-soda-cmp th,.blko-soda-cmp td{padding:.7rem .7rem;font-size:.9rem}}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda compare table",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#fbf3e2"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section's background)"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Fizz vs regular soda"},
+    {"type": "textarea", "id": "text", "label": "Intro", "default": "Same fizz. Very different can."},
+    {"type": "text", "id": "col_label", "label": "First column", "default": "Per 12 fl oz can"},
+    {"type": "text", "id": "col_fizz", "label": "Fizz column", "default": "Fizz"},
+    {"type": "text", "id": "col_other", "label": "Other column", "default": "Regular soda"}
+  ],
+  "blocks": [
+    {"type": "row", "name": "Row", "settings": [
+      {"type": "text", "id": "label", "label": "Label", "default": "Sugar"},
+      {"type": "text", "id": "fizz", "label": "Fizz", "default": "2g"},
+      {"type": "text", "id": "other", "label": "Other", "default": "39g"}
+    ]}
+  ],
+  "max_blocks": 10,
+  "presets": [{"name": "Soda compare table", "blocks": [{"type": "row"}]}]
+}
+{% endschema %}

@@ -1,9 +1,10 @@
-<section class="blko-soda-fiber" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+<section class="blko-soda-fiber{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <header class="blko-soda-fiber__head">
     <p class="blko-soda-fiber__eyebrow">{{ section.settings.eyebrow | escape }}</p>
     <h1>{{ section.settings.heading | escape }}</h1>
     <p>{{ section.settings.text | escape }}</p>
   </header>
+  {% render 'blko-soda-banner', name: section.settings.banner, image: section.settings.image, alt: section.settings.heading %}
   <ol class="blko-soda-fiber__steps">
     {%- for block in section.blocks -%}{%- if block.type == 'step' -%}
       <li style="background:{{ block.settings.color }}" {{ block.shopify_attributes }}>
@@ -48,12 +49,32 @@
 .blko-soda-fiber__bar i{display:block;height:100%;border-radius:999px}
 .blko-soda-fiber__compare p{margin:0;font-size:.85rem;opacity:.8}
 @media(max-width:600px){.blko-soda-fiber__compare li{grid-template-columns:1fr 3rem}.blko-soda-fiber__bar{grid-column:1/-1;grid-row:2}}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+/* banner box: fixed height per breakpoint */
+.blko-soda-hbanner{width:100%;max-width:72rem;height:420px;margin:0 auto;overflow:hidden;border-radius:1.75rem}
+.blko-soda-hbanner img{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.blko-soda-hbanner{height:320px}}
+@media(max-width:600px){.blko-soda-hbanner{height:220px;border-radius:1.25rem}}
+.blko-soda-fiber__head h1{max-width:16ch;font-size:clamp(2.8rem,8vw,5.5rem)}
+.blko-soda-fiber__steps li{border:2px solid var(--color-text, #0f3b2e)}
+.blko-soda-fiber__compare{gap:0;padding:0;overflow:hidden;border:3px solid var(--color-text, #0f3b2e);border-radius:1.5rem;background:#fff}
+.blko-soda-fiber__compare h2{padding:1rem 1.5rem;background:var(--color-pastel-3, #c8f1dd);border-bottom:3px solid var(--color-text, #0f3b2e)}
+.blko-soda-fiber__compare ul{gap:0}
+.blko-soda-fiber__compare li{padding:1rem 1.5rem;border-bottom:2px solid var(--color-text, #0f3b2e)}
+.blko-soda-fiber__compare li:last-child{border-bottom:0}
+.blko-soda-fiber__compare p{padding:.9rem 1.5rem;border-top:2px solid var(--color-text, #0f3b2e)}
+@media(max-width:600px){.blko-soda-fiber__compare li{grid-template-columns:1fr 3rem;gap:.4rem}.blko-soda-fiber__bar{grid-column:1/-1;order:3}}
+.blko-soda-fiber{grid-template-columns:minmax(0,1fr)}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda fiber education",
   "settings": [
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section background)"},
+    {"type": "text", "id": "banner", "label": "Banner name (file fizz-banner-NAME.svg in assets)"},
+    {"type": "image_picker", "id": "image", "label": "Banner image (overrides banner name)"},
     {"type": "color", "id": "bg", "label": "Background", "default": "#fbf3e2"},
     {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
     {"type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Fiber 101"},

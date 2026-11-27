@@ -1,13 +1,14 @@
-<section class="blko-soda-ingr" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+<section class="blko-soda-ingr{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <header class="blko-soda-ingr__head">
     <p class="blko-soda-ingr__eyebrow">{{ section.settings.eyebrow | escape }}</p>
     <h1>{{ section.settings.heading | escape }}</h1>
     <p>{{ section.settings.text | escape }}</p>
   </header>
+  {% render 'blko-soda-banner', name: section.settings.banner, image: section.settings.image, alt: section.settings.heading %}
   <ul class="blko-soda-ingr__grid">
     {%- for block in section.blocks -%}{%- if block.type == 'ingredient' -%}
       <li style="background:{{ block.settings.color }}" {{ block.shopify_attributes }}>
-        {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.name }}{%- elsif block.settings.image_url != blank -%}<img src="{{ block.settings.image_url }}" alt="{{ block.settings.name | escape }}" width="600" height="600" loading="lazy">{%- endif -%}
+        {%- if block.settings.image != blank -%}<span class="blko-soda-ingr__tile">{{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.name }}</span>{%- else -%}<span class="blko-soda-ingr__tile"><img src="{{ 'fizz-can-' | append: block.settings.can | append: '.svg' | asset_url }}" alt="{{ block.settings.name | escape }}" width="600" height="600" loading="lazy"></span>{%- endif -%}
         <h2>{{ block.settings.name | escape }}</h2>
         <p>{{ block.settings.text | escape }}</p>
       </li>
@@ -37,12 +38,29 @@
 .blko-soda-ingr__out h2{margin:0;font:900 clamp(1.7rem,3.5vw,2.5rem)/1.05 var(--font-heading, "Fraunces", Georgia, serif)}
 .blko-soda-ingr__out ul{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin:0;padding:0;list-style:none}
 .blko-soda-ingr__out li{padding:.5rem 1.1rem;border:2px solid currentColor;border-radius:999px;font-weight:700;text-decoration:line-through;text-decoration-color:var(--color-accent, #ff6b8b);text-decoration-thickness:2px}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+/* banner box: fixed height per breakpoint */
+.blko-soda-hbanner{width:100%;max-width:72rem;height:420px;margin:0 auto;overflow:hidden;border-radius:1.75rem}
+.blko-soda-hbanner img{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.blko-soda-hbanner{height:320px}}
+@media(max-width:600px){.blko-soda-hbanner{height:220px;border-radius:1.25rem}}
+.blko-soda-ingr>.blko-soda-hbanner{margin-block:0}
+.blko-soda-ingr__head h1{max-width:18ch;font-size:clamp(2.8rem,8vw,5.5rem)}
+.blko-soda-ingr__tile{display:grid;place-items:end center;height:200px;overflow:hidden;border-radius:1.5rem;background:rgba(255,255,255,.6)}
+.blko-soda-ingr__tile img{width:auto;height:168px;max-width:90%;object-fit:contain;aspect-ratio:auto;border-radius:0;margin-bottom:.5rem}
+.blko-soda-ingr__grid li{border:2px solid var(--color-text, #0f3b2e)}
+@media(max-width:600px){.blko-soda-ingr__tile{height:170px}.blko-soda-ingr__tile img{height:144px}}
+.blko-soda-ingr{grid-template-columns:minmax(0,1fr)}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda ingredients",
   "settings": [
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section background)"},
+    {"type": "text", "id": "banner", "label": "Banner name (file fizz-banner-NAME.svg in assets)"},
+    {"type": "image_picker", "id": "image", "label": "Banner image (overrides banner name)"},
     {"type": "color", "id": "bg", "label": "Background", "default": "#fbf3e2"},
     {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
     {"type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "What is in the can"},
@@ -57,7 +75,7 @@
       "settings": [
         {"type": "color", "id": "color", "label": "Tile color", "default": "#ffc9d6"},
         {"type": "image_picker", "id": "image", "label": "Image"},
-        {"type": "url", "id": "image_url", "label": "Image URL (demo)"},
+        {"type": "text", "id": "can", "label": "Can handle (e.g. cherry-pop)", "default": "cherry-pop"},
         {"type": "text", "id": "name", "label": "Name", "default": "Real fruit juice"},
         {"type": "textarea", "id": "text", "label": "Text", "default": "Pressed cherries and citrus give the flavor, not a lab."}
       ]

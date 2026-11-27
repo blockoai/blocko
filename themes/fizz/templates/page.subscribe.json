@@ -1,0 +1,287 @@
+{
+  "sections": {
+    "hero": {
+      "type": "blko-soda-page-hero",
+      "settings": {
+        "bg": "#c8f1dd",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "eyebrow": "Soda on repeat",
+        "heading": "Subscribe and save 15%",
+        "text": "Your favorite cans, on your schedule. Free shipping, skip or pause any time.",
+        "button_label": "Start a subscription",
+        "button_url": "/products/cherry-pop",
+        "button2_label": "Browse flavors",
+        "button2_url": "/collections/all",
+        "banner": "promo-subscribe"
+      }
+    },
+    "how": {
+      "type": "blko-soda-steps",
+      "settings": {
+        "bg": "#fbf3e2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fff3b0",
+        "heading": "How it works",
+        "text": "Three steps, zero fridge-restocking runs."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "color": "#ffc9d6",
+            "title": "Pick your flavors",
+            "text": "Choose any of our eight flavors or a variety box."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "color": "#cdf26b",
+            "title": "Choose your pace",
+            "text": "Every 2, 4 or 8 weeks. Change it whenever life does."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "color": "#d8f0ff",
+            "title": "Sip and relax",
+            "text": "Boxes arrive with free shipping. Skip, swap or pause from your account."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "plans": {
+      "type": "blko-soda-plans",
+      "settings": {
+        "bg": "#fff3b0",
+        "text_color": "#0f3b2e",
+        "wave_color": "#c8f1dd",
+        "heading": "Pick your pace",
+        "text": "Every plan saves 15% and ships free."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "plan",
+          "settings": {
+            "color": "#ffffff",
+            "badge": "Save 15%",
+            "title": "Every 2 weeks",
+            "text": "For the daily sippers. A fresh box twice a month.",
+            "button_label": "Choose this plan",
+            "button_url": "/products/cherry-pop"
+          }
+        },
+        "block-2": {
+          "type": "plan",
+          "settings": {
+            "color": "#ffc9d6",
+            "badge": "Most popular",
+            "title": "Every 4 weeks",
+            "text": "The sweet spot. One box a month, never run out.",
+            "button_label": "Choose this plan",
+            "button_url": "/products/cherry-pop"
+          }
+        },
+        "block-3": {
+          "type": "plan",
+          "settings": {
+            "color": "#ffffff",
+            "badge": "Save 15%",
+            "title": "Every 8 weeks",
+            "text": "A slower pace for lighter sippers.",
+            "button_label": "Choose this plan",
+            "button_url": "/products/cherry-pop"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "picker": {
+      "type": "blko-soda-flavor-picker",
+      "settings": {
+        "bg": "#c8f1dd",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "heading": "Pick your first flavor",
+        "text": "Start with a favorite. You can mix flavors in every box.",
+        "button_label": "Start my subscription",
+        "button_url": "/products/cherry-pop"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "flavor",
+          "settings": {
+            "name": "Cherry Pop",
+            "color": "#fde1e3"
+          }
+        },
+        "block-2": {
+          "type": "flavor",
+          "settings": {
+            "name": "Orange Burst",
+            "color": "#fde9d2"
+          }
+        },
+        "block-3": {
+          "type": "flavor",
+          "settings": {
+            "name": "Strawberry Lime",
+            "color": "#fde2ea"
+          }
+        },
+        "block-4": {
+          "type": "flavor",
+          "settings": {
+            "name": "Lemon Lime Zing",
+            "color": "#eef6cf"
+          }
+        },
+        "block-5": {
+          "type": "flavor",
+          "settings": {
+            "name": "Mango Tango",
+            "color": "#fff0cc"
+          }
+        },
+        "block-6": {
+          "type": "flavor",
+          "settings": {
+            "name": "Mint Mojito",
+            "color": "#d6f1ea"
+          }
+        },
+        "block-7": {
+          "type": "flavor",
+          "settings": {
+            "name": "Grape Soda",
+            "color": "#e8defa"
+          }
+        },
+        "block-8": {
+          "type": "flavor",
+          "settings": {
+            "name": "Root Beer",
+            "color": "#f0e1d1"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8"
+      ]
+    },
+    "faq": {
+      "type": "blko-soda-qa",
+      "settings": {
+        "bg": "#fbf3e2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#cdf26b",
+        "heading": "Subscription questions",
+        "heading_tag": "h2",
+        "text": "Quick answers before you start.",
+        "more_text": "Still unsure?",
+        "more_label": "Contact us",
+        "more_url": "/pages/contact"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "category",
+          "settings": {
+            "name": "Plans"
+          }
+        },
+        "block-2": {
+          "type": "category",
+          "settings": {
+            "name": "Shipping"
+          }
+        },
+        "block-3": {
+          "type": "question",
+          "settings": {
+            "category": "Plans",
+            "question": "Can I skip a box?",
+            "answer": "Yes. Skip, swap flavors or pause from your account page, up to the day before your box ships."
+          }
+        },
+        "block-4": {
+          "type": "question",
+          "settings": {
+            "category": "Plans",
+            "question": "How much do I save?",
+            "answer": "15% on every box, for as long as you stay subscribed."
+          }
+        },
+        "block-5": {
+          "type": "question",
+          "settings": {
+            "category": "Plans",
+            "question": "Is there a minimum commitment?",
+            "answer": "No. Cancel whenever you like, no fees and no phone call."
+          }
+        },
+        "block-6": {
+          "type": "question",
+          "settings": {
+            "category": "Shipping",
+            "question": "Is shipping really free?",
+            "answer": "Yes, every subscription box ships free."
+          }
+        },
+        "block-7": {
+          "type": "question",
+          "settings": {
+            "category": "Shipping",
+            "question": "When does my first box arrive?",
+            "answer": "Most first boxes ship within two business days and land in three to seven."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6",
+        "block-7"
+      ]
+    },
+    "cta": {
+      "type": "blko-soda-why",
+      "settings": {
+        "bg": "#cdf26b",
+        "text_color": "#0f3b2e",
+        "heading": "Ready for your first box?",
+        "text": "Pick a flavor, pick a pace, and the fridge door takes care of itself.",
+        "button_label": "Subscribe now",
+        "button_url": "/products/cherry-pop"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "how",
+    "plans",
+    "picker",
+    "faq",
+    "cta"
+  ]
+}

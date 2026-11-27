@@ -1,0 +1,42 @@
+<section class="blko-soda-spot" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <h2>{{ section.settings.heading | escape }}</h2>
+  <div class="blko-soda-spot__row">
+    {%- for block in section.blocks -%}
+      <a class="blko-soda-spot__item" href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          {{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.name }}
+        {%- else -%}
+          <img src="{{ 'fizz-banner-' | append: block.settings.image_name | append: '.svg' | asset_url }}" alt="{{ block.settings.name | escape }}" width="600" height="600" loading="lazy">
+        {%- endif -%}
+        <b>{{ block.settings.name | escape }}</b>
+        <span>{{ block.settings.text | escape }}</span>
+      </a>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Soda flavor spotlight",
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Meet the flavors"},
+    {"type": "color", "id": "bg", "label": "Background", "default": "#fbf3e2"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"}
+  ],
+  "blocks": [
+    {
+      "type": "flavor",
+      "name": "Flavor",
+      "settings": [
+        {"type": "image_picker", "id": "image", "label": "Image (1:1, cover)"},
+        {"type": "text", "id": "image_name", "label": "Fallback banner name (fizz-banner-NAME.svg)", "default": "flavor-cherry-pop"},
+        {"type": "text", "id": "name", "label": "Name", "default": "Cherry Pop"},
+        {"type": "text", "id": "text", "label": "Text", "default": "Bright, juicy, and a little bit sweet"},
+        {"type": "url", "id": "url", "label": "Link"}
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [{"name": "Soda flavor spotlight"}]
+}
+{% endschema %}

@@ -46,6 +46,29 @@
           panels.forEach(function (p) { p.classList.toggle('is-active', p.dataset.panel === t.dataset.tab); });
         });
       });
+      this.querySelectorAll('[data-scroll]').forEach(function (a) {
+        a.addEventListener('click', function () {
+          var track = a.parentNode.querySelector('.blko-soda-tabs__track');
+          if (track) track.scrollBy({ left: Number(a.dataset.scroll) * track.clientWidth * 0.8, behavior: 'smooth' });
+        });
+      });
+    }
+  });
+
+  /* Collection jump pills: highlight the group in view */
+  define('blko-soda-jump', class extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.bound) return;
+      this.dataset.bound = '';
+      var links = Array.prototype.slice.call(this.querySelectorAll('a[href^="#"]'));
+      if (!links.length || !('IntersectionObserver' in window)) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          links.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id); });
+        });
+      }, { rootMargin: '-30% 0px -60% 0px' });
+      links.forEach(function (a) { var g = document.getElementById(a.getAttribute('href').slice(1)); if (g) io.observe(g); });
     }
   });
 
@@ -71,9 +94,40 @@
       this.dataset.bound = '';
       var root = this;
       var main = root.querySelector('[data-main-image]');
+      /* Demo flavor switcher: ?flavor=<handle> re-skins the page from the [data-flavors] catalog JSON */
+      var fl = root.querySelector('[data-flavors]');
+      if (fl) {
+        try {
+          var handle = new URLSearchParams(location.search).get('flavor');
+          var f = JSON.parse(fl.textContent).filter(function (x) { return x.handle === handle; })[0];
+          if (f) {
+            var scope = root.closest('[data-flavor-scope]') || root;
+            scope.style.setProperty('--tile-bg', f.tint);
+            scope.style.setProperty('--flv', f.color);
+            scope.style.setProperty('--flv-accent', f.accent);
+            root.querySelectorAll('[data-flavor-can]').forEach(function (i) { i.src = f.can; });
+            root.querySelectorAll('[data-flavor-name]').forEach(function (i) { i.textContent = f.name; });
+            root.querySelectorAll('.blko-soda-tile,.blko-soda-sticky__thumb,.blko-soda-flavor summary .blko-soda-flavor__dot').forEach(function (i) { i.style.setProperty('--tile-bg', f.tint); });
+            var set = function (sel, fn) { var n = root.querySelector(sel); if (n) fn(n); };
+            set('[data-flavor-title]', function (n) { n.textContent = f.name; });
+            set('[data-flavor-line]', function (n) { n.textContent = f.line; });
+            set('[data-flavor-desc]', function (n) { n.textContent = f.desc; });
+            set('[data-thumb-can]', function (n) { n.src = f.can; n.closest('[data-thumb]').dataset.thumb = f.can; });
+            set('[data-thumb-spot]', function (n) { n.src = f.spot; n.closest('[data-thumb]').dataset.thumb = f.spot; });
+            set('[data-thumb-pack]', function (n) { n.src = f.pack; n.closest('[data-thumb]').dataset.thumb = f.pack; });
+            set('[data-variants]', function (n) { n.textContent = f.variants; var v = JSON.parse(f.variants)[0]; var idf = root.querySelector('[name=id]'); if (idf) idf.value = v.id; });
+            root.querySelectorAll('[data-flavor-link]').forEach(function (a) { if (a.dataset.flavorLink === handle) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+            document.title = f.name + ' · Fizz';
+          }
+        } catch (e) { /* demo only */ }
+      }
       root.querySelectorAll('[data-thumb]').forEach(function (b) {
         b.addEventListener('click', function () {
-          if (main) main.src = b.dataset.thumb;
+          if (main) {
+            main.src = b.dataset.thumb;
+            var tl = main.closest('.blko-soda-tile');
+            if (tl) tl.classList.toggle('is-full', b.hasAttribute('data-full'));
+          }
           root.querySelectorAll('[data-thumb]').forEach(function (x) { x.classList.toggle('is-active', x === b); });
         });
       });
@@ -137,6 +191,39 @@
       };
       form.addEventListener('change', sync);
       sync();
+
+      /* Sticky add-to-cart bar: slides in once the main buy button has scrolled out above the viewport */
+      var bar = root.querySelector('[data-sticky]');
+      if (bar && btn) {
+        var sOpt = bar.querySelector('[data-sticky-opt]');
+        var sPrice = bar.querySelector('[data-sticky-price]');
+        var sCmp = bar.querySelector('[data-sticky-compare]');
+        var sBtn = bar.querySelector('[data-sticky-add]');
+        var paint = function () {
+          var chosen = Array.prototype.map.call(form.querySelectorAll('[data-option]:checked'), function (i) { return i.value; });
+          var type = form.querySelector('[data-purchase-type]:checked');
+          var plan = select && type && type.value === 'sub' && !(box && box.hidden) ? select.options[select.selectedIndex] : null;
+          if (sOpt) sOpt.textContent = chosen.concat(plan ? [plan.dataset.name] : []).join(' · ');
+          if (sPrice && price) sPrice.textContent = price.textContent;
+          if (sCmp && cmp) { sCmp.textContent = cmp.textContent; sCmp.hidden = cmp.hidden || !cmp.textContent.trim(); }
+          if (sBtn) { sBtn.disabled = btn.disabled; sBtn.textContent = btn.textContent; }
+        };
+        form.addEventListener('change', paint);
+        paint();
+        var show = function (on) {
+          bar.classList.toggle('is-visible', on);
+          bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+          if (sBtn) sBtn.tabIndex = on ? 0 : -1;
+        };
+        if (sBtn) sBtn.addEventListener('click', function () { if (form.requestSubmit) form.requestSubmit(); else btn.click(); });
+        if ('IntersectionObserver' in window) {
+          new IntersectionObserver(function (entries) {
+            var e = entries[entries.length - 1];
+            paint();
+            show(!e.isIntersecting && e.boundingClientRect.top < 0);
+          }).observe(btn);
+        }
+      }
     }
   });
 

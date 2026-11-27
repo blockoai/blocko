@@ -1,0 +1,64 @@
+<section class="blko-soda-fpick{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <div class="blko-soda-fpick__in">
+    <h2>{{ section.settings.heading | escape }}</h2>
+    <p>{{ section.settings.text | escape }}</p>
+    <div class="blko-soda-fpick__grid" role="radiogroup" aria-label="{{ section.settings.heading | escape }}">
+      {%- for block in section.blocks -%}
+        <label class="blko-soda-fpick__opt" style="--tile:{{ block.settings.color }}" {{ block.shopify_attributes }}>
+          <input type="radio" name="pick-{{ section.id }}" value="{{ block.settings.name | handleize }}"{% if forloop.first %} checked{% endif %}>
+          <span class="blko-soda-fpick__tile">
+            {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', alt: block.settings.name }}{%- else -%}<img src="{{ 'fizz-can-' | append: block.settings.name | handleize | append: '.svg' | asset_url }}" alt="{{ block.settings.name | escape }}" width="400" height="400" loading="lazy">{%- endif -%}
+          </span>
+          <b>{{ block.settings.name | escape }}</b>
+        </label>
+      {%- endfor -%}
+    </div>
+    <a class="blko-soda-fpick__cta" href="{{ section.settings.button_url }}">{{ section.settings.button_label | escape }}</a>
+  </div>
+</section>
+
+{% stylesheet %}
+.blko-soda-fpick{padding:clamp(3rem,7vw,5.5rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif);text-align:center}
+.blko-soda-fpick__in{display:grid;gap:1.25rem;max-width:64rem;margin:0 auto}
+.blko-soda-fpick h2{margin:0;font:900 clamp(2rem,4.5vw,3.5rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-fpick__in>p{max-width:40rem;margin:0 auto;font-size:1.15rem}
+.blko-soda-fpick__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:.5rem}
+.blko-soda-fpick__opt{position:relative;display:grid;gap:.5rem;cursor:pointer}
+.blko-soda-fpick__opt input{position:absolute;opacity:0;pointer-events:none}
+.blko-soda-fpick__tile{display:grid;place-items:center;aspect-ratio:1;overflow:hidden;border:3px solid transparent;border-radius:20px;background:var(--tile, #ffc9d6);transition:box-shadow .2s ease,border-color .2s ease}
+.blko-soda-fpick__tile img{width:auto;height:78%;max-width:80%;object-fit:contain;transition:transform .2s cubic-bezier(.4,0,.2,1)}
+.blko-soda-fpick__opt:hover .blko-soda-fpick__tile img{transform:scale(1.08)}
+.blko-soda-fpick__opt input:checked+.blko-soda-fpick__tile{border-color:var(--color-text, #0f3b2e);box-shadow:4px 4px 0 0 var(--color-text, #0f3b2e)}
+.blko-soda-fpick__opt input:focus-visible+.blko-soda-fpick__tile{outline:3px solid var(--color-text, #0f3b2e);outline-offset:3px}
+.blko-soda-fpick__opt b{font:900 1.1rem/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-fpick__cta{justify-self:center;margin-top:.75rem;padding:.95rem 2.25rem;border-radius:999px;background:var(--color-text, #0f3b2e);color:var(--color-bg, #fbf3e2);font:700 1.1rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none;transition:background-color .25s ease-in-out}
+.blko-soda-fpick__cta:hover{background:#1f5a44}
+@media(max-width:700px){.blko-soda-fpick__grid{grid-template-columns:repeat(2,1fr)}}
+@media(prefers-reduced-motion:reduce){.blko-soda-fpick__tile img{transition:none}.blko-soda-fpick__opt:hover .blko-soda-fpick__tile img{transform:none}}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda flavor picker",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#c8f1dd"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section's background)"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Pick your first flavor"},
+    {"type": "textarea", "id": "text", "label": "Intro", "default": "Start with a favorite. You can mix flavors in every box."},
+    {"type": "text", "id": "button_label", "label": "Button label", "default": "Start my subscription"},
+    {"type": "url", "id": "button_url", "label": "Button link"}
+  ],
+  "blocks": [
+    {"type": "flavor", "name": "Flavor", "settings": [
+      {"type": "text", "id": "name", "label": "Name (handle matches the can file, e.g. Cherry Pop)", "default": "Cherry Pop"},
+      {"type": "color", "id": "color", "label": "Tile color", "default": "#fde1e3"},
+      {"type": "image_picker", "id": "image", "label": "Can image (optional)"}
+    ]}
+  ],
+  "max_blocks": 12,
+  "presets": [{"name": "Soda flavor picker", "blocks": [{"type": "flavor"}]}]
+}
+{% endschema %}

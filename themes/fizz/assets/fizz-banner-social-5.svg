@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" preserveAspectRatio="xMidYMid slice">
+<defs><g id="c-strawberry-lime"><g>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
+<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
+<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#e8587a"/>
+<path d="M50 112 Q150 122 250 112" fill="none" stroke="#5c2330" stroke-width="3" opacity=".5"/>
+<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
+<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
+<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
+<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
+<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
+<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
+<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
+<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
+<path id="arc-strawberry-lime" d="M68 190 Q150 130 232 190" fill="none"/>
+<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#5c2330" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-strawberry-lime" startOffset="50%">fizz</textPath></text>
+<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#5c2330" stroke-width="3"/>
+<circle cx="150" cy="292" r="67" fill="#c6f08a" opacity=".55"/>
+<path d="M150 336 C108 314 100 268 112 256 C124 244 140 252 150 256 C160 252 176 244 188 256 C200 268 192 314 150 336Z" fill="#e0304f" stroke="#5c2330" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="130" cy="274" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="150" cy="270" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="170" cy="274" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="124" cy="292" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="144" cy="290" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="164" cy="290" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="184" cy="292" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="136" cy="308" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="156" cy="308" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="150" cy="322" rx="2.6" ry="4" fill="#ffe6a8"/>
+<path d="M150 258 L128 240 L142 248 L146 230 L152 246 L162 232 L162 250 L176 240Z" fill="#4c9a3a" stroke="#5c2330" stroke-width="2" stroke-linejoin="round"/>
+<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#5c2330" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+<text x="150" y="410" font-size="21">Strawberry</text>
+<text x="150" y="440" font-size="21">Lime</text>
+</g>
+<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
+<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#5c2330">6g fiber</text>
+</g></g><g id="c-orange-burst"><g>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
+<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
+<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#f26b1d"/>
+<path d="M50 112 Q150 122 250 112" fill="none" stroke="#602a0b" stroke-width="3" opacity=".5"/>
+<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
+<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
+<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
+<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
+<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
+<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
+<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
+<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
+<path id="arc-orange-burst" d="M68 190 Q150 130 232 190" fill="none"/>
+<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#602a0b" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-orange-burst" startOffset="50%">fizz</textPath></text>
+<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#602a0b" stroke-width="3"/>
+<circle cx="150" cy="292" r="67" fill="#ffe0b8" opacity=".55"/>
+<circle cx="150" cy="290" r="50" fill="#f58a1f" stroke="#602a0b" stroke-width="3"/>
+<circle cx="150" cy="290" r="40" fill="#ffd58a" />
+<path d="M150 290 L188.0 290.0" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L176.9 316.9" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L150.0 328.0" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L123.1 316.9" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L112.0 290.0" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L123.1 263.1" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L150.0 252.0" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L176.9 263.1" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<circle cx="150" cy="290" r="5" fill="#f58a1f" />
+<path d="M186 246 Q210 228 218 244 Q202 256 186 246Z" fill="#4c9a3a"/>
+<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#602a0b" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+<text x="150" y="410" font-size="26">Orange</text>
+<text x="150" y="440" font-size="26">Burst</text>
+</g>
+<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
+<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#602a0b">9g fiber</text>
+</g></g></defs><rect width="1000" height="1000" fill="#ffe0e8"/><path d="M0 100 Q500 190 1000 100" stroke="#5a3a1a" stroke-width="4" fill="none"/><path d="M80 80 l60 0 l-30 70z" fill="#c8203a" stroke="#5a3a1a" stroke-width="4"/><path d="M220 113 l60 0 l-30 70z" fill="#f2a516" stroke="#5a3a1a" stroke-width="4"/><path d="M360 116 l60 0 l-30 70z" fill="#1ea58b" stroke="#5a3a1a" stroke-width="4"/><path d="M500 85 l60 0 l-30 70z" fill="#6d3fa6" stroke="#5a3a1a" stroke-width="4"/><path d="M640 50 l60 0 l-30 70z" fill="#e8587a" stroke="#5a3a1a" stroke-width="4"/><path d="M780 42 l60 0 l-30 70z" fill="#7fb41a" stroke="#5a3a1a" stroke-width="4"/><path d="M920 69 l60 0 l-30 70z" fill="#f26b1d" stroke="#5a3a1a" stroke-width="4"/><path d="M120 440 Q128 550 110 650" stroke="#5a3a1a" stroke-width="3" fill="none"/><ellipse cx="120" cy="350" rx="55" ry="68" fill="#e8587a" stroke="#5a3a1a" stroke-width="5"/><ellipse cx="102" cy="328" rx="10" ry="18" fill="#fff" opacity=".4"/><path d="M240 370 Q248 480 230 580" stroke="#5a3a1a" stroke-width="3" fill="none"/><ellipse cx="240" cy="280" rx="55" ry="68" fill="#f2a516" stroke="#5a3a1a" stroke-width="5"/><ellipse cx="222" cy="258" rx="10" ry="18" fill="#fff" opacity=".4"/><path d="M880 430 Q888 540 870 640" stroke="#5a3a1a" stroke-width="3" fill="none"/><ellipse cx="880" cy="340" rx="55" ry="68" fill="#1ea58b" stroke="#5a3a1a" stroke-width="5"/><ellipse cx="862" cy="318" rx="10" ry="18" fill="#fff" opacity=".4"/><path d="M770 360 Q778 470 760 570" stroke="#5a3a1a" stroke-width="3" fill="none"/><ellipse cx="770" cy="270" rx="55" ry="68" fill="#6d3fa6" stroke="#5a3a1a" stroke-width="5"/><ellipse cx="752" cy="248" rx="10" ry="18" fill="#fff" opacity=".4"/><rect x="828" y="508" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(0)"/><rect x="132" y="310" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(37)"/><rect x="937" y="883" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(74)"/><rect x="233" y="601" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(111)"/><rect x="231" y="833" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(148)"/><rect x="610" y="190" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(185)"/><rect x="777" y="873" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(222)"/><rect x="317" y="153" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(259)"/><rect x="222" y="573" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(296)"/><rect x="454" y="295" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(333)"/><rect x="560" y="360" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(370)"/><rect x="443" y="506" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(407)"/><rect x="465" y="844" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(444)"/><rect x="254" y="467" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(481)"/><rect x="105" y="491" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(518)"/><rect x="946" y="444" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(555)"/><rect x="354" y="175" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(592)"/><rect x="512" y="178" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(629)"/><rect x="178" y="699" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(666)"/><rect x="664" y="654" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(703)"/><rect x="888" y="830" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(740)"/><rect x="162" y="373" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(777)"/><rect x="939" y="177" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(814)"/><rect x="906" y="338" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(851)"/><rect x="698" y="791" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(888)"/><rect x="369" y="472" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(925)"/><rect x="732" y="409" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(962)"/><rect x="636" y="743" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(999)"/><rect x="111" y="755" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(1036)"/><rect x="537" y="233" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(1073)"/><rect x="528" y="332" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(1110)"/><rect x="12" y="515" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(1147)"/><rect x="76" y="233" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(1184)"/><rect x="559" y="507" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(1221)"/><rect x="518" y="691" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(1258)"/><rect x="538" y="276" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(1295)"/><rect x="322" y="737" width="14" height="14" rx="3" fill="#c8203a" transform="rotate(1332)"/><rect x="668" y="234" width="14" height="14" rx="3" fill="#f2a516" transform="rotate(1369)"/><rect x="627" y="430" width="14" height="14" rx="3" fill="#1ea58b" transform="rotate(1406)"/><rect x="206" y="183" width="14" height="14" rx="3" fill="#6d3fa6" transform="rotate(1443)"/><rect y="780" width="1000" height="220" fill="#f0b4c4"/><ellipse cx="410" cy="787" rx="84" ry="11" fill="#000" opacity=".16"/><use href="#c-strawberry-lime" transform="translate(410 590) rotate(-6) scale(0.8) translate(-150 -290)"/><ellipse cx="600" cy="807" rx="84" ry="11" fill="#000" opacity=".16"/><use href="#c-orange-burst" transform="translate(600 610) rotate(6) scale(0.8) translate(-150 -290)"/>
+</svg>

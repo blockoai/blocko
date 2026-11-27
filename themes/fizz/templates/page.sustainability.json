@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "hero": {
+      "type": "blko-soda-page-hero",
+      "settings": {
+        "bg": "#c8f1dd",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "eyebrow": "Sustainability",
+        "heading": "Good for your gut. Kind to the planet.",
+        "text": "We are small, so we are honest: here is how we think about every can, and where we are still working.",
+        "banner": "sustainability"
+      }
+    },
+    "pillars": {
+      "type": "blko-soda-cards",
+      "settings": {
+        "bg": "#fbf3e2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fff3b0",
+        "heading": "Three pillars",
+        "text": "What we hold ourselves to as we grow.",
+        "columns": 3
+      },
+      "blocks": {
+        "block-1": {
+          "type": "card",
+          "settings": {
+            "color": "#d8f0ff",
+            "tag": "Packaging",
+            "title": "Cans, not plastic",
+            "text": "Aluminum cans chill fast, ship light and are widely recycled."
+          }
+        },
+        "block-2": {
+          "type": "card",
+          "settings": {
+            "color": "#ffc9d6",
+            "tag": "Sourcing",
+            "title": "Fruit with a story",
+            "text": "We buy fruit and chicory from growers we can name and visit."
+          }
+        },
+        "block-3": {
+          "type": "card",
+          "settings": {
+            "color": "#cdf26b",
+            "tag": "Operations",
+            "title": "Smaller footprint",
+            "text": "Small batches, full pallets and shorter routes to cut waste."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "stats": {
+      "type": "blko-soda-story-impact",
+      "settings": {
+        "bg": "#fff3b0",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "heading": "Where we are headed",
+        "text": "Goals we are working toward, shared openly.",
+        "footnote": "*Placeholder goals, replace with your own numbers."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "stat",
+          "settings": {
+            "number": "100%",
+            "label": "Recyclable cans"
+          }
+        },
+        "block-2": {
+          "type": "stat",
+          "settings": {
+            "number": "50%",
+            "label": "Recycled aluminum goal*"
+          }
+        },
+        "block-3": {
+          "type": "stat",
+          "settings": {
+            "number": "0",
+            "label": "Plastic in the box*"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "cta": {
+      "type": "blko-soda-why",
+      "settings": {
+        "bg": "#cdf26b",
+        "text_color": "#0f3b2e",
+        "heading": "Questions about our footprint?",
+        "text": "We love hard questions. Ask away.",
+        "button_label": "Contact us",
+        "button_url": "/pages/contact"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "pillars",
+    "stats",
+    "cta"
+  ]
+}

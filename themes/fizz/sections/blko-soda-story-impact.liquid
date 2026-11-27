@@ -1,4 +1,4 @@
-<section class="blko-soda-impact" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+<section class="blko-soda-impact{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <h2>{{ section.settings.heading | escape }}</h2>
   <p>{{ section.settings.text | escape }}</p>
   <dl>
@@ -17,12 +17,22 @@
 .blko-soda-impact dt{font:900 clamp(2.5rem,5vw,4rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
 .blko-soda-impact dd{margin:.3rem 0 0;font-weight:700}
 .blko-soda-impact small{opacity:.8}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+.blko-soda-impact dl{max-width:64rem;gap:1.5rem 2rem;justify-items:center}
+.blko-soda-impact dl>div{display:grid;place-content:center;gap:.25rem;width:clamp(9.5rem,20vw,13rem);aspect-ratio:1;padding:1rem;border:4px solid var(--color-text, #0f3b2e);border-radius:50%;background:var(--color-pastel-2, #fff3b0);color:var(--color-text, #0f3b2e);text-align:center}
+.blko-soda-impact dt{font-size:clamp(2.4rem,5.5vw,3.75rem)}
+.blko-soda-impact dd{margin:0;font-size:.95rem;line-height:1.2}
+.blko-soda-impact{grid-template-columns:minmax(0,1fr)}
+.blko-soda-impact dl{grid-template-columns:repeat(auto-fit,minmax(8rem,1fr));gap:1rem}
+.blko-soda-impact dl>div{width:min(100%,clamp(9.5rem,20vw,13rem))}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda story stats",
   "settings": [
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section background)"},
     {"type": "color", "id": "bg", "label": "Background", "default": "#ffc9d6"},
     {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
     {"type": "text", "id": "heading", "label": "Heading", "default": "Fizz by the numbers"},

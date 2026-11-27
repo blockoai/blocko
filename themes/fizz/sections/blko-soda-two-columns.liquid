@@ -1,7 +1,9 @@
-<section class="blko-soda-cols" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+<section class="blko-soda-cols{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <div class="blko-soda-cols__inner{% if section.settings.reverse %} is-reverse{% endif %}">
-    <div class="blko-soda-cols__img">
-      {%- if section.settings.image != blank -%}
+    <div class="blko-soda-cols__img{% if section.settings.banner != blank %} blko-soda-cols__img--banner{% endif %}">
+      {%- if section.settings.banner != blank -%}
+        <img src="{{ 'fizz-banner-' | append: section.settings.banner | append: '.svg' | asset_url }}" alt="{{ section.settings.heading | escape }}" width="1500" height="1000" loading="lazy">
+      {%- elsif section.settings.image != blank -%}
         {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy', alt: section.settings.heading }}
       {%- elsif section.settings.image_url != blank -%}
         <img src="{{ section.settings.image_url }}" alt="{{ section.settings.heading | escape }}" width="1000" height="1000" loading="lazy">
@@ -25,19 +27,25 @@
 .blko-soda-cols__copy p{margin:0;font-size:1.15rem;line-height:1.55}
 .blko-soda-cols__copy a{padding:.9rem 1.9rem;border-radius:999px;color:var(--color-button-text, #fff);font:700 1.05rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
 @media(max-width:800px){.blko-soda-cols__inner{grid-template-columns:1fr}.blko-soda-cols__inner.is-reverse .blko-soda-cols__img{order:0}}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+.blko-soda-cols__img--banner img{height:420px;aspect-ratio:auto}
+@media(max-width:900px){.blko-soda-cols__img--banner img{height:320px}}
+@media(max-width:600px){.blko-soda-cols__img--banner img{height:240px}}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda two columns",
   "settings": [
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section background)"},
     {"type": "color", "id": "bg", "label": "Background", "default": "#ffc9d6"},
     {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
     {"type": "color", "id": "button_bg", "label": "Button", "default": "#0f3b2e"},
     {"type": "checkbox", "id": "reverse", "label": "Image on the right", "default": true},
+    {"type": "text", "id": "banner", "label": "Banner name (fizz-banner-NAME.svg; overrides the URL below)"},
     {"type": "image_picker", "id": "image", "label": "Image"},
-    {"type": "text", "id": "image_url", "label": "Fallback image URL (Unsplash)", "default": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=1000&q=80"},
-    {"type": "text", "id": "heading", "label": "Heading", "default": "Real fruit. Real short label."},
+        {"type": "text", "id": "heading", "label": "Heading", "default": "Real fruit. Real short label."},
     {"type": "textarea", "id": "text", "label": "Text", "default": "Fizz is built from fruit juice, prebiotic fiber and sparkling water. No fake colors, no sugar bomb, no ingredient you need to Google."},
     {"type": "text", "id": "button_label", "label": "Button label", "default": "What's in Fizz?"},
     {"type": "url", "id": "button_url", "label": "Button link"}

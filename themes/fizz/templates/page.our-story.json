@@ -2,11 +2,20 @@
   "sections": {
     "hero": {
       "type": "blko-soda-story-hero",
-      "settings": {}
+      "settings": {
+        "bg": "#d8f0ff",
+        "text_color": "#0f3b2e",
+        "wave_color": "#0f3b2e",
+        "banner": "story"
+      }
     },
     "mission": {
       "type": "blko-soda-story-mission",
-      "settings": {}
+      "settings": {
+        "bg": "#0f3b2e",
+        "text_color": "#cdf26b",
+        "wave_color": "#f3e8cd"
+      }
     },
     "real-fruit": {
       "type": "blko-soda-two-columns",
@@ -16,12 +25,17 @@
         "heading": "Made in small batches",
         "text": "We cook fruit, blend fiber and carbonate in small batches so every can tastes the same as the first one we poured.",
         "button_label": "Meet the flavors",
-        "button_url": "/collections/drinks"
+        "button_url": "/collections/all",
+        "banner": "variety",
+        "wave_color": "#ffc9d6"
       }
     },
     "impact": {
       "type": "blko-soda-story-impact",
-      "settings": {},
+      "settings": {
+        "bg": "#ffc9d6",
+        "wave_color": "#fff3b0"
+      },
       "blocks": {
         "block-1": {
           "type": "stat",
@@ -40,7 +54,7 @@
         "block-3": {
           "type": "stat",
           "settings": {
-            "number": "6",
+            "number": "8",
             "label": "Fruity flavors"
           }
         }

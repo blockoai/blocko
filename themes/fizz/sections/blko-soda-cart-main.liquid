@@ -1,49 +1,134 @@
-<section class="blko-soda-cartpage">
+{%- assign threshold = section.settings.free_shipping_threshold | times: 100 -%}
+<blko-soda-cartpage class="blko-soda-cartpage" data-section-id="{{ section.id }}">
   <h1>{{ section.settings.heading | escape }}</h1>
   {%- if cart.item_count == 0 -%}
-    <p class="blko-soda-cartpage__empty">{{ section.settings.empty_text }} <a href="{{ routes.all_products_collection_url }}">{{ section.settings.continue_label }}</a></p>
+    <p class="blko-soda-cartpage__empty" data-cp-count="0">{{ section.settings.empty_text }} <a href="{{ routes.all_products_collection_url }}">{{ section.settings.continue_label }}</a></p>
   {%- else -%}
     <form action="{{ routes.cart_url }}" method="post" class="blko-soda-cartpage__form">
-      <ul class="blko-soda-cartpage__items">
-        {%- for item in cart.items -%}
-          <li>
-            <a href="{{ item.url }}">{%- if item.image -%}<img src="{{ item.image | image_url: width: 240 }}" alt="{{ item.title | escape }}" width="96" height="96" loading="lazy">{%- endif -%}</a>
-            <div>
-              <a class="blko-soda-cartpage__title" href="{{ item.url }}">{{ item.product.title }}</a>
-              {%- unless item.product.has_only_default_variant -%}<p>{{ item.variant.title }}</p>{%- endunless -%}
-              {%- if item.selling_plan_allocation -%}<p>{{ item.selling_plan_allocation.selling_plan.name }}</p>{%- endif -%}
-              <a class="blko-soda-cartpage__remove" href="{{ item.url_to_remove }}">{{ section.settings.remove_label }}</a>
-            </div>
-            <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" aria-label="Quantity">
-            <strong>{{ item.final_line_price | money }}</strong>
-          </li>
-        {%- endfor -%}
-      </ul>
-      <div class="blko-soda-cartpage__summary">
-        <p><span>{{ section.settings.subtotal_label }}</span><strong>{{ cart.total_price | money }}</strong></p>
-        <small>{{ section.settings.tax_note }}</small>
-        <button type="submit" name="update">{{ section.settings.update_label }}</button>
-        <button type="submit" name="checkout" class="is-primary">{{ section.settings.checkout_label }}</button>
+      <div class="blko-soda-cartpage__grid">
+        <div class="blko-soda-cartpage__main" data-cp-count="{{ cart.item_count }}">
+          <div class="blko-soda-cartpage__cols" aria-hidden="true"><span>{{ section.settings.col_product }}</span><span></span><span>{{ section.settings.col_quantity }}</span><span>{{ section.settings.col_total }}</span></div>
+          <ul class="blko-soda-cartpage__items">
+            {%- for item in cart.items -%}
+              {%- assign n = forloop.index0 | modulo: 5 | plus: 1 -%}
+              <li>
+                <a class="blko-soda-cartpage__tile" href="{{ item.url }}" style="--tile-bg:var(--color-pastel-{{ n }}, #ffc9d6)">{%- if item.image -%}<img src="{{ item.image | image_url: width: 240 }}" alt="{{ item.title | escape }}" width="96" height="96" loading="lazy">{%- endif -%}</a>
+                <div class="blko-soda-cartpage__info">
+                  <a class="blko-soda-cartpage__title" href="{{ item.url }}">{{ item.product.title }}</a>
+                  {%- unless item.product.has_only_default_variant -%}<p>{{ item.variant.title }}</p>{%- endunless -%}
+                  {%- if item.selling_plan_allocation -%}<p>{{ item.selling_plan_allocation.selling_plan.name }}</p>{%- endif -%}
+                  {%- for allocation in item.line_level_discount_allocations -%}<p class="blko-soda-cartpage__disc">{{ allocation.discount_application.title | escape }}</p>{%- endfor -%}
+                  <button type="button" class="blko-soda-cartpage__remove" data-cp-key="{{ item.key }}" data-cp-to="0">{{ section.settings.remove_label }}</button>
+                </div>
+                <div class="blko-soda-cartpage__step">
+                  <button type="button" data-cp-key="{{ item.key }}" data-cp-to="{{ item.quantity | minus: 1 }}" aria-label="Decrease quantity">&minus;</button>
+                  <span>{{ item.quantity }}</span>
+                  <button type="button" data-cp-key="{{ item.key }}" data-cp-to="{{ item.quantity | plus: 1 }}" aria-label="Increase quantity">+</button>
+                </div>
+                <p class="blko-soda-cartpage__price">{% if item.original_line_price > item.final_line_price %}<s>{{ item.original_line_price | money }}</s>{% endif %}<strong>{{ item.final_line_price | money }}</strong></p>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+        <aside class="blko-soda-cartpage__summary">
+          <h2>{{ section.settings.summary_title }}</h2>
+          {%- if threshold > 0 -%}
+            {%- assign left = threshold | minus: cart.total_price -%}
+            {%- assign pct = cart.total_price | times: 100 | divided_by: threshold -%}
+            {%- if pct > 100 %}{% assign pct = 100 %}{% endif -%}
+            {%- assign left_money = left | money -%}
+            <div class="blko-soda-cartpage__ship"><b>{%- if left > 0 -%}{{ section.settings.ship_away | replace: '[amount]', left_money }}{%- else -%}{{ section.settings.ship_done }}{%- endif -%}</b><i><span style="width:{{ pct }}%"></span></i></div>
+          {%- endif -%}
+          {%- assign saved = cart.original_total_price | minus: cart.total_price -%}
+          <p><span>{{ section.settings.subtotal_label }}</span><strong>{{ cart.original_total_price | money }}</strong></p>
+          {%- if saved > 0 -%}<p class="is-save"><span>{{ section.settings.savings_label }}</span><strong>-{{ saved | money }}</strong></p>{%- endif -%}
+          <p><span>{{ section.settings.shipping_label }}</span><span>{%- if threshold > 0 and cart.total_price >= threshold -%}{{ section.settings.shipping_free }}{%- else -%}{{ section.settings.shipping_later }}{%- endif -%}</span></p>
+          <p class="is-total"><span>{{ section.settings.total_label }}</span><span>{{ cart.total_price | money }}</span></p>
+          <button type="submit" name="checkout">{{ section.settings.checkout_label }}</button>
+          <small>{{ section.settings.tax_note }}</small>
+        </aside>
       </div>
     </form>
   {%- endif -%}
-</section>
+  {%- assign up = section.settings.upsell_collection | default: collections.all -%}
+  {%- if section.settings.upsell_title != blank and up.products_count > 0 -%}
+    <section class="blko-soda-cartpage__upsell">
+      <h2>{{ section.settings.upsell_title }}</h2>
+      <ul>
+        {%- assign shown = 0 -%}
+        {%- for product in up.products limit: 12 -%}
+          {%- assign in_cart = false -%}
+          {%- for item in cart.items -%}{%- if item.product_id == product.id -%}{%- assign in_cart = true -%}{%- endif -%}{%- endfor -%}
+          {%- if in_cart == false and shown < 4 -%}
+            {%- assign shown = shown | plus: 1 -%}
+            {%- assign n = shown | minus: 1 | modulo: 5 | plus: 1 -%}
+            {%- assign variant = product.selected_or_first_available_variant -%}
+            <li class="blko-soda-cartpage__up">
+              <a class="blko-soda-cartpage__up-tile" href="{{ product.url }}" style="--tile-bg:var(--color-pastel-{{ n }}, #ffc9d6)">{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" width="200" height="200" loading="lazy">{%- endif -%}</a>
+              <a class="blko-soda-cartpage__up-name" href="{{ product.url }}">{{ product.title | escape }}</a>
+              <span>{{ product.price | money }}</span>
+              {%- if variant.available -%}<button type="button" data-add-to-cart data-id="{{ variant.id }}">{{ section.settings.upsell_add }}</button>{%- endif -%}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </section>
+  {%- endif -%}
+</blko-soda-cartpage>
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+<script type="module" src="{{ 'blko-soda-chrome.js' | asset_url }}"></script>
 
 {% stylesheet %}
-.blko-soda-cartpage{max-width:62rem;margin:0 auto;padding:clamp(2rem,5vw,4rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
+.blko-theme{--color-brand-green:#0f6e4f;--color-mint:#b8f0d8;--color-yellow:#f7ee6b;--color-cream-light:#fffaf0}
+.blko-soda-cartpage{display:block;max-width:76rem;margin:0 auto;padding:clamp(2rem,5vw,4rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
 .blko-soda-cartpage h1{margin:0 0 1.5rem;font:900 clamp(2.2rem,5vw,3.5rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
-.blko-soda-cartpage__items{display:grid;gap:.9rem;margin:0;padding:0;list-style:none}
-.blko-soda-cartpage__items li{display:grid;grid-template-columns:6rem 1fr 5rem 6rem;align-items:center;gap:1rem;padding:1rem;border-radius:1.25rem;background:var(--color-bg-alt, #f3e8cd)}
-.blko-soda-cartpage__items img{width:6rem;height:6rem;border-radius:1rem;object-fit:cover}
-.blko-soda-cartpage__items p{margin:.2rem 0 0;color:var(--color-text-muted, #4a6a5c);font-size:.88rem}
-.blko-soda-cartpage__title{color:inherit;font:900 1.2rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
-.blko-soda-cartpage__remove{font-size:.82rem}
-.blko-soda-cartpage input[type=number]{width:100%;padding:.5rem;border:2px solid var(--color-text, #0f3b2e);border-radius:.7rem;background:#fff;color:inherit}
-.blko-soda-cartpage__summary{display:grid;justify-items:end;gap:.6rem;margin-top:1.5rem}
-.blko-soda-cartpage__summary p{display:flex;gap:1.5rem;margin:0;font:900 1.5rem var(--font-heading, "Fraunces", Georgia, serif)}
-.blko-soda-cartpage__summary button{padding:.85rem 1.8rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
-.blko-soda-cartpage__summary .is-primary{background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff)}
-@media(max-width:700px){.blko-soda-cartpage__items li{grid-template-columns:4.5rem 1fr 4rem}.blko-soda-cartpage__items strong{grid-column:2/-1}.blko-soda-cartpage__items img{width:4.5rem;height:4.5rem}}
+.blko-soda-cartpage__empty{margin:0;font-size:1.1rem}
+.blko-soda-cartpage__empty a{color:inherit;font-weight:700}
+.blko-soda-cartpage__grid{display:grid;grid-template-columns:minmax(0,1fr) 22rem;gap:clamp(1.5rem,3vw,2.5rem);align-items:start}
+.blko-soda-cartpage__cols{display:grid;grid-template-columns:96px minmax(0,1fr) 8.5rem 6.5rem;gap:1.25rem;padding:0 0 .75rem;border-bottom:2px solid var(--color-text, #0f3b2e);font:700 .8125rem/1 var(--font-body, "Outfit", sans-serif);letter-spacing:.08em;text-transform:uppercase}
+.blko-soda-cartpage__cols span:last-child{text-align:right}
+.blko-soda-cartpage__items{display:block;margin:0;padding:0;list-style:none}
+.blko-soda-cartpage__items li{display:grid;grid-template-columns:96px minmax(0,1fr) 8.5rem 6.5rem;align-items:center;gap:1.25rem;padding:1.1rem 0;border-bottom:1px solid var(--color-border, #dccfae);border-radius:0;background:none}
+.blko-soda-cartpage__tile{display:flex;align-items:center;justify-content:center;width:96px;height:96px;border-radius:20px;background:var(--tile-bg, var(--color-pastel-1, #ffc9d6))}
+.blko-soda-cartpage__items img{width:auto;max-width:90%;height:78%;border-radius:0;object-fit:contain}
+.blko-soda-cartpage__items p{margin:.2rem 0 0;color:var(--color-text-muted, #4a6a5c);font-size:.9rem}
+.blko-soda-cartpage__title{color:inherit;font:900 1.2rem/1.2 var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
+.blko-soda-cartpage__items .blko-soda-cartpage__disc{color:var(--color-brand-green, #0f6e4f);font:700 .85rem/1.3 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-cartpage__remove{margin:.5rem 0 0;padding:0;border:0;background:none;color:var(--color-text, #0f3b2e);font:500 .8125rem/1 var(--font-body, "Outfit", sans-serif);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.blko-soda-cartpage__remove:hover{color:var(--color-brand-green, #0f6e4f)}
+.blko-soda-cartpage__step{display:inline-flex;align-items:center;justify-content:space-between;width:112px;height:42px;padding:0 .3rem;border:1px solid var(--color-text, #0f3b2e);border-radius:999px;font-weight:700}
+.blko-soda-cartpage__step button{display:grid;place-items:center;width:2rem;height:2rem;padding:0;border:0;border-radius:50%;background:none;color:inherit;font-size:1.2rem;cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-cartpage__step button:hover{background:var(--color-mint, #b8f0d8)}
+.blko-soda-cartpage__price{display:grid;justify-items:end;gap:.1rem;text-align:right}
+.blko-soda-cartpage__price s{color:var(--color-text-muted, #4a6a5c);font-size:.85rem}
+.blko-soda-cartpage__price strong{font-size:1.1rem}
+.blko-soda-cartpage__summary{display:grid;justify-items:stretch;gap:.8rem;margin:0;padding:1.5rem;border-radius:1.5rem;background:var(--color-cream-light, #fffaf0);box-shadow:0 0 0 1px var(--color-border, #dccfae)}
+.blko-soda-cartpage__summary h2{margin:0;font:900 1.4rem/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-cartpage__summary p{display:flex;justify-content:space-between;gap:1rem;margin:0;font:400 1rem/1.3 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-cartpage__summary p strong{font-weight:700}
+.blko-soda-cartpage__summary .is-save{color:var(--color-brand-green, #0f6e4f);font-weight:700}
+.blko-soda-cartpage__summary .is-total{padding-top:.8rem;border-top:1px solid var(--color-border, #dccfae);font:900 1.4rem/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-cartpage__ship{text-align:center}
+.blko-soda-cartpage__ship b{display:block;margin-bottom:.45rem;font-size:.875rem}
+.blko-soda-cartpage__ship i{display:block;height:.5rem;overflow:hidden;border-radius:999px;background:var(--color-border, #dccfae)}
+.blko-soda-cartpage__ship i span{display:block;height:100%;border-radius:999px;background:var(--color-brand-green, #0f6e4f);transition:width .3s}
+.blko-soda-cartpage__summary small{color:var(--color-text-muted, #4a6a5c);font-size:.8125rem;text-align:center}
+.blko-soda-cartpage__summary button{padding:0;height:52px;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:700 1.125rem/1 var(--font-body, "Outfit", sans-serif);cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-cartpage__summary button:hover{background:#1f5a44}
+.blko-soda-cartpage__upsell{margin-top:clamp(2rem,5vw,3.5rem)}
+.blko-soda-cartpage__upsell h2{margin:0 0 1rem;font:900 1.75rem/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-cartpage__upsell ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin:0;padding:0;list-style:none}
+.blko-soda-cartpage__up{display:grid;gap:.5rem}
+.blko-soda-cartpage__up-tile{display:flex;align-items:center;justify-content:center;aspect-ratio:1;border-radius:20px;background:var(--tile-bg, var(--color-pastel-1, #ffc9d6))}
+.blko-soda-cartpage__up-tile img{width:auto;max-width:90%;height:78%;object-fit:contain;transition:transform .25s ease-in-out}
+.blko-soda-cartpage__up-tile:hover img{transform:scale(1.06)}
+.blko-soda-cartpage__up a.blko-soda-cartpage__up-name{color:inherit;font:700 1rem/1.25 var(--font-body, "Outfit", sans-serif);text-decoration:none}
+.blko-soda-cartpage__up span{font-size:.9rem}
+.blko-soda-cartpage__up button{height:40px;border:1px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:inherit;font:700 .9rem/1 var(--font-body, "Outfit", sans-serif);cursor:pointer;transition:background-color .25s ease-in-out,color .25s ease-in-out}
+.blko-soda-cartpage__up button:hover{background:var(--color-text, #0f3b2e);color:var(--color-bg, #fbf3e2)}
+@media(max-width:900px){.blko-soda-cartpage__grid{grid-template-columns:1fr}.blko-soda-cartpage__upsell ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.blko-soda-cartpage__cols{display:none}.blko-soda-cartpage__items li{grid-template-columns:80px minmax(0,1fr) auto;gap:.5rem 1rem;align-items:start}.blko-soda-cartpage__tile{width:80px;height:80px}.blko-soda-cartpage__items li>.blko-soda-cartpage__step{grid-column:2;grid-row:2;justify-self:start}.blko-soda-cartpage__items li>.blko-soda-cartpage__price{grid-column:3;grid-row:1/3;align-self:start}}
+@media(prefers-reduced-motion:reduce){.blko-soda-cartpage__ship i span,.blko-soda-cartpage__up-tile img{transition:none}}
 {% endstylesheet %}
 
 {% schema %}
@@ -54,10 +139,24 @@
     {"type": "text", "id": "empty_text", "label": "Empty text", "default": "Nothing fizzy in here yet."},
     {"type": "text", "id": "continue_label", "label": "Continue label", "default": "Shop flavors"},
     {"type": "text", "id": "remove_label", "label": "Remove label", "default": "Remove"},
+    {"type": "text", "id": "col_product", "label": "Column: product", "default": "Product"},
+    {"type": "text", "id": "col_quantity", "label": "Column: quantity", "default": "Quantity"},
+    {"type": "text", "id": "col_total", "label": "Column: total", "default": "Total"},
+    {"type": "text", "id": "summary_title", "label": "Summary title", "default": "Order summary"},
+    {"type": "number", "id": "free_shipping_threshold", "label": "Free shipping threshold (store currency, 0 hides the bar)", "default": 35},
+    {"type": "text", "id": "ship_away", "label": "Free shipping progress text", "info": "Use [amount] for the remaining amount.", "default": "You are [amount] away from free shipping!"},
+    {"type": "text", "id": "ship_done", "label": "Free shipping unlocked text", "default": "You've unlocked FREE shipping!"},
     {"type": "text", "id": "subtotal_label", "label": "Subtotal label", "default": "Subtotal"},
-    {"type": "text", "id": "tax_note", "label": "Tax note", "default": "Taxes and shipping are calculated at checkout."},
-    {"type": "text", "id": "update_label", "label": "Update label", "default": "Update cart"},
-    {"type": "text", "id": "checkout_label", "label": "Checkout label", "default": "Check out"}
+    {"type": "text", "id": "savings_label", "label": "Savings label", "default": "Savings"},
+    {"type": "text", "id": "shipping_label", "label": "Shipping label", "default": "Shipping"},
+    {"type": "text", "id": "shipping_free", "label": "Shipping: free", "default": "Free"},
+    {"type": "text", "id": "shipping_later", "label": "Shipping: not free yet", "default": "Calculated at checkout"},
+    {"type": "text", "id": "total_label", "label": "Total label", "default": "Total"},
+    {"type": "text", "id": "tax_note", "label": "Tax note", "default": "Taxes are calculated at checkout."},
+    {"type": "text", "id": "checkout_label", "label": "Checkout label", "default": "Check out"},
+    {"type": "text", "id": "upsell_title", "label": "Upsell heading (empty hides the row)", "default": "You might also like"},
+    {"type": "collection", "id": "upsell_collection", "label": "Upsell collection", "info": "Shows up to 4 products that are not in the cart. Defaults to all products."},
+    {"type": "text", "id": "upsell_add", "label": "Upsell button", "default": "Add 12-pack"}
   ],
   "presets": [{"name": "Soda cart"}]
 }

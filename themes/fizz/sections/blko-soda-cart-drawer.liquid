@@ -2,51 +2,67 @@
 <div class="blko-soda-drawer" id="CartDrawer" data-cart-drawer role="dialog" aria-modal="true" aria-label="{{ section.settings.title | escape }}">
   <div class="blko-soda-drawer__overlay" data-cart-close></div>
   <aside class="blko-soda-drawer__panel">
+    {%- if section.settings.bubbles -%}
+      <div class="blko-soda-drawer__bubbles" aria-hidden="true">
+        <i style="--x:8%;--s:14px;--d:9s;--l:0s"></i><i style="--x:22%;--s:22px;--d:12s;--l:2s"></i><i style="--x:38%;--s:10px;--d:8s;--l:4s"></i><i style="--x:52%;--s:18px;--d:11s;--l:1s"></i><i style="--x:66%;--s:12px;--d:10s;--l:5s"></i><i style="--x:78%;--s:24px;--d:13s;--l:3s"></i><i style="--x:90%;--s:16px;--d:9s;--l:6s"></i>
+      </div>
+    {%- endif -%}
     <div data-drawer-content data-count="{{ cart.item_count }}">
       <div class="blko-soda-drawer__head">
         <h2>{{ section.settings.title }}{% if cart.item_count > 0 %} ({{ cart.item_count }}){% endif %}</h2>
-        <button type="button" class="blko-soda-drawer__close" data-cart-close aria-label="Close">&times;</button>
+        <button type="button" class="blko-soda-drawer__close" data-cart-close aria-label="Close"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
       </div>
-      {%- if threshold > 0 -%}
-        {%- assign left = threshold | minus: cart.total_price -%}
-        {%- assign pct = cart.total_price | times: 100 | divided_by: threshold -%}
-        {%- if pct > 100 %}{% assign pct = 100 %}{% endif -%}
-        {%- assign left_money = left | money -%}
-        <div class="blko-soda-ship">
-          <p>{%- if left > 0 -%}{{ section.settings.ship_away | replace: '[amount]', left_money }}{%- else -%}{{ section.settings.ship_done }}{%- endif -%}</p>
-          <div class="blko-soda-ship__track"><span style="width:{{ pct }}%"></span></div>
-        </div>
-      {%- endif -%}
-      <div class="blko-soda-drawer__items">
-        {%- for item in cart.items -%}
-          <div class="blko-soda-line">
-            <a href="{{ item.url }}">{% if item.image %}<img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.title | escape }}" width="84" height="84" loading="lazy">{% endif %}</a>
-            <div>
-              <a class="blko-soda-line__title" href="{{ item.url }}">{{ item.product.title }}</a>
-              {%- unless item.product.has_only_default_variant -%}<p class="blko-soda-line__meta">{{ item.variant.title }}</p>{%- endunless -%}
-              {%- if item.selling_plan_allocation -%}<p class="blko-soda-line__meta">{{ section.settings.subscription_label }}: {{ item.selling_plan_allocation.selling_plan.name }}</p>{%- endif -%}
-              {%- for property in item.properties -%}{%- assign first_char = property.first | slice: 0 -%}{%- if first_char != '_' and property.last != blank -%}<p class="blko-soda-line__meta">{{ property.first }}: {{ property.last }}</p>{%- endif -%}{%- endfor -%}
-              {%- for allocation in item.line_level_discount_allocations -%}<p class="blko-soda-line__discount">{{ allocation.discount_application.title | escape }} (-{{ allocation.amount | money }})</p>{%- endfor -%}
-              <div class="blko-soda-line__qty">
-                <button type="button" data-qty="{{ item.key }}" data-to="{{ item.quantity | minus: 1 }}" aria-label="Decrease quantity">&minus;</button>
-                <span>{{ item.quantity }}</span>
-                <button type="button" data-qty="{{ item.key }}" data-to="{{ item.quantity | plus: 1 }}" aria-label="Increase quantity">+</button>
-              </div>
-              <button type="button" class="blko-soda-line__remove" data-qty="{{ item.key }}" data-to="0">{{ section.settings.remove_label }}</button>
-            </div>
-            <p class="blko-soda-line__price">{% if item.original_line_price > item.final_line_price %}<s>{{ item.original_line_price | money }}</s> {% endif %}{{ item.final_line_price | money }}</p>
+      <div class="blko-soda-drawer__scroll">
+        {%- if threshold > 0 -%}
+          {%- assign left = threshold | minus: cart.total_price -%}
+          {%- assign pct = cart.total_price | times: 100 | divided_by: threshold -%}
+          {%- if pct > 100 %}{% assign pct = 100 %}{% endif -%}
+          {%- assign left_money = left | money -%}
+          <div class="blko-soda-ship">
+            <p>{%- if left > 0 -%}{{ section.settings.ship_away | replace: '[amount]', left_money }}{%- else -%}{{ section.settings.ship_done }}{%- endif -%}</p>
+            <div class="blko-soda-ship__track"><span style="width:{{ pct }}%"></span></div>
           </div>
-        {%- else -%}
-          <div class="blko-soda-drawer__empty"><p>{{ section.settings.empty_text }}</p><a class="blko-soda-drawer__btn" href="{{ routes.all_products_collection_url }}">{{ section.settings.continue_label }}</a></div>
-        {%- endfor -%}
+        {%- endif -%}
+        {%- if cart.item_count > 0 and section.settings.promo_text != blank -%}
+          {%- if cart.cart_level_discount_applications.size > 0 or cart.total_discount > 0 -%}<p class="blko-soda-dpromo">{{ section.settings.promo_text }}</p>{%- endif -%}
+        {%- endif -%}
+        <div class="blko-soda-drawer__items">
+          {%- for item in cart.items -%}
+            <div class="blko-soda-line">
+              <a class="blko-soda-line__img" href="{{ item.url }}">{% if item.image %}<img src="{{ item.image | image_url: width: 160 }}" alt="{{ item.title | escape }}" width="72" height="120" loading="lazy">{% endif %}</a>
+              <div class="blko-soda-line__body">
+                <a class="blko-soda-line__title" href="{{ item.url }}">{{ item.product.title }}</a>
+                {%- unless item.product.has_only_default_variant -%}<p class="blko-soda-line__meta">{{ item.variant.title }}</p>{%- endunless -%}
+                {%- if item.selling_plan_allocation -%}<p class="blko-soda-line__meta">{{ section.settings.subscription_label }}: {{ item.selling_plan_allocation.selling_plan.name }}</p>{%- endif -%}
+                {%- for property in item.properties -%}{%- assign first_char = property.first | slice: 0 -%}{%- if first_char != '_' and property.last != blank -%}<p class="blko-soda-line__meta">{{ property.first }}: {{ property.last }}</p>{%- endif -%}{%- endfor -%}
+                <div class="blko-soda-line__qty">
+                  <button type="button" data-qty="{{ item.key }}" data-to="{{ item.quantity | minus: 1 }}" aria-label="Decrease quantity">&minus;</button>
+                  <span>{{ item.quantity }}</span>
+                  <button type="button" data-qty="{{ item.key }}" data-to="{{ item.quantity | plus: 1 }}" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+              <div class="blko-soda-line__side">
+                <button type="button" class="blko-soda-line__remove" data-qty="{{ item.key }}" data-to="0" aria-label="{{ section.settings.remove_label | escape }}"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg></button>
+                {%- for allocation in item.line_level_discount_allocations -%}<p class="blko-soda-line__disc">{{ allocation.discount_application.title | escape }}</p>{%- endfor -%}
+                <p class="blko-soda-line__price">{% if item.original_line_price > item.final_line_price %}<s>{{ item.original_line_price | money }}</s>{% endif %}{{ item.final_line_price | money }}</p>
+              </div>
+            </div>
+          {%- else -%}
+            <div class="blko-soda-drawer__empty"><p>{{ section.settings.empty_text }}</p><a class="blko-soda-drawer__btn" href="{{ routes.all_products_collection_url }}">{{ section.settings.continue_label }}</a></div>
+          {%- endfor -%}
+        </div>
       </div>
       {%- if cart.item_count > 0 -%}
         <div class="blko-soda-drawer__foot">
-          {%- if cart.cart_level_discount_applications.size > 0 -%}
-            {%- for application in cart.cart_level_discount_applications -%}<p class="blko-soda-drawer__disc"><span>{{ application.title | escape }}</span><span>-{{ application.total_allocated_amount | money }}</span></p>{%- endfor -%}
-          {%- endif -%}
-          <p class="blko-soda-drawer__sub"><span>{{ section.settings.subtotal_label }}</span><span>{{ cart.total_price | money }}</span></p>
-          <a class="blko-soda-drawer__btn blko-soda-drawer__btn--block" href="{{ routes.root_url | append: 'checkout' }}" data-checkout>{{ section.settings.checkout_label }}</a>
+          <svg class="blko-soda-drawer__wave" viewBox="0 0 480 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12Q30 0 60 12T120 12T180 12T240 12T300 12T360 12T420 12T480 12V24H0Z" fill="currentColor"/></svg>
+          <div class="blko-soda-drawer__foot-in">
+            {%- if cart.cart_level_discount_applications.size > 0 -%}
+              {%- for application in cart.cart_level_discount_applications -%}<p class="blko-soda-drawer__disc"><span>{{ application.title | escape }}</span><span>-{{ application.total_allocated_amount | money }}</span></p>{%- endfor -%}
+            {%- endif -%}
+            <p class="blko-soda-drawer__sub"><span>{{ section.settings.subtotal_label }}</span><span>{{ cart.total_price | money }}</span></p>
+            <a class="blko-soda-drawer__btn blko-soda-drawer__btn--block" href="{{ routes.root_url | append: 'checkout' }}" data-checkout>{{ section.settings.checkout_label }}</a>
+            {%- if section.settings.guarantee != blank -%}<p class="blko-soda-drawer__guarantee">{{ section.settings.guarantee }}</p>{%- endif -%}
+          </div>
         </div>
       {%- endif -%}
     </div>
@@ -55,53 +71,75 @@
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 
 {% stylesheet %}
+.blko-theme{--color-brand-green:#0f6e4f;--color-mint:#b8f0d8;--color-yellow:#f7ee6b;--color-cream-light:#fffaf0}
 .blko-soda-drawer{position:fixed;inset:0;z-index:100;visibility:hidden;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
 .blko-soda-drawer.is-open{visibility:visible}
 .blko-soda-drawer__overlay{position:absolute;inset:0;background:rgba(20,67,61,.55);opacity:0;transition:opacity .25s}
 .blko-soda-drawer.is-open .blko-soda-drawer__overlay{opacity:1}
-.blko-soda-drawer__panel{position:absolute;top:0;right:0;bottom:0;display:flex;flex-direction:column;width:min(26rem,100%);background:var(--color-bg-alt, #f3e8cd);transform:translateX(100%);transition:transform .3s}
+.blko-soda-drawer__panel{position:absolute;top:0;right:0;bottom:0;display:flex;flex-direction:column;box-sizing:border-box;width:min(480px,100vw);max-width:100vw;overflow:hidden;background:var(--color-cream-light, #fffaf0);transform:translateX(100%);transition:transform .3s}
 .blko-soda-drawer.is-open .blko-soda-drawer__panel{transform:none}
 .blko-soda-drawer.is-loading .blko-soda-drawer__panel{opacity:.7}
 .blko-soda-drawer__panel>[data-drawer-content]{display:flex;flex-direction:column;min-height:0;height:100%}
-.blko-soda-drawer__head{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;border-bottom:1px solid var(--color-border, #dccfae)}
-.blko-soda-drawer__head h2{margin:0;font:900 1.5rem var(--font-heading, "Fraunces", Georgia, serif)}
-.blko-soda-drawer__close{border:0;background:none;color:inherit;font-size:2rem;line-height:1;cursor:pointer}
-.blko-soda-ship{padding:.9rem 1.25rem;background:var(--color-bg, #fbf3e2)}
-.blko-soda-ship p{margin:0 0 .5rem;font-weight:700;font-size:.9rem}
-.blko-soda-ship__track{height:.6rem;overflow:hidden;border-radius:999px;background:#fff}
-.blko-soda-ship__track span{display:block;height:100%;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);box-shadow:inset 0 0 0 2px var(--color-text, #0f3b2e);transition:width .3s}
-.blko-soda-drawer__items{flex:1;overflow:auto;padding:0 1.25rem}
-.blko-soda-line{display:grid;grid-template-columns:5.25rem 1fr auto;gap:.9rem;padding:1rem 0;border-bottom:1px solid var(--color-border, #dccfae)}
-.blko-soda-line img{width:5.25rem;height:5.25rem;border-radius:.9rem;object-fit:cover}
-.blko-soda-line__title{color:inherit;font:700 1.05rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
-.blko-soda-line__meta{margin:.15rem 0 0;color:var(--color-text-muted, #4a6a5c);font-size:.82rem}
-.blko-soda-line__qty{display:inline-flex;align-items:center;gap:.6rem;margin-top:.5rem;padding:.1rem .35rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;font-weight:800}
-.blko-soda-line__qty button{width:1.6rem;height:1.6rem;border:0;background:none;color:inherit;font-size:1.1rem;cursor:pointer}
-.blko-soda-line__remove{display:block;margin-top:.35rem;padding:0;border:0;background:none;color:var(--color-text-muted, #4a6a5c);font-size:.8rem;text-decoration:underline;cursor:pointer}
-.blko-soda-line__price{margin:0;font-weight:800}
+.blko-soda-drawer__head{position:relative;display:block;padding:1.1rem 3.5rem;border-bottom:0;text-align:center}
+.blko-soda-drawer__head h2{margin:0;font:900 1.5rem/1.2 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-drawer__close{position:absolute;top:50%;right:1rem;display:grid;place-items:center;width:36px;height:36px;padding:0;border:2px solid currentColor;border-radius:50%;background:none;color:inherit;transform:translateY(-50%);cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-drawer__close:hover{background:var(--color-mint, #b8f0d8)}
+.blko-soda-drawer__scroll{flex:1;min-height:0;padding:0 1.25rem;overflow-x:hidden;overflow-y:auto;scrollbar-width:thin}
+.blko-soda-ship{padding:0 0 1rem;background:none;text-align:center}
+.blko-soda-ship p{margin:0 0 .5rem;font-size:.875rem;font-weight:700}
+.blko-soda-ship__track{height:.5rem;overflow:hidden;border-radius:999px;background:var(--color-border, #dccfae)}
+.blko-soda-ship__track span{display:block;height:100%;border-radius:999px;background:var(--color-brand-green, #0f6e4f);box-shadow:none;transition:width .3s}
+.blko-soda-dpromo{margin:0 0 .75rem;padding:.6rem .9rem;border-radius:8px;background:var(--color-brand-green, #0f6e4f);color:#fff;font:700 .875rem/1.3 var(--font-heading, "Fraunces", Georgia, serif);text-align:center}
+.blko-soda-drawer__items{flex:none;padding:0;overflow:visible}
+.blko-soda-line{position:relative;display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:.75rem;padding:1rem 0;border-bottom:1px solid var(--color-border, #dccfae)}
+.blko-soda-line__img{display:block;width:72px;height:120px}
+.blko-soda-line__body{min-width:0}
+.blko-soda-line img{display:block;width:72px;height:120px;max-width:none;border-radius:0;background:none;object-fit:contain;object-position:center}
+.blko-soda-line__title{display:block;overflow-wrap:anywhere;color:inherit;font:600 1rem/1.3 var(--font-body, "Outfit", sans-serif);text-decoration:none}
+.blko-soda-line__meta{margin:.15rem 0 0;color:var(--color-text-muted, #4a6a5c);font-size:.875rem}
+.blko-soda-line__qty{display:inline-flex;align-items:center;justify-content:space-between;gap:0;width:86px;height:34px;margin-top:.6rem;padding:0 .25rem;border:1px solid var(--color-text, #0f3b2e);border-radius:999px;font-weight:700}
+.blko-soda-line__qty button{display:grid;place-items:center;width:1.7rem;height:1.7rem;padding:0;border:0;border-radius:50%;background:none;color:inherit;font-size:1.1rem;cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-line__qty button:hover{background:var(--color-mint, #b8f0d8)}
+.blko-soda-line__side{min-width:4.5rem;display:flex;flex-direction:column;align-items:flex-end;gap:.25rem;text-align:right}
+.blko-soda-line__remove{display:grid;place-items:center;width:28px;height:28px;margin:0 -4px 0 0;padding:0;border:0;border-radius:50%;background:none;color:var(--color-text, #0f3b2e);text-decoration:none;cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-line__remove:hover{background:var(--color-mint, #b8f0d8)}
+.blko-soda-line__disc{margin:0;color:var(--color-brand-green, #0f6e4f);font:700 .8125rem/1.25 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-line__price{margin:auto 0 0;font-size:.9375rem;font-weight:700}
+.blko-soda-line__price s{margin-right:.25rem;color:var(--color-text-muted, #4a6a5c);font-weight:400}
 .blko-soda-drawer__empty{padding:2.5rem 0;text-align:center}
-.blko-soda-drawer__foot{padding:1rem 1.25rem 1.25rem;border-top:1px solid var(--color-border, #dccfae)}
-.blko-soda-line__discount{margin:.2rem 0 0;color:var(--color-text, #0f3b2e);font-size:.82rem;font-weight:700}
-.blko-soda-drawer__disc{display:flex;justify-content:space-between;margin:0 0 .4rem;font-size:.9rem;font-weight:700}
-.blko-soda-drawer__sub{display:flex;justify-content:space-between;margin:0 0 .8rem;font:900 1.15rem var(--font-heading, "Fraunces", Georgia, serif)}
-.blko-soda-drawer__btn{display:inline-block;padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-align:center;text-decoration:none;cursor:pointer}
+.blko-soda-drawer__foot{position:relative;flex:none;padding:0;border-top:0;background:transparent}
+.blko-soda-drawer__wave{display:block;width:100%;height:20px;margin-bottom:-1px;color:var(--color-brand-green, #0f6e4f)}
+.blko-soda-drawer__foot-in{padding:.25rem 1.25rem 1.25rem;background:var(--color-brand-green, #0f6e4f);color:var(--color-bg, #fbf3e2)}
+.blko-soda-drawer__disc{display:flex;justify-content:space-between;margin:0 0 .4rem;font-size:.875rem;font-weight:700}
+.blko-soda-drawer__sub{display:flex;justify-content:space-between;margin:0 0 .8rem;font:700 1rem/1.3 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-drawer__btn{display:inline-block;padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-button, #0f3b2e);color:var(--color-button-text, #fff);font:700 1rem var(--font-body, "Outfit", sans-serif);text-align:center;text-decoration:none;cursor:pointer}
 .blko-soda-drawer__btn--block{display:block;width:100%}
+.blko-soda-drawer__foot .blko-soda-drawer__btn--block{padding:0;height:48px;line-height:48px;background:var(--color-yellow, #f7ee6b);color:#0f3b2e;font-size:1.125rem;transition:background-color .25s ease-in-out}
+.blko-soda-drawer__foot .blko-soda-drawer__btn--block:hover{background:#f1e04a}
+.blko-soda-drawer__guarantee{margin:.7rem 0 0;font-size:.75rem;text-align:center}
+.blko-soda-drawer__bubbles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.blko-soda-drawer__bubbles i{position:absolute;bottom:-30px;left:var(--x);width:var(--s);height:var(--s);border:2px solid rgba(15,110,79,.35);border-radius:50%;background:rgba(184,240,216,.35);animation:blko-bubble var(--d) linear infinite;animation-delay:var(--l)}
+@keyframes blko-bubble{to{transform:translateY(-110vh)}}
+@media(prefers-reduced-motion:reduce){.blko-soda-drawer__panel,.blko-soda-drawer__overlay,.blko-soda-ship__track span{transition:none}.blko-soda-drawer__bubbles{display:none}}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda cart drawer",
   "settings": [
-    {"type": "text", "id": "title", "label": "Title", "default": "Your cart"},
+    {"type": "text", "id": "title", "label": "Title", "default": "Your Cart"},
     {"type": "number", "id": "free_shipping_threshold", "label": "Free shipping threshold (store currency, 0 hides the bar)", "default": 35},
     {"type": "text", "id": "ship_away", "label": "Free shipping progress text", "info": "Use [amount] for the remaining amount.", "default": "You are [amount] away from free shipping!"},
-    {"type": "text", "id": "ship_done", "label": "Free shipping unlocked text", "default": "You unlocked free shipping!"},
+    {"type": "text", "id": "ship_done", "label": "Free shipping unlocked text", "default": "You've unlocked FREE shipping!"},
+    {"type": "text", "id": "promo_text", "label": "Promo strip text", "info": "Shown when a discount is applied to the cart. Leave empty to hide.", "default": "You've unlocked your discount!"},
     {"type": "text", "id": "subscription_label", "label": "Subscription label", "default": "Subscription"},
     {"type": "text", "id": "remove_label", "label": "Remove label", "default": "Remove"},
     {"type": "text", "id": "empty_text", "label": "Empty cart text", "default": "Your cart is empty. Let's fix that."},
     {"type": "text", "id": "continue_label", "label": "Continue shopping label", "default": "Shop flavors"},
     {"type": "text", "id": "subtotal_label", "label": "Subtotal label", "default": "Subtotal"},
-    {"type": "text", "id": "checkout_label", "label": "Checkout label", "default": "Check out"}
+    {"type": "text", "id": "checkout_label", "label": "Checkout label", "default": "Checkout"},
+    {"type": "text", "id": "guarantee", "label": "Guarantee line", "default": "45-day money-back guarantee"},
+    {"type": "checkbox", "id": "bubbles", "label": "Bubbles overlay", "default": false}
   ]
 }
 {% endschema %}

@@ -3,7 +3,9 @@
     "faq": {
       "type": "blko-soda-qa",
       "settings": {
-        "more_url": "/pages/contact"
+        "more_url": "/pages/contact",
+        "bg": "#d8f0ff",
+        "banner": "faq"
       },
       "blocks": {
         "block-1": {

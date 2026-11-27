@@ -2,7 +2,9 @@
   "sections": {
     "ingredients": {
       "type": "blko-soda-ingredients",
-      "settings": {},
+      "settings": {
+        "banner": "ingredients"
+      },
       "blocks": {
         "block-1": {
           "type": "ingredient",
@@ -10,7 +12,7 @@
             "name": "Real fruit juice",
             "text": "Pressed cherries, citrus and berries give the flavor, not a lab.",
             "color": "#ffc9d6",
-            "image_url": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80"
+            "can": "cherry-pop"
           }
         },
         "block-2": {
@@ -19,7 +21,7 @@
             "name": "Chicory fiber",
             "text": "Prebiotic fiber from chicory root: nine grams a can.",
             "color": "#fff3b0",
-            "image_url": "https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?auto=format&fit=crop&w=600&q=80"
+            "can": "mango-tango"
           }
         },
         "block-3": {
@@ -28,7 +30,7 @@
             "name": "Sparkling water",
             "text": "Cold, crisp and the first ingredient on the label.",
             "color": "#d8f0ff",
-            "image_url": "https://images.unsplash.com/photo-1546171753-97d7676e4602?auto=format&fit=crop&w=600&q=80"
+            "can": "mint-mojito"
           }
         },
         "block-4": {
@@ -37,7 +39,7 @@
             "name": "Botanicals",
             "text": "A little mint, ginger and lime peel for a clean finish.",
             "color": "#c8f1dd",
-            "image_url": "https://images.unsplash.com/photo-1605027990121-cbae9e0642df?auto=format&fit=crop&w=600&q=80"
+            "can": "lemon-lime-zing"
           }
         },
         "block-5": {

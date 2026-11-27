@@ -1,0 +1,6 @@
+{%- comment -%} Illustrated banner box. name = file fizz-banner-NAME.svg in assets; image = optional image_picker override. {%- endcomment -%}
+{%- if image != blank -%}
+  <div class="blko-soda-hbanner">{{ image | image_url: width: 1600 | image_tag: loading: 'lazy', alt: alt }}</div>
+{%- elsif name != blank -%}
+  <div class="blko-soda-hbanner"><img src="{{ 'fizz-banner-' | append: name | append: '.svg' | asset_url }}" alt="{{ alt | escape }}" width="1600" height="700" loading="lazy"></div>
+{%- endif -%}

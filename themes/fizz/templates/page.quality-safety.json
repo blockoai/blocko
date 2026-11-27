@@ -1,0 +1,139 @@
+{
+  "sections": {
+    "hero": {
+      "type": "blko-soda-page-hero",
+      "settings": {
+        "bg": "#d8f0ff",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "eyebrow": "Quality and safety",
+        "heading": "Checked before it ever ships.",
+        "text": "Every batch of Fizz is tested for what is in it, and what is not.",
+        "banner": "quality"
+      }
+    },
+    "tests": {
+      "type": "blko-soda-steps",
+      "settings": {
+        "bg": "#fbf3e2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#ffc9d6",
+        "heading": "How we test",
+        "text": "Four checkpoints between the farm and your fridge."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "color": "#fff3b0",
+            "title": "Source check",
+            "text": "Fruit and fiber arrive with documents and a sensory check."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "color": "#ffc9d6",
+            "title": "Batch test",
+            "text": "Each batch is sampled for sugar, fiber and carbonation."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "color": "#c8f1dd",
+            "title": "Lab review",
+            "text": "An independent lab confirms the label numbers."
+          }
+        },
+        "block-4": {
+          "type": "step",
+          "settings": {
+            "color": "#d8f0ff",
+            "title": "Final seal check",
+            "text": "Cans are inspected before packing and shipping."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "certs": {
+      "type": "blko-soda-cards",
+      "settings": {
+        "bg": "#ffc9d6",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "heading": "What backs it up",
+        "text": "Certifications and standards we work to.",
+        "columns": 4,
+        "footnote": "*Placeholder badges, list your real certificates here."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "card",
+          "settings": {
+            "color": "#ffffff",
+            "tag": "Lab",
+            "title": "Third-party tested",
+            "text": "Independent lab results on every batch."
+          }
+        },
+        "block-2": {
+          "type": "card",
+          "settings": {
+            "color": "#ffffff",
+            "tag": "Sourcing",
+            "title": "Non-GMO ingredients*",
+            "text": "Fruit and fiber sourced to non-GMO standards."
+          }
+        },
+        "block-3": {
+          "type": "card",
+          "settings": {
+            "color": "#ffffff",
+            "tag": "Allergens",
+            "title": "Gluten free",
+            "text": "No gluten ingredients in any flavor."
+          }
+        },
+        "block-4": {
+          "type": "card",
+          "settings": {
+            "color": "#ffffff",
+            "tag": "Facility",
+            "title": "Audited facility*",
+            "text": "Packed in a food-safety audited facility."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "cta": {
+      "type": "blko-soda-why",
+      "settings": {
+        "bg": "#cdf26b",
+        "text_color": "#0f3b2e",
+        "heading": "Want the test results?",
+        "text": "Ask us for any batch report. We are happy to share.",
+        "button_label": "Contact us",
+        "button_url": "/pages/contact"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "tests",
+    "certs",
+    "cta"
+  ]
+}

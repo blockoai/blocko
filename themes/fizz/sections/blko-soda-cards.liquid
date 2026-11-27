@@ -1,0 +1,66 @@
+<section class="blko-soda-cards{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}--cols:{{ section.settings.columns }};background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <div class="blko-soda-cards__in">
+    <h2>{{ section.settings.heading | escape }}</h2>
+    {%- if section.settings.text != blank -%}<p>{{ section.settings.text | escape }}</p>{%- endif -%}
+    <ul class="blko-soda-cards__grid">
+      {%- for block in section.blocks -%}
+        <li class="blko-soda-cards__card" style="background:{{ block.settings.color }}" {{ block.shopify_attributes }}>
+          {%- if block.settings.can != blank or block.settings.image != blank -%}
+            <span class="blko-soda-cards__can">{%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', alt: block.settings.title }}{%- else -%}<img src="{{ 'fizz-can-' | append: block.settings.can | append: '.svg' | asset_url }}" alt="{{ block.settings.title | escape }}" width="400" height="400" loading="lazy">{%- endif -%}</span>
+          {%- endif -%}
+          {%- if block.settings.tag != blank -%}<span class="blko-soda-cards__tag">{{ block.settings.tag | escape }}</span>{%- endif -%}
+          <h3>{{ block.settings.title | escape }}</h3>
+          <p>{{ block.settings.text | escape }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>
+    {%- if section.settings.footnote != blank -%}<p class="blko-soda-cards__note">{{ section.settings.footnote | escape }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% stylesheet %}
+.blko-soda-cards{padding:clamp(3rem,7vw,5.5rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif);text-align:center}
+.blko-soda-cards__in{display:grid;gap:1rem;max-width:72rem;margin:0 auto}
+.blko-soda-cards h2{margin:0;font:900 clamp(2rem,4.5vw,3.5rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-cards__in>p{max-width:40rem;margin:0 auto;font-size:1.15rem;line-height:1.55}
+.blko-soda-cards__grid{display:grid;grid-template-columns:repeat(var(--cols, 3),1fr);gap:1rem;margin:1rem 0 0;padding:0;list-style:none;text-align:left}
+.blko-soda-cards__card{display:grid;align-content:start;gap:.6rem;padding:1.5rem;border:2px solid var(--color-text, #0f3b2e);border-radius:1.75rem;color:var(--color-text, #0f3b2e);transition:box-shadow .2s ease}
+.blko-soda-cards__card:hover{box-shadow:5px 5px 0 0 var(--color-text, #0f3b2e)}
+.blko-soda-cards__can{display:grid;place-items:end center;height:170px;overflow:hidden;border-radius:1.25rem;background:rgba(255,255,255,.6)}
+.blko-soda-cards__can img{width:auto;height:146px;max-width:90%;object-fit:contain;margin-bottom:.4rem}
+.blko-soda-cards__tag{justify-self:start;padding:.2rem .8rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.blko-soda-cards__card h3{margin:0;font:900 1.5rem/1.05 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-cards__card p{margin:0}
+.blko-soda-cards__note{margin:0;font-size:.85rem;opacity:.8}
+@media(max-width:900px){.blko-soda-cards__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.blko-soda-cards__grid{grid-template-columns:1fr}.blko-soda-cards__can{height:150px}.blko-soda-cards__can img{height:128px}}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda cards",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#fbf3e2"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section's background)"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Three things we care about"},
+    {"type": "textarea", "id": "text", "label": "Intro"},
+    {"type": "range", "id": "columns", "label": "Columns", "min": 2, "max": 4, "step": 1, "default": 3},
+    {"type": "text", "id": "footnote", "label": "Footnote"}
+  ],
+  "blocks": [
+    {"type": "card", "name": "Card", "settings": [
+      {"type": "color", "id": "color", "label": "Card color", "default": "#ffc9d6"},
+      {"type": "text", "id": "can", "label": "Can handle (e.g. cherry-pop)"},
+      {"type": "image_picker", "id": "image", "label": "Image (overrides can)"},
+      {"type": "text", "id": "tag", "label": "Tag"},
+      {"type": "text", "id": "title", "label": "Title", "default": "Card title"},
+      {"type": "textarea", "id": "text", "label": "Text", "default": "A short line about this."}
+    ]}
+  ],
+  "max_blocks": 8,
+  "presets": [{"name": "Soda cards", "blocks": [{"type": "card"}, {"type": "card"}, {"type": "card"}]}]
+}
+{% endschema %}

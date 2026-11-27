@@ -1,0 +1,54 @@
+<section class="blko-soda-qw{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <div class="blko-soda-qw__in">
+    <h2>{{ section.settings.heading | escape }}</h2>
+    <ul class="blko-soda-qw__grid">
+      {%- for block in section.blocks -%}
+        <li style="display:contents" {{ block.shopify_attributes }}>
+          <figure class="blko-soda-qw__card" style="background:{{ block.settings.color }}">
+            <blockquote>{{ block.settings.quote | escape }}</blockquote>
+            <figcaption>{{ block.settings.outlet | escape }}</figcaption>
+          </figure>
+        </li>
+      {%- endfor -%}
+    </ul>
+    {%- if section.settings.footnote != blank -%}<p class="blko-soda-qw__note">{{ section.settings.footnote | escape }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% stylesheet %}
+.blko-soda-qw{padding:clamp(3rem,7vw,5.5rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif);text-align:center}
+.blko-soda-qw__in{display:grid;gap:1rem;max-width:72rem;margin:0 auto}
+.blko-soda-qw h2{margin:0;font:900 clamp(2rem,4.5vw,3.5rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-qw__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 0;padding:0;list-style:none;text-align:left}
+.blko-soda-qw__card{display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem;margin:0;padding:1.75rem;border:2px solid var(--color-text, #0f3b2e);border-radius:1.75rem;color:var(--color-text, #0f3b2e)}
+.blko-soda-qw__card blockquote{margin:0;font:900 1.35rem/1.2 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-qw__card blockquote::before{content:"\201C";display:block;font-size:3rem;line-height:.7}
+.blko-soda-qw__card figcaption{font-size:.85rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.blko-soda-qw__note{margin:0;font-size:.85rem;opacity:.8}
+@media(max-width:900px){.blko-soda-qw__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.blko-soda-qw__grid{grid-template-columns:1fr}}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda quote wall",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#fbf3e2"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section's background)"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Fizz in the news"},
+    {"type": "text", "id": "footnote", "label": "Footnote", "default": "Outlet names and quotes are placeholders. Replace with your real coverage."}
+  ],
+  "blocks": [
+    {"type": "quote", "name": "Quote", "settings": [
+      {"type": "color", "id": "color", "label": "Card color", "default": "#ffc9d6"},
+      {"type": "textarea", "id": "quote", "label": "Quote", "default": "A fizzy surprise."},
+      {"type": "text", "id": "outlet", "label": "Outlet", "default": "Daily Sip"}
+    ]}
+  ],
+  "max_blocks": 12,
+  "presets": [{"name": "Soda quote wall", "blocks": [{"type": "quote"}, {"type": "quote"}, {"type": "quote"}]}]
+}
+{% endschema %}

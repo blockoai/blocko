@@ -295,5 +295,303 @@
       "pick": 3,
       "discount_percent": 10
     }
-  ]
+  ],
+  "banners": {
+    "hero-cherry-pop": {
+      "path": "banners/hero-cherry-pop.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "3 cans center, shape inside central 60%"
+    },
+    "hero-cherry-pop-wide": {
+      "path": "banners/hero-cherry-pop-wide.svg",
+      "size": [
+        1600,
+        900
+      ],
+      "focal": "3 cans center, fruit in far corners"
+    },
+    "hero-orange-burst": {
+      "path": "banners/hero-orange-burst.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "3 cans center, shape inside central 60%"
+    },
+    "hero-orange-burst-wide": {
+      "path": "banners/hero-orange-burst-wide.svg",
+      "size": [
+        1600,
+        900
+      ],
+      "focal": "3 cans center, fruit in far corners"
+    },
+    "hero-lemon-lime-zing": {
+      "path": "banners/hero-lemon-lime-zing.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "3 cans center, shape inside central 60%"
+    },
+    "hero-lemon-lime-zing-wide": {
+      "path": "banners/hero-lemon-lime-zing-wide.svg",
+      "size": [
+        1600,
+        900
+      ],
+      "focal": "3 cans center, fruit in far corners"
+    },
+    "story": {
+      "path": "banners/story.svg",
+      "size": [
+        1500,
+        1000
+      ],
+      "focal": "5 cans on the counter, center; crates and window at the sides"
+    },
+    "ingredients": {
+      "path": "banners/ingredients.svg",
+      "size": [
+        1500,
+        1000
+      ],
+      "focal": "can center in cream disc; roots left, fruit right"
+    },
+    "subscribe": {
+      "path": "banners/subscribe.svg",
+      "size": [
+        1500,
+        1000
+      ],
+      "focal": "open box center-left; calendar right of center"
+    },
+    "variety": {
+      "path": "banners/variety.svg",
+      "size": [
+        1500,
+        1000
+      ],
+      "focal": "6 cans fanned from bottom center"
+    },
+    "collection-header": {
+      "path": "banners/collection-header.svg",
+      "size": [
+        1600,
+        500
+      ],
+      "focal": "8 cans in a row, center 60% shows cans 2-7"
+    },
+    "mega-promo": {
+      "path": "banners/mega-promo.svg",
+      "size": [
+        800,
+        800
+      ],
+      "focal": "single can center; NEW starburst top right, text drawn in HTML"
+    },
+    "why-fizz": {
+      "path": "banners/why-fizz.svg",
+      "size": [
+        1600,
+        700
+      ],
+      "focal": "page hero: main can/subject in the center 60%, props at sides"
+    },
+    "sustainability": {
+      "path": "banners/sustainability.svg",
+      "size": [
+        1600,
+        700
+      ],
+      "focal": "page hero: main can/subject in the center 60%, props at sides"
+    },
+    "guarantee": {
+      "path": "banners/guarantee.svg",
+      "size": [
+        1600,
+        700
+      ],
+      "focal": "page hero: main can/subject in the center 60%, props at sides"
+    },
+    "quality": {
+      "path": "banners/quality.svg",
+      "size": [
+        1600,
+        700
+      ],
+      "focal": "page hero: main can/subject in the center 60%, props at sides"
+    },
+    "press": {
+      "path": "banners/press.svg",
+      "size": [
+        1600,
+        700
+      ],
+      "focal": "page hero: main can/subject in the center 60%, props at sides"
+    },
+    "faq": {
+      "path": "banners/faq.svg",
+      "size": [
+        1600,
+        700
+      ],
+      "focal": "page hero: main can/subject in the center 60%, props at sides"
+    },
+    "contact": {
+      "path": "banners/contact.svg",
+      "size": [
+        1600,
+        700
+      ],
+      "focal": "page hero: main can/subject in the center 60%, props at sides"
+    },
+    "store-locator": {
+      "path": "banners/store-locator.svg",
+      "size": [
+        1600,
+        700
+      ],
+      "focal": "page hero: main can/subject in the center 60%, props at sides"
+    },
+    "flavor-cherry-pop": {
+      "path": "banners/flavor-cherry-pop.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "can center in its fruit world; fruit pile at the base"
+    },
+    "flavor-orange-burst": {
+      "path": "banners/flavor-orange-burst.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "can center in its fruit world; fruit pile at the base"
+    },
+    "flavor-strawberry-lime": {
+      "path": "banners/flavor-strawberry-lime.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "can center in its fruit world; fruit pile at the base"
+    },
+    "flavor-lemon-lime-zing": {
+      "path": "banners/flavor-lemon-lime-zing.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "can center in its fruit world; fruit pile at the base"
+    },
+    "flavor-mango-tango": {
+      "path": "banners/flavor-mango-tango.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "can center in its fruit world; fruit pile at the base"
+    },
+    "flavor-mint-mojito": {
+      "path": "banners/flavor-mint-mojito.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "can center in its fruit world; fruit pile at the base"
+    },
+    "flavor-grape-soda": {
+      "path": "banners/flavor-grape-soda.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "can center in its fruit world; fruit pile at the base"
+    },
+    "flavor-root-beer": {
+      "path": "banners/flavor-root-beer.svg",
+      "size": [
+        1200,
+        1200
+      ],
+      "focal": "can center in its fruit world; fruit pile at the base"
+    },
+    "social-1": {
+      "path": "banners/social-1.svg",
+      "size": [
+        1000,
+        1000
+      ],
+      "focal": "scene center, 1-2 cans"
+    },
+    "social-2": {
+      "path": "banners/social-2.svg",
+      "size": [
+        1000,
+        1000
+      ],
+      "focal": "scene center, 1-2 cans"
+    },
+    "social-3": {
+      "path": "banners/social-3.svg",
+      "size": [
+        1000,
+        1000
+      ],
+      "focal": "scene center, 1-2 cans"
+    },
+    "social-4": {
+      "path": "banners/social-4.svg",
+      "size": [
+        1000,
+        1000
+      ],
+      "focal": "scene center, 1-2 cans"
+    },
+    "social-5": {
+      "path": "banners/social-5.svg",
+      "size": [
+        1000,
+        1000
+      ],
+      "focal": "scene center, 1-2 cans"
+    },
+    "social-6": {
+      "path": "banners/social-6.svg",
+      "size": [
+        1000,
+        1000
+      ],
+      "focal": "scene center, 1-2 cans"
+    },
+    "promo-subscribe": {
+      "path": "banners/promo-subscribe.svg",
+      "size": [
+        1600,
+        400
+      ],
+      "focal": "box and calendar center"
+    },
+    "promo-bundle": {
+      "path": "banners/promo-bundle.svg",
+      "size": [
+        1600,
+        400
+      ],
+      "focal": "5-can fan center"
+    },
+    "promo-newsletter": {
+      "path": "banners/promo-newsletter.svg",
+      "size": [
+        1600,
+        400
+      ],
+      "focal": "envelope center with can and bubbles above"
+    }
+  }
 }

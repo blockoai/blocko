@@ -10,18 +10,23 @@
       {%- assign coll = collections[block.settings.collection] -%}
       <div class="blko-soda-tabs__panel{% if forloop.first %} is-active{% endif %}" data-panel="{{ block.id }}" role="tabpanel">
         <p class="blko-soda-tabs__note">{{ block.settings.note | escape }}</p>
-        <div class="blko-soda-tabs__track">
+        <div class="blko-soda-tabs__stage">
+          <button type="button" class="blko-soda-tabs__arrow is-prev" data-scroll="-1" aria-label="{{ section.settings.prev_label | escape }}">&#8249;</button>
+          <div class="blko-soda-tabs__track">
           {%- for product in coll.products limit: block.settings.limit -%}
             {% render 'blko-soda-product-card', product: product, line: block.settings.tab_label, add_label: section.settings.add_label, view_label: section.settings.view_label, sale_label: section.settings.sale_label %}
           {%- else -%}
             <p class="blko-soda-tabs__empty">{{ section.settings.empty_text }}</p>
           {%- endfor -%}
+          </div>
+          <button type="button" class="blko-soda-tabs__arrow is-next" data-scroll="1" aria-label="{{ section.settings.next_label | escape }}">&#8250;</button>
         </div>
         <p class="blko-soda-tabs__cta"><a href="{{ coll.url | default: routes.collections_url }}">{{ block.settings.cta_label | escape }}</a></p>
       </div>
     {%- endfor -%}
   </blko-soda-tabs>
 </section>
+{%- if section.settings.wave_to != blank -%}{% render 'blko-soda-divider', from: section.settings.bg, to: section.settings.wave_to %}{%- endif -%}
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 
 {% stylesheet %}
@@ -37,6 +42,22 @@
 .blko-soda-tabs__track>.blko-soda-card{flex:0 0 min(17rem,72vw);scroll-snap-align:start}
 .blko-soda-tabs__cta{margin:1.25rem 0 0;text-align:center}
 .blko-soda-tabs__cta a{display:inline-block;padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
+/* pills (14px/700, 1.5px outline) */
+.blko-soda-tabs__tab,.blko-soda-coll__filters a{padding:.55rem 1.25rem;border:1.5px solid var(--color-text,#0f3b2e);font:700 14px/1.2 var(--font-body,"Outfit",sans-serif);transition:background-color .15s ease,color .15s ease,border-color .15s ease}
+.blko-soda-tabs__tab:hover,.blko-soda-coll__filters a:hover{background:var(--color-text,#0f3b2e);color:var(--color-bg-alt,#f3e8cd)}
+.blko-soda-tabs__cta a,.blko-soda-retailers a{border-width:1.5px;font:700 14px/1.2 var(--font-body,"Outfit",sans-serif);transition:background-color .25s ease-in-out,color .25s ease-in-out}
+.blko-soda-tabs__cta a:hover,.blko-soda-retailers a:hover{background:var(--color-text,#0f3b2e);color:#fff}
+/* tabs carousel */
+.blko-soda-tabs__stage{position:relative}
+.blko-soda-tabs__arrow{position:absolute;top:calc(50% - 3rem);z-index:3;width:2.75rem;height:2.75rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:50%;background:#fff;color:var(--color-text,#0f3b2e);font:700 1.5rem/1 var(--font-body,"Outfit",sans-serif);cursor:pointer;transition:opacity .25s ease-in-out,background-color .25s ease-in-out}
+.blko-soda-tabs__arrow:hover{opacity:.8;background:var(--color-announcement-bg,#cdf26b)}
+.blko-soda-tabs__arrow.is-prev{left:1rem}.blko-soda-tabs__arrow.is-next{right:1rem}
+.blko-soda-tabs__track>.blko-soda-card{flex:0 0 min(17.5rem,72vw)}
+@media(max-width:700px){.blko-soda-tabs__arrow{display:none}}
+.blko-soda-strip{padding:1rem 1.25rem}
+.blko-soda-promo{display:block;max-width:70rem;margin:0 auto;height:clamp(110px,14vw,200px);border-radius:20px;overflow:hidden}
+.blko-soda-promo img{width:100%;height:100%;object-fit:cover;transition:transform .25s ease-in-out}
+.blko-soda-promo:hover img{transform:scale(1.02)}
 {% endstylesheet %}
 
 {% schema %}
@@ -49,6 +70,9 @@
     {"type": "text", "id": "add_label", "label": "Quick add label", "default": "Quick add"},
     {"type": "text", "id": "view_label", "label": "Card button label", "default": "Shop now"},
     {"type": "text", "id": "sale_label", "label": "Sale badge", "default": "Sale"},
+    {"type": "text", "id": "prev_label", "label": "Previous arrow label", "default": "Previous"},
+    {"type": "text", "id": "next_label", "label": "Next arrow label", "default": "Next"},
+    {"type": "color", "id": "wave_to", "label": "Wavy bottom edge: next section color", "info": "Leave empty for a straight edge."},
     {"type": "text", "id": "empty_text", "label": "Empty text", "default": "Flavors coming soon."}
   ],
   "blocks": [

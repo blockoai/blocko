@@ -628,5 +628,149 @@
     },
     "jsBytes": 0,
     "industry": "beverage"
+  },
+  {
+    "id": "soda-page-hero",
+    "kind": "section",
+    "category": "page-header",
+    "name": "Soda page hero",
+    "description": "Flat-color page hero with a big centered serif title, buttons, an illustrated banner and a wavy edge.",
+    "file": "fizz/sections/page-header--soda-page-hero.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-steps",
+    "kind": "section",
+    "category": "rich-text",
+    "name": "Soda steps",
+    "description": "Numbered step cards on a flat color.",
+    "file": "fizz/sections/rich-text--soda-steps.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-plans",
+    "kind": "section",
+    "category": "rich-text",
+    "name": "Soda plan cards",
+    "description": "Plan cards with badge and button, for subscription frequencies.",
+    "file": "fizz/sections/rich-text--soda-plans.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-flavor-picker",
+    "kind": "section",
+    "category": "featured-collection",
+    "name": "Soda flavor picker",
+    "description": "Radio picker of flavor cans on pastel tiles with a call to action.",
+    "file": "fizz/sections/featured-collection--soda-flavor-picker.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-compare",
+    "kind": "section",
+    "category": "rich-text",
+    "name": "Soda compare table",
+    "description": "Bordered comparison table with mint header row.",
+    "file": "fizz/sections/rich-text--soda-compare.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-cards",
+    "kind": "section",
+    "category": "multicolumn",
+    "name": "Soda cards",
+    "description": "Bordered cards with optional can and tag, 2 to 4 columns.",
+    "file": "fizz/sections/multicolumn--soda-cards.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-social-grid",
+    "kind": "section",
+    "category": "gallery",
+    "name": "Soda social grid",
+    "description": "Square illustrated social grid.",
+    "file": "fizz/sections/gallery--soda-social-grid.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-promise",
+    "kind": "section",
+    "category": "rich-text",
+    "name": "Soda promise",
+    "description": "Big circle badge with promise copy and a button.",
+    "file": "fizz/sections/rich-text--soda-promise.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-quote-wall",
+    "kind": "section",
+    "category": "testimonials",
+    "name": "Soda quote wall",
+    "description": "Logo-free quote grid with generic outlet names.",
+    "file": "fizz/sections/testimonials--soda-quote-wall.html",
+    "deps": [],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 0,
+    "industry": "beverage"
   }
 ]

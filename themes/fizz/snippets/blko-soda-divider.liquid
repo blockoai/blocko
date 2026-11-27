@@ -1,0 +1,8 @@
+{%- comment -%} Wavy section divider. Params: from (previous section color), to (next section color) {%- endcomment -%}
+<div class="blko-soda-divider" aria-hidden="true" style="--from:{{ from }};--to:{{ to }}"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" focusable="false"><path d="M0 30C120 0 240 0 360 30S600 60 720 30S960 0 1080 30S1320 60 1440 30V60H0Z" fill="currentColor"/></svg></div>
+
+{% stylesheet %}
+/* wave dividers */
+.blko-soda-divider{display:block;height:clamp(28px,4vw,56px);margin:-1px 0;line-height:0;background:var(--from);color:var(--to)}
+.blko-soda-divider svg{display:block;width:100%;height:100%}
+{% endstylesheet %}

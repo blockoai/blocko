@@ -2,7 +2,9 @@
   "sections": {
     "fiber": {
       "type": "blko-soda-fiber",
-      "settings": {},
+      "settings": {
+        "banner": "variety"
+      },
       "blocks": {
         "block-1": {
           "type": "step",

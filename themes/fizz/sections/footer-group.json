@@ -39,10 +39,15 @@
     "cart-drawer": {
       "type": "blko-soda-cart-drawer",
       "settings": {}
+    },
+    "cookie": {
+      "type": "blko-soda-cookie",
+      "settings": {}
     }
   },
   "order": [
     "footer",
-    "cart-drawer"
+    "cart-drawer",
+    "cookie"
   ]
 }

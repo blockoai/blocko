@@ -1,15 +1,35 @@
 {%- assign current = product.selected_or_first_available_variant -%}
+{%- assign tile_bg = product.metafields.fizz.tile_bg.value | default: section.settings.tile_bg -%}
+{%- assign flavor_accent = product.metafields.fizz.accent.value | default: section.settings.accent -%}
+<div class="blko-soda-pdpwrap" data-flavor-scope style="--tile-bg:{{ tile_bg }};--flv-accent:{{ flavor_accent }}">
 <blko-soda-product class="blko-soda-pdp">
   <div class="blko-soda-pdp__gallery">
-    {%- if product.featured_media -%}<img data-main-image src="{{ product.featured_media | image_url: width: 1200 }}" alt="{{ product.featured_media.alt | default: product.title | escape }}" width="1200" height="{{ 1200 | divided_by: product.featured_media.aspect_ratio | round }}">{%- endif -%}
+    {%- if product.featured_image -%}
+      {% render 'blko-soda-tile', product: product, size: 'gallery', loading: 'eager', attrs: 'data-main-image' %}
+    {%- endif -%}
     {%- if product.images.size > 1 -%}
       <div class="blko-soda-pdp__thumbs">
-        {%- for image in product.images -%}<button type="button" data-thumb="{{ image | image_url: width: 1200 }}" class="{% if forloop.first %}is-active{% endif %}" aria-label="Image {{ forloop.index }}"><img src="{{ image | image_url: width: 160 }}" alt="" width="72" height="72" loading="lazy"></button>{%- endfor -%}
+        {%- for image in product.images -%}
+          <button type="button" data-thumb="{{ image | image_url: width: 1200 }}" class="{% if forloop.first %}is-active{% endif %}" aria-label="{{ section.settings.image_label | escape }} {{ forloop.index }}">
+            {% render 'blko-soda-tile', product: product, image: image, size: 'thumb' %}
+          </button>
+        {%- endfor -%}
       </div>
     {%- endif -%}
   </div>
   <div class="blko-soda-pdp__info">
     <p class="blko-soda-pdp__line">{{ product.type }}</p>
+    {%- assign flavors = collections[section.settings.flavor_collection].products -%}
+    {%- if flavors.size > 1 -%}
+      <details class="blko-soda-flavor">
+        <summary><span class="blko-soda-flavor__dot">{% if product.featured_image %}<img src="{{ product.featured_image | image_url: width: 80 }}" alt="" width="24" height="24" loading="lazy">{% endif %}</span><span>{{ section.settings.flavor_label | escape }}: <b>{{ product.title }}</b></span></summary>
+        <ul>
+          {%- for f in flavors -%}
+            <li><a href="{{ f.url }}"{% if f.id == product.id %} aria-current="true"{% endif %}><span class="blko-soda-flavor__dot" style="--tile-bg:{{ f.metafields.fizz.tile_bg.value | default: section.settings.tile_bg }}">{% if f.featured_image %}<img src="{{ f.featured_image | image_url: width: 80 }}" alt="" width="24" height="24" loading="lazy">{% endif %}</span>{{ f.title }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </details>
+    {%- endif -%}
     <h1>{{ product.title }}</h1>
     <p class="blko-soda-pdp__price"><span data-price>{{ current.price | money }}</span> <s data-compare{% unless current.compare_at_price > current.price %} hidden{% endunless %}>{{ current.compare_at_price | money }}</s></p>
     <div class="blko-soda-pdp__desc">{{ product.description | strip_html | truncatewords: 40 }}</div>
@@ -81,7 +101,17 @@
       </div>
     {%- endif -%}
   </div>
+  <div class="blko-soda-sticky" data-sticky aria-hidden="true">
+    <div class="blko-soda-sticky__in">
+      <span class="blko-soda-sticky__thumb" style="--tile-bg:{{ tile_bg }}">{% if product.featured_image %}<img src="{{ product.featured_image | image_url: width: 120 }}" alt="" width="40" height="40" loading="lazy">{% endif %}</span>
+      <b class="blko-soda-sticky__name">{{ product.title }}</b>
+      <span class="blko-soda-sticky__opt" data-sticky-opt>{{ current.title }}</span>
+      <span class="blko-soda-sticky__price"><s data-sticky-compare{% unless current.compare_at_price > current.price %} hidden{% endunless %}>{{ current.compare_at_price | money }}</s><b data-sticky-price>{{ current.price | money }}</b></span>
+      <button type="button" class="blko-soda-sticky__btn" data-sticky-add tabindex="-1"{% unless current.available %} disabled{% endunless %}>{% if current.available %}{{ section.settings.add_label }}{% else %}{{ section.settings.sold_label }}{% endif %}</button>
+    </div>
+  </div>
 </blko-soda-product>
+</div>
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 
 {% stylesheet %}
@@ -121,12 +151,63 @@
 .blko-soda-perks ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem .8rem;margin:0;padding:0;list-style:none;font-size:.92rem;font-weight:700}
 .blko-soda-perks li::before{content:"\2713";margin-right:.4rem;color:var(--color-accent, #ff6b8b)}
 @media(max-width:800px){.blko-soda-pdp{grid-template-columns:1fr}}
+/* pdp */
+.blko-soda-pdpwrap{--tile-bg:#fde1e3;--flv:#c8203a;--flv-accent:#ffd0d6;background:color-mix(in srgb,var(--tile-bg) 45%,#fffaf0);transition:background-color .25s ease-in-out}
+.blko-soda-pdp{align-items:start;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+.blko-soda-pdp__gallery{position:sticky;top:1.5rem}
+.blko-soda-pdp .blko-soda-pdp__gallery>.blko-soda-tile{border-radius:20px}
+.blko-soda-pdp .blko-soda-pdp__thumbs button{width:72px;height:72px;padding:0;border:2px solid transparent;border-radius:14px;overflow:hidden}
+.blko-soda-pdp .blko-soda-pdp__thumbs .blko-soda-tile{width:100%;height:100%;border-radius:12px}
+.blko-soda-pdp .blko-soda-pdp__thumbs img{width:78%;height:78%}
+.blko-soda-pdp .blko-soda-pdp__thumbs .is-full img{width:100%;height:100%}
+.blko-soda-pdp .blko-soda-pdp__thumbs button.is-active{border-color:var(--color-text,#0f3b2e)}
+.blko-soda-pdp__info{position:sticky;top:1.5rem;text-align:center}
+.blko-soda-pdp__line{font:700 18px/1.4 var(--font-body,"Outfit",sans-serif);letter-spacing:0;text-decoration:underline;text-transform:none}
+.blko-soda-pdp__info h1{margin:.6rem 0;font:900 clamp(2.4rem,4.5vw,3rem)/1.05 var(--font-heading,"Fraunces",Georgia,serif)}
+.blko-soda-pdp__price s{margin-left:.4rem}
+.blko-soda-flavor{position:relative;margin:.8rem 0 0;text-align:left}
+.blko-soda-flavor summary{display:flex;align-items:center;gap:.6rem;height:48px;padding:0 1rem;border:1px solid var(--color-text,#0f3b2e);border-radius:24px;background:#fff;font:700 14px/1 var(--font-body,"Outfit",sans-serif);cursor:pointer;list-style:none;transition:box-shadow .2s ease}
+.blko-soda-flavor summary::-webkit-details-marker{display:none}
+.blko-soda-flavor summary::after{content:"";width:8px;height:8px;margin-left:auto;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}
+.blko-soda-flavor summary:hover{box-shadow:4px 4px 0 0 var(--flv-accent)}
+.blko-soda-flavor__dot{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--tile-bg);flex:none}
+.blko-soda-flavor__dot img{width:auto;height:24px}
+.blko-soda-flavor ul{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:15;margin:0;padding:.4rem;max-height:20rem;overflow:auto;border:1px solid var(--color-text,#0f3b2e);border-radius:16px;background:#fff;list-style:none}
+.blko-soda-flavor li a{display:flex;align-items:center;gap:.6rem;padding:.4rem .6rem;border-radius:12px;color:inherit;font:700 14px/1.2 var(--font-body,"Outfit",sans-serif);text-decoration:none;transition:background-color .25s ease-in-out}
+.blko-soda-flavor li a:hover,.blko-soda-flavor li a[aria-current]{background:#d6f1ea}
+.blko-soda-pdp__option{text-align:left}
+.blko-soda-pdp__option div{justify-content:flex-start}
+.blko-soda-pdp__option label{padding:.6rem 1.2rem;border:1.5px solid var(--color-text,#0f3b2e);font:700 14px/1.2 var(--font-body,"Outfit",sans-serif);transition:box-shadow .2s ease,background-color .25s ease}
+.blko-soda-pdp__option label:hover{box-shadow:4px 4px 0 0 var(--flv-accent)}
+.blko-soda-purchase{text-align:left}
+.blko-soda-purchase__opt{border:1.5px solid var(--color-text,#0f3b2e);border-radius:16px;font-size:14px;transition:box-shadow .2s ease,background-color .25s ease}
+.blko-soda-purchase__opt:hover,.blko-soda-purchase__opt:has(input:checked){box-shadow:4px 4px 0 0 var(--flv-accent)}
+.blko-soda-pdp .blko-soda-pdp__add{height:48px;padding:0 2rem;border:3px solid var(--color-text,#0f3b2e);font:700 18px/1 var(--font-body,"Outfit",sans-serif);transition:background-color .25s ease,color .25s ease,box-shadow .2s ease}
+.blko-soda-pdp .blko-soda-pdp__add:hover:not(:disabled){box-shadow:4px 4px 0 0 var(--flv-accent)}
+.blko-soda-sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;height:73px;background:#fffbf5;border-top:1px solid #f3e4cd;transform:translateY(100%);opacity:0;visibility:hidden;transition:transform .28s ease,opacity .28s ease,visibility 0s linear .28s}
+.blko-soda-sticky.is-visible{transform:none;opacity:1;visibility:visible;transition:transform .28s ease,opacity .28s ease,visibility 0s}
+.blko-soda-sticky__in{display:flex;align-items:center;gap:1rem;height:100%;max-width:75rem;margin:0 auto;padding:0 1.25rem;font-family:var(--font-body,"Outfit",sans-serif);color:var(--color-text,#0f3b2e)}
+.blko-soda-sticky__thumb{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--tile-bg);overflow:hidden;flex:none}
+.blko-soda-sticky__thumb img{width:auto;height:40px}
+.blko-soda-sticky__name{font:900 1.4rem/1 var(--font-heading,"Fraunces",Georgia,serif)}
+.blko-soda-sticky__opt{font-size:1rem;color:var(--color-text-muted,#4a6a5c)}
+.blko-soda-sticky__price{margin-left:auto;display:flex;align-items:baseline;gap:.5rem;font-weight:800}
+.blko-soda-sticky__price s{font-weight:600;color:var(--color-text-muted,#4a6a5c)}
+.blko-soda-sticky__btn{height:48px;padding:0 2rem;border:3px solid var(--color-text,#0f3b2e);border-radius:999px;background:var(--color-button,#0f3b2e);color:#fff;font:700 18px/1 var(--font-body,"Outfit",sans-serif);cursor:pointer;transition:background-color .25s ease,box-shadow .2s ease}
+.blko-soda-sticky__btn:hover:not(:disabled){box-shadow:4px 4px 0 0 var(--flv-accent,#ffd0d6)}
+.blko-soda-sticky__btn:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:800px){.blko-soda-pdp{grid-template-columns:1fr}.blko-soda-pdp__gallery,.blko-soda-pdp__info{position:static}.blko-soda-sticky__opt,.blko-soda-sticky__thumb{display:none}.blko-soda-sticky__name{font-size:1.1rem}.blko-soda-sticky__btn{padding:0 1.25rem;font-size:16px}}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda product",
   "settings": [
+    {"type": "color", "id": "tile_bg", "label": "Page and tile tint (fallback)", "default": "#fde1e3", "info": "Per product: metafield fizz.tile_bg (color)."},
+    {"type": "color", "id": "accent", "label": "Hover shadow color (fallback)", "default": "#ffd0d6", "info": "Per product: metafield fizz.accent (color)."},
+    {"type": "text", "id": "flavor_collection", "label": "Flavor switcher collection handle", "default": "drinks", "info": "Lists this collection's products in the flavor dropdown."},
+    {"type": "text", "id": "flavor_label", "label": "Flavor switcher label", "default": "Flavor"},
+    {"type": "text", "id": "image_label", "label": "Thumbnail label", "default": "Image"},
     {"type": "text", "id": "one_time_label", "label": "One-time label", "default": "One-time purchase"},
     {"type": "text", "id": "subscribe_label", "label": "Subscribe label", "default": "Subscribe & Save"},
     {"type": "text", "id": "save_label", "label": "Save label", "default": "Save"},

@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="1500" height="1000" preserveAspectRatio="xMidYMid slice">
+<defs><g id="c-cherry-pop"><g>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
+<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
+<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#c8203a"/>
+<path d="M50 112 Q150 122 250 112" fill="none" stroke="#500c17" stroke-width="3" opacity=".5"/>
+<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
+<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
+<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
+<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
+<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
+<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
+<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
+<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
+<path id="arc-cherry-pop" d="M68 190 Q150 130 232 190" fill="none"/>
+<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#500c17" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-cherry-pop" startOffset="50%">fizz</textPath></text>
+<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#500c17" stroke-width="3"/>
+<circle cx="150" cy="292" r="67" fill="#ffd0d6" opacity=".55"/>
+<path d="M142 258 Q150 232 176 222 M176 222 Q180 240 160 292" fill="none" stroke="#3d6b2a" stroke-width="4" stroke-linecap="round"/>
+<path d="M176 222 Q198 206 206 224 Q190 236 176 222Z" fill="#4c9a3a"/>
+<circle cx="132" cy="302" r="26" fill="#d4203c" stroke="#500c17" stroke-width="3"/>
+<circle cx="172" cy="306" r="26" fill="#b8182f" stroke="#500c17" stroke-width="3"/>
+<circle cx="124" cy="294" r="6" fill="#fff" opacity=".5"/>
+<circle cx="164" cy="298" r="6" fill="#fff" opacity=".5"/>
+<path d="M176 222 L160 290" stroke="#3d6b2a" stroke-width="4" fill="none" stroke-linecap="round"/>
+<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#500c17" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+<text x="150" y="410" font-size="26">Cherry</text>
+<text x="150" y="440" font-size="26">Pop</text>
+</g>
+<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
+<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#500c17">9g fiber</text>
+</g></g><g id="c-orange-burst"><g>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
+<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
+<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#f26b1d"/>
+<path d="M50 112 Q150 122 250 112" fill="none" stroke="#602a0b" stroke-width="3" opacity=".5"/>
+<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
+<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
+<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
+<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
+<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
+<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
+<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
+<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
+<path id="arc-orange-burst" d="M68 190 Q150 130 232 190" fill="none"/>
+<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#602a0b" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-orange-burst" startOffset="50%">fizz</textPath></text>
+<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#602a0b" stroke-width="3"/>
+<circle cx="150" cy="292" r="67" fill="#ffe0b8" opacity=".55"/>
+<circle cx="150" cy="290" r="50" fill="#f58a1f" stroke="#602a0b" stroke-width="3"/>
+<circle cx="150" cy="290" r="40" fill="#ffd58a" />
+<path d="M150 290 L188.0 290.0" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L176.9 316.9" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L150.0 328.0" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L123.1 316.9" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L112.0 290.0" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L123.1 263.1" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L150.0 252.0" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<path d="M150 290 L176.9 263.1" stroke="#f58a1f" stroke-width="3" stroke-linecap="round"/>
+<circle cx="150" cy="290" r="5" fill="#f58a1f" />
+<path d="M186 246 Q210 228 218 244 Q202 256 186 246Z" fill="#4c9a3a"/>
+<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#602a0b" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+<text x="150" y="410" font-size="26">Orange</text>
+<text x="150" y="440" font-size="26">Burst</text>
+</g>
+<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
+<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#602a0b">9g fiber</text>
+</g></g><g id="c-strawberry-lime"><g>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
+<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
+<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#e8587a"/>
+<path d="M50 112 Q150 122 250 112" fill="none" stroke="#5c2330" stroke-width="3" opacity=".5"/>
+<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
+<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
+<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
+<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
+<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
+<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
+<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
+<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
+<path id="arc-strawberry-lime" d="M68 190 Q150 130 232 190" fill="none"/>
+<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#5c2330" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-strawberry-lime" startOffset="50%">fizz</textPath></text>
+<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#5c2330" stroke-width="3"/>
+<circle cx="150" cy="292" r="67" fill="#c6f08a" opacity=".55"/>
+<path d="M150 336 C108 314 100 268 112 256 C124 244 140 252 150 256 C160 252 176 244 188 256 C200 268 192 314 150 336Z" fill="#e0304f" stroke="#5c2330" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="130" cy="274" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="150" cy="270" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="170" cy="274" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="124" cy="292" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="144" cy="290" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="164" cy="290" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="184" cy="292" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="136" cy="308" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="156" cy="308" rx="2.6" ry="4" fill="#ffe6a8"/>
+<ellipse cx="150" cy="322" rx="2.6" ry="4" fill="#ffe6a8"/>
+<path d="M150 258 L128 240 L142 248 L146 230 L152 246 L162 232 L162 250 L176 240Z" fill="#4c9a3a" stroke="#5c2330" stroke-width="2" stroke-linejoin="round"/>
+<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#5c2330" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+<text x="150" y="410" font-size="21">Strawberry</text>
+<text x="150" y="440" font-size="21">Lime</text>
+</g>
+<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
+<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#5c2330">6g fiber</text>
+</g></g><g id="c-lemon-lime-zing"><g>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
+<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
+<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#7fb41a"/>
+<path d="M50 112 Q150 122 250 112" fill="none" stroke="#304409" stroke-width="3" opacity=".5"/>
+<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
+<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
+<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
+<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
+<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
+<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
+<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
+<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
+<path id="arc-lemon-lime-zing" d="M68 190 Q150 130 232 190" fill="none"/>
+<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#304409" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-lemon-lime-zing" startOffset="50%">fizz</textPath></text>
+<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#304409" stroke-width="3"/>
+<circle cx="150" cy="292" r="67" fill="#fff08a" opacity=".55"/>
+<circle cx="130" cy="296" r="36" fill="#f6d51f" stroke="#304409" stroke-width="3"/>
+<circle cx="130" cy="296" r="28" fill="#fff2a0" />
+<circle cx="172" cy="288" r="32" fill="#7fb41a" stroke="#304409" stroke-width="3"/>
+<circle cx="172" cy="288" r="24" fill="#c6e86a" />
+<path d="M130 296 L158.0 296.0" stroke="#f6d51f" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M130 296 L144.0 320.2" stroke="#f6d51f" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M130 296 L116.0 320.2" stroke="#f6d51f" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M130 296 L102.0 296.0" stroke="#f6d51f" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M130 296 L116.0 271.8" stroke="#f6d51f" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M130 296 L144.0 271.8" stroke="#f6d51f" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M172 288 L196.0 288.0" stroke="#7fb41a" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M172 288 L184.0 308.8" stroke="#7fb41a" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M172 288 L160.0 308.8" stroke="#7fb41a" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M172 288 L148.0 288.0" stroke="#7fb41a" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M172 288 L160.0 267.2" stroke="#7fb41a" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M172 288 L184.0 267.2" stroke="#7fb41a" stroke-width="2.5" stroke-linecap="round"/>
+<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#304409" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+<text x="150" y="410" font-size="21">Lemon Lime</text>
+<text x="150" y="440" font-size="21">Zing</text>
+</g>
+<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
+<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#304409">6g fiber</text>
+</g></g><g id="c-mint-mojito"><g>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
+<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
+<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#1ea58b"/>
+<path d="M50 112 Q150 122 250 112" fill="none" stroke="#0c4237" stroke-width="3" opacity=".5"/>
+<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
+<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
+<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
+<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
+<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
+<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
+<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
+<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
+<path id="arc-mint-mojito" d="M68 190 Q150 130 232 190" fill="none"/>
+<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#0c4237" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-mint-mojito" startOffset="50%">fizz</textPath></text>
+<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#0c4237" stroke-width="3"/>
+<circle cx="150" cy="292" r="67" fill="#bff0e2" opacity=".55"/>
+<path d="M150 336 L150 286" stroke="#1c6e5c" stroke-width="4" stroke-linecap="round"/>
+<path d="M150 296 C112 292 94 266 100 248 C128 246 148 266 150 296Z" fill="#2fbf6e" stroke="#0c4237" stroke-width="3" stroke-linejoin="round"/>
+<path d="M150 296 C188 292 206 266 200 248 C172 246 152 266 150 296Z" fill="#46d17f" stroke="#0c4237" stroke-width="3" stroke-linejoin="round"/>
+<path d="M150 286 C132 262 138 238 150 226 C162 238 168 262 150 286Z" fill="#2fbf6e" stroke="#0c4237" stroke-width="3" stroke-linejoin="round"/>
+<path d="M150 284 L150 238 M148 292 L112 258 M152 292 L188 258" stroke="#1c6e5c" stroke-width="2" fill="none" stroke-linecap="round"/>
+<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#0c4237" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+<text x="150" y="410" font-size="26">Mint</text>
+<text x="150" y="440" font-size="26">Mojito</text>
+</g>
+<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
+<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#0c4237">6g fiber</text>
+</g></g><g id="c-grape-soda"><g>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
+<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
+<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
+<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#6d3fa6"/>
+<path d="M50 112 Q150 122 250 112" fill="none" stroke="#2b1942" stroke-width="3" opacity=".5"/>
+<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
+<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
+<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
+<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
+<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
+<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
+<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
+<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
+<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
+<path id="arc-grape-soda" d="M68 190 Q150 130 232 190" fill="none"/>
+<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#2b1942" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-grape-soda" startOffset="50%">fizz</textPath></text>
+<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#2b1942" stroke-width="3"/>
+<circle cx="150" cy="292" r="67" fill="#d9c2f5" opacity=".55"/>
+<circle cx="122" cy="276" r="15" fill="#7440b5" stroke="#2b1942" stroke-width="2.5"/>
+<circle cx="117" cy="271" r="3.5" fill="#fff" opacity=".5"/>
+<circle cx="150" cy="276" r="15" fill="#8a55c8" stroke="#2b1942" stroke-width="2.5"/>
+<circle cx="145" cy="271" r="3.5" fill="#fff" opacity=".5"/>
+<circle cx="178" cy="276" r="15" fill="#7440b5" stroke="#2b1942" stroke-width="2.5"/>
+<circle cx="173" cy="271" r="3.5" fill="#fff" opacity=".5"/>
+<circle cx="136" cy="298" r="15" fill="#8a55c8" stroke="#2b1942" stroke-width="2.5"/>
+<circle cx="131" cy="293" r="3.5" fill="#fff" opacity=".5"/>
+<circle cx="164" cy="298" r="15" fill="#7440b5" stroke="#2b1942" stroke-width="2.5"/>
+<circle cx="159" cy="293" r="3.5" fill="#fff" opacity=".5"/>
+<circle cx="150" cy="320" r="15" fill="#8a55c8" stroke="#2b1942" stroke-width="2.5"/>
+<circle cx="145" cy="315" r="3.5" fill="#fff" opacity=".5"/>
+<path d="M150 262 L150 246" stroke="#3d6b2a" stroke-width="4" stroke-linecap="round"/>
+<path d="M150 250 Q176 226 198 240 Q180 258 150 250Z" fill="#4c9a3a" stroke="#2b1942" stroke-width="2"/>
+<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#2b1942" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
+<text x="150" y="410" font-size="26">Grape</text>
+<text x="150" y="440" font-size="26">Soda</text>
+</g>
+<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
+<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#2b1942">9g fiber</text>
+</g></g></defs><rect width="1500" height="1000" fill="#fff3d6"/><path d="M750 960 L-1250 960 L-1182 442Z" fill="#fbe3b0"/><path d="M750 960 L-1182 442 L-982 -40Z" fill="#fff3d6"/><path d="M750 960 L-982 -40 L-664 -454Z" fill="#fbe3b0"/><path d="M750 960 L-664 -454 L-250 -772Z" fill="#fff3d6"/><path d="M750 960 L-250 -772 L232 -972Z" fill="#fbe3b0"/><path d="M750 960 L232 -972 L750 -1040Z" fill="#fff3d6"/><path d="M750 960 L750 -1040 L1268 -972Z" fill="#fbe3b0"/><path d="M750 960 L1268 -972 L1750 -772Z" fill="#fff3d6"/><path d="M750 960 L1750 -772 L2164 -454Z" fill="#fbe3b0"/><path d="M750 960 L2164 -454 L2482 -40Z" fill="#fff3d6"/><path d="M750 960 L2482 -40 L2682 442Z" fill="#fbe3b0"/><path d="M750 960 L2682 442 L2750 960Z" fill="#fff3d6"/><path d="M750 960 L2750 960 L2682 1478Z" fill="#fbe3b0"/><path d="M750 960 L2682 1478 L2482 1960Z" fill="#fff3d6"/><path d="M750 960 L2482 1960 L2164 2374Z" fill="#fbe3b0"/><path d="M750 960 L2164 2374 L1750 2692Z" fill="#fff3d6"/><path d="M750 960 L1750 2692 L1268 2892Z" fill="#fbe3b0"/><path d="M750 960 L1268 2892 L750 2960Z" fill="#fff3d6"/><path d="M750 960 L750 2960 L232 2892Z" fill="#fbe3b0"/><path d="M750 960 L232 2892 L-250 2692Z" fill="#fff3d6"/><path d="M750 960 L-250 2692 L-664 2374Z" fill="#fbe3b0"/><path d="M750 960 L-664 2374 L-982 1960Z" fill="#fff3d6"/><path d="M750 960 L-982 1960 L-1182 1478Z" fill="#fbe3b0"/><path d="M750 960 L-1182 1478 L-1250 960Z" fill="#fff3d6"/><use href="#c-cherry-pop" transform="translate(750 960) rotate(-60) translate(0 -420) scale(1.05) translate(-150 -290)"/><use href="#c-grape-soda" transform="translate(750 960) rotate(60) translate(0 -420) scale(1.05) translate(-150 -290)"/><use href="#c-orange-burst" transform="translate(750 960) rotate(-36) translate(0 -420) scale(1.05) translate(-150 -290)"/><use href="#c-mint-mojito" transform="translate(750 960) rotate(36) translate(0 -420) scale(1.05) translate(-150 -290)"/><use href="#c-strawberry-lime" transform="translate(750 960) rotate(-12) translate(0 -420) scale(1.05) translate(-150 -290)"/><use href="#c-lemon-lime-zing" transform="translate(750 960) rotate(12) translate(0 -420) scale(1.05) translate(-150 -290)"/><ellipse cx="750" cy="990" rx="320" ry="26" fill="#000" opacity=".1"/><circle cx="18" cy="112" r="17" fill="#fff" fill-opacity=".2" stroke="#e6b95c" stroke-width="3" stroke-opacity=".85"/><path d="M9 111 A10 10 0 0 1 17 103" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/><circle cx="1495" cy="93" r="8" fill="#fff" fill-opacity=".2" stroke="#e6b95c" stroke-width="3" stroke-opacity=".85"/><path d="M1490 92 A5 5 0 0 1 1494 88" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/><circle cx="1410" cy="403" r="12" fill="#fff" fill-opacity=".2" stroke="#e6b95c" stroke-width="3" stroke-opacity=".85"/><path d="M1403 402 A7 7 0 0 1 1408 396" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/><circle cx="1483" cy="30" r="24" fill="#fff" fill-opacity=".2" stroke="#e6b95c" stroke-width="3" stroke-opacity=".85"/><path d="M1470 28 A15 15 0 0 1 1481 17" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/><circle cx="1303" cy="651" r="13" fill="#fff" fill-opacity=".2" stroke="#e6b95c" stroke-width="3" stroke-opacity=".85"/><path d="M1295 650 A8 8 0 0 1 1301 644" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/><circle cx="1465" cy="994" r="25" fill="#fff" fill-opacity=".2" stroke="#e6b95c" stroke-width="3" stroke-opacity=".85"/><path d="M1451 991 A15 15 0 0 1 1462 980" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</svg>

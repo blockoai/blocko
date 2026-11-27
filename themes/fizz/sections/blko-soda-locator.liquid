@@ -1,16 +1,17 @@
-<section class="blko-soda-loc" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+<section class="blko-soda-loc{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <blko-soda-locator class="blko-soda-loc__inner">
     <header class="blko-soda-loc__head">
       <h1>{{ section.settings.heading | escape }}</h1>
       <p>{{ section.settings.text | escape }}</p>
     </header>
+  {% render 'blko-soda-banner', name: section.settings.banner, image: section.settings.image, alt: section.settings.heading %}
 
     <h2 class="blko-soda-loc__sub">{{ section.settings.flavor_heading | escape }}</h2>
     <div class="blko-soda-loc__chips" role="group" aria-label="{{ section.settings.flavor_heading | escape }}">
       {%- for block in section.blocks -%}
         {%- if block.type == 'flavor' -%}
           <button type="button" class="blko-soda-loc__chip" data-flavor="{{ block.settings.name | handleize }}" aria-pressed="false" style="--chip:{{ block.settings.color }}" {{ block.shopify_attributes }}>
-            {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}{%- elsif block.settings.image_url != blank -%}<img src="{{ block.settings.image_url }}" alt="" width="160" height="160" loading="lazy">{%- endif -%}
+            {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}{%- else -%}{%- assign can_h = block.settings.can | default: block.settings.name | handleize -%}<img src="{{ 'fizz-can-' | append: can_h | append: '.svg' | asset_url }}" alt="" width="160" height="160" loading="lazy">{%- endif -%}
             <span>{{ block.settings.name | escape }}</span>
           </button>
         {%- endif -%}
@@ -67,12 +68,29 @@
 .blko-soda-loc__store a{justify-self:start;margin-top:.4rem;padding:.45rem 1.1rem;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);color:var(--color-text, #0f3b2e);font-weight:800;text-decoration:none}
 .blko-soda-loc__empty{margin:0;padding:2rem;border-radius:1.5rem;background:#fff;text-align:center;font-weight:700}
 @media(max-width:700px){.blko-soda-loc__form{grid-template-columns:1fr}}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+/* banner box: fixed height per breakpoint */
+.blko-soda-hbanner{width:100%;max-width:72rem;height:420px;margin:0 auto;overflow:hidden;border-radius:1.75rem}
+.blko-soda-hbanner img{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.blko-soda-hbanner{height:320px}}
+@media(max-width:600px){.blko-soda-hbanner{height:220px;border-radius:1.25rem}}
+.blko-soda-loc__head h1{font-size:clamp(3rem,9vw,6rem)}
+.blko-soda-loc__inner{padding:clamp(1.25rem,3vw,2.5rem);border:3px solid var(--color-text, #0f3b2e);border-radius:1.75rem;background:rgba(255,255,255,.55)}
+.blko-soda-loc__inner .blko-soda-hbanner{height:300px}
+.blko-soda-loc__chip img{width:100%;height:6rem;aspect-ratio:auto;padding:.35rem;border-radius:1rem;object-fit:contain;background:rgba(255,255,255,.55)}
+.blko-soda-loc__chip{transition:transform .2s cubic-bezier(.4,0,.2,1),box-shadow .2s ease}
+.blko-soda-loc__chip:hover{box-shadow:4px 4px 0 0 var(--chip, #ffc9d6)}
+@media(max-width:600px){.blko-soda-loc__inner .blko-soda-hbanner{height:200px}.blko-soda-loc__chip img{height:5rem}}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda store locator",
   "settings": [
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section background)"},
+    {"type": "text", "id": "banner", "label": "Banner name (file fizz-banner-NAME.svg in assets)"},
+    {"type": "image_picker", "id": "image", "label": "Banner image (overrides banner name)"},
     {"type": "color", "id": "bg", "label": "Background", "default": "#fff3b0"},
     {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
     {"type": "text", "id": "heading", "label": "Heading", "default": "Where to buy"},
@@ -95,7 +113,7 @@
         {"type": "text", "id": "name", "label": "Name", "default": "Cherry Pop"},
         {"type": "color", "id": "color", "label": "Tile color", "default": "#ffc9d6"},
         {"type": "image_picker", "id": "image", "label": "Image"},
-        {"type": "url", "id": "image_url", "label": "Image URL (demo)"}
+        {"type": "text", "id": "can", "label": "Can handle (defaults to the flavor name)"}
       ]
     },
     {

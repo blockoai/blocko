@@ -2,7 +2,10 @@
   "sections": {
     "contact": {
       "type": "blko-soda-contact",
-      "settings": {},
+      "settings": {
+        "bg": "#ffdcc2",
+        "banner": "contact"
+      },
       "blocks": {
         "block-1": {
           "type": "channel",

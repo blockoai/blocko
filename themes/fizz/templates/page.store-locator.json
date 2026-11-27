@@ -2,54 +2,57 @@
   "sections": {
     "locator": {
       "type": "blko-soda-locator",
-      "settings": {},
+      "settings": {
+        "bg": "#fff3b0",
+        "banner": "store-locator"
+      },
       "blocks": {
         "block-1": {
           "type": "flavor",
           "settings": {
             "name": "Cherry Pop",
-            "color": "#ffc9d6",
-            "image_url": "https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=200&q=80"
+            "color": "#fde1e3",
+            "can": "cherry-pop"
           }
         },
         "block-2": {
           "type": "flavor",
           "settings": {
             "name": "Lemon Lime Zing",
-            "color": "#fff3b0",
-            "image_url": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=200&q=80"
+            "color": "#eef6cf",
+            "can": "lemon-lime-zing"
           }
         },
         "block-3": {
           "type": "flavor",
           "settings": {
             "name": "Orange Burst",
-            "color": "#ffdcc2",
-            "image_url": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=200&q=80"
+            "color": "#fde9d2",
+            "can": "orange-burst"
           }
         },
         "block-4": {
           "type": "flavor",
           "settings": {
-            "name": "Tropical Punch",
-            "color": "#c8f1dd",
-            "image_url": "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=200&q=80"
+            "name": "Mango Tango",
+            "color": "#fff0cc",
+            "can": "mango-tango"
           }
         },
         "block-5": {
           "type": "flavor",
           "settings": {
-            "name": "Strawberry Fizz",
-            "color": "#e0d6ff",
-            "image_url": "https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=200&q=80"
+            "name": "Strawberry Lime",
+            "color": "#fde2ea",
+            "can": "strawberry-lime"
           }
         },
         "block-6": {
           "type": "flavor",
           "settings": {
-            "name": "Mint Lime Fizz",
-            "color": "#d8f0ff",
-            "image_url": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=200&q=80"
+            "name": "Mint Mojito",
+            "color": "#d6f1ea",
+            "can": "mint-mojito"
           }
         },
         "block-7": {
@@ -59,7 +62,7 @@
             "address": "120 Larimer St",
             "city": "Denver, CO",
             "zip": "80202",
-            "flavors": "Cherry Pop, Orange Burst, Mint Lime Fizz"
+            "flavors": "Cherry Pop, Orange Burst, Mint Mojito"
           }
         },
         "block-8": {
@@ -69,7 +72,7 @@
             "address": "48 High St",
             "city": "Columbus, OH",
             "zip": "43215",
-            "flavors": "Lemon Lime Zing, Strawberry Fizz"
+            "flavors": "Lemon Lime Zing, Strawberry Lime"
           }
         },
         "block-9": {
@@ -79,7 +82,7 @@
             "address": "902 Pine Ave",
             "city": "Denver, CO",
             "zip": "80203",
-            "flavors": "Cherry Pop, Lemon Lime Zing, Tropical Punch"
+            "flavors": "Cherry Pop, Lemon Lime Zing, Mango Tango"
           }
         },
         "block-10": {
@@ -89,7 +92,7 @@
             "address": "15 Mission St",
             "city": "San Francisco, CA",
             "zip": "94105",
-            "flavors": "Orange Burst, Tropical Punch, Strawberry Fizz"
+            "flavors": "Orange Burst, Mango Tango, Strawberry Lime"
           }
         },
         "block-11": {
@@ -99,7 +102,7 @@
             "address": "77 Bay Rd",
             "city": "Austin, TX",
             "zip": "78701",
-            "flavors": "Cherry Pop, Mint Lime Fizz"
+            "flavors": "Cherry Pop, Mint Mojito"
           }
         },
         "block-12": {
@@ -119,7 +122,7 @@
             "address": "5 Wharf Ln",
             "city": "Boston, MA",
             "zip": "02110",
-            "flavors": "Strawberry Fizz, Tropical Punch"
+            "flavors": "Strawberry Lime, Mango Tango"
           }
         },
         "block-14": {
@@ -129,7 +132,7 @@
             "address": "640 Shore Dr",
             "city": "Chicago, IL",
             "zip": "60601",
-            "flavors": "Cherry Pop, Lemon Lime Zing, Mint Lime Fizz"
+            "flavors": "Cherry Pop, Lemon Lime Zing, Mint Mojito"
           }
         }
       },

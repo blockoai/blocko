@@ -1,0 +1,53 @@
+<section class="blko-soda-sgrid{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <div class="blko-soda-sgrid__in">
+    <h2>{{ section.settings.heading | escape }}</h2>
+    <p>{{ section.settings.text | escape }}</p>
+    <ul class="blko-soda-sgrid__grid">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}>
+          <a class="blko-soda-sgrid__tile" href="{{ block.settings.url | default: '#' }}">
+            {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 800 | image_tag: loading: 'lazy', alt: block.settings.alt }}{%- else -%}<img src="{{ 'fizz-banner-' | append: block.settings.name | append: '.svg' | asset_url }}" alt="{{ block.settings.alt | escape }}" width="1000" height="1000" loading="lazy">{%- endif -%}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+{% stylesheet %}
+.blko-soda-sgrid{padding:clamp(3rem,7vw,5.5rem) 1.25rem;font-family:var(--font-body, "Outfit", sans-serif);text-align:center}
+.blko-soda-sgrid__in{display:grid;gap:1rem;max-width:72rem;margin:0 auto}
+.blko-soda-sgrid h2{margin:0;font:900 clamp(2rem,4.5vw,3.5rem)/1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-sgrid__in>p{max-width:40rem;margin:0 auto;font-size:1.15rem}
+.blko-soda-sgrid__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 0;padding:0;list-style:none}
+.blko-soda-sgrid__tile{display:block;aspect-ratio:1;overflow:hidden;border-radius:1.5rem}
+.blko-soda-sgrid__tile img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease-in-out}
+.blko-soda-sgrid__tile:hover img{transform:scale(1.05)}
+@media(max-width:600px){.blko-soda-sgrid__grid{grid-template-columns:repeat(2,1fr);gap:.6rem}}
+@media(prefers-reduced-motion:reduce){.blko-soda-sgrid__tile img{transition:none}.blko-soda-sgrid__tile:hover img{transform:none}}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda social grid",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#fff3b0"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section's background)"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Fizz in the wild"},
+    {"type": "textarea", "id": "text", "label": "Intro", "default": "Cans on porches, picnics and desks. Tag us to be featured."}
+  ],
+  "blocks": [
+    {"type": "tile", "name": "Tile", "settings": [
+      {"type": "text", "id": "name", "label": "Banner name (social-1 ... social-6)", "default": "social-1"},
+      {"type": "image_picker", "id": "image", "label": "Image (overrides name)"},
+      {"type": "text", "id": "alt", "label": "Alt text", "default": "Fizz cans"},
+      {"type": "url", "id": "url", "label": "Link"}
+    ]}
+  ],
+  "max_blocks": 6,
+  "presets": [{"name": "Soda social grid", "blocks": [{"type": "tile"}]}]
+}
+{% endschema %}

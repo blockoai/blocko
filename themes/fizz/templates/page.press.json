@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "hero": {
+      "type": "blko-soda-page-hero",
+      "settings": {
+        "bg": "#ffc9d6",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "eyebrow": "Press",
+        "heading": "Fizz love",
+        "text": "What the sippers and the storytellers are saying.",
+        "button_label": "Press inquiries",
+        "button_url": "mailto:press@example.com",
+        "banner": "press"
+      }
+    },
+    "quotes": {
+      "type": "blko-soda-quote-wall",
+      "settings": {
+        "bg": "#fbf3e2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#cdf26b",
+        "heading": "In the news",
+        "footnote": "Outlet names and quotes are placeholders. Replace with your real coverage."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "quote",
+          "settings": {
+            "quote": "Fizz tastes like the soda you remember, minus the sugar crash.",
+            "outlet": "Daily Sip",
+            "color": "#ffc9d6"
+          }
+        },
+        "block-2": {
+          "type": "quote",
+          "settings": {
+            "quote": "A fizzy snack for your gut. We finished the box in a weekend.",
+            "outlet": "The Pantry Post",
+            "color": "#fff3b0"
+          }
+        },
+        "block-3": {
+          "type": "quote",
+          "settings": {
+            "quote": "Nine grams of fiber and zero guilt. Cherry Pop is the one.",
+            "outlet": "Good Gut Gazette",
+            "color": "#c8f1dd"
+          }
+        },
+        "block-4": {
+          "type": "quote",
+          "settings": {
+            "quote": "The can art alone earns it a spot on the shelf.",
+            "outlet": "Metro Bite",
+            "color": "#d8f0ff"
+          }
+        },
+        "block-5": {
+          "type": "quote",
+          "settings": {
+            "quote": "Finally, a prebiotic soda that does not taste like medicine.",
+            "outlet": "Snack Ledger",
+            "color": "#e0d6ff"
+          }
+        },
+        "block-6": {
+          "type": "quote",
+          "settings": {
+            "quote": "Our office fridge empties faster than any other drink.",
+            "outlet": "Evening Taster",
+            "color": "#ffdcc2"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "cta": {
+      "type": "blko-soda-why",
+      "settings": {
+        "bg": "#cdf26b",
+        "text_color": "#0f3b2e",
+        "heading": "Write about Fizz?",
+        "text": "We send samples and answer questions fast.",
+        "button_label": "press@example.com",
+        "button_url": "mailto:press@example.com"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "quotes",
+    "cta"
+  ]
+}

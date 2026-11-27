@@ -1,0 +1,23 @@
+<div class="blko-soda-strip" style="background:{{ section.settings.bg }}">
+  <a class="blko-soda-promo" href="{{ section.settings.url }}">
+    {%- if section.settings.image != blank -%}
+      {{ section.settings.image | image_url: width: 1600 | image_tag: loading: 'lazy', alt: section.settings.alt }}
+    {%- else -%}
+      <img src="{{ 'fizz-banner-' | append: section.settings.image_name | append: '.svg' | asset_url }}" alt="{{ section.settings.alt | escape }}" width="1600" height="400" loading="lazy">
+    {%- endif -%}
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Soda promo strip",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#f3e8cd"},
+    {"type": "image_picker", "id": "image", "label": "Image (4:1, fixed height, cover)"},
+    {"type": "text", "id": "image_name", "label": "Fallback banner name (fizz-banner-NAME.svg)", "default": "promo-bundle"},
+    {"type": "text", "id": "alt", "label": "Alt text", "default": "Build a variety pack and save 10%"},
+    {"type": "url", "id": "url", "label": "Link"}
+  ],
+  "presets": [{"name": "Soda promo strip"}]
+}
+{% endschema %}

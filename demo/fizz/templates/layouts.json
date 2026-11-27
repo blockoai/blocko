@@ -98,5 +98,68 @@
     "sectionIds": [
       "soda-contact"
     ]
+  },
+  {
+    "page": "subscribe",
+    "title": "Subscribe & save",
+    "sectionIds": [
+      "soda-page-hero",
+      "soda-steps",
+      "soda-plans",
+      "soda-flavor-picker",
+      "soda-qa",
+      "soda-why"
+    ]
+  },
+  {
+    "page": "why-fizz",
+    "title": "Why Fizz",
+    "sectionIds": [
+      "soda-page-hero",
+      "soda-compare",
+      "soda-story-impact",
+      "soda-cards",
+      "soda-social-grid",
+      "soda-why"
+    ]
+  },
+  {
+    "page": "sustainability",
+    "title": "Sustainability",
+    "sectionIds": [
+      "soda-page-hero",
+      "soda-cards",
+      "soda-story-impact",
+      "soda-why"
+    ]
+  },
+  {
+    "page": "satisfaction-guarantee",
+    "title": "Satisfaction guarantee",
+    "sectionIds": [
+      "soda-page-hero",
+      "soda-promise",
+      "soda-steps",
+      "soda-why"
+    ]
+  },
+  {
+    "page": "quality-safety",
+    "title": "Quality & safety",
+    "sectionIds": [
+      "soda-page-hero",
+      "soda-steps",
+      "soda-cards",
+      "soda-why"
+    ]
+  },
+  {
+    "page": "press",
+    "title": "Press",
+    "sectionIds": [
+      "soda-page-hero",
+      "soda-quote-wall",
+      "soda-why"
+    ]
   }
 ]

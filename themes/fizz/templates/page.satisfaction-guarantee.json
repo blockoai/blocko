@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "hero": {
+      "type": "blko-soda-page-hero",
+      "settings": {
+        "bg": "#ffdcc2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fff3b0",
+        "eyebrow": "Our promise",
+        "heading": "The Fizz satisfaction guarantee",
+        "text": "If you do not love your first box, we will make it right. No forms, no fuss.",
+        "banner": "guarantee"
+      }
+    },
+    "promise": {
+      "type": "blko-soda-promise",
+      "settings": {
+        "bg": "#fff3b0",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "number": "45",
+        "unit": "days",
+        "heading": "Love it or we make it right.",
+        "text": "Try Fizz for 45 days. If it is not for you, tell us and we will refund your order or swap your flavors.",
+        "button_label": "Start with a variety box",
+        "button_url": "/collections/all"
+      }
+    },
+    "steps": {
+      "type": "blko-soda-steps",
+      "settings": {
+        "bg": "#fbf3e2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#c8f1dd",
+        "heading": "How it works",
+        "text": "Three steps, no hoops."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "step",
+          "settings": {
+            "color": "#ffc9d6",
+            "title": "Tell us",
+            "text": "Email or message us within 45 days of delivery."
+          }
+        },
+        "block-2": {
+          "type": "step",
+          "settings": {
+            "color": "#cdf26b",
+            "title": "We fix it",
+            "text": "Choose a refund or a flavor swap. We handle the rest."
+          }
+        },
+        "block-3": {
+          "type": "step",
+          "settings": {
+            "color": "#d8f0ff",
+            "title": "Keep the cans",
+            "text": "No returns needed on opened cans. Share them with a friend."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ]
+    },
+    "cta": {
+      "type": "blko-soda-why",
+      "settings": {
+        "bg": "#c8f1dd",
+        "text_color": "#0f3b2e",
+        "heading": "Need to make a claim?",
+        "text": "Write to help@example.com and a real person will reply.",
+        "button_label": "Contact us",
+        "button_url": "/pages/contact"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "promise",
+    "steps",
+    "cta"
+  ]
+}

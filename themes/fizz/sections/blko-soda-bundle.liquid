@@ -27,7 +27,7 @@
     {%- endform -%}
   </div>
 
-  <div class="blko-soda-bundle__block">
+  <div class="blko-soda-bundle__block" id="build">
     <p class="blko-soda-bundle__eyebrow">{{ section.settings.pack_eyebrow | escape }}</p>
     <h2>{{ section.settings.pack_heading | escape }}</h2>
     {%- if request.design_mode -%}<p class="blko-soda-bundle__note" data-note="pack" hidden>{{ section.settings.note_pack | escape }}</p>{%- endif -%}
@@ -39,7 +39,7 @@
           {%- for p in section.settings.pack_collection.products limit: 12 -%}
             {%- assign v = p.selected_or_first_available_variant -%}
             <div class="blko-soda-pick__item" data-pick data-id="{{ v.id }}" data-price="{{ v.price }}" {% unless v.available %}data-soldout{% endunless %}>
-              {%- if p.featured_image -%}<img src="{{ p.featured_image | image_url: width: 300 }}" alt="{{ p.featured_image.alt | default: p.title | escape }}" width="150" height="150" loading="lazy">{%- endif -%}
+              {% render 'blko-soda-tile', product: p, size: 'pick' %}
               <b>{{ p.title | escape }}</b>
               <span class="blko-soda-pick__qty">
                 <button type="button" data-minus aria-label="{{ section.settings.remove_label | escape }} {{ p.title | escape }}" disabled>&minus;</button>
@@ -99,6 +99,11 @@
 .blko-soda-pick__hint{font-size:.95rem}
 .blko-soda-bundle__note{margin:0 0 1rem;padding:.7rem .9rem;border:2px dashed var(--color-text, #0f3b2e);border-radius:1rem;background:#fff;font-size:.85rem;font-weight:700}
 .blko-soda-pick__off{padding:.1rem .5rem;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);font-size:.78rem;font-weight:800}
+/* bundle picker */
+.blko-soda-pick{grid-template-columns:repeat(auto-fill,minmax(9rem,1fr))}
+.blko-soda-pick__item .blko-soda-tile{width:100%;height:auto;border-radius:20px}
+.blko-soda-pick__item{border-radius:20px;transition:box-shadow .2s ease,border-color .25s ease}
+.blko-soda-pick__item:hover{box-shadow:4px 4px 0 0 var(--color-announcement-bg,#cdf26b)}
 {% endstylesheet %}
 
 {% schema %}

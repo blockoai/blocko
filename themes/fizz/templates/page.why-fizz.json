@@ -1,0 +1,263 @@
+{
+  "sections": {
+    "hero": {
+      "type": "blko-soda-page-hero",
+      "settings": {
+        "bg": "#d8f0ff",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "eyebrow": "Why Fizz",
+        "heading": "Soda, but make it good for you.",
+        "text": "Real fruit, 2g of sugar and 9g of prebiotic fiber in every can. All the fun, a lot less of the guilt.",
+        "button_label": "Shop flavors",
+        "button_url": "/collections/all",
+        "banner": "why-fizz"
+      }
+    },
+    "compare": {
+      "type": "blko-soda-compare",
+      "settings": {
+        "bg": "#fbf3e2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#ffc9d6",
+        "heading": "Fizz vs regular soda",
+        "text": "Same fizz. Very different can.",
+        "col_label": "Per 12 fl oz can",
+        "col_fizz": "Fizz",
+        "col_other": "Regular soda"
+      },
+      "blocks": {
+        "block-1": {
+          "type": "row",
+          "settings": {
+            "label": "Sugar",
+            "fizz": "2g",
+            "other": "About 39g"
+          }
+        },
+        "block-2": {
+          "type": "row",
+          "settings": {
+            "label": "Fiber",
+            "fizz": "9g",
+            "other": "0g"
+          }
+        },
+        "block-3": {
+          "type": "row",
+          "settings": {
+            "label": "Sweetener",
+            "fizz": "Real fruit juice",
+            "other": "High fructose corn syrup"
+          }
+        },
+        "block-4": {
+          "type": "row",
+          "settings": {
+            "label": "Artificial colors",
+            "fizz": "None",
+            "other": "Often"
+          }
+        },
+        "block-5": {
+          "type": "row",
+          "settings": {
+            "label": "Prebiotics",
+            "fizz": "Chicory root fiber",
+            "other": "None"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    },
+    "stats": {
+      "type": "blko-soda-story-impact",
+      "settings": {
+        "bg": "#ffc9d6",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fbf3e2",
+        "heading": "Fizz by the numbers",
+        "text": "Every can swaps added sugar for fiber and fruit.",
+        "footnote": "*Typical values per 12 fl oz can. Check each label for exact numbers."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "stat",
+          "settings": {
+            "number": "2g",
+            "label": "Sugar per can"
+          }
+        },
+        "block-2": {
+          "type": "stat",
+          "settings": {
+            "number": "9g",
+            "label": "Prebiotic fiber*"
+          }
+        },
+        "block-3": {
+          "type": "stat",
+          "settings": {
+            "number": "8",
+            "label": "Fruity flavors"
+          }
+        },
+        "block-4": {
+          "type": "stat",
+          "settings": {
+            "number": "0",
+            "label": "Artificial sweeteners"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "strip": {
+      "type": "blko-soda-cards",
+      "settings": {
+        "bg": "#fbf3e2",
+        "text_color": "#0f3b2e",
+        "wave_color": "#fff3b0",
+        "heading": "Short list. Real stuff.",
+        "text": "If you cannot picture it growing somewhere, it is not in Fizz.",
+        "columns": 4
+      },
+      "blocks": {
+        "block-1": {
+          "type": "card",
+          "settings": {
+            "color": "#ffc9d6",
+            "can": "cherry-pop",
+            "title": "Real fruit juice",
+            "text": "Pressed fruit gives the flavor, not a lab."
+          }
+        },
+        "block-2": {
+          "type": "card",
+          "settings": {
+            "color": "#fff3b0",
+            "can": "mango-tango",
+            "title": "Chicory fiber",
+            "text": "Prebiotic fiber from chicory root."
+          }
+        },
+        "block-3": {
+          "type": "card",
+          "settings": {
+            "color": "#d8f0ff",
+            "can": "mint-mojito",
+            "title": "Sparkling water",
+            "text": "Cold, crisp, first on the label."
+          }
+        },
+        "block-4": {
+          "type": "card",
+          "settings": {
+            "color": "#c8f1dd",
+            "can": "lemon-lime-zing",
+            "title": "Botanicals",
+            "text": "A touch of mint, ginger and lime peel."
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "social": {
+      "type": "blko-soda-social-grid",
+      "settings": {
+        "bg": "#fff3b0",
+        "text_color": "#0f3b2e",
+        "wave_color": "#cdf26b",
+        "heading": "Fizz in the wild",
+        "text": "Cans on porches, picnics and desks. Tag us to be featured."
+      },
+      "blocks": {
+        "block-1": {
+          "type": "tile",
+          "settings": {
+            "name": "social-1",
+            "alt": "Fizz cans in the wild"
+          }
+        },
+        "block-2": {
+          "type": "tile",
+          "settings": {
+            "name": "social-2",
+            "alt": "Fizz cans in the wild"
+          }
+        },
+        "block-3": {
+          "type": "tile",
+          "settings": {
+            "name": "social-3",
+            "alt": "Fizz cans in the wild"
+          }
+        },
+        "block-4": {
+          "type": "tile",
+          "settings": {
+            "name": "social-4",
+            "alt": "Fizz cans in the wild"
+          }
+        },
+        "block-5": {
+          "type": "tile",
+          "settings": {
+            "name": "social-5",
+            "alt": "Fizz cans in the wild"
+          }
+        },
+        "block-6": {
+          "type": "tile",
+          "settings": {
+            "name": "social-6",
+            "alt": "Fizz cans in the wild"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5",
+        "block-6"
+      ]
+    },
+    "cta": {
+      "type": "blko-soda-why",
+      "settings": {
+        "bg": "#cdf26b",
+        "text_color": "#0f3b2e",
+        "heading": "Taste the difference.",
+        "text": "Start with a variety box and find your favorite.",
+        "button_label": "Shop Fizz",
+        "button_url": "/collections/all"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "compare",
+    "stats",
+    "strip",
+    "social",
+    "cta"
+  ]
+}

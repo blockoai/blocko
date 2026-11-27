@@ -3,17 +3,20 @@
     "hero": {
       "type": "blko-soda-split-hero",
       "settings": {
-        "eyebrow": "New: Cherry Pop",
         "heading": "Big fizz. Small sugar.",
         "subtext": "Prebiotic soda with real fruit flavor, 2g of sugar and a lot of attitude. Stock up and save on every case.",
         "button_label": "Shop flavors",
-        "button_url": "/collections/drinks"
+        "button_url": "/collections/drinks",
+        "bg": "#c8203a",
+        "text_color": "#fff6ea",
+        "wave_to": "#f3e8cd"
       }
     },
     "collections": {
       "type": "blko-soda-collection-tabs",
       "settings": {
-        "heading": "Shop our flavors"
+        "heading": "Shop our flavors",
+        "wave_to": "#fbf3e2"
       },
       "blocks": {
         "block-1": {
@@ -123,21 +126,23 @@
         "block-1": {
           "type": "item",
           "settings": {
-            "image_url": "https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=900&q=80",
             "title": "Classic cans",
             "text": "The original lineup: bright fruit, 2g of sugar and fiber that keeps up.",
             "button_label": "Shop classics",
-            "button_url": "/collections/drinks"
+            "button_url": "/collections/drinks",
+            "cans": "cherry-pop,orange-burst,grape-soda",
+            "tile_bg": "#fde9d2"
           }
         },
         "block-2": {
           "type": "item",
           "settings": {
-            "image_url": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=900&q=80",
             "title": "Fruit punch line",
             "text": "Louder fruit, same short ingredient list. Built for sharing.",
             "button_label": "Shop fruit punch",
-            "button_url": "/collections/drinks"
+            "button_url": "/collections/drinks",
+            "cans": "strawberry-lime,mint-mojito,mango-tango",
+            "tile_bg": "#d6f1ea"
           }
         }
       },
@@ -232,15 +237,179 @@
         "message": "New flavor drops, fridge deals and the odd cheeky pun. Once a week, no spam.",
         "button_label": "Get my code"
       }
+    },
+    "flavor-spotlight": {
+      "type": "blko-soda-flavor-spotlight",
+      "settings": {},
+      "blocks": {
+        "flavor-1": {
+          "type": "flavor",
+          "settings": {
+            "image_name": "flavor-cherry-pop",
+            "name": "Cherry Pop",
+            "text": "Bright, juicy, and a little bit sweet",
+            "url": "/collections/drinks"
+          }
+        },
+        "flavor-2": {
+          "type": "flavor",
+          "settings": {
+            "image_name": "flavor-orange-burst",
+            "name": "Orange Burst",
+            "text": "Sunny citrus with a zesty finish",
+            "url": "/collections/drinks"
+          }
+        },
+        "flavor-3": {
+          "type": "flavor",
+          "settings": {
+            "image_name": "flavor-strawberry-lime",
+            "name": "Strawberry Lime",
+            "text": "Ripe berries meet a sharp lime twist",
+            "url": "/collections/drinks"
+          }
+        },
+        "flavor-4": {
+          "type": "flavor",
+          "settings": {
+            "image_name": "flavor-lemon-lime-zing",
+            "name": "Lemon Lime Zing",
+            "text": "Crisp, cold, and wildly refreshing",
+            "url": "/collections/drinks"
+          }
+        },
+        "flavor-5": {
+          "type": "flavor",
+          "settings": {
+            "image_name": "flavor-mango-tango",
+            "name": "Mango Tango",
+            "text": "Tropical, golden, summer in a can",
+            "url": "/collections/drinks"
+          }
+        },
+        "flavor-6": {
+          "type": "flavor",
+          "settings": {
+            "image_name": "flavor-mint-mojito",
+            "name": "Mint Mojito",
+            "text": "Cool mint, bright lime, zero guilt",
+            "url": "/collections/drinks"
+          }
+        },
+        "flavor-7": {
+          "type": "flavor",
+          "settings": {
+            "image_name": "flavor-grape-soda",
+            "name": "Grape Soda",
+            "text": "Old-school purple, brand-new fizz",
+            "url": "/collections/drinks"
+          }
+        },
+        "flavor-8": {
+          "type": "flavor",
+          "settings": {
+            "image_name": "flavor-root-beer",
+            "name": "Root Beer",
+            "text": "Creamy, bold, and nostalgic",
+            "url": "/collections/drinks"
+          }
+        }
+      },
+      "block_order": [
+        "flavor-1",
+        "flavor-2",
+        "flavor-3",
+        "flavor-4",
+        "flavor-5",
+        "flavor-6",
+        "flavor-7",
+        "flavor-8"
+      ]
+    },
+    "promo-bundle": {
+      "type": "blko-soda-promo-strip",
+      "settings": {
+        "image_name": "promo-bundle",
+        "url": "/products/fan-favorites",
+        "alt": "Build a variety pack and save 10%"
+      }
+    },
+    "promo-subscribe": {
+      "type": "blko-soda-promo-strip",
+      "settings": {
+        "image_name": "promo-subscribe",
+        "url": "/pages/subscribe",
+        "alt": "Subscribe and save 15% on every box"
+      }
+    },
+    "social": {
+      "type": "blko-soda-social-grid",
+      "settings": {},
+      "blocks": {
+        "tile-1": {
+          "type": "tile",
+          "settings": {
+            "image_name": "social-1",
+            "alt": "Fizz moment 1"
+          }
+        },
+        "tile-2": {
+          "type": "tile",
+          "settings": {
+            "image_name": "social-2",
+            "alt": "Fizz moment 2"
+          }
+        },
+        "tile-3": {
+          "type": "tile",
+          "settings": {
+            "image_name": "social-3",
+            "alt": "Fizz moment 3"
+          }
+        },
+        "tile-4": {
+          "type": "tile",
+          "settings": {
+            "image_name": "social-4",
+            "alt": "Fizz moment 4"
+          }
+        },
+        "tile-5": {
+          "type": "tile",
+          "settings": {
+            "image_name": "social-5",
+            "alt": "Fizz moment 5"
+          }
+        },
+        "tile-6": {
+          "type": "tile",
+          "settings": {
+            "image_name": "social-6",
+            "alt": "Fizz moment 6"
+          }
+        }
+      },
+      "block_order": [
+        "tile-1",
+        "tile-2",
+        "tile-3",
+        "tile-4",
+        "tile-5",
+        "tile-6"
+      ]
     }
   },
   "order": [
     "hero",
     "collections",
+    "promo-bundle",
+    "flavor-spotlight",
     "why",
     "press",
     "two-up",
+    "promo-subscribe",
     "real-fruit",
+    "social",
     "retailers",
     "reviews",
     "newsletter"

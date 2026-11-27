@@ -1,0 +1,55 @@
+<section class="blko-soda-phero{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+  <div class="blko-soda-phero__in">
+    {%- if section.settings.eyebrow != blank -%}<p class="blko-soda-phero__eyebrow">{{ section.settings.eyebrow | escape }}</p>{%- endif -%}
+    <h1>{{ section.settings.heading | escape }}</h1>
+    <p class="blko-soda-phero__text">{{ section.settings.text | escape }}</p>
+    {%- if section.settings.button_label != blank -%}
+      <div class="blko-soda-phero__btns">
+        <a class="is-primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label | escape }}</a>
+        {%- if section.settings.button2_label != blank -%}<a class="is-ghost" href="{{ section.settings.button2_url }}">{{ section.settings.button2_label | escape }}</a>{%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+  {% render 'blko-soda-banner', name: section.settings.banner, image: section.settings.image, alt: section.settings.heading %}
+</section>
+
+{% stylesheet %}
+/* banner box: fixed height per breakpoint */
+.blko-soda-hbanner{width:100%;max-width:72rem;height:420px;margin:0 auto;overflow:hidden;border-radius:1.75rem}
+.blko-soda-hbanner img{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.blko-soda-hbanner{height:320px}}
+@media(max-width:600px){.blko-soda-hbanner{height:220px;border-radius:1.25rem}}
+.blko-soda-phero{display:grid;gap:clamp(1.5rem,3vw,2.5rem);padding:clamp(3.5rem,8vw,6.5rem) 1.25rem clamp(2.5rem,6vw,4.5rem);font-family:var(--font-body, "Outfit", sans-serif);text-align:center}
+.blko-soda-phero__in{display:grid;justify-items:center;gap:1rem;max-width:52rem;margin:0 auto}
+.blko-soda-phero__eyebrow{margin:0;font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.blko-soda-phero h1{margin:0;font:900 clamp(2.8rem,8vw,5.75rem)/.95 var(--font-heading, "Fraunces", Georgia, serif);letter-spacing:-.02em}
+.blko-soda-phero__text{margin:0;max-width:40rem;font-size:1.2rem;line-height:1.55}
+.blko-soda-phero__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:.5rem}
+.blko-soda-phero__btns a{padding:.9rem 1.9rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;color:inherit;font:700 1.05rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none;transition:background-color .25s ease-in-out,color .25s ease-in-out}
+.blko-soda-phero__btns a.is-primary{background:var(--color-text, #0f3b2e);color:var(--color-bg, #fbf3e2)}
+.blko-soda-phero__btns a.is-primary:hover{background:#1f5a44}
+.blko-soda-phero__btns a.is-ghost:hover{background:rgba(15,59,46,.08)}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda page hero",
+  "settings": [
+    {"type": "color", "id": "bg", "label": "Background", "default": "#d8f0ff"},
+    {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section's background)"},
+    {"type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Why Fizz"},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Soda, but make it good for you."},
+    {"type": "textarea", "id": "text", "label": "Text", "default": "Prebiotic soda with real fruit, 2g of sugar and 9g of fiber in every can."},
+    {"type": "text", "id": "button_label", "label": "Button label"},
+    {"type": "url", "id": "button_url", "label": "Button link"},
+    {"type": "text", "id": "button2_label", "label": "Second button label"},
+    {"type": "url", "id": "button2_url", "label": "Second button link"},
+    {"type": "text", "id": "banner", "label": "Banner name (file fizz-banner-NAME.svg in assets)", "default": "why-fizz"},
+    {"type": "image_picker", "id": "image", "label": "Banner image (overrides banner name)"}
+  ],
+  "presets": [{"name": "Soda page hero"}]
+}
+{% endschema %}

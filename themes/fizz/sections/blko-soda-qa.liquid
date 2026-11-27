@@ -1,9 +1,10 @@
-<section class="blko-soda-qa" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+<section class="blko-soda-qa{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="--sec-bg:{{ section.settings.bg }};{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <blko-soda-qa class="blko-soda-qa__inner">
     <header class="blko-soda-qa__head">
-      <h1>{{ section.settings.heading | escape }}</h1>
+      <{{ section.settings.heading_tag | default: 'h1' }}>{{ section.settings.heading | escape }}</{{ section.settings.heading_tag | default: 'h1' }}>
       <p>{{ section.settings.text | escape }}</p>
     </header>
+  {% render 'blko-soda-banner', name: section.settings.banner, image: section.settings.image, alt: section.settings.heading %}
     <div class="blko-soda-qa__tabs" role="group" aria-label="{{ section.settings.heading | escape }}">
       <button type="button" data-cat="" aria-pressed="true">{{ section.settings.all_label | escape }}</button>
       {%- for block in section.blocks -%}{%- if block.type == 'category' -%}<button type="button" data-cat="{{ block.settings.name | handleize }}" aria-pressed="false" {{ block.shopify_attributes }}>{{ block.settings.name | escape }}</button>{%- endif -%}{%- endfor -%}
@@ -39,14 +40,33 @@
 .blko-soda-qa__item p{margin:0;padding:0 0 1.25rem;font-size:1.05rem}
 .blko-soda-qa__more{margin:0;text-align:center;font-weight:700}
 .blko-soda-qa__more a{color:inherit}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+/* banner box: fixed height per breakpoint */
+.blko-soda-hbanner{width:100%;max-width:72rem;height:420px;margin:0 auto;overflow:hidden;border-radius:1.75rem}
+.blko-soda-hbanner img{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.blko-soda-hbanner{height:320px}}
+@media(max-width:600px){.blko-soda-hbanner{height:220px;border-radius:1.25rem}}
+.blko-soda-qa__inner{max-width:56rem}
+.blko-soda-qa__head :is(h1,h2){margin:0;font:900 clamp(2.8rem,8vw,5.5rem)/.95 var(--font-heading, "Fraunces", Georgia, serif);letter-spacing:-.02em}
+.blko-soda-qa__tabs{position:sticky;top:0;z-index:5;padding:.75rem 0;background:var(--sec-bg, transparent)}
+.blko-soda-qa__tabs button{border-width:1.5px;font-weight:700;transition:background-color .15s ease,color .15s ease}
+.blko-soda-qa__tabs button:hover{background:var(--color-text, #0f3b2e);color:var(--color-bg, #fbf3e2)}
+.blko-soda-qa__item{border-radius:1rem;background:rgba(255,255,255,.75)}
+.blko-soda-qa__item summary::after{content:"";width:.7rem;height:.7rem;border:0;border-right:3px solid currentColor;border-bottom:3px solid currentColor;border-radius:0;background:none;transform:rotate(45deg);transition:transform .25s ease}
+.blko-soda-qa__item[open] summary::after{content:"";transform:rotate(-135deg)}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda FAQ",
   "settings": [
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section background)"},
+    {"type": "text", "id": "banner", "label": "Banner name (file fizz-banner-NAME.svg in assets)"},
+    {"type": "image_picker", "id": "image", "label": "Banner image (overrides banner name)"},
     {"type": "color", "id": "bg", "label": "Background", "default": "#c8f1dd"},
     {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
+    {"type": "select", "id": "heading_tag", "label": "Heading tag", "options": [{"value": "h1", "label": "H1"}, {"value": "h2", "label": "H2"}], "default": "h1"},
     {"type": "text", "id": "heading", "label": "Heading", "default": "Questions, answered."},
     {"type": "textarea", "id": "text", "label": "Intro", "default": "Flavors, fiber, shipping and subscriptions. Still stuck? We are one message away."},
     {"type": "text", "id": "all_label", "label": "All tab label", "default": "All"},

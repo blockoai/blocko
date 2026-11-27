@@ -4,8 +4,13 @@
       <article {{ block.shopify_attributes }}>
         {%- if block.settings.image != blank -%}
           {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', alt: block.settings.title }}
-        {%- elsif block.settings.image_url != blank -%}
-          <img src="{{ block.settings.image_url }}" alt="{{ block.settings.title | escape }}" width="900" height="900" loading="lazy">
+        {%- else -%}
+          <div class="blko-soda-fan" style="--tile-bg:{{ block.settings.tile_bg }}">
+            {%- assign fan_cans = block.settings.cans | split: ',' -%}
+            {%- for can in fan_cans limit: 3 -%}
+              <img class="blko-soda-fan__can is-{{ forloop.index0 }}" src="{{ 'fizz-can-' | append: can | strip | append: '.svg' | asset_url }}" alt="" width="200" height="360" loading="lazy">
+            {%- endfor -%}
+          </div>
         {%- endif -%}
         <h3>{{ block.settings.title | escape }}</h3>
         <p>{{ block.settings.text | escape }}</p>
@@ -39,9 +44,10 @@
       "name": "Item",
       "limit": 2,
       "settings": [
-        {"type": "image_picker", "id": "image", "label": "Image"},
-        {"type": "text", "id": "image_url", "label": "Fallback image URL (Unsplash)"},
-        {"type": "text", "id": "title", "label": "Title", "default": "Classic cans"},
+        {"type": "image_picker", "id": "image", "label": "Image (optional, replaces the can fan)"},
+        {"type": "text", "id": "cans", "label": "Can fan: 3 flavor handles, comma separated", "default": "cherry-pop,orange-burst,grape-soda", "info": "Uses fizz-can-HANDLE.svg theme assets."},
+        {"type": "color", "id": "tile_bg", "label": "Fan background", "default": "#fde9d2"},
+                {"type": "text", "id": "title", "label": "Title", "default": "Classic cans"},
         {"type": "textarea", "id": "text", "label": "Text", "default": "The original lineup: bright fruit, 2g of sugar and fiber that keeps up."},
         {"type": "text", "id": "button_label", "label": "Button label", "default": "Shop classics"},
         {"type": "url", "id": "button_url", "label": "Button link"}
@@ -53,8 +59,8 @@
     {
       "name": "Soda 2-up",
       "blocks": [
-        {"type": "item", "settings": {"image_url": "https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=900&q=80", "title": "Classic cans", "button_label": "Shop classics"}},
-        {"type": "item", "settings": {"image_url": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=900&q=80", "title": "Fruit punch line", "text": "Louder fruit, same short ingredient list. Built for sharing.", "button_label": "Shop fruit punch"}}
+        {"type": "item", "settings": {"title": "Classic cans", "button_label": "Shop classics"}},
+        {"type": "item", "settings": {"cans": "strawberry-lime,mint-mojito,mango-tango", "tile_bg": "#d6f1ea", "title": "Fruit punch line", "text": "Louder fruit, same short ingredient list. Built for sharing.", "button_label": "Shop fruit punch"}}
       ]
     }
   ]

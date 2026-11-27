@@ -1,59 +1,76 @@
-<footer class="blko-soda-footer" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
-  <div class="blko-soda-footer__top">
-    <div class="blko-soda-footer__brand">
-      <a href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}"><img src="{{ 'brand-logo-inverse.svg' | asset_url }}" alt="{{ shop.name | escape }}" width="160" height="64" loading="lazy"></a>
-      <p>{{ section.settings.tagline | escape }}</p>
-      {%- form 'customer', class: 'blko-soda-footer__form' -%}
-        <input type="hidden" name="contact[tags]" value="newsletter">
-        <label class="blko-soda-footer__sr" for="blko-soda-footer-email">{{ section.settings.email_label | escape }}</label>
-        <input id="blko-soda-footer-email" type="email" name="contact[email]" placeholder="{{ section.settings.email_label | escape }}" autocomplete="email" required>
-        <button type="submit">{{ section.settings.button_label | escape }}</button>
-        {%- if form.posted_successfully? -%}<span role="status">{{ section.settings.success_text | escape }}</span>{%- endif -%}
-      {%- endform -%}
+<footer class="blko-soda-footer" style="color:{{ section.settings.text_color }}">
+  <svg class="blko-soda-footer__wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" style="color:{{ section.settings.bg }}"><path d="M0 30Q60 0 120 30T240 30T360 30T480 30T600 30T720 30T840 30T960 30T1080 30T1200 30T1320 30T1440 30V60H0Z" fill="currentColor"/></svg>
+  <div class="blko-soda-footer__panel" style="background:{{ section.settings.bg }}">
+    <div class="blko-soda-footer__top">
+      <div class="blko-soda-footer__brand">
+        <h2>{{ section.settings.headline | escape }}</h2>
+        {%- form 'customer', class: 'blko-soda-footer__form' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <label class="blko-soda-footer__sr" for="blko-soda-footer-email">{{ section.settings.email_label | escape }}</label>
+          <input id="blko-soda-footer-email" type="email" name="contact[email]" placeholder="{{ section.settings.email_label | escape }}" autocomplete="email" required>
+          <button type="submit">{{ section.settings.button_label | escape }}</button>
+          {%- if form.posted_successfully? -%}<span role="status">{{ section.settings.success_text | escape }}</span>{%- endif -%}
+        {%- endform -%}
+        <ul class="blko-soda-footer__social">
+          {%- if section.settings.instagram != blank -%}<li><a href="{{ section.settings.instagram }}" aria-label="Instagram"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a></li>{%- endif -%}
+          {%- if section.settings.tiktok != blank -%}<li><a href="{{ section.settings.tiktok }}" aria-label="TikTok"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3v11.5a3.5 3.5 0 1 1-3.5-3.5M15 3c.3 2.5 2 4 4.5 4.2"/></svg></a></li>{%- endif -%}
+          {%- if section.settings.facebook != blank -%}<li><a href="{{ section.settings.facebook }}" aria-label="Facebook"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a></li>{%- endif -%}
+          {%- if section.settings.youtube != blank -%}<li><a href="{{ section.settings.youtube }}" aria-label="YouTube"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg></a></li>{%- endif -%}
+        </ul>
+      </div>
+      <nav class="blko-soda-footer__cols">
+        {%- for block in section.blocks -%}{%- if block.type == 'column' -%}
+          <div {{ block.shopify_attributes }}>
+            <h2>{{ block.settings.title | escape }}</h2>
+            {%- assign col_links = block.settings.menu.links -%}
+            {%- if block.settings.parent_title != blank -%}
+              {%- for top in block.settings.menu.links -%}{%- if top.title == block.settings.parent_title -%}{%- assign col_links = top.links -%}{%- endif -%}{%- endfor -%}
+            {%- endif -%}
+            <ul>{%- for link in col_links -%}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{%- endfor -%}</ul>
+          </div>
+        {%- endif -%}{%- endfor -%}
+      </nav>
     </div>
-    <nav class="blko-soda-footer__cols">
-      {%- for block in section.blocks -%}{%- if block.type == 'column' -%}
-        <div {{ block.shopify_attributes }}>
-          <h2>{{ block.settings.title | escape }}</h2>
-          {%- assign col_links = block.settings.menu.links -%}
-          {%- if block.settings.parent_title != blank -%}
-            {%- for top in block.settings.menu.links -%}{%- if top.title == block.settings.parent_title -%}{%- assign col_links = top.links -%}{%- endif -%}{%- endfor -%}
-          {%- endif -%}
-          <ul>{%- for link in col_links -%}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{%- endfor -%}</ul>
-        </div>
-      {%- endif -%}{%- endfor -%}
-    </nav>
-  </div>
-  <div class="blko-soda-footer__bottom">
-    <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | escape }}. {{ section.settings.legal | escape }}</p>
-    <ul class="blko-soda-footer__legal">
-      <li><a href="{{ routes.search_url }}">{{ section.settings.search_label | escape }}</a></li>
-      <li><a href="{{ routes.account_url }}">{{ section.settings.account_label | escape }}</a></li>
-      {%- for policy in shop.policies -%}<li><a href="{{ policy.url }}">{{ policy.title | escape }}</a></li>{%- endfor -%}
-    </ul>
+    <div class="blko-soda-footer__bottom">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | escape }}. {{ section.settings.legal | escape }}</p>
+      <ul class="blko-soda-footer__legal">
+        <li><a href="{{ routes.search_url }}">{{ section.settings.search_label | escape }}</a></li>
+        <li><a href="{{ routes.account_url }}">{{ section.settings.account_label | escape }}</a></li>
+        {%- for policy in shop.policies -%}<li><a href="{{ policy.url }}">{{ policy.title | escape }}</a></li>{%- endfor -%}
+        {%- if section.settings.cookie_label != blank -%}<li><button type="button" data-cookie-open>{{ section.settings.cookie_label | escape }}</button></li>{%- endif -%}
+      </ul>
+    </div>
   </div>
 </footer>
 
 {% stylesheet %}
-.blko-soda-footer{padding:clamp(2.5rem,6vw,5rem) 1.25rem 1.5rem;font-family:var(--font-body, "Outfit", sans-serif)}
-.blko-soda-footer__top{display:grid;grid-template-columns:1.1fr 1.4fr;gap:clamp(2rem,5vw,4rem);max-width:80rem;margin:0 auto}
-.blko-soda-footer__legal{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;margin:.6rem 0 0;padding:0;list-style:none;font-size:.9rem}
-.blko-soda-footer__legal a{color:inherit}
-.blko-soda-footer__brand{display:grid;align-content:start;gap:1rem}
-.blko-soda-footer__brand img{width:10rem;height:auto}
-.blko-soda-footer__brand p{max-width:24rem;margin:0;font-size:1.05rem}
-.blko-soda-footer__form{display:flex;flex-wrap:wrap;gap:.5rem}
-.blko-soda-footer__form input{flex:1 1 12rem;padding:.85rem 1.25rem;border:2px solid currentColor;border-radius:999px;background:transparent;color:inherit;font-size:1rem}
-.blko-soda-footer__form input::placeholder{color:inherit;opacity:.7}
-.blko-soda-footer__form button{padding:.85rem 1.6rem;border:0;border-radius:999px;background:var(--color-announcement-bg, #cdf26b);color:var(--color-footer-bg, #0f3b2e);font:800 1rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
-.blko-soda-footer__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.blko-theme{--color-brand-green:#0f6e4f;--color-mint:#b8f0d8;--color-yellow:#f7ee6b;--color-cream-light:#fffaf0}
+.blko-soda-footer{display:block;padding:0;background:transparent;font-family:var(--font-body, "Outfit", sans-serif)}
+.blko-soda-footer__wave{display:block;width:100%;height:clamp(28px,4.2vw,60px);margin-bottom:-1px;color:var(--color-brand-green, #0f6e4f)}
+.blko-soda-footer__panel{padding:clamp(2rem,5vw,3.5rem) 1.25rem 1.5rem;background:var(--color-brand-green, #0f6e4f)}
+.blko-soda-footer__top{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(2rem,5vw,4rem);max-width:80rem;margin:0 auto}
+.blko-soda-footer__brand{display:grid;align-content:start;gap:1.25rem}
+.blko-soda-footer__brand h2{max-width:30rem;margin:0;font:900 clamp(2rem,4vw,3rem)/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-footer__brand p{max-width:26rem;margin:0;font-size:1.05rem}
+.blko-soda-footer__form{display:flex;flex-wrap:wrap;gap:.5rem;max-width:30rem}
+.blko-soda-footer__form input{flex:1 1 12rem;height:44px;padding:0 1.25rem;border:0;border-radius:999px;background:#fff;color:#0f3b2e;font-size:1rem}
+.blko-soda-footer__form input::placeholder{color:#0f3b2e;opacity:.6}
+.blko-soda-footer__form button{height:44px;padding:0 1.6rem;border:0;border-radius:999px;background:var(--color-yellow, #f7ee6b);color:#0f3b2e;font:700 1rem/1 var(--font-body, "Outfit", sans-serif);cursor:pointer;transition:background-color .25s ease-in-out}
+.blko-soda-footer__form button:hover{background:#ffe340}
+.blko-soda-footer__social{display:flex;flex-wrap:wrap;gap:1rem;margin:0;padding:0;list-style:none}
+.blko-soda-footer__social a{display:inline-flex;color:inherit;transition:color .25s ease-in-out}
+.blko-soda-footer__social a:hover{color:var(--color-yellow, #f7ee6b)}
 .blko-soda-footer__cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1.5rem}
-.blko-soda-footer__cols h2{margin:0 0 .75rem;font:900 1.2rem var(--font-heading, "Fraunces", Georgia, serif);color:var(--color-announcement-bg, #cdf26b)}
-.blko-soda-footer__cols ul{display:grid;gap:.45rem;margin:0;padding:0;list-style:none}
-.blko-soda-footer__cols a{color:inherit;text-decoration:none}
-.blko-soda-footer__cols a:hover{text-decoration:underline}
-.blko-soda-footer__bottom{max-width:80rem;margin:clamp(2rem,5vw,3.5rem) auto 0;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.25);font-size:.85rem;opacity:.85}
+.blko-soda-footer__cols h2{margin:0 0 .75rem;color:inherit;font:900 1.5rem/1.1 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-footer__cols ul{display:grid;gap:.5rem;margin:0;padding:0;list-style:none}
+.blko-soda-footer__cols a{color:inherit;text-decoration:none;transition:color .25s ease-in-out}
+.blko-soda-footer__cols a:hover{color:var(--color-yellow, #f7ee6b);text-decoration:none}
+.blko-soda-footer__bottom{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1.5rem;max-width:80rem;margin:clamp(2rem,5vw,3.5rem) auto 0;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.25);font-size:.875rem;opacity:1}
 .blko-soda-footer__bottom p{margin:0}
+.blko-soda-footer__legal{display:flex;flex-wrap:wrap;gap:.3rem 0;margin:0;padding:0;list-style:none;font-size:.875rem}
+.blko-soda-footer__legal li+li::before{content:"\2022";margin:0 .6rem;opacity:.6}
+.blko-soda-footer__legal a,.blko-soda-footer__legal button{padding:0;border:0;background:none;color:inherit;font:inherit;text-decoration:none;cursor:pointer;transition:color .25s ease-in-out}
+.blko-soda-footer__legal a:hover,.blko-soda-footer__legal button:hover{color:var(--color-yellow, #f7ee6b)}
 @media(max-width:800px){.blko-soda-footer__top{grid-template-columns:1fr}}
 {% endstylesheet %}
 
@@ -61,14 +78,19 @@
 {
   "name": "Soda footer",
   "settings": [
-    {"type": "color", "id": "bg", "label": "Background", "default": "#0f3b2e"},
+    {"type": "color", "id": "bg", "label": "Background", "default": "#0f6e4f"},
     {"type": "color", "id": "text_color", "label": "Text", "default": "#fbf3e2"},
-    {"type": "textarea", "id": "tagline", "label": "Tagline", "default": "Prebiotic soda with real fruit, 2g of sugar and a lot of attitude."},
+    {"type": "text", "id": "headline", "label": "Signup headline", "default": "Sign up to get 15% off your first order"},
     {"type": "text", "id": "email_label", "label": "Email placeholder", "default": "Your email"},
-    {"type": "text", "id": "button_label", "label": "Button label", "default": "Join the club"},
+    {"type": "text", "id": "button_label", "label": "Button label", "default": "Subscribe"},
     {"type": "text", "id": "success_text", "label": "Success message", "default": "You are in!"},
+    {"type": "url", "id": "instagram", "label": "Instagram"},
+    {"type": "url", "id": "tiktok", "label": "TikTok"},
+    {"type": "url", "id": "facebook", "label": "Facebook"},
+    {"type": "url", "id": "youtube", "label": "YouTube"},
     {"type": "text", "id": "search_label", "label": "Search link label", "default": "Search"},
     {"type": "text", "id": "account_label", "label": "Account link label", "default": "Account"},
+    {"type": "text", "id": "cookie_label", "label": "Cookie settings link (empty hides it)", "default": "Cookie settings"},
     {"type": "text", "id": "legal", "label": "Legal line", "default": "These statements have not been evaluated by the FDA."}
   ],
   "blocks": [

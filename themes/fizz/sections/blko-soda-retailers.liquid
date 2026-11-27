@@ -1,4 +1,4 @@
-<section class="blko-soda-retailers" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
+<section class="blko-soda-retailers{% if section.settings.wave_color != blank %} blko-soda-wave{% endif %}" style="{% if section.settings.wave_color != blank %}--wave-color:{{ section.settings.wave_color }};{% endif %}background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <h2>{{ section.settings.heading | escape }}</h2>
   <ul>
     {%- for block in section.blocks -%}
@@ -17,12 +17,16 @@
 .blko-soda-retailers li span{font:900 1.4rem var(--font-heading, "Fraunces", Georgia, serif);opacity:.85}
 .blko-soda-retailers li img{width:auto;max-height:3rem}
 .blko-soda-retailers a{padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
+.blko-soda-wave.blko-soda-wave{--wave-h:clamp(28px,4.5vw,60px);position:relative;padding-bottom:calc(var(--wave-h) + 2rem)}
+.blko-soda-wave::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);background:var(--wave-color, transparent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 30C120 0 240 0 360 30S600 60 720 30 960 0 1080 30 1320 60 1440 30V60H0Z'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat;pointer-events:none}
+.blko-soda-retailers li span{border:2px solid currentColor;border-radius:999px;padding:.4rem 1.1rem;font-size:1.15rem}
 {% endstylesheet %}
 
 {% schema %}
 {
   "name": "Soda retailers",
   "settings": [
+    {"type": "color", "id": "wave_color", "label": "Wavy edge color (next section background)"},
     {"type": "color", "id": "bg", "label": "Background", "default": "#fff3b0"},
     {"type": "color", "id": "text_color", "label": "Text", "default": "#0f3b2e"},
     {"type": "text", "id": "heading", "label": "Heading", "default": "Find Fizz near you"},
