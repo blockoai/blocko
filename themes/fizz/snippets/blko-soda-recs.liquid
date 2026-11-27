@@ -4,7 +4,7 @@
   @param {string} [source] - related, complementary or collection
   @param {number} [limit] - Max cards, 2 to 8
   @param {collection} [collection] - Fallback collection, defaults to all products
-  @param {string} [layout] - row (scroll row) or grid
+  @param {string} [layout] - row (arrow slider) or grid
 {%- enddoc -%}
 {%- liquid
   assign max = limit | default: 4
@@ -27,5 +27,15 @@
 {%- if source == 'collection' or cart.item_count == 0 -%}{%- assign dynamic = false -%}{%- else -%}{%- assign dynamic = true -%}{%- endif -%}
 <blko-soda-recs class="blko-soda-recs blko-soda-recs--{{ mode }}" data-recs{% if dynamic %} data-url="{{ routes.product_recommendations_url }}" data-product-id="{{ cart.items.first.product_id }}" data-intent="{{ source | default: 'related' }}" data-limit="{{ max }}" data-cart-ids="{{ cart_ids | join: ',' }}"{% if mode == 'grid' %} data-tiles{% endif %}{% endif %}{% if shown == 0 %} hidden{% endif %}>
   <h3 class="blko-soda-recs__title">{{ heading }}</h3>
-  <ul class="blko-soda-recs__row" data-recs-list>{{ cards }}</ul>
+  {%- if mode == 'grid' -%}
+    <ul class="blko-soda-recs__row" data-recs-list>{{ cards }}</ul>
+  {%- else -%}
+    <blko-soda-slider class="blko-soda-recs__slider">
+      {% render 'blko-soda-slider-btn', dir: 'prev' %}
+      <div class="blko-soda-slider__viewport">
+        <ul class="blko-soda-slider__track blko-soda-recs__row" data-recs-list>{{ cards }}</ul>
+      </div>
+      {% render 'blko-soda-slider-btn', dir: 'next' %}
+    </blko-soda-slider>
+  {%- endif -%}
 </blko-soda-recs>

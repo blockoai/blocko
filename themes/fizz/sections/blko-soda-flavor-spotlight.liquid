@@ -1,8 +1,11 @@
 <section class="blko-soda-spot" style="background:{{ section.settings.bg }};color:{{ section.settings.text_color }}">
   <h2>{{ section.settings.heading | escape }}</h2>
-  <div class="blko-soda-spot__row">
+  <blko-soda-slider class="blko-soda-spot__slider">
+    {% render 'blko-soda-slider-btn', dir: 'prev' %}
+    <div class="blko-soda-slider__viewport">
+      <ul class="blko-soda-slider__track blko-soda-spot__row">
     {%- for block in section.blocks -%}
-      <a class="blko-soda-spot__item" href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
+      <li class="blko-soda-slider__item blko-soda-spot__li"><a class="blko-soda-spot__item" href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
         {%- if block.settings.image != blank -%}
           {{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.name }}
         {%- else -%}
@@ -10,10 +13,28 @@
         {%- endif -%}
         <b>{{ block.settings.name | escape }}</b>
         <span>{{ block.settings.text | escape }}</span>
-      </a>
+      </a></li>
     {%- endfor -%}
-  </div>
+      </ul>
+    </div>
+    {% render 'blko-soda-slider-btn', dir: 'next' %}
+  </blko-soda-slider>
 </section>
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+{% stylesheet %}
+.blko-soda-spot{padding:clamp(2.5rem,6vw,4.5rem) 0;font-family:var(--font-body,"Outfit",sans-serif);position:relative;--spot-pad:clamp(2.5rem,6vw,4.5rem);--spot-h:clamp(2rem,4.5vw,3.25rem)}
+.blko-soda-spot h2{margin:0 0 1.5rem;padding:0 1.25rem;font:900 clamp(2rem,4.5vw,3.25rem)/1 var(--font-heading,"Fraunces",Georgia,serif);text-align:center}
+.blko-soda-spot__slider{position:static;padding:0 1.25rem 1rem}
+.blko-soda-spot__slider .blko-soda-spot__li{flex:0 0 min(15rem,64vw)}
+.blko-soda-spot__item{display:grid;gap:.3rem;color:inherit;text-align:center;text-decoration:none}
+.blko-soda-spot__item img{width:100%;aspect-ratio:1;height:auto;border-radius:20px;object-fit:cover;transition:transform .25s ease-in-out}
+.blko-soda-spot__item:hover img{transform:scale(1.03)}
+.blko-soda-spot__item b{margin-top:.5rem;font:900 1.25rem/1.1 var(--font-heading,"Fraunces",Georgia,serif)}
+.blko-soda-spot__item span{font-size:.9rem;color:var(--color-text-muted,#4a6a5c)}
+.blko-soda-spot__slider .blko-soda-slider__btn{position:absolute;z-index:2;top:calc(var(--spot-pad) + var(--spot-h) / 2 - 20px);right:1.25rem;color:inherit;border-color:currentColor}
+.blko-soda-spot__slider .blko-soda-slider__btn[data-prev]{right:calc(1.25rem + 48px)}
+@media(max-width:700px){.blko-soda-spot h2{padding-right:7rem;text-align:left}.blko-soda-spot__slider .blko-soda-slider__btn{width:36px;height:36px;top:calc(var(--spot-pad) + var(--spot-h) / 2 - 18px)}.blko-soda-spot__slider .blko-soda-slider__btn[data-prev]{right:calc(1.25rem + 44px)}}
+{% endstylesheet %}
 
 {% schema %}
 {

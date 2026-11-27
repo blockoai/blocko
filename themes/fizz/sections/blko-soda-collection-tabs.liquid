@@ -10,17 +10,19 @@
       {%- assign coll = collections[block.settings.collection] -%}
       <div class="blko-soda-tabs__panel{% if forloop.first %} is-active{% endif %}" data-panel="{{ block.id }}" role="tabpanel">
         <p class="blko-soda-tabs__note">{{ block.settings.note | escape }}</p>
-        <div class="blko-soda-tabs__stage">
-          <button type="button" class="blko-soda-tabs__arrow is-prev" data-scroll="-1" aria-label="{{ section.settings.prev_label | escape }}">&#8249;</button>
-          <div class="blko-soda-tabs__track">
-          {%- for product in coll.products limit: block.settings.limit -%}
-            {% render 'blko-soda-product-card', product: product, line: block.settings.tab_label, add_label: section.settings.add_label, view_label: section.settings.view_label, sale_label: section.settings.sale_label %}
-          {%- else -%}
-            <p class="blko-soda-tabs__empty">{{ section.settings.empty_text }}</p>
-          {%- endfor -%}
+        <blko-soda-slider class="blko-soda-tabs__slider">
+          {% render 'blko-soda-slider-btn', dir: 'prev', label: section.settings.prev_label %}
+          <div class="blko-soda-slider__viewport">
+            <ul class="blko-soda-slider__track blko-soda-tabs__track">
+            {%- for product in coll.products limit: block.settings.limit -%}
+              <li class="blko-soda-slider__item">{% render 'blko-soda-product-card', product: product, line: block.settings.tab_label, add_label: section.settings.add_label, view_label: section.settings.view_label, sale_label: section.settings.sale_label %}</li>
+            {%- else -%}
+              <li class="blko-soda-slider__item"><p class="blko-soda-tabs__empty">{{ section.settings.empty_text }}</p></li>
+            {%- endfor -%}
+            </ul>
           </div>
-          <button type="button" class="blko-soda-tabs__arrow is-next" data-scroll="1" aria-label="{{ section.settings.next_label | escape }}">&#8250;</button>
-        </div>
+          {% render 'blko-soda-slider-btn', dir: 'next', label: section.settings.next_label %}
+        </blko-soda-slider>
         <p class="blko-soda-tabs__cta"><a href="{{ coll.url | default: routes.collections_url }}">{{ block.settings.cta_label | escape }}</a></p>
       </div>
     {%- endfor -%}
@@ -30,7 +32,7 @@
 <script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
 
 {% stylesheet %}
-.blko-soda-tabs{padding:clamp(2.5rem,6vw,4.5rem) 0;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
+.blko-soda-tabs{position:relative;padding:clamp(2.5rem,6vw,4.5rem) 0;font-family:var(--font-body, "Outfit", sans-serif);color:var(--color-text, #0f3b2e)}
 .blko-soda-tabs__heading{margin:0 0 1.5rem;padding:0 1.25rem;font:900 clamp(2rem,4.5vw,3.25rem)/1 var(--font-heading, "Fraunces", Georgia, serif);text-align:center}
 .blko-soda-tabs__bar{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;padding:0 1.25rem}
 .blko-soda-tabs__tab{padding:.6rem 1.25rem;border:2px solid var(--color-text, #0f3b2e);border-radius:999px;background:transparent;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);cursor:pointer}
@@ -38,8 +40,8 @@
 .blko-soda-tabs__panel{display:none;padding-top:1.5rem}
 .blko-soda-tabs__panel.is-active{display:block}
 .blko-soda-tabs__note{margin:0 0 1.25rem;padding:0 1.25rem;font-weight:700;text-align:center}
-.blko-soda-tabs__track{display:flex;gap:1.25rem;overflow-x:auto;padding:0 1.25rem 1rem;scroll-snap-type:x mandatory;scrollbar-width:thin}
-.blko-soda-tabs__track>.blko-soda-card{flex:0 0 min(17rem,72vw);scroll-snap-align:start}
+.blko-soda-tabs__slider{position:static;padding:0 1.25rem 1rem}
+.blko-soda-tabs__track .blko-soda-slider__item{flex:0 0 min(17.5rem,72vw)}
 .blko-soda-tabs__cta{margin:1.25rem 0 0;text-align:center}
 .blko-soda-tabs__cta a{display:inline-block;padding:.85rem 1.8rem;border:2px solid currentColor;border-radius:999px;color:inherit;font:700 1rem var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none}
 /* pills (14px/700, 1.5px outline) */
@@ -47,13 +49,11 @@
 .blko-soda-tabs__tab:hover,.blko-soda-coll__filters a:hover{background:var(--color-text,#0f3b2e);color:var(--color-bg-alt,#f3e8cd)}
 .blko-soda-tabs__cta a,.blko-soda-retailers a{border-width:1.5px;font:700 14px/1.2 var(--font-body,"Outfit",sans-serif);transition:background-color .25s ease-in-out,color .25s ease-in-out}
 .blko-soda-tabs__cta a:hover,.blko-soda-retailers a:hover{background:var(--color-text,#0f3b2e);color:#fff}
-/* tabs carousel */
-.blko-soda-tabs__stage{position:relative}
-.blko-soda-tabs__arrow{position:absolute;top:calc(50% - 3rem);z-index:3;width:2.75rem;height:2.75rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:50%;background:#fff;color:var(--color-text,#0f3b2e);font:700 1.5rem/1 var(--font-body,"Outfit",sans-serif);cursor:pointer;transition:opacity .25s ease-in-out,background-color .25s ease-in-out}
-.blko-soda-tabs__arrow:hover{opacity:.8;background:var(--color-announcement-bg,#cdf26b)}
-.blko-soda-tabs__arrow.is-prev{left:1rem}.blko-soda-tabs__arrow.is-next{right:1rem}
-.blko-soda-tabs__track>.blko-soda-card{flex:0 0 min(17.5rem,72vw)}
-@media(max-width:700px){.blko-soda-tabs__arrow{display:none}}
+/* tabs carousel: arrows sit at the right of the heading row */
+.blko-soda-tabs{--tabs-pad:clamp(2.5rem,6vw,4.5rem);--tabs-h:clamp(2rem,4.5vw,3.25rem)}
+.blko-soda-tabs__slider .blko-soda-slider__btn{position:absolute;z-index:2;top:calc(var(--tabs-pad) + var(--tabs-h) / 2 - 20px);right:1.25rem}
+.blko-soda-tabs__slider .blko-soda-slider__btn[data-prev]{right:calc(1.25rem + 48px)}
+@media(max-width:700px){.blko-soda-tabs__heading{padding-right:7rem;text-align:left}.blko-soda-tabs__slider .blko-soda-slider__btn{width:36px;height:36px;top:calc(var(--tabs-pad) + var(--tabs-h) / 2 - 18px)}.blko-soda-tabs__slider .blko-soda-slider__btn[data-prev]{right:calc(1.25rem + 44px)}}
 .blko-soda-strip{padding:1rem 1.25rem}
 .blko-soda-promo{display:block;max-width:70rem;margin:0 auto;height:clamp(110px,14vw,200px);border-radius:20px;overflow:hidden}
 .blko-soda-promo img{width:100%;height:100%;object-fit:cover;transition:transform .25s ease-in-out}

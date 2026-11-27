@@ -172,7 +172,8 @@
 .blko-soda-flavor summary:hover{box-shadow:4px 4px 0 0 var(--flv-accent)}
 .blko-soda-flavor__dot{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--tile-bg);flex:none}
 .blko-soda-flavor__dot img{width:auto;height:24px}
-.blko-soda-flavor ul{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:15;margin:0;padding:.4rem;max-height:20rem;overflow:auto;border:1px solid var(--color-text,#0f3b2e);border-radius:16px;background:#fff;list-style:none}
+.blko-soda-flavor ul::-webkit-scrollbar{display:none}
+.blko-soda-flavor ul{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:15;margin:0;padding:.4rem;max-height:20rem;overflow:auto;scrollbar-width:none;border:1px solid var(--color-text,#0f3b2e);border-radius:16px;background:#fff;list-style:none}
 .blko-soda-flavor li a{display:flex;align-items:center;gap:.6rem;padding:.4rem .6rem;border-radius:12px;color:inherit;font:700 14px/1.2 var(--font-body,"Outfit",sans-serif);text-decoration:none;transition:background-color .25s ease-in-out}
 .blko-soda-flavor li a:hover,.blko-soda-flavor li a[aria-current]{background:#d6f1ea}
 .blko-soda-pdp__option{text-align:left}

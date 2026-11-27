@@ -83,8 +83,10 @@
 .blko-theme .blko-search-blog-share a{text-decoration:none;border-bottom:1px solid}
 @media(max-width:760px){.blko-theme .blko-search-blog-results-toolbar{display:block}
 .blko-theme .blko-search-blog-results-layout{display:block}
-.blko-theme .blko-search-blog-tabs{margin-top:1rem;overflow:auto;flex-wrap:nowrap}
-.blko-theme .blko-search-blog-filters{display:flex;overflow:auto;margin:1rem 0 1.5rem}
+.blko-theme .blko-search-blog-tabs{margin-top:1rem;overflow:auto;flex-wrap:nowrap;scrollbar-width:none}
+.blko-theme .blko-search-blog-tabs::-webkit-scrollbar{display:none}
+.blko-theme .blko-search-blog-filters{display:flex;overflow:auto;margin:1rem 0 1.5rem;scrollbar-width:none}
+.blko-theme .blko-search-blog-filters::-webkit-scrollbar{display:none}
 .blko-theme .blko-search-blog-filters p{display:none}
 .blko-theme .blko-search-blog-result-grid{grid-template-columns:1fr}
 .blko-theme .blko-search-blog-empty img{min-height:0;aspect-ratio:1}

@@ -46,12 +46,6 @@
           panels.forEach(function (p) { p.classList.toggle('is-active', p.dataset.panel === t.dataset.tab); });
         });
       });
-      this.querySelectorAll('[data-scroll]').forEach(function (a) {
-        a.addEventListener('click', function () {
-          var track = a.parentNode.querySelector('.blko-soda-tabs__track');
-          if (track) track.scrollBy({ left: Number(a.dataset.scroll) * track.clientWidth * 0.8, behavior: 'smooth' });
-        });
-      });
     }
   });
 
@@ -628,6 +622,105 @@
           items.forEach(function (i) { i.hidden = !!tab.dataset.cat && i.dataset.cat !== tab.dataset.cat; });
         });
       });
+    }
+  });
+
+  /* Arrow slider: <blko-soda-slider> holds [data-prev], [data-next], .blko-soda-slider__viewport (overflow hidden) and
+     .blko-soda-slider__track (translateX). No native scrolling: arrows and touch swipes move one page of fully visible items.
+     Re-measures on resize, on content or [hidden] changes in the track, and when the element is re-inserted (cart drawer re-renders). */
+  define('blko-soda-slider', class extends HTMLElement {
+    connectedCallback() {
+      var root = this;
+      if (root._on) return;
+      root._on = true;
+      var pos = 0;
+      var view = function () { return root.querySelector('.blko-soda-slider__viewport'); };
+      var track = function () { return root.querySelector('.blko-soda-slider__track'); };
+      var items = function () {
+        var t = track();
+        return t ? Array.prototype.filter.call(t.children, function (c) { return !c.hidden && c.offsetWidth > 0; }) : [];
+      };
+      var left = function (el) { return el.offsetLeft; };
+      var maxPos = function () { var v = view(), t = track(); return v && t ? Math.max(0, t.offsetWidth - v.clientWidth) : 0; };
+      var apply = function () {
+        var t = track(), v = view();
+        if (!t || !v) return;
+        var max = maxPos();
+        pos = Math.max(0, Math.min(pos, max));
+        t.style.transform = pos ? 'translateX(' + (-pos) + 'px)' : '';
+        if (v.scrollLeft) v.scrollLeft = 0;
+        var prev = root.querySelector('[data-prev]'), next = root.querySelector('[data-next]');
+        var fits = v.clientWidth > 0 && max <= 1;
+        if (prev) { prev.hidden = fits; prev.disabled = pos <= 1; }
+        if (next) { next.hidden = fits; next.disabled = pos >= max - 1; }
+        root.classList.toggle('is-fit', fits);
+      };
+      var go = function (dir) {
+        var v = view(), list = items();
+        if (!v || !list.length) return;
+        var vw = v.clientWidth, max = maxPos(), target = pos, i;
+        if (dir > 0) {
+          for (i = 0; i < list.length; i++) { if (left(list[i]) + list[i].offsetWidth > pos + vw + 1) break; }
+          target = i < list.length ? left(list[i]) : max;
+        } else {
+          for (i = list.length - 1; i >= 0; i--) { if (left(list[i]) < pos - 1) break; }
+          if (i < 0) target = 0;
+          else {
+            var k = i;
+            while (k > 0 && left(list[i]) + list[i].offsetWidth - left(list[k - 1]) <= vw + 1) k--;
+            target = left(list[k]);
+          }
+        }
+        pos = Math.max(0, Math.min(target, max));
+        apply();
+      };
+      var reveal = function (el) {
+        var v = view(), a = el, t = track();
+        while (a && a.parentNode !== t) a = a.parentNode;
+        if (!a) return;
+        var l = left(a), r = l + a.offsetWidth;
+        if (l < pos) pos = l; else if (r > pos + v.clientWidth) pos = r - v.clientWidth;
+        apply();
+      };
+      root.addEventListener('click', function (e) {
+        if (root._swiped) { root._swiped = false; if (!e.target.closest('[data-prev],[data-next]')) { e.preventDefault(); e.stopPropagation(); return; } }
+        var b = e.target.closest && e.target.closest('[data-prev],[data-next]');
+        if (b && root.contains(b) && !b.disabled) go(b.hasAttribute('data-next') ? 1 : -1);
+      }, true);
+      root.addEventListener('focusin', function (e) { var t = track(); if (t && t.contains(e.target)) reveal(e.target); });
+      root.addEventListener('scroll', function (e) { if (e.target && e.target.scrollLeft) e.target.scrollLeft = 0; }, true);
+      var sx = 0, sy = 0, down = false;
+      root.addEventListener('pointerdown', function (e) {
+        if (e.pointerType === 'mouse' || !e.target.closest('.blko-soda-slider__viewport')) return;
+        down = true; sx = e.clientX; sy = e.clientY; root._swiped = false;
+      });
+      root.addEventListener('pointerup', function (e) {
+        if (!down) return;
+        down = false;
+        var dx = e.clientX - sx, dy = e.clientY - sy;
+        if (Math.abs(dx) >= 40 && Math.abs(dx) > Math.abs(dy)) { root._swiped = true; go(dx < 0 ? 1 : -1); setTimeout(function () { root._swiped = false; }, 400); }
+      });
+      root.addEventListener('pointercancel', function () { down = false; });
+      var again = function () { requestAnimationFrame(apply); };
+      if (window.ResizeObserver) {
+        root._ro = new ResizeObserver(again);
+        root._ro.observe(root);
+        var v0 = view(); if (v0) root._ro.observe(v0);
+        var t0 = track(); if (t0) root._ro.observe(t0);
+      }
+      if (window.MutationObserver) {
+        root._mo = new MutationObserver(again);
+        root._mo.observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ['hidden'] });
+      }
+      window.addEventListener('resize', again);
+      root._off = function () { window.removeEventListener('resize', again); };
+      apply();
+    }
+    disconnectedCallback() {
+      if (this._ro) this._ro.disconnect();
+      if (this._mo) this._mo.disconnect();
+      if (this._off) this._off();
+      this._on = false;
     }
   });
 })();

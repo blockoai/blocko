@@ -1,0 +1,24 @@
+{%- doc -%}
+  Round outline arrow for a blko-soda-slider (blko-soda.js). Also ships the slider base styles.
+  @param {string} dir - prev or next
+  @param {string} [label] - Accessible label, defaults to Previous or Next
+{%- enddoc -%}
+{%- if dir == 'next' -%}
+<button type="button" class="blko-soda-slider__btn" data-next aria-label="{{ label | default: 'Next' | escape }}"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></button>
+{%- else -%}
+<button type="button" class="blko-soda-slider__btn" data-prev aria-label="{{ label | default: 'Previous' | escape }}"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg></button>
+{%- endif -%}
+
+{% stylesheet %}
+/* arrow slider: no native scrolling, the track moves with translateX */
+blko-soda-slider{display:block;position:relative;min-width:0}
+.blko-soda-slider__viewport{min-width:0;overflow:hidden;touch-action:pan-y}
+.blko-soda-slider__track{position:relative;display:flex;gap:1.25rem;width:max-content;min-width:100%;margin:0;padding:0;list-style:none;transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.blko-soda-slider__item{flex:none;min-width:0;list-style:none}
+.blko-soda-slider__btn{display:grid;place-items:center;flex:none;width:40px;height:40px;padding:0;border:1.5px solid var(--color-text,#0f3b2e);border-radius:50%;background:transparent;color:var(--color-text,#0f3b2e);cursor:pointer;transition:background-color .25s ease-in-out,color .25s ease-in-out,opacity .25s ease-in-out}
+.blko-soda-slider__btn svg{width:18px;height:18px}
+.blko-soda-slider__btn:hover:not(:disabled),.blko-soda-slider__btn:focus-visible:not(:disabled){background:var(--color-text,#0f3b2e);color:var(--color-bg-alt,#f3e8cd)}
+.blko-soda-slider__btn:disabled{opacity:.3;cursor:default}
+.blko-soda-slider__btn[hidden]{display:none}
+@media(prefers-reduced-motion:reduce){.blko-soda-slider__track,.blko-soda-slider__btn{transition:none}}
+{% endstylesheet %}

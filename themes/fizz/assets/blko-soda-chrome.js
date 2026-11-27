@@ -2,7 +2,7 @@
 (function () {
   var define = function (name, ctor) { if (!customElements.get(name)) customElements.define(name, ctor); };
 
-  /* Mega menu: [data-mega-row] activates the matching [data-mega-panel]; arrows scroll the panel's [data-mega-track]. */
+  /* Mega menu: [data-mega-row] activates the matching [data-mega-panel]. Each panel's can row is a blko-soda-slider (blko-soda.js). */
   define('blko-soda-mega', class extends HTMLElement {
     connectedCallback() {
       if (this.dataset.bound) return;
@@ -18,28 +18,6 @@
         r.addEventListener('mouseenter', function () { show(r.dataset.megaRow); });
         r.addEventListener('focus', function () { show(r.dataset.megaRow); });
       });
-      panels.forEach(function (p) {
-        var track = p.querySelector('[data-mega-track]');
-        var prev = p.querySelector('[data-mega-prev]');
-        var next = p.querySelector('[data-mega-next]');
-        if (!track) return;
-        var sync = function () {
-          if (prev) prev.disabled = track.scrollLeft <= 2;
-          if (next) next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
-        };
-        var step = function (d) { track.scrollBy({ left: d * 276, behavior: 'smooth' }); };
-        if (prev) prev.addEventListener('click', function () { step(-1); });
-        if (next) next.addEventListener('click', function () { step(1); });
-        track.addEventListener('scroll', sync, { passive: true });
-        sync();
-        p._sync = sync;
-      });
-      /* arrows measure 0 width while hidden, so re-sync when a panel opens */
-      rows.forEach(function (r) {
-        r.addEventListener('mouseenter', function () { setTimeout(function () { panels.forEach(function (p) { if (p._sync) p._sync(); }); }, 0); });
-      });
-      var li = root.closest('li');
-      if (li) li.addEventListener('mouseenter', function () { panels.forEach(function (p) { if (p._sync) p._sync(); }); });
     }
   });
 

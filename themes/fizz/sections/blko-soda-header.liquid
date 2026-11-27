@@ -27,6 +27,7 @@
                       {%- assign coll = collections.all -%}
                       {%- if child.type == 'collection_link' -%}{%- assign coll = child.object -%}{%- endif -%}
                       <section class="blko-soda-mega__panel{% if forloop.first %} is-active{% endif %}" data-mega-panel="{{ forloop.index0 }}">
+                        <blko-soda-slider class="blko-soda-mega__slider">
                         <div class="blko-soda-mega__top">
                           <div class="blko-soda-mega__copy">
                             <h3 class="blko-soda-mega__title">{{ section.settings.heading_prefix }} {{ child.title }}</h3>
@@ -38,17 +39,18 @@
                           <div class="blko-soda-mega__ctl">
                             <a class="blko-soda-mega__cta" href="{{ child.url }}">{{ section.settings.heading_prefix }} {{ child.title }}</a>
                             <div class="blko-soda-mega__arrows">
-                              <button type="button" class="blko-soda-mega__arrow" data-mega-prev aria-label="Previous"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg></button>
-                              <button type="button" class="blko-soda-mega__arrow" data-mega-next aria-label="Next"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></button>
+                              {% render 'blko-soda-slider-btn', dir: 'prev' %}
+                              {% render 'blko-soda-slider-btn', dir: 'next' %}
                             </div>
                           </div>
                         </div>
-                        <ul class="blko-soda-mega__track" data-mega-track>
+                        <div class="blko-soda-slider__viewport">
+                        <ul class="blko-soda-slider__track blko-soda-mega__track">
                           {%- for product in coll.products limit: 12 -%}
                             <li class="blko-soda-mega__item">
                               <a class="blko-soda-mega__can" href="{{ product.url }}">
                                 <span class="blko-soda-mega__media">
-                                  {%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: height: 272 }}" alt="" width="120" height="136" loading="lazy">{%- endif -%}
+                                  {%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: height: 360 }}" alt="" width="134" height="180" loading="lazy">{%- endif -%}
                                   {%- if product.compare_at_price > product.price -%}<img class="blko-soda-mega__badge" src="{{ 'blko-badge-sale.svg' | asset_url }}" alt="{{ section.settings.sale_label | escape }}" width="56" height="56" loading="lazy">{%- endif -%}
                                 </span>
                                 <span class="blko-soda-mega__name">{{ product.title | escape }}</span>
@@ -56,6 +58,8 @@
                             </li>
                           {%- endfor -%}
                         </ul>
+                        </div>
+                        </blko-soda-slider>
                       </section>
                     {%- endfor -%}
                   </div>
@@ -123,15 +127,16 @@
 .blko-soda-header__tools .blko-soda-header__find{align-items:center;padding-bottom:6px;border-bottom:2px solid transparent;font:500 1.0625rem/1.2 var(--font-body, "Outfit", sans-serif);transition:border-color .25s ease-in-out}
 .blko-soda-header__tools .blko-soda-header__find:hover{border-bottom-color:currentColor;color:inherit}
 .blko-soda-header__count{position:absolute;top:-.45rem;right:-.6rem;min-width:1.1rem;height:1.1rem;padding:0 .2rem;border-radius:999px;background:var(--color-brand-green, #0f6e4f);color:#fff;font:800 .7rem/1.15rem var(--font-body, "Outfit", sans-serif);text-align:center}
-.blko-soda-mega{position:absolute;left:0;right:0;top:100%;display:flex;height:451px;border-top:0;border-bottom:1px solid var(--color-border, #dccfae);background:var(--color-header-bg, #fdf6ea);box-shadow:none;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s ease-in-out,visibility 0s linear .3s}
+.blko-soda-mega{position:absolute;left:0;right:0;top:100%;display:flex;height:auto;min-height:0;border-top:0;border-bottom:1px solid var(--color-border, #dccfae);background:var(--color-header-bg, #fdf6ea);box-shadow:none;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s ease-in-out,visibility 0s linear .3s}
 .blko-soda-header__item.has-mega:hover .blko-soda-mega,.blko-soda-header__item.has-mega:focus-within .blko-soda-mega{display:flex;opacity:1;visibility:visible;pointer-events:auto;transition-delay:0s}
 .blko-soda-mega__rail{display:flex;flex:0 0 min(30%,372px);flex-direction:column;min-height:0;background:var(--color-cream-light, #fffaf0);border-right:1px solid var(--color-border, #dccfae)}
-.blko-soda-header .blko-soda-mega__rows{display:block;gap:0;flex:1;min-height:0;margin:0;padding:0;overflow-y:auto;list-style:none;scrollbar-width:thin}
+.blko-soda-header .blko-soda-mega__rows{display:block;gap:0;flex:1;min-height:0;margin:0;padding:0;overflow-y:auto;list-style:none;scrollbar-width:none}
+.blko-soda-mega__rows::-webkit-scrollbar{display:none}
 .blko-soda-mega__row{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px;padding:0 20px 0 60px;border-bottom:1px solid var(--color-border, #dccfae);background:transparent;color:var(--color-text, #0f3b2e);font:900 1.25rem/1.1 var(--font-heading, "Fraunces", Georgia, serif);text-decoration:none;transition:background-color .25s ease-in-out}
 .blko-soda-mega__row:hover,.blko-soda-mega__row.is-active{background:var(--color-mint, #b8f0d8)}
 .blko-soda-mega__all{display:flex;align-items:center;justify-content:center;flex:none;width:291px;max-width:calc(100% - 80px);height:48px;margin:20px 0 24px 60px;border-radius:50px;background:var(--color-text, #0f3b2e);color:#fff;font:700 1.125rem/1 var(--font-body, "Outfit", sans-serif);text-decoration:none;transition:background-color .15s ease,color .15s ease}
 .blko-soda-mega__all:hover{background:#1f5a44;color:var(--color-bg, #fbf3e2)}
-.blko-soda-mega__panels{flex:1;min-width:0;padding:32px 60px 0 36px}
+.blko-soda-mega__panels{flex:1;min-width:0;padding:32px 60px 24px 36px}
 .blko-soda-mega__panel{display:none}
 .blko-soda-mega__panel.is-active{display:block;animation:blko-mega-in .25s ease-in-out}
 @keyframes blko-mega-in{from{opacity:0}to{opacity:1}}
@@ -143,19 +148,16 @@
 .blko-soda-mega__ctl{display:grid;justify-items:end;gap:10px;flex:none}
 .blko-soda-mega__cta{display:inline-flex;align-items:center;height:31px;padding:0 20px;border:1px solid var(--color-text, #0f3b2e);border-radius:50px;color:var(--color-text, #0f3b2e);font:600 .875rem/1 var(--font-body, "Outfit", sans-serif);text-decoration:none;white-space:nowrap;transition:background-color .25s ease-in-out}
 .blko-soda-mega__cta:hover{background:rgba(15,59,46,.07)}
-.blko-soda-mega__arrows{display:flex;gap:4px}
-.blko-soda-mega__arrow{display:grid;place-items:center;width:40px;height:40px;padding:0;border:0;background:none;color:var(--color-text, #0f3b2e);cursor:pointer;transition:opacity .25s ease-in-out}
-.blko-soda-mega__arrow:hover{opacity:.8}
-.blko-soda-mega__arrow:disabled{opacity:.3;cursor:default}
-.blko-soda-header .blko-soda-mega__track{display:flex;gap:2px;margin:14px 0 0;padding:0;overflow-x:auto;list-style:none;scroll-behavior:smooth;scrollbar-width:none}
-.blko-soda-mega__track::-webkit-scrollbar{display:none}
-.blko-soda-mega__item{flex:0 0 136px}
+.blko-soda-mega__arrows{display:flex;gap:8px}
+.blko-soda-header .blko-soda-mega__track{gap:2px;margin:14px 0 0}
+.blko-soda-mega__slider{display:block}
+.blko-soda-mega__item{flex:0 0 150px}
 .blko-soda-mega__can{display:block;color:var(--color-text, #0f3b2e);text-align:center;text-decoration:none}
-.blko-soda-mega__media{position:relative;display:flex;align-items:flex-end;justify-content:center;height:148px;padding:8px 8px 0}
-.blko-soda-mega__media img{width:auto;height:136px;max-width:120px;object-fit:contain;transform-origin:center bottom;transition:transform .25s cubic-bezier(.4,0,.2,1)}
+.blko-soda-mega__media{position:relative;display:flex;align-items:flex-end;justify-content:center;height:190px;padding:8px 8px 0}
+.blko-soda-mega__media img{width:auto;height:180px;max-width:134px;object-fit:contain;transform-origin:center bottom;transition:transform .25s cubic-bezier(.4,0,.2,1)}
 .blko-soda-mega__can:hover .blko-soda-mega__media img,.blko-soda-mega__can:focus-visible .blko-soda-mega__media img{transform:scale(1.12)}
-.blko-soda-mega__media .blko-soda-mega__badge{position:absolute;top:0;right:0;width:56px;height:56px;max-width:none;object-fit:contain;pointer-events:none;transform:none;transition:none}
-.blko-soda-mega__name{display:block;padding:6px 6px 8px;font:700 .875rem/1.35 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-mega__media .blko-soda-mega__badge{position:absolute;top:0;left:calc(50% + 6px);right:auto;width:56px;height:56px;max-width:none;object-fit:contain;pointer-events:none;transform:none;transition:none}
+.blko-soda-mega__name{display:block;padding:8px 6px 8px;font:700 15px/1.35 var(--font-body, "Outfit", sans-serif)}
 .blko-soda-header .blko-soda-drop{display:block;gap:0;position:absolute;top:calc(100% - 12px);left:-16px;min-width:13rem;margin:0;padding:.6rem;border:1px solid rgba(15,59,46,.08);border-radius:16px;background:var(--color-header-bg, #fdf6ea);box-shadow:0 14px 30px -12px rgba(15,59,46,.3);list-style:none;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s ease-in-out,visibility 0s linear .3s}
 .blko-soda-header__item.has-drop{position:relative}
 .blko-soda-header__item.has-drop:hover .blko-soda-drop,.blko-soda-header__item.has-drop:focus-within .blko-soda-drop{opacity:1;visibility:visible;pointer-events:auto;transition-delay:0s}
@@ -169,7 +171,7 @@
 .blko-soda-header__sub a{display:block;padding:.55rem 0 .55rem 1rem;border-bottom:0;font-size:1rem}
 .blko-soda-header__sub a.is-grand{padding-left:2rem;font-weight:500;font-size:.95rem}
 .blko-soda-header__mobile a{padding:.75rem 0;border-bottom:1px solid var(--color-border, #dccfae);color:inherit;font:700 1.1rem var(--font-body, "Outfit", sans-serif);text-decoration:none}
-@media(max-width:900px){.blko-soda-header__inner{grid-template-columns:1fr auto 1fr;min-height:64px}.blko-soda-header__toggle{display:inline-flex}.blko-soda-header__nav{display:none}.blko-soda-header__tools .blko-soda-header__find,.blko-soda-header__tools .blko-soda-header__acct{display:none}.blko-soda-mega{display:none}.blko-soda-header__logo{justify-self:center}.blko-soda-header__logo img{height:40px}}
+@media(max-width:989px){.blko-soda-header__inner{grid-template-columns:1fr auto 1fr;min-height:64px}.blko-soda-header__toggle{display:inline-flex}.blko-soda-header__nav{display:none}.blko-soda-header__tools .blko-soda-header__find,.blko-soda-header__tools .blko-soda-header__acct{display:none}.blko-soda-mega{display:none}.blko-soda-header__logo{justify-self:center}.blko-soda-header__logo img{height:40px}}
 @media(prefers-reduced-motion:reduce){.blko-soda-mega,.blko-soda-mega__row,.blko-soda-mega__all,.blko-soda-mega__media img,.blko-soda-header__item>a,.blko-soda-header__tools a,.blko-soda-drop{transition:none}.blko-soda-mega__panel.is-active{animation:none}.blko-soda-mega__track{scroll-behavior:auto}}
 {% endstylesheet %}
 

@@ -90,11 +90,17 @@
       '<p class="blko-soda-rec__price">' + (c[4] > c[2] ? '<s>' + money(c[4]) + '</s>' : '') + '<span>' + money(c[2]) + '</span></p>' +
       '<button type="button" class="blko-soda-rec__add" data-add-to-cart data-id="' + id + '">+ Add</button></li>';
   };
+  var SLIDER_BTN = {
+    prev: '<button type="button" class="blko-soda-slider__btn" data-prev aria-label="Previous"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg></button>',
+    next: '<button type="button" class="blko-soda-slider__btn" data-next aria-label="Next"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></button>'
+  };
   var recsHtml = function (heading, layout, max) {
     var pick = recPick(max);
     if (!pick.length) return '';
-    return '<blko-soda-recs class="blko-soda-recs blko-soda-recs--' + layout + '" data-recs><h3 class="blko-soda-recs__title">' + esc(heading) + '</h3><ul class="blko-soda-recs__row" data-recs-list>' +
-      pick.map(function (id) { return recCard(id, layout === 'grid'); }).join('') + '</ul></blko-soda-recs>';
+    var cards = pick.map(function (id) { return recCard(id, layout === 'grid'); }).join('');
+    var head = '<blko-soda-recs class="blko-soda-recs blko-soda-recs--' + layout + '" data-recs><h3 class="blko-soda-recs__title">' + esc(heading) + '</h3>';
+    if (layout === 'grid') return head + '<ul class="blko-soda-recs__row" data-recs-list>' + cards + '</ul></blko-soda-recs>';
+    return head + '<blko-soda-slider class="blko-soda-recs__slider">' + SLIDER_BTN.prev + '<div class="blko-soda-slider__viewport"><ul class="blko-soda-slider__track blko-soda-recs__row" data-recs-list>' + cards + '</ul></div>' + SLIDER_BTN.next + '</blko-soda-slider></blko-soda-recs>';
   };
 
   var drawerHtml = function () {
