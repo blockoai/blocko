@@ -1,0 +1,126 @@
+{%- liquid
+  assign tpl_list = section.settings.templates | downcase | remove: ' ' | split: ','
+  assign show = false
+  if section.settings.enabled
+    if tpl_list.size == 0 or tpl_list contains template.name or request.design_mode
+      assign show = true
+    endif
+  endif
+-%}
+{%- if show -%}
+<blko-soda-popup class="blko-soda-popup" role="dialog" aria-modal="true" aria-labelledby="blko-soda-popup-title-{{ section.id }}" aria-hidden="true" data-section-id="{{ section.id }}" data-trigger="{{ section.settings.trigger }}" data-delay="{{ section.settings.delay }}" data-scroll="{{ section.settings.scroll_percent }}" data-days="{{ section.settings.frequency_days }}" style="--popup-panel:{{ section.settings.panel_color }};--popup-headline:{{ section.settings.headline_color }};--popup-cta-bg:{{ section.settings.cta_bg }};--popup-cta-text:{{ section.settings.cta_text }}">
+  <div class="blko-soda-popup__modal">
+    <div class="blko-soda-popup__media">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', alt: section.settings.image_alt, widths: '450, 900', sizes: '(max-width: 640px) 100vw, 420px' }}
+      {%- else -%}
+        <img src="{{ 'fizz-banner-social-5.svg' | asset_url }}" alt="{{ section.settings.image_alt | escape }}" width="800" height="800" loading="lazy">
+      {%- endif -%}
+    </div>
+    <div class="blko-soda-popup__panel">
+      <svg class="blko-soda-popup__confetti" viewBox="0 0 400 452" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M182 242Q182 252 192 252Q182 252 182 262Q182 252 172 252Q182 252 182 242Z" fill="#cdf26b"/><circle cx="46" cy="141" r="2.8" fill="#ff8fb0"/><circle cx="383" cy="427" r="4.8" fill="#8fd3ff"/><path d="M211 28Q211 36 219 36Q211 36 211 44Q211 36 203 36Q211 36 211 28Z" fill="#f5f06b"/><circle cx="102" cy="23" r="4.1" fill="#cdf26b"/><circle cx="184" cy="130" r="6.0" fill="#ff8fb0"/><path d="M329 307Q329 316 338 316Q329 316 329 325Q329 316 320 316Q329 316 329 307Z" fill="#8fd3ff"/><circle cx="157" cy="424" r="5.5" fill="#f5f06b"/><circle cx="10" cy="101" r="5.7" fill="#cdf26b"/><path d="M189 424Q189 434 198 434Q189 434 189 443Q189 434 179 434Q189 434 189 424Z" fill="#ff8fb0"/><circle cx="38" cy="282" r="5.2" fill="#8fd3ff"/><circle cx="113" cy="48" r="3.7" fill="#f5f06b"/><path d="M376 330Q376 337 384 337Q376 337 376 345Q376 337 369 337Q376 337 376 330Z" fill="#cdf26b"/><circle cx="104" cy="54" r="2.7" fill="#ff8fb0"/><circle cx="60" cy="288" r="2.9" fill="#8fd3ff"/><path d="M379 348Q379 357 388 357Q379 357 379 366Q379 357 370 357Q379 357 379 348Z" fill="#f5f06b"/><circle cx="346" cy="101" r="3.9" fill="#cdf26b"/><circle cx="335" cy="287" r="2.9" fill="#ff8fb0"/><path d="M386 94Q386 102 394 102Q386 102 386 111Q386 102 377 102Q386 102 386 94Z" fill="#8fd3ff"/><circle cx="38" cy="49" r="4.5" fill="#f5f06b"/><circle cx="182" cy="424" r="4.2" fill="#cdf26b"/><path d="M69 391Q69 402 80 402Q69 402 69 414Q69 402 57 402Q69 402 69 391Z" fill="#ff8fb0"/><circle cx="367" cy="95" r="5.8" fill="#8fd3ff"/><circle cx="345" cy="271" r="4.0" fill="#f5f06b"/><path d="M49 14Q49 27 62 27Q49 27 49 39Q49 27 37 27Q49 27 49 14Z" fill="#cdf26b"/><circle cx="323" cy="268" r="3.5" fill="#ff8fb0"/><circle cx="77" cy="321" r="2.7" fill="#8fd3ff"/><path d="M243 123Q243 131 252 131Q243 131 243 139Q243 131 235 131Q243 131 243 123Z" fill="#f5f06b"/><circle cx="16" cy="126" r="4.1" fill="#cdf26b"/><circle cx="33" cy="86" r="3.8" fill="#ff8fb0"/></svg>
+      <button type="button" class="blko-soda-popup__close" data-popup-close aria-label="Close"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      {%- if section.settings.eyebrow != blank -%}<p class="blko-soda-popup__eyebrow">{{ section.settings.eyebrow | escape }}</p>{%- endif -%}
+      <h2 class="blko-soda-popup__h1" id="blko-soda-popup-title-{{ section.id }}">{{ section.settings.headline | escape }}</h2>
+      {%- if section.settings.sub != blank -%}<p class="blko-soda-popup__sub">{{ section.settings.sub | escape }}</p>{%- endif -%}
+      {%- if section.settings.headline_2 != blank -%}
+        <div class="blko-soda-popup__divider" aria-hidden="true">+</div>
+        <p class="blko-soda-popup__h2">{{ section.settings.headline_2 | escape }}</p>
+        {%- if section.settings.sub_2 != blank -%}<p class="blko-soda-popup__sub">{{ section.settings.sub_2 | escape }}</p>{%- endif -%}
+      {%- endif -%}
+      {%- if section.settings.email_mode -%}
+        {%- form 'customer', class: 'blko-soda-popup__form-wrap' -%}
+          {%- if form.posted_successfully? -%}
+            <p class="blko-soda-popup__ok" role="status">{{ section.settings.success_text | escape }}</p>
+          {%- else -%}
+            <div class="blko-soda-popup__form">
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <label for="blko-soda-popup-email-{{ section.id }}" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">{{ section.settings.email_label | escape }}</label>
+              <input id="blko-soda-popup-email-{{ section.id }}" type="email" name="contact[email]" placeholder="{{ section.settings.email_label | escape }}" autocomplete="email" required>
+              <button type="submit" class="blko-soda-popup__cta" data-popup-cta>{{ section.settings.cta_label | escape }}</button>
+            </div>
+            {%- if form.errors -%}<p class="blko-soda-popup__err" role="alert">{{ form.errors.messages | first | escape }}</p>{%- endif -%}
+          {%- endif -%}
+        {%- endform -%}
+      {%- else -%}
+        <a class="blko-soda-popup__cta" data-popup-cta href="{{ section.settings.cta_url | default: routes.all_products_collection_url }}">{{ section.settings.cta_label | escape }}</a>
+      {%- endif -%}
+      {%- if section.settings.fine_print != blank -%}<div class="blko-soda-popup__fine">{{ section.settings.fine_print }}</div>{%- endif -%}
+    </div>
+  </div>
+</blko-soda-popup>
+<script type="module" src="{{ 'blko-soda-promo.js' | asset_url }}"></script>
+{%- endif -%}
+
+{% stylesheet %}
+.blko-soda-popup{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:12px;background:rgba(15,59,46,.55);font-family:var(--font-body, "Outfit", sans-serif);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility 0s linear .25s}
+.blko-soda-popup.is-open{opacity:1;visibility:visible;transition-delay:0s}
+.blko-soda-popup__modal{box-sizing:border-box;display:grid;grid-template-columns:1fr 1fr;gap:16px;width:min(846px,100%);min-height:484px;max-height:100%;padding:16px;border-radius:16px;background:#fdf6ea;box-shadow:0 24px 80px rgba(15,59,46,.35);overflow:auto;transform:scale(.96);transition:transform .25s ease}
+.blko-soda-popup.is-open .blko-soda-popup__modal{transform:none}
+.blko-soda-popup__media{min-height:0;border-radius:12px;overflow:hidden;background:#cdf26b}
+.blko-soda-popup__media img{display:block;width:100%;height:100%;object-fit:cover}
+.blko-soda-popup__panel{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;padding:2.25rem 1.75rem 1.25rem;border-radius:12px;background:var(--popup-panel, #0f6b4f);color:#fdf6ea;text-align:center;overflow:hidden;isolation:isolate}
+.blko-soda-popup__confetti{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.7}
+.blko-soda-popup__close{position:absolute;top:10px;right:10px;display:grid;place-items:center;width:28px;height:28px;padding:0;border:0;border-radius:50%;background:transparent;color:#fdf6ea;cursor:pointer}
+.blko-soda-popup__close:hover{background:rgba(253,246,234,.18)}
+.blko-soda-popup__close:focus-visible,.blko-soda-popup__cta:focus-visible,.blko-soda-popup__form input:focus-visible,.blko-soda-popup__fine a:focus-visible{outline:3px solid #fdf6ea;outline-offset:2px}
+.blko-soda-popup__eyebrow{margin:0;font:700 18px/1.2 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-popup__h1,.blko-soda-popup__h2{margin:0;color:var(--popup-headline, #f5f06b);font-family:var(--font-heading, "Fraunces", Georgia, serif);font-weight:900;letter-spacing:-.01em}
+.blko-soda-popup__h1{font-size:64px;line-height:1}
+.blko-soda-popup__h2{font-size:40px;line-height:1.05}
+.blko-soda-popup__sub{margin:0;font-size:15px;line-height:1.35}
+.blko-soda-popup__divider{display:flex;align-items:center;gap:.75rem;width:80%;margin:.35rem 0;color:#fdf6ea;font:700 18px/1 var(--font-body, "Outfit", sans-serif)}
+.blko-soda-popup__divider::before,.blko-soda-popup__divider::after{content:"";flex:1;height:1px;background:rgba(253,246,234,.55)}
+.blko-soda-popup__cta{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:192px;height:52px;margin-top:.75rem;padding:0 1.75rem;border:0;border-radius:999px;background:var(--popup-cta-bg, #f5f06b);color:var(--popup-cta-text, #0f3b2e);font:600 18px/1 var(--font-body, "Outfit", sans-serif);text-decoration:none;cursor:pointer;transition:transform .2s ease,filter .2s ease}
+.blko-soda-popup__cta:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.blko-soda-popup__form-wrap{display:flex;flex-direction:column;align-items:center;width:100%}
+.blko-soda-popup__form{display:flex;gap:.4rem;width:100%;max-width:21rem;margin-top:.75rem}
+.blko-soda-popup__form input{flex:1;min-width:0;height:52px;padding:0 1.1rem;border:0;border-radius:999px;background:#fdf6ea;color:#0f3b2e;font:500 16px var(--font-body, "Outfit", sans-serif)}
+.blko-soda-popup__form .blko-soda-popup__cta{min-width:0;margin:0;padding:0 1.25rem;font-size:16px}
+.blko-soda-popup__ok{margin:.75rem 0 0;color:var(--popup-headline, #f5f06b);font:700 20px/1.25 var(--font-heading, "Fraunces", Georgia, serif)}
+.blko-soda-popup__err{margin:.4rem 0 0;font-size:13px}
+.blko-soda-popup__fine{margin:.75rem 0 0;font-size:11px;line-height:1.4;opacity:.9}
+.blko-soda-popup__fine p{margin:0}
+.blko-soda-popup__fine a{color:inherit;text-decoration:underline}
+@media(max-width:640px){.blko-soda-popup{align-items:flex-start;padding:12px}.blko-soda-popup__modal{grid-template-columns:1fr;grid-template-rows:180px auto;gap:12px;min-height:0;max-height:calc(100dvh - 24px);margin:auto 0}.blko-soda-popup__panel{padding:2rem 1.25rem 1.25rem}.blko-soda-popup__h1{font-size:48px}.blko-soda-popup__h2{font-size:34px}.blko-soda-popup__form{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.blko-soda-popup,.blko-soda-popup__modal,.blko-soda-popup__cta{transition:none}.blko-soda-popup__modal{transform:none}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda promo popup",
+  "settings": [
+    {"type": "checkbox", "id": "enabled", "label": "Enable popup", "default": true},
+    {"type": "header", "content": "Content"},
+    {"type": "image_picker", "id": "image", "label": "Image", "info": "Fills the left panel. Falls back to a Fizz party banner."},
+    {"type": "text", "id": "image_alt", "label": "Image alt text", "default": "Fizz cans at a party"},
+    {"type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Fizzy Friday came early"},
+    {"type": "text", "id": "headline", "label": "Headline", "default": "50% off"},
+    {"type": "text", "id": "sub", "label": "Subheading", "default": "Sitewide on orders of 2 or more cases"},
+    {"type": "text", "id": "headline_2", "label": "Second headline", "default": "Free shipping"},
+    {"type": "text", "id": "sub_2", "label": "Second subheading", "default": "on orders of $50+"},
+    {"type": "text", "id": "cta_label", "label": "Button label", "default": "Shop the sale"},
+    {"type": "url", "id": "cta_url", "label": "Button link"},
+    {"type": "richtext", "id": "fine_print", "label": "Fine print", "default": "<p>*Some exclusions may apply. Offer cannot be combined with other offers. We use your information in accordance with our <a href=\"/policies/privacy-policy\">Privacy Policy</a>.</p>"},
+    {"type": "header", "content": "Email capture"},
+    {"type": "checkbox", "id": "email_mode", "label": "Collect emails instead of a button link", "info": "Adds subscribers to your customer list with the newsletter tag.", "default": false},
+    {"type": "text", "id": "email_label", "label": "Email placeholder", "default": "Your email"},
+    {"type": "text", "id": "success_text", "label": "Success message", "default": "You are in! Check your inbox."},
+    {"type": "header", "content": "Colors"},
+    {"type": "color", "id": "panel_color", "label": "Panel", "default": "#0f6b4f"},
+    {"type": "color", "id": "headline_color", "label": "Headlines", "default": "#f5f06b"},
+    {"type": "color", "id": "cta_bg", "label": "Button background", "default": "#f5f06b"},
+    {"type": "color", "id": "cta_text", "label": "Button text", "default": "#0f3b2e"},
+    {"type": "header", "content": "Behavior"},
+    {"type": "select", "id": "trigger", "label": "Trigger", "default": "timer", "options": [
+      {"value": "timer", "label": "After a delay"},
+      {"value": "exit", "label": "Exit intent (desktop)"},
+      {"value": "scroll", "label": "After scrolling"}
+    ]},
+    {"type": "range", "id": "delay", "label": "Delay (seconds)", "min": 0, "max": 60, "step": 1, "default": 4},
+    {"type": "range", "id": "scroll_percent", "label": "Scroll depth (%)", "min": 10, "max": 90, "step": 5, "default": 40},
+    {"type": "range", "id": "frequency_days", "label": "Show again after (days)", "min": 0, "max": 30, "step": 1, "default": 3},
+    {"type": "text", "id": "templates", "label": "Only on these templates", "info": "Comma list, for example index,product,collection. Leave blank for every page."}
+  ]
+}
+{% endschema %}

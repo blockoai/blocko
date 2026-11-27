@@ -43,11 +43,16 @@
     "cookie": {
       "type": "blko-soda-cookie",
       "settings": {}
+    },
+    "promo-popup": {
+      "type": "blko-soda-promo-modal",
+      "settings": {}
     }
   },
   "order": [
     "footer",
     "cart-drawer",
-    "cookie"
+    "cookie",
+    "promo-popup"
   ]
 }

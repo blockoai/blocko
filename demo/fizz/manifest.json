@@ -847,5 +847,23 @@
     },
     "jsBytes": 0,
     "industry": "beverage"
+  },
+  {
+    "id": "soda-promo-modal",
+    "kind": "section",
+    "category": "promo-modal",
+    "name": "Soda promo popup",
+    "description": "Black Friday style popup modal with image, confetti panel, timed, exit-intent or scroll trigger and optional email capture.",
+    "file": "fizz/sections/promo-modal--soda-promo-modal.html",
+    "deps": [
+      "assets/blko-soda-promo.js"
+    ],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 5501,
+    "industry": "beverage"
   }
 ]
