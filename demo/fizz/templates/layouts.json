@@ -17,16 +17,26 @@
     "title": "Product (subscription)",
     "sectionIds": [
       "soda-product",
-      "soda-product-details"
+      "soda-product-details",
+      "soda-reviews"
     ]
   },
   {
     "page": "pdp-bundle",
     "title": "Product (bundle)",
     "sectionIds": [
-      "soda-product",
-      "soda-bundle",
-      "soda-product-details"
+      "soda-bundle-product",
+      "soda-product-details",
+      "soda-reviews"
+    ]
+  },
+  {
+    "page": "pdp-only-bundle",
+    "title": "Product (only bundle)",
+    "sectionIds": [
+      "soda-bundle-builder",
+      "soda-product-details",
+      "soda-reviews"
     ]
   },
   {
@@ -34,7 +44,8 @@
     "title": "Product",
     "sectionIds": [
       "soda-product",
-      "soda-product-details"
+      "soda-product-details",
+      "soda-reviews"
     ]
   },
   {

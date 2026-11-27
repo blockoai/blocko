@@ -488,6 +488,81 @@
     "industry": "beverage"
   },
   {
+    "id": "soda-bundle-product",
+    "kind": "section",
+    "category": "main-product",
+    "name": "Soda bundle product",
+    "description": "Bundle buy box: gallery with the included cans, What's inside chips, volume tiers with per-can price, Subscribe & Save and a build-your-own picker.",
+    "file": "fizz/sections/main-product--soda-bundle-product.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 49963,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-bundle-builder",
+    "kind": "section",
+    "category": "main-product",
+    "name": "Soda bundle builder",
+    "description": "Only-bundle buy box: pick flavors into a sticky Your pack panel with slots, progress and bundle price, Surprise me, and a mobile bottom bar.",
+    "file": "fizz/sections/main-product--soda-bundle-builder.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 49963,
+    "industry": "beverage"
+  },
+  {
+    "id": "soda-reviews",
+    "kind": "section",
+    "category": "reviews",
+    "name": "Soda reviews",
+    "description": "Judge.me reviews: serif heading, average and distribution (click a bar to filter), filter chips, photo toggle, flavor, search and sort, review cards with load more. Renders Judge.me app blocks or the legacy widget on Shopify, or review metaobjects with the filter bar.",
+    "file": "fizz/sections/reviews--soda-reviews.html",
+    "deps": [
+      "assets/blko-soda.js"
+    ],
+    "credits": [
+      {
+        "photo_id": "photo-1534353473418-4cfa6c56fd38",
+        "page_url": "https://unsplash.com/photos/photo-1534353473418-4cfa6c56fd38"
+      },
+      {
+        "photo_id": "photo-1551538827-9c037cb4f32a",
+        "page_url": "https://unsplash.com/photos/photo-1551538827-9c037cb4f32a"
+      },
+      {
+        "photo_id": "photo-1595981267035-7b04ca84a82d",
+        "page_url": "https://unsplash.com/photos/photo-1595981267035-7b04ca84a82d"
+      },
+      {
+        "photo_id": "photo-1600271886742-f049cd451bba",
+        "page_url": "https://unsplash.com/photos/photo-1600271886742-f049cd451bba"
+      },
+      {
+        "photo_id": "photo-1621263764928-df1444c5e859",
+        "page_url": "https://unsplash.com/photos/photo-1621263764928-df1444c5e859"
+      }
+    ],
+    "targets": {
+      "html": "ok",
+      "shopify": "ok"
+    },
+    "jsBytes": 49963,
+    "industry": "beverage"
+  },
+  {
     "id": "soda-locator",
     "kind": "section",
     "category": "store-locator",

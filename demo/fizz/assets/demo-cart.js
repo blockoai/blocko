@@ -32,7 +32,17 @@
     14: ['Lemon Lime Zing', '12-pack', 2900, can('lemon-lime-zing'), 0, '#eef6cf', 'lemon-lime-zing'],
     17: ['Mango Tango', '12-pack', 2900, can('mango-tango'), 3400, '#fff0cc', 'mango-tango'],
     18: ['Strawberry Lime', '12-pack', 2900, can('strawberry-lime'), 0, '#fde2ea', 'strawberry-lime'],
-    19: ['Mint Mojito', '12-pack', 2900, can('mint-mojito'), 0, '#d6f1ea', 'mint-mojito']
+    19: ['Mint Mojito', '12-pack', 2900, can('mint-mojito'), 0, '#d6f1ea', 'mint-mojito'],
+    300: ['Fan Favorites Variety Pack', '4 flavors \u00b7 12 cans', 3600, url('catalog/variety-fan-favorites.svg'), 0, '#fff0cc', 'fan-favorites'],
+    301: ['Build Your Own 12-Pack', '4 flavors \u00b7 12 cans', 3600, url('catalog/variety-fan-favorites.svg'), 0, '#fff0cc', 'build-your-own']
+  };
+  /* Where a line links to: the variety pack has its own page, flavors use the flavor switcher on pdp.html. */
+  var pdpOf = function (c) { return c[6] === 'fan-favorites' ? url('../templates/pdp-bundle.html') : c[6] === 'build-your-own' ? url('../templates/pdp-only-bundle.html') : url('../templates/pdp.html') + '?flavor=' + c[6]; };
+  /* Visible line properties (no leading underscore), the same rule the theme drawer uses. */
+  var metaHtml = function (l, cls) {
+    var out = '';
+    Object.keys(l.props || {}).forEach(function (k) { if (k.charAt(0) !== '_' && l.props[k]) out += '<p' + (cls ? ' class="' + cls + '"' : '') + '>' + esc(k) + ': ' + esc(l.props[k]) + '</p>'; });
+    return out;
   };
   var UPSELL = [1, 11, 12, 13, 16, 15, 20, 21];
   var PLANS = { 101: 'Every 2 weeks', 102: 'Every 4 weeks', 103: 'Every 8 weeks' };
@@ -60,7 +70,7 @@
     var line = unit * l.quantity;
     var disc = 0, title = '';
     if (l.props && l.props._bundle) { disc = Math.round(line * 0.1); title = 'Variety pack 10%'; }
-    else if (!l.plan && !(l.props && Object.keys(l.props).length)) {
+    else if (!l.plan && !(l.props && (l.props._bundle || l.props._aov_offerId))) {
       if (l.quantity >= 3) { disc = Math.round(line * 0.15); title = 'Volume discount 15%'; }
       else if (l.quantity === 2) { disc = Math.round(line * 0.1); title = 'Volume discount 10%'; }
     }
@@ -116,10 +126,10 @@
       h += '<div class="blko-soda-drawer__empty"><p>Your cart is empty. Let\'s fix that.</p><a class="blko-soda-drawer__btn" href="' + url('../templates/collection.html') + '">Shop flavors</a></div>';
     }
     lines.forEach(function (l) {
-      var p = price(l), k = esc(keyOf(l)), pdp = url('../templates/pdp.html') + '?flavor=' + p.c[6];
+      var p = price(l), k = esc(keyOf(l)), pdp = pdpOf(p.c);
       h += '<div class="blko-soda-line"><a class="blko-soda-line__img" href="' + pdp + '"><img src="' + esc(p.c[3]) + '" alt="' + esc(p.c[0]) + '" width="72" height="120" loading="lazy"></a><div class="blko-soda-line__body">' +
         '<a class="blko-soda-line__title" href="' + pdp + '">' + esc(p.c[0]) + '</a>' +
-        '<p class="blko-soda-line__meta">' + esc(p.c[1]) + '</p>' +
+        '<p class="blko-soda-line__meta">' + esc(p.c[1]) + '</p>' + metaHtml(l, 'blko-soda-line__meta') +
         (l.plan ? '<p class="blko-soda-line__meta">Subscription: ' + esc(PLANS[l.plan] || 'Subscribe & Save') + '</p>' : '') +
         '<div class="blko-soda-line__qty"><button type="button" data-qty="' + k + '" data-to="' + (l.quantity - 1) + '" aria-label="Decrease quantity">&minus;</button><span>' + l.quantity + '</span><button type="button" data-qty="' + k + '" data-to="' + (l.quantity + 1) + '" aria-label="Increase quantity">+</button></div></div>' +
         '<div class="blko-soda-line__side"><button type="button" class="blko-soda-line__remove" data-qty="' + k + '" data-to="0" aria-label="Remove ' + esc(p.c[0]) + '">' + TRASH + '</button>' +
@@ -146,9 +156,9 @@
     h += '<form class="blko-soda-cartpage__form" onsubmit="return false"><div class="blko-soda-cartpage__grid"><div class="blko-soda-cartpage__main" data-cp-count="' + n + '">' +
       '<div class="blko-soda-cartpage__cols" aria-hidden="true"><span>Product</span><span></span><span>Quantity</span><span>Total</span></div><ul class="blko-soda-cartpage__items">';
     lines.forEach(function (l) {
-      var p = price(l), k = esc(keyOf(l)), pdp = url('../templates/pdp.html') + '?flavor=' + p.c[6];
+      var p = price(l), k = esc(keyOf(l)), pdp = pdpOf(p.c);
       h += '<li><a class="blko-soda-cartpage__tile" href="' + pdp + '" style="--tile-bg:' + p.c[5] + '"><img src="' + esc(p.c[3]) + '" alt="' + esc(p.c[0]) + '" width="96" height="96" loading="lazy"></a>' +
-        '<div class="blko-soda-cartpage__info"><a class="blko-soda-cartpage__title" href="' + pdp + '">' + esc(p.c[0]) + '</a><p>' + esc(p.c[1]) + '</p>' +
+        '<div class="blko-soda-cartpage__info"><a class="blko-soda-cartpage__title" href="' + pdp + '">' + esc(p.c[0]) + '</a><p>' + esc(p.c[1]) + '</p>' + metaHtml(l) +
         (l.plan ? '<p>' + esc(PLANS[l.plan] || 'Subscribe & Save') + '</p>' : '') +
         (p.title ? '<p class="blko-soda-cartpage__disc">' + esc(p.title) + '</p>' : '') +
         '<button type="button" class="blko-soda-cartpage__remove" data-cp-key="' + k + '" data-cp-to="0">Remove</button></div>' +

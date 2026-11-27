@@ -1,0 +1,23 @@
+{%- comment -%}
+  Judge.me star badge. Reads the standard Shopify review metafields Judge.me writes: reviews.rating and reviews.rating_count.
+  Renders nothing when the product has no rating. Params: product, link (optional anchor, default #pdp-reviews).
+{%- endcomment -%}
+{%- liquid
+  assign p = product
+  assign rating = p.metafields.reviews.rating.value.rating
+  assign rating_count = p.metafields.reviews.rating_count.value
+-%}
+{%- if rating != blank -%}
+  <a class="blko-soda-stars" href="{{ link | default: '#pdp-reviews' }}" aria-label="{{ rating | times: 1.0 | round: 1 }} / 5{% if rating_count != blank %} ({{ rating_count }}){% endif %}">
+    <span class="blko-soda-stars__row" aria-hidden="true" style="--rating:{{ rating }}"></span>
+    <span class="blko-soda-stars__num">{{ rating | times: 1.0 | round: 1 }}</span>
+    {%- if rating_count != blank -%}<span class="blko-soda-stars__count">({{ rating_count }})</span>{%- endif -%}
+  </a>
+{%- endif -%}
+
+{% stylesheet %}
+.blko-soda-stars{display:inline-flex;align-items:center;gap:.45rem;color:inherit;font:700 14px/1 var(--font-body,"Outfit",sans-serif);text-decoration:none}
+.blko-soda-stars:hover .blko-soda-stars__count{text-decoration:underline}
+.blko-soda-stars__row{display:inline-block;width:80px;height:16px;background:linear-gradient(90deg,var(--color-text,#0f3b2e) calc(var(--rating,0) * 20%),rgba(15,59,46,.18) 0);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath transform='translate(0 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(20 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(40 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(60 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(80 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") center/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath transform='translate(0 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(20 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(40 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(60 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(80 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.blko-soda-stars__count{font-weight:500}
+{% endstylesheet %}

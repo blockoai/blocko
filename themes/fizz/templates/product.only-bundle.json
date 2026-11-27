@@ -1,0 +1,101 @@
+{
+  "sections": {
+    "bundle-product": {
+      "type": "blko-soda-bundle-product",
+      "settings": {
+        "only_bundle": true,
+        "bundle_mode": false,
+        "cans_each": 3,
+        "pack_size": 4,
+        "pack_discount": 10,
+        "pack_collection": "drinks",
+        "tile_bg": "#fff0cc"
+      }
+    },
+    "details": {
+      "type": "blko-soda-product-details",
+      "settings": {},
+      "blocks": {
+        "benefit-1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "leaf",
+            "title": "Prebiotic fiber",
+            "text": "9g of plant fiber in every can"
+          }
+        },
+        "benefit-2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "drop",
+            "title": "2g sugar",
+            "text": "Fruit sweetened, no sugar bomb"
+          }
+        },
+        "benefit-3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "smile",
+            "title": "Gut friendly",
+            "text": "Feeds the good bacteria"
+          }
+        },
+        "benefit-4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "star",
+            "title": "Real fruit",
+            "text": "Juice, never fake flavor"
+          }
+        },
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Does it need to stay cold?",
+            "answer": "<p>Nope. Cans are shelf stable, but they taste best chilled.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I pause my subscription?",
+            "answer": "<p>Yes. Skip, pause or cancel any time from your account.</p>"
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "question": "How much fiber is in a can?",
+            "answer": "<p>Every 12 fl oz can has 9g of plant fiber, 2g sugar and 35 calories.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit-1",
+        "benefit-2",
+        "benefit-3",
+        "benefit-4",
+        "faq-1",
+        "faq-2",
+        "faq-3"
+      ]
+    },
+    "reviews": {
+      "type": "blko-soda-reviews",
+      "settings": {}
+    },
+    "pdp-recently-viewed": {
+      "type": "blko-pdp-recently-viewed",
+      "settings": {
+        "eyebrow": "Still thirsty?",
+        "heading": "Back where you left off"
+      }
+    }
+  },
+  "order": [
+    "bundle-product",
+    "details",
+    "reviews",
+    "pdp-recently-viewed"
+  ]
+}

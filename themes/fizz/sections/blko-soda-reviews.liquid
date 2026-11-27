@@ -1,0 +1,245 @@
+{%- comment -%}
+  Reviews, connected to Judge.me. Order of what renders:
+  1. Judge.me app blocks dropped into this section (the Judge.me Review widget app block). Judge.me brings its own filters.
+  2. Legacy Judge.me data: product.metafields.judgeme.widget (widget HTML). Judge.me's own filters apply.
+  3. Review metaobjects picked in the "Reviews" setting (definition type "review"): rendered as cards with our filter bar.
+  4. Nothing on a live store (no fake reviews). The Theme Editor shows a note instead.
+  The summary reads the standard review metafields Judge.me writes: reviews.rating and reviews.rating_count.
+  Metaobject fields: rating (integer 1-5), title, body, author, date, flavor (text), photo (file), helpful (integer), verified (boolean).
+{%- endcomment -%}
+{%- liquid
+  assign rating = product.metafields.reviews.rating.value.rating
+  assign rating_count = product.metafields.reviews.rating_count.value
+  assign widget = product.metafields.judgeme.widget
+  assign app_blocks = section.blocks | where: 'type', '@app'
+  assign own = section.settings.reviews
+  assign use_own = false
+  if app_blocks.size == 0 and widget == blank and own.size > 0
+    assign use_own = true
+  endif
+  assign avg = rating
+  assign total = rating_count
+  assign n1 = 0
+  assign n2 = 0
+  assign n3 = 0
+  assign n4 = 0
+  assign n5 = 0
+  assign flavors = '|'
+  if use_own
+    assign sum = 0
+    for r in own
+      assign v = r.rating.value.rating | default: r.rating.value | round
+      assign sum = sum | plus: v
+      case v
+        when 5
+          assign n5 = n5 | plus: 1
+        when 4
+          assign n4 = n4 | plus: 1
+        when 3
+          assign n3 = n3 | plus: 1
+        when 2
+          assign n2 = n2 | plus: 1
+        when 1
+          assign n1 = n1 | plus: 1
+      endcase
+      assign f = r.flavor.value | strip
+      if f != blank
+        assign token = '|' | append: f | append: '|'
+        unless flavors contains token
+          assign flavors = flavors | append: f | append: '|'
+        endunless
+      endif
+    endfor
+    assign total = own.size
+    assign avg = sum | times: 1.0 | divided_by: total
+  endif
+-%}
+{%- if app_blocks.size > 0 or widget != blank or use_own or request.design_mode -%}
+<section class="blko-soda-reviews" id="pdp-reviews">
+  <blko-soda-reviews data-step="{{ section.settings.page_size }}" data-total="{{ total | default: 0 }}" data-count-text="{{ section.settings.count_text | escape }}">
+    <h2 class="blko-soda-reviews__title">{{ section.settings.heading | escape }}</h2>
+    {%- if avg != blank -%}
+      <div class="blko-soda-reviews__summary">
+        <div class="blko-soda-reviews__avg">
+          <span class="blko-soda-reviews__num">{{ avg | times: 1.0 | round: 1 }}</span>
+          <span class="blko-soda-rstars blko-soda-rstars--lg" style="--rating:{{ avg | times: 1.0 | round: 1 }}" role="img" aria-label="{{ avg | times: 1.0 | round: 1 }} / 5"></span>
+          {%- if total != blank -%}<p class="blko-soda-reviews__based">{{ section.settings.based_on | replace: '{count}', total | escape }}</p>{%- endif -%}
+        </div>
+        {%- if use_own -%}
+          <div class="blko-soda-reviews__bars" aria-label="{{ section.settings.heading | escape }}">
+            {%- for i in (1..5) -%}
+              {%- assign s = 6 | minus: i -%}
+              {%- liquid
+                case s
+                when 5
+                  assign c = n5
+                when 4
+                  assign c = n4
+                when 3
+                  assign c = n3
+                when 2
+                  assign c = n2
+                else
+                  assign c = n1
+              endcase
+              -%}
+              <button type="button" class="blko-soda-reviews__bar" data-star="{{ s }}" aria-pressed="false" aria-label="{{ s }} / 5"><span>{{ s }} {% if s == 1 %}{{ section.settings.star_label | escape }}{% else %}{{ section.settings.stars_label | escape }}{% endif %}</span><i style="--pct:{{ c | times: 100.0 | divided_by: total | round }}%"></i><b>{{ c }}</b></button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+        {%- if widget != blank and app_blocks.size == 0 -%}
+          <a class="blko-soda-reviews__write" href="#judgeme_product_reviews">{{ section.settings.write_label | escape }}</a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+    {%- if app_blocks.size > 0 -%}
+      <div class="blko-soda-reviews__app">
+        {%- for block in app_blocks -%}{% render block %}{%- endfor -%}
+      </div>
+    {%- elsif widget != blank -%}
+      <div class="blko-soda-reviews__widget" id="judgeme_product_reviews_wrap">{{ widget }}</div>
+    {%- elsif use_own -%}
+      <div class="blko-soda-reviews__filters">
+        <div class="blko-soda-reviews__chips">
+          <button type="button" class="blko-soda-reviews__chip is-active" data-star="0" aria-pressed="true">{{ section.settings.all_label | escape }}</button>
+          {%- for i in (1..5) -%}
+            {%- assign s = 6 | minus: i -%}
+            <button type="button" class="blko-soda-reviews__chip" data-star="{{ s }}" aria-pressed="false" aria-label="{{ s }} / 5">{{ s }}★</button>
+          {%- endfor -%}
+          <button type="button" class="blko-soda-reviews__chip" data-photo-only aria-pressed="false">{{ section.settings.photos_label | escape }}</button>
+        </div>
+        <div class="blko-soda-reviews__controls">
+          <input class="blko-soda-reviews__field" type="search" data-q placeholder="{{ section.settings.search_label | escape }}" aria-label="{{ section.settings.search_label | escape }}">
+          <select class="blko-soda-reviews__field" data-flavor aria-label="{{ section.settings.flavors_label | escape }}">
+            <option value="">{{ section.settings.flavors_label | escape }}</option>
+            {%- assign flavor_names = flavors | split: '|' | sort_natural -%}
+            {%- for f in flavor_names -%}{%- if f != blank -%}<option value="{{ f | handleize }}">{{ f | escape }}</option>{%- endif -%}{%- endfor -%}
+          </select>
+          <select class="blko-soda-reviews__field" data-sort aria-label="{{ section.settings.sort_label | escape }}">
+            <option value="recent">{{ section.settings.sort_recent | escape }}</option>
+            <option value="highest">{{ section.settings.sort_highest | escape }}</option>
+            <option value="lowest">{{ section.settings.sort_lowest | escape }}</option>
+            <option value="helpful">{{ section.settings.sort_helpful | escape }}</option>
+          </select>
+        </div>
+      </div>
+      <p class="blko-soda-reviews__status"><span data-count aria-live="polite"></span><button type="button" class="blko-soda-reviews__clear" data-clear hidden>{{ section.settings.clear_label | escape }}</button></p>
+      <div class="blko-soda-reviews__grid" data-grid>
+        {%- for r in own -%}
+          {%- assign v = r.rating.value.rating | default: r.rating.value | round -%}
+          {%- assign f = r.flavor.value | strip -%}
+          <article class="blko-soda-review" data-review data-rating="{{ v }}" data-flavor="{{ f | handleize }}" data-photo="{% if r.photo.value != blank %}1{% else %}0{% endif %}" data-date="{{ r.date.value | date: '%Y-%m-%d' }}" data-helpful="{{ r.helpful.value | default: 0 }}"{% if forloop.index > section.settings.page_size %} hidden{% endif %}>
+            <span class="blko-soda-rstars" style="--rating:{{ v }}" role="img" aria-label="{{ v }} / 5"></span>
+            <h3>{{ r.title.value | escape }}</h3>
+            <p>{{ r.body.value | escape }}</p>
+            {%- if r.photo.value != blank -%}{{ r.photo.value | image_url: width: 600 | image_tag: class: 'blko-soda-review__photo', loading: 'lazy', alt: r.title.value }}{%- endif -%}
+            <div class="blko-soda-review__foot">
+              <span class="blko-soda-review__who"><b>{{ r.author.value | escape }}</b>{%- if r.verified.value != false -%}<span class="blko-soda-review__badge">{{ section.settings.verified_label | escape }}</span>{%- endif -%}</span>
+              <time datetime="{{ r.date.value | date: '%Y-%m-%d' }}">{{ r.date.value | date: '%b %-d, %Y' }}</time>
+            </div>
+            {%- if f != blank -%}<span class="blko-soda-review__flavor">{{ f | escape }}</span>{%- endif -%}
+          </article>
+        {%- endfor -%}
+      </div>
+      <p class="blko-soda-reviews__empty" data-empty hidden>{{ section.settings.empty_text | escape }} <button type="button" class="blko-soda-reviews__clear" data-clear>{{ section.settings.clear_label | escape }}</button></p>
+      <div class="blko-soda-reviews__more-wrap"><button type="button" class="blko-soda-reviews__more" data-more>{{ section.settings.load_more_label | escape }}</button></div>
+    {%- elsif request.design_mode -%}
+      <p class="blko-soda-reviews__note">{{ section.settings.editor_note | escape }}</p>
+    {%- endif -%}
+  </blko-soda-reviews>
+</section>
+{%- endif -%}
+<script type="module" src="{{ 'blko-soda.js' | asset_url }}"></script>
+
+{% stylesheet %}
+.blko-soda-reviews{max-width:75rem;margin:0 auto;padding:clamp(2.5rem,6vw,5rem) 1.25rem;font-family:var(--font-body,"Outfit",sans-serif);color:var(--color-text,#0f3b2e)}
+.blko-soda-reviews[hidden],.blko-soda-reviews [hidden]{display:none}
+.blko-soda-reviews__title{margin:0 0 1.5rem;font:900 clamp(3rem,8vw,5.5rem)/1 var(--font-heading,"Fraunces",Georgia,serif);letter-spacing:-.02em}
+.blko-soda-reviews__summary{display:grid;grid-template-columns:auto minmax(0,26rem) auto;align-items:center;justify-content:space-between;gap:1.5rem 3rem;padding:1.5rem 0 2rem;border-top:1.5px solid var(--color-text,#0f3b2e)}
+.blko-soda-reviews__avg{display:grid;gap:.35rem;justify-items:start}
+.blko-soda-reviews__num{font:900 clamp(3.5rem,7vw,5rem)/1 var(--font-heading,"Fraunces",Georgia,serif)}
+.blko-soda-reviews__based{margin:0;font-size:.95rem;font-weight:500}
+.blko-soda-rstars{--s:16px;display:inline-block;width:calc(var(--s) * 5);height:var(--s);background:linear-gradient(90deg,var(--color-text,#0f3b2e) calc(var(--rating,0) * 20%),rgba(15,59,46,.18) 0);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath transform='translate(0 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(20 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(40 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(60 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(80 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") center/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath transform='translate(0 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(20 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(40 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(60 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3Cpath transform='translate(80 0)' d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.blko-soda-rstars--lg{--s:24px}
+.blko-soda-reviews__bars{display:grid;gap:.45rem;margin:0}
+.blko-soda-reviews__bar{display:grid;grid-template-columns:4.2rem minmax(0,1fr) 2.2rem;align-items:center;gap:.7rem;margin:0;font-size:.85rem;font-weight:700}
+.blko-soda-reviews__bar i{display:block;height:10px;border-radius:999px;background:linear-gradient(90deg,var(--color-text,#0f3b2e) var(--pct,0%),rgba(15,59,46,.14) 0);font-style:normal}
+.blko-soda-reviews__bar b{font-weight:500;text-align:right}
+.blko-soda-reviews__write,.blko-soda-reviews__more{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 2rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:999px;background:transparent;color:inherit;font:700 16px/1 var(--font-body,"Outfit",sans-serif);text-decoration:none;cursor:pointer;transition:box-shadow .2s ease,background-color .25s ease}
+.blko-soda-reviews__write:hover,.blko-soda-reviews__more:hover{box-shadow:4px 4px 0 0 var(--flv-accent,#ffd0d6)}
+.blko-soda-reviews__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.blko-soda-review{display:flex;flex-direction:column;gap:.6rem;padding:1.4rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:20px;background:#fff}
+.blko-soda-review[hidden]{display:none}
+.blko-soda-review h3{margin:0;font:900 1.25rem/1.15 var(--font-heading,"Fraunces",Georgia,serif);text-transform:none;letter-spacing:0}
+.blko-soda-review p{margin:0;font-size:.98rem;line-height:1.5}
+.blko-soda-review__foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem .8rem;margin-top:auto;padding-top:.4rem;font-size:.85rem}
+.blko-soda-review__who{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .5rem}
+.blko-soda-review__badge{padding:.12rem .55rem;border-radius:999px;background:var(--color-announcement-bg,#cdf26b);font-size:.72rem;font-weight:800}
+.blko-soda-review time{color:var(--color-text-muted,#4a6a5c)}
+.blko-soda-review__flavor{display:inline-flex;align-items:center;gap:.5rem;align-self:flex-start;padding:.2rem .7rem .2rem .25rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:999px;font-size:.8rem;font-weight:700}
+.blko-soda-review__flavor span{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--tile-bg,#fde1e3);overflow:hidden}
+.blko-soda-review__flavor img{width:auto;height:22px}
+.blko-soda-reviews__more-wrap{display:flex;justify-content:center;margin-top:2rem}
+.blko-soda-reviews__widget,.blko-soda-reviews__app{margin-top:1rem}
+.blko-soda-reviews__widget :where(.jdgm-rev-widg,.jdgm-widget){font-family:inherit;color:inherit}
+.blko-soda-reviews__widget .jdgm-write-rev-link,.blko-soda-reviews__widget .jdgm-btn--solid{border:1.5px solid var(--color-text,#0f3b2e);border-radius:999px;background:transparent;color:inherit}
+.blko-soda-reviews__note{margin:1rem 0 0;padding:.8rem 1rem;border:2px dashed var(--color-text,#0f3b2e);border-radius:1rem;background:#fff;font-size:.9rem;font-weight:700}
+.blko-soda-reviews__bar{width:100%;padding:.15rem 0;border:0;background:none;color:inherit;font:700 .85rem/1.2 var(--font-body,"Outfit",sans-serif);text-align:left;cursor:pointer}
+.blko-soda-reviews__bar:hover i,.blko-soda-reviews__bar.is-active i{box-shadow:0 0 0 2px var(--flv-accent,#ffd0d6)}
+.blko-soda-reviews__bar.is-active{text-decoration:underline}
+.blko-soda-reviews__filters{display:grid;gap:.8rem;margin:0 0 1.2rem}
+.blko-soda-reviews__chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.blko-soda-reviews__chip{height:40px;padding:0 1.1rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:999px;background:transparent;color:inherit;font:700 14px/1 var(--font-body,"Outfit",sans-serif);cursor:pointer;transition:box-shadow .2s ease,background-color .25s ease}
+.blko-soda-reviews__chip:hover{box-shadow:4px 4px 0 0 var(--flv-accent,#ffd0d6)}
+.blko-soda-reviews__chip.is-active{background:var(--color-text,#0f3b2e);color:var(--color-bg-alt,#f3e8cd)}
+.blko-soda-reviews__controls{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:.6rem}
+.blko-soda-reviews__field{height:44px;padding:0 1rem;border:1.5px solid var(--color-text,#0f3b2e);border-radius:999px;background:#fff;color:inherit;font:500 14px/1 var(--font-body,"Outfit",sans-serif)}
+.blko-soda-reviews__field:focus-visible,.blko-soda-reviews__chip:focus-visible,.blko-soda-reviews__bar:focus-visible{outline:3px solid var(--color-accent,#ff6b8b);outline-offset:2px}
+.blko-soda-reviews__status{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem 1rem;margin:0 0 1rem;font-size:.9rem;font-weight:700}
+.blko-soda-reviews__clear{padding:0;border:0;background:none;color:inherit;font:700 .9rem/1 var(--font-body,"Outfit",sans-serif);text-decoration:underline;cursor:pointer}
+.blko-soda-reviews__empty{margin:0;padding:2rem 1rem;border:1.5px dashed var(--color-text,#0f3b2e);border-radius:20px;text-align:center;font-weight:700}
+.blko-soda-review__photo{display:block;width:100%;height:9rem;border-radius:14px;object-fit:cover}
+@media(max-width:600px){.blko-soda-reviews__controls{grid-template-columns:1fr}}
+@media(max-width:900px){.blko-soda-reviews__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.blko-soda-reviews__summary{grid-template-columns:1fr}}
+@media(max-width:600px){.blko-soda-reviews__grid{grid-template-columns:1fr}.blko-soda-reviews__write{width:100%}}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Soda reviews",
+  "tag": "div",
+  "enabled_on": {"templates": ["product"]},
+  "settings": [
+    {"type": "paragraph", "content": "Reviews come from Judge.me. Add the Judge.me Review widget app block below, or leave it empty to show the legacy Judge.me widget. Judge.me brings its own filters. Without Judge.me you can pick review metaobjects here and the filter bar works on those. Nothing renders on the live store when there is nothing to show."},
+    {"type": "metaobject_list", "id": "reviews", "label": "Reviews (metaobjects)", "metaobject_type": "review", "info": "Used only when Judge.me is not rendering. Fields: rating, title, body, author, date, flavor, photo, helpful, verified."},
+    {"type": "range", "id": "page_size", "label": "Reviews per page", "min": 3, "max": 12, "step": 3, "default": 6},
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Reviews"},
+    {"type": "text", "id": "based_on", "label": "Based on text", "default": "Based on {count} reviews", "info": "Use {count}."},
+    {"type": "text", "id": "write_label", "label": "Write a review label", "default": "Write a review"},
+    {"type": "text", "id": "editor_note", "label": "Editor note", "default": "Add the Judge.me Review widget app block"},
+    {"type": "header", "content": "Filter labels"},
+    {"type": "text", "id": "all_label", "label": "All", "default": "All"},
+    {"type": "text", "id": "star_label", "label": "Star (singular)", "default": "star"},
+    {"type": "text", "id": "stars_label", "label": "Stars (plural)", "default": "stars"},
+    {"type": "text", "id": "photos_label", "label": "With photos", "default": "With photos"},
+    {"type": "text", "id": "search_label", "label": "Search placeholder", "default": "Search reviews"},
+    {"type": "text", "id": "flavors_label", "label": "All flavors", "default": "All flavors"},
+    {"type": "text", "id": "sort_label", "label": "Sort label", "default": "Sort reviews"},
+    {"type": "text", "id": "sort_recent", "label": "Sort: recent", "default": "Most recent"},
+    {"type": "text", "id": "sort_highest", "label": "Sort: highest", "default": "Highest rating"},
+    {"type": "text", "id": "sort_lowest", "label": "Sort: lowest", "default": "Lowest rating"},
+    {"type": "text", "id": "sort_helpful", "label": "Sort: helpful", "default": "Most helpful"},
+    {"type": "text", "id": "count_text", "label": "Count text", "default": "Showing {shown} of {total}", "info": "Use {shown} and {total}."},
+    {"type": "text", "id": "clear_label", "label": "Clear filters", "default": "Clear filters"},
+    {"type": "text", "id": "empty_text", "label": "Empty state", "default": "No reviews match these filters."},
+    {"type": "text", "id": "load_more_label", "label": "Load more", "default": "Load more"},
+    {"type": "text", "id": "verified_label", "label": "Verified badge", "default": "Verified buyer"}
+  ],
+  "blocks": [
+    {"type": "@app"}
+  ],
+  "presets": [
+    {"name": "Soda reviews"}
+  ]
+}
+{% endschema %}

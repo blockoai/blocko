@@ -106,131 +106,9 @@
         "faq-3"
       ]
     },
-    "pdp-reviews": {
-      "type": "blko-pdp-reviews",
-      "settings": {
-        "eyebrow": "What fizz fans say",
-        "average": "4.5",
-        "summary": "28,412 reviews \u00b7 88% would buy again",
-        "list_heading": "Recent reviews"
-      },
-      "blocks": {
-        "block-1": {
-          "type": "bar",
-          "settings": {
-            "percent": 71,
-            "label": "5 stars"
-          }
-        },
-        "block-2": {
-          "type": "bar",
-          "settings": {
-            "label": "4 stars",
-            "percent": 17
-          }
-        },
-        "block-3": {
-          "type": "bar",
-          "settings": {
-            "label": "3 stars",
-            "percent": 7
-          }
-        },
-        "block-4": {
-          "type": "bar",
-          "settings": {
-            "label": "2 stars",
-            "percent": 3
-          }
-        },
-        "block-5": {
-          "type": "bar",
-          "settings": {
-            "label": "1 star",
-            "percent": 2
-          }
-        },
-        "block-6": {
-          "type": "filter",
-          "settings": {
-            "label": "All"
-          }
-        },
-        "block-7": {
-          "type": "filter",
-          "settings": {
-            "label": "Flavor",
-            "key": "flavor"
-          }
-        },
-        "block-8": {
-          "type": "filter",
-          "settings": {
-            "label": "Fizz",
-            "key": "fizz"
-          }
-        },
-        "block-9": {
-          "type": "filter",
-          "settings": {
-            "label": "With photos",
-            "key": "photos"
-          }
-        },
-        "block-10": {
-          "type": "filter",
-          "settings": {
-            "label": "Value",
-            "key": "value"
-          }
-        },
-        "block-11": {
-          "type": "review",
-          "settings": {
-            "title": "Tastes like summer in a can",
-            "text": "The cherry is bright without being sweet. A week in, there is always a can chilling in my fridge.",
-            "footer": "Aaron K. \u00b7 1 week ago",
-            "tags": "flavor photos",
-            "caption": "Cherry Fizz \u00b7 photo review"
-          }
-        },
-        "block-12": {
-          "type": "review",
-          "settings": {
-            "title": "So much fizz",
-            "text": "Crisp, lively bubbles from the first pop. I stopped buying my old afternoon soda entirely.",
-            "footer": "Nate B. \u00b7 3 weeks ago",
-            "tags": "fizz",
-            "caption": ""
-          }
-        },
-        "block-13": {
-          "type": "review",
-          "settings": {
-            "title": "A bit tart for me",
-            "text": "Great can, but the lemon lime is a lot on an empty stomach. I switched to Peach Rush for my afternoon slump.",
-            "footer": "Omar S. \u00b7 2 months ago",
-            "tags": "value",
-            "caption": "",
-            "rating": 4
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4",
-        "block-5",
-        "block-6",
-        "block-7",
-        "block-8",
-        "block-9",
-        "block-10",
-        "block-11",
-        "block-12",
-        "block-13"
-      ]
+    "reviews": {
+      "type": "blko-soda-reviews",
+      "settings": {}
     },
     "pdp-recently-viewed": {
       "type": "blko-pdp-recently-viewed",
@@ -243,7 +121,7 @@
   "order": [
     "product",
     "details",
-    "pdp-reviews",
+    "reviews",
     "pdp-recently-viewed"
   ]
 }

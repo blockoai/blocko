@@ -254,6 +254,7 @@
       var cans = Number(root.dataset.cans) || 1;
       var size = Number(root.dataset.pack) || 3;
       var packOff = Number(root.dataset.discount) || 0;
+      var subPct = Number(root.dataset.subPct) || 0;
       var packFixed = 0;
       var saveWord = root.dataset.saveLabel || 'Save';
       var buyWord = root.dataset.buyLabel || 'Buy';
@@ -323,8 +324,16 @@
         volume = null;
         note('tiers');
       }
+      /* Subscribe & Save on the bundle: the selling plan discount replaces the tier discount when it is larger. */
+      var subPlan = root.querySelector('[data-sub-plan]');
+      var subFreq = root.querySelector('[data-sub-freq]');
+      var isSub = function () {
+        var c = root.querySelector('[data-sub-type]:checked');
+        return !!(c && c.value === 'sub' && subPlan);
+      };
       var tierTotal = function (r) {
         var q = Number(r.value) || 1;
+        if (isSub()) return Math.round(unit * q * (100 - Math.max(Number(r.dataset.off) || 0, subPct)) / 100);
         return Math.max(0, Math.round(unit * q * (100 - (Number(r.dataset.off) || 0)) / 100) - (Number(r.dataset.fixed) || 0));
       };
       var syncTiers = function () {
@@ -336,6 +345,7 @@
           if (r.checked) chosen = r;
         });
         if (!chosen) return;
+        if (subFreq) subFreq.hidden = !isSub();
         if (tierQty) tierQty.value = Number(chosen.value) || 1;
         if (tierAdd) tierAdd.textContent = tierAdd.dataset.label + ' · ' + money(tierTotal(chosen));
       };
@@ -348,8 +358,13 @@
           var chosen = tf.querySelector('[data-tier]:checked');
           var item = { id: Number(tf.querySelector('[name=id]').value), quantity: chosen ? Number(chosen.value) || 1 : 1 };
           var code = null;
-          if (volume) {
-            item.properties = { _aov_bundles: JSON.stringify({ offerId: volume.id }) };
+          Array.prototype.forEach.call(tf.querySelectorAll('[name^="properties["]'), function (i) {
+            if (i.value) { item.properties = item.properties || {}; item.properties[i.name.slice(11, -1)] = i.value; }
+          });
+          if (isSub()) item.selling_plan = Number(subPlan.value);
+          else if (volume) {
+            item.properties = item.properties || {};
+            item.properties._aov_bundles = JSON.stringify({ offerId: volume.id });
             if (chosen && (Number(chosen.dataset.off) > 0 || Number(chosen.dataset.fixed) > 0)) code = volume.code || null;
           }
           add([item], code, tierAdd);
@@ -376,6 +391,7 @@
       var items = root.querySelector('[data-bundle-items]');
       var pf = root.querySelector('[data-pack-form]');
       var counts = new Map();
+      var slots = root.querySelectorAll('[data-slot]');
       var picked = function () {
         var list = [];
         picks.forEach(function (p) { var c = counts.get(p) || 0; if (c) list.push({ id: Number(p.dataset.id), quantity: c }); });
@@ -407,11 +423,42 @@
         var list = picked();
         if (items) items.value = JSON.stringify(list);
         if (addPack) addPack.disabled = !full;
+        /* Only bundle mode: fill the pack slots in pick order; a filled slot removes its pick when clicked. */
+        var flat = [];
+        picks.forEach(function (p) { for (var k = 0; k < (counts.get(p) || 0); k++) flat.push(p); });
+        slots.forEach(function (sl, i) {
+          var p = flat[i];
+          sl.textContent = '';
+          sl.classList.toggle('is-filled', !!p);
+          sl.disabled = !p;
+          sl._pick = p || null;
+          if (!p) { sl.style.removeProperty('--tile-bg'); sl.removeAttribute('title'); return; }
+          var src = p.querySelector('img'), tile = p.querySelector('.blko-soda-tile'), nm = p.querySelector('b');
+          var img = document.createElement('img');
+          img.src = src ? src.src : '';
+          img.alt = nm ? nm.textContent : '';
+          sl.appendChild(img);
+          sl.style.setProperty('--tile-bg', tile ? tile.style.getPropertyValue('--tile-bg') : '');
+          sl.title = nm ? nm.textContent : '';
+        });
       };
       picks.forEach(function (p) {
         p.querySelector('[data-plus]').addEventListener('click', function () { counts.set(p, (counts.get(p) || 0) + 1); sync(); });
         p.querySelector('[data-minus]').addEventListener('click', function () { counts.set(p, Math.max(0, (counts.get(p) || 0) - 1)); sync(); });
       });
+      slots.forEach(function (sl) {
+        sl.addEventListener('click', function () { if (sl._pick) { counts.set(sl._pick, Math.max(0, (counts.get(sl._pick) || 0) - 1)); sync(); } });
+      });
+      var surprise = root.querySelector('[data-surprise]');
+      if (surprise) {
+        surprise.addEventListener('click', function () {
+          var pool = Array.prototype.filter.call(picks, function (p) { return !p.hasAttribute('data-soldout'); });
+          if (!pool.length) return;
+          counts.clear();
+          for (var k = 0; k < size; k++) { var p = pool[Math.floor(Math.random() * pool.length)]; counts.set(p, (counts.get(p) || 0) + 1); }
+          sync();
+        });
+      }
       if (picks.length) sync();
       if (pf) {
         pf.addEventListener('submit', function (e) {
@@ -421,6 +468,19 @@
           var n = list.reduce(function (s, i) { return s + i.quantity; }, 0);
           if (n !== size) return;
           var group = Math.random().toString(36).slice(2, 5).toUpperCase();
+          if (root.hasAttribute('data-builder')) {
+            /* One bundle line; every pick becomes a line property (Flavor 1, Flavor 2, ...). */
+            var props = mix
+              ? { _aov_offerId: mix.id, _aov_offerType: 'mix-match-bundle', _aov_bundleGroup: mix.id + '|' + group + '|0' }
+              : { _bundle: 'build-your-own' };
+            var at = 0;
+            picks.forEach(function (p) {
+              var nm = p.querySelector('b');
+              for (var k = 0; k < (counts.get(p) || 0); k++) props[(root.dataset.flavorLabel || 'Flavor') + ' ' + (++at)] = nm ? nm.textContent : p.dataset.id;
+            });
+            add([{ id: Number(pf.querySelector('[name=id]').value), quantity: 1, properties: props }], mix && (packOff > 0 || packFixed > 0) ? mix.code || null : null, addPack);
+            return;
+          }
           list.forEach(function (i) {
             i.properties = mix
               ? { _aov_offerId: mix.id, _aov_offerType: 'mix-match-bundle', _aov_bundleGroup: mix.id + '|' + group + '|0' }
@@ -429,6 +489,84 @@
           add(list, mix && (packOff > 0 || packFixed > 0) ? mix.code || null : null, addPack);
         });
       }
+    }
+  });
+
+  /* Reviews: filter chips, rating bars, photo toggle, flavor, search and sort over the review cards this section renders ([data-review]).
+     Cards carry data-rating, data-flavor, data-photo ("1"), data-date (YYYY-MM-DD) and data-helpful. "Load more" reveals the next batch. */
+  define('blko-soda-reviews', class extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.bound) return;
+      this.dataset.bound = '';
+      var root = this;
+      var grid = root.querySelector('[data-grid]');
+      if (!grid) return;
+      var cards = Array.prototype.slice.call(grid.querySelectorAll('[data-review]'));
+      var more = root.querySelector('[data-more]');
+      var count = root.querySelector('[data-count]');
+      var empty = root.querySelector('[data-empty]');
+      var q = root.querySelector('[data-q]');
+      var flavor = root.querySelector('[data-flavor]');
+      var sort = root.querySelector('[data-sort]');
+      var step = Number(root.dataset.step) || 6;
+      var all = Number(root.dataset.total) || 0;
+      var tpl = root.dataset.countText || 'Showing {shown} of {total}';
+      var st = { star: 0, photo: false, flavor: '', q: '', sort: 'recent', shown: step };
+      var num = function (c, k) { return Number(c.dataset[k]) || 0; };
+      var order = {
+        recent: function (a, b) { return b.dataset.date.localeCompare(a.dataset.date); },
+        highest: function (a, b) { return num(b, 'rating') - num(a, 'rating') || b.dataset.date.localeCompare(a.dataset.date); },
+        lowest: function (a, b) { return num(a, 'rating') - num(b, 'rating') || b.dataset.date.localeCompare(a.dataset.date); },
+        helpful: function (a, b) { return num(b, 'helpful') - num(a, 'helpful') || b.dataset.date.localeCompare(a.dataset.date); }
+      };
+      var active = function () { return !!(st.star || st.photo || st.flavor || st.q.trim()); };
+      var apply = function () {
+        var term = st.q.trim().toLowerCase();
+        var hits = cards.filter(function (c) {
+          if (st.star && num(c, 'rating') !== st.star) return false;
+          if (st.photo && c.dataset.photo !== '1') return false;
+          if (st.flavor && c.dataset.flavor !== st.flavor) return false;
+          if (term) {
+            var h = c.querySelector('h3'), p = c.querySelector('p');
+            if (((h ? h.textContent : '') + ' ' + (p ? p.textContent : '')).toLowerCase().indexOf(term) < 0) return false;
+          }
+          return true;
+        }).sort(order[st.sort] || order.recent);
+        hits.concat(cards.filter(function (c) { return hits.indexOf(c) < 0; })).forEach(function (c) { grid.appendChild(c); });
+        cards.forEach(function (c) { c.hidden = true; });
+        hits.slice(0, st.shown).forEach(function (c) { c.hidden = false; });
+        var shown = Math.min(st.shown, hits.length);
+        if (count) count.textContent = tpl.replace('{shown}', shown).replace('{total}', active() ? hits.length : Math.max(all, hits.length));
+        if (empty) empty.hidden = hits.length > 0;
+        if (more) more.hidden = st.shown >= hits.length;
+        root.querySelectorAll('[data-clear]').forEach(function (b) { if (!empty || !empty.contains(b)) b.hidden = !active(); });
+        root.querySelectorAll('[data-star]').forEach(function (b) {
+          var on = Number(b.dataset.star) === st.star;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+        var ph = root.querySelector('[data-photo-only]');
+        if (ph) { ph.classList.toggle('is-active', st.photo); ph.setAttribute('aria-pressed', st.photo ? 'true' : 'false'); }
+      };
+      var change = function () { st.shown = step; apply(); };
+      root.addEventListener('click', function (e) {
+        var t = e.target;
+        var s = t.closest('[data-star]');
+        if (s) { var n = Number(s.dataset.star) || 0; st.star = n && n === st.star ? 0 : n; change(); return; }
+        if (t.closest('[data-photo-only]')) { st.photo = !st.photo; change(); return; }
+        if (t.closest('[data-clear]')) {
+          st = { star: 0, photo: false, flavor: '', q: '', sort: st.sort, shown: step };
+          if (q) q.value = '';
+          if (flavor) flavor.value = '';
+          apply();
+          return;
+        }
+        if (more && t.closest('[data-more]')) { st.shown += step; apply(); }
+      });
+      if (q) q.addEventListener('input', function () { st.q = q.value; change(); });
+      if (flavor) flavor.addEventListener('change', function () { st.flavor = flavor.value; change(); });
+      if (sort) sort.addEventListener('change', function () { st.sort = sort.value; change(); });
+      apply();
     }
   });
 

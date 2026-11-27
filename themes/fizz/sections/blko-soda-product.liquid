@@ -31,6 +31,8 @@
       </details>
     {%- endif -%}
     <h1>{{ product.title }}</h1>
+    {%- capture stars -%}{% render 'blko-soda-stars', product: product %}{%- endcapture -%}
+    {%- if stars != blank -%}<p class="blko-soda-pdp__rating">{{ stars }}</p>{%- endif -%}
     <p class="blko-soda-pdp__price"><span data-price>{{ current.price | money }}</span> <s data-compare{% unless current.compare_at_price > current.price %} hidden{% endunless %}>{{ current.compare_at_price | money }}</s></p>
     <div class="blko-soda-pdp__desc">{{ product.description | strip_html | truncatewords: 40 }}</div>
     {%- form 'product', product, data-product-form: '' -%}
@@ -165,6 +167,7 @@
 .blko-soda-pdp__line{font:700 18px/1.4 var(--font-body,"Outfit",sans-serif);letter-spacing:0;text-decoration:underline;text-transform:none}
 .blko-soda-pdp__info h1{margin:.6rem 0;font:900 clamp(2.4rem,4.5vw,3rem)/1.05 var(--font-heading,"Fraunces",Georgia,serif)}
 .blko-soda-pdp__price s{margin-left:.4rem}
+.blko-soda-pdp__rating{margin:0 0 .6rem}
 .blko-soda-flavor{position:relative;margin:.8rem 0 0;text-align:left}
 .blko-soda-flavor summary{display:flex;align-items:center;gap:.6rem;height:48px;padding:0 1rem;border:1px solid var(--color-text,#0f3b2e);border-radius:24px;background:#fff;font:700 14px/1 var(--font-body,"Outfit",sans-serif);cursor:pointer;list-style:none;transition:box-shadow .2s ease}
 .blko-soda-flavor summary::-webkit-details-marker{display:none}
