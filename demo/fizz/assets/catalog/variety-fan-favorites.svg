@@ -11,9 +11,7 @@
 <rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
 <ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
 <rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
-<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
 <rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
-<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
 <rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
 <path id="arc-cherry-pop-v0" d="M68 190 Q150 130 232 190" fill="none"/>
 <text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#500c17" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-cherry-pop-v0" startOffset="50%">fizz</textPath></text>
@@ -44,9 +42,7 @@
 <rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
 <ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
 <rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
-<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
 <rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
-<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
 <rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
 <path id="arc-orange-burst-v1" d="M68 190 Q150 130 232 190" fill="none"/>
 <text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#602a0b" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-orange-burst-v1" startOffset="50%">fizz</textPath></text>
@@ -82,9 +78,7 @@
 <rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
 <ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
 <rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
-<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
 <rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
-<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
 <rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
 <path id="arc-strawberry-lime-v2" d="M68 190 Q150 130 232 190" fill="none"/>
 <text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#5c2330" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-strawberry-lime-v2" startOffset="50%">fizz</textPath></text>
@@ -120,9 +114,7 @@
 <rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
 <ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
 <rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
-<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
 <rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
-<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
 <rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
 <path id="arc-mango-tango-v3" d="M68 190 Q150 130 232 190" fill="none"/>
 <text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#543907" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-mango-tango-v3" startOffset="50%">fizz</textPath></text>

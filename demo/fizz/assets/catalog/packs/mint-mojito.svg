@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 322">
-<g transform="translate(38 18) scale(0.36) translate(-50 -44)"><g>
+<g transform="translate(125 18) scale(0.38) translate(-50 -44)"><g>
 <path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
 <path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
 <path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
@@ -11,9 +11,7 @@
 <rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
 <ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
 <rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
-<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
 <rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
-<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
 <rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
 <path id="arc-mint-mojito-p0" d="M68 190 Q150 130 232 190" fill="none"/>
 <text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#0c4237" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-mint-mojito-p0" startOffset="50%">fizz</textPath></text>
@@ -30,7 +28,7 @@
 </g>
 <rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
 <text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#0c4237">6g fiber</text>
-</g></g><g transform="translate(128 18) scale(0.36) translate(-50 -44)"><g>
+</g></g><g transform="translate(215 18) scale(0.38) translate(-50 -44)"><g>
 <path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
 <path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
 <path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
@@ -42,43 +40,10 @@
 <rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
 <ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
 <rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
-<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
 <rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
-<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
 <rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
 <path id="arc-mint-mojito-p1" d="M68 190 Q150 130 232 190" fill="none"/>
 <text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#0c4237" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-mint-mojito-p1" startOffset="50%">fizz</textPath></text>
-<circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#0c4237" stroke-width="3"/>
-<circle cx="150" cy="292" r="67" fill="#bff0e2" opacity=".55"/>
-<path d="M150 336 L150 286" stroke="#1c6e5c" stroke-width="4" stroke-linecap="round"/>
-<path d="M150 296 C112 292 94 266 100 248 C128 246 148 266 150 296Z" fill="#2fbf6e" stroke="#0c4237" stroke-width="3" stroke-linejoin="round"/>
-<path d="M150 296 C188 292 206 266 200 248 C172 246 152 266 150 296Z" fill="#46d17f" stroke="#0c4237" stroke-width="3" stroke-linejoin="round"/>
-<path d="M150 286 C132 262 138 238 150 226 C162 238 168 262 150 286Z" fill="#2fbf6e" stroke="#0c4237" stroke-width="3" stroke-linejoin="round"/>
-<path d="M150 284 L150 238 M148 292 L112 258 M152 292 L188 258" stroke="#1c6e5c" stroke-width="2" fill="none" stroke-linecap="round"/>
-<g font-family="Fraunces, Georgia, serif" font-weight="900" text-anchor="middle" fill="#fff3d6" stroke="#0c4237" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
-<text x="150" y="410" font-size="26">Mint</text>
-<text x="150" y="440" font-size="26">Mojito</text>
-</g>
-<rect x="108" y="452" width="84" height="22" rx="11" fill="#fff3d6"/>
-<text x="150" y="468" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="13" text-anchor="middle" fill="#0c4237">6g fiber</text>
-</g></g><g transform="translate(218 18) scale(0.36) translate(-50 -44)"><g>
-<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 500 L62 500Z" fill="#d9dde0"/>
-<path d="M62 524 Q62 534 76 536 L224 536 Q238 534 238 524 L238 514 Q150 524 62 514Z" fill="#aeb4b9" opacity=".6"/>
-<path d="M50 112 Q50 96 66 90 L84 56 Q150 44 216 56 L234 90 Q250 96 250 112 L250 500 Q150 512 50 500Z" fill="#d9dde0"/>
-<path d="M50 112 L250 112 L250 500 Q150 512 50 500Z" fill="#1ea58b"/>
-<path d="M50 112 Q150 122 250 112" fill="none" stroke="#0c4237" stroke-width="3" opacity=".5"/>
-<path d="M84 56 Q150 44 216 56 L234 90 L66 90Z" fill="#c5cacf"/>
-<ellipse cx="150" cy="52" rx="66" ry="12" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
-<ellipse cx="150" cy="52" rx="50" ry="8" fill="#cfd4d8"/>
-<rect x="132" y="46" width="36" height="12" rx="6" fill="#eef0f2" stroke="#aeb4b9" stroke-width="2"/>
-<ellipse cx="150" cy="52" rx="9" ry="3.5" fill="#8d949a"/>
-<rect x="62" y="128" width="176" height="358" rx="22" fill="none" stroke="#fff3d6" stroke-width="3" opacity=".9"/>
-<rect x="68" y="134" width="164" height="346" rx="17" fill="none" stroke="#fff3d6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".6"/>
-<rect x="60" y="112" width="26" height="388" fill="#fff" opacity=".2"/>
-<rect x="94" y="112" width="7" height="388" fill="#fff" opacity=".14"/>
-<rect x="222" y="112" width="28" height="388" fill="#000" opacity=".12"/>
-<path id="arc-mint-mojito-p2" d="M68 190 Q150 130 232 190" fill="none"/>
-<text font-family="Fraunces, 'Baloo 2', Georgia, serif" font-weight="900" font-size="64" text-anchor="middle" fill="#fff3d6" stroke="#0c4237" stroke-width="7" stroke-linejoin="round" paint-order="stroke" letter-spacing="1"><textPath href="#arc-mint-mojito-p2" startOffset="50%">fizz</textPath></text>
 <circle cx="150" cy="292" r="74" fill="#fff3d6" stroke="#0c4237" stroke-width="3"/>
 <circle cx="150" cy="292" r="67" fill="#bff0e2" opacity=".55"/>
 <path d="M150 336 L150 286" stroke="#1c6e5c" stroke-width="4" stroke-linecap="round"/>
